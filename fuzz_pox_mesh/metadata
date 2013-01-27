@@ -2,7 +2,8 @@
   "argv": [
     "./simulator.py",
     "-c",
-    "exp/config/fuzz_pox_mesh.py"
+    "exp/config/fuzz_pox_mesh.py",
+    "--publish"
   ],
   "cwd": "/data/entw/openflow/sts",
   "host": "aquil-vm",
@@ -13,9 +14,9 @@
     },
     "sts": {
       "branch": "exp_lifecycle",
-      "commit": "63846491bc064830f793c47d712f294c4d082357"
+      "commit": "9013c777958df43c8bc5da8ac6bef29536bd69c8"
     }
   },
-  "timestamp": "2013_01_26_18_36_11",
+  "timestamp": "2013_01_26_20_05_05",
   "user": "andi"
 }
