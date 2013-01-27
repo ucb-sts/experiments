@@ -9,7 +9,7 @@ from sts.simulation_state import SimulationConfig
 
 from config.fuzz_pox_mesh import my_funky_invariant_check
 
-simulation_config = SimulationConfig(controller_configs=[ControllerConfig(cmdline='./pox.py --verbose --random-seed=1 openflow.discovery forwarding.l2_multi openflow.of_01 --address=__address__ --port=__port__', address='127.0.0.1', port=6633, cwd='betta')]),
+simulation_config = SimulationConfig(controller_configs=[ControllerConfig(cmdline='./pox.py --verbose --random-seed=1 openflow.discovery forwarding.l2_multi openflow.of_01 --address=__address__ --port=__port__', address='127.0.0.1', port=6633, cwd='betta')],
                  topology_class=MeshTopology,
                  topology_params="num_switches=2",
                  patch_panel_class=BufferedPatchPanel,
