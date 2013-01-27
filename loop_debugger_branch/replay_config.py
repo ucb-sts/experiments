@@ -11,5 +11,5 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(cmdlin
                  dataplane_trace="dataplane_traces/ping_pong_same_subnet.trace",
                  multiplex_sockets=True)
 
-control_flow = Replayer(simulation_config, "exp/no_connectivity/events.trace",
+control_flow = Replayer(simulation_config, "exp/loop_debugger_branch/events.trace",
                         wait_on_deterministic_values=False)
