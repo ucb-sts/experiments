@@ -1,0 +1,32 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "exp/config/pox_l2multi-exp3.py",
+    "--publish"
+  ],
+  "cwd": "/home/andi/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5560 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:      12321316    6589584    5731732          0     107848    5113000\n-/+ buffers/cache:    1368736   10952580\nSwap:     12571644          0   12571644",
+    "name": "c3",
+    "num_cores": "8",
+    "uptime": "21:00:28 up 58 days, 12:06,  6 users,  load average: 1.00, 1.02, 0.98"
+  },
+  "modules": {
+    "pox": {
+      "branch": "debugger",
+      "commit": "2cf1909cdbb658c0f1849a3f7eec86a032e92f3c"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "4dce6ce676a778033699e2e0f8624f6ff78a98f4"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.04",
+    "uname": "Linux c3 2.6.38-8-server #42-Ubuntu SMP Mon Apr 11 03:49:04 UTC 2011 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2013_01_26_21_00_28",
+  "user": "andi"
+}
