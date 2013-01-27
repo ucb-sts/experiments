@@ -13,6 +13,6 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(cmdlin
                  dataplane_trace="dataplane_traces/ping_pong_same_subnet.trace",
                  multiplex_sockets=True)
 
-control_flow = EfficientMCSFinder(simulation_config, "exp/fuzz_pox_mesh/events.trace",
+control_flow = EfficientMCSFinder(simulation_config, "exp/loop_debugger_branch/events.trace",
                                   invariant_check=my_funky_invariant_check,
                                   wait_on_deterministic_values=False)
