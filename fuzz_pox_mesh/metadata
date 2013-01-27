@@ -14,9 +14,9 @@
     },
     "sts": {
       "branch": "exp_lifecycle",
-      "commit": "9013c777958df43c8bc5da8ac6bef29536bd69c8"
+      "commit": "f787c235477432209e1e791f656180288429fe2f"
     }
   },
-  "timestamp": "2013_01_26_20_05_21",
+  "timestamp": "2013_01_26_20_06_00",
   "user": "andi"
 }
