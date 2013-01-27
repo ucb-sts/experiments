@@ -510,7 +510,7 @@ Recursing on right half
 Base case [DataplanePermit:e82:(u'DataplanePermit', DPFingerprint{u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, u"host:[IPAddr('123.123.2.2')]", u'12:34:56:78:02:02')]
 Recursing on right half
 Base case [DataplanePermit:e83:(u'DataplanePermit', DPFingerprint{u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, 2, 1)]
-Final MCS (%d elements):
+Final MCS (19 elements):
  - TrafficInjection:e14
  - DataplanePermit:e15
  - DataplanePermit:e17
