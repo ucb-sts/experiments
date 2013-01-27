@@ -340,3 +340,894 @@ Sleeping 0 seconds after run
 No violation in 12'th...
 Current subset: ~7/8.13/14: e86 e87 e88
 Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 13'th...
+No subsets with violations. Checking complements
+Current complement: ~7/8.~0/14: e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e36 e38 e40 e41 e42 e43 e47 e48 e49 e55 e56 e58 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current complement: ~7/8.~1/14: e14 e15 e17 e19 e26 e28 e29 e30 e32 e34 e36 e38 e40 e41 e42 e43 e47 e48 e49 e55 e56 e58 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 1'th...
+Current complement: ~7/8.~2/14: e14 e15 e17 e19 e21 e22 e23 e24 e30 e32 e34 e36 e38 e40 e41 e42 e43 e47 e48 e49 e55 e56 e58 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 2'th...
+Current complement: ~7/8.~3/14: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e36 e38 e40 e41 e42 e43 e47 e48 e49 e55 e56 e58 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 3'th...
+Current complement: ~7/8.~4/14: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e55 e56 e58 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Violation! Considering 4'th
+Subset ~7/8.~4/14 reproduced violation. Subselecting.
+Subsets:
+~7/8.~4/14.0/13: e14 e15 e17 e19
+~7/8.~4/14.1/13: e21 e22 e23 e24
+~7/8.~4/14.2/13: e26 e28 e29
+~7/8.~4/14.3/13: e30 e32 e34
+~7/8.~4/14.4/13: e41 e42 e43
+~7/8.~4/14.5/13: e47 e48 e49
+~7/8.~4/14.6/13: e55 e56 e58
+~7/8.~4/14.7/13: e60 e61 e62
+~7/8.~4/14.8/13: e64 e67 e68
+~7/8.~4/14.9/13: e72 e73 e74
+~7/8.~4/14.10/13: e75 e77 e79
+~7/8.~4/14.11/13: e81 e82 e83
+~7/8.~4/14.12/13: e86 e87 e88
+Current subset: ~7/8.~4/14.0/13: e14 e15 e17 e19
+Already computed. Skipping
+Current subset: ~7/8.~4/14.1/13: e21 e22 e23 e24
+Already computed. Skipping
+Current subset: ~7/8.~4/14.2/13: e26 e28 e29
+Already computed. Skipping
+Current subset: ~7/8.~4/14.3/13: e30 e32 e34
+Already computed. Skipping
+Current subset: ~7/8.~4/14.4/13: e41 e42 e43
+Already computed. Skipping
+Current subset: ~7/8.~4/14.5/13: e47 e48 e49
+Already computed. Skipping
+Current subset: ~7/8.~4/14.6/13: e55 e56 e58
+Already computed. Skipping
+Current subset: ~7/8.~4/14.7/13: e60 e61 e62
+Already computed. Skipping
+Current subset: ~7/8.~4/14.8/13: e64 e67 e68
+Already computed. Skipping
+Current subset: ~7/8.~4/14.9/13: e72 e73 e74
+Already computed. Skipping
+Current subset: ~7/8.~4/14.10/13: e75 e77 e79
+Already computed. Skipping
+Current subset: ~7/8.~4/14.11/13: e81 e82 e83
+Already computed. Skipping
+Current subset: ~7/8.~4/14.12/13: e86 e87 e88
+Already computed. Skipping
+No subsets with violations. Checking complements
+Current complement: ~7/8.~4/14.~0/13: e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e55 e56 e58 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current complement: ~7/8.~4/14.~1/13: e14 e15 e17 e19 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e55 e56 e58 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 1'th...
+Current complement: ~7/8.~4/14.~2/13: e14 e15 e17 e19 e21 e22 e23 e24 e30 e32 e34 e41 e42 e43 e47 e48 e49 e55 e56 e58 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 2'th...
+Current complement: ~7/8.~4/14.~3/13: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e41 e42 e43 e47 e48 e49 e55 e56 e58 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 3'th...
+Current complement: ~7/8.~4/14.~4/13: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e47 e48 e49 e55 e56 e58 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Already computed. Skipping
+Current complement: ~7/8.~4/14.~5/13: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e55 e56 e58 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 5'th...
+Current complement: ~7/8.~4/14.~6/13: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Violation! Considering 6'th
+Subset ~7/8.~4/14.~6/13 reproduced violation. Subselecting.
+Subsets:
+~7/8.~4/14.~6/13.0/12: e14 e15 e17 e19
+~7/8.~4/14.~6/13.1/12: e21 e22 e23 e24
+~7/8.~4/14.~6/13.2/12: e26 e28 e29
+~7/8.~4/14.~6/13.3/12: e30 e32 e34
+~7/8.~4/14.~6/13.4/12: e41 e42 e43
+~7/8.~4/14.~6/13.5/12: e47 e48 e49
+~7/8.~4/14.~6/13.6/12: e60 e61 e62
+~7/8.~4/14.~6/13.7/12: e64 e67 e68
+~7/8.~4/14.~6/13.8/12: e72 e73 e74
+~7/8.~4/14.~6/13.9/12: e75 e77 e79
+~7/8.~4/14.~6/13.10/12: e81 e82 e83
+~7/8.~4/14.~6/13.11/12: e86 e87 e88
+Current subset: ~7/8.~4/14.~6/13.0/12: e14 e15 e17 e19
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.1/12: e21 e22 e23 e24
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.2/12: e26 e28 e29
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.3/12: e30 e32 e34
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.4/12: e41 e42 e43
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.5/12: e47 e48 e49
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.6/12: e60 e61 e62
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.7/12: e64 e67 e68
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.8/12: e72 e73 e74
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.9/12: e75 e77 e79
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.10/12: e81 e82 e83
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.11/12: e86 e87 e88
+Already computed. Skipping
+No subsets with violations. Checking complements
+Current complement: ~7/8.~4/14.~6/13.~0/12: e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current complement: ~7/8.~4/14.~6/13.~1/12: e14 e15 e17 e19 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 1'th...
+Current complement: ~7/8.~4/14.~6/13.~2/12: e14 e15 e17 e19 e21 e22 e23 e24 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 2'th...
+Current complement: ~7/8.~4/14.~6/13.~3/12: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 3'th...
+Current complement: ~7/8.~4/14.~6/13.~4/12: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 4'th...
+Current complement: ~7/8.~4/14.~6/13.~5/12: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 5'th...
+Current complement: ~7/8.~4/14.~6/13.~6/12: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 6'th...
+Current complement: ~7/8.~4/14.~6/13.~7/12: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e72 e73 e74 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 7'th...
+Current complement: ~7/8.~4/14.~6/13.~8/12: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e75 e77 e79 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 8'th...
+Current complement: ~7/8.~4/14.~6/13.~9/12: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e81 e82 e83 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 9'th...
+Current complement: ~7/8.~4/14.~6/13.~10/12: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e86 e87 e88
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 10'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Violation! Considering 11'th
+Subset ~7/8.~4/14.~6/13.~11/12 reproduced violation. Subselecting.
+Subsets:
+~7/8.~4/14.~6/13.~11/12.0/11: e14 e15 e17 e19
+~7/8.~4/14.~6/13.~11/12.1/11: e21 e22 e23 e24
+~7/8.~4/14.~6/13.~11/12.2/11: e26 e28 e29
+~7/8.~4/14.~6/13.~11/12.3/11: e30 e32 e34
+~7/8.~4/14.~6/13.~11/12.4/11: e41 e42 e43
+~7/8.~4/14.~6/13.~11/12.5/11: e47 e48 e49
+~7/8.~4/14.~6/13.~11/12.6/11: e60 e61 e62
+~7/8.~4/14.~6/13.~11/12.7/11: e64 e67 e68
+~7/8.~4/14.~6/13.~11/12.8/11: e72 e73 e74
+~7/8.~4/14.~6/13.~11/12.9/11: e75 e77 e79
+~7/8.~4/14.~6/13.~11/12.10/11: e81 e82 e83
+Current subset: ~7/8.~4/14.~6/13.~11/12.0/11: e14 e15 e17 e19
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.1/11: e21 e22 e23 e24
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.2/11: e26 e28 e29
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.3/11: e30 e32 e34
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.4/11: e41 e42 e43
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.5/11: e47 e48 e49
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.6/11: e60 e61 e62
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.7/11: e64 e67 e68
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.8/11: e72 e73 e74
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.9/11: e75 e77 e79
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.10/11: e81 e82 e83
+Already computed. Skipping
+No subsets with violations. Checking complements
+Current complement: ~7/8.~4/14.~6/13.~11/12.~0/11: e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~1/11: e14 e15 e17 e19 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 1'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/11: e14 e15 e17 e19 e21 e22 e23 e24 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 2'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~3/11: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 3'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~4/11: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 4'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~5/11: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 5'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~6/11: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 6'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~7/11: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 7'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~8/11: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 8'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~9/11: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 9'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~10/11: e14 e15 e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 10'th...
+No complements with violations.
+Increasing granularity.
+Subsets:
+~7/8.~4/14.~6/13.~11/12.0/22: e14 e15
+~7/8.~4/14.~6/13.~11/12.1/22: e17 e19
+~7/8.~4/14.~6/13.~11/12.2/22: e21 e22
+~7/8.~4/14.~6/13.~11/12.3/22: e23 e24
+~7/8.~4/14.~6/13.~11/12.4/22: e26 e28
+~7/8.~4/14.~6/13.~11/12.5/22: e29 e30
+~7/8.~4/14.~6/13.~11/12.6/22: e32 e34
+~7/8.~4/14.~6/13.~11/12.7/22: e41 e42
+~7/8.~4/14.~6/13.~11/12.8/22: e43 e47
+~7/8.~4/14.~6/13.~11/12.9/22: e48 e49
+~7/8.~4/14.~6/13.~11/12.10/22: e60 e61
+~7/8.~4/14.~6/13.~11/12.11/22: e62 e64
+~7/8.~4/14.~6/13.~11/12.12/22: e67 e68
+~7/8.~4/14.~6/13.~11/12.13/22: e72
+~7/8.~4/14.~6/13.~11/12.14/22: e73
+~7/8.~4/14.~6/13.~11/12.15/22: e74
+~7/8.~4/14.~6/13.~11/12.16/22: e75
+~7/8.~4/14.~6/13.~11/12.17/22: e77
+~7/8.~4/14.~6/13.~11/12.18/22: e79
+~7/8.~4/14.~6/13.~11/12.19/22: e81
+~7/8.~4/14.~6/13.~11/12.20/22: e82
+~7/8.~4/14.~6/13.~11/12.21/22: e83
+Current subset: ~7/8.~4/14.~6/13.~11/12.0/22: e14 e15
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.1/22: e17 e19
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 1'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.2/22: e21 e22
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 2'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.3/22: e23 e24
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 3'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.4/22: e26 e28
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 4'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.5/22: e29 e30
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 5'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.6/22: e32 e34
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 6'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.7/22: e41 e42
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 7'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.8/22: e43 e47
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 8'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.9/22: e48 e49
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 9'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.10/22: e60 e61
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 10'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.11/22: e62 e64
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 11'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.12/22: e67 e68
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 12'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.13/22: e72
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 13'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.14/22: e73
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 14'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.15/22: e74
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 15'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.16/22: e75
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 16'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.17/22: e77
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 17'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.18/22: e79
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 18'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.19/22: e81
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 19'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.20/22: e82
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 20'th...
+Current subset: ~7/8.~4/14.~6/13.~11/12.21/22: e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 21'th...
+No subsets with violations. Checking complements
+Current complement: ~7/8.~4/14.~6/13.~11/12.~0/22: e17 e19 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~1/22: e14 e15 e21 e22 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 1'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22: e14 e15 e17 e19 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Violation! Considering 2'th
+Subset ~7/8.~4/14.~6/13.~11/12.~2/22 reproduced violation. Subselecting.
+Subsets:
+~7/8.~4/14.~6/13.~11/12.~2/22.0/21: e14 e15
+~7/8.~4/14.~6/13.~11/12.~2/22.1/21: e17 e19
+~7/8.~4/14.~6/13.~11/12.~2/22.2/21: e23 e24
+~7/8.~4/14.~6/13.~11/12.~2/22.3/21: e26 e28
+~7/8.~4/14.~6/13.~11/12.~2/22.4/21: e29 e30
+~7/8.~4/14.~6/13.~11/12.~2/22.5/21: e32 e34
+~7/8.~4/14.~6/13.~11/12.~2/22.6/21: e41 e42
+~7/8.~4/14.~6/13.~11/12.~2/22.7/21: e43 e47
+~7/8.~4/14.~6/13.~11/12.~2/22.8/21: e48 e49
+~7/8.~4/14.~6/13.~11/12.~2/22.9/21: e60 e61
+~7/8.~4/14.~6/13.~11/12.~2/22.10/21: e62 e64
+~7/8.~4/14.~6/13.~11/12.~2/22.11/21: e67 e68
+~7/8.~4/14.~6/13.~11/12.~2/22.12/21: e72
+~7/8.~4/14.~6/13.~11/12.~2/22.13/21: e73
+~7/8.~4/14.~6/13.~11/12.~2/22.14/21: e74
+~7/8.~4/14.~6/13.~11/12.~2/22.15/21: e75
+~7/8.~4/14.~6/13.~11/12.~2/22.16/21: e77
+~7/8.~4/14.~6/13.~11/12.~2/22.17/21: e79
+~7/8.~4/14.~6/13.~11/12.~2/22.18/21: e81
+~7/8.~4/14.~6/13.~11/12.~2/22.19/21: e82
+~7/8.~4/14.~6/13.~11/12.~2/22.20/21: e83
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.0/21: e14 e15
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.1/21: e17 e19
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.2/21: e23 e24
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.3/21: e26 e28
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.4/21: e29 e30
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.5/21: e32 e34
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.6/21: e41 e42
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.7/21: e43 e47
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.8/21: e48 e49
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.9/21: e60 e61
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.10/21: e62 e64
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.11/21: e67 e68
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.12/21: e72
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.13/21: e73
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.14/21: e74
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.15/21: e75
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.16/21: e77
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.17/21: e79
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.18/21: e81
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.19/21: e82
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.20/21: e83
+Already computed. Skipping
+No subsets with violations. Checking complements
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~0/21: e17 e19 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~1/21: e14 e15 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 1'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~2/21: e14 e15 e17 e19 e26 e28 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Already computed. Skipping
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~3/21: e14 e15 e17 e19 e23 e24 e29 e30 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 3'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~4/21: e14 e15 e17 e19 e23 e24 e26 e28 e32 e34 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 4'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~5/21: e14 e15 e17 e19 e23 e24 e26 e28 e29 e30 e41 e42 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 5'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~6/21: e14 e15 e17 e19 e23 e24 e26 e28 e29 e30 e32 e34 e43 e47 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 6'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21: e14 e15 e17 e19 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Violation! Considering 7'th
+Subset ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21 reproduced violation. Subselecting.
+Subsets:
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.0/20: e14 e15
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.1/20: e17 e19
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.2/20: e23 e24
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.3/20: e26 e28
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.4/20: e29 e30
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.5/20: e32 e34
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.6/20: e41 e42
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.7/20: e48 e49
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.8/20: e60 e61
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.9/20: e62 e64
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.10/20: e67 e68
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.11/20: e72
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.12/20: e73
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.13/20: e74
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.14/20: e75
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.15/20: e77
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.16/20: e79
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.17/20: e81
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.18/20: e82
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.19/20: e83
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.0/20: e14 e15
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.1/20: e17 e19
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.2/20: e23 e24
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.3/20: e26 e28
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.4/20: e29 e30
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.5/20: e32 e34
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.6/20: e41 e42
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.7/20: e48 e49
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.8/20: e60 e61
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.9/20: e62 e64
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.10/20: e67 e68
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.11/20: e72
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.12/20: e73
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.13/20: e74
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.14/20: e75
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.15/20: e77
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.16/20: e79
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.17/20: e81
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.18/20: e82
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.19/20: e83
+Already computed. Skipping
+No subsets with violations. Checking complements
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~0/20: e17 e19 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~1/20: e14 e15 e23 e24 e26 e28 e29 e30 e32 e34 e41 e42 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 1'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~2/20: e14 e15 e17 e19 e26 e28 e29 e30 e32 e34 e41 e42 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 2'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~3/20: e14 e15 e17 e19 e23 e24 e29 e30 e32 e34 e41 e42 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 3'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~4/20: e14 e15 e17 e19 e23 e24 e26 e28 e32 e34 e41 e42 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 4'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20: e14 e15 e17 e19 e23 e24 e26 e28 e29 e30 e41 e42 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Violation! Considering 5'th
+Subset ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20 reproduced violation. Subselecting.
+Subsets:
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.0/19: e14 e15
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.1/19: e17 e19
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.2/19: e23 e24
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.3/19: e26 e28
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.4/19: e29 e30
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.5/19: e41 e42
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.6/19: e48 e49
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.7/19: e60 e61
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.8/19: e62 e64
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.9/19: e67 e68
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.10/19: e72
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.11/19: e73
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.12/19: e74
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.13/19: e75
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.14/19: e77
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.15/19: e79
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.16/19: e81
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.17/19: e82
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.18/19: e83
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.0/19: e14 e15
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.1/19: e17 e19
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.2/19: e23 e24
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.3/19: e26 e28
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.4/19: e29 e30
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.5/19: e41 e42
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.6/19: e48 e49
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.7/19: e60 e61
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.8/19: e62 e64
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.9/19: e67 e68
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.10/19: e72
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.11/19: e73
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.12/19: e74
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.13/19: e75
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.14/19: e77
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.15/19: e79
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.16/19: e81
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.17/19: e82
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.18/19: e83
+Already computed. Skipping
+No subsets with violations. Checking complements
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~0/19: e17 e19 e23 e24 e26 e28 e29 e30 e41 e42 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~1/19: e14 e15 e23 e24 e26 e28 e29 e30 e41 e42 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 1'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~2/19: e14 e15 e17 e19 e26 e28 e29 e30 e41 e42 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 2'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~3/19: e14 e15 e17 e19 e23 e24 e29 e30 e41 e42 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 3'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~4/19: e14 e15 e17 e19 e23 e24 e26 e28 e41 e42 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 4'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~5/19: e14 e15 e17 e19 e23 e24 e26 e28 e29 e30 e48 e49 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 5'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~6/19: e14 e15 e17 e19 e23 e24 e26 e28 e29 e30 e41 e42 e60 e61 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 6'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~7/19: e14 e15 e17 e19 e23 e24 e26 e28 e29 e30 e41 e42 e48 e49 e62 e64 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 7'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19: e14 e15 e17 e19 e23 e24 e26 e28 e29 e30 e41 e42 e48 e49 e60 e61 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Violation! Considering 8'th
+Subset ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19 reproduced violation. Subselecting.
+Subsets:
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.0/18: e14 e15
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.1/18: e17 e19
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.2/18: e23 e24
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.3/18: e26 e28
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.4/18: e29 e30
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.5/18: e41 e42
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.6/18: e48 e49
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.7/18: e60 e61
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.8/18: e67 e68
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.9/18: e72
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.10/18: e73
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.11/18: e74
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.12/18: e75
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.13/18: e77
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.14/18: e79
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.15/18: e81
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.16/18: e82
+~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.17/18: e83
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.0/18: e14 e15
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.1/18: e17 e19
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.2/18: e23 e24
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.3/18: e26 e28
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.4/18: e29 e30
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.5/18: e41 e42
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.6/18: e48 e49
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.7/18: e60 e61
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.8/18: e67 e68
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.9/18: e72
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.10/18: e73
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.11/18: e74
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.12/18: e75
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.13/18: e77
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.14/18: e79
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.15/18: e81
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.16/18: e82
+Already computed. Skipping
+Current subset: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.17/18: e83
+Already computed. Skipping
+No subsets with violations. Checking complements
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.~0/18: e17 e19 e23 e24 e26 e28 e29 e30 e41 e42 e48 e49 e60 e61 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.~1/18: e14 e15 e23 e24 e26 e28 e29 e30 e41 e42 e48 e49 e60 e61 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 1'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.~2/18: e14 e15 e17 e19 e26 e28 e29 e30 e41 e42 e48 e49 e60 e61 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 2'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.~3/18: e14 e15 e17 e19 e23 e24 e29 e30 e41 e42 e48 e49 e60 e61 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 3'th...
+Current complement: ~7/8.~4/14.~6/13.~11/12.~2/22.~7/21.~5/20.~8/19.~4/18: e14 e15 e17 e19 e23 e24 e26 e28 e41 e42 e48 e49 e60 e61 e67 e68 e72 e73 e74 e75 e77 e79 e81 e82 e83
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
