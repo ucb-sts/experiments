@@ -8,10 +8,10 @@
   "cwd": "/home/andi/sts",
   "host": {
     "cpu_info": "Intel(R) Xeon(R) CPU X5560 @ 2.80GHz",
-    "free": "total       used       free     shared    buffers     cached\nMem:      12321316    7130452    5190864          0     102756    5612672\n-/+ buffers/cache:    1415024   10906292\nSwap:     12571644          0   12571644",
+    "free": "total       used       free     shared    buffers     cached\nMem:      12321316    7187092    5134224          0     101720    5603388\n-/+ buffers/cache:    1481984   10839332\nSwap:     12571644          0   12571644",
     "name": "c3",
     "num_cores": "8",
-    "uptime": "21:59:05 up 58 days, 13:05,  5 users,  load average: 1.00, 1.04, 1.05"
+    "uptime": "22:02:11 up 58 days, 13:13,  5 users,  load average: 1.00, 1.01, 1.05"
   },
   "modules": {
     "pox": {
@@ -20,13 +20,13 @@
     },
     "sts": {
       "branch": "master",
-      "commit": "8de6a85fed429385ebbc14fdb074b128b6c7121d"
+      "commit": "666c953c9b7ce601eb0422b63785ab6181887068"
     }
   },
   "sys": {
     "lsb_release": "Ubuntu 11.04",
     "uname": "Linux c3 2.6.38-8-server #42-Ubuntu SMP Mon Apr 11 03:49:04 UTC 2011 x86_64 x86_64 x86_64 GNU/Linux"
   },
-  "timestamp": "2013_01_26_21_59_05",
+  "timestamp": "2013_01_26_22_02_11",
   "user": "andi"
 }
