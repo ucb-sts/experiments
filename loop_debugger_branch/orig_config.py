@@ -12,7 +12,7 @@ command_line = ('''./pox.py --verbose '''
                 '''openflow.discovery forwarding.l2_multi '''
                 '''sts.util.socket_mux.pox_monkeypatcher '''
                 '''openflow.of_01 --address=__address__ --port=__port__''')
-controllers = [ControllerConfig(command_line, cwd="pox", sync="tcp:localhost:18899")]
+controllers = [ControllerConfig(command_line, cwd="pox",sync="tcp:localhost:18899")]
 topology_class = MeshTopology
 topology_params = "num_switches=2"
 dataplane_trace = "dataplane_traces/ping_pong_same_subnet.trace"
@@ -21,7 +21,8 @@ simulation_config = SimulationConfig(controller_configs=controllers,
                                      topology_class=topology_class,
                                      topology_params=topology_params,
                                      dataplane_trace=dataplane_trace,
-                                     multiplex_sockets=True)
+                                     multiplex_sockets=True
+                                     )
 
 def my_funky_invariant_check(simulation):
   from sts.invariant_checker import InvariantChecker

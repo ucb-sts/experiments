@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "config/fuzz_pox_mesh.py"
+  ],
+  "cwd": "/home/rcs/Research/UCB/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5660 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:       6116048    3808736    2307312          0     492404    2298936\n-/+ buffers/cache:    1017396    5098652\nSwap:      6283260       3528    6279732",
+    "name": "c5",
+    "num_cores": "12",
+    "uptime": "17:53:03 up 59 days,  9:02,  2 users,  load average: 0.05, 0.03, 0.05"
+  },
+  "modules": {
+    "pox": {
+      "branch": "debugger",
+      "commit": "eb83192ca8c2b25a43fa78d9a3a6a8ae69ef7234"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "3a4344f81813f96c626ec6e0c1728021b1a5171a"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.10",
+    "uname": "Linux c5 3.0.0-28-server #45-Ubuntu SMP Wed Nov 14 22:15:34 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2013_01_27_17_53_03",
+  "user": "rcs"
+}
