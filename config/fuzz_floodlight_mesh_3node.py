@@ -37,7 +37,7 @@ def my_funky_invariant_check(simulation):
   result = InvariantChecker.check_loops(simulation)
   if result:
     return result
-  result = InvariantChecker.check_connectivity(simulation)
+  result = InvariantChecker.python_check_connectivity(simulation)
   if not result:
     print "Connectivity established - bailing out"
     import sys
@@ -52,7 +52,7 @@ control_flow = Fuzzer(simulation_config, check_interval=20,
                       input_logger=InputLogger(),
                       invariant_check=my_funky_invariant_check,
                       steps=999,
-                      fuzzer_params="exp/config/fuzzer_params_no_failure.py"
+                      fuzzer_params="exp/config/fuzzer_params_heavy_failures.py"
                       #random_seed=466448715
                       )
 #control_flow = Interactive(simulation_config, input_logger=InputLogger())
