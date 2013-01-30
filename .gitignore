@@ -1,0 +1,12 @@
+.*pyc
+.*pyo
+*.py~
+*.py.bak
+old.*
+.*
+*.patch
+*.diff
+*.orig
+*.swp
+*.out
+
