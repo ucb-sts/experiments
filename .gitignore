@@ -1,12 +1,18 @@
-.*pyc
-.*pyo
-*.py~
+# Python
+*.py[cod]
 *.py.bak
+
+# Patch / gen
 old.*
 .*
 *.patch
 *.diff
 *.orig
-*.swp
 *.out
 
+# Vim
+.*.sw[a-z]
+
+# Emacs
+\#*\#
+*~

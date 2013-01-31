@@ -1,0 +1,33 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "exp/loop_betta_branch/orig_config.py",
+    "-E",
+    "betta_run"
+  ],
+  "cwd": "/home/sam/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5560 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:      12390212    2559112    9831100          0     492000     648008\n-/+ buffers/cache:    1419104   10971108\nSwap:     12571644          0   12571644",
+    "name": "justine-rb2",
+    "num_cores": "8",
+    "uptime": "09:20:48 up 63 days, 30 min,  2 users,  load average: 0.00, 0.01, 0.05"
+  },
+  "modules": {
+    "pox": {
+      "branch": "HEAD",
+      "commit": "680ad6c13dfcb22de3af15e301b10d6feb9b819b"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "acd4599aa88ee722b3d27d5d28c1d73d3baf7b6b"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.04",
+    "uname": "Linux justine-rb2 2.6.38-11-generic-pae #50-Ubuntu SMP Mon Sep 12 22:21:04 UTC 2011 i686 i686 i386 GNU/Linux"
+  },
+  "timestamp": "2013_01_31_09_20_48",
+  "user": "sam"
+}
