@@ -12,5 +12,19 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(cmdlin
                  dataplane_trace="exp/head_nox_4_mesh_loop/dataplane.trace",
                  multiplex_sockets=False)
 
+def fast_die_invariant_check(simulation):
+  from sts.invariant_checker import InvariantChecker
+  result = InvariantChecker.check_loops(simulation)
+  if result:
+    return result
+  result = InvariantChecker.python_check_connectivity(simulation)
+  if not result:
+    print "Connectivity established - bailing out"
+    import sys
+    sys.exit(0)
+  return []
+
 control_flow = EfficientMCSFinder(simulation_config, "exp/head_nox_4_mesh_loop/events.trace",
-                                  wait_on_deterministic_values=False)
+                                  wait_on_deterministic_values=False,
+                                  invariant_check=fast_die_invariant_check
+                                  )
