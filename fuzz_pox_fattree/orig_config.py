@@ -8,9 +8,9 @@ from sts.invariant_checker import InvariantChecker
 command_line = ('''./pox.py --verbose --no-cli sts.syncproto.pox_syncer '''
                 '''openflow.discovery openflow.spanning_tree forwarding.l2_multi '''
                 '''sts.util.socket_mux.pox_monkeypatcher '''
-                '''openflow.of_01 --address=../sts_socket_pipe''')
-controllers = [ControllerConfig(command_line, address="sts_socket_pipe",
-    port=6635, cwd="pox", sync="tcp:localhost:18900")]
+                '''openflow.of_01 --address=__address__ --port=__port__''')
+controllers = [ControllerConfig(command_line,
+                                cwd="pox", sync="tcp:localhost:18900")]
 
 simulation_config = SimulationConfig(controller_configs=controllers,
                                      multiplex_sockets=True)
