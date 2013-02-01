@@ -1,0 +1,149 @@
+Sleeping 0 seconds after run
+Violation reproduced successfully! Proceeding with pruning
+Sleeping 0 seconds after run
+	** No events pruned for event type <class 'sts.replay_event.DataplaneDrop'>. Next!
+Sleeping 0 seconds after run
+	** No events pruned for event type <class 'sts.replay_event.SwitchFailure'>. Next!
+	** No events pruned for event type <class 'sts.replay_event.SwitchRecovery'>. Next!
+	** No events pruned for event type <class 'sts.replay_event.LinkFailure'>. Next!
+	** No events pruned for event type <class 'sts.replay_event.LinkRecovery'>. Next!
+Sleeping 0 seconds after run
+	** No events pruned for event type <class 'sts.replay_event.ControllerFailure'>. Next!
+	** No events pruned for event type <class 'sts.replay_event.ControllerRecovery'>. Next!
+	** No events pruned for event type <class 'sts.replay_event.PolicyChange'>. Next!
+	** No events pruned for event type <class 'sts.replay_event.ControlChannelBlock'>. Next!
+	** No events pruned for event type <class 'sts.replay_event.ControlChannelUnblock'>. Next!
+Subsets:
+l/0: e42 e43 e44 e45 e46 e47 e48 e49 e63 e72 e81 e90 e92 e101 e119 e130 e132 e141 e156 e170 e172 e187 e201 e215 e216 e217 e218 e219 e220 e221 e222 e223 e236 e237 e238 e239 e241 e242 e243 e244 e245 e248 e249 e250 e251 e252 e253 e254 e255 e256 e270 e271 e272 e273 e274 e275 e276 e277
+r/0: e279 e281 e282 e283 e284 e285 e286 e287 e288 e302 e303 e304 e305 e306 e307 e308 e309 e310 e312 e314 e315 e316 e317 e318 e319 e320 e321 e328 e329 e330 e331 e333 e334 e335 e336 e337 e340 e341 e342 e343 e344 e345 e346 e347 e348 e351 e352 e353 e354 e355 e364 e365 e366 e367 e369 e370 e372
+Current subset: l/0: e42 e43 e44 e45 e46 e47 e48 e49 e63 e72 e81 e90 e92 e101 e119 e130 e132 e141 e156 e170 e172 e187 e201 e215 e216 e217 e218 e219 e220 e221 e222 e223 e236 e237 e238 e239 e241 e242 e243 e244 e245 e248 e249 e250 e251 e252 e253 e254 e255 e256 e270 e271 e272 e273 e274 e275 e276 e277
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: r/0: e279 e281 e282 e283 e284 e285 e286 e287 e288 e302 e303 e304 e305 e306 e307 e308 e309 e310 e312 e314 e315 e316 e317 e318 e319 e320 e321 e328 e329 e330 e331 e333 e334 e335 e336 e337 e340 e341 e342 e343 e344 e345 e346 e347 e348 e351 e352 e353 e354 e355 e364 e365 e366 e367 e369 e370 e372
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.l/1: e42 e43 e44 e45 e46 e47 e48 e49 e63 e72 e81 e90 e92 e101 e119 e130 e132 e141 e156 e170 e172 e187 e201 e215 e216 e217 e218 e219 e220
+il/0.r/1: e221 e222 e223 e236 e237 e238 e239 e241 e242 e243 e244 e245 e248 e249 e250 e251 e252 e253 e254 e255 e256 e270 e271 e272 e273 e274 e275 e276 e277
+Current subset: il/0.l/1: e42 e43 e44 e45 e46 e47 e48 e49 e63 e72 e81 e90 e92 e101 e119 e130 e132 e141 e156 e170 e172 e187 e201 e215 e216 e217 e218 e219 e220
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.l/1.l/2: e42 e43 e44 e45 e46 e47 e48 e49 e63 e72 e81 e90 e92 e101 e119
+il/0.l/1.r/2: e130 e132 e141 e156 e170 e172 e187 e201 e215 e216 e217 e218 e219 e220
+Current subset: il/0.l/1.l/2: e42 e43 e44 e45 e46 e47 e48 e49 e63 e72 e81 e90 e92 e101 e119
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.l/1.l/2.l/3: e42 e43 e44 e45 e46 e47 e48 e49
+il/0.l/1.l/2.r/3: e63 e72 e81 e90 e92 e101 e119
+Current subset: il/0.l/1.l/2.l/3: e42 e43 e44 e45 e46 e47 e48 e49
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.l/1.l/2.l/3.l/4: e42 e43 e44 e45
+il/0.l/1.l/2.l/3.r/4: e46 e47 e48 e49
+Current subset: il/0.l/1.l/2.l/3.l/4: e42 e43 e44 e45
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: il/0.l/1.l/2.l/3.r/4: e46 e47 e48 e49
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.l/1.l/2.l/3.il/4.l/5: e42 e43
+il/0.l/1.l/2.l/3.il/4.r/5: e44 e45
+Current subset: il/0.l/1.l/2.l/3.il/4.l/5: e42 e43
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.l/1.l/2.l/3.il/4.l/5.l/6: e42
+il/0.l/1.l/2.l/3.il/4.l/5.r/6: e43
+Current subset: il/0.l/1.l/2.l/3.il/4.l/5.l/6: e42
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [TrafficInjection:e42]
+Recursing on right half
+Subsets:
+il/0.l/1.l/2.l/3.ir/4.l/5: e46 e47
+il/0.l/1.l/2.l/3.ir/4.r/5: e48 e49
+Current subset: il/0.l/1.l/2.l/3.ir/4.l/5: e46 e47
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: il/0.l/1.l/2.l/3.ir/4.r/5: e48 e49
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+il/0.l/1.l/2.l/3.ir/4.r/5.l/6: e48
+il/0.l/1.l/2.l/3.ir/4.r/5.r/6: e49
+Current subset: il/0.l/1.l/2.l/3.ir/4.r/5.l/6: e48
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [DataplanePermit:e48:(u'DataplanePermit', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.1.4', u'dl_src': u'12:34:56:78:01:04', u'nw_dst': u'123.123.1.4'}, u"host:[IPAddr('123.123.1.4')]", u'12:34:56:78:01:04')]
+Recursing on right half
+Subsets:
+ir/0.l/1: e279 e281 e282 e283 e284 e285 e286 e287 e288 e302 e303 e304 e305 e306 e307 e308 e309 e310 e312 e314 e315 e316 e317 e318 e319 e320 e321 e328 e329
+ir/0.r/1: e330 e331 e333 e334 e335 e336 e337 e340 e341 e342 e343 e344 e345 e346 e347 e348 e351 e352 e353 e354 e355 e364 e365 e366 e367 e369 e370 e372
+Current subset: ir/0.l/1: e279 e281 e282 e283 e284 e285 e286 e287 e288 e302 e303 e304 e305 e306 e307 e308 e309 e310 e312 e314 e315 e316 e317 e318 e319 e320 e321 e328 e329
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.r/1: e330 e331 e333 e334 e335 e336 e337 e340 e341 e342 e343 e344 e345 e346 e347 e348 e351 e352 e353 e354 e355 e364 e365 e366 e367 e369 e370 e372
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+ir/0.r/1.l/2: e330 e331 e333 e334 e335 e336 e337 e340 e341 e342 e343 e344 e345 e346
+ir/0.r/1.r/2: e347 e348 e351 e352 e353 e354 e355 e364 e365 e366 e367 e369 e370 e372
+Current subset: ir/0.r/1.l/2: e330 e331 e333 e334 e335 e336 e337 e340 e341 e342 e343 e344 e345 e346
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.r/1.r/2: e347 e348 e351 e352 e353 e354 e355 e364 e365 e366 e367 e369 e370 e372
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+ir/0.r/1.r/2.l/3: e347 e348 e351 e352 e353 e354 e355
+ir/0.r/1.r/2.r/3: e364 e365 e366 e367 e369 e370 e372
+Current subset: ir/0.r/1.r/2.l/3: e347 e348 e351 e352 e353 e354 e355
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.r/1.r/2.l/3.l/4: e347 e348 e351 e352
+ir/0.r/1.r/2.l/3.r/4: e353 e354 e355
+Current subset: ir/0.r/1.r/2.l/3.l/4: e347 e348 e351 e352
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.r/1.r/2.l/3.l/4.l/5: e347 e348
+ir/0.r/1.r/2.l/3.l/4.r/5: e351 e352
+Current subset: ir/0.r/1.r/2.l/3.l/4.l/5: e347 e348
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.r/1.r/2.l/3.l/4.r/5: e351 e352
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+ir/0.r/1.r/2.l/3.l/4.r/5.l/6: e351
+ir/0.r/1.r/2.l/3.l/4.r/5.r/6: e352
+Current subset: ir/0.r/1.r/2.l/3.l/4.r/5.l/6: e351
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [HostMigration:e351:('HostMigration', 1, 4, 2, 5, u"host:[IPAddr('123.123.1.4')]")]
+Final MCS (3 elements):
+ - TrafficInjection:e42
+ - DataplanePermit:e48
+ - HostMigration:e351
