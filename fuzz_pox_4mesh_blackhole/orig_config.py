@@ -11,7 +11,8 @@ command_line = ('''./pox.py --verbose --no-cli sts.syncproto.pox_syncer '''
                 '''sts.util.socket_mux.pox_monkeypatcher '''
                 '''openflow.of_01 --address=__address__ --port=__port__''')
 controllers = [ControllerConfig(command_line,
-                                cwd="pox", sync="tcp:localhost:18900")]
+                                port=6632,
+                                cwd="pox", sync="tcp:localhost:18901")]
 
 topology_class = MeshTopology
 topology_params = "num_switches=4"
