@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "config/eugene_epsilon_mcs.py"
+  ],
+  "cwd": "/home/rcs/Research/UCB/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5660 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:       6116048    4202572    1913476          0     494984    2453648\n-/+ buffers/cache:    1253940    4862108\nSwap:      6283260       3528    6279732",
+    "name": "c5",
+    "num_cores": "12",
+    "uptime": "00:05:40 up 59 days, 15:15,  3 users,  load average: 0.07, 0.14, 0.14"
+  },
+  "modules": {
+    "pox": {
+      "branch": "debugger",
+      "commit": "680ad6c13dfcb22de3af15e301b10d6feb9b819b"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "f921a3910d7600db82d830b3698bf33f219a72c8"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.10",
+    "uname": "Linux c5 3.0.0-28-server #45-Ubuntu SMP Wed Nov 14 22:15:34 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2013_01_28_00_05_40",
+  "user": "rcs"
+}
