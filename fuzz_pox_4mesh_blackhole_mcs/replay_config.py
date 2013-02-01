@@ -11,5 +11,5 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(cmdlin
                  dataplane_trace="exp/fuzz_pox_4mesh_blackhole/dataplane.trace",
                  multiplex_sockets=True)
 
-control_flow = Replayer(simulation_config, "exp/fuzz_pox_4mesh_blackhole_mcs/intermcs_2_il.0/events.trace",
+control_flow = Replayer(simulation_config, "exp/fuzz_pox_4mesh_blackhole_mcs/events.trace",
                         wait_on_deterministic_values=False)
