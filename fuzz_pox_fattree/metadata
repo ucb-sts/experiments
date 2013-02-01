@@ -2,30 +2,30 @@
   "argv": [
     "./simulator.py",
     "-c",
-    "exp/config/fuzz_pox_fattree.py"
+    "exp/fuzz_pox_fattree/orig_config.py"
   ],
-  "cwd": "/home/colin/sts",
+  "cwd": "/home/sam/code/sts",
   "host": {
-    "cpu_info": "Intel(R) Xeon(R) CPU X5560 @ 2.80GHz",
-    "free": "total       used       free     shared    buffers     cached\nMem:      12390212    2472944    9917268          0     492196     565444\n-/+ buffers/cache:    1415304   10974908\nSwap:     12571644          0   12571644",
-    "name": "justine-rb2",
-    "num_cores": "8",
-    "uptime": "16:16:35 up 62 days,  7:26,  4 users,  load average: 0.16, 0.05, 0.06"
+    "cpu_info": "AMD Athlon(tm) Dual Core Processor 4850e",
+    "free": "total       used       free     shared    buffers     cached\nMem:       6113280    5508688     604592          0     502676    2486984\n-/+ buffers/cache:    2519028    3594252\nSwap:      6288380          0    6288380",
+    "name": "samw-pc",
+    "num_cores": "2",
+    "uptime": "20:13:09 up 1 day, 11:22,  2 users,  load average: 0.61, 0.62, 0.60"
   },
   "modules": {
     "pox": {
-      "branch": "HEAD",
-      "commit": "680ad6c13dfcb22de3af15e301b10d6feb9b819b"
+      "branch": "debugger",
+      "commit": "6a6a98d9211a273f98f793af15739d8190dd322a"
     },
     "sts": {
-      "branch": "master",
-      "commit": "a0720060338eface7e51e37ddf3fc91c0bbcfabb"
+      "branch": "pox_blackhole",
+      "commit": "2bfa6cfeca689dc8a7adf18317206c4f39794484"
     }
   },
   "sys": {
-    "lsb_release": "Ubuntu 11.04",
-    "uname": "Linux justine-rb2 2.6.38-11-generic-pae #50-Ubuntu SMP Mon Sep 12 22:21:04 UTC 2011 i686 i686 i386 GNU/Linux"
+    "lsb_release": "Ubuntu 12.04.1 LTS",
+    "uname": "Linux samw-pc 3.2.0-36-generic #57-Ubuntu SMP Tue Jan 8 21:44:52 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
   },
-  "timestamp": "2013_01_30_16_16_35",
-  "user": "colin"
+  "timestamp": "2013_01_31_20_13_09",
+  "user": "sam"
 }
