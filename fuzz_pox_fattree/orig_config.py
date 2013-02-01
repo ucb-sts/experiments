@@ -19,7 +19,7 @@ simulation_config = SimulationConfig(controller_configs=controllers,
 #exp_name = "fat_tree_migrations_and_switches"
 
 class MigrationChecker(object):
-  def __call__(self, simulation):
+  def check_stale_entries(self, simulation):
     '''Check that the migrated host's old switch has stale entries'''
     if self.fuzzer.migrated_link:
       link = self.fuzzer.migrated_link
@@ -31,10 +31,11 @@ class MigrationChecker(object):
       # and old_port still being in routing table
       port_down = old_port_no in old_switch.down_port_nos
       old_entries = old_switch.table.entries_for_port(old_port_no)
+      old_old_entries = self.fuzzer.old_routing_entries
+
       if port_down and len(old_entries) > 0:
         # we have a violation!
         return old_entries
-
     return []
 
 mc = MigrationChecker()
@@ -44,10 +45,10 @@ control_flow = Fuzzer(simulation_config,
                       #fuzzer_params="exp/config/fuzzer_params_migration_and_switches.py",
                       check_interval=20,
                       halt_on_violation=True,
-                      single_hm_wait_rounds=50,
+                      single_hm_wait_rounds=30,
                       initialization_rounds=70,
-                      steps=2000,
+                      steps=300,
                       input_logger=InputLogger(),
-                      invariant_check=mc)
+                      invariant_check=mc.check_stale_entries)
 
 mc.fuzzer = control_flow # HUGE HACK
