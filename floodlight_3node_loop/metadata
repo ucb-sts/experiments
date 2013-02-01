@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "exp/config/fuzz_floodlight_mesh_3node.py"
+  ],
+  "cwd": "/data/entw/openflow/sts",
+  "host": {
+    "cpu_info": "Intel(R) Core(TM) i5 CPU M 540 @ 2.53GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:        608212     251220     356992          0      25424     134660\n-/+ buffers/cache:      91136     517076\nSwap:       409620     101660     307960",
+    "name": "aquil-vm",
+    "num_cores": "2",
+    "uptime": "22:48:07 up 9 days, 19:34, 12 users,  load average: 2.47, 2.20, 1.29"
+  },
+  "modules": {
+    "pox": {
+      "branch": "debugger",
+      "commit": "680ad6c13dfcb22de3af15e301b10d6feb9b819b"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "4b3d1418ca091cfb3cfac2e53e92681741c5bcd9"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 12.04.1 LTS",
+    "uname": "Linux aquil-vm 3.2.0-32-generic #51-Ubuntu SMP Wed Sep 26 21:32:50 UTC 2012 i686 i686 i386 GNU/Linux"
+  },
+  "timestamp": "2013_01_27_22_48_07",
+  "user": "andi"
+}
