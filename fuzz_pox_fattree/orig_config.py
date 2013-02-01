@@ -18,27 +18,21 @@ simulation_config = SimulationConfig(controller_configs=controllers,
 #timestamp_results = True
 #exp_name = "fat_tree_migrations_and_switches"
 
-class MigrationChecker(object):
-  def check_stale_entries(self, simulation):
-    '''Check that the migrated host's old switch has stale entries'''
-    if self.fuzzer.migrated_link:
-      link = self.fuzzer.migrated_link
-      old_switch = link.switch
-      old_port = link.switch_port # ofp_phy_port
-      old_port_no = old_port.port_no
+def check_stale_entries(simulation):
+  '''Check that the migrated host's old switch has stale entries'''
+  dpid = 1 # hardcoding host 1
+  port_no = 1
 
-      # Conjunction of old_port in switch's down ports
-      # and old_port still being in routing table
-      port_down = old_port_no in old_switch.down_port_nos
-      old_entries = old_switch.table.entries_for_port(old_port_no)
-      old_old_entries = self.fuzzer.old_routing_entries
+  switch = simulation.topology.get_switch(dpid)
 
-      if port_down and len(old_entries) > 0:
-        # we have a violation!
-        return old_entries
-    return []
+  port_down = port_no in switch.down_port_nos
+  old_entries = switch.table.entries_for_port(port_no)
 
-mc = MigrationChecker()
+  if port_down and len(old_entries) > 0:
+    # we have a violation!
+    return old_entries
+
+  return []
 
 # Use a Fuzzer (already the default)
 control_flow = Fuzzer(simulation_config,
@@ -49,6 +43,4 @@ control_flow = Fuzzer(simulation_config,
                       initialization_rounds=70,
                       steps=300,
                       input_logger=InputLogger(),
-                      invariant_check=mc.check_stale_entries)
-
-mc.fuzzer = control_flow # HUGE HACK
+                      invariant_check=check_stale_entries)
