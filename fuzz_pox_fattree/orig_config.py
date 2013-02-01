@@ -43,9 +43,11 @@ mc = MigrationChecker()
 control_flow = Fuzzer(simulation_config,
                       #fuzzer_params="exp/config/fuzzer_params_migration_and_switches.py",
                       check_interval=20,
-                      halt_on_violation=False,
-                      initialization_rounds=65,
+                      halt_on_violation=True,
+                      single_hm_wait_rounds=50,
+                      initialization_rounds=70,
                       steps=2000,
                       input_logger=InputLogger(),
-                      invariant_check=InvariantChecker.python_check_connectivity)
+                      invariant_check=mc)
 
+mc.fuzzer = control_flow # HUGE HACK
