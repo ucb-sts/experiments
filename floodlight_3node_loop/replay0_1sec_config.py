@@ -16,7 +16,7 @@ jvm_opts += " -Dpython.security.respectJavaAccessibility=false"
 log_config = "-Dlogback.configurationFile=logback.xml"
 command_line = ("java %s %s -jar target/floodlight.jar -cf __config__" % (jvm_opts, log_config))
 
-ttimestamp_results = True
+timestamp_results = True
 
 additional_ports = find_ports(of=range(6633,6833), rest=range(8080, 8280), jython=range(7655, 7855))
 controllers = [ ControllerConfig(command_line, cwd="floodlight", port=additional_ports['of'], additional_ports = additional_ports, uuid=("127.0.0.1", 6633), config_template="exp/config/floodlightconfig.properties.template") ]
@@ -25,8 +25,8 @@ simulation_config = SimulationConfig(controller_configs=controllers,
                  topology_class=MeshTopology,
                  topology_params="num_switches=3",
                  patch_panel_class=BufferedPatchPanel,
-                 dataplane_trace="exp/fuzz_floodlight_mesh_3node_2013_01_27_22_48_07/dataplane.trace",
+                 dataplane_trace="exp/floodlight_3node_loop/dataplane.trace",
                  multiplex_sockets=False)
 
-control_flow = Replayer(simulation_config, "exp/fuzz_floodlight_mesh_3node_2013_01_27_22_48_07/events.trace",
+control_flow = Replayer(simulation_config, "exp/floodlight_3node_loop/events.trace", epsilon_seconds=0.1,
                         wait_on_deterministic_values=False)
