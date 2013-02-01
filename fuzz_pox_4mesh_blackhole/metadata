@@ -7,10 +7,10 @@
   "cwd": "/home/sam/code/sts",
   "host": {
     "cpu_info": "AMD Athlon(tm) Dual Core Processor 4850e",
-    "free": "total       used       free     shared    buffers     cached\nMem:       6113280    2641484    3471796          0     284572     949600\n-/+ buffers/cache:    1407312    4705968\nSwap:      6288380          0    6288380",
+    "free": "total       used       free     shared    buffers     cached\nMem:       6113280    2684416    3428864          0     285540     950948\n-/+ buffers/cache:    1447928    4665352\nSwap:      6288380          0    6288380",
     "name": "samw-pc",
     "num_cores": "2",
-    "uptime": "09:05:11 up 21 min,  2 users,  load average: 1.15, 1.09, 0.87"
+    "uptime": "09:11:10 up 27 min,  2 users,  load average: 0.55, 0.84, 0.84"
   },
   "modules": {
     "pox": {
@@ -26,6 +26,6 @@
     "lsb_release": "Ubuntu 12.04.1 LTS",
     "uname": "Linux samw-pc 3.2.0-37-generic #58-Ubuntu SMP Thu Jan 24 15:28:10 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
   },
-  "timestamp": "2013_02_01_09_05_11",
+  "timestamp": "2013_02_01_09_11_10",
   "user": "sam"
 }

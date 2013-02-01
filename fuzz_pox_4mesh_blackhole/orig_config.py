@@ -43,10 +43,10 @@ def check_stale_entries(simulation):
 # Use a Fuzzer (already the default)
 control_flow = Fuzzer(simulation_config,
                       #fuzzer_params="exp/config/fuzzer_params_migration_and_switches.py",
-                      check_interval=20,
+                      check_interval=10,
                       halt_on_violation=True,
-                      single_hm_wait_rounds=30,
-                      initialization_rounds=70,
-                      steps=300,
+                      single_hm_wait_rounds=1,
+                      initialization_rounds=50,
+                      steps=200,
                       input_logger=InputLogger(),
                       invariant_check=check_stale_entries)
