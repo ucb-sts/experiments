@@ -2,30 +2,30 @@
   "argv": [
     "./simulator.py",
     "-c",
-    "nox_mesh_4"
+    "exp/nox_mesh_4_loop/orig_config.py"
   ],
-  "cwd": "/home/sam/sts",
+  "cwd": "/home/rcs/Research/UCB/sts",
   "host": {
     "cpu_info": "Intel(R) Xeon(R) CPU X5660 @ 2.80GHz",
-    "free": "total       used       free     shared    buffers     cached\nMem:       6116048    3945236    2170812          0     503264    2726692\n-/+ buffers/cache:     715280    5400768\nSwap:      6283260       3524    6279736",
+    "free": "total       used       free     shared    buffers     cached\nMem:       6116048    4283716    1832332          0     485100    2740408\n-/+ buffers/cache:    1058208    5057840\nSwap:      6283260       3492    6279768",
     "name": "c5",
     "num_cores": "12",
-    "uptime": "19:54:43 up 62 days, 11:04,  2 users,  load average: 0.08, 0.03, 0.05"
+    "uptime": "14:51:26 up 103 days,  5:01,  2 users,  load average: 0.22, 0.49, 0.55"
   },
   "modules": {
     "pox": {
-      "branch": "HEAD",
-      "commit": "459ea6aef4aeee9d78d83875953815e5adad8137"
+      "branch": "debugger",
+      "commit": "badd05d9a26062a0e400c1f334fdea838cc53fce"
     },
     "sts": {
       "branch": "master",
-      "commit": "0bd55a23fd8edead07b7c3adc99fed526c67aaf0"
+      "commit": "ddc0938ff8185fe6206254394233fb31dd20b241"
     }
   },
   "sys": {
     "lsb_release": "Ubuntu 11.10",
     "uname": "Linux c5 3.0.0-28-server #45-Ubuntu SMP Wed Nov 14 22:15:34 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux"
   },
-  "timestamp": "2013_01_30_19_54_43",
-  "user": "sam"
+  "timestamp": "2013_03_12_14_51_26",
+  "user": "rcs"
 }

@@ -8,8 +8,9 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(cmdlin
                  topology_class=MeshTopology,
                  topology_params="num_switches=4",
                  patch_panel_class=BufferedPatchPanel,
-                 dataplane_trace="exp/nox_mesh_4_loop/dataplane.trace",
+                 dataplane_trace="experiments/nox_mesh_4_loop/dataplane.trace",
                  multiplex_sockets=False)
 
-control_flow = Replayer(simulation_config, "exp/nox_mesh_4_loop/events.trace",
+control_flow = Replayer(simulation_config, "experiments/nox_mesh_4_loop/events.trace",
                         wait_on_deterministic_values=False)
+# Invariant check: 'check_for_loops_or_connectivity'

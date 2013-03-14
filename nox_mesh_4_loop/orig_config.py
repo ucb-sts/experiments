@@ -23,21 +23,9 @@ simulation_config = SimulationConfig(controller_configs=controllers,
 #simulation_config = SimulationConfig(controller_configs=controllers,
 #                                     dataplane_trace=dataplane_trace)
 
-def fast_die_invariant_check(simulation):
-  from sts.invariant_checker import InvariantChecker
-  result = InvariantChecker.check_loops(simulation)
-  if result:
-    return result
-  result = InvariantChecker.python_check_connectivity(simulation)
-  if not result:
-    print "Connectivity established - bailing out"
-    import sys
-    sys.exit(0)
-  return []
-
 # Use a Fuzzer (already the default)
 control_flow = Fuzzer(simulation_config, input_logger=InputLogger(),
                       check_interval=20,
                       halt_on_violation=True,
                       steps=300,
-                      invariant_check=fast_die_invariant_check)
+                      invariant_check_name="check_for_loops_or_connectivity")
