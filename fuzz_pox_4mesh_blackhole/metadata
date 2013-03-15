@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "exp/fuzz_pox_4mesh_blackhole/orig_config.py"
+  ],
+  "cwd": "/home/sam/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5660 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:       6116048    4943080    1172968          0     506484    2483740\n-/+ buffers/cache:    1952856    4163192\nSwap:      6283260       3524    6279736",
+    "name": "c5",
+    "num_cores": "12",
+    "uptime": "09:31:29 up 64 days, 41 min,  4 users,  load average: 0.57, 0.41, 0.38"
+  },
+  "modules": {
+    "pox": {
+      "branch": "debugger",
+      "commit": "6a6a98d9211a273f98f793af15739d8190dd322a"
+    },
+    "sts": {
+      "branch": "pox_blackhole",
+      "commit": "37c01da2627d406841b9b52ec7a1771a49619526"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.10",
+    "uname": "Linux c5 3.0.0-28-server #45-Ubuntu SMP Wed Nov 14 22:15:34 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2013_02_01_09_31_29",
+  "user": "sam"
+}
