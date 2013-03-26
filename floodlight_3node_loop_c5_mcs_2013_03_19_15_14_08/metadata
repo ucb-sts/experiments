@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/floodlight_3node_loop_c5/mcs_config.py"
+  ],
+  "cwd": "/home/andi/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5660 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:       6116048    5601308     514740          0     361424    3634948\n-/+ buffers/cache:    1604936    4511112\nSwap:      6283260       3892    6279368",
+    "name": "c5",
+    "num_cores": "12",
+    "uptime": "15:14:08 up 110 days,  5:24,  3 users,  load average: 0.40, 0.66, 1.25"
+  },
+  "modules": {
+    "pox": {
+      "branch": "debugger",
+      "commit": "badd05d9a26062a0e400c1f334fdea838cc53fce"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "3649e0b335ea674cc67779ab0c5e905bef641b54"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.10",
+    "uname": "Linux c5 3.0.0-28-server #45-Ubuntu SMP Wed Nov 14 22:15:34 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2013_03_19_15_14_08",
+  "user": "andi"
+}
