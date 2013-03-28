@@ -1,0 +1,33 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-n",
+    "updated_debug_branch_loop_many_iters",
+    "-c",
+    "experiments/updated_debug_branch_loop/mcs_config.py"
+  ],
+  "cwd": "/home/rcs/Research/UCB/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5560 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:      12321316    4879024    7442292          0     120180    4063988\n-/+ buffers/cache:     694856   11626460\nSwap:     12571644      29360   12542284",
+    "name": "c3",
+    "num_cores": "8",
+    "uptime": "18:40:22 up 47 days,  4:47,  3 users,  load average: 0.00, 0.01, 0.05"
+  },
+  "modules": {
+    "pox": {
+      "branch": "HEAD",
+      "commit": "680ad6c13dfcb22de3af15e301b10d6feb9b819b"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "2bee5f2b40c4184ec3a08cea413dd9ffa43f09ff"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.04",
+    "uname": "Linux c3 2.6.38-8-server #42-Ubuntu SMP Mon Apr 11 03:49:04 UTC 2011 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2013_03_20_18_40_22",
+  "user": "rcs"
+}

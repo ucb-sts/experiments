@@ -1,0 +1,89 @@
+Sleeping 0 seconds after run
+Violation reproduced successfully! Proceeding with pruning
+Subsets:
+l/0: a(e30,e33) e31 e32 a(e42,e48) a(e49,e58) a(e53,e64)
+r/0: e71 e72 a(e85,e95) e86 e94 e109
+Current subset: l/0: a(e30,e33) e31 e32 a(e42,e48) a(e49,e58) a(e53,e64)
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: r/0: e71 e72 a(e85,e95) e86 e94 e109
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.l/1: a(e30,e33) e31 e32
+il/0.r/1: a(e42,e48) a(e49,e58) a(e53,e64)
+Current subset: il/0.l/1: a(e30,e33) e31 e32
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.l/1.l/2: a(e30,e33) e31
+il/0.l/1.r/2: e32
+Current subset: il/0.l/1.l/2: a(e30,e33) e31
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.l/1.l/2.l/3: a(e30,e33)
+il/0.l/1.l/2.r/3: e31
+Current subset: il/0.l/1.l/2.l/3: a(e30,e33)
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: il/0.l/1.l/2.r/3: e31
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [TrafficInjection:e31]
+Recursing on right half
+Subsets:
+ir/0.l/1: e71 e72 a(e85,e95)
+ir/0.r/1: e86 e94 e109
+Current subset: ir/0.l/1: e71 e72 a(e85,e95)
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.r/1: e86 e94 e109
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+ir/0.il/1.l/2: e71 e72
+ir/0.il/1.r/2: a(e85,e95)
+Current subset: ir/0.il/1.l/2: e71 e72
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.il/1.l/2.l/3: e71
+ir/0.il/1.l/2.r/3: e72
+Current subset: ir/0.il/1.l/2.l/3: e71
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.il/1.l/2.r/3: e72
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [TrafficInjection:e72]
+Recursing on right half
+Subsets:
+ir/0.ir/1.l/2: e86 e94
+ir/0.ir/1.r/2: e109
+Current subset: ir/0.ir/1.l/2: e86 e94
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.ir/1.l/2.l/3: e86
+ir/0.ir/1.l/2.r/3: e94
+Current subset: ir/0.ir/1.l/2.l/3: e86
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [TrafficInjection:e86]
+Final MCS (3 elements):
+ - TrafficInjection:e31
+ - TrafficInjection:e72
+ - TrafficInjection:e86
+=== Total replays: 13 ===

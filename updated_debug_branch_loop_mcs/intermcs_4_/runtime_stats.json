@@ -1,0 +1,333 @@
+{
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(cmdline='./pox.py --verbose sts.syncproto.pox_syncer --blocking=False openflow.discovery forwarding.l2_multi sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=__address__ --port=__port__', address='127.0.0.1', port=6633, cwd='pox', sync='tcp:localhost:18899')],\n                 topology_class=MeshTopology,\n                 topology_params=\"num_switches=2\",\n                 patch_panel_class=BufferedPatchPanel,\n                 dataplane_trace=\"dataplane_traces/ping_pong_same_subnet.trace\",\n                 multiplex_sockets=True)",
+  "early_internal_events": {
+    "1": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": [],
+    "8": [],
+    "9": []
+  },
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 50,
+    "1": 50,
+    "2": 50,
+    "3": 39,
+    "4": 39,
+    "5": 39,
+    "6": 36,
+    "7": 34,
+    "8": 34
+  },
+  "matched_events": {
+    "1": {
+      "CheckInvariants": 2,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 23,
+      "ControlMessageSend": 28,
+      "ControllerStateChange": 25,
+      "DataplaneDrop": 2,
+      "DataplanePermit": 7,
+      "HostMigration": 2,
+      "LinkFailure": 6,
+      "LinkRecovery": 6,
+      "SwitchFailure": 1,
+      "SwitchRecovery": 1,
+      "TrafficInjection": 5
+    },
+    "2": {
+      "CheckInvariants": 1,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 19,
+      "ControlMessageSend": 17,
+      "ControllerStateChange": 13,
+      "DataplaneDrop": 1,
+      "DataplanePermit": 1,
+      "HostMigration": 3,
+      "LinkFailure": 3,
+      "LinkRecovery": 3,
+      "SwitchFailure": 2,
+      "SwitchRecovery": 2,
+      "TrafficInjection": 5
+    },
+    "3": {
+      "CheckInvariants": 2,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 23,
+      "ControlMessageSend": 31,
+      "ControllerStateChange": 23,
+      "DataplaneDrop": 2,
+      "DataplanePermit": 7,
+      "HostMigration": 3,
+      "LinkFailure": 8,
+      "LinkRecovery": 8,
+      "SwitchFailure": 2,
+      "SwitchRecovery": 2,
+      "TrafficInjection": 8
+    },
+    "4": {
+      "CheckInvariants": 2,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 21,
+      "ControlMessageSend": 25,
+      "ControllerStateChange": 18,
+      "DataplaneDrop": 1,
+      "DataplanePermit": 4,
+      "HostMigration": 3,
+      "LinkFailure": 6,
+      "LinkRecovery": 6,
+      "SwitchFailure": 2,
+      "SwitchRecovery": 2,
+      "TrafficInjection": 6
+    },
+    "5": {
+      "CheckInvariants": 1,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 19,
+      "ControlMessageSend": 21,
+      "ControllerStateChange": 13,
+      "DataplaneDrop": 1,
+      "DataplanePermit": 1,
+      "HostMigration": 3,
+      "LinkFailure": 5,
+      "LinkRecovery": 5,
+      "SwitchFailure": 2,
+      "SwitchRecovery": 2,
+      "TrafficInjection": 7
+    },
+    "6": {
+      "CheckInvariants": 1,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 23,
+      "ControlMessageSend": 29,
+      "ControllerStateChange": 23,
+      "DataplaneDrop": 2,
+      "DataplanePermit": 7,
+      "HostMigration": 3,
+      "LinkFailure": 7,
+      "LinkRecovery": 7,
+      "SwitchFailure": 2,
+      "SwitchRecovery": 2,
+      "TrafficInjection": 8
+    },
+    "7": {
+      "CheckInvariants": 1,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 23,
+      "ControlMessageSend": 27,
+      "ControllerStateChange": 23,
+      "DataplaneDrop": 2,
+      "DataplanePermit": 7,
+      "HostMigration": 3,
+      "LinkFailure": 6,
+      "LinkRecovery": 6,
+      "SwitchFailure": 2,
+      "SwitchRecovery": 2,
+      "TrafficInjection": 8
+    },
+    "8": {
+      "CheckInvariants": 1,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 19,
+      "ControlMessageSend": 23,
+      "ControllerStateChange": 13,
+      "DataplaneDrop": 1,
+      "DataplanePermit": 1,
+      "HostMigration": 3,
+      "LinkFailure": 6,
+      "LinkRecovery": 6,
+      "SwitchFailure": 2,
+      "SwitchRecovery": 2,
+      "TrafficInjection": 7
+    },
+    "9": {
+      "CheckInvariants": 1,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 23,
+      "ControlMessageSend": 25,
+      "ControllerStateChange": 23,
+      "DataplaneDrop": 2,
+      "DataplanePermit": 7,
+      "HostMigration": 3,
+      "LinkFailure": 5,
+      "LinkRecovery": 5,
+      "SwitchFailure": 2,
+      "SwitchRecovery": 2,
+      "TrafficInjection": 8
+    }
+  },
+  "new_internal_events": {
+    "1": [
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(4)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "2": [
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1363758689, microSeconds=627733), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-02',)\",))",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(6)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(5)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "3": [
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1363758711, microSeconds=3881), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2fcdb50>,)',))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1363758711, microSeconds=5203), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-02',)\",))",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(6)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(5)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "4": [
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1363758744, microSeconds=133285), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-02',)\",))",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(6)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(5)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "5": [
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1363758785, microSeconds=231104), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-02',)\",))",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(6)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(5)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "6": [
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1363758807, microSeconds=861592), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x3161b50>,)',))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1363758807, microSeconds=862971), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-02',)\",))",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(6)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(5)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "7": [
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1363758832, microSeconds=243909), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2d20990>,)',))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1363758832, microSeconds=245233), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-02',)\",))",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(6)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(5)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "8": [
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1363758872, microSeconds=969538), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-02',)\",))",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(6)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(5)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "9": [
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1363758898, microSeconds=302940), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2e85610>,)',))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1363758898, microSeconds=304272), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-02',)\",))",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(6)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(5)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ]
+  },
+  "original_duration_seconds": 7.742336988449097,
+  "peeker": false,
+  "prune_start_epoch": 1363758630.687838,
+  "replay_duration_seconds": 9.404636144638062,
+  "replay_end_epoch": 1363758630.687792,
+  "replay_start_epoch": 1363758621.283156,
+  "runtime_stats_file": "experiments/updated_debug_branch_loop_mcs/intermcs_4_/runtime_stats.json",
+  "timed_out_events": {
+    "1": {
+      "ControlMessageReceive": 7,
+      "ControlMessageSend": 13,
+      "ControllerStateChange": 8,
+      "DataplaneDrop": 1,
+      "DataplanePermit": 1
+    },
+    "2": {
+      "ControlMessageReceive": 11,
+      "ControlMessageSend": 24,
+      "ControllerStateChange": 20,
+      "DataplaneDrop": 4,
+      "DataplanePermit": 7
+    },
+    "3": {
+      "ControlMessageReceive": 7,
+      "ControlMessageSend": 10,
+      "ControllerStateChange": 10,
+      "DataplaneDrop": 4,
+      "DataplanePermit": 1
+    },
+    "4": {
+      "ControlMessageReceive": 9,
+      "ControlMessageSend": 16,
+      "ControllerStateChange": 15,
+      "DataplaneDrop": 4,
+      "DataplanePermit": 4
+    },
+    "5": {
+      "ControlMessageReceive": 11,
+      "ControlMessageSend": 20,
+      "ControllerStateChange": 20,
+      "DataplaneDrop": 5,
+      "DataplanePermit": 7
+    },
+    "6": {
+      "ControlMessageReceive": 7,
+      "ControlMessageSend": 12,
+      "ControllerStateChange": 10,
+      "DataplaneDrop": 4,
+      "DataplanePermit": 1
+    },
+    "7": {
+      "ControlMessageReceive": 7,
+      "ControlMessageSend": 14,
+      "ControllerStateChange": 10,
+      "DataplaneDrop": 4,
+      "DataplanePermit": 1
+    },
+    "8": {
+      "ControlMessageReceive": 11,
+      "ControlMessageSend": 18,
+      "ControllerStateChange": 20,
+      "DataplaneDrop": 5,
+      "DataplanePermit": 7
+    },
+    "9": {
+      "ControlMessageReceive": 7,
+      "ControlMessageSend": 16,
+      "ControllerStateChange": 10,
+      "DataplaneDrop": 4,
+      "DataplanePermit": 1
+    }
+  },
+  "total_events": 164,
+  "total_inputs": 51,
+  "violation_found_in_run": {
+    "0": 4
+  }
+}
