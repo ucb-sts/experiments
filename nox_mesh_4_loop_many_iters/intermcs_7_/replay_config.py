@@ -10,6 +10,6 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(cmdlin
                  patch_panel_class=BufferedPatchPanel,
                  multiplex_sockets=False)
 
-control_flow = Replayer(simulation_config, "experiments/nox_mesh_4_loop_many_iters/intermcs_1_/events.trace",
+control_flow = Replayer(simulation_config, "experiments/nox_mesh_4_loop_many_iters/intermcs_7_/events.trace",
                         wait_on_deterministic_values=False)
 # Invariant check: 'None'

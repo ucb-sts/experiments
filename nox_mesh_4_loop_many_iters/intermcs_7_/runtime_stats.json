@@ -3,7 +3,7 @@
   "early_internal_events": {},
   "initial_verification_runs_needed": 0,
   "iteration_size": {
-    "0": 556
+    "0": 17
   },
   "matched_events": {},
   "new_internal_events": {},
@@ -13,11 +13,12 @@
   "replay_duration_seconds": 22.213871002197266,
   "replay_end_epoch": 1364367104.826611,
   "replay_start_epoch": 1364367082.61274,
-  "runtime_stats_file": "experiments/nox_mesh_4_loop_many_iters/intermcs_1_/runtime_stats.json",
+  "runtime_stats_file": "experiments/nox_mesh_4_loop_many_iters/intermcs_7_/runtime_stats.json",
   "timed_out_events": {},
   "total_events": 2047,
   "total_inputs": 557,
   "violation_found_in_run": {
-    "0": 1
+    "0": 10,
+    "1": 1
   }
 }
