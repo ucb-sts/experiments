@@ -1,0 +1,33 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-n",
+    "nox_mesh_4_loop_many_iters",
+    "-c",
+    "experiments/nox_mesh_4_loop/mcs_config.py"
+  ],
+  "cwd": "/home/rcs/Research/UCB/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5660 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:       6116048    6006948     109100          0      36372     182840\n-/+ buffers/cache:    5787736     328312\nSwap:      6283260      22428    6260832",
+    "name": "c5",
+    "num_cores": "12",
+    "uptime": "17:09:21 up 111 days,  7:19,  2 users,  load average: 1.41, 1.29, 1.22"
+  },
+  "modules": {
+    "pox": {
+      "branch": "debugger",
+      "commit": "badd05d9a26062a0e400c1f334fdea838cc53fce"
+    },
+    "sts": {
+      "branch": "migration_bug",
+      "commit": "0f059366c907100a9c9c1461a3c91a6ea08e00d8"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.10",
+    "uname": "Linux c5 3.0.0-28-server #45-Ubuntu SMP Wed Nov 14 22:15:34 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2013_03_20_17_09_21",
+  "user": "rcs"
+}

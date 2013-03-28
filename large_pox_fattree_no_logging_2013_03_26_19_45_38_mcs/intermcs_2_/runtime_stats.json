@@ -1,0 +1,23 @@
+{
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(cmdline='./pox.py --verbose --no-cli openflow.discovery openflow.spanning_tree forwarding.l2_multi sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=__address__ --port=__port__', address='127.0.0.1', port=6635, cwd='pox')],\n                 topology_class=FatTree,\n                 topology_params=\"num_pods=8\",\n                 patch_panel_class=BufferedPatchPanel,\n                 dataplane_trace=\"experiments/large_pox_fattree_no_logging_2013_03_26_19_45_38/dataplane.trace\",\n                 multiplex_sockets=True)",
+  "early_internal_events": {},
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 228
+  },
+  "matched_events": {},
+  "new_internal_events": {},
+  "original_duration_seconds": 28.79915690422058,
+  "peeker": false,
+  "prune_start_epoch": 1364327378.089062,
+  "replay_duration_seconds": 165.11493802070618,
+  "replay_end_epoch": 1364327378.088789,
+  "replay_start_epoch": 1364327212.973851,
+  "runtime_stats_file": "experiments/large_pox_fattree_no_logging_2013_03_26_19_45_38_mcs/intermcs_2_/runtime_stats.json",
+  "timed_out_events": {},
+  "total_events": 28257,
+  "total_inputs": 305,
+  "violation_found_in_run": {
+    "0": 2
+  }
+}
