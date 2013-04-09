@@ -11,6 +11,7 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(cmdlin
                  patch_panel_class=BufferedPatchPanel,
                  multiplex_sockets=True)
 
-control_flow = EfficientMCSFinder(simulation_config, "experiments/fuzz_pox_mesh/events.trace",
+control_flow = EfficientMCSFinder(simulation_config,
+                                  "experiments/updated_pox_in_flight/events.trace", 
                                   wait_on_deterministic_values=False,
                                   invariant_check_name='check_for_loops_blackholes_or_connectivity')

@@ -10,6 +10,6 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(cmdlin
                  patch_panel_class=BufferedPatchPanel,
                  multiplex_sockets=True)
 
-control_flow = Replayer(simulation_config, "experiments/fuzz_pox_mesh/events.trace",
+control_flow = Replayer(simulation_config, "experiments/updated_pox_in_flight/events.trace",
                         wait_on_deterministic_values=False)
 # Invariant check: 'check_for_loops_blackholes_or_connectivity'
