@@ -8,7 +8,6 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(cmdlin
                  topology_class=MeshTopology,
                  topology_params="num_switches=4",
                  patch_panel_class=BufferedPatchPanel,
-                 dataplane_trace="experiments/nox_mesh_4_loop/dataplane.trace",
                  multiplex_sockets=False)
 
 control_flow = Replayer(simulation_config, "experiments/nox_mesh_4_loop_many_iters/intermcs_1_/events.trace",
