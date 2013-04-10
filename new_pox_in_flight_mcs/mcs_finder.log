@@ -1,0 +1,51 @@
+Sleeping 0 seconds after run
+Violation reproduced successfully! Proceeding with pruning
+Subsets:
+l/0: e12 e13 e14 e15 e30 e42 e43 e48 e51 e52 e57 e58 e66
+r/0: e70 e81 e90 e102 e103 e108 e114 e117 e124 e139 e143 e148
+Current subset: l/0: e12 e13 e14 e15 e30 e42 e43 e48 e51 e52 e57 e58 e66
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: r/0: e70 e81 e90 e102 e103 e108 e114 e117 e124 e139 e143 e148
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+r/0.l/1: e70 e81 e90 e102 e103 e108
+r/0.r/1: e114 e117 e124 e139 e143 e148
+Current subset: r/0.l/1: e70 e81 e90 e102 e103 e108
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+r/0.l/1.l/2: e70 e81 e90
+r/0.l/1.r/2: e102 e103 e108
+Current subset: r/0.l/1.l/2: e70 e81 e90
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+r/0.l/1.l/2.l/3: e70 e81
+r/0.l/1.l/2.r/3: e90
+Current subset: r/0.l/1.l/2.l/3: e70 e81
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: r/0.l/1.l/2.r/3: e90
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+r/0.l/1.l/2.il/3.l/4: e70
+r/0.l/1.l/2.il/3.r/4: e81
+Current subset: r/0.l/1.l/2.il/3.l/4: e70
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [TrafficInjection:e70:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:02:[IPAddr('123.123.2.2')] Packet:[12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:f37f[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263})]
+Recursing on right half
+Base case [TrafficInjection:e90:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:02:[IPAddr('123.123.1.2')] Packet:[12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:f379[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263})]
+Final MCS (2 elements):
+ - TrafficInjection:e70
+ - TrafficInjection:e90
+=== Total replays: 0 ===

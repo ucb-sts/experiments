@@ -1,0 +1,57 @@
+{
+  "ambiguous_counts": {},
+  "ambiguous_events": {},
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(cmdline='./pox.py --verbose sts.syncproto.pox_syncer --blocking=False openflow.discovery forwarding.l2_multi sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=__address__ --port=__port__', address='127.0.0.1', port=10156, cwd='pox', sync='tcp:localhost:18899')],\n                 topology_class=MeshTopology,\n                 topology_params=\"num_switches=2\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=True)",
+  "early_internal_events": {
+    "1": []
+  },
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 3
+  },
+  "matched_events": {
+    "1": {
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 17,
+      "ControlMessageSend": 11,
+      "ControllerStateChange": 17,
+      "DataplanePermit": 6,
+      "TrafficInjection": 2
+    }
+  },
+  "new_internal_events": {
+    "1": [
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1365556681, microSeconds=299414), fingerprint=u\"Listening for connections on ('127.0.0.1', 10156)\", name=None, value=(u'()',))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1365556701, microSeconds=366332), fingerprint=u'Learned %s at %s.%i', name=None, value=(u\"(EthAddr('12:34:56:78:02:02'), 00-00-00-00-00-02, 2)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1365556714, microSeconds=876362), fingerprint=u'Learned %s at %s.%i', name=None, value=(u\"(EthAddr('12:34:56:78:01:02'), 00-00-00-00-00-02, 1)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1365556714, microSeconds=878998), fingerprint=u'Dest unreachable (%s -> %s)', name=None, value=(u\"(EthAddr('12:34:56:78:01:02'), EthAddr('12:34:56:78:02:02'))\",))",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ]
+  },
+  "original_duration_seconds": 2.977107048034668,
+  "peeker": false,
+  "prune_duration_seconds": 0,
+  "prune_start_epoch": 1365556428.748831,
+  "replay_duration_seconds": 2.790052890777588,
+  "replay_end_epoch": 1365556428.748663,
+  "replay_start_epoch": 1365556425.95861,
+  "runtime_stats_file": "experiments/new_pox_in_flight_mcs/intermcs_4_/runtime_stats.json",
+  "timed_out_events": {
+    "1": {
+      "ControlMessageReceive": 12,
+      "ControlMessageSend": 12,
+      "ControllerStateChange": 30,
+      "DataplanePermit": 17
+    }
+  },
+  "total_events": 149,
+  "total_inputs": 26,
+  "total_inputs_replayed": 64,
+  "total_replays": 8,
+  "violation_found_in_run": {
+    "0": 4
+  }
+}
