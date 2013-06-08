@@ -4,10 +4,13 @@ from sts.control_flow import Fuzzer, Interactive
 from sts.input_traces.input_logger import InputLogger
 from sts.simulation_state import SimulationConfig
 
-start_cmd = ("sleep 3600")
+# Work directory must be absolute path
+work_directory = "/home-local/andrewor/work"
+start_cmd = ("./bsc_start_vm %s" % work_directory)
+kill_cmd = ("./bsc_stop_vm %s" % work_directory)
 
 # Use Floodlight as our controller
-controllers = [ ControllerConfig(start_cmd, cwd=".", address="10.192.5.71", port=6633, controller_type="bsc", label="c1") ]
+controllers = [ ControllerConfig(start_cmd, kill_cmd, cwd="experiments/scripts", address="__address__", port=6633, controller_type="bsc", label="c1") ]
 topology_class = MeshTopology
 topology_params = "num_switches=3"
 
