@@ -26,13 +26,12 @@ simulation_config = SimulationConfig(controller_configs=controllers,
                                      dataplane_trace=dataplane_trace,
                                      multiplex_sockets=True
                                      )
-
 control_flow = Fuzzer(simulation_config, check_interval=20,
                       #mock_link_discovery=True,
                       halt_on_violation=True,
                       input_logger=InputLogger(),
-                      invariant_check_name="check_for_loops_or_blackholes",
-                      steps=141,
+                      invariant_check_name="check_for_loops_or_connectivity",
+                      steps=241,
                       #random_seed=466448715
                       )
 #control_flow = Interactive(simulation_config, input_logger=InputLogger())
