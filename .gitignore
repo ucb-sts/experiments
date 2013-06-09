@@ -16,3 +16,7 @@ old.*
 # Emacs
 \#*\#
 *~
+
+mcs_simple_test/*
+fuzzer_simple_test/*
+replayer_simple_test/*
