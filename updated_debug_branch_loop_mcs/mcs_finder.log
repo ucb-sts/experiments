@@ -26,73 +26,50 @@ il/0.il/1.l/2: e30 e44 e45 e46 e57 e58
 il/0.il/1.r/2: e67 e68 e69 e70 e71
 Current subset: il/0.il/1.l/2: e30 e44 e45 e46 e57 e58
 Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.il/1.l/2.l/3: e30 e44 e45
+il/0.il/1.l/2.r/3: e46 e57 e58
+Current subset: il/0.il/1.l/2.l/3: e30 e44 e45
+Sleeping 0 seconds after run
 No violation in 0'th...
-Current subset: il/0.il/1.r/2: e67 e68 e69 e70 e71
+Current subset: il/0.il/1.l/2.r/3: e46 e57 e58
 Sleeping 0 seconds after run
 No violation in 1'th...
 Interference
 Recursing on left half
 Subsets:
-il/0.il/1.il/2.l/3: e30 e44 e45
-il/0.il/1.il/2.r/3: e46 e57 e58
-Current subset: il/0.il/1.il/2.l/3: e30 e44 e45
-Sleeping 0 seconds after run
-No violation in 0'th...
-Current subset: il/0.il/1.il/2.r/3: e46 e57 e58
-Sleeping 0 seconds after run
-No violation in 1'th...
-Interference
-Recursing on left half
-Subsets:
-il/0.il/1.il/2.il/3.l/4: e30 e44
-il/0.il/1.il/2.il/3.r/4: e45
-Current subset: il/0.il/1.il/2.il/3.l/4: e30 e44
+il/0.il/1.l/2.il/3.l/4: e30 e44
+il/0.il/1.l/2.il/3.r/4: e45
+Current subset: il/0.il/1.l/2.il/3.l/4: e30 e44
 Sleeping 0 seconds after run
 Violation! Considering 0'th
 Violation found in 0th half. Recursing
 Subsets:
-il/0.il/1.il/2.il/3.l/4.l/5: e30
-il/0.il/1.il/2.il/3.l/4.r/5: e44
-Current subset: il/0.il/1.il/2.il/3.l/4.l/5: e30
+il/0.il/1.l/2.il/3.l/4.l/5: e30
+il/0.il/1.l/2.il/3.l/4.r/5: e44
+Current subset: il/0.il/1.l/2.il/3.l/4.l/5: e30
 Sleeping 0 seconds after run
 Violation! Considering 0'th
 Violation found in 0th half. Recursing
 Base case [TrafficInjection:e30:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:02:[IPAddr('123.123.2.2')] Packet:[12:34:56:78:02:02>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:02:02>00:00:00:00:00:00 123.123.2.2>123.123.1.2)]
 Recursing on right half
 Subsets:
-il/0.il/1.il/2.ir/3.l/4: e46 e57
-il/0.il/1.il/2.ir/3.r/4: e58
-Current subset: il/0.il/1.il/2.ir/3.l/4: e46 e57
+il/0.il/1.l/2.ir/3.l/4: e46 e57
+il/0.il/1.l/2.ir/3.r/4: e58
+Current subset: il/0.il/1.l/2.ir/3.l/4: e46 e57
 Sleeping 0 seconds after run
 Violation! Considering 0'th
 Violation found in 0th half. Recursing
 Subsets:
-il/0.il/1.il/2.ir/3.l/4.l/5: e46
-il/0.il/1.il/2.ir/3.l/4.r/5: e57
-Current subset: il/0.il/1.il/2.ir/3.l/4.l/5: e46
+il/0.il/1.l/2.ir/3.l/4.l/5: e46
+il/0.il/1.l/2.ir/3.l/4.r/5: e57
+Current subset: il/0.il/1.l/2.ir/3.l/4.l/5: e46
 Sleeping 0 seconds after run
 Violation! Considering 0'th
 Violation found in 0th half. Recursing
 Base case [TrafficInjection:e46:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:02:[IPAddr('123.123.1.2')] Packet:[12:34:56:78:01:02>12:34:56:78:02:02:ARP]|REPLY hw:1 p:2048 12:34:56:78:01:02>12:34:56:78:02:02 123.123.1.2>123.123.2.2)]
-Recursing on right half
-Subsets:
-il/0.il/1.ir/2.l/3: e67 e68 e69
-il/0.il/1.ir/2.r/3: e70 e71
-Current subset: il/0.il/1.ir/2.l/3: e67 e68 e69
-Sleeping 0 seconds after run
-Violation! Considering 0'th
-Violation found in 0th half. Recursing
-Subsets:
-il/0.il/1.ir/2.l/3.l/4: e67 e68
-il/0.il/1.ir/2.l/3.r/4: e69
-Current subset: il/0.il/1.ir/2.l/3.l/4: e67 e68
-Sleeping 0 seconds after run
-No violation in 0'th...
-Current subset: il/0.il/1.ir/2.l/3.r/4: e69
-Sleeping 0 seconds after run
-Violation! Considering 1'th
-Violation found in 1th half. Recursing
-Base case [HostMigration:e69:('HostMigration', 2, 2, 2, 3, u"host:[IPAddr('123.123.2.2')]")]
 Recursing on right half
 Subsets:
 il/0.ir/1.l/2: e74 e75 e93 e94 e95 e104
@@ -200,10 +177,9 @@ Sleeping 0 seconds after run
 Violation! Considering 1'th
 Violation found in 1th half. Recursing
 Base case [TrafficInjection:e170:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:02:[IPAddr('123.123.1.2')] Packet:[12:34:56:78:01:02>12:34:56:78:02:02:ARP]|REPLY hw:1 p:2048 12:34:56:78:01:02>12:34:56:78:02:02 123.123.1.2>123.123.2.2)]
-Final MCS (6 elements):
+Final MCS (5 elements):
  - TrafficInjection:e30
  - TrafficInjection:e46
- - HostMigration:e69
  - TrafficInjection:e75
  - HostMigration:e106
  - TrafficInjection:e170

@@ -4,13 +4,13 @@
     "-c",
     "experiments/updated_debug_branch_loop/mcs_config.py"
   ],
-  "cwd": "/home/rcs/Research/UCB/sts",
+  "cwd": "/Users/cs/Research/UCB/code/sts",
   "host": {
-    "cpu_info": "Intel(R) Xeon(R) CPU X5660 @ 2.80GHz",
-    "free": "total       used       free     shared    buffers     cached\nMem:       6116048    5243576     872472          0     591200    3673388\n-/+ buffers/cache:     978988    5137060\nSwap:      6283260     241820    6041440",
-    "name": "c5",
-    "num_cores": "12",
-    "uptime": "22:58:56 up 192 days, 13:08,  3 users,  load average: 0.13, 0.11, 0.07"
+    "cpu_info": "",
+    "free": "",
+    "name": "fizzgig",
+    "num_cores": "0",
+    "uptime": "23:24  up 17 days, 13:47, 4 users, load averages: 1.42 1.31 1.17"
   },
   "modules": {
     "pox": {
@@ -19,13 +19,13 @@
     },
     "sts": {
       "branch": "master",
-      "commit": "b7c46ad91d91a328ecd58f4e24417d9236c58381"
+      "commit": "574b0780755fb36369b8d74b337d2dcb3f94011f"
     }
   },
   "sys": {
-    "lsb_release": "Ubuntu 11.10",
-    "uname": "Linux c5 3.0.0-28-server #45-Ubuntu SMP Wed Nov 14 22:15:34 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux"
+    "lsb_release": "",
+    "uname": "Darwin fizzgig 12.3.0 Darwin Kernel Version 12.3.0: Sun Jan  6 22:37:10 PST 2013; root:xnu-2050.22.13~1/RELEASE_X86_64 x86_64"
   },
-  "timestamp": "2013_06_09_22_58_56",
-  "user": "rcs"
+  "timestamp": "2013_06_12_23_24_09",
+  "user": "cs"
 }
