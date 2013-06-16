@@ -10,7 +10,7 @@
     "free": "",
     "name": "fizzgig",
     "num_cores": "0",
-    "uptime": "23:24  up 17 days, 13:47, 4 users, load averages: 1.42 1.31 1.17"
+    "uptime": "14:39  up 21 days,  5:02, 4 users, load averages: 1.26 1.17 1.15"
   },
   "modules": {
     "pox": {
@@ -19,13 +19,13 @@
     },
     "sts": {
       "branch": "master",
-      "commit": "574b0780755fb36369b8d74b337d2dcb3f94011f"
+      "commit": "ff732832c87d3ff5fd5d99f921ddab814b1d735c"
     }
   },
   "sys": {
     "lsb_release": "",
     "uname": "Darwin fizzgig 12.3.0 Darwin Kernel Version 12.3.0: Sun Jan  6 22:37:10 PST 2013; root:xnu-2050.22.13~1/RELEASE_X86_64 x86_64"
   },
-  "timestamp": "2013_06_12_23_24_09",
+  "timestamp": "2013_06_16_14_39_50",
   "user": "cs"
 }

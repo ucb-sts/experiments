@@ -33,12 +33,12 @@
   },
   "original_duration_seconds": 13.335306882858276,
   "peeker": false,
-  "prune_duration_seconds": 648.6027660369873,
-  "prune_end_epoch": 1371105300.13573,
-  "prune_start_epoch": 1371104651.532964,
-  "replay_duration_seconds": 2.0475831031799316,
-  "replay_end_epoch": 1371104651.532674,
-  "replay_start_epoch": 1371104649.485091,
+  "prune_duration_seconds": 653.2937920093536,
+  "prune_end_epoch": 1371419448.743495,
+  "prune_start_epoch": 1371418795.449703,
+  "replay_duration_seconds": 4.214958906173706,
+  "replay_end_epoch": 1371418795.449266,
+  "replay_start_epoch": 1371418791.234307,
   "runtime_stats_file": "experiments/updated_debug_branch_loop_mcs/runtime_stats.json",
   "timed_out_events": {
     "1": {
