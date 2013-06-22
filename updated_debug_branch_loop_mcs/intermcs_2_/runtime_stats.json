@@ -7,44 +7,39 @@
   },
   "initial_verification_runs_needed": 0,
   "iteration_size": {
-    "0": 39
+    "0": 43
   },
   "matched_events": {
     "1": {
       "CheckInvariants": 5,
       "ConnectToControllers": 1,
       "ControlMessageReceive": 40,
-      "ControlMessageSend": 39,
+      "ControlMessageSend": 42,
       "ControllerStateChange": 58,
-      "DataplaneDrop": 9,
+      "DataplaneDrop": 10,
       "DataplanePermit": 24,
-      "HostMigration": 7,
-      "TrafficInjection": 17
+      "HostMigration": 8,
+      "TrafficInjection": 19
     }
   },
   "new_internal_events": {
-    "1": [
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
-    ]
+    "1": []
   },
   "original_duration_seconds": 13.335306882858276,
   "peeker": false,
   "prune_duration_seconds": 0,
-  "prune_start_epoch": 1371418795.449703,
-  "replay_duration_seconds": 4.214958906173706,
-  "replay_end_epoch": 1371418795.449266,
-  "replay_start_epoch": 1371418791.234307,
+  "prune_start_epoch": 1371926602.376364,
+  "replay_duration_seconds": 2.815200090408325,
+  "replay_end_epoch": 1371926602.37623,
+  "replay_start_epoch": 1371926599.56103,
   "runtime_stats_file": "experiments/updated_debug_branch_loop_mcs/intermcs_2_/runtime_stats.json",
   "timed_out_events": {
-    "1": {
-      "ControlMessageSend": 3
-    }
+    "1": {}
   },
   "total_events": 210,
   "total_inputs": 45,
-  "total_inputs_replayed": 303,
-  "total_replays": 9,
+  "total_inputs_replayed": 398,
+  "total_replays": 11,
   "violation_found_in_run": {
     "0": 2
   }

@@ -7,7 +7,7 @@
   },
   "initial_verification_runs_needed": 0,
   "iteration_size": {
-    "0": 5
+    "0": 6
   },
   "matched_events": {
     "1": {
@@ -33,12 +33,12 @@
   },
   "original_duration_seconds": 13.335306882858276,
   "peeker": false,
-  "prune_duration_seconds": 653.2937920093536,
-  "prune_end_epoch": 1371419448.743495,
-  "prune_start_epoch": 1371418795.449703,
-  "replay_duration_seconds": 4.214958906173706,
-  "replay_end_epoch": 1371418795.449266,
-  "replay_start_epoch": 1371418791.234307,
+  "prune_duration_seconds": 756.9832270145416,
+  "prune_end_epoch": 1371927359.359591,
+  "prune_start_epoch": 1371926602.376364,
+  "replay_duration_seconds": 2.815200090408325,
+  "replay_end_epoch": 1371926602.37623,
+  "replay_start_epoch": 1371926599.56103,
   "runtime_stats_file": "experiments/updated_debug_branch_loop_mcs/runtime_stats.json",
   "timed_out_events": {
     "1": {
@@ -50,9 +50,9 @@
   },
   "total_events": 210,
   "total_inputs": 45,
-  "total_inputs_replayed": 1028,
-  "total_replays": 30,
+  "total_inputs_replayed": 1219,
+  "total_replays": 34,
   "violation_found_in_run": {
-    "0": 16
+    "0": 17
   }
 }
