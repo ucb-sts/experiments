@@ -8,10 +8,9 @@ from sts.simulation_state import SimulationConfig
 work_directory = "/home-local/andrewor/work"
 start_cmd = ("./bsc_start_remote_vm %s" % work_directory)
 kill_cmd = ("./bsc_stop_remote_vm %s" % work_directory)
-get_address_cmd = ("./bsc_check_remote_address %s" % work_directory)
 
 # Use Floodlight as our controller
-controllers = [ ControllerConfig(start_cmd, kill_cmd, cwd="experiments/scripts", address="__address__", port=6633, controller_type="bsc", label="c1", get_address_cmd=get_address_cmd) ]
+controllers = [ ControllerConfig(start_cmd, kill_cmd, cwd="experiments/scripts", address="__address__", port=6633, controller_type="bsc", label="c1") ]
 topology_class = MeshTopology
 topology_params = "num_switches=3"
 
