@@ -1,0 +1,33 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-n",
+    "updated_debug_branch_loop_v3",
+    "-c",
+    "experiments/updated_debug_branch_loop/orig_config.py"
+  ],
+  "cwd": "/home/rcs/Research/UCB/Code/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5660 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:       6116048    5690976     425072          0     635544    3802844\n-/+ buffers/cache:    1252588    4863460\nSwap:      6283260     238172    6045088",
+    "name": "c5",
+    "num_cores": "12",
+    "uptime": "13:55:56 up 209 days,  4:05,  4 users,  load average: 0.19, 0.18, 0.14"
+  },
+  "modules": {
+    "pox": {
+      "branch": "debugger",
+      "commit": "9d484616af5beda6156458a54f5df8e9ef190f4b"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "9ffa445aa703b2d836a5657c6729d2be721c7c18"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.10",
+    "uname": "Linux c5 3.0.0-28-server #45-Ubuntu SMP Wed Nov 14 22:15:34 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2013_06_26_13_55_56",
+  "user": "rcs"
+}

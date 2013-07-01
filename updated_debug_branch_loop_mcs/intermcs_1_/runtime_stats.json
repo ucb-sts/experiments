@@ -1,101 +1,45 @@
 {
-  "config": "SimulationConfig(controller_configs=[ControllerConfig(cmdline='./pox.py --verbose sts.syncproto.pox_syncer --blocking=False openflow.discovery forwarding.l2_multi sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=__address__ --port=__port__', address='127.0.0.1', port=6633, cwd='pox', sync='tcp:localhost:18899')],\n                 topology_class=MeshTopology,\n                 topology_params=\"num_switches=2\",\n                 patch_panel_class=BufferedPatchPanel,\n                 dataplane_trace=\"dataplane_traces/ping_pong_same_subnet.trace\",\n                 multiplex_sockets=True)",
+  "ambiguous_counts": {},
+  "ambiguous_events": {},
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./pox.py --verbose sts.syncproto.pox_syncer --blocking=False openflow.discovery forwarding.l2_multi sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=__address__ --port=__port__', address='127.0.0.1', port=6633, cwd='pox', sync='tcp:localhost:18899')],\n                 topology_class=MeshTopology,\n                 topology_params=\"num_switches=2\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=True)",
   "early_internal_events": {
-    "1": [],
-    "2": [],
-    "3": []
+    "1": []
   },
   "initial_verification_runs_needed": 0,
   "iteration_size": {
-    "0": 17,
-    "1": 17,
-    "2": 17
+    "0": 44
   },
   "matched_events": {
     "1": {
+      "CheckInvariants": 5,
       "ConnectToControllers": 1,
-      "ControlMessageReceive": 25,
-      "ControlMessageSend": 16,
-      "ControllerStateChange": 19,
-      "DataplaneDrop": 1,
-      "LinkFailure": 2,
-      "LinkRecovery": 2,
-      "SwitchFailure": 2,
-      "SwitchRecovery": 2,
-      "TrafficInjection": 1
-    },
-    "2": {
-      "CheckInvariants": 2,
-      "ConnectToControllers": 1,
-      "ControlMessageReceive": 19,
-      "ControlMessageSend": 9,
-      "ControllerStateChange": 14,
-      "DataplaneDrop": 1,
-      "SwitchFailure": 1,
-      "SwitchRecovery": 1,
-      "TrafficInjection": 2
-    },
-    "3": {
-      "CheckInvariants": 2,
-      "ConnectToControllers": 1,
-      "ControlMessageReceive": 28,
-      "ControlMessageSend": 15,
-      "ControllerStateChange": 25,
-      "DataplaneDrop": 2,
-      "DataplanePermit": 5,
-      "SwitchFailure": 2,
-      "SwitchRecovery": 2,
-      "TrafficInjection": 3
+      "ControlMessageReceive": 40,
+      "ControlMessageSend": 42,
+      "ControllerStateChange": 58,
+      "DataplaneDrop": 11,
+      "DataplanePermit": 24,
+      "HostMigration": 8,
+      "TrafficInjection": 19
     }
   },
   "new_internal_events": {
-    "1": [
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
-      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
-      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
-    ],
-    "2": [
-      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
-      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
-    ],
-    "3": [
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
-      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
-      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
-    ]
+    "1": []
   },
-  "original_duration_seconds": 5.712244987487793,
+  "original_duration_seconds": 13.335306882858276,
   "peeker": false,
-  "prune_start_epoch": 1363827462.460419,
-  "replay_duration_seconds": 4.2127320766448975,
-  "replay_end_epoch": 1363827462.460376,
-  "replay_start_epoch": 1363827458.247644,
+  "prune_duration_seconds": 0,
+  "prune_start_epoch": 1371926602.376364,
+  "replay_duration_seconds": 2.815200090408325,
+  "replay_end_epoch": 1371926602.37623,
+  "replay_start_epoch": 1371926599.56103,
   "runtime_stats_file": "experiments/updated_debug_branch_loop_mcs/intermcs_1_/runtime_stats.json",
   "timed_out_events": {
-    "1": {
-      "ControlMessageReceive": 9,
-      "ControlMessageSend": 6,
-      "ControllerStateChange": 11,
-      "DataplanePermit": 5
-    },
-    "2": {
-      "ControlMessageReceive": 15,
-      "ControlMessageSend": 13,
-      "ControllerStateChange": 16,
-      "DataplanePermit": 5
-    },
-    "3": {
-      "ControlMessageReceive": 6,
-      "ControlMessageSend": 7,
-      "ControllerStateChange": 5
-    }
+    "1": {}
   },
-  "total_events": 110,
-  "total_inputs": 18,
+  "total_events": 210,
+  "total_inputs": 45,
+  "total_inputs_replayed": 356,
+  "total_replays": 10,
   "violation_found_in_run": {
     "0": 1
   }
