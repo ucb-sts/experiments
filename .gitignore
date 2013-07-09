@@ -8,7 +8,6 @@ old.*
 *.patch
 *.diff
 *.orig
-*.out
 
 # Vim
 .*.sw[a-z]
