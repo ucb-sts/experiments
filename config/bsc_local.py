@@ -23,7 +23,7 @@ simulation_config = SimulationConfig(controller_configs=controllers,
 control_flow = Fuzzer(simulation_config, check_interval=20,
                       halt_on_violation=True,
                       input_logger=InputLogger(),
-                      invariant_check_name="InvariantChecker.check_loops",
+                      invariant_check_name="InvariantChecker.check_liveness",
                       steps=999,
                       fuzzer_params="experiments/config/fuzzer_params_heavy_failures.py"
                       )
