@@ -1,0 +1,423 @@
+INFO:Controller:Launching controller c1: ./nox_core -v -i ptcp:6635 routing
+INFO:simulation:Launched controller cc1: ./nox_core -v -i ptcp:6635 routing [PID 16115]
+INFO:simulation:Creating topology...
+connect_socket_with_backoff ('127.0.0.1', 6635)
+Error connecting.  -- [Errno 111] Connection refused. Backing off 1 seconds ...
+[1;41m[1;33m[c1] 00001|nox|INFO:Starting nox_core (/home/rcs/Research/UCB/code/sts/nox_classic/build/src/.libs/lt-nox_core)[1;m
+
+[1;41m[1;33m[c1] 00002|nox|INFO:nox bootstrap complete[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6635)
+connect_socket_with_backoff ('127.0.0.1', 6635)
+connect_socket_with_backoff ('127.0.0.1', 6635)
+INFO:control_flow:Waiting until first OpenFlow message received..
+[1;36mCutting link (2:1) -> (4:2)[1;m
+[1;36mCutting link (1:3) -> (2:3)[1;m
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.4')]:sending packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:03:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.4>123.123.3.4]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 1 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (3:2) -> (2:2)[1;m
+[1;36mCutting link (2:3) -> (1:3)[1;m
+[1;36mRestoring link (2:1) -> (4:2)[1;m
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.4')]:sending packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 2 completed.[1;m
+[1;41m[1;33m[c1] 00003|nox|WARN:Received unsupported message type during handshake (12)[1;m
+
+[1;41m[1;33m[c1] 00004|nox|WARN:Received unsupported message type during handshake (12)[1;m
+
+[1;36mDropping dataplane event[1;m
+[1;36mRestoring link (2:3) -> (1:3)[1;m
+[1;36mRound 3 completed.[1;m
+[1;41m[1;33m[c1] 00005|nox|WARN:Received unsupported message type during handshake (12)[1;m
+
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.4')]:sending packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.4')]:sending packet on interface eth2: [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.4')]:sending packet on interface eth3: [12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.4.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 4 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRestoring link (1:3) -> (2:3)[1;m
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.4')]:sending packet on interface eth3: [12:34:56:78:03:04>12:34:56:78:01:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:03:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.4.4>123.123.3.4]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 5 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 6 completed.[1;m
+[1;41m[1;33m[c1] 00006|authenticator|WARN:Received port add for active location 1:3.[1;m
+
+[1;41m[1;33m[c1] 00007|discovery|WARN:new link detected (00:00:00:00:00:00:00:04 p:3 -> 00:00:00:00:00:00:00:01 p:1)[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(4):out_port 2 == in_port. Dropping
+WARNING:FuzzSoftwareSwitch(2):out_port 1 == in_port. Dropping
+WARNING:FuzzSoftwareSwitch(1):out_port 2 == in_port. Dropping
+[1;36mCutting link (2:1) -> (4:2)[1;m
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.4.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 7 completed.[1;m
+[1;41m[1;33m[c1] 00008|discovery|WARN:new link detected (00:00:00:00:00:00:00:03 p:3 -> 00:00:00:00:00:00:00:01 p:2)[1;m
+
+[1;41m[1;33m[c1] 00009|authenticator|ERR:Cannot authenticate host authenticated, location 3:2 not active.[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (1:1) -> (4:3)[1;m
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.4')]:sending packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.4.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 8 completed.[1;m
+[1;41m[1;33m[c1] 00010|discovery|WARN:new link detected (00:00:00:00:00:00:00:02 p:3 -> 00:00:00:00:00:00:00:01 p:3)[1;m
+
+[1;41m[1;33m[c1] 00011|authenticator|ERR:Cannot authenticate host authenticated, location 3:2 not active.[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b691[123.123.4.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.4')]:received packet on interface eth3: [12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b994[123.123.1.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.4.4')]:received packet on interface eth4: [12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b792[123.123.3.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [00:00:00:00:00:01>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:00:04><ttl:120><tlv end>
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.4')]:received packet on interface eth2: [12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b994[123.123.1.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(1):Port 1 is currently down. Dropping packet
+WARNING:FuzzSoftwareSwitch(3):out_port 1 == in_port. Dropping
+WARNING:FuzzSoftwareSwitch(3):Buffer 3 has already been flushed
+WARNING:FuzzSoftwareSwitch(2):Port 1 is currently down. Dropping packet
+WARNING:FuzzSoftwareSwitch(4):out_port 1 == in_port. Dropping
+WARNING:FuzzSoftwareSwitch(3):out_port 1 == in_port. Dropping
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:01:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.4.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 9 completed.[1;m
+[1;41m[1;33m[c1] 00012|authenticator|ERR:Cannot authenticate host authenticated, location 2:1 not active.[1;m
+
+[1;41m[1;33m[c1] 00013|authenticator|ERR:Cannot authenticate host authenticated, location 2:1 not active.[1;m
+
+[1;41m[1;33m[c1] 00014|authenticator|ERR:Cannot authenticate host authenticated, location 1:1 not active.[1;m
+
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.4')]:received packet on interface eth3: [12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b691[123.123.4.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b993[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.4.4')]:received packet on interface eth4: [12:34:56:78:03:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b88c[123.123.3.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.4')]:received packet on interface eth2: [12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b792[123.123.3.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b792[123.123.3.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(1):Port 1 is currently down. Dropping packet
+WARNING:FuzzSoftwareSwitch(1):Port 1 is currently down. Dropping packet
+[1;36mRestoring link (3:2) -> (2:2)[1;m
+[1;36mRestoring link (2:1) -> (4:2)[1;m
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.4')]:sending packet on interface eth3: [12:34:56:78:03:04>12:34:56:78:01:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.4>123.123.1.4]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:03:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.4.4>123.123.3.4]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 10 completed.[1;m
+[1;41m[1;33m[c1] 00015|discovery|WARN:new link detected (00:00:00:00:00:00:00:03 p:2 -> 00:00:00:00:00:00:00:02 p:2)[1;m
+
+[1;41m[1;33m[c1] 00016|authenticator|ERR:Cannot authenticate host authenticated, location 1:1 not active.[1;m
+
+[1;41m[1;33m[c1] 00017|authenticator|ERR:Cannot authenticate host authenticated, location 2:1 not active.[1;m
+
+[1;41m[1;33m[c1] 00018|authenticator|ERR:Cannot authenticate host authenticated, location 1:1 not active.[1;m
+
+[1;41m[1;33m[c1] 00019|authenticator|ERR:Cannot authenticate host authenticated, location 2:1 not active.[1;m
+
+[1;41m[1;33m[c1] 00020|authenticator|ERR:Cannot authenticate host authenticated, location 1:1 not active.[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b993[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b993[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.4')]:received packet on interface eth2: [00:00:00:00:00:02>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:00:04><ttl:120><tlv end>
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.4')]:received packet on interface eth2: [12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b792[123.123.3.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.4')]:received packet on interface eth2: [12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b691[123.123.4.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b691[123.123.4.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(1):Buffer 5 has already been flushed
+WARNING:FuzzSoftwareSwitch(1):Port 1 is currently down. Dropping packet
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.4')]:sending packet on interface eth3: [12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 11 completed.[1;m
+[1;41m[1;33m[c1] 00021|sp_routing|WARN:Could not find valid route to any destination.[1;m
+
+[1;41m[1;33m[c1] 00022|sp_routing|WARN:Dropping port0003:vlanffff:pcp:0 mac12:34:56:78:02:04->12:34:56:78:01:04 proto0800 ip123.123.2.4->123.123.1.4 port8->0[1;m
+
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [12:34:56:78:04:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b58b[123.123.4.4>123.123.3.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b993[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [12:34:56:78:03:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b88c[123.123.3.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b994[123.123.1.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mCutting link (4:2) -> (2:1)[1;m
+[1;36mCutting link (4:1) -> (3:1)[1;m
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:01:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.4.4>123.123.1.4]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 12 completed.[1;m
+[1;41m[1;33m[c1] 00023|sp_routing|WARN:Could not find valid route to any destination.[1;m
+
+[1;41m[1;33m[c1] 00024|sp_routing|WARN:Dropping port0003:vlanffff:pcp:0 mac12:34:56:78:04:04->12:34:56:78:03:04 proto0800 ip123.123.4.4->123.123.3.4 port8->0[1;m
+
+[1;41m[1;33m[c1] 00025|discovery|WARN:new link detected (00:00:00:00:00:00:00:04 p:1 -> 00:00:00:00:00:00:00:03 p:1)[1;m
+
+[1;41m[1;33m[c1] 00026|sp_routing|WARN:Could not find valid route to any destination.[1;m
+
+[1;41m[1;33m[c1] 00027|sp_routing|WARN:Dropping port0003:vlanffff:pcp:0 mac12:34:56:78:03:04->12:34:56:78:01:04 proto0800 ip123.123.3.4->123.123.1.4 port8->0[1;m
+
+[1;41m[1;33m[c1] 00028|sp_routing|WARN:Could not find valid route to any destination.[1;m
+
+[1;41m[1;33m[c1] 00029|sp_routing|WARN:Dropping port0003:vlanffff:pcp:0 mac12:34:56:78:02:04->12:34:56:78:01:04 proto0800 ip123.123.2.4->123.123.1.4 port8->0[1;m
+
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.4')]:received packet on interface eth3: [00:00:00:00:00:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:00:04><ttl:120><tlv end>
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.4')]:received packet on interface eth2: [12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b994[123.123.1.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.4')]:received packet on interface eth2: [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b993[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+WARNING:FuzzSoftwareSwitch(4):Port 1 is currently down. Dropping packet
+WARNING:FuzzSoftwareSwitch(4):Port 2 is currently down. Dropping packet
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.4.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 13 completed.[1;m
+[1;41m[1;33m[c1] 00030|discovery|WARN:new link detected (00:00:00:00:00:00:00:01 p:2 -> 00:00:00:00:00:00:00:03 p:3)[1;m
+
+[1;41m[1;33m[c1] 00031|authenticator|ERR:Cannot authenticate host authenticated, location 4:1 not active.[1;m
+
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b993[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(4):Port 1 is currently down. Dropping packet
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.4')]:received packet on interface eth2: [12:34:56:78:04:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b58b[123.123.4.4>123.123.3.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(4):Port 2 is currently down. Dropping packet
+WARNING:FuzzSoftwareSwitch(4):Port 1 is currently down. Dropping packet
+[1;36mCutting link (3:1) -> (4:1)[1;m
+[1;36mRestoring link (4:1) -> (3:1)[1;m
+[1;36mRound 14 completed.[1;m
+[1;41m[1;33m[c1] 00032|authenticator|ERR:Cannot authenticate host authenticated, location 4:1 not active.[1;m
+
+[1;41m[1;33m[c1] 00033|authenticator|ERR:Cannot authenticate host authenticated, location 4:2 not active.[1;m
+
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.4')]:received packet on interface eth2: [12:34:56:78:03:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b88c[123.123.3.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b993[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b993[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.4')]:received packet on interface eth2: [12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b749[123.123.3.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRestoring link (4:2) -> (2:1)[1;m
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.4')]:sending packet on interface eth3: [12:34:56:78:03:04>12:34:56:78:04:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.4>123.123.4.4]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 15 completed.[1;m
+[1;41m[1;33m[c1] 00034|authenticator|ERR:Cannot authenticate host authenticated, location 4:1 not active.[1;m
+
+[1;41m[1;33m[c1] 00035|authenticator|ERR:Cannot authenticate host authenticated, location 3:1 not active.[1;m
+
+[1;41m[1;33m[c1] 00036|authenticator|ERR:Cannot authenticate host authenticated, location 4:2 not active.[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.4')]:received packet on interface eth2: [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b993[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mRestoring link (1:1) -> (4:3)[1;m
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.4')]:sending packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.4')]:sending packet on interface eth2: [12:34:56:78:02:04>12:34:56:78:03:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.4>123.123.3.4]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:01:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.4.4>123.123.1.4]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 16 completed.[1;m
+[1;41m[1;33m[c1] 00037|authenticator|ERR:Cannot authenticate host authenticated, location 4:2 not active.[1;m
+
+[1;41m[1;33m[c1] 00038|authenticator|ERR:Cannot authenticate host authenticated, location 1:1 not active.[1;m
+
+[1;41m[1;33m[c1] 00039|discovery|WARN:new link detected (00:00:00:00:00:00:00:01 p:1 -> 00:00:00:00:00:00:00:04 p:3)[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.4')]:received packet on interface eth3: [12:34:56:78:04:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b58b[123.123.4.4>123.123.3.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b993[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.4.4')]:received packet on interface eth4: [00:00:00:00:00:04>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:34><port ID:00:04><ttl:120><tlv end>
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (1:1) -> (4:3)[1;m
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.4')]:sending packet on interface eth2: [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.4')]:sending packet on interface eth3: [12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 17 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b993[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b993[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (4:3) -> (1:1)[1;m
+[1;36mRound 18 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [12:34:56:78:03:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b88c[123.123.3.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.4')]:sending packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:04:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.4>123.123.4.4]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 19 completed.[1;m
+[1;41m[1;33m[c1] 00040|authenticator|ERR:Cannot authenticate host authenticated, location 1:1 not active.[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.4')]:received packet on interface eth1: [00:00:00:00:00:01>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:00:04><ttl:120><tlv end>
+[1;36mRestoring link (3:1) -> (4:1)[1;m
+[1;36mRestoring link (1:1) -> (4:3)[1;m
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.4')]:sending packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:03:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.4>123.123.3.4]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36minjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.4')]:sending packet on interface eth2: [12:34:56:78:02:04>12:34:56:78:03:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.4>123.123.3.4]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;41m[1;37mThe following controllers had correctness violations!: ['(400004, 200002, (dl_src:12:34:56:78:04:04,dl_dst:12:34:56:78:02:04,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.4.4/32,nw_dst:123.123.2.4/32,tp_src:8,tp_dst:0) - ([]))'][1;m
+INFO:control_flow:Terminating fuzzing after 20 rounds
+[1;36mKilling controller c1[1;m
+Terminating child controllers... OK
