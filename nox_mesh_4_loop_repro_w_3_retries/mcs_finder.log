@@ -1,0 +1,274 @@
+Sleeping 0 seconds after run
+Violation reproduced successfully! Proceeding with pruning
+Subsets:
+l/0: a(e10,e31) a(e11,e66) e12 a(e29,e316) a(e30,e45) e32 e33 e53 e54 e55 e56 e67 e68 a(e110,e317) e111 a(e174,e596) e175 e176 e188 e251 e252 e263 e266 e268 e318 e319 e330 e331 e373
+r/0: e387 a(e423,e562) a(e424,e520) e425 e429 e475 e476 e477 a(e519,e713) e523 e563 e597 e598 e599 e603 e607 e608 a(e633,e714) e634 e635 e641 e670 e674 e677 e695 e715 e716 e717
+Current subset: l/0: a(e10,e31) a(e11,e66) e12 a(e29,e316) a(e30,e45) e32 e33 e53 e54 e55 e56 e67 e68 a(e110,e317) e111 a(e174,e596) e175 e176 e188 e251 e252 e263 e266 e268 e318 e319 e330 e331 e373
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: r/0: e387 a(e423,e562) a(e424,e520) e425 e429 e475 e476 e477 a(e519,e713) e523 e563 e597 e598 e599 e603 e607 e608 a(e633,e714) e634 e635 e641 e670 e674 e677 e695 e715 e716 e717
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.l/1: a(e10,e31) a(e11,e66) e12 a(e29,e316) a(e30,e45) e32 e33 e53 e54 e55 e56 e67 e68 a(e110,e317) e111
+il/0.r/1: a(e174,e596) e175 e176 e188 e251 e252 e263 e266 e268 e318 e319 e330 e331 e373
+Current subset: il/0.l/1: a(e10,e31) a(e11,e66) e12 a(e29,e316) a(e30,e45) e32 e33 e53 e54 e55 e56 e67 e68 a(e110,e317) e111
+No violation in 0'th...
+Current subset: il/0.r/1: a(e174,e596) e175 e176 e188 e251 e252 e263 e266 e268 e318 e319 e330 e331 e373
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.il/1.l/2: a(e10,e31) a(e11,e66) e12 a(e29,e316) a(e30,e45) e32 e33 e53
+il/0.il/1.r/2: e54 e55 e56 e67 e68 a(e110,e317) e111
+Current subset: il/0.il/1.l/2: a(e10,e31) a(e11,e66) e12 a(e29,e316) a(e30,e45) e32 e33 e53
+No violation in 0'th...
+Current subset: il/0.il/1.r/2: e54 e55 e56 e67 e68 a(e110,e317) e111
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.il/1.il/2.l/3: a(e10,e31) a(e11,e66) e12 a(e29,e316)
+il/0.il/1.il/2.r/3: a(e30,e45) e32 e33 e53
+Current subset: il/0.il/1.il/2.l/3: a(e10,e31) a(e11,e66) e12 a(e29,e316)
+No violation in 0'th...
+Current subset: il/0.il/1.il/2.r/3: a(e30,e45) e32 e33 e53
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.il/1.il/2.il/3.l/4: a(e10,e31) a(e11,e66)
+il/0.il/1.il/2.il/3.r/4: e12 a(e29,e316)
+Current subset: il/0.il/1.il/2.il/3.l/4: a(e10,e31) a(e11,e66)
+No violation in 0'th...
+Current subset: il/0.il/1.il/2.il/3.r/4: e12 a(e29,e316)
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.il/1.il/2.il/3.il/4.l/5: a(e10,e31)
+il/0.il/1.il/2.il/3.il/4.r/5: a(e11,e66)
+Current subset: il/0.il/1.il/2.il/3.il/4.l/5: a(e10,e31)
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [LinkFailure:e10:('LinkFailure', 2, 1, 4, 2), LinkRecovery:e31:('LinkRecovery', 2, 1, 4, 2)]
+Recursing on right half
+Subsets:
+il/0.il/1.il/2.il/3.ir/4.l/5: e12
+il/0.il/1.il/2.il/3.ir/4.r/5: a(e29,e316)
+Current subset: il/0.il/1.il/2.il/3.ir/4.l/5: e12
+No violation in 0'th...
+Current subset: il/0.il/1.il/2.il/3.ir/4.r/5: a(e29,e316)
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [LinkFailure:e29:('LinkFailure', 3, 2, 2, 2), LinkRecovery:e316:('LinkRecovery', 3, 2, 2, 2)]
+Recursing on right half
+Subsets:
+il/0.il/1.il/2.ir/3.l/4: a(e30,e45) e32
+il/0.il/1.il/2.ir/3.r/4: e33 e53
+Current subset: il/0.il/1.il/2.ir/3.l/4: a(e30,e45) e32
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.il/1.il/2.ir/3.l/4.l/5: a(e30,e45)
+il/0.il/1.il/2.ir/3.l/4.r/5: e32
+Current subset: il/0.il/1.il/2.ir/3.l/4.l/5: a(e30,e45)
+No violation in 0'th...
+Current subset: il/0.il/1.il/2.ir/3.l/4.r/5: e32
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [TrafficInjection:e32:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:04:[IPAddr('123.123.1.4')] Packet:[12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b995[123.123.1.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)]
+Recursing on right half
+Subsets:
+il/0.il/1.ir/2.l/3: e54 e55 e56 e67
+il/0.il/1.ir/2.r/3: e68 a(e110,e317) e111
+Current subset: il/0.il/1.ir/2.l/3: e54 e55 e56 e67
+No violation in 0'th...
+Current subset: il/0.il/1.ir/2.r/3: e68 a(e110,e317) e111
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.il/1.ir/2.il/3.l/4: e54 e55
+il/0.il/1.ir/2.il/3.r/4: e56 e67
+Current subset: il/0.il/1.ir/2.il/3.l/4: e54 e55
+No violation in 0'th...
+Current subset: il/0.il/1.ir/2.il/3.r/4: e56 e67
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.il/1.ir/2.il/3.il/4.l/5: e54
+il/0.il/1.ir/2.il/3.il/4.r/5: e55
+Current subset: il/0.il/1.ir/2.il/3.il/4.l/5: e54
+No violation in 0'th...
+Current subset: il/0.il/1.ir/2.il/3.il/4.r/5: e55
+No violation in 1'th...
+Interference
+Recursing on left half
+Base case [TrafficInjection:e54:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:04:[IPAddr('123.123.2.4')] Packet:[12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b993[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)]
+Recursing on right half
+Base case [TrafficInjection:e55:('TrafficInjection', Interface:HostInterface:eth3:12:34:56:78:03:04:[IPAddr('123.123.3.4')] Packet:[12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b792[123.123.3.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)]
+Recursing on right half
+Subsets:
+il/0.il/1.ir/2.il/3.ir/4.l/5: e56
+il/0.il/1.ir/2.il/3.ir/4.r/5: e67
+Current subset: il/0.il/1.ir/2.il/3.ir/4.l/5: e56
+No violation in 0'th...
+Current subset: il/0.il/1.ir/2.il/3.ir/4.r/5: e67
+No violation in 1'th...
+Interference
+Recursing on left half
+Base case [TrafficInjection:e56:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b691[123.123.4.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)]
+Recursing on right half
+Base case [TrafficInjection:e67:('TrafficInjection', Interface:HostInterface:eth3:12:34:56:78:03:04:[IPAddr('123.123.3.4')] Packet:[12:34:56:78:03:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b88c[123.123.3.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)]
+Recursing on right half
+Subsets:
+il/0.il/1.ir/2.ir/3.l/4: e68 a(e110,e317)
+il/0.il/1.ir/2.ir/3.r/4: e111
+Current subset: il/0.il/1.ir/2.ir/3.l/4: e68 a(e110,e317)
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.il/1.ir/2.ir/3.l/4.l/5: e68
+il/0.il/1.ir/2.ir/3.l/4.r/5: a(e110,e317)
+Current subset: il/0.il/1.ir/2.ir/3.l/4.l/5: e68
+No violation in 0'th...
+Current subset: il/0.il/1.ir/2.ir/3.l/4.r/5: a(e110,e317)
+No violation in 1'th...
+Interference
+Recursing on left half
+Base case [TrafficInjection:e68:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b58b[123.123.4.4>123.123.3.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)]
+Recursing on right half
+Base case [LinkFailure:e110:('LinkFailure', 2, 1, 4, 2), LinkRecovery:e317:('LinkRecovery', 2, 1, 4, 2)]
+Recursing on right half
+Subsets:
+il/0.ir/1.l/2: a(e174,e596) e175 e176 e188 e251 e252 e263
+il/0.ir/1.r/2: e266 e268 e318 e319 e330 e331 e373
+Current subset: il/0.ir/1.l/2: a(e174,e596) e175 e176 e188 e251 e252 e263
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.ir/1.l/2.l/3: a(e174,e596) e175 e176 e188
+il/0.ir/1.l/2.r/3: e251 e252 e263
+Current subset: il/0.ir/1.l/2.l/3: a(e174,e596) e175 e176 e188
+No violation in 0'th...
+Current subset: il/0.ir/1.l/2.r/3: e251 e252 e263
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.ir/1.l/2.il/3.l/4: a(e174,e596) e175
+il/0.ir/1.l/2.il/3.r/4: e176 e188
+Current subset: il/0.ir/1.l/2.il/3.l/4: a(e174,e596) e175
+No violation in 0'th...
+Current subset: il/0.ir/1.l/2.il/3.r/4: e176 e188
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.ir/1.l/2.il/3.il/4.l/5: a(e174,e596)
+il/0.ir/1.l/2.il/3.il/4.r/5: e175
+Current subset: il/0.ir/1.l/2.il/3.il/4.l/5: a(e174,e596)
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [LinkFailure:e174:('LinkFailure', 1, 1, 4, 3), LinkRecovery:e596:('LinkRecovery', 1, 1, 4, 3)]
+Recursing on right half
+Subsets:
+il/0.ir/1.l/2.il/3.ir/4.l/5: e176
+il/0.ir/1.l/2.il/3.ir/4.r/5: e188
+Current subset: il/0.ir/1.l/2.il/3.ir/4.l/5: e176
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [TrafficInjection:e176:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b66d[123.123.4.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)]
+Recursing on right half
+Subsets:
+il/0.ir/1.l/2.ir/3.l/4: e251 e252
+il/0.ir/1.l/2.ir/3.r/4: e263
+Current subset: il/0.ir/1.l/2.ir/3.l/4: e251 e252
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.ir/1.l/2.ir/3.l/4.l/5: e251
+il/0.ir/1.l/2.ir/3.l/4.r/5: e252
+Current subset: il/0.ir/1.l/2.ir/3.l/4.l/5: e251
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [TrafficInjection:e251:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b75f[123.123.4.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)]
+Recursing on right half
+Subsets:
+ir/0.l/1: e387 a(e423,e562) a(e424,e520) e425 e429 e475 e476 e477 a(e519,e713) e523 e563 e597 e598 e599
+ir/0.r/1: e603 e607 e608 a(e633,e714) e634 e635 e641 e670 e674 e677 e695 e715 e716 e717
+Current subset: ir/0.l/1: e387 a(e423,e562) a(e424,e520) e425 e429 e475 e476 e477 a(e519,e713) e523 e563 e597 e598 e599
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.l/1.l/2: e387 a(e423,e562) a(e424,e520) e425 e429 e475 e476
+ir/0.l/1.r/2: e477 a(e519,e713) e523 e563 e597 e598 e599
+Current subset: ir/0.l/1.l/2: e387 a(e423,e562) a(e424,e520) e425 e429 e475 e476
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.l/1.l/2.l/3: e387 a(e423,e562) a(e424,e520) e425
+ir/0.l/1.l/2.r/3: e429 e475 e476
+Current subset: ir/0.l/1.l/2.l/3: e387 a(e423,e562) a(e424,e520) e425
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.l/1.l/2.l/3.l/4: e387 a(e423,e562)
+ir/0.l/1.l/2.l/3.r/4: a(e424,e520) e425
+Current subset: ir/0.l/1.l/2.l/3.l/4: e387 a(e423,e562)
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.l/1.l/2.l/3.l/4.l/5: e387
+ir/0.l/1.l/2.l/3.l/4.r/5: a(e423,e562)
+Current subset: ir/0.l/1.l/2.l/3.l/4.l/5: e387
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.l/1.l/2.l/3.l/4.r/5: a(e423,e562)
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [LinkFailure:e423:('LinkFailure', 4, 2, 2, 1), LinkRecovery:e562:('LinkRecovery', 4, 2, 2, 1)]
+=== Total replays: 0 ===
+Final MCS (18 elements):
+ - LinkFailure:e10
+ - LinkFailure:e29
+ - LinkRecovery:e31
+ - TrafficInjection:e32
+ - TrafficInjection:e54
+ - TrafficInjection:e55
+ - TrafficInjection:e56
+ - TrafficInjection:e67
+ - TrafficInjection:e68
+ - LinkFailure:e110
+ - LinkFailure:e174
+ - TrafficInjection:e176
+ - TrafficInjection:e251
+ - LinkRecovery:e316
+ - LinkRecovery:e317
+ - LinkFailure:e423
+ - LinkRecovery:e562
+ - LinkRecovery:e596
+Sleeping 0 seconds after run
+Warning! Final MCS did not result in violation. Try without timed out events?  See tools/visualize_event_trace.html for debugging
