@@ -267,4 +267,5 @@ Final MCS (18 elements):
  - LinkRecovery:e562
  - LinkRecovery:e596
 Sleeping 0 seconds after run
-Warning! Final MCS did not result in violation. Try without timed out events?  See tools/visualize_event_trace.html for debugging
+Warning: MCS did not result in violation. Trying replay again without timed out events.
+Warning! Final MCS did not result in violation, even  after ignoring timed out internal events.  See tools/visualize_trace_timings.html for debugging
