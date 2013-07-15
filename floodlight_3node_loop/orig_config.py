@@ -20,7 +20,7 @@ timestamp_results = True
 
 # Use POX as our controller
 additional_ports = find_ports(of=range(6633,6833), rest=range(8080, 8280), jython=range(7655, 7855))
-controllers = [ ControllerConfig(command_line, cwd="floodlight", port=additional_ports['of'], additional_ports = additional_ports, uuid=("127.0.0.1", 6633), config_template="exp/config/floodlightconfig.properties.template") ]
+controllers = [ ControllerConfig(command_line, cwd="floodlight", port=additional_ports['of'], try_new_ports=False, additional_ports = additional_ports, uuid=("127.0.0.1", 6633), config_template="experiments/config/floodlightconfig.properties.template") ]
 topology_class = MeshTopology
 topology_params = "num_switches=3"
 #dataplane_trace = "dataplane_traces/ping_pong_same_subnet.trace"
@@ -52,7 +52,7 @@ control_flow = Fuzzer(simulation_config, check_interval=20,
                       input_logger=InputLogger(),
                       invariant_check=my_funky_invariant_check,
                       steps=999,
-                      fuzzer_params="exp/config/fuzzer_params_heavy_failures.py"
+                      fuzzer_params="experiments/config/fuzzer_params_heavy_failures.py"
                       #random_seed=466448715
                       )
 #control_flow = Interactive(simulation_config, input_logger=InputLogger())
