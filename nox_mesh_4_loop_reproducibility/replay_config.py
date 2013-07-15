@@ -10,6 +10,6 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(start_
                  patch_panel_class=BufferedPatchPanel,
                  multiplex_sockets=False)
 
-control_flow = Replayer(simulation_config, "experiments/nox_mesh_4_loop_reproducibility/mcs.trace",
+control_flow = Replayer(simulation_config, "experiments/nox_mesh_4_loop_reproducibility/mcs.trace.notimeouts",
                         wait_on_deterministic_values=False)
 # Invariant check: 'None'

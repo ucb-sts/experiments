@@ -61,10 +61,10 @@
   "original_duration_seconds": 2.3330249786376953,
   "peeker": false,
   "prune_duration_seconds": 0,
-  "prune_start_epoch": 1373840072.999931,
-  "replay_duration_seconds": 3.8480608463287354,
-  "replay_end_epoch": 1373840072.999867,
-  "replay_start_epoch": 1373840069.151806,
+  "prune_start_epoch": 1373850106.209748,
+  "replay_duration_seconds": 3.952087163925171,
+  "replay_end_epoch": 1373850106.20968,
+  "replay_start_epoch": 1373850102.257593,
   "runtime_stats_file": "experiments/nox_mesh_4_loop_reproducibility/intermcs_2_/runtime_stats.json",
   "timed_out_events": {
     "1": {

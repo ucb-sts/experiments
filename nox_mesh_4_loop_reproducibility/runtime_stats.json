@@ -7,15 +7,15 @@
   },
   "initial_verification_runs_needed": 0,
   "iteration_size": {
-    "0": 18
+    "0": 19
   },
   "matched_events": {
     "1": {
       "ConnectToControllers": 1,
-      "ControlMessageReceive": 289,
+      "ControlMessageReceive": 286,
       "ControlMessageSend": 120,
       "DataplaneDrop": 8,
-      "DataplanePermit": 144,
+      "DataplanePermit": 141,
       "LinkFailure": 7,
       "LinkRecovery": 7,
       "TrafficInjection": 15
@@ -48,24 +48,25 @@
       "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
       "PendingReceive(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
       "PendingReceive(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)', 'output(4)'), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)', 'output(4)'), 'data': (), 'class': 'ofp_packet_out', 'in_port': 3})",
       "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
       "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_echo_request'})"
     ]
   },
   "original_duration_seconds": 2.3330249786376953,
   "peeker": false,
-  "prune_duration_seconds": 4894.047603845596,
-  "prune_end_epoch": 1373844967.047535,
-  "prune_start_epoch": 1373840072.999931,
-  "replay_duration_seconds": 3.8480608463287354,
-  "replay_end_epoch": 1373840072.999867,
-  "replay_start_epoch": 1373840069.151806,
+  "prune_duration_seconds": 4924.522585868835,
+  "prune_end_epoch": 1373855030.732334,
+  "prune_start_epoch": 1373850106.209748,
+  "replay_duration_seconds": 3.952087163925171,
+  "replay_end_epoch": 1373850106.20968,
+  "replay_start_epoch": 1373850102.257593,
   "runtime_stats_file": "experiments/nox_mesh_4_loop_reproducibility/runtime_stats.json",
   "timed_out_events": {
     "1": {
-      "ControlMessageReceive": 55,
+      "ControlMessageReceive": 58,
       "ControlMessageSend": 21,
-      "DataplanePermit": 20
+      "DataplanePermit": 23
     }
   },
   "total_events": 719,
@@ -73,6 +74,6 @@
   "total_inputs_replayed": 2469,
   "total_replays": 43,
   "violation_found_in_run": {
-    "0": 15
+    "0": 14
   }
 }

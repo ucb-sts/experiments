@@ -243,11 +243,14 @@ Sleeping 0 seconds after run
 No violation in 0'th...
 Current subset: ir/0.l/1.l/2.l/3.l/4.r/5: a(e423,e562)
 Sleeping 0 seconds after run
-Violation! Considering 1'th
-Violation found in 1th half. Recursing
+No violation in 1'th...
+Interference
+Recursing on left half
+Base case [DataplaneDrop:e387:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.3.4', u'dl_src': u'12:34:56:78:03:04', u'nw_dst': u'123.123.1.4'}, 1, 1)]
+Recursing on right half
 Base case [LinkFailure:e423:('LinkFailure', 4, 2, 2, 1), LinkRecovery:e562:('LinkRecovery', 4, 2, 2, 1)]
 === Total replays: 0 ===
-Final MCS (18 elements):
+Final MCS (19 elements):
  - LinkFailure:e10
  - LinkFailure:e29
  - LinkRecovery:e31
@@ -263,6 +266,7 @@ Final MCS (18 elements):
  - TrafficInjection:e251
  - LinkRecovery:e316
  - LinkRecovery:e317
+ - DataplaneDrop:e387
  - LinkFailure:e423
  - LinkRecovery:e562
  - LinkRecovery:e596

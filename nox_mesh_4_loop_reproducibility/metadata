@@ -9,10 +9,10 @@
   "cwd": "/home/rcs/Research/UCB/code/sts",
   "host": {
     "cpu_info": "Intel(R) Xeon(R) CPU X5660 @ 2.80GHz",
-    "free": "total       used       free     shared    buffers     cached\nMem:       6116048    2878928    3237120          0     388004    1441296\n-/+ buffers/cache:    1049628    5066420\nSwap:      6283260     212280    6070980",
+    "free": "total       used       free     shared    buffers     cached\nMem:       6116048    2931000    3185048          0     392940    1445676\n-/+ buffers/cache:    1092384    5023664\nSwap:      6283260     212256    6071004",
     "name": "c5",
     "num_cores": "12",
-    "uptime": "15:14:29 up 227 days,  5:24,  2 users,  load average: 0.00, 0.06, 0.05"
+    "uptime": "18:01:42 up 227 days,  8:11,  2 users,  load average: 0.00, 0.01, 0.05"
   },
   "modules": {
     "pox": {
@@ -21,13 +21,13 @@
     },
     "sts": {
       "branch": "master",
-      "commit": "2ae274d3ef64faf6d0bd9c0e14d7192a03e9756d"
+      "commit": "1993ad9aadb393d8e5145cb1d87507fb4b3e93c3"
     }
   },
   "sys": {
     "lsb_release": "Ubuntu 11.10",
     "uname": "Linux c5 3.0.0-28-server #45-Ubuntu SMP Wed Nov 14 22:15:34 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux"
   },
-  "timestamp": "2013_07_14_15_14_29",
+  "timestamp": "2013_07_14_18_01_42",
   "user": "rcs"
 }
