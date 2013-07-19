@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/config/zeta.py"
+  ],
+  "cwd": "/mnt/blade-0-b/home-local/andrewor/sts",
+  "host": {
+    "cpu_info": "AMD Opteron(TM) Processor 6234",
+    "free": "total       used       free     shared    buffers     cached\nMem:     132297964  128605204    3692760          0     382672  106702700\n-/+ buffers/cache:   21519832  110778132\nSwap:     19602772          0   19602772",
+    "name": "blade-0-b",
+    "num_cores": "24",
+    "uptime": "14:15:31 up 4 days, 20:18,  0 users,  load average: 1.77, 1.96, 1.95"
+  },
+  "modules": {
+    "pox": {
+      "branch": "debugger",
+      "commit": "cced89df35a07205792deaafc6b0361e5baf7cf7"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "3919638f2d084c55f7b0b457bb64bf176f023ab4"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.10",
+    "uname": "Linux blade-0-b 3.0.0-32-generic #51-Ubuntu SMP Thu Mar 21 15:50:59 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2013_07_18_14_15_31",
+  "user": "root"
+}
