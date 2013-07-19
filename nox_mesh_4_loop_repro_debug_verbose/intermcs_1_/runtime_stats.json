@@ -1,0 +1,74 @@
+{
+  "ambiguous_counts": {},
+  "ambiguous_events": {},
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./nox_core -v -v -i ptcp:6635 routing', address='127.0.0.1', port=6635, cwd='nox_classic/build/src')],\n                 topology_class=MeshTopology,\n                 topology_params=\"num_switches=4\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=False)",
+  "early_internal_events": {
+    "1": []
+  },
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 67
+  },
+  "matched_events": {
+    "1": {
+      "CheckInvariants": 1,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 336,
+      "ControlMessageSend": 136,
+      "DataplaneDrop": 18,
+      "DataplanePermit": 162,
+      "LinkFailure": 9,
+      "LinkRecovery": 8,
+      "TrafficInjection": 26
+    }
+  },
+  "new_internal_events": {
+    "1": [
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(4)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
+      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(4)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
+      "PendingReceive(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
+      "PendingReceive(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
+      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
+      "PendingReceive(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 1, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:02:04'})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 0, 'priority': 32768, 'idle_timeout': 5, 'command': 'add', 'actions': ('output(3)',), 'flags': 1, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:04:04,dl_dst:12:34:56:78:03:04,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.4.4/32,nw_dst:123.123.3.4/32,tp_src:8,tp_dst:0'})",
+      "PendingReceive(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
+      "PendingReceive(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(4)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
+      "PendingReceive(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 1, 'class': 'ofp_flow_mod', 'match': 'dl_dst:12:34:56:78:02:04'})",
+      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(4)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
+      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 0, 'priority': 32768, 'idle_timeout': 5, 'command': 'add', 'actions': ('output(3)',), 'flags': 1, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:04:04,dl_dst:12:34:56:78:03:04,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.4.4/32,nw_dst:123.123.3.4/32,tp_src:8,tp_dst:0'})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 0, 'priority': 32768, 'idle_timeout': 5, 'command': 'add', 'actions': ('output(3)',), 'flags': 1, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:03:04,dl_dst:12:34:56:78:04:04,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.3.4/32,nw_dst:123.123.4.4/32,tp_src:8,tp_dst:0'})",
+      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})",
+      "PendingReceive(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 0, 'priority': 32768, 'idle_timeout': 5, 'command': 'add', 'actions': ('output(3)',), 'flags': 1, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:04:04,dl_dst:12:34:56:78:03:04,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.4.4/32,nw_dst:123.123.3.4/32,tp_src:8,tp_dst:0'})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65533})"
+    ]
+  },
+  "original_duration_seconds": 2.3330249786376953,
+  "peeker": false,
+  "prune_duration_seconds": 0,
+  "prune_start_epoch": 1374210616.020207,
+  "replay_duration_seconds": 3.964370012283325,
+  "replay_end_epoch": 1374210616.020136,
+  "replay_start_epoch": 1374210612.055766,
+  "runtime_stats_file": "experiments/nox_mesh_4_loop_repro_debug_verbose/intermcs_1_/runtime_stats.json",
+  "timed_out_events": {
+    "1": {
+      "ControlMessageReceive": 8,
+      "ControlMessageSend": 5,
+      "DataplaneDrop": 1,
+      "DataplanePermit": 2
+    }
+  },
+  "total_events": 719,
+  "total_inputs": 68,
+  "total_inputs_replayed": 596,
+  "total_replays": 11,
+  "violation_found_in_run": {
+    "0": 1
+  }
+}
