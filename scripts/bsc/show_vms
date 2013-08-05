@@ -1,0 +1,38 @@
+#!/bin/bash
+
+WORK_DIR=""
+REMOTE=0
+
+while getopts "d:r" opt; do
+  case $opt in
+    d) WORK_DIR=$OPTARG;;
+    r) REMOTE=1;;
+    :)
+      echo "Usage: show_vms -d /path/to/work [-r]" >&2
+      exit 1;;
+    \?)
+      echo "Usage: show_vms -d /path/to/work [-r]" >&2
+      exit 1;;
+  esac
+done
+
+# Work directory
+if [ -z "$WORK_DIR"  ] || ! [ -d "$WORK_DIR" ]; then
+  echo "Usage: show_vms -d /path/to/work [-r]" >&2
+  exit 1
+fi
+cd $WORK_DIR
+
+# Check if vm exists
+VM_TYPE="KvmNode"
+if [ $REMOTE -eq 1 ]; then
+  VM_TYPE="EsxVmNode"
+fi
+IP=$(make show-vms | grep -A 2 $VM_TYPE | egrep "ipaddr: [0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" | sed 's/ipaddr://')
+if [ -z "$IP" ]; then
+  echo "No vm found!"
+  exit 1
+fi
+
+echo $IP
+

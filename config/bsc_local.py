@@ -6,12 +6,14 @@ from sts.simulation_state import SimulationConfig
 
 # Work directory must be absolute path
 work_directory = "/home-local/andrewor/work"
-start_cmd = ("./bsc_start_vm %s" % work_directory)
-kill_cmd = ("./bsc_stop_vm %s" % work_directory)
-get_address_cmd = ("./bsc_check_address %s" % work_directory)
+start_cmd = "./start_vms -d %s" % work_directory
+kill_cmd = "./power_off_vm -d %s -i 1" % work_directory
+restart_cmd = "./power_on_vm -d %s -i 1" % work_directory
+get_address_cmd = "./show_vms -d %s" % work_directory
+dummy_cmd = "sleep 1" 
 
 # Use Floodlight as our controller
-controllers = [ ControllerConfig(start_cmd, kill_cmd, cwd="experiments/scripts", address="__address__", port=6633, controller_type="bsc", label="c1", get_address_cmd=get_address_cmd) ]
+controllers = [ ControllerConfig(start_cmd, kill_cmd, restart_cmd, cwd="experiments/scripts/bsc", address="__address__", port=6633, controller_type="bsc", label="c1", get_address_cmd=get_address_cmd) ] 
 topology_class = MeshTopology
 topology_params = "num_switches=3"
 

@@ -1,0 +1,51 @@
+#!/bin/bash
+
+WORK_DIR=""
+HA=0
+REMOTE=0
+
+while getopts "d:hr" opt; do
+  case $opt in
+    d) WORK_DIR=$OPTARG;;
+    h) HA=1;;
+    r) REMOTE=1;;
+    :)
+      echo "Usage: start_vms -d /path/to/work [-h] [-r]" >&2
+      exit 1;;
+    \?)
+      echo "Usage: start_vms -d /path/to/work [-h] [-r]" >&2
+      exit 1;;
+  esac
+done
+
+# Work directory
+if [ -z "$WORK_DIR"  ] || ! [ -d "$WORK_DIR" ]; then
+  echo "Usage: start_vms -d /path/to/work [-h] [-r]" >&2
+  exit 1
+fi
+cd $WORK_DIR
+
+# Check if vm exists
+VM_TYPE="KvmNode"
+if [ $REMOTE -eq 1 ]; then
+  VM_TYPE="EsxVmNode"
+fi
+IP=$(make show-vms | grep -A 2 $VM_TYPE | egrep "ipaddr: [0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" | sed 's/ipaddr://')
+if [ -z "$IP" ]; then
+  echo "No vm found; starting new one(s)!"
+
+  # Start vms
+  CMD="make start"
+  if [ $REMOTE -eq 1 ]; then
+    CMD="${CMD}-remote"
+  fi
+  CMD="${CMD}-vms"
+  if [ $HA -eq 1 ]; then
+      CMD="${CMD}-ha"
+    fi
+  echo $CMD
+  #$($CMD)
+fi
+
+echo $IP
+
