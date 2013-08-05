@@ -1,1 +1,0 @@
-{"wait_time": 1.0, "dependent_labels": [], "fingerprint": ["WaitTime"], "time": [1372706362, 287918], "class": "WaitTime", "prunable": true, "timed_out": false, "round": -1, "label": "e1"}
