@@ -44,7 +44,7 @@ if [ -z "$IP" ]; then
       CMD="${CMD}-ha"
     fi
   echo $CMD
-  #$($CMD)
+  #($CMD)
 fi
 
 echo $IP
