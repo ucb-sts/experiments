@@ -37,6 +37,6 @@ if [ -z "$IP" ]; then
 fi
 IP=$(echo $IP | awk '{print $'$INDEX'}')
 
-ssh -o "StrictHostKeyChecking=no" root@$IP 'service floodlight start && exit'
-echo "Floodlight process started at "$IP
+STATUS=$(ssh -o "StrictHostKeyChecking=no" root@$IP 'service floodlight start && exit')
+echo "Start process ($IP): "$STATUS
 

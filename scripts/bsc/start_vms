@@ -23,6 +23,7 @@ if [ -z "$WORK_DIR"  ] || ! [ -d "$WORK_DIR" ]; then
   echo "Usage: start_vms -d /path/to/work [-h] [-r]" >&2
   exit 1
 fi
+SCRIPT_DIR=$(pwd)
 cd $WORK_DIR
 
 # Check if vm exists
@@ -46,6 +47,15 @@ if [ -z "$IP" ]; then
   echo $CMD
   #($CMD)
 fi
+
+# Start floodlight process just in case
+cd $SCRIPT_DIR
+REMOTE_FLAG=""
+if [ $REMOTE -eq 1 ]; then
+  REMOTE_FLAG="-r"
+fi
+./start_process -d $WORK_DIR -i 1 $REMOTE_FLAG
+./start_process -d $WORK_DIR -i 2 $REMOTE_FLAG
 
 echo $IP
 

@@ -10,17 +10,17 @@ while getopts "d:i:r" opt; do
     i) INDEX=$OPTARG;;
     r) REMOTE=1;;
     :)
-      echo "Usage: stop_process -d /path/to/work [-i controller_index] [-r]" >&2
+      echo "Usage: start_process -d /path/to/work [-i controller_index] [-r]" >&2
       exit 1;;
     \?)
-      echo "Usage: stop_process -d /path/to/work [-i controller_index] [-r]" >&2
+      echo "Usage: start_process -d /path/to/work [-i controller_index] [-r]" >&2
       exit 1;;
   esac
 done
 
 # Work directory
 if [ -z "$WORK_DIR"  ] || ! [ -d "$WORK_DIR" ]; then
-  echo "Usage: stop_vms -d /path/to/work [-h] [-r]" >&2
+  echo "Usage: start_vms -d /path/to/work [-h] [-r]" >&2
   exit 1
 fi
 cd $WORK_DIR
@@ -37,6 +37,6 @@ if [ -z "$IP" ]; then
 fi
 IP=$(echo $IP | awk '{print $'$INDEX'}')
 
-STATUS=$(ssh -o "StrictHostKeyChecking=no" root@$IP 'service floodlight stop && exit')
-echo "Stop process ($IP): "$STATUS
+STATUS=$(ssh -o "StrictHostKeyChecking=no" root@$IP 'service floodlight status && exit')
+echo "Check process ($IP): "$STATUS
 
