@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/iota_mcs/interreplay_100_final_mcs_trace/replay_config.py"
+  ],
+  "cwd": "/mnt/blade-0-b/home-local/andrewor/sts",
+  "host": {
+    "cpu_info": "AMD Opteron(TM) Processor 6234",
+    "free": "total       used       free     shared    buffers     cached\nMem:     132297964   67683956   64614008          0     568084   45594668\n-/+ buffers/cache:   21521204  110776760\nSwap:     19602772      48620   19554152",
+    "name": "blade-0-b",
+    "num_cores": "24",
+    "uptime": "11:55:57 up 31 days, 17:59,  0 users,  load average: 4.05, 3.92, 3.94"
+  },
+  "modules": {
+    "pox": {
+      "branch": "debugger",
+      "commit": "253cf5aac8511e5fb793579547d0439874514cf6"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "3be2fa0867dc8c4dc8834378e2b71875cb6b90d4"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.10",
+    "uname": "Linux blade-0-b 3.0.0-32-generic #51-Ubuntu SMP Thu Mar 21 15:50:59 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2013_08_14_11_55_57",
+  "user": "root"
+}

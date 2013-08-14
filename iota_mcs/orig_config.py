@@ -12,7 +12,7 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(start_
                  multiplex_sockets=False,
                  kill_controllers_on_exit=False)
 
-control_flow = EfficientMCSFinder(simulation_config, "experiments/iota_mcs/events.trace",
+control_flow = EfficientMCSFinder(simulation_config, "experiments/iota/events.trace",
                                   wait_on_deterministic_values=False,
                                   no_violation_verification_runs=5,
                                   invariant_check_name='check_everything')
