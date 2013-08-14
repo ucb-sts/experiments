@@ -1,7 +1,12 @@
 {
   "ambiguous_counts": {},
   "ambiguous_events": {},
-  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./start_vms -d /home-local/andrewor/work -h -r', label='c1', address='10.192.5.131', port=6633, cwd='experiments/scripts/bsc', controller_type='bsc', kill_cmd='./stop_process -d /home-local/andrewor/work -i 1 -r', restart_cmd='./start_process -d /home-local/andrewor/work -i 1 -r', check_status_cmd='./check_process -d /home-local/andrewor/work -i 1 -r'), ControllerConfig(start_cmd='sleep 1', label='c2', address='10.192.5.132', port=6633, cwd='experiments/scripts/bsc', controller_type='bsc', kill_cmd='./stop_process -d /home-local/andrewor/work -i 2 -r', restart_cmd='./start_process -d /home-local/andrewor/work -i 2 -r', check_status_cmd='./check_process -d /home-local/andrewor/work -i 2 -r')],\n                 topology_class=MeshTopology,\n                 topology_params=\"num_switches=3\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=False,\n                 kill_controllers_on_exit=False)",
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./start_vms -d /home-local/andrewor/work -h -r', label='c1', address='10.192.5.131', port=6633, cwd='experiments/scripts/bsc', controller_type='bsc', kill_cmd='./stop_process -d /home-local/andrewor/work -i 1 -r', restart_cmd='./start_process -d /home-local/andrewor/work -i 1 -r', check_status_cmd='./check_process -d /home-local/andrewor/work -i 1 -r'), ControllerConfig(start_cmd='sleep 1', label='c2', address='10.192.5.132', port=6633, cwd='experiments/scripts/bsc', controller_type='bsc', kill_cmd='./stop_process -d /home-local/andrewor/work -i 2 -r', restart_cmd='./start_process -d /home-local/andrewor/work -i 2 -r', check_status_cmd='./check_process -d /home-local/andrewor/work -i 2 -r')],
+                 topology_class=MeshTopology,
+                 topology_params="num_switches=3",
+                 patch_panel_class=BufferedPatchPanel,
+                 multiplex_sockets=False,
+                 kill_controllers_on_exit=False)",
   "early_internal_events": {
     "1": []
   },
@@ -51,7 +56,7 @@
   "replay_duration_seconds": 94.95392394065857,
   "replay_end_epoch": 1376439228.457427,
   "replay_start_epoch": 1376439133.503503,
-  "runtime_stats_file": "experiments/bsc_remote_ha_mcs/intermcs_1_/runtime_stats.json",
+  "runtime_stats_file": "experiments/iota_mcs/intermcs_1_/runtime_stats.json",
   "timed_out_events": {
     "1": {
       "ControlMessageReceive": 92,

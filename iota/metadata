@@ -3,12 +3,15 @@
     "./simulator.py",
     "-v",
     "-c",
-    "experiments/config/bsc_remote_ha.py"
+    "experiments/config/iota.py"
   ],
   "cwd": "/mnt/blade-0-b/home-local/andrewor/sts",
   "host": {
     "cpu_info": "AMD Opteron(TM) Processor 6234",
-    "free": "total       used       free     shared    buffers     cached\nMem:     132297964  130686000    1611964          0     565952  107439188\n-/+ buffers/cache:   22680860  109617104\nSwap:     19602772      48600   19554172",
+    "free": "total       used       free     shared    buffers     cached
+Mem:     132297964  130686000    1611964          0     565952  107439188
+-/+ buffers/cache:   22680860  109617104
+Swap:     19602772      48600   19554172",
     "name": "blade-0-b",
     "num_cores": "24",
     "uptime": "17:07:54 up 30 days, 23:11,  0 users,  load average: 4.37, 4.15, 4.27"

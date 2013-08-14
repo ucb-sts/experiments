@@ -12,7 +12,7 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(start_
                  multiplex_sockets=False,
                  kill_controllers_on_exit=False)
 
-control_flow = Replayer(simulation_config, "experiments/bsc_remote_ha/events.trace",
+control_flow = Replayer(simulation_config, "experiments/iota_replay/events.trace",
                         input_logger=InputLogger(),
                         wait_on_deterministic_values=False)
 # Invariant check: 'check_everything'
