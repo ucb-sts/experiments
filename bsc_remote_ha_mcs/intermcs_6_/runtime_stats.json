@@ -1,0 +1,91 @@
+{
+  "ambiguous_counts": {},
+  "ambiguous_events": {},
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./start_vms -d /home-local/andrewor/work -h -r', label='c1', address='10.192.5.131', port=6633, cwd='experiments/scripts/bsc', controller_type='bsc', kill_cmd='./stop_process -d /home-local/andrewor/work -i 1 -r', restart_cmd='./start_process -d /home-local/andrewor/work -i 1 -r', check_status_cmd='./check_process -d /home-local/andrewor/work -i 1 -r'), ControllerConfig(start_cmd='sleep 1', label='c2', address='10.192.5.132', port=6633, cwd='experiments/scripts/bsc', controller_type='bsc', kill_cmd='./stop_process -d /home-local/andrewor/work -i 2 -r', restart_cmd='./start_process -d /home-local/andrewor/work -i 2 -r', check_status_cmd='./check_process -d /home-local/andrewor/work -i 2 -r')],\n                 topology_class=MeshTopology,\n                 topology_params=\"num_switches=3\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=False,\n                 kill_controllers_on_exit=False)",
+  "early_internal_events": {
+    "1": []
+  },
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 96
+  },
+  "matched_events": {
+    "1": {
+      "CheckInvariants": 3,
+      "ConnectToControllers": 1,
+      "ControlChannelBlock": 25,
+      "ControlChannelUnblock": 25,
+      "ControlMessageReceive": 225,
+      "ControlMessageSend": 196,
+      "DataplaneDrop": 21,
+      "DataplanePermit": 115,
+      "LinkFailure": 10,
+      "LinkRecovery": 10,
+      "SwitchFailure": 3,
+      "SwitchRecovery": 3,
+      "TrafficInjection": 31
+    }
+  },
+  "new_internal_events": {
+    "1": [
+      "PendingReceive(dpid=2, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_echo_request'})",
+      "PendingReceive(dpid=3, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=3, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c2', fingerprint=OFFingerprint{'flags': 0, 'type': 3, 'class': 'ofp_stats_request'})",
+      "PendingReceive(dpid=1, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(1)', 'output(3)'), 'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c2', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 10, 'idle_timeout': 5, 'command': 'add', 'actions': ('output(1)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_type:2048'})",
+      "PendingReceive(dpid=1, controller_id='c2', fingerprint=OFFingerprint{'class': 'ofp_echo_request'})",
+      "PendingReceive(dpid=2, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=3, controller_id='c2', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 10, 'idle_timeout': 5, 'command': 'add', 'actions': ('output(3)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_type:2048'})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_echo_request'})",
+      "PendingReceive(dpid=1, controller_id='c2', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 10, 'idle_timeout': 5, 'command': 'add', 'actions': ('output(1)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:02:03,dl_vlan:65535,dl_type:2048'})",
+      "PendingReceive(dpid=2, controller_id='c2', fingerprint=OFFingerprint{'class': 'ofp_echo_request'})",
+      "PendingReceive(dpid=2, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c2', fingerprint=OFFingerprint{'flags': 0, 'type': 3, 'class': 'ofp_stats_request'})",
+      "PendingReceive(dpid=1, controller_id='c2', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 10, 'idle_timeout': 5, 'command': 'add', 'actions': ('output(2)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_type:2048'})",
+      "PendingReceive(dpid=2, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=3, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c2', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 0, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L'})",
+      "PendingReceive(dpid=1, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=3, controller_id='c2', fingerprint=OFFingerprint{'flags': 0, 'type': 3, 'class': 'ofp_stats_request'})",
+      "PendingReceive(dpid=3, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=3, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=3, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(2)', 'output(3)'), 'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_echo_request'})"
+    ]
+  },
+  "original_duration_seconds": 35.42657804489136,
+  "peeker": false,
+  "prune_duration_seconds": 0,
+  "prune_start_epoch": 1376439228.457543,
+  "replay_duration_seconds": 94.95392394065857,
+  "replay_end_epoch": 1376439228.457427,
+  "replay_start_epoch": 1376439133.503503,
+  "runtime_stats_file": "experiments/bsc_remote_ha_mcs/intermcs_6_/runtime_stats.json",
+  "timed_out_events": {
+    "1": {
+      "ControlMessageReceive": 111,
+      "ControlMessageSend": 169,
+      "DataplaneDrop": 4,
+      "DataplanePermit": 89
+    }
+  },
+  "total_events": 1265,
+  "total_inputs": 350,
+  "total_inputs_replayed": 10754,
+  "total_replays": 77,
+  "violation_found_in_run": {
+    "0": 11,
+    "1": 1,
+    "2": 1
+  }
+}
