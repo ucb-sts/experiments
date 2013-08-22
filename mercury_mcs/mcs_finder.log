@@ -1,0 +1,210 @@
+Sleeping 0 seconds after run
+Violation reproduced successfully! Proceeding with pruning
+Subsets:
+l/0: a(e2,e4) a(e3,e5) a(e10,e11) e24 e45 e46 e48 a(e49,e50) e88 e116 e117 e119 e120 e151 a(e152,e154) a(e153,e155) a(e160,e171) e161 e162 a(e172,e173) e179 e180 e182 a(e186,e187) e199 e201 a(e203,e217) e204 e207 e215 a(e218,e219) e242 e243 e244 a(e247,e248) a(e255,e257) a(e256,e258) a(e266,e267) e276 e277 e291 e292 e293 e296 a(e298,e299) e311 e312 e314 a(e318,e319) a(e331,e345) e332 e333 e334 e335 e346 a(e350,e351) a(e362,e373) e363 e364 e366 e400 e422 e455 e456 e461 e464 a(e466,e467) a(e477,e547) e478 e479 a(e484,e485) e502 e505 e512 a(e513,e515) a(e514,e516) e533 e535 a(e536,e537) e548 e549 a(e550,e565) e564 e567 a(e581,e582) a(e592,e608) e593 e594 e609 a(e615,e616) e639 e655 e656 e658 e659 a(e660,e661) e674 e675 e676 a(e688,e713) a(e689,e755) e690 e691 e693 e694 e714 e718 a(e723,e725) a(e724,e726) e740 e741 e743 a(e744,e745) e756 e757 e776 a(e780,e782) a(e781,e783) e802 e804 a(e826,e827) a(e839,e895) a(e846,e847) a(e857,e924) e858 e860 e872 e875 a(e876,e877) e896 e901 a(e902,e903) a(e904,e915) e905 e906 e908 a(e909,e911) a(e910,e912) e916 e917 a(e920,e921) e925 a(e929,e930) a(e933,e944) e934
+r/0: e935 a(e943,e964) e945 e946 e949 a(e951,e952) e955 e956 e958 e960 e961 e965 e966 e971 e972 e980 e981 e983 a(e985,e986) e999 e1000 a(e1013,e1027) e1014 a(e1017,e1018) a(e1026,e1045) e1028 e1029 e1030 e1031 e1046 e1048 a(e1052,e1053) a(e1058,e1059) e1060 e1061 e1062 e1063 a(e1068,e1070) a(e1069,e1071) e1074 e1076 e1077 a(e1078,e1079) e1080 e1081 a(e1082,e1083) e1084 e1085 e1107 e1108 e1112 e1120 e1121 e1124 a(e1142,e1149) e1143 e1150 e1151 e1154 e1161 a(e1165,e1166) e1173 e1175 a(e1177,e1178) a(e1189,e1198) e1190 e1199 e1209 a(e1219,e1276) e1223 e1228 a(e1229,e1230) e1234 e1235 a(e1238,e1240) a(e1239,e1241) e1244 a(e1247,e1248) e1251 a(e1252,e1253) e1254 e1255 e1257 a(e1258,e1259) e1260 e1262 a(e1263,e1264) a(e1265,e1291) e1266 e1267 a(e1270,e1271) e1274 e1275 e1277 e1278 a(e1281,e1284) a(e1282,e1285) a(e1283,e1286) e1287 e1288 e1295 e1296 e1299 e1300 e1301 a(e1304,e1307) a(e1305,e1308) a(e1306,e1309) e1310 a(e1314,e1315) e1316 e1319 a(e1320,e1323) a(e1321,e1324) a(e1322,e1325) e1326 e1330 e1331 e1335 a(e1336,e1337) e1338 a(e1340,e1341) a(e1343,e1344) a(e1345,e1352) e1346 a(e1348,e1349) e1353 e1356 e1357 e1360 a(e1366,e1373) e1367 e1368 e1371 e1374 e1375 e1376 e1379 e1384 e1385 e1389 e1391 e1392 e1393
+Current subset: l/0: a(e2,e4) a(e3,e5) a(e10,e11) e24 e45 e46 e48 a(e49,e50) e88 e116 e117 e119 e120 e151 a(e152,e154) a(e153,e155) a(e160,e171) e161 e162 a(e172,e173) e179 e180 e182 a(e186,e187) e199 e201 a(e203,e217) e204 e207 e215 a(e218,e219) e242 e243 e244 a(e247,e248) a(e255,e257) a(e256,e258) a(e266,e267) e276 e277 e291 e292 e293 e296 a(e298,e299) e311 e312 e314 a(e318,e319) a(e331,e345) e332 e333 e334 e335 e346 a(e350,e351) a(e362,e373) e363 e364 e366 e400 e422 e455 e456 e461 e464 a(e466,e467) a(e477,e547) e478 e479 a(e484,e485) e502 e505 e512 a(e513,e515) a(e514,e516) e533 e535 a(e536,e537) e548 e549 a(e550,e565) e564 e567 a(e581,e582) a(e592,e608) e593 e594 e609 a(e615,e616) e639 e655 e656 e658 e659 a(e660,e661) e674 e675 e676 a(e688,e713) a(e689,e755) e690 e691 e693 e694 e714 e718 a(e723,e725) a(e724,e726) e740 e741 e743 a(e744,e745) e756 e757 e776 a(e780,e782) a(e781,e783) e802 e804 a(e826,e827) a(e839,e895) a(e846,e847) a(e857,e924) e858 e860 e872 e875 a(e876,e877) e896 e901 a(e902,e903) a(e904,e915) e905 e906 e908 a(e909,e911) a(e910,e912) e916 e917 a(e920,e921) e925 a(e929,e930) a(e933,e944) e934
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1: a(e2,e4) a(e3,e5) a(e10,e11) e24 e45 e46 e48 a(e49,e50) e88 e116 e117 e119 e120 e151 a(e152,e154) a(e153,e155) a(e160,e171) e161 e162 a(e172,e173) e179 e180 e182 a(e186,e187) e199 e201 a(e203,e217) e204 e207 e215 a(e218,e219) e242 e243 e244 a(e247,e248) a(e255,e257) a(e256,e258) a(e266,e267) e276 e277 e291 e292 e293 e296 a(e298,e299) e311 e312 e314 a(e318,e319) a(e331,e345) e332 e333 e334 e335 e346 a(e350,e351) a(e362,e373) e363 e364 e366 e400 e422 e455 e456 e461 e464 a(e466,e467) a(e477,e547) e478 e479 a(e484,e485) e502 e505
+l/0.r/1: e512 a(e513,e515) a(e514,e516) e533 e535 a(e536,e537) e548 e549 a(e550,e565) e564 e567 a(e581,e582) a(e592,e608) e593 e594 e609 a(e615,e616) e639 e655 e656 e658 e659 a(e660,e661) e674 e675 e676 a(e688,e713) a(e689,e755) e690 e691 e693 e694 e714 e718 a(e723,e725) a(e724,e726) e740 e741 e743 a(e744,e745) e756 e757 e776 a(e780,e782) a(e781,e783) e802 e804 a(e826,e827) a(e839,e895) a(e846,e847) a(e857,e924) e858 e860 e872 e875 a(e876,e877) e896 e901 a(e902,e903) a(e904,e915) e905 e906 e908 a(e909,e911) a(e910,e912) e916 e917 a(e920,e921) e925 a(e929,e930) a(e933,e944) e934
+Current subset: l/0.l/1: a(e2,e4) a(e3,e5) a(e10,e11) e24 e45 e46 e48 a(e49,e50) e88 e116 e117 e119 e120 e151 a(e152,e154) a(e153,e155) a(e160,e171) e161 e162 a(e172,e173) e179 e180 e182 a(e186,e187) e199 e201 a(e203,e217) e204 e207 e215 a(e218,e219) e242 e243 e244 a(e247,e248) a(e255,e257) a(e256,e258) a(e266,e267) e276 e277 e291 e292 e293 e296 a(e298,e299) e311 e312 e314 a(e318,e319) a(e331,e345) e332 e333 e334 e335 e346 a(e350,e351) a(e362,e373) e363 e364 e366 e400 e422 e455 e456 e461 e464 a(e466,e467) a(e477,e547) e478 e479 a(e484,e485) e502 e505
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1.l/2: a(e2,e4) a(e3,e5) a(e10,e11) e24 e45 e46 e48 a(e49,e50) e88 e116 e117 e119 e120 e151 a(e152,e154) a(e153,e155) a(e160,e171) e161 e162 a(e172,e173) e179 e180 e182 a(e186,e187) e199 e201 a(e203,e217) e204 e207 e215 a(e218,e219) e242 e243 e244 a(e247,e248) a(e255,e257) a(e256,e258)
+l/0.l/1.r/2: a(e266,e267) e276 e277 e291 e292 e293 e296 a(e298,e299) e311 e312 e314 a(e318,e319) a(e331,e345) e332 e333 e334 e335 e346 a(e350,e351) a(e362,e373) e363 e364 e366 e400 e422 e455 e456 e461 e464 a(e466,e467) a(e477,e547) e478 e479 a(e484,e485) e502 e505
+Current subset: l/0.l/1.l/2: a(e2,e4) a(e3,e5) a(e10,e11) e24 e45 e46 e48 a(e49,e50) e88 e116 e117 e119 e120 e151 a(e152,e154) a(e153,e155) a(e160,e171) e161 e162 a(e172,e173) e179 e180 e182 a(e186,e187) e199 e201 a(e203,e217) e204 e207 e215 a(e218,e219) e242 e243 e244 a(e247,e248) a(e255,e257) a(e256,e258)
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: l/0.l/1.r/2: a(e266,e267) e276 e277 e291 e292 e293 e296 a(e298,e299) e311 e312 e314 a(e318,e319) a(e331,e345) e332 e333 e334 e335 e346 a(e350,e351) a(e362,e373) e363 e364 e366 e400 e422 e455 e456 e461 e464 a(e466,e467) a(e477,e547) e478 e479 a(e484,e485) e502 e505
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+l/0.l/1.il/2.l/3: a(e2,e4) a(e3,e5) a(e10,e11) e24 e45 e46 e48 a(e49,e50) e88 e116 e117 e119 e120 e151 a(e152,e154) a(e153,e155) a(e160,e171) e161 e162
+l/0.l/1.il/2.r/3: a(e172,e173) e179 e180 e182 a(e186,e187) e199 e201 a(e203,e217) e204 e207 e215 a(e218,e219) e242 e243 e244 a(e247,e248) a(e255,e257) a(e256,e258)
+Current subset: l/0.l/1.il/2.l/3: a(e2,e4) a(e3,e5) a(e10,e11) e24 e45 e46 e48 a(e49,e50) e88 e116 e117 e119 e120 e151 a(e152,e154) a(e153,e155) a(e160,e171) e161 e162
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: l/0.l/1.il/2.r/3: a(e172,e173) e179 e180 e182 a(e186,e187) e199 e201 a(e203,e217) e204 e207 e215 a(e218,e219) e242 e243 e244 a(e247,e248) a(e255,e257) a(e256,e258)
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+l/0.l/1.il/2.il/3.l/4: a(e2,e4) a(e3,e5) a(e10,e11) e24 e45 e46 e48 a(e49,e50) e88 e116
+l/0.l/1.il/2.il/3.r/4: e117 e119 e120 e151 a(e152,e154) a(e153,e155) a(e160,e171) e161 e162
+Current subset: l/0.l/1.il/2.il/3.l/4: a(e2,e4) a(e3,e5) a(e10,e11) e24 e45 e46 e48 a(e49,e50) e88 e116
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: l/0.l/1.il/2.il/3.r/4: e117 e119 e120 e151 a(e152,e154) a(e153,e155) a(e160,e171) e161 e162
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+l/0.l/1.il/2.il/3.r/4.l/5: e117 e119 e120 e151 a(e152,e154)
+l/0.l/1.il/2.il/3.r/4.r/5: a(e153,e155) a(e160,e171) e161 e162
+Current subset: l/0.l/1.il/2.il/3.r/4.l/5: e117 e119 e120 e151 a(e152,e154)
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: l/0.l/1.il/2.il/3.r/4.r/5: a(e153,e155) a(e160,e171) e161 e162
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+l/0.l/1.il/2.il/3.r/4.r/5.l/6: a(e153,e155) a(e160,e171)
+l/0.l/1.il/2.il/3.r/4.r/5.r/6: e161 e162
+Current subset: l/0.l/1.il/2.il/3.r/4.r/5.l/6: a(e153,e155) a(e160,e171)
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1.il/2.il/3.r/4.r/5.l/6.l/7: a(e153,e155)
+l/0.l/1.il/2.il/3.r/4.r/5.l/6.r/7: a(e160,e171)
+Current subset: l/0.l/1.il/2.il/3.r/4.r/5.l/6.l/7: a(e153,e155)
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: l/0.l/1.il/2.il/3.r/4.r/5.l/6.r/7: a(e160,e171)
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [LinkFailure:e160:('LinkFailure', 2, 1, 3, 1), LinkRecovery:e171:('LinkRecovery', 2, 1, 3, 1)]
+Recursing on right half
+Subsets:
+l/0.l/1.il/2.ir/3.l/4: a(e172,e173) e179 e180 e182 a(e186,e187) e199 e201 a(e203,e217) e204
+l/0.l/1.il/2.ir/3.r/4: e207 e215 a(e218,e219) e242 e243 e244 a(e247,e248) a(e255,e257) a(e256,e258)
+Current subset: l/0.l/1.il/2.ir/3.l/4: a(e172,e173) e179 e180 e182 a(e186,e187) e199 e201 a(e203,e217) e204
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1.il/2.ir/3.l/4.l/5: a(e172,e173) e179 e180 e182 a(e186,e187)
+l/0.l/1.il/2.ir/3.l/4.r/5: e199 e201 a(e203,e217) e204
+Current subset: l/0.l/1.il/2.ir/3.l/4.l/5: a(e172,e173) e179 e180 e182 a(e186,e187)
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: l/0.l/1.il/2.ir/3.l/4.r/5: e199 e201 a(e203,e217) e204
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+l/0.l/1.il/2.ir/3.l/4.r/5.l/6: e199 e201
+l/0.l/1.il/2.ir/3.l/4.r/5.r/6: a(e203,e217) e204
+Current subset: l/0.l/1.il/2.ir/3.l/4.r/5.l/6: e199 e201
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: l/0.l/1.il/2.ir/3.l/4.r/5.r/6: a(e203,e217) e204
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+l/0.l/1.il/2.ir/3.l/4.r/5.r/6.l/7: a(e203,e217)
+l/0.l/1.il/2.ir/3.l/4.r/5.r/6.r/7: e204
+Current subset: l/0.l/1.il/2.ir/3.l/4.r/5.r/6.l/7: a(e203,e217)
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [SwitchFailure:e203:('SwitchFailure', 1), SwitchRecovery:e217:('SwitchRecovery', 1)]
+Recursing on right half
+Subsets:
+l/0.l/1.ir/2.l/3: a(e266,e267) e276 e277 e291 e292 e293 e296 a(e298,e299) e311 e312 e314 a(e318,e319) a(e331,e345) e332 e333 e334 e335 e346
+l/0.l/1.ir/2.r/3: a(e350,e351) a(e362,e373) e363 e364 e366 e400 e422 e455 e456 e461 e464 a(e466,e467) a(e477,e547) e478 e479 a(e484,e485) e502 e505
+Current subset: l/0.l/1.ir/2.l/3: a(e266,e267) e276 e277 e291 e292 e293 e296 a(e298,e299) e311 e312 e314 a(e318,e319) a(e331,e345) e332 e333 e334 e335 e346
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1.ir/2.l/3.l/4: a(e266,e267) e276 e277 e291 e292 e293 e296 a(e298,e299) e311
+l/0.l/1.ir/2.l/3.r/4: e312 e314 a(e318,e319) a(e331,e345) e332 e333 e334 e335 e346
+Current subset: l/0.l/1.ir/2.l/3.l/4: a(e266,e267) e276 e277 e291 e292 e293 e296 a(e298,e299) e311
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1.ir/2.l/3.l/4.l/5: a(e266,e267) e276 e277 e291 e292
+l/0.l/1.ir/2.l/3.l/4.r/5: e293 e296 a(e298,e299) e311
+Current subset: l/0.l/1.ir/2.l/3.l/4.l/5: a(e266,e267) e276 e277 e291 e292
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1.ir/2.l/3.l/4.l/5.l/6: a(e266,e267) e276 e277
+l/0.l/1.ir/2.l/3.l/4.l/5.r/6: e291 e292
+Current subset: l/0.l/1.ir/2.l/3.l/4.l/5.l/6: a(e266,e267) e276 e277
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1.ir/2.l/3.l/4.l/5.l/6.l/7: a(e266,e267) e276
+l/0.l/1.ir/2.l/3.l/4.l/5.l/6.r/7: e277
+Current subset: l/0.l/1.ir/2.l/3.l/4.l/5.l/6.l/7: a(e266,e267) e276
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1.ir/2.l/3.l/4.l/5.l/6.l/7.l/8: a(e266,e267)
+l/0.l/1.ir/2.l/3.l/4.l/5.l/6.l/7.r/8: e276
+Current subset: l/0.l/1.ir/2.l/3.l/4.l/5.l/6.l/7.l/8: a(e266,e267)
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: l/0.l/1.ir/2.l/3.l/4.l/5.l/6.l/7.r/8: e276
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [TrafficInjection:e276:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:03:[IPAddr('123.123.2.3')] Packet:[12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:2a3b[123.123.2.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)]
+=== Total replays: 0 ===
+Final MCS (5 elements):
+ - LinkFailure:e160
+ - LinkRecovery:e171
+ - SwitchFailure:e203
+ - SwitchRecovery:e217
+ - TrafficInjection:e276
+Sleeping 0 seconds after run
+Warning: MCS did not result in violation. Trying replay again without timed out events.
+Sleeping 0 seconds after run
+Warning! Final MCS did not result in violation, even  after ignoring timed out internal events.  See tools/visualize1D.html for debugging
