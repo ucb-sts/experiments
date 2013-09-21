@@ -1,0 +1,1 @@
+{"timeout_disallowed": false, "time": [1379762777, 300646], "controller_id": "c1", "fingerprint": ["ControlMessageReceive", {"class": "ofp_echo_request"}, 3, "c1"], "timed_out": false, "dependent_labels": [], "ignore_whitelisted_packets": false, "dpid": 3, "label": "i1307", "class": "ControlMessageReceive", "b64_packet": "AQIACAAAAAA=", "round": -1, "prunable": true}

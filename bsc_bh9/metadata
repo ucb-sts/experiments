@@ -1,0 +1,34 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/config/bsc_bh9.py"
+  ],
+  "cwd": "/mnt/blade-0-b/home-local/andrewor/sts",
+  "host": {
+    "cpu_info": "AMD Opteron(TM) Processor 6234",
+    "free": "total       used       free     shared    buffers     cached
+Mem:     132297964  129101364    3196600          0     391148  102622168
+-/+ buffers/cache:   26088048  106209916
+Swap:     19602772     105656   19497116",
+    "name": "blade-0-b",
+    "num_cores": "24",
+    "uptime": "02:39:38 up 69 days,  8:42,  0 users,  load average: 2.09, 2.13, 2.11"
+  },
+  "modules": {
+    "pox": {
+      "branch": "debugger",
+      "commit": "ab71c42a4fb328ca16152bc3f67361be11e3b409"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "f24c8c62098042ac1ffa4f9bd03cb68f60afdfb4"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.10",
+    "uname": "Linux blade-0-b 3.0.0-32-generic #51-Ubuntu SMP Thu Mar 21 15:50:59 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2013_09_21_02_39_38",
+  "user": "root"
+}
