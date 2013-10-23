@@ -13,3 +13,5 @@ controller_crash_rate = 0.0
 controller_recovery_rate = 0.0
 traffic_generation_rate = 0.3
 host_migration_rate = 0.00
+intracontroller_block_rate = 0.2
+intracontroller_unblock_rate = 0.2
