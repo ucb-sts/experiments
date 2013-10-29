@@ -1,0 +1,34 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/config/bigswitch_alpha.py"
+  ],
+  "cwd": "/mnt/blade-0-b/home-local/andrewor/sts",
+  "host": {
+    "cpu_info": "AMD Opteron(TM) Processor 6234",
+    "free": "total       used       free     shared    buffers     cached
+Mem:     132297964   94699664   37598300          0     758568   85111544
+-/+ buffers/cache:    8829552  123468412
+Swap:     19602772      19448   19583324",
+    "name": "blade-0-b",
+    "num_cores": "24",
+    "uptime": "17:02:56 up 13 days, 19:00,  0 users,  load average: 0.72, 0.97, 0.94"
+  },
+  "modules": {
+    "pox": {
+      "branch": "debugger",
+      "commit": "ab71c42a4fb328ca16152bc3f67361be11e3b409"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "6c1fb9239adb190c42294b148d317ad93b86f2d6"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.10",
+    "uname": "Linux blade-0-b 3.0.0-32-generic #51-Ubuntu SMP Thu Mar 21 15:50:59 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2013_10_27_17_02_56",
+  "user": "root"
+}

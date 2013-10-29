@@ -1,0 +1,35 @@
+{
+  "_runtime_stats_path": "experiments/bigswitch_alpha_mcs/intermcs_1_/runtime_stats.json",
+  "ambiguous_counts": {},
+  "ambiguous_events": {},
+  "buffered_message_receipts": {},
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./start_vms -d /home-local/andrewor/work -h -r', label='c1', address='10.192.5.226', cwd='experiments/scripts/bsc', controller_type='bsc'), ControllerConfig(start_cmd='sleep 1', label='c2', address='10.192.5.227', cwd='experiments/scripts/bsc', controller_type='bsc')],
+                 topology_class=MeshTopology,
+                 topology_params=\"num_switches=3\",
+                 patch_panel_class=BufferedPatchPanel,
+                 multiplex_sockets=False,
+                 kill_controllers_on_exit=False)",
+  "early_internal_events": {},
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 754
+  },
+  "matched_events": {},
+  "new_internal_events": {},
+  "original_duration_seconds": 35.90429997444153,
+  "peeker": false,
+  "prune_duration_seconds": 0,
+  "prune_start_epoch": 1382933198.730139,
+  "replay_duration_seconds": 352.9670150279999,
+  "replay_end_epoch": 1382933198.730069,
+  "replay_start_epoch": 1382932845.763054,
+  "subsequence_id": 0,
+  "timed_out_events": {},
+  "total_events": 2226,
+  "total_inputs": 755,
+  "total_inputs_replayed": 3024,
+  "total_replays": 7,
+  "violation_found_in_run": {
+    "0": 1
+  }
+}
