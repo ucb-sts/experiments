@@ -12,7 +12,7 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(start_
                  multiplex_sockets=False,
                  kill_controllers_on_exit=False)
 
-control_flow = Replayer(simulation_config, "experiments/bigswitch_fixed_address_7/events.trace",
+control_flow = Replayer(simulation_config, "experiments/bigswitch_beta/events.trace",
                         input_logger=InputLogger(),
                         wait_on_deterministic_values=False,
                         allow_unexpected_messages=False,

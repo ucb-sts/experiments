@@ -12,6 +12,6 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(start_
                  multiplex_sockets=False,
                  kill_controllers_on_exit=False)
 
-control_flow = OpenFlowReplayer(simulation_config, "experiments/bigswitch_fixed_address_7/events.trace")
+control_flow = OpenFlowReplayer(simulation_config, "experiments/bigswitch_beta/events.trace")
 # wait_on_deterministic_values=False
 # Invariant check: 'check_everything'

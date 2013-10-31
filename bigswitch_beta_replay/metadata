@@ -2,7 +2,7 @@
   "argv": [
     "./simulator.py",
     "-c",
-    "experiments/bigswitch_fixed_address_7/replay_config.py"
+    "experiments/bigswitch_beta/replay_config.py"
   ],
   "cwd": "/mnt/blade-0-b/home-local/andrewor/sts",
   "host": {

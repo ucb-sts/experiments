@@ -2,7 +2,7 @@
   "argv": [
     "./simulator.py",
     "-c",
-    "experiments/config/bigswitch_fixed_address_7.py"
+    "experiments/config/bigswitch_beta.py"
   ],
   "cwd": "/mnt/blade-0-b/home-local/andrewor/sts",
   "host": {
