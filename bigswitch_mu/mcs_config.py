@@ -12,7 +12,6 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(start_
                  multiplex_sockets=False,
                  kill_controllers_on_exit=False)
 
-control_flow = EfficientMCSFinder(simulation_config, "experiments/bigswitch_alpha/events.trace",
+control_flow = EfficientMCSFinder(simulation_config, "experiments/bigswitch_mu/events.trace",
                                   wait_on_deterministic_values=False,
-                                  invariant_check_name='check_everything',
-                                  no_violation_verification_runs=20)
+                                  invariant_check_name='check_everything')

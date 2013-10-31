@@ -1,9 +1,9 @@
 
 from config.experiment_config_lib import ControllerConfig
 from sts.topology import *
-from sts.control_flow import EfficientMCSFinder
-from sts.invariant_checker import InvariantChecker
+from sts.control_flow import InteractiveReplayer
 from sts.simulation_state import SimulationConfig
+from sts.input_traces.input_logger import InputLogger
 
 simulation_config = SimulationConfig(controller_configs=[ControllerConfig(start_cmd='sleep 1', label='c1', address='10.192.5.226', port=6633, cwd='experiments/scripts/bsc', controller_type='bsc'), ControllerConfig(start_cmd='sleep 1', label='c2', address='10.192.5.227', port=6633, cwd='experiments/scripts/bsc', controller_type='bsc')],
                  topology_class=MeshTopology,
@@ -12,7 +12,6 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(start_
                  multiplex_sockets=False,
                  kill_controllers_on_exit=False)
 
-control_flow = EfficientMCSFinder(simulation_config, "experiments/bigswitch_alpha/events.trace",
-                                  wait_on_deterministic_values=False,
-                                  invariant_check_name='check_everything',
-                                  no_violation_verification_runs=20)
+control_flow = InteractiveReplayer(simulation_config, "experiments/bigswitch_lambda/events.trace")
+# wait_on_deterministic_values=False
+# Invariant check: 'check_everything'
