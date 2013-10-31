@@ -19,11 +19,5 @@ simulation_config = SimulationConfig(controller_configs=controllers,
                                      kill_controllers_on_exit=False
                                      )
 
-control_flow = Fuzzer(simulation_config,
-                      check_interval=5,
-                      halt_on_violation=True,
-                      input_logger=InputLogger(),
-                      invariant_check_name="check_everything",
-                      steps=500,
-                      fuzzer_params="experiments/config/fuzzer_params_heavy_failures.py"
-                      )
+control_flow = Interactive(simulation_config)
+

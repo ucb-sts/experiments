@@ -11,7 +11,7 @@ get_address_cmd = "./show_vms -d %s -r" % work_directory
 dummy_cmd = "sleep 1" 
 
 # Use Floodlight as our controller
-controllers = [ ControllerConfig(start_cmd, cwd="experiments/scripts/bsc", address="__address__", port=6633, controller_type="bsc", label="c1", get_address_cmd=get_address_cmd), 
+controllers = [ ControllerConfig(dummy_cmd, cwd="experiments/scripts/bsc", address="__address__", port=6633, controller_type="bsc", label="c1", get_address_cmd=get_address_cmd),
                 ControllerConfig(dummy_cmd, cwd="experiments/scripts/bsc", address="__address__", port=6633, controller_type="bsc", label="c2", get_address_cmd=get_address_cmd)]
 topology_class = MeshTopology
 topology_params = "num_switches=3"
@@ -27,6 +27,6 @@ control_flow = Fuzzer(simulation_config,
                       halt_on_violation=True,
                       input_logger=InputLogger(),
                       invariant_check_name="check_everything",
-                      steps=250,
+                      steps=500,
                       fuzzer_params="experiments/config/fuzzer_params_heavy_failures.py"
                       )
