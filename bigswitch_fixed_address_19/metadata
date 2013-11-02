@@ -8,27 +8,27 @@
   "host": {
     "cpu_info": "AMD Opteron(TM) Processor 6234",
     "free": "total       used       free     shared    buffers     cached
-Mem:     132297964   13257504  119040460          0     155544   10105712
--/+ buffers/cache:    2996248  129301716
+Mem:     132297964   47186852   85111112          0     342460   40797104
+-/+ buffers/cache:    6047288  126250676
 Swap:     19602772          0   19602772",
     "name": "blade-0-b",
     "num_cores": "24",
-    "uptime": "02:53:23 up 11:38,  0 users,  load average: 1.18, 1.20, 1.19"
+    "uptime": "14:52:58 up 23:37,  0 users,  load average: 2.28, 2.01, 1.88"
   },
   "modules": {
     "pox": {
       "branch": "debugger",
-      "commit": "ab71c42a4fb328ca16152bc3f67361be11e3b409"
+      "commit": "0d217faf61340e6d560c23d1054e3db13cc94df7"
     },
     "sts": {
       "branch": "master",
-      "commit": "bd43c5eabcbb4fa22c93dcc84c96ce3b219b6248"
+      "commit": "1b854a0a00ef68f59282a335c820f73dddbcccd8"
     }
   },
   "sys": {
     "lsb_release": "Ubuntu 11.10",
     "uname": "Linux blade-0-b 3.0.0-32-generic #51-Ubuntu SMP Thu Mar 21 15:50:59 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
   },
-  "timestamp": "2013_11_01_02_53_23",
+  "timestamp": "2013_11_01_14_52_58",
   "user": "root"
 }

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "./simulator.py", line 86, in <module>
+    experiment_setup.setup_experiment(args, config)
+  File "/mnt/blade-0-b/home-local/andrewor/sts/sts/experiments/setup.py", line 70, in setup_experiment
+    exp_lifecycle.dump_metadata("%s/metadata" % config.results_dir)
+  File "/mnt/blade-0-b/home-local/andrewor/sts/sts/experiments/lifecycle.py", line 44, in dump_metadata
+    'lsb_release' : backtick("exec 2>/dev/null lsb_release --description --short"),
+  File "/mnt/blade-0-b/home-local/andrewor/sts/sts/experiments/lifecycle.py", line 81, in backtick
+    return subprocess.Popen(cmd, *args, shell=True, stdout=subprocess.PIPE, **kwargs).stdout.read().strip()
+KeyboardInterrupt

@@ -1,0 +1,1590 @@
+INFO:Controller: =====> Starting BigSwitch Controller <===== 
+INFO:Controller:Launching controller c1: sleep 1
+INFO:simulation:Launched controller c1: sleep 1 [PID -1]
+INFO:Controller: =====> Starting BigSwitch Controller <===== 
+INFO:Controller:Launching controller c2: sleep 1
+INFO:simulation:Launched controller c2: sleep 1 [PID -1]
+INFO:simulation:Creating topology...
+connect_socket_with_backoff ('10.192.5.196', 6633)
+connect_socket_with_backoff ('10.192.5.197', 6633)
+connect_socket_with_backoff ('10.192.5.196', 6633)
+connect_socket_with_backoff ('10.192.5.197', 6633)
+connect_socket_with_backoff ('10.192.5.196', 6633)
+connect_socket_with_backoff ('10.192.5.197', 6633)
+INFO:control_flow:Waiting until first OpenFlow message received..
+[1;36mBlocking connection [Con 1][1;m
+[1;36mBlocking connection [Con 2][1;m
+[1;36mUnblocking connection [Con 1][1;m
+[1;36mUnblocking connection [Con 2][1;m
+[1;36mCutting link (1:1) -> (3:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 1 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 2 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 3 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mCrashing software_switch SoftwareSwitch(dpid=3, num_ports=3)[1;m
+[1;36mRound 4 completed.[1;m
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;36mRebooting software_switch SoftwareSwitch(dpid=3, num_ports=3)[1;m
+connect_socket_with_backoff ('10.192.5.196', 6633)
+connect_socket_with_backoff ('10.192.5.197', 6633)
+[1;36mRestoring link (1:1) -> (3:2)[1;m
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 5 completed.[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mBlocking connection [Con 4][1;m
+[1;36mUnblocking connection [Con 4][1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 6 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [00:00:00:00:02:03>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:03><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x2f48a10><pox.lib.packet.lldp.unknown_tlv object at 0x2f48ad0><pox.lib.packet.lldp.unknown_tlv object at 0x2f48a90><tlv end>
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [00:00:00:00:01:03>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:03><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x2f3afd0><pox.lib.packet.lldp.unknown_tlv object at 0x2f45310><pox.lib.packet.lldp.unknown_tlv object at 0x2f45050><tlv end>
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 8][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 7 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 8][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 8 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 9 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (3:1) -> (2:1)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 10 completed.[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:01:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:01:03>00:00:00:00:00:00 0.0.0.0>123.123.3.3
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+WARNING:FuzzSoftwareSwitch(3):Port 1 is currently down. Dropping packet
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+WARNING:FuzzSoftwareSwitch(3):Port 1 is currently down. Dropping packet
+[1;36mRestoring link (3:1) -> (2:1)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 11 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received packet on interface eth3: [00:00:00:00:03:03>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:03><port ID:00:03><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x2f4dc50><pox.lib.packet.lldp.unknown_tlv object at 0x2f4dc10><pox.lib.packet.lldp.unknown_tlv object at 0x2f4d610><tlv end>
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received packet on interface eth3: [00:00:00:00:03:03>ff:ff:ff:ff:ff:ff:8942]|<55 bytes>
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 12 completed.[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received packet on interface eth3: [12:34:56:78:02:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:02:03>00:00:00:00:00:00 0.0.0.0>123.123.3.3
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 13 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 14 completed.[1;m
+[1;36mCutting link (2:2) -> (1:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])'][1;m
+[1;36mRound 15 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:03:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:03:03>00:00:00:00:00:00 0.0.0.0>123.123.2.3
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:03:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:03:03>00:00:00:00:00:00 0.0.0.0>123.123.2.3
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mRound 16 completed.[1;m
+[1;36mBlocking connection [Con 2][1;m
+[1;36mBlocking connection [Con 3][1;m
+[1;36mUnblocking connection [Con 2][1;m
+[1;36mUnblocking connection [Con 3][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 17 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+Duration: 0 nsec: 108792066
+Duration: 0 nsec: 450344800
+[1;36mCutting link (1:2) -> (2:2)[1;m
+[1;36mRound 18 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mRestoring link (1:2) -> (2:2)[1;m
+[1;36mRestoring link (2:2) -> (1:2)[1;m
+[1;36mRound 19 completed.[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;41m[1;37mViolation encountered again after 5 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(300001, [200003, 200001])'][1;m
+[1;36mRound 20 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 21 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 2][1;m
+[1;36mUnblocking connection [Con 2][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 22 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:4548[123.123.1.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mRound 23 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:4347[123.123.3.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36mRound 24 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:4345[123.123.3.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;42m[1;37mViolation (200001, [300003, 300001]) turns out to be transient![1;m
+[1;41m[1;37mViolation encountered again after 5 steps: (300001, [200003, 200001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(300001, [200003, 200001])'][1;m
+[1;36mRound 25 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 3][1;m
+[1;36mUnblocking connection [Con 3][1;m
+[1;36mRound 26 completed.[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 27 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 28 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 29 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;41m[1;37mViolation encountered again after 10 steps: (300001, [200003, 200001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(300001, [200003, 200001])'][1;m
+[1;36mRound 30 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:4539[123.123.2.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 4][1;m
+[1;36mUnblocking connection [Con 4][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 31 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:4538[123.123.2.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 32 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:4436[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 33 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 1][1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 1][1;m
+[1;36mUnblocking connection [Con 8][1;m
+[1;36mRound 34 completed.[1;m
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;41m[1;37mViolation encountered again after 15 steps: (300001, [200003, 200001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(300001, [200003, 200001])'][1;m
+[1;36mRound 35 completed.[1;m
+[1;36mCutting link (2:1) -> (3:1)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 36 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(2):Port 1 is currently down. Dropping packet
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 37 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 38 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 4][1;m
+[1;36mUnblocking connection [Con 4][1;m
+[1;36mRestoring link (2:1) -> (3:1)[1;m
+[1;36mRound 39 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;41m[1;37mViolation encountered again after 20 steps: (300001, [200003, 200001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(300001, [200003, 200001])'][1;m
+[1;36mRound 40 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:452a[123.123.2.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 41 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (1:1) -> (3:2)[1;m
+[1;36mCutting link (1:2) -> (2:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 42 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:4528[123.123.2.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 1][1;m
+[1;36mUnblocking connection [Con 1][1;m
+[1;36mRestoring link (1:2) -> (2:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 43 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 2][1;m
+[1;36mUnblocking connection [Con 2][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 44 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 8][1;m
+[1;36mCrashing software_switch SoftwareSwitch(dpid=2, num_ports=3)[1;m
+[1;36mCutting link (2:1) -> (3:1)[1;m
+WARNING:FuzzSoftwareSwitch(2):Currently down. Dropping send()
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;42m[1;37mViolation (300001, [200003, 200001]) turns out to be transient![1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(200002, [100003, 100002])'][1;m
+[1;36mRound 45 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:4324[123.123.3.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(2):Port 1 is currently down. Dropping packet
+[1;36mDropping dataplane event[1;m
+[1;36mRestoring link (2:1) -> (3:1)[1;m
+WARNING:FuzzSoftwareSwitch(2):Currently down. Dropping send()
+[1;36mRestoring link (1:1) -> (3:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 46 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;36mRebooting software_switch SoftwareSwitch(dpid=2, num_ports=3)[1;m
+connect_socket_with_backoff ('10.192.5.196', 6633)
+connect_socket_with_backoff ('10.192.5.197', 6633)
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 47 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 10][1;m
+[1;36mUnblocking connection [Con 10][1;m
+Duration: 4 nsec: 343297004
+[1;36mCutting link (1:2) -> (2:2)[1;m
+[1;36mRound 48 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:451e[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 49 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;42m[1;37mViolation (200001, [300003, 300001]) turns out to be transient![1;m
+[1;42m[1;37mViolation (200002, [100003, 100002]) turns out to be transient![1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(300001, [200003, 200001])'][1;m
+[1;36mRound 50 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 1][1;m
+[1;36mUnblocking connection [Con 1][1;m
+[1;36mRound 51 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:441b[123.123.3.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 52 completed.[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 53 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received packet on interface eth3: [12:34:56:78:02:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:02:03>00:00:00:00:00:00 0.0.0.0>123.123.3.3
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [00:00:00:00:02:03>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:03><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x2f50a90><pox.lib.packet.lldp.unknown_tlv object at 0x2f50b50><pox.lib.packet.lldp.unknown_tlv object at 0x2f50bd0><tlv end>
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [00:00:00:00:02:03>ff:ff:ff:ff:ff:ff:8942]|<55 bytes>
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRestoring link (1:2) -> (2:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 54 completed.[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 7][1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mCutting link (1:2) -> (2:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;42m[1;37mViolation (300001, [200003, 200001]) turns out to be transient![1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])'][1;m
+[1;36mRound 55 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:02:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:02:03>00:00:00:00:00:00 0.0.0.0>123.123.3.3
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mRestoring link (1:2) -> (2:2)[1;m
+[1;36mRound 56 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mCutting link (1:1) -> (3:2)[1;m
+[1;36mRound 57 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 1][1;m
+[1;36mBlocking connection [Con 10][1;m
+[1;36mUnblocking connection [Con 1][1;m
+[1;36mUnblocking connection [Con 10][1;m
+WARNING:FuzzSoftwareSwitch(1):Port 1 is currently down. Dropping packet
+[1;36mRestoring link (1:1) -> (3:2)[1;m
+[1;36mRound 58 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received packet on interface eth3: [12:34:56:78:02:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:02:03>00:00:00:00:00:00 0.0.0.0>123.123.1.3
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:02:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:02:03>00:00:00:00:00:00 0.0.0.0>123.123.1.3
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 59 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:02:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:02:03>00:00:00:00:00:00 0.0.0.0>123.123.3.3
+[1;36mBlocking connection [Con 10][1;m
+[1;36mUnblocking connection [Con 10][1;m
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;41m[1;37mViolation encountered again after 5 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(200002, [100003, 100002])'][1;m
+[1;36mRound 60 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received packet on interface eth3: [12:34:56:78:02:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:02:03>00:00:00:00:00:00 0.0.0.0>123.123.1.3
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 61 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mCutting link (1:1) -> (3:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 62 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received packet on interface eth3: [12:34:56:78:02:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:02:03>00:00:00:00:00:00 0.0.0.0>123.123.1.3
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:02:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:02:03>00:00:00:00:00:00 0.0.0.0>123.123.1.3
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 9][1;m
+[1;36mUnblocking connection [Con 9][1;m
+[1;36mRestoring link (1:1) -> (3:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 63 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 64 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 2][1;m
+[1;36mBlocking connection [Con 10][1;m
+[1;36mUnblocking connection [Con 2][1;m
+[1;36mUnblocking connection [Con 10][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;42m[1;37mViolation (200002, [100003, 100002]) turns out to be transient![1;m
+[1;41m[1;37mViolation encountered again after 10 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])'][1;m
+[1;36mRound 65 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:450f[123.123.1.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received packet on interface eth3: [12:34:56:78:01:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:01:03>00:00:00:00:00:00 0.0.0.0>123.123.2.3
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:01:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:01:03>00:00:00:00:00:00 0.0.0.0>123.123.2.3
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 10][1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 10][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 66 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 67 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:01:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:01:03>00:00:00:00:00:00 0.0.0.0>123.123.2.3
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mRound 68 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mCrashing software_switch SoftwareSwitch(dpid=1, num_ports=3)[1;m
+[1;36mRound 69 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 8][1;m
+WARNING:FuzzSoftwareSwitch(1):Currently down. Dropping send()
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;41m[1;37mViolation encountered again after 15 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(100001, [300003, 300002])', '(200001, [300003, 300001])', '(100001, [200003, 200001, 300001, 300002])'][1;m
+[1;36mRound 70 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 9][1;m
+[1;36mUnblocking connection [Con 9][1;m
+WARNING:FuzzSoftwareSwitch(1):Currently down. Dropping send()
+[1;36mCrashing software_switch SoftwareSwitch(dpid=2, num_ports=3)[1;m
+[1;36mRound 71 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(1):Currently down. Dropping send()
+WARNING:FuzzSoftwareSwitch(2):Currently down. Dropping send()
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;36mRebooting software_switch SoftwareSwitch(dpid=1, num_ports=3)[1;m
+connect_socket_with_backoff ('10.192.5.196', 6633)
+connect_socket_with_backoff ('10.192.5.197', 6633)
+[1;36mRebooting software_switch SoftwareSwitch(dpid=2, num_ports=3)[1;m
+connect_socket_with_backoff ('10.192.5.196', 6633)
+connect_socket_with_backoff ('10.192.5.197', 6633)
+[1;36mRound 72 completed.[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:44fb[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mRound 73 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received packet on interface eth3: [00:00:00:00:03:03>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:03><port ID:00:03><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x2f5f810><pox.lib.packet.lldp.unknown_tlv object at 0x2f5f850><pox.lib.packet.lldp.unknown_tlv object at 0x2f5f8d0><tlv end>
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received packet on interface eth3: [00:00:00:00:03:03>ff:ff:ff:ff:ff:ff:8942]|<55 bytes>
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mDropping dataplane event[1;m
+[1;36mRound 74 completed.[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;42m[1;37mViolation (100001, [300003, 300002]) turns out to be transient![1;m
+[1;41m[1;37mViolation encountered again after 20 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mViolation encountered again after 5 steps: (100001, [200003, 200001, 300001, 300002])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(100001, [200003, 200001, 300001, 300002])'][1;m
+[1;36mRound 75 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+Duration: 8 nsec: 391566038
+[1;36mRound 76 completed.[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 77 completed.[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 78 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [00:00:00:00:02:03>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:03><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x2f52690><pox.lib.packet.lldp.unknown_tlv object at 0x2f5fc50><pox.lib.packet.lldp.unknown_tlv object at 0x2f5fbd0><tlv end>
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [00:00:00:00:01:03>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:03><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x2f45250><pox.lib.packet.lldp.unknown_tlv object at 0x2f45e90><pox.lib.packet.lldp.unknown_tlv object at 0x2f45e50><tlv end>
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 8][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 79 completed.[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 8][1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;42m[1;37mViolation (100001, [200003, 200001, 300001, 300002]) turns out to be transient![1;m
+[1;41m[1;37mViolation encountered again after 25 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(100001, [300003, 300002])'][1;m
+[1;36mRound 80 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+INFO:packet:(lldp tlv parse) warning unknown tlv type (12)
+INFO:packet:(lldp tlv parse) warning unknown tlv type (115)
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 81 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 82 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received packet on interface eth3: [12:34:56:78:01:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:01:03>00:00:00:00:00:00 0.0.0.0>123.123.3.3
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 83 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 84 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;41m[1;37mViolation encountered again after 30 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mViolation encountered again after 5 steps: (100001, [300003, 300002])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(100001, [300003, 300002])'][1;m
+[1;36mRound 85 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 86 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 12][1;m
+[1;36mUnblocking connection [Con 12][1;m
+[1;36mCutting link (1:1) -> (3:2)[1;m
+[1;36mRound 87 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 12][1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 12][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mRestoring link (1:1) -> (3:2)[1;m
+[1;36mRound 88 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:44e8[123.123.2.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 89 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+Duration: 9 nsec: 903677940
+Duration: 3 nsec: 20673036
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;41m[1;37mViolation encountered again after 35 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mViolation encountered again after 10 steps: (100001, [300003, 300002])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(100001, [300003, 300002])'][1;m
+[1;36mRound 90 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 91 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 92 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:44e2[123.123.1.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 11][1;m
+[1;36mUnblocking connection [Con 11][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 93 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:43df[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 94 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+[1;42m[1;37mViolation (100001, [300003, 300002]) turns out to be transient![1;m
+[1;41m[1;37mViolation encountered again after 40 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(300002, [200003, 200002, 100002, 100001])'][1;m
+[1;36mRound 95 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 8][1;m
+[1;36mRound 96 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 11][1;m
+[1;36mUnblocking connection [Con 11][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 97 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (1:1) -> (3:2)[1;m
+[1;36mCutting link (2:2) -> (1:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 98 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 11][1;m
+[1;36mUnblocking connection [Con 11][1;m
+[1;36mRestoring link (1:1) -> (3:2)[1;m
+[1;36mRestoring link (2:2) -> (1:2)[1;m
+[1;36mRound 99 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+WARNING:headerspace:WARNING: detected a loop - branch aborted: 
+HeaderSpace: (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_type:2048) - ([])
+ Visited Ports: [100003, 100001, 300002, 300001, 200001, 200002, 100002, 100001]
+Last Port 300002 
+[1;41m[1;37mViolation encountered again after 45 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mViolation encountered again after 5 steps: (300002, [200003, 200002, 100002, 100001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(300002, [200003, 200002, 100002, 100001])'][1;m
+[1;36mRound 100 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 13][1;m
+[1;36mUnblocking connection [Con 13][1;m
+Duration: 1 nsec: 869567155
+Duration: 1 nsec: 8924961
+Duration: 0 nsec: 344290971
+Duration: 1 nsec: 341312170
+Duration: 0 nsec: 674493074
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 101 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 102 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 8][1;m
+[1;36mRound 103 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 104 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+WARNING:headerspace:WARNING: detected a loop - branch aborted: 
+HeaderSpace: (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_type:2048) - ([])
+ Visited Ports: [100003, 100001, 300002, 300001, 200001, 200002, 100002, 100001]
+Last Port 300002 
+[1;41m[1;37mViolation encountered again after 50 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mViolation encountered again after 10 steps: (300002, [200003, 200002, 100002, 100001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(300002, [200003, 200002, 100002, 100001])'][1;m
+[1;36mRound 105 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 13][1;m
+[1;36mBlocking connection [Con 14][1;m
+[1;36mUnblocking connection [Con 13][1;m
+[1;36mUnblocking connection [Con 14][1;m
+[1;36mCutting link (2:2) -> (1:2)[1;m
+[1;36mRound 106 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mRestoring link (2:2) -> (1:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 107 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:44c5[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 108 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mCutting link (3:2) -> (1:1)[1;m
+[1;36mCutting link (2:2) -> (1:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 109 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(2):Port 2 is currently down. Dropping packet
+[1;36mForwarding dataplane event[1;m
+[1;36mRestoring link (3:2) -> (1:1)[1;m
+[1;36mRestoring link (2:2) -> (1:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+WARNING:headerspace:WARNING: detected a loop - branch aborted: 
+HeaderSpace: (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_type:2048) - ([])
+ Visited Ports: [100003, 100001, 300002, 300001, 200001, 200002, 100002, 100001]
+Last Port 300002 
+[1;41m[1;37mViolation encountered again after 55 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mViolation encountered again after 15 steps: (300002, [200003, 200002, 100002, 100001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(300002, [200003, 200002, 100002, 100001])'][1;m
+[1;36mRound 110 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 14][1;m
+[1;36mUnblocking connection [Con 14][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 111 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 13][1;m
+[1;36mUnblocking connection [Con 13][1;m
+[1;36mCutting link (2:2) -> (1:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 112 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(2):Port 2 is currently down. Dropping packet
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(2):Port 2 is currently down. Dropping packet
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:43bc[123.123.3.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mRestoring link (2:2) -> (1:2)[1;m
+[1;36mRound 113 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (3:1) -> (2:1)[1;m
+[1;36mCutting link (1:2) -> (2:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 114 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(3):Port 1 is currently down. Dropping packet
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(3):Port 1 is currently down. Dropping packet
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 11][1;m
+[1;36mUnblocking connection [Con 11][1;m
+[1;36mRestoring link (3:1) -> (2:1)[1;m
+[1;36mRestoring link (1:2) -> (2:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+WARNING:headerspace:WARNING: detected a loop - branch aborted: 
+HeaderSpace: (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_type:2048) - ([])
+ Visited Ports: [100003, 100001, 300002, 300001, 200001, 200002, 100002, 100001]
+Last Port 300002 
+[1;41m[1;37mViolation encountered again after 60 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mViolation encountered again after 20 steps: (300002, [200003, 200002, 100002, 100001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(300002, [200003, 200002, 100002, 100001])'][1;m
+[1;36mRound 115 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 8][1;m
+Duration: 13 nsec: 667463064
+Duration: 2 nsec: 338071107
+[1;36mRound 116 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 117 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:44b7[123.123.2.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 14][1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 14][1;m
+[1;36mUnblocking connection [Con 8][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 118 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 14][1;m
+[1;36mUnblocking connection [Con 14][1;m
+[1;36mRound 119 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+WARNING:headerspace:WARNING: detected a loop - branch aborted: 
+HeaderSpace: (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_type:2048) - ([])
+ Visited Ports: [100003, 100001, 300002, 300001, 200001, 200002, 100002, 100001]
+Last Port 300002 
+[1;41m[1;37mViolation encountered again after 65 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mViolation encountered again after 25 steps: (300002, [200003, 200002, 100002, 100001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(300002, [200003, 200002, 100002, 100001])'][1;m
+[1;36mRound 120 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 8][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 121 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 122 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:44b3[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:03:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:03:03>00:00:00:00:00:00 0.0.0.0>123.123.2.3
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 13][1;m
+[1;36mUnblocking connection [Con 13][1;m
+[1;36mRound 123 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:44b1[123.123.1.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 124 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 8][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+WARNING:headerspace:WARNING: detected a loop - branch aborted: 
+HeaderSpace: (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_type:2048) - ([])
+ Visited Ports: [100003, 100001, 300002, 300001, 200001, 200002, 100002, 100001]
+Last Port 300002 
+[1;41m[1;37mViolation encountered again after 70 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mViolation encountered again after 30 steps: (300002, [200003, 200002, 100002, 100001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(300002, [200003, 200002, 100002, 100001])'][1;m
+[1;36mRound 125 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 13][1;m
+[1;36mUnblocking connection [Con 13][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 126 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 127 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 13][1;m
+[1;36mUnblocking connection [Con 13][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 128 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:44aa[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 129 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+WARNING:headerspace:WARNING: detected a loop - branch aborted: 
+HeaderSpace: (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_type:2048) - ([])
+ Visited Ports: [100003, 100001, 300002, 300001, 200001, 200002, 100002, 100001]
+Last Port 300002 
+[1;41m[1;37mViolation encountered again after 75 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mViolation encountered again after 35 steps: (300002, [200003, 200002, 100002, 100001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(300002, [200003, 200002, 100002, 100001])'][1;m
+[1;36mRound 130 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 8][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 131 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 132 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:43a3[123.123.3.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 12][1;m
+[1;36mUnblocking connection [Con 12][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 133 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 13][1;m
+[1;36mUnblocking connection [Con 13][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 134 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:449f[123.123.2.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 14][1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 14][1;m
+[1;36mUnblocking connection [Con 7][1;m
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+WARNING:headerspace:WARNING: detected a loop - branch aborted: 
+HeaderSpace: (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_type:2048) - ([])
+ Visited Ports: [100003, 100001, 300002, 300001, 200001, 200002, 100002, 100001]
+Last Port 300002 
+[1;41m[1;37mViolation encountered again after 80 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mViolation encountered again after 40 steps: (300002, [200003, 200002, 100002, 100001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(300002, [200003, 200002, 100002, 100001])'][1;m
+[1;36mRound 135 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 136 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:449b[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 137 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 11][1;m
+[1;36mBlocking connection [Con 12][1;m
+[1;36mUnblocking connection [Con 11][1;m
+[1;36mUnblocking connection [Con 12][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 138 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 11][1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 11][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mRound 139 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 12][1;m
+[1;36mUnblocking connection [Con 12][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+WARNING:headerspace:WARNING: detected a loop - branch aborted: 
+HeaderSpace: (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_type:2048) - ([])
+ Visited Ports: [100003, 100001, 300002, 300001, 200001, 200002, 100002, 100001]
+Last Port 300002 
+[1;41m[1;37mViolation encountered again after 85 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mViolation encountered again after 45 steps: (300002, [200003, 200002, 100002, 100001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(300002, [200003, 200002, 100002, 100001])'][1;m
+[1;36mRound 140 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 13][1;m
+[1;36mUnblocking connection [Con 13][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 141 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 11][1;m
+[1;36mUnblocking connection [Con 11][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 142 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 143 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 14][1;m
+[1;36mUnblocking connection [Con 14][1;m
+[1;36mRound 144 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+WARNING:headerspace:WARNING: detected a loop - branch aborted: 
+HeaderSpace: (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_type:2048) - ([])
+ Visited Ports: [100003, 100001, 300002, 300001, 200001, 200002, 100002, 100001]
+Last Port 300002 
+[1;41m[1;37mViolation encountered again after 90 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mViolation encountered again after 50 steps: (300002, [200003, 200002, 100002, 100001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(300002, [200003, 200002, 100002, 100001])'][1;m
+[1;36mRound 145 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:4390[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 146 completed.[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 147 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 13][1;m
+[1;36mUnblocking connection [Con 13][1;m
+[1;36mRound 148 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 149 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 13][1;m
+[1;36mUnblocking connection [Con 13][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+WARNING:headerspace:WARNING: detected a loop - branch aborted: 
+HeaderSpace: (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_type:2048) - ([])
+ Visited Ports: [100003, 100001, 300002, 300001, 200001, 200002, 100002, 100001]
+Last Port 300002 
+[1;41m[1;37mViolation encountered again after 95 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mViolation encountered again after 55 steps: (300002, [200003, 200002, 100002, 100001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(300002, [200003, 200002, 100002, 100001])'][1;m
+[1;36mRound 150 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 8][1;m
+[1;36mRound 151 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 13][1;m
+[1;36mUnblocking connection [Con 13][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 152 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:448e[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 13][1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 13][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 153 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 8][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 154 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 11][1;m
+[1;36mBlocking connection [Con 13][1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 11][1;m
+[1;36mUnblocking connection [Con 13][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+WARNING:headerspace:WARNING: detected a loop - branch aborted: 
+HeaderSpace: (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_type:2048) - ([])
+ Visited Ports: [100003, 100001, 300002, 300001, 200001, 200002, 100002, 100001]
+Last Port 300002 
+[1;41m[1;37mViolation encountered again after 100 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mViolation encountered again after 60 steps: (300002, [200003, 200002, 100002, 100001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(300002, [200003, 200002, 100002, 100001])'][1;m
+[1;36mRound 155 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 12][1;m
+[1;36mBlocking connection [Con 14][1;m
+[1;36mUnblocking connection [Con 12][1;m
+[1;36mUnblocking connection [Con 14][1;m
+[1;36mRound 156 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received packet on interface eth1: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:4389[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mBlocking connection [Con 12][1;m
+[1;36mUnblocking connection [Con 12][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 157 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.2.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 158 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 14][1;m
+[1;36mUnblocking connection [Con 14][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 159 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received packet on interface eth2: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:4487[123.123.1.3>123.123.2.3]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:20t:64]ICMP cs:0[123.123.3.3>123.123.1.3]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:Controller:Checking status of controller c1: service floodlight status
+INFO:Controller:Checking status of controller c2: service floodlight status
+WARNING:headerspace:WARNING: detected a loop - branch aborted: 
+HeaderSpace: (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_type:2048) - ([])
+ Visited Ports: [100003, 100001, 300002, 300001, 200001, 200002, 100002, 100001]
+Last Port 300002 
+[1;41m[1;37mViolation encountered again after 105 steps: (200001, [300003, 300001])[1;m
+[1;41m[1;37mViolation encountered again after 65 steps: (300002, [200003, 200002, 100002, 100001])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['(200001, [300003, 300001])', '(300002, [200003, 200002, 100002, 100001])'][1;m
+[1;41m[1;37mPersistent violations detected!: ['(300002, [200003, 200002, 100002, 100001])', '(200001, [300003, 300001])'][1;m
+INFO:control_flow:Terminating fuzzing after 160 rounds
+INFO:control_flow:Pending Messages:
