@@ -1,0 +1,32 @@
+{
+  "_runtime_stats_path": "experiments/bigswitch_long_apollo_mcs/runtime_stats.json",
+  "ambiguous_counts": {},
+  "ambiguous_events": {},
+  "buffered_message_receipts": {},
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='sleep 1', label='c1', address='10.192.5.101', cwd='experiments/scripts/bsc', controller_type='bsc'), ControllerConfig(start_cmd='sleep 1', label='c2', address='10.192.5.102', cwd='experiments/scripts/bsc', controller_type='bsc')],\n                 topology_class=MeshTopology,\n                 topology_params=\"num_switches=3\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=False,\n                 kill_controllers_on_exit=False)",
+  "early_internal_events": {},
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 4
+  },
+  "matched_events": {},
+  "new_internal_events": {},
+  "original_duration_seconds": 59.50164604187012,
+  "peeker": false,
+  "prune_duration_seconds": 178512.1964659691,
+  "prune_end_epoch": 1383689979.729145,
+  "prune_start_epoch": 1383511467.532679,
+  "replay_duration_seconds": 218.05157279968262,
+  "replay_end_epoch": 1383511467.53258,
+  "replay_start_epoch": 1383511249.481007,
+  "subsequence_id": 0,
+  "timed_out_events": {},
+  "total_events": 2567,
+  "total_inputs": 891,
+  "total_inputs_replayed": 12062,
+  "total_replays": 240,
+  "violation_found_in_run": {
+    "0": 12,
+    "1": 1
+  }
+}
