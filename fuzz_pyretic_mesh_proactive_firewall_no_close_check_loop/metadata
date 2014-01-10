@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "config/fuzz_pyretic_mesh_proactive_firewall_no_close_check_loop.py"
+  ],
+  "cwd": "/home/mininet/sts",
+  "host": {
+    "cpu_info": "Intel(R) Core(TM) i5-4250U CPU @ 1.30GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:       1019268     890432     128836          0      30000     787228\n-/+ buffers/cache:      73204     946064\nSwap:      1046524          0    1046524",
+    "name": "mininet-vm",
+    "num_cores": "1",
+    "uptime": "07:59:38 up  2:53,  2 users,  load average: 0.15, 0.17, 0.11"
+  },
+  "modules": {
+    "pox": {
+      "branch": "debugger",
+      "commit": "2555a7aec0f373f90736e83a2b8a951082e44d58"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "b4de77c7d7e0b40d7059d03297356a99e566ce7b"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 12.10",
+    "uname": "Linux mininet-vm 3.5.0-17-generic #28-Ubuntu SMP Tue Oct 9 19:31:23 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_01_03_07_59_38",
+  "user": "mininet"
+}

@@ -1,0 +1,784 @@
+connect_socket_with_backoff ('127.0.0.1', 6633)
+Error connecting.  -- [Errno 111] Connection refused. Backing off 1 seconds ...
+[1;33m[c1] OPTIONS {'verbosity': 'low', 'frontend_only': False, 'mode': 'p0', 'controller_options': ''}[1;m
+
+[1;33m[c1] ARGS ['pyretic.examples.firewall_for_sts_no_close'][1;m
+
+[1;33m[c1] set([(123.123.1.3, 123.123.3.3)])[1;m
+
+[1;33m[c1] INFO:core:POX 0.1.0 (betta) is up.[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;36m[1;44m00:01.009 00:00.000 Successfully matched event ConnectToControllers:i1[1;m
+[1;36m[1;44m00:01.056 00:00.016 Successfully matched event ControlMessageReceive:i2 c c1 -> s 1 [ofp_hello: ][1;m
+[1;36m[1;36mRound 1[1;37m[1;m
+[1;36m[1;44m00:01.058 00:00.016 Successfully matched event ControlMessageSend:i3 c 1 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:01.061 00:00.018 Successfully matched event HostMigration:e4[1;m
+[1;36m[1;44m00:01.062 00:00.019 Successfully matched event TrafficInjection:e5[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:01.064 00:00.128 Successfully matched event DataplanePermit:i6[1;m
+[1;36m[1;36mRound 2[1;37m[1;m
+[1;36m[1;44m00:01.066 00:00.128 Successfully matched event ControlMessageReceive:i7 c c1 -> s 3 [ofp_hello: ][1;m
+[1;36m[1;44m00:01.067 00:00.129 Successfully matched event ControlMessageReceive:i8 c c1 -> s 2 [ofp_hello: ][1;m
+[1;36m[1;44m00:01.068 00:00.129 Successfully matched event ControlMessageReceive:i9 c c1 -> s 1 [ofp_features_request: ][1;m
+[1;36m[1;44m00:01.069 00:00.130 Successfully matched event ControlMessageSend:i10 c 3 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:01.070 00:00.130 Successfully matched event ControlMessageSend:i11 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.3.3'}, in_port=4][1;m
+[1;36m[1;44m00:01.070 00:00.131 Successfully matched event ControlMessageSend:i12 c 3 -> s c1 [ofp_port_status: reason=0, desc=(4, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m00:01.071 00:00.131 Successfully matched event ControlMessageSend:i13 c 1 -> s c1 [ofp_features_reply: datapath_id=1][1;m
+[1;36m[1;44m00:01.072 00:00.132 Successfully matched event ControlMessageSend:i14 c 3 -> s c1 [ofp_port_status: reason=1, desc=(3, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m00:01.073 00:00.132 Successfully matched event ControlMessageSend:i15 c 2 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:01.074 00:00.133 Successfully matched event TrafficInjection:e16[1;m
+[1;36m[1;44m00:01.075 00:00.135 Successfully matched event HostMigration:e17[1;m
+[1;36m[1;44m00:01.076 00:00.136 Successfully matched event TrafficInjection:e18[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:01.077 00:00.244 Successfully matched event DataplanePermit:i19[1;m
+[1;36m[1;36mRound 3[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:01.079 00:00.246 Successfully matched event DataplanePermit:i20[1;m
+[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PacketIn'> raised on dummy OpenFlow nexus[1;m
+
+[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;36m[1;44m00:01.122 00:00.247 Successfully matched event ControlMessageReceive:i21 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:01.123 00:00.247 Successfully matched event ControlMessageReceive:i22 c c1 -> s 1 [ofp_set_config: ][1;m
+[1;36m[1;44m00:01.124 00:00.247 Successfully matched event ControlMessageReceive:i23 c c1 -> s 3 [ofp_features_request: ][1;m
+[1;36m[1;44m00:01.126 00:00.247 Successfully matched event ControlMessageReceive:i24 c c1 -> s 2 [ofp_features_request: ][1;m
+[1;36m[1;44m00:01.127 00:00.248 Successfully matched event ControlMessageReceive:i25 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:01.128 00:00.248 Successfully matched event ControlMessageSend:i26 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.2.3'}, in_port=5][1;m
+[1;36m[1;44m00:01.130 00:00.249 Successfully matched event ControlMessageSend:i27 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:01.132 00:00.249 Successfully matched event ControlMessageSend:i28 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.3.3'}, in_port=5][1;m
+[1;36m[1;44m00:01.133 00:00.249 Successfully matched event ControlMessageSend:i29 c 2 -> s c1 [ofp_features_reply: datapath_id=2][1;m
+[1;36m[1;44m00:01.134 00:00.249 Successfully matched event ControlMessageSend:i30 c 3 -> s c1 [ofp_port_status: reason=1, desc=(4, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m00:01.134 00:00.250 Successfully matched event ControlMessageSend:i31 c 3 -> s c1 [ofp_port_status: reason=0, desc=(5, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m00:01.135 00:00.250 Successfully matched event ControlMessageSend:i32 c 3 -> s c1 [ofp_features_reply: datapath_id=3][1;m
+[1;36mCutting link (1:1) -> (3:2)[1;m
+[1;36m[1;44m00:01.136 00:00.251 Successfully matched event LinkFailure:e33[1;m
+[1;36m[1;44m00:01.137 00:00.362 Successfully matched event ControlMessageReceive:i34 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 4[1;37m[1;m
+[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-01 1] connected[1;m
+
+[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PacketIn'> raised on dummy OpenFlow nexus[1;m
+
+[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PacketIn'> raised on dummy OpenFlow nexus[1;m
+
+[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;36m[1;44m00:01.159 00:00.363 Successfully matched event ControlMessageReceive:i35 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:01.161 00:00.363 Successfully matched event ControlMessageReceive:i36 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:01.162 00:00.364 Successfully matched event ControlMessageReceive:i37 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:01.164 00:00.364 Successfully matched event ControlMessageReceive:i38 c c1 -> s 2 [ofp_set_config: ][1;m
+[1;36m[1;44m00:01.165 00:00.365 Successfully matched event ControlMessageReceive:i39 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:01.167 00:00.365 Successfully matched event ControlMessageReceive:i40 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:01.168 00:00.366 Successfully matched event ControlMessageReceive:i41 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:01.169 00:00.366 Successfully matched event ControlMessageReceive:i42 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:01.170 00:00.367 Successfully matched event ControlMessageReceive:i43 c c1 -> s 3 [ofp_set_config: ][1;m
+[1;36m[1;44m00:01.171 00:00.367 Successfully matched event ControlMessageSend:i44 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:01.172 00:00.367 Successfully matched event ControlMessageSend:i45 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:01.172 00:00.367 Successfully matched event ControlMessageSend:i46 c 1 -> s c1 [ofp_port_status: reason=1, desc=(1, u'00:00:00:00:01:01')][1;m
+[1;36m[1;44m00:01.174 00:00.369 Successfully matched event TrafficInjection:e47[1;m
+[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-03 3] connected[1;m
+
+[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-02 2] connected[1;m
+
+[1;35m[1;41m00:01.836 00:00.477 Event timed out DataplanePermit:i48[1;m
+[1;36m[1;36mRound 5[1;37m[1;m
+[1;35m[1;41m00:01.837 00:00.478 Event timed out DataplaneDrop:e49[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:01.839 00:00.479 Successfully matched event DataplanePermit:i50[1;m
+[1;35m[1;41m00:02.442 00:00.481 Event timed out DataplanePermit:i51[1;m
+[1;36m[1;44m00:02.443 00:00.482 Successfully matched event ControlMessageReceive:i52 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:02.444 00:00.482 Successfully matched event ControlMessageReceive:i53 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:02.445 00:00.483 Successfully matched event ControlMessageReceive:i54 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:02.446 00:00.483 Successfully matched event ControlMessageReceive:i55 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:02.447 00:00.485 Successfully matched event ControlMessageReceive:i56 c c1 -> s 3 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:02.448 00:00.485 Successfully matched event ControlMessageReceive:i57 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:02.450 00:00.486 Successfully matched event ControlMessageReceive:i58 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:02.451 00:00.487 Successfully matched event ControlMessageReceive:i59 c c1 -> s 3 [ofp_packet_out: actions=(u'output(5)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:02.452 00:00.487 Successfully matched event ControlMessageReceive:i60 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:02.453 00:00.487 Successfully matched event ControlMessageReceive:i61 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:02.455 00:00.488 Successfully matched event ControlMessageSend:i62 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.2.3'}, in_port=3][1;m
+[1;36m[1;44m00:02.456 00:00.488 Successfully matched event ControlMessageSend:i63 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36mCutting link (1:2) -> (2:2)[1;m
+[1;36m[1;44m00:02.457 00:00.489 Successfully matched event LinkFailure:e64[1;m
+[1;36m[1;44m00:02.457 00:00.490 Successfully matched event HostMigration:e65[1;m
+[1;36m[1;44m00:02.458 00:00.490 Successfully matched event TrafficInjection:e66[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:02.462 00:00.491 Successfully matched event CheckInvariants:e67[1;m
+[1;35m[1;41m00:02.574 00:00.601 Event timed out DataplaneDrop:e68[1;m
+[1;36m[1;36mRound 6[1;37m[1;m
+[1;35m[1;41m00:03.176 00:00.602 Event timed out DataplanePermit:i69[1;m
+[1;35m[1;41m00:03.778 00:00.602 Event timed out DataplanePermit:i70[1;m
+[1;35m[1;41m00:03.779 00:00.603 Event timed out DataplaneDrop:e71[1;m
+[1;35m[1;41m00:04.382 00:00.604 Event timed out DataplanePermit:i72[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:04.384 00:00.605 Successfully matched event DataplanePermit:i73[1;m
+[1;35m[1;41m00:04.986 00:00.607 Event timed out DataplanePermit:i74[1;m
+[1;35m[1;41m00:05.588 00:00.608 Event timed out DataplanePermit:i75[1;m
+[1;35m[1;41m00:06.190 00:00.609 Event timed out DataplanePermit:i76[1;m
+[1;36m[1;44m00:06.191 00:00.609 Successfully matched event ControlMessageSend:i77 c 3 -> s c1 [ofp_port_status: reason=1, desc=(5, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m00:06.192 00:00.610 Successfully matched event ControlMessageSend:i78 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m00:06.193 00:00.610 Successfully matched event ControlMessageSend:i79 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m00:06.195 00:00.610 Successfully matched event ControlMessageSend:i80 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m00:06.197 00:00.611 Successfully matched event ControlMessageSend:i81 c 1 -> s c1 [ofp_port_status: reason=1, desc=(2, u'00:00:00:00:01:02')][1;m
+[1;36m[1;44m00:06.198 00:00.611 Successfully matched event ControlMessageSend:i82 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36m[1;44m00:06.198 00:00.611 Successfully matched event ControlMessageSend:i83 c 1 -> s c1 [ofp_port_status: reason=0, desc=(4, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m00:06.199 00:00.611 Successfully matched event ControlMessageSend:i84 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.3.3'}, in_port=4][1;m
+[1;36m[1;44m00:06.200 00:00.612 Successfully matched event HostMigration:e85[1;m
+[1;36m[1;44m00:06.201 00:00.613 Successfully matched event TrafficInjection:e86[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:06.203 00:00.721 Successfully matched event DataplanePermit:i87[1;m
+[1;36m[1;36mRound 7[1;37m[1;m
+[1;36m[1;44m00:06.204 00:00.722 Successfully matched event ControlMessageReceive:i88 c c1 -> s 1 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:06.204 00:00.723 Successfully matched event ControlMessageSend:i89 c 1 -> s c1 [ofp_port_status: reason=1, desc=(3, u'00:00:00:00:01:03')][1;m
+[1;36m[1;44m00:06.205 00:00.723 Successfully matched event ControlMessageSend:i90 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:01:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.1.3'}, in_port=6][1;m
+[1;36m[1;44m00:06.206 00:00.723 Successfully matched event ControlMessageSend:i91 c 3 -> s c1 [ofp_port_status: reason=0, desc=(6, u'00:00:00:00:01:03')][1;m
+[1;35m[1;41m00:06.800 00:00.825 Event timed out DataplanePermit:i92[1;m
+[1;36m[1;36mRound 8[1;37m[1;m
+[1;36m[1;44m00:06.801 00:00.826 Successfully matched event ControlMessageReceive:i93 c c1 -> s 3 [ofp_packet_out: actions=(u'output(6)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mCutting link (3:1) -> (2:1)[1;m
+[1;36m[1;44m00:06.802 00:00.827 Successfully matched event LinkFailure:e94[1;m
+[1;36mRestoring link (1:2) -> (2:2)[1;m
+[1;36m[1;44m00:06.803 00:00.828 Successfully matched event LinkRecovery:e95[1;m
+[1;35m[1;41m00:07.406 00:00.932 Event timed out DataplanePermit:i96[1;m
+[1;36m[1;36mRound 9[1;37m[1;m
+[1;36m[1;44m00:07.407 00:00.932 Successfully matched event ControlMessageSend:i97 c 1 -> s c1 [ofp_port_status: reason=0, desc=(2, u'00:00:00:00:01:02')][1;m
+[1;36m[1;44m00:07.408 00:00.933 Successfully matched event ControlMessageSend:i98 c 3 -> s c1 [ofp_port_status: reason=1, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;36mRestoring link (1:1) -> (3:2)[1;m
+[1;36m[1;44m00:07.410 00:00.934 Successfully matched event LinkRecovery:e99[1;m
+[1;36m[1;44m00:07.411 00:00.935 Successfully matched event HostMigration:e100[1;m
+[1;36m[1;44m00:07.412 00:00.935 Successfully matched event TrafficInjection:e101[1;m
+[1;36m[1;44m00:07.412 00:00.936 Successfully matched event HostMigration:e102[1;m
+[1;36m[1;44m00:07.413 00:00.937 Successfully matched event TrafficInjection:e103[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:07.415 00:01.047 Successfully matched event DataplanePermit:i104[1;m
+[1;36m[1;36mRound 10[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:07.416 00:01.048 Successfully matched event DataplanePermit:i105[1;m
+[1;36m[1;44m00:07.417 00:01.049 Successfully matched event ControlMessageReceive:i106 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:07.418 00:01.049 Successfully matched event ControlMessageSend:i107 c 2 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.2.3', u'dl_src': u'12:34:56:78:02:03', u'nw_dst': u'123.123.2.3'}, in_port=4][1;m
+[1;36m[1;44m00:07.419 00:01.049 Successfully matched event ControlMessageSend:i108 c 1 -> s c1 [ofp_port_status: reason=0, desc=(1, u'00:00:00:00:01:01')][1;m
+[1;36m[1;44m00:07.419 00:01.049 Successfully matched event ControlMessageSend:i109 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:01:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.1.3'}, in_port=7][1;m
+[1;36m[1;44m00:07.420 00:01.050 Successfully matched event ControlMessageSend:i110 c 2 -> s c1 [ofp_port_status: reason=1, desc=(3, u'00:00:00:00:02:03')][1;m
+[1;36m[1;44m00:07.421 00:01.050 Successfully matched event ControlMessageSend:i111 c 3 -> s c1 [ofp_port_status: reason=1, desc=(6, u'00:00:00:00:01:03')][1;m
+[1;36m[1;44m00:07.421 00:01.050 Successfully matched event ControlMessageSend:i112 c 3 -> s c1 [ofp_port_status: reason=0, desc=(7, u'00:00:00:00:01:03')][1;m
+[1;36m[1;44m00:07.423 00:01.050 Successfully matched event ControlMessageSend:i113 c 2 -> s c1 [ofp_port_status: reason=0, desc=(4, u'00:00:00:00:02:03')][1;m
+[1;36mCutting link (1:1) -> (3:2)[1;m
+[1;36m[1;44m00:07.424 00:01.051 Successfully matched event LinkFailure:e114[1;m
+[1;36m[1;44m00:07.425 00:01.052 Successfully matched event TrafficInjection:e115[1;m
+[1;36m[1;44m00:07.426 00:01.053 Successfully matched event HostMigration:e116[1;m
+[1;36m[1;36mRound -1[1;37m[1;m
+[1;36m[1;44m00:07.427 00:01.053 Successfully matched event TrafficInjection:e117[1;m
+[1;36m[1;36mRound 10[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:07.429 00:01.054 Successfully matched event CheckInvariants:e118[1;m
+[1;35m[1;41m00:08.031 00:01.161 Event timed out DataplanePermit:i119[1;m
+[1;36m[1;36mRound 11[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:08.032 00:01.162 Successfully matched event DataplanePermit:i120[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:08.034 00:01.164 Successfully matched event DataplanePermit:i121[1;m
+[1;36m[1;44m00:08.034 00:01.164 Successfully matched event ControlMessageReceive:i122 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:08.035 00:01.165 Successfully matched event ControlMessageReceive:i123 c c1 -> s 2 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:08.036 00:01.167 Successfully matched event ControlMessageReceive:i124 c c1 -> s 3 [ofp_packet_out: actions=(u'output(7)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:08.037 00:01.168 Successfully matched event ControlMessageSend:i125 c 2 -> s c1 [ofp_port_status: reason=0, desc=(5, u'00:00:00:00:02:03')][1;m
+[1;36m[1;44m00:08.039 00:01.168 Successfully matched event ControlMessageSend:i126 c 2 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.2.3', u'dl_src': u'12:34:56:78:02:03', u'nw_dst': u'123.123.2.3'}, in_port=5][1;m
+[1;36m[1;44m00:08.040 00:01.169 Successfully matched event ControlMessageSend:i127 c 2 -> s c1 [ofp_port_status: reason=1, desc=(4, u'00:00:00:00:02:03')][1;m
+[1;36m[1;44m00:08.041 00:01.169 Successfully matched event ControlMessageSend:i128 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.2.3'}, in_port=4][1;m
+[1;36m[1;44m00:08.042 00:01.169 Successfully matched event ControlMessageSend:i129 c 1 -> s c1 [ofp_port_status: reason=1, desc=(1, u'00:00:00:00:01:01')][1;m
+[1;36m[1;44m00:08.043 00:01.170 Successfully matched event ControlMessageSend:i130 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36mRestoring link (3:1) -> (2:1)[1;m
+[1;36m[1;44m00:08.045 00:01.171 Successfully matched event LinkRecovery:e131[1;m
+[1;36mRestoring link (1:1) -> (3:2)[1;m
+[1;36m[1;44m00:08.046 00:01.171 Successfully matched event LinkRecovery:e132[1;m
+[1;36m[1;44m00:08.047 00:01.172 Successfully matched event HostMigration:e133[1;m
+[1;36m[1;36mRound -1[1;37m[1;m
+[1;36m[1;44m00:08.048 00:01.173 Successfully matched event TrafficInjection:e134[1;m
+[1;36m[1;36mRound 11[1;37m[1;m
+[1;35m[1;41m00:08.687 00:01.282 Event timed out DataplanePermit:i135[1;m
+[1;36m[1;36mRound 12[1;37m[1;m
+[1;35m[1;41m00:09.290 00:01.282 Event timed out DataplanePermit:i136[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:09.292 00:01.283 Successfully matched event DataplanePermit:i137[1;m
+[1;35m[1;41m00:09.293 00:01.284 Event timed out DataplaneDrop:e138[1;m
+[1;36m[1;44m00:09.294 00:01.284 Successfully matched event ControlMessageReceive:i139 c c1 -> s 2 [ofp_packet_out: actions=(u'output(5)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:09.294 00:01.285 Successfully matched event ControlMessageSend:i140 c 1 -> s c1 [ofp_port_status: reason=0, desc=(5, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m00:09.295 00:01.285 Successfully matched event ControlMessageSend:i141 c 1 -> s c1 [ofp_port_status: reason=0, desc=(1, u'00:00:00:00:01:01')][1;m
+[1;36m[1;44m00:09.296 00:01.285 Successfully matched event ControlMessageSend:i142 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.3.3'}, in_port=5][1;m
+[1;36m[1;44m00:09.297 00:01.286 Successfully matched event ControlMessageSend:i143 c 3 -> s c1 [ofp_port_status: reason=0, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;36m[1;44m00:09.297 00:01.286 Successfully matched event ControlMessageSend:i144 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36m[1;44m00:09.298 00:01.287 Successfully matched event ControlMessageSend:i145 c 1 -> s c1 [ofp_port_status: reason=1, desc=(4, u'00:00:00:00:03:03')][1;m
+[1;36mCutting link (2:2) -> (1:2)[1;m
+[1;36m[1;44m00:09.299 00:01.288 Successfully matched event LinkFailure:e146[1;m
+[1;35m[1;41m00:10.094 00:01.395 Event timed out DataplanePermit:i147[1;m
+[1;36m[1;36mRound 13[1;37m[1;m
+[1;36m[1;44m00:10.095 00:01.396 Successfully matched event ControlMessageReceive:i148 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:10.096 00:01.396 Successfully matched event ControlMessageReceive:i149 c c1 -> s 1 [ofp_packet_out: actions=(u'output(5)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:10.097 00:01.397 Successfully matched event ControlMessageReceive:i150 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:10.097 00:01.398 Successfully matched event ControlMessageSend:i151 c 2 -> s c1 [ofp_port_status: reason=1, desc=(2, u'00:00:00:00:02:02')][1;m
+[1;36m[1;44m00:10.099 00:01.399 Successfully matched event TrafficInjection:e152[1;m
+[1;36m[1;44m00:10.100 00:01.399 Successfully matched event HostMigration:e153[1;m
+[1;36m[1;36mRound -1[1;37m[1;m
+[1;36m[1;44m00:10.103 00:01.400 Successfully matched event TrafficInjection:e154[1;m
+[1;36m[1;36mRound 13[1;37m[1;m
+[1;35m[1;41m00:10.886 00:01.503 Event timed out DataplanePermit:i155[1;m
+[1;36m[1;36mRound 14[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:10.888 00:01.505 Successfully matched event DataplanePermit:i156[1;m
+[1;35m[1;41m00:11.490 00:01.506 Event timed out DataplanePermit:i157[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:11.492 00:01.507 Successfully matched event DataplanePermit:i158[1;m
+[1;35m[1;41m00:11.494 00:01.507 Event timed out DataplaneDrop:e159[1;m
+[1;36m[1;44m00:11.495 00:01.508 Successfully matched event ControlMessageSend:i160 c 2 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.2.3', u'dl_src': u'12:34:56:78:02:03', u'nw_dst': u'123.123.3.3'}, in_port=5][1;m
+[1;36m[1;44m00:11.497 00:01.508 Successfully matched event ControlMessageSend:i161 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.3.3'}, in_port=8][1;m
+[1;36m[1;44m00:11.498 00:01.508 Successfully matched event ControlMessageSend:i162 c 1 -> s c1 [ofp_port_status: reason=1, desc=(5, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m00:11.499 00:01.508 Successfully matched event ControlMessageSend:i163 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36m[1;44m00:11.500 00:01.508 Successfully matched event ControlMessageSend:i164 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m00:11.501 00:01.509 Successfully matched event ControlMessageSend:i165 c 3 -> s c1 [ofp_port_status: reason=0, desc=(8, u'00:00:00:00:03:03')][1;m
+[1;36mCutting link (3:1) -> (2:1)[1;m
+[1;36m[1;44m00:11.503 00:01.509 Successfully matched event LinkFailure:e166[1;m
+[1;36m[1;44m00:11.503 00:01.618 Successfully matched event ControlMessageReceive:i167 c c1 -> s 3 [ofp_packet_out: actions=(u'output(8)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 15[1;37m[1;m
+[1;36m[1;44m00:11.504 00:01.619 Successfully matched event ControlMessageSend:i168 c 3 -> s c1 [ofp_port_status: reason=1, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;36m[1;44m00:11.505 00:01.621 Successfully matched event TrafficInjection:e169[1;m
+[1;35m[1;41m00:12.132 00:01.733 Event timed out DataplanePermit:i171[1;m
+[1;36m[1;36mRound 16[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:12.133 00:01.734 Successfully matched event DataplanePermit:i172[1;m
+[1;36m[1;44m00:12.135 00:01.735 Successfully matched event ControlMessageSend:i173 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.2.3'}, in_port=8][1;m
+[1;35m[1;41m00:12.938 00:01.851 Event timed out DataplanePermit:i176[1;m
+[1;36m[1;36mRound 17[1;37m[1;m
+[1;35m[1;41m00:13.540 00:01.853 Event timed out DataplanePermit:i177[1;m
+[1;35m[1;41m00:14.142 00:01.854 Event timed out ControlMessageSend:i178 c 2 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.2.3', u'dl_src': u'12:34:56:78:02:03', u'nw_dst': u'123.123.3.3'}, in_port=5][1;m
+[1;35m[1;41m00:14.745 00:01.854 Event timed out ControlMessageSend:i179 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.3.3'}, in_port=7][1;m
+[1;36m[1;44m00:14.747 00:01.856 Successfully matched event TrafficInjection:e180[1;m
+[1;36m[1;44m00:14.748 00:01.857 Successfully matched event HostMigration:e181[1;m
+[1;36m[1;36mRound -1[1;37m[1;m
+[1;36m[1;44m00:14.750 00:01.858 Successfully matched event TrafficInjection:e182[1;m
+[1;36m[1;36mRound 17[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:14.753 00:01.962 Successfully matched event DataplanePermit:i183[1;m
+[1;36m[1;36mRound 18[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:14.755 00:01.963 Successfully matched event DataplanePermit:i184[1;m
+[1;36m[1;44m00:14.755 00:01.963 Successfully matched event ControlMessageSend:i185 c 3 -> s c1 [ofp_port_status: reason=0, desc=(9, u'00:00:00:00:01:03')][1;m
+[1;36m[1;44m00:14.756 00:01.963 Successfully matched event ControlMessageSend:i186 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:01:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.1.3'}, in_port=9][1;m
+[1;36m[1;44m00:14.757 00:01.963 Successfully matched event ControlMessageSend:i187 c 3 -> s c1 [ofp_port_status: reason=1, desc=(7, u'00:00:00:00:01:03')][1;m
+[1;36m[1;44m00:14.758 00:01.963 Successfully matched event ControlMessageSend:i188 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.2.3'}, in_port=9][1;m
+[1;36mRestoring link (3:1) -> (2:1)[1;m
+[1;36m[1;44m00:14.759 00:01.964 Successfully matched event LinkRecovery:e189[1;m
+[1;36mRestoring link (2:2) -> (1:2)[1;m
+[1;36m[1;44m00:14.760 00:01.964 Successfully matched event LinkRecovery:e190[1;m
+[1;36m[1;44m00:14.760 00:01.965 Successfully matched event HostMigration:e191[1;m
+[1;36m[1;36mRound -1[1;37m[1;m
+[1;36m[1;44m00:14.762 00:01.965 Successfully matched event TrafficInjection:e192[1;m
+[1;36m[1;36mRound 18[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:14.764 00:02.073 Successfully matched event DataplanePermit:i193[1;m
+[1;36m[1;36mRound 19[1;37m[1;m
+[1;35m[1;41m00:15.347 00:02.073 Event timed out ControlMessageReceive:i194 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59991, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:5][1;m
+[1;36m[1;44m00:15.350 00:02.079 Successfully matched event ControlMessageReceive:i195 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'dl_dst': u'12:34:56:78:01:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.1.3'}, in_port=9][1;m
+[1;35m[1;41m00:15.952 00:02.079 Event timed out ControlMessageReceive:i196 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59996, idle_timeout=0, command=add, actions=(u'output(1)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:5][1;m
+[1;35m[1;41m00:16.554 00:02.080 Event timed out ControlMessageReceive:i197 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59979, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(4)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:7][1;m
+[1;36m[1;44m00:16.557 00:02.080 Successfully matched event ControlMessageReceive:i198 c c1 -> s 3 [ofp_packet_out: actions=(u'output(4)',), data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.2.3'}, in_port=9][1;m
+[1;35m[1;41m00:17.159 00:02.081 Event timed out ControlMessageReceive:i199 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59982, idle_timeout=0, command=add, actions=(u'output(8)', u'output(65528)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;35m[1;41m00:17.762 00:02.081 Event timed out ControlMessageReceive:i200 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59990, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(4)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:7][1;m
+[1;36m[1;44m00:17.763 00:02.082 Successfully matched event ControlMessageReceive:i201 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=0, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:18.366 00:02.082 Event timed out ControlMessageReceive:i202 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59992, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m00:18.968 00:02.083 Event timed out ControlMessageReceive:i203 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59998, idle_timeout=0, command=add, actions=(u'output(2)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:8][1;m
+[1;35m[1;41m00:19.571 00:02.083 Event timed out ControlMessageReceive:i204 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59994, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:3][1;m
+[1;35m[1;41m00:20.173 00:02.084 Event timed out ControlMessageReceive:i205 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59993, idle_timeout=0, command=add, actions=(u'output(1)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;36m[1;44m00:20.175 00:02.084 Successfully matched event ControlMessageReceive:i206 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:20.777 00:02.085 Event timed out ControlMessageReceive:i207 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59990, idle_timeout=0, command=add, actions=(u'output(1)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m00:21.380 00:02.085 Event timed out ControlMessageReceive:i208 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59998, idle_timeout=0, command=add, actions=(u'output(5)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m00:21.982 00:02.095 Event timed out ControlMessageReceive:i209 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59997, idle_timeout=0, command=add, actions=(u'output(1)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:5][1;m
+[1;35m[1;41m00:22.585 00:02.095 Event timed out ControlMessageReceive:i210 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59985, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(4)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:7][1;m
+[1;35m[1;41m00:23.187 00:02.096 Event timed out ControlMessageReceive:i211 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59981, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(65528)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:3][1;m
+[1;35m[1;41m00:23.789 00:02.096 Event timed out ControlMessageReceive:i212 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59995, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m00:24.392 00:02.097 Event timed out ControlMessageReceive:i213 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59988, idle_timeout=0, command=add, actions=(u'output(8)', u'output(65528)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;35m[1;41m00:24.994 00:02.097 Event timed out ControlMessageReceive:i214 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59991, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;36m[1;44m00:24.996 00:02.098 Successfully matched event ControlMessageReceive:i215 c c1 -> s 3 [ofp_packet_out: actions=(u'output(7)',), data={u'dl_dst': u'12:34:56:78:01:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.1.3'}, in_port=9][1;m
+[1;36m[1;44m00:24.999 00:02.099 Successfully matched event ControlMessageReceive:i216 c c1 -> s 3 [ofp_packet_out: actions=(u'output(8)',), data={u'dl_dst': u'12:34:56:78:01:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.1.3'}, in_port=9][1;m
+[1;35m[1;41m00:25.601 00:02.100 Event timed out ControlMessageReceive:i217 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59992, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m00:26.204 00:02.100 Event timed out ControlMessageReceive:i218 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59994, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;35m[1;41m00:26.806 00:02.100 Event timed out ControlMessageReceive:i219 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59989, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:8][1;m
+[1;35m[1;41m00:27.408 00:02.101 Event timed out ControlMessageReceive:i220 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59984, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;36m[1;44m00:27.410 00:02.101 Successfully matched event ControlMessageReceive:i221 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=60000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:28.013 00:02.102 Event timed out ControlMessageReceive:i222 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59999, idle_timeout=0, command=add, actions=(u'output(2)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:8][1;m
+[1;36m[1;44m00:28.015 00:02.102 Successfully matched event ControlMessageReceive:i223 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=60000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:28.016 00:02.103 Successfully matched event ControlMessageReceive:i224 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:28.017 00:02.103 Successfully matched event ControlMessageReceive:i225 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:28.620 00:02.103 Event timed out ControlMessageReceive:i226 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59997, idle_timeout=0, command=add, actions=(u'output(8)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;35m[1;41m00:29.222 00:02.104 Event timed out ControlMessageReceive:i227 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59996, idle_timeout=0, command=add, actions=(u'output(1)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;35m[1;41m00:29.824 00:02.104 Event timed out ControlMessageReceive:i228 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59993, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:4][1;m
+[1;36m[1;44m00:29.826 00:02.105 Successfully matched event ControlMessageReceive:i229 c c1 -> s 3 [ofp_packet_out: actions=(u'output(9)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m00:30.429 00:02.108 Event timed out ControlMessageReceive:i230 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59987, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(65528)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:3][1;m
+[1;36m[1;44m00:30.431 00:02.109 Successfully matched event ControlMessageReceive:i231 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.2.3'}, in_port=9][1;m
+[1;35m[1;41m00:31.033 00:02.109 Event timed out ControlMessageReceive:i232 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59986, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(65528)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:4][1;m
+[1;35m[1;41m00:31.636 00:02.110 Event timed out ControlMessageReceive:i233 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59996, idle_timeout=0, command=add, actions=(u'output(8)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;36m[1;44m00:31.637 00:02.110 Successfully matched event ControlMessageReceive:i234 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:32.239 00:02.110 Event timed out ControlMessageReceive:i235 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59997, idle_timeout=0, command=add, actions=(u'output(1)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;36m[1;44m00:32.241 00:02.111 Successfully matched event ControlMessageReceive:i236 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:32.843 00:02.111 Event timed out ControlMessageReceive:i237 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59995, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m00:33.450 00:02.112 Event timed out ControlMessageReceive:i238 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59993, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m00:34.052 00:02.112 Event timed out ControlMessageReceive:i239 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59998, idle_timeout=0, command=add, actions=(u'output(2)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;36m[1;44m00:34.055 00:02.114 Successfully matched event ControlMessageReceive:i240 c c1 -> s 3 [ofp_packet_out: actions=(u'output(4)',), data={u'dl_dst': u'12:34:56:78:01:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.1.3'}, in_port=9][1;m
+[1;36m[1;44m00:34.056 00:02.114 Successfully matched event ControlMessageReceive:i241 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=0, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:34.658 00:02.114 Event timed out ControlMessageReceive:i242 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59991, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(4)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:7][1;m
+[1;35m[1;41m00:35.261 00:02.115 Event timed out ControlMessageReceive:i243 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59980, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(65528)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:4][1;m
+[1;35m[1;41m00:35.863 00:02.115 Event timed out ControlMessageReceive:i244 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59983, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:8][1;m
+[1;35m[1;41m00:36.467 00:02.116 Event timed out ControlMessageReceive:i245 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59992, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:4][1;m
+[1;35m[1;41m00:37.069 00:02.116 Event timed out ControlMessageReceive:i246 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59994, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:5][1;m
+[1;36m[1;44m00:37.071 00:02.117 Successfully matched event ControlMessageReceive:i247 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=60000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:37.073 00:02.119 Successfully matched event ControlMessageReceive:i248 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.2.3'}, in_port=9][1;m
+[1;36m[1;44m00:37.074 00:02.119 Successfully matched event ControlMessageReceive:i249 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:37.076 00:02.120 Successfully matched event ControlMessageReceive:i250 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_dst': u'12:34:56:78:01:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.1.3'}, in_port=9][1;m
+[1;35m[1;41m00:37.678 00:02.120 Event timed out ControlMessageReceive:i251 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59995, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:3][1;m
+[1;35m[1;41m00:38.281 00:02.121 Event timed out ControlMessageReceive:i252 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59999, idle_timeout=0, command=add, actions=(u'output(2)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m00:38.883 00:02.122 Event timed out ControlMessageReceive:i253 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59990, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;36m[1;44m00:38.885 00:02.123 Successfully matched event ControlMessageReceive:i254 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=0, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:39.487 00:02.124 Event timed out ControlMessageReceive:i255 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59999, idle_timeout=0, command=add, actions=(u'output(5)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;36m[1;44m00:39.489 00:02.125 Successfully matched event ControlMessageReceive:i256 c c1 -> s 3 [ofp_packet_out: actions=(u'output(7)',), data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.2.3'}, in_port=9][1;m
+[1;36m[1;44m00:39.492 00:02.126 Successfully matched event ControlMessageReceive:i257 c c1 -> s 3 [ofp_packet_out: actions=(u'output(8)',), data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.2.3'}, in_port=9][1;m
+[1;36m[1;44m00:39.493 00:02.126 Successfully matched event ControlMessageSend:i258 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:39.494 00:02.127 Successfully matched event ControlMessageSend:i259 c 2 -> s c1 [ofp_port_status: reason=0, desc=(2, u'00:00:00:00:02:02')][1;m
+[1;36m[1;44m00:39.495 00:02.127 Successfully matched event ControlMessageSend:i260 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:39.496 00:02.127 Successfully matched event ControlMessageSend:i261 c 3 -> s c1 [ofp_port_status: reason=1, desc=(8, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m00:39.497 00:02.127 Successfully matched event ControlMessageSend:i262 c 3 -> s c1 [ofp_port_status: reason=0, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;36m[1;44m00:39.497 00:02.127 Successfully matched event ControlMessageSend:i263 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.3.3'}, in_port=6][1;m
+[1;36m[1;44m00:39.498 00:02.127 Successfully matched event ControlMessageSend:i264 c 1 -> s c1 [ofp_port_status: reason=0, desc=(6, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m00:39.499 00:02.128 Successfully matched event ControlMessageSend:i265 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36mDropping dataplane event[1;m
+[1;36m[1;44m00:39.614 00:02.243 Successfully matched event DataplaneDrop:e266[1;m
+[1;36m[1;36mRound 20[1;37m[1;m
+[1;36mDropping dataplane event[1;m
+[1;36m[1;44m00:39.615 00:02.244 Successfully matched event DataplaneDrop:e267[1;m
+[1;36mDropping dataplane event[1;m
+[1;36m[1;44m00:39.615 00:02.244 Successfully matched event DataplaneDrop:e268[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:39.616 00:02.247 Successfully matched event DataplanePermit:i269[1;m
+[1;36mDropping dataplane event[1;m
+[1;36m[1;44m00:39.617 00:02.248 Successfully matched event DataplaneDrop:e270[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:39.618 00:02.250 Successfully matched event DataplanePermit:i271[1;m
+[1;35m[1;41m00:40.168 00:02.252 Event timed out DataplanePermit:i272[1;m
+[1;36mDropping dataplane event[1;m
+[1;36m[1;44m00:40.169 00:02.253 Successfully matched event DataplaneDrop:e273[1;m
+[1;36mDropping dataplane event[1;m
+[1;36m[1;44m00:40.170 00:02.254 Successfully matched event DataplaneDrop:e274[1;m
+[1;36mDropping dataplane event[1;m
+[1;36m[1;44m00:40.171 00:02.255 Successfully matched event DataplaneDrop:e275[1;m
+[1;36mDropping dataplane event[1;m
+[1;36m[1;44m00:40.173 00:02.255 Successfully matched event DataplaneDrop:e276[1;m
+[1;35m[1;41m00:40.776 00:02.256 Event timed out ControlMessageReceive:i277 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59943, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(65528)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:4][1;m
+[1;35m[1;41m00:41.379 00:02.256 Event timed out ControlMessageReceive:i278 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59972, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;35m[1;41m00:41.981 00:02.257 Event timed out ControlMessageReceive:i279 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59944, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(65528)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:3][1;m
+[1;35m[1;41m00:42.583 00:02.257 Event timed out ControlMessageReceive:i280 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59973, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m
+[1;35m[1;41m00:43.186 00:02.258 Event timed out ControlMessageReceive:i281 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59976, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m00:43.789 00:02.258 Event timed out ControlMessageReceive:i282 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59979, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;36m[1;44m00:43.790 00:02.258 Successfully matched event ControlMessageReceive:i283 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m00:44.393 00:02.258 Event timed out ControlMessageReceive:i284 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59953, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m00:44.995 00:02.259 Event timed out ControlMessageReceive:i285 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59949, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:7][1;m
+[1;35m[1;41m00:45.598 00:02.259 Event timed out ControlMessageReceive:i286 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59977, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m00:46.200 00:02.260 Event timed out ControlMessageReceive:i287 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59961, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(4)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:7][1;m
+[1;35m[1;41m00:46.804 00:02.260 Event timed out ControlMessageReceive:i288 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59963, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(65528)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:3][1;m
+[1;35m[1;41m00:47.406 00:02.261 Event timed out ControlMessageReceive:i289 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59973, idle_timeout=0, command=add, actions=(u'output(8)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m00:48.009 00:02.262 Event timed out ControlMessageReceive:i290 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59950, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:3][1;m
+[1;35m[1;41m00:48.611 00:02.263 Event timed out ControlMessageReceive:i291 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59973, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m
+[1;35m[1;41m00:49.213 00:02.263 Event timed out ControlMessageReceive:i292 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59960, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m00:49.816 00:02.264 Event timed out ControlMessageReceive:i293 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59975, idle_timeout=0, command=add, actions=(u'output(2)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:8][1;m
+[1;35m[1;41m00:50.419 00:02.264 Event timed out ControlMessageReceive:i294 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59975, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:5][1;m
+[1;35m[1;41m00:51.021 00:02.265 Event timed out ControlMessageReceive:i295 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59968, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:4][1;m
+[1;35m[1;41m00:51.624 00:02.265 Event timed out ControlMessageReceive:i296 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59971, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;35m[1;41m00:52.226 00:02.266 Event timed out ControlMessageReceive:i297 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59971, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:3][1;m
+[1;35m[1;41m00:52.829 00:02.266 Event timed out ControlMessageReceive:i298 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59952, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m00:53.431 00:02.267 Event timed out ControlMessageReceive:i299 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59985, idle_timeout=0, command=add, actions=(u'output(1)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m00:54.035 00:02.267 Event timed out ControlMessageReceive:i300 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59970, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;35m[1;41m00:54.638 00:02.268 Event timed out ControlMessageReceive:i301 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59978, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;36m[1;44m00:54.639 00:02.268 Successfully matched event ControlMessageReceive:i302 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m00:55.242 00:02.269 Event timed out ControlMessageReceive:i303 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59957, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(65528)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:3][1;m
+[1;36m[1;44m00:55.243 00:02.269 Successfully matched event ControlMessageReceive:i304 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:55.845 00:02.269 Event timed out ControlMessageReceive:i305 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59981, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;36m[1;44m00:55.847 00:02.270 Successfully matched event ControlMessageReceive:i306 c c1 -> s 1 [ofp_packet_out: actions=(u'output(6)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m00:56.449 00:02.271 Event timed out ControlMessageReceive:i307 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59978, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m00:57.052 00:02.271 Event timed out ControlMessageReceive:i308 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59984, idle_timeout=0, command=add, actions=(u'output(1)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:5][1;m
+[1;35m[1;41m00:57.654 00:02.272 Event timed out ControlMessageReceive:i309 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59967, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(4)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:7][1;m
+[1;35m[1;41m00:58.257 00:02.272 Event timed out ControlMessageReceive:i310 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59986, idle_timeout=0, command=add, actions=(u'output(2)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m00:58.859 00:02.273 Event timed out ControlMessageReceive:i311 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59988, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m00:59.461 00:02.273 Event timed out ControlMessageReceive:i312 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59942, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(4)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:7][1;m
+[1;35m[1;41m01:00.064 00:02.274 Event timed out ControlMessageReceive:i313 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59970, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;35m[1;41m01:00.667 00:02.274 Event timed out ControlMessageReceive:i314 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59977, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m01:01.269 00:02.275 Event timed out ControlMessageReceive:i315 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59988, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m01:01.872 00:02.275 Event timed out ControlMessageReceive:i316 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59974, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m
+[1;35m[1;41m01:02.474 00:02.276 Event timed out ControlMessageReceive:i317 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59946, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:8][1;m
+[1;35m[1;41m01:03.077 00:02.276 Event timed out ControlMessageReceive:i318 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59972, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:5][1;m
+[1;35m[1;41m01:03.679 00:02.277 Event timed out ControlMessageReceive:i319 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59976, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m01:04.282 00:02.278 Event timed out ControlMessageReceive:i320 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59977, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m01:04.885 00:02.279 Event timed out ControlMessageReceive:i321 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59989, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m01:05.487 00:02.280 Event timed out ControlMessageReceive:i322 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59971, idle_timeout=0, command=add, actions=(u'output(1)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;35m[1;41m01:06.091 00:02.280 Event timed out ControlMessageReceive:i323 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59964, idle_timeout=0, command=add, actions=(u'output(8)', u'output(65528)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m01:06.693 00:02.281 Event timed out ControlMessageReceive:i324 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59983, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m01:07.296 00:02.281 Event timed out ControlMessageReceive:i325 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59982, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:5][1;m
+[1;35m[1;41m01:07.899 00:02.282 Event timed out ControlMessageReceive:i326 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59954, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m01:08.502 00:02.283 Event timed out ControlMessageReceive:i327 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59970, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:3][1;m
+[1;35m[1;41m01:09.105 00:02.283 Event timed out ControlMessageReceive:i328 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59969, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:4][1;m
+[1;35m[1;41m01:09.707 00:02.284 Event timed out ControlMessageReceive:i329 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59989, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m01:10.311 00:02.284 Event timed out ControlMessageReceive:i330 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59940, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;35m[1;41m01:10.913 00:02.285 Event timed out ControlMessageReceive:i331 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59978, idle_timeout=0, command=add, actions=(u'output(1)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m01:11.516 00:02.286 Event timed out ControlMessageReceive:i332 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59974, idle_timeout=0, command=add, actions=(u'output(2)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m
+[1;35m[1;41m01:12.119 00:02.286 Event timed out ControlMessageReceive:i333 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59980, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m01:12.721 00:02.287 Event timed out ControlMessageReceive:i334 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59958, idle_timeout=0, command=add, actions=(u'output(8)', u'output(65528)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m01:13.324 00:02.288 Event timed out ControlMessageReceive:i335 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59981, idle_timeout=0, command=add, actions=(u'output(1)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m01:13.927 00:02.289 Event timed out ControlMessageReceive:i336 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59965, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:8][1;m
+[1;35m[1;41m01:14.530 00:02.289 Event timed out ControlMessageReceive:i337 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59987, idle_timeout=0, command=add, actions=(u'output(2)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;36m[1;44m01:14.532 00:02.291 Successfully matched event ControlMessageReceive:i338 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.3.3'}, in_port=6][1;m
+[1;36m[1;44m01:14.534 00:02.291 Successfully matched event ControlMessageReceive:i339 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;35m[1;41m01:15.136 00:02.292 Event timed out ControlMessageReceive:i340 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59974, idle_timeout=0, command=add, actions=(u'output(2)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:8][1;m
+[1;35m[1;41m01:15.738 00:02.293 Event timed out ControlMessageReceive:i341 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59987, idle_timeout=0, command=add, actions=(u'output(5)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m01:16.341 00:02.294 Event timed out ControlMessageReceive:i342 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59959, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:8][1;m
+[1;35m[1;41m01:16.943 00:02.295 Event timed out ControlMessageReceive:i343 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59983, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m01:17.547 00:02.296 Event timed out ControlMessageReceive:i344 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59966, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(4)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:7][1;m
+[1;35m[1;41m01:18.149 00:02.297 Event timed out ControlMessageReceive:i345 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59984, idle_timeout=0, command=add, actions=(u'output(1)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m01:18.752 00:02.297 Event timed out ControlMessageReceive:i346 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59986, idle_timeout=0, command=add, actions=(u'output(5)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m01:19.355 00:02.298 Event timed out ControlMessageReceive:i347 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59979, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:5][1;m
+[1;35m[1;41m01:19.957 00:02.299 Event timed out ControlMessageReceive:i348 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59972, idle_timeout=0, command=add, actions=(u'output(8)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m01:20.560 00:02.299 Event timed out ControlMessageReceive:i349 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59945, idle_timeout=0, command=add, actions=(u'output(8)', u'output(65528)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;35m[1;41m01:21.162 00:02.300 Event timed out ControlMessageReceive:i350 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59975, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;35m[1;41m01:21.765 00:02.300 Event timed out ControlMessageReceive:i351 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59976, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m01:22.367 00:02.301 Event timed out ControlMessageReceive:i352 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59951, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:8][1;m
+[1;35m[1;41m01:22.970 00:02.301 Event timed out ControlMessageReceive:i353 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59982, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m01:23.573 00:02.302 Event timed out ControlMessageReceive:i354 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59947, idle_timeout=0, command=add, actions=(u'output(8)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;36m[1;44m01:23.575 00:02.302 Successfully matched event ControlMessageReceive:i355 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;35m[1;41m01:24.177 00:02.303 Event timed out ControlMessageReceive:i356 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59948, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:4][1;m
+[1;35m[1;41m01:24.779 00:02.303 Event timed out ControlMessageReceive:i357 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59985, idle_timeout=0, command=add, actions=(u'output(1)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:5][1;m
+[1;35m[1;41m01:25.382 00:02.305 Event timed out ControlMessageReceive:i358 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59962, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(65528)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:4][1;m
+[1;35m[1;41m01:25.985 00:02.307 Event timed out ControlMessageReceive:i359 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59955, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(4)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:7][1;m
+[1;36m[1;44m01:25.986 00:02.308 Successfully matched event ControlMessageReceive:i360 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.3.3'}, in_port=6][1;m
+[1;35m[1;41m01:26.589 00:02.309 Event timed out ControlMessageReceive:i361 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59956, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(65528)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:4][1;m
+[1;35m[1;41m01:27.192 00:02.310 Event timed out ControlMessageReceive:i362 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59941, idle_timeout=0, command=add, actions=(u'output(8)', u'output(2)', u'output(3)', u'output(4)', u'output(7)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;35m[1;41m01:27.794 00:02.310 Event timed out ControlMessageReceive:i363 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59980, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;36m[1;44m01:27.796 00:02.311 Successfully matched event ControlMessageSend:i364 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m01:27.797 00:02.311 Successfully matched event ControlMessageSend:i365 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.2.3'}, in_port=1][1;m
+[1;36m[1;44m01:27.798 00:02.311 Successfully matched event ControlMessageSend:i366 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m01:27.799 00:02.311 Successfully matched event ControlMessageSend:i367 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:01:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;36m[1;44m01:27.800 00:02.312 Successfully matched event ControlMessageSend:i368 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m01:27.801 00:02.313 Successfully matched event HostMigration:e369[1;m
+[1;36m[1;44m01:27.803 00:02.314 Successfully matched event TrafficInjection:e370[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:27.808 00:02.314 Successfully matched event CheckInvariants:e371[1;m
+[1;35m[1;41m01:27.928 00:02.809 Event timed out DataplaneDrop:e373[1;m
+[1;36m[1;36mRound 21[1;37m[1;m
+[1;35m[1;41m01:28.531 00:02.810 Event timed out DataplanePermit:i374[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:28.533 00:02.813 Successfully matched event DataplanePermit:i375[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:28.536 00:02.815 Successfully matched event DataplanePermit:i376[1;m
+[1;35m[1;41m01:29.139 00:02.817 Event timed out DataplanePermit:i377[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:29.141 00:02.819 Successfully matched event DataplanePermit:i378[1;m
+[1;35m[1;41m01:29.743 00:02.820 Event timed out ControlMessageReceive:i379 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59994, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:3][1;m
+[1;35m[1;41m01:30.346 00:02.820 Event timed out ControlMessageReceive:i380 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59987, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:6][1;m
+[1;35m[1;41m01:30.949 00:02.821 Event timed out ControlMessageReceive:i381 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59984, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m01:31.551 00:02.822 Event timed out ControlMessageReceive:i382 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59966, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;35m[1;41m01:32.154 00:02.822 Event timed out ControlMessageReceive:i383 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59954, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m01:32.757 00:02.823 Event timed out ControlMessageReceive:i384 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59971, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:3][1;m
+[1;35m[1;41m01:33.359 00:02.823 Event timed out ControlMessageReceive:i385 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59995, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:3][1;m
+[1;35m[1;41m01:33.962 00:02.824 Event timed out ControlMessageReceive:i386 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59980, idle_timeout=0, command=add, actions=(u'output(1)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m01:34.564 00:02.824 Event timed out ControlMessageReceive:i387 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59967, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m
+[1;36m[1;44m01:34.566 00:02.825 Successfully matched event ControlMessageReceive:i388 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;35m[1;41m01:35.168 00:02.825 Event timed out ControlMessageReceive:i389 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59961, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;35m[1;41m01:35.770 00:02.826 Event timed out ControlMessageReceive:i390 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59972, idle_timeout=0, command=add, actions=(u'output(1)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;36m[1;44m01:35.772 00:02.826 Successfully matched event ControlMessageReceive:i391 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=0, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:36.375 00:02.827 Event timed out ControlMessageReceive:i392 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59977, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m01:36.978 00:02.827 Event timed out ControlMessageReceive:i393 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59958, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m01:37.581 00:02.828 Event timed out ControlMessageReceive:i394 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59964, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m
+[1;35m[1;41m01:38.184 00:02.829 Event timed out ControlMessageReceive:i395 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59986, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(65528)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:4][1;m
+[1;35m[1;41m01:38.786 00:02.830 Event timed out ControlMessageReceive:i396 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59970, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:3][1;m
+[1;35m[1;41m01:39.389 00:02.831 Event timed out ControlMessageReceive:i397 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59993, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:4][1;m
+[1;35m[1;41m01:39.991 00:02.831 Event timed out ControlMessageReceive:i398 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59995, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:6][1;m
+[1;35m[1;41m01:40.595 00:02.832 Event timed out ControlMessageReceive:i399 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59978, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:5][1;m
+[1;35m[1;41m01:41.197 00:02.832 Event timed out ControlMessageReceive:i400 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59979, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:6][1;m
+[1;35m[1;41m01:41.800 00:02.833 Event timed out ControlMessageReceive:i401 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59966, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:6][1;m
+[1;36m[1;44m01:41.802 00:02.834 Successfully matched event ControlMessageReceive:i402 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:42.404 00:02.835 Event timed out ControlMessageReceive:i403 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59974, idle_timeout=0, command=add, actions=(u'output(2)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m01:43.007 00:02.835 Event timed out ControlMessageReceive:i404 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59998, idle_timeout=0, command=add, actions=(u'output(2)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m01:43.611 00:02.836 Event timed out ControlMessageReceive:i405 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59981, idle_timeout=0, command=add, actions=(u'output(1)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m01:44.213 00:02.836 Event timed out ControlMessageReceive:i406 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59964, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m01:44.818 00:02.837 Event timed out ControlMessageReceive:i407 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59991, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:6][1;m
+[1;35m[1;41m01:45.420 00:02.838 Event timed out ControlMessageReceive:i408 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59979, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(4)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:9][1;m
+[1;35m[1;41m01:46.023 00:02.838 Event timed out ControlMessageReceive:i409 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59949, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:9][1;m
+[1;35m[1;41m01:46.625 00:02.838 Event timed out ControlMessageReceive:i410 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59998, idle_timeout=0, command=add, actions=(u'output(2)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m01:47.228 00:02.839 Event timed out ControlMessageReceive:i411 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59996, idle_timeout=0, command=add, actions=(u'output(1)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;35m[1;41m01:47.831 00:02.839 Event timed out ControlMessageReceive:i412 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59951, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:3][1;m
+[1;35m[1;41m01:48.433 00:02.840 Event timed out ControlMessageReceive:i413 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59976, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m01:49.036 00:02.840 Event timed out ControlMessageReceive:i414 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59953, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m01:49.638 00:02.841 Event timed out ControlMessageReceive:i415 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59985, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m01:50.241 00:02.841 Event timed out ControlMessageReceive:i416 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59992, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;35m[1;41m01:50.843 00:02.842 Event timed out ControlMessageReceive:i417 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59998, idle_timeout=0, command=add, actions=(u'output(2)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m01:51.446 00:02.843 Event timed out ControlMessageReceive:i418 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59960, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m01:52.048 00:02.843 Event timed out ControlMessageReceive:i419 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59980, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(65528)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:4][1;m
+[1;35m[1;41m01:52.651 00:02.844 Event timed out ControlMessageReceive:i420 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59952, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m01:53.253 00:02.845 Event timed out ControlMessageReceive:i421 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59979, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:5][1;m
+[1;35m[1;41m01:53.856 00:02.845 Event timed out ControlMessageReceive:i422 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59963, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;35m[1;41m01:54.459 00:02.846 Event timed out ControlMessageReceive:i423 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59975, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:6][1;m
+[1;35m[1;41m01:55.062 00:02.847 Event timed out ControlMessageReceive:i424 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59967, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(4)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:9][1;m
+[1;35m[1;41m01:55.664 00:02.848 Event timed out ControlMessageReceive:i425 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59989, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m01:56.267 00:02.848 Event timed out ControlMessageReceive:i426 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59986, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m01:56.869 00:02.849 Event timed out ControlMessageReceive:i427 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59986, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m01:57.472 00:02.850 Event timed out ControlMessageReceive:i428 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59941, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;35m[1;41m01:58.075 00:02.851 Event timed out ControlMessageReceive:i429 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59971, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:6][1;m
+[1;35m[1;41m01:58.678 00:02.852 Event timed out ControlMessageReceive:i430 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59981, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:3][1;m
+[1;35m[1;41m01:59.281 00:02.852 Event timed out ControlMessageReceive:i431 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59956, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(65528)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:4][1;m
+[1;35m[1;41m01:59.883 00:02.853 Event timed out ControlMessageReceive:i432 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.2.3'}, in_port=1][1;m
+[1;35m[1;41m02:00.486 00:02.854 Event timed out ControlMessageReceive:i433 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59983, idle_timeout=0, command=add, actions=(u'output(2)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m02:01.089 00:02.854 Event timed out ControlMessageReceive:i434 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59961, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;35m[1;41m02:01.691 00:02.855 Event timed out ControlMessageReceive:i435 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59973, idle_timeout=0, command=add, actions=(u'output(1)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m02:02.293 00:02.856 Event timed out ControlMessageReceive:i436 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59957, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:3][1;m
+[1;35m[1;41m02:02.896 00:02.856 Event timed out ControlMessageReceive:i437 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59962, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:6][1;m
+[1;35m[1;41m02:03.498 00:02.856 Event timed out ControlMessageReceive:i438 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59967, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;36m[1;44m02:03.500 00:02.857 Successfully matched event ControlMessageReceive:i439 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;35m[1;41m02:04.102 00:02.857 Event timed out ControlMessageReceive:i440 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59988, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;35m[1;41m02:04.704 00:02.858 Event timed out ControlMessageReceive:i441 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59993, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m02:05.308 00:02.859 Event timed out ControlMessageReceive:i442 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59976, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m02:05.910 00:02.859 Event timed out ControlMessageReceive:i443 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59944, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:3][1;m
+[1;35m[1;41m02:06.513 00:02.860 Event timed out ControlMessageReceive:i444 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59977, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m02:07.115 00:02.860 Event timed out ControlMessageReceive:i445 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59940, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;35m[1;41m02:07.717 00:02.861 Event timed out ControlMessageReceive:i446 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59999, idle_timeout=0, command=add, actions=(u'output(2)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m02:08.321 00:02.862 Event timed out ControlMessageReceive:i447 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59962, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:5][1;m
+[1;35m[1;41m02:08.923 00:02.862 Event timed out ControlMessageReceive:i448 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59972, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m02:09.526 00:02.863 Event timed out ControlMessageReceive:i449 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59963, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:3][1;m
+[1;35m[1;41m02:10.128 00:02.865 Event timed out ControlMessageReceive:i450 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59988, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;36m[1;44m02:10.130 00:02.865 Successfully matched event ControlMessageReceive:i451 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=0, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:10.732 00:02.866 Event timed out ControlMessageReceive:i452 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59999, idle_timeout=0, command=add, actions=(u'output(2)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m02:11.336 00:02.868 Event timed out ControlMessageReceive:i453 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59992, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:4][1;m
+[1;35m[1;41m02:11.938 00:02.869 Event timed out ControlMessageReceive:i454 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59950, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m
+[1;35m[1;41m02:12.541 00:02.869 Event timed out ControlMessageReceive:i455 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59974, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m02:13.144 00:02.871 Event timed out ControlMessageReceive:i456 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59981, idle_timeout=0, command=add, actions=(u'output(1)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m02:13.746 00:02.871 Event timed out ControlMessageReceive:i457 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59977, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m02:14.349 00:02.872 Event timed out ControlMessageReceive:i458 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59961, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(4)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:9][1;m
+[1;35m[1;41m02:14.952 00:02.873 Event timed out ControlMessageReceive:i459 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59969, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m02:15.555 00:02.874 Event timed out ControlMessageReceive:i460 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59997, idle_timeout=0, command=add, actions=(u'output(1)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;35m[1;41m02:16.157 00:02.874 Event timed out ControlMessageReceive:i461 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59970, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m02:16.760 00:02.875 Event timed out ControlMessageReceive:i462 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59975, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:5][1;m
+[1;35m[1;41m02:17.362 00:02.875 Event timed out ControlMessageReceive:i463 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59960, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;35m[1;41m02:17.964 00:02.876 Event timed out ControlMessageReceive:i464 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59990, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;36m[1;44m02:17.967 00:02.876 Successfully matched event ControlMessageReceive:i465 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=60000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m02:18.569 00:02.877 Event timed out ControlMessageReceive:i466 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59968, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m02:19.172 00:02.878 Event timed out ControlMessageReceive:i467 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59991, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:5][1;m
+[1;35m[1;41m02:19.774 00:02.878 Event timed out ControlMessageReceive:i468 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59991, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(4)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:9][1;m
+[1;35m[1;41m02:20.377 00:02.879 Event timed out ControlMessageReceive:i469 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59965, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m02:20.981 00:02.880 Event timed out ControlMessageReceive:i470 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59968, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:4][1;m
+[1;35m[1;41m02:21.583 00:02.881 Event timed out ControlMessageReceive:i471 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59971, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:5][1;m
+[1;35m[1;41m02:22.186 00:02.881 Event timed out ControlMessageReceive:i472 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59965, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:5][1;m
+[1;35m[1;41m02:22.789 00:02.882 Event timed out ControlMessageReceive:i473 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59990, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(4)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:9][1;m
+[1;35m[1;41m02:23.392 00:02.883 Event timed out ControlMessageReceive:i474 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59994, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:5][1;m
+[1;35m[1;41m02:23.995 00:02.883 Event timed out ControlMessageReceive:i475 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59994, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:6][1;m
+[1;35m[1;41m02:24.597 00:02.884 Event timed out ControlMessageReceive:i476 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59969, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m02:25.200 00:02.885 Event timed out ControlMessageReceive:i477 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59989, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m02:25.802 00:02.885 Event timed out ControlMessageReceive:i478 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59942, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(4)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:9][1;m
+[1;36m[1;44m02:25.804 00:02.887 Successfully matched event ControlMessageReceive:i479 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:26.407 00:02.888 Event timed out ControlMessageReceive:i480 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59984, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m02:27.009 00:02.889 Event timed out ControlMessageReceive:i481 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59968, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m02:27.611 00:02.890 Event timed out ControlMessageReceive:i482 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59985, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(4)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:9][1;m
+[1;35m[1;41m02:28.214 00:02.891 Event timed out ControlMessageReceive:i483 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59963, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;35m[1;41m02:28.816 00:02.891 Event timed out ControlMessageReceive:i484 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59992, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;35m[1;41m02:29.419 00:02.892 Event timed out ControlMessageReceive:i485 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59943, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(65528)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:4][1;m
+[1;35m[1;41m02:30.022 00:02.893 Event timed out ControlMessageReceive:i486 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59969, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:4][1;m
+[1;35m[1;41m02:30.625 00:02.893 Event timed out ControlMessageReceive:i487 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59990, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m02:31.227 00:02.894 Event timed out ControlMessageReceive:i488 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59983, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m02:31.830 00:02.894 Event timed out ControlMessageReceive:i489 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59976, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m02:32.433 00:02.895 Event timed out ControlMessageReceive:i490 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59988, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;35m[1;41m02:33.035 00:02.895 Event timed out ControlMessageReceive:i491 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59959, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m02:33.638 00:02.896 Event timed out ControlMessageReceive:i492 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59980, idle_timeout=0, command=add, actions=(u'output(1)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m02:34.241 00:02.897 Event timed out ControlMessageReceive:i493 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59955, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(4)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:9][1;m
+[1;35m[1;41m02:34.843 00:02.897 Event timed out ControlMessageReceive:i494 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59997, idle_timeout=0, command=add, actions=(u'output(1)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;35m[1;41m02:35.447 00:02.898 Event timed out ControlMessageReceive:i495 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59978, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m02:36.050 00:02.899 Event timed out ControlMessageReceive:i496 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59972, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:2][1;m
+[1;35m[1;41m02:36.652 00:02.900 Event timed out ControlMessageReceive:i497 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59987, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:3][1;m
+[1;35m[1;41m02:37.256 00:02.900 Event timed out ControlMessageReceive:i498 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59997, idle_timeout=0, command=add, actions=(u'output(1)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;35m[1;41m02:37.858 00:02.901 Event timed out ControlMessageReceive:i499 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59948, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:4][1;m
+[1;35m[1;41m02:38.462 00:02.901 Event timed out ControlMessageReceive:i500 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59970, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m02:39.065 00:02.902 Event timed out ControlMessageReceive:i501 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59987, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:5][1;m
+[1;36m[1;44m02:39.067 00:02.904 Successfully matched event ControlMessageReceive:i502 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:39.672 00:02.904 Event timed out ControlMessageReceive:i503 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59983, idle_timeout=0, command=add, actions=(u'output(2)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m02:40.275 00:02.905 Event timed out ControlMessageReceive:i504 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59978, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:6][1;m
+[1;35m[1;41m02:40.877 00:02.905 Event timed out ControlMessageReceive:i505 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59996, idle_timeout=0, command=add, actions=(u'output(1)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;35m[1;41m02:41.480 00:02.906 Event timed out ControlMessageReceive:i506 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59974, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:None][1;m
+[1;35m[1;41m02:42.082 00:02.906 Event timed out ControlMessageReceive:i507 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59984, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m02:42.685 00:02.907 Event timed out ControlMessageReceive:i508 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59996, idle_timeout=0, command=add, actions=(u'output(1)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;35m[1;41m02:43.289 00:02.907 Event timed out ControlMessageReceive:i509 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59947, idle_timeout=0, command=add, actions=(u'output(1)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;35m[1;41m02:43.893 00:02.908 Event timed out ControlMessageReceive:i510 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59946, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m
+[1;35m[1;41m02:44.495 00:02.908 Event timed out ControlMessageReceive:i511 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59982, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:2][1;m
+[1;35m[1;41m02:45.098 00:02.909 Event timed out ControlMessageReceive:i512 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59995, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:5][1;m
+[1;35m[1;41m02:45.700 00:02.909 Event timed out ControlMessageReceive:i513 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59985, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:None][1;m
+[1;35m[1;41m02:46.303 00:02.910 Event timed out ControlMessageReceive:i514 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59982, idle_timeout=0, command=add, actions=(u'output(2)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m02:46.905 00:02.910 Event timed out ControlMessageReceive:i515 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59973, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m02:47.508 00:02.910 Event timed out ControlMessageReceive:i516 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59965, idle_timeout=0, command=add, actions=(u'output(2)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m
+[1;35m[1;41m02:48.111 00:02.911 Event timed out ControlMessageReceive:i517 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59966, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(4)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:9][1;m
+[1;35m[1;41m02:48.714 00:02.911 Event timed out ControlMessageReceive:i518 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59993, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m02:49.316 00:02.912 Event timed out ControlMessageReceive:i519 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59989, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m02:49.919 00:02.912 Event timed out ControlMessageReceive:i520 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59973, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(5)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m02:50.523 00:02.914 Event timed out ControlMessageReceive:i521 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59999, idle_timeout=0, command=add, actions=(u'output(2)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,in_port:1][1;m
+[1;35m[1;41m02:51.125 00:02.914 Event timed out ControlMessageReceive:i522 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59962, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)', u'output(65528)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:4][1;m
+[1;36m[1;44m02:51.127 00:02.915 Successfully matched event ControlMessageReceive:i523 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=60000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m02:51.729 00:02.915 Event timed out ControlMessageReceive:i524 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59982, idle_timeout=0, command=add, actions=(u'output(2)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m02:52.332 00:02.916 Event timed out ControlMessageReceive:i525 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59975, idle_timeout=0, command=add, actions=(u'output(2)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,in_port:1][1;m
+[1;35m[1;41m02:52.934 00:02.916 Event timed out ControlMessageReceive:i526 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59945, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(3)', u'output(4)', u'output(9)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;36m[1;44m02:52.936 00:02.917 Successfully matched event ControlMessageReceive:i527 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=60000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m02:52.937 00:02.917 Successfully matched event ControlMessageReceive:i528 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;35m[1;41m02:53.539 00:02.917 Event timed out ControlMessageReceive:i529 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59960, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;36m[1;44m02:53.541 00:02.918 Successfully matched event ControlMessageReceive:i530 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=0, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:54.144 00:02.918 Event timed out ControlMessageReceive:i531 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59964, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(6)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m
+[1;36m[1;44m02:54.145 00:02.919 Successfully matched event ControlMessageSend:i532 c 1 -> s c1 [ofp_port_status: reason=0, desc=(7, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m02:54.146 00:02.919 Successfully matched event ControlMessageSend:i533 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m02:54.147 00:02.919 Successfully matched event ControlMessageSend:i534 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m02:54.148 00:02.919 Successfully matched event ControlMessageSend:i535 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m02:54.149 00:02.919 Successfully matched event ControlMessageSend:i536 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m02:54.150 00:02.919 Successfully matched event ControlMessageSend:i537 c 1 -> s c1 [ofp_port_status: reason=1, desc=(6, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m02:54.151 00:02.920 Successfully matched event HostMigration:e538[1;m
+[1;36m[1;44m02:54.153 00:02.921 Successfully matched event TrafficInjection:e539[1;m
+[1;35m[1;41m02:54.268 00:03.035 Event timed out DataplaneDrop:e540[1;m
+[1;36m[1;36mRound 22[1;37m[1;m
+[1;35m[1;41m02:54.774 00:03.036 Event timed out DataplanePermit:i541[1;m
+[1;35m[1;41m02:55.376 00:03.037 Event timed out DataplanePermit:i542[1;m
+[1;35m[1;41m02:55.979 00:03.038 Event timed out DataplanePermit:i543[1;m
+[1;35m[1;41m02:56.581 00:03.038 Event timed out DataplanePermit:i544[1;m
+[1;35m[1;41m02:57.183 00:03.039 Event timed out DataplanePermit:i545[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:57.186 00:03.040 Successfully matched event DataplanePermit:i546[1;m
+[1;35m[1;41m02:57.187 00:03.040 Event timed out DataplaneDrop:e547[1;m
+[1;35m[1;41m02:57.790 00:03.042 Event timed out DataplanePermit:i548[1;m
+[1;35m[1;41m02:57.791 00:03.042 Event timed out DataplaneDrop:e549[1;m
+[1;36m[1;44m02:57.792 00:03.043 Successfully matched event ControlMessageReceive:i550 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;36m[1;44m02:57.793 00:03.043 Successfully matched event ControlMessageReceive:i551 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;35m[1;41m02:58.395 00:03.044 Event timed out ControlMessageReceive:i552 c c1 -> s 1 [ofp_packet_out: actions=(u'output(6)',), data={u'dl_dst': u'12:34:56:78:01:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;35m[1;41m02:58.998 00:03.045 Event timed out ControlMessageReceive:i553 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_dst': u'12:34:56:78:01:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;35m[1;41m02:59.600 00:03.047 Event timed out ControlMessageReceive:i554 c c1 -> s 1 [ofp_packet_out: actions=(u'output(6)',), data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.1.3', u'dl_src': u'12:34:56:78:01:03', u'nw_dst': u'123.123.2.3'}, in_port=1][1;m
+[1;36m[1;44m02:59.601 00:03.047 Successfully matched event ControlMessageReceive:i555 c c1 -> s 1 [ofp_packet_out: actions=(u'output(7)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m02:59.603 00:03.048 Successfully matched event ControlMessageReceive:i556 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;36m[1;44m02:59.604 00:03.048 Successfully matched event ControlMessageSend:i557 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m02:59.605 00:03.048 Successfully matched event ControlMessageSend:i558 c 1 -> s c1 [ofp_port_status: reason=1, desc=(7, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m02:59.606 00:03.048 Successfully matched event ControlMessageSend:i559 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m02:59.607 00:03.048 Successfully matched event ControlMessageSend:i560 c 1 -> s c1 [ofp_port_status: reason=0, desc=(8, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m02:59.608 00:03.048 Successfully matched event ControlMessageSend:i561 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36mCutting link (3:2) -> (1:1)[1;m
+[1;36m[1;44m02:59.609 00:03.049 Successfully matched event LinkFailure:e562[1;m
+[1;36m[1;44m02:59.610 00:03.050 Successfully matched event HostMigration:e563[1;m
+[1;36m[1;44m02:59.610 00:03.051 Successfully matched event TrafficInjection:e564[1;m
+[1;35m[1;41m02:59.726 00:03.165 Event timed out DataplaneDrop:e565[1;m
+[1;36m[1;36mRound 23[1;37m[1;m
+[1;35m[1;41m02:59.727 00:03.166 Event timed out DataplaneDrop:e566[1;m
+[1;35m[1;41m03:00.225 00:03.166 Event timed out DataplanePermit:i567[1;m
+[1;35m[1;41m03:00.226 00:03.167 Event timed out DataplaneDrop:e568[1;m
+[1;35m[1;41m03:00.829 00:03.168 Event timed out DataplanePermit:i569[1;m
+[1;35m[1;41m03:01.431 00:03.169 Event timed out DataplanePermit:i570[1;m
+[1;35m[1;41m03:02.034 00:03.172 Event timed out DataplanePermit:i571[1;m
+[1;35m[1;41m03:02.636 00:03.173 Event timed out DataplanePermit:i572[1;m
+[1;35m[1;41m03:03.238 00:03.175 Event timed out DataplanePermit:i573[1;m
+[1;35m[1;41m03:03.239 00:03.176 Event timed out DataplaneDrop:e574[1;m
+[1;35m[1;41m03:03.841 00:03.178 Event timed out DataplanePermit:i575[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:03.843 00:03.179 Successfully matched event DataplanePermit:i576[1;m
+[1;35m[1;41m03:04.445 00:03.180 Event timed out DataplanePermit:i577[1;m
+[1;35m[1;41m03:05.047 00:03.181 Event timed out DataplanePermit:i578[1;m
+[1;35m[1;41m03:05.649 00:03.182 Event timed out DataplanePermit:i579[1;m
+[1;35m[1;41m03:05.651 00:03.183 Event timed out DataplaneDrop:e580[1;m
+[1;35m[1;41m03:05.652 00:03.184 Event timed out DataplaneDrop:e581[1;m
+[1;36m[1;44m03:05.653 00:03.184 Successfully matched event ControlMessageReceive:i582 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;36m[1;44m03:05.654 00:03.184 Successfully matched event ControlMessageReceive:i583 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;36m[1;44m03:05.655 00:03.185 Successfully matched event ControlMessageReceive:i584 c c1 -> s 1 [ofp_packet_out: actions=(u'output(8)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m03:05.656 00:03.185 Successfully matched event ControlMessageReceive:i585 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;36m[1;44m03:05.656 00:03.186 Successfully matched event ControlMessageSend:i586 c 2 -> s c1 [ofp_port_status: reason=0, desc=(6, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m03:05.657 00:03.186 Successfully matched event ControlMessageSend:i587 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m03:05.657 00:03.186 Successfully matched event ControlMessageSend:i588 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m03:05.658 00:03.186 Successfully matched event ControlMessageSend:i589 c 1 -> s c1 [ofp_port_status: reason=1, desc=(8, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m03:05.659 00:03.187 Successfully matched event ControlMessageSend:i590 c 3 -> s c1 [ofp_port_status: reason=1, desc=(2, u'00:00:00:00:03:02')][1;m
+[1;36m[1;44m03:05.659 00:03.187 Successfully matched event ControlMessageSend:i591 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m03:05.660 00:03.188 Successfully matched event HostMigration:e592[1;m
+[1;36m[1;44m03:05.661 00:03.189 Successfully matched event TrafficInjection:e593[1;m
+[1;36m[1;44m03:05.662 00:03.190 Successfully matched event HostMigration:e594[1;m
+[1;36m[1;36mRound -1[1;37m[1;m
+[1;36m[1;44m03:05.663 00:03.190 Successfully matched event TrafficInjection:e595[1;m
+[1;36m[1;36mRound 23[1;37m[1;m
+[1;35m[1;41m03:05.780 00:03.306 Event timed out DataplaneDrop:e596[1;m
+[1;36m[1;36mRound 24[1;37m[1;m
+[1;35m[1;41m03:05.781 00:03.307 Event timed out DataplaneDrop:e597[1;m
+[1;35m[1;41m03:06.318 00:03.308 Event timed out DataplanePermit:i598[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:06.321 00:03.309 Successfully matched event DataplanePermit:i599[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:06.323 00:03.311 Successfully matched event DataplanePermit:i600[1;m
+[1;35m[1;41m03:06.926 00:03.313 Event timed out DataplanePermit:i601[1;m
+[1;35m[1;41m03:06.927 00:03.314 Event timed out DataplaneDrop:e602[1;m
+[1;36m[1;44m03:06.928 00:03.315 Successfully matched event ControlMessageReceive:i603 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;36m[1;44m03:06.929 00:03.315 Successfully matched event ControlMessageReceive:i604 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;36m[1;44m03:06.930 00:03.316 Successfully matched event ControlMessageReceive:i605 c c1 -> s 2 [ofp_packet_out: actions=(u'output(6)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m03:06.932 00:03.316 Successfully matched event ControlMessageReceive:i606 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;36m[1;44m03:06.933 00:03.316 Successfully matched event ControlMessageSend:i607 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m03:06.935 00:03.316 Successfully matched event ControlMessageSend:i608 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m03:06.936 00:03.317 Successfully matched event ControlMessageSend:i609 c 3 -> s c1 [ofp_port_status: reason=0, desc=(11, u'00:00:00:00:02:03')][1;m
+[1;36m[1;44m03:06.937 00:03.317 Successfully matched event ControlMessageSend:i610 c 2 -> s c1 [ofp_port_status: reason=1, desc=(6, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m03:06.938 00:03.317 Successfully matched event ControlMessageSend:i611 c 3 -> s c1 [ofp_port_status: reason=0, desc=(10, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m03:06.939 00:03.317 Successfully matched event ControlMessageSend:i612 c 2 -> s c1 [ofp_port_status: reason=1, desc=(5, u'00:00:00:00:02:03')][1;m
+[1;36m[1;44m03:06.940 00:03.318 Successfully matched event ControlMessageSend:i613 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.2.3', u'dl_src': u'12:34:56:78:02:03', u'nw_dst': u'123.123.2.3'}, in_port=11][1;m
+[1;36m[1;44m03:06.941 00:03.318 Successfully matched event ControlMessageSend:i614 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m03:06.941 00:03.319 Successfully matched event ControlMessageSend:i615 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.3.3'}, in_port=10][1;m
+[1;36mCutting link (1:2) -> (2:2)[1;m
+[1;36m[1;44m03:06.942 00:03.320 Successfully matched event LinkFailure:e616[1;m
+[1;35m[1;41m03:07.059 00:03.435 Event timed out DataplaneDrop:e617[1;m
+[1;36m[1;36mRound 25[1;37m[1;m
+[1;36m[1;44m03:07.060 00:03.436 Successfully matched event ControlMessageReceive:i618 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.2.3', u'dl_src': u'12:34:56:78:02:03', u'nw_dst': u'123.123.2.3'}, in_port=11][1;m
+[1;36m[1;44m03:07.060 00:03.437 Successfully matched event ControlMessageReceive:i619 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.3.3'}, in_port=10][1;m
+[1;36m[1;44m03:07.061 00:03.438 Successfully matched event ControlMessageReceive:i620 c c1 -> s 3 [ofp_packet_out: actions=(u'output(9)',), data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.3.3'}, in_port=10][1;m
+[1;35m[1;41m03:07.750 00:03.439 Event timed out ControlMessageReceive:i621 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.3.3'}, in_port=10][1;m
+[1;36m[1;44m03:07.752 00:03.440 Successfully matched event ControlMessageReceive:i622 c c1 -> s 3 [ofp_packet_out: actions=(u'output(4)',), data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.3.3'}, in_port=10][1;m
+[1;36m[1;44m03:07.754 00:03.441 Successfully matched event ControlMessageReceive:i623 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.2.3', u'dl_src': u'12:34:56:78:02:03', u'nw_dst': u'123.123.2.3'}, in_port=11][1;m
+[1;36m[1;44m03:07.755 00:03.441 Successfully matched event ControlMessageReceive:i624 c c1 -> s 3 [ofp_packet_out: actions=(u'output(9)',), data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.2.3', u'dl_src': u'12:34:56:78:02:03', u'nw_dst': u'123.123.2.3'}, in_port=11][1;m
+[1;36m[1;44m03:07.756 00:03.442 Successfully matched event ControlMessageReceive:i625 c c1 -> s 3 [ofp_packet_out: actions=(u'output(10)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m03:08.358 00:03.442 Event timed out ControlMessageReceive:i626 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.2.3', u'dl_src': u'12:34:56:78:02:03', u'nw_dst': u'123.123.2.3'}, in_port=11][1;m
+[1;36m[1;44m03:08.360 00:03.444 Successfully matched event ControlMessageReceive:i627 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.3.3'}, in_port=10][1;m
+[1;36m[1;44m03:08.363 00:03.446 Successfully matched event ControlMessageReceive:i628 c c1 -> s 3 [ofp_packet_out: actions=(u'output(4)',), data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.2.3', u'dl_src': u'12:34:56:78:02:03', u'nw_dst': u'123.123.2.3'}, in_port=11][1;m
+[1;36m[1;44m03:08.364 00:03.446 Successfully matched event ControlMessageReceive:i629 c c1 -> s 3 [ofp_packet_out: actions=(u'output(11)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m03:08.365 00:03.447 Successfully matched event ControlMessageSend:i630 c 1 -> s c1 [ofp_port_status: reason=1, desc=(2, u'00:00:00:00:01:02')][1;m
+[1;36mRestoring link (3:2) -> (1:1)[1;m
+[1;36m[1;44m03:08.367 00:03.447 Successfully matched event LinkRecovery:e631[1;m
+[1;36mRestoring link (1:2) -> (2:2)[1;m
+[1;36m[1;44m03:08.368 00:03.448 Successfully matched event LinkRecovery:e632[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:08.370 00:03.448 Successfully matched event CheckInvariants:e633[1;m
+[1;36m[1;44m03:09.371 00:03.651 Successfully matched event WaitTime:e638[1;m
+[1;36m[1;36mRound -1[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44mEvent Stats: Events matched: 303, timed out: 327
+Matches per event type:
+  WaitTime 1
+  ConnectToControllers 1
+  CheckInvariants 4
+  LinkFailure 8
+  LinkRecovery 8
+  DataplaneDrop 8
+  HostMigration 16
+  TrafficInjection 22
+  DataplanePermit 26
+  ControlMessageSend 104
+  ControlMessageReceive 105
+Timeouts per event type:
+  ControlMessageSend 2
+  DataplaneDrop 19
+  DataplanePermit 40
+  ControlMessageReceive 266
+[1;m
+[1;36mKilling controller c1[1;m
+Terminating child controllers...Error closing child io.Traceback (most recent call last):
+  File "/home/mininet/colin_sts/sts/util/procutils.py", line 90, in kill_procs
+    attr.close()
+IOError: close() called during concurrent operation on the same file object.
+Error closing child io.Traceback (most recent call last):
+  File "/home/mininet/colin_sts/sts/util/procutils.py", line 90, in kill_procs
+    attr.close()
+IOError: close() called during concurrent operation on the same file object.
+ OK

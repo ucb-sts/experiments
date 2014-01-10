@@ -1,0 +1,301 @@
+Violation reproduced successfully! Proceeding with pruning
+Subsets:
+l/0: e4 e5 e16 e17 e18 a(e33,e99) e47 e49 a(e64,e95) e65 e66 e67 e68 e71 e85 e86 a(e94,e131) e100 e101 e102 e103 a(e114,e132) e115 e116 e117 e118 e133 e134 e138 a(e146,e190) e152 e153 e154 e159 a(e166,e189) e169 e170 e174 e175 e180 e181
+r/0: e182 e191 e192 e266 e267 e268 e270 e273 e274 e275 e276 e369 e370 e371 e373 e538 e539 e540 e547 e549 a(e562,e631) e563 e564 e565 e566 e568 e574 e580 e581 e592 e593 e594 e595 e596 e597 e602 a(e616,e632) e617 e633 e638
+Current subset: l/0: e4 e5 e16 e17 e18 a(e33,e99) e47 e49 a(e64,e95) e65 e66 e67 e68 e71 e85 e86 a(e94,e131) e100 e101 e102 e103 a(e114,e132) e115 e116 e117 e118 e133 e134 e138 a(e146,e190) e152 e153 e154 e159 a(e166,e189) e169 e170 e174 e175 e180 e181
+No violation in 0'th...
+Current subset: r/0: e182 e191 e192 e266 e267 e268 e270 e273 e274 e275 e276 e369 e370 e371 e373 e538 e539 e540 e547 e549 a(e562,e631) e563 e564 e565 e566 e568 e574 e580 e581 e592 e593 e594 e595 e596 e597 e602 a(e616,e632) e617 e633 e638
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.l/1: e4 e5 e16 e17 e18 a(e33,e99) e47 e49 a(e64,e95) e65 e66 e67 e68 e71 e85 e86 a(e94,e131) e100 e101 e102 e103
+il/0.r/1: a(e114,e132) e115 e116 e117 e118 e133 e134 e138 a(e146,e190) e152 e153 e154 e159 a(e166,e189) e169 e170 e174 e175 e180 e181
+Current subset: il/0.l/1: e4 e5 e16 e17 e18 a(e33,e99) e47 e49 a(e64,e95) e65 e66 e67 e68 e71 e85 e86 a(e94,e131) e100 e101 e102 e103
+No violation in 0'th...
+Current subset: il/0.r/1: a(e114,e132) e115 e116 e117 e118 e133 e134 e138 a(e146,e190) e152 e153 e154 e159 a(e166,e189) e169 e170 e174 e175 e180 e181
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.il/1.l/2: e4 e5 e16 e17 e18 a(e33,e99) e47 e49 a(e64,e95) e65 e66
+il/0.il/1.r/2: e67 e68 e71 e85 e86 a(e94,e131) e100 e101 e102 e103
+Current subset: il/0.il/1.l/2: e4 e5 e16 e17 e18 a(e33,e99) e47 e49 a(e64,e95) e65 e66
+No violation in 0'th...
+Current subset: il/0.il/1.r/2: e67 e68 e71 e85 e86 a(e94,e131) e100 e101 e102 e103
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.il/1.il/2.l/3: e4 e5 e16 e17 e18 a(e33,e99)
+il/0.il/1.il/2.r/3: e47 e49 a(e64,e95) e65 e66
+Current subset: il/0.il/1.il/2.l/3: e4 e5 e16 e17 e18 a(e33,e99)
+No violation in 0'th...
+Current subset: il/0.il/1.il/2.r/3: e47 e49 a(e64,e95) e65 e66
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.il/1.il/2.il/3.l/4: e4 e5 e16
+il/0.il/1.il/2.il/3.r/4: e17 e18 a(e33,e99)
+Current subset: il/0.il/1.il/2.il/3.l/4: e4 e5 e16
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.il/1.il/2.il/3.l/4.l/5: e4 e5
+il/0.il/1.il/2.il/3.l/4.r/5: e16
+Current subset: il/0.il/1.il/2.il/3.l/4.l/5: e4 e5
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.il/1.il/2.il/3.l/4.l/5.l/6: e4
+il/0.il/1.il/2.il/3.l/4.l/5.r/6: e5
+Current subset: il/0.il/1.il/2.il/3.l/4.l/5.l/6: e4
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [HostMigration:e4:('HostMigration', 3, 3, 3, 4, 3)]
+Recursing on right half
+Subsets:
+il/0.il/1.il/2.ir/3.l/4: e47 e49 a(e64,e95)
+il/0.il/1.il/2.ir/3.r/4: e65 e66
+Current subset: il/0.il/1.il/2.ir/3.l/4: e47 e49 a(e64,e95)
+No violation in 0'th...
+Current subset: il/0.il/1.il/2.ir/3.r/4: e65 e66
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+il/0.il/1.il/2.ir/3.r/4.l/5: e65
+il/0.il/1.il/2.ir/3.r/4.r/5: e66
+Current subset: il/0.il/1.il/2.ir/3.r/4.l/5: e65
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [HostMigration:e65:('HostMigration', 3, 3, 1, 4, 3)]
+Recursing on right half
+Subsets:
+il/0.il/1.ir/2.l/3: e67 e68 e71 e85 e86
+il/0.il/1.ir/2.r/3: a(e94,e131) e100 e101 e102 e103
+Current subset: il/0.il/1.ir/2.l/3: e67 e68 e71 e85 e86
+No violation in 0'th...
+Current subset: il/0.il/1.ir/2.r/3: a(e94,e131) e100 e101 e102 e103
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.il/1.ir/2.il/3.l/4: e67 e68 e71
+il/0.il/1.ir/2.il/3.r/4: e85 e86
+Current subset: il/0.il/1.ir/2.il/3.l/4: e67 e68 e71
+No violation in 0'th...
+Current subset: il/0.il/1.ir/2.il/3.r/4: e85 e86
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+il/0.il/1.ir/2.il/3.r/4.l/5: e85
+il/0.il/1.ir/2.il/3.r/4.r/5: e86
+Current subset: il/0.il/1.ir/2.il/3.r/4.l/5: e85
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [HostMigration:e85:('HostMigration', 1, 3, 3, 6, 1)]
+Recursing on right half
+Subsets:
+il/0.il/1.ir/2.ir/3.l/4: a(e94,e131) e100 e101
+il/0.il/1.ir/2.ir/3.r/4: e102 e103
+Current subset: il/0.il/1.ir/2.ir/3.l/4: a(e94,e131) e100 e101
+No violation in 0'th...
+Current subset: il/0.il/1.ir/2.ir/3.r/4: e102 e103
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.il/1.ir/2.ir/3.il/4.l/5: a(e94,e131) e100
+il/0.il/1.ir/2.ir/3.il/4.r/5: e101
+Current subset: il/0.il/1.ir/2.ir/3.il/4.l/5: a(e94,e131) e100
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.il/1.ir/2.ir/3.il/4.l/5.l/6: a(e94,e131)
+il/0.il/1.ir/2.ir/3.il/4.l/5.r/6: e100
+Current subset: il/0.il/1.ir/2.ir/3.il/4.l/5.l/6: a(e94,e131)
+No violation in 0'th...
+Current subset: il/0.il/1.ir/2.ir/3.il/4.l/5.r/6: e100
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [HostMigration:e100:('HostMigration', 2, 3, 2, 4, 2)]
+Recursing on right half
+Subsets:
+il/0.il/1.ir/2.ir/3.ir/4.l/5: e102
+il/0.il/1.ir/2.ir/3.ir/4.r/5: e103
+Current subset: il/0.il/1.ir/2.ir/3.ir/4.l/5: e102
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [HostMigration:e102:('HostMigration', 1, 3, 3, 7, 1)]
+Recursing on right half
+Subsets:
+il/0.ir/1.l/2: a(e114,e132) e115 e116 e117 e118 e133 e134 e138 a(e146,e190) e152
+il/0.ir/1.r/2: e153 e154 e159 a(e166,e189) e169 e170 e174 e175 e180 e181
+Current subset: il/0.ir/1.l/2: a(e114,e132) e115 e116 e117 e118 e133 e134 e138 a(e146,e190) e152
+No violation in 0'th...
+Current subset: il/0.ir/1.r/2: e153 e154 e159 a(e166,e189) e169 e170 e174 e175 e180 e181
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.ir/1.il/2.l/3: a(e114,e132) e115 e116 e117 e118
+il/0.ir/1.il/2.r/3: e133 e134 e138 a(e146,e190) e152
+Current subset: il/0.ir/1.il/2.l/3: a(e114,e132) e115 e116 e117 e118
+No violation in 0'th...
+Current subset: il/0.ir/1.il/2.r/3: e133 e134 e138 a(e146,e190) e152
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.ir/1.il/2.il/3.l/4: a(e114,e132) e115 e116
+il/0.ir/1.il/2.il/3.r/4: e117 e118
+Current subset: il/0.ir/1.il/2.il/3.l/4: a(e114,e132) e115 e116
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.ir/1.il/2.il/3.l/4.l/5: a(e114,e132) e115
+il/0.ir/1.il/2.il/3.l/4.r/5: e116
+Current subset: il/0.ir/1.il/2.il/3.l/4.l/5: a(e114,e132) e115
+No violation in 0'th...
+Current subset: il/0.ir/1.il/2.il/3.l/4.r/5: e116
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [HostMigration:e116:('HostMigration', 2, 3, 2, 5, 2)]
+Recursing on right half
+Subsets:
+il/0.ir/1.il/2.ir/3.l/4: e133 e134 e138
+il/0.ir/1.il/2.ir/3.r/4: a(e146,e190) e152
+Current subset: il/0.ir/1.il/2.ir/3.l/4: e133 e134 e138
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.ir/1.il/2.ir/3.l/4.l/5: e133 e134
+il/0.ir/1.il/2.ir/3.l/4.r/5: e138
+Current subset: il/0.ir/1.il/2.ir/3.l/4.l/5: e133 e134
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.ir/1.il/2.ir/3.l/4.l/5.l/6: e133
+il/0.ir/1.il/2.ir/3.l/4.l/5.r/6: e134
+Current subset: il/0.ir/1.il/2.ir/3.l/4.l/5.l/6: e133
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [HostMigration:e133:('HostMigration', 3, 3, 1, 5, 3)]
+Recursing on right half
+Subsets:
+il/0.ir/1.ir/2.l/3: e153 e154 e159 a(e166,e189) e169
+il/0.ir/1.ir/2.r/3: e170 e174 e175 e180 e181
+Current subset: il/0.ir/1.ir/2.l/3: e153 e154 e159 a(e166,e189) e169
+No violation in 0'th...
+Current subset: il/0.ir/1.ir/2.r/3: e170 e174 e175 e180 e181
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.ir/1.ir/2.il/3.l/4: e153 e154 e159
+il/0.ir/1.ir/2.il/3.r/4: a(e166,e189) e169
+Current subset: il/0.ir/1.ir/2.il/3.l/4: e153 e154 e159
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.ir/1.ir/2.il/3.l/4.l/5: e153 e154
+il/0.ir/1.ir/2.il/3.l/4.r/5: e159
+Current subset: il/0.ir/1.ir/2.il/3.l/4.l/5: e153 e154
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.ir/1.ir/2.il/3.l/4.l/5.l/6: e153
+il/0.ir/1.ir/2.il/3.l/4.l/5.r/6: e154
+Current subset: il/0.ir/1.ir/2.il/3.l/4.l/5.l/6: e153
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [HostMigration:e153:('HostMigration', 3, 3, 3, 8, 3)]
+Recursing on right half
+Subsets:
+il/0.ir/1.ir/2.ir/3.l/4: e170 e174 e175
+il/0.ir/1.ir/2.ir/3.r/4: e180 e181
+Current subset: il/0.ir/1.ir/2.ir/3.l/4: e170 e174 e175
+No violation in 0'th...
+Current subset: il/0.ir/1.ir/2.ir/3.r/4: e180 e181
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.ir/1.ir/2.ir/3.il/4.l/5: e170 e174
+il/0.ir/1.ir/2.ir/3.il/4.r/5: e175
+Current subset: il/0.ir/1.ir/2.ir/3.il/4.l/5: e170 e174
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.ir/1.ir/2.ir/3.il/4.l/5.l/6: e170
+il/0.ir/1.ir/2.ir/3.il/4.l/5.r/6: e174
+Current subset: il/0.ir/1.ir/2.ir/3.il/4.l/5.l/6: e170
+No violation in 0'th...
+Current subset: il/0.ir/1.ir/2.ir/3.il/4.l/5.r/6: e174
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [TrafficInjection:e174:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:03:[IPAddr('123.123.1.3')] Packet:[12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:a131[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)]
+Recursing on right half
+Subsets:
+il/0.ir/1.ir/2.ir/3.ir/4.l/5: e180
+il/0.ir/1.ir/2.ir/3.ir/4.r/5: e181
+Current subset: il/0.ir/1.ir/2.ir/3.ir/4.l/5: e180
+No violation in 0'th...
+Current subset: il/0.ir/1.ir/2.ir/3.ir/4.r/5: e181
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [HostMigration:e181:('HostMigration', 1, 3, 3, 9, 1)]
+Recursing on right half
+Subsets:
+ir/0.l/1: e182 e191 e192 e266 e267 e268 e270 e273 e274 e275 e276 e369 e370 e371 e373 e538 e539 e540 e547 e549
+ir/0.r/1: a(e562,e631) e563 e564 e565 e566 e568 e574 e580 e581 e592 e593 e594 e595 e596 e597 e602 a(e616,e632) e617 e633 e638
+Current subset: ir/0.l/1: e182 e191 e192 e266 e267 e268 e270 e273 e274 e275 e276 e369 e370 e371 e373 e538 e539 e540 e547 e549
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.l/1.l/2: e182 e191 e192 e266 e267 e268 e270 e273 e274 e275
+ir/0.l/1.r/2: e276 e369 e370 e371 e373 e538 e539 e540 e547 e549
+Current subset: ir/0.l/1.l/2: e182 e191 e192 e266 e267 e268 e270 e273 e274 e275
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.l/1.l/2.l/3: e182 e191 e192 e266 e267
+ir/0.l/1.l/2.r/3: e268 e270 e273 e274 e275
+Current subset: ir/0.l/1.l/2.l/3: e182 e191 e192 e266 e267
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.l/1.l/2.l/3.l/4: e182 e191 e192
+ir/0.l/1.l/2.l/3.r/4: e266 e267
+Current subset: ir/0.l/1.l/2.l/3.l/4: e182 e191 e192
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.l/1.l/2.l/3.l/4.l/5: e182 e191
+ir/0.l/1.l/2.l/3.l/4.r/5: e192
+Current subset: ir/0.l/1.l/2.l/3.l/4.l/5: e182 e191
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.l/1.l/2.l/3.l/4.l/5.l/6: e182
+ir/0.l/1.l/2.l/3.l/4.l/5.r/6: e191
+Current subset: ir/0.l/1.l/2.l/3.l/4.l/5.l/6: e182
+No violation in 0'th...
+Current subset: ir/0.l/1.l/2.l/3.l/4.l/5.r/6: e191
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [HostMigration:e191:('HostMigration', 3, 3, 1, 6, 3)]
+=== Total replays: 55 ===
+Final MCS (11 elements):
+ - HostMigration:e4
+ - HostMigration:e65
+ - HostMigration:e85
+ - HostMigration:e100
+ - HostMigration:e102
+ - HostMigration:e116
+ - HostMigration:e133
+ - HostMigration:e153
+ - TrafficInjection:e174
+ - HostMigration:e181
+ - HostMigration:e191
