@@ -1,0 +1,39 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "config/snapshot_demo_synthetic_link_failure.py"
+  ],
+  "cwd": "/mnt/rcs/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz",
+    "free": "total       used       free     shared    buffers     cached
+Mem:     264106044    7764660  256341384          0      15940    4540644
+-/+ buffers/cache:    3208076  260897968
+Swap:            0          0          0",
+    "name": "c75",
+    "num_cores": "32",
+    "uptime": "15:47:06 up 23 days,  2:00,  2 users,  load average: 0.05, 0.04, 0.05"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "debugger",
+      "commit": "2f707afd243c449dfdccaacf4c23fa91a1ae3ca1"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "c8e0b28914e2a004dfd17c22314879e2f587eec3"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 12.04.3 LTS",
+    "uname": "Linux c75 3.2.0-57-generic #87-Ubuntu SMP Tue Nov 12 21:35:10 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_01_10_15_47_06",
+  "user": "rcs"
+}
