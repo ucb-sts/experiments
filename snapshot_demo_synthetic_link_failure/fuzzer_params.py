@@ -1,6 +1,6 @@
-switch_failure_rate = 0.005
-switch_recovery_rate = 0.01
-dataplane_drop_rate = 0.005
+switch_failure_rate = 0.0
+switch_recovery_rate = 0.0
+dataplane_drop_rate = 0.0
 controlplane_block_rate = 0.0
 controlplane_unblock_rate = 1.0
 ofp_message_receipt_rate = 1.0
