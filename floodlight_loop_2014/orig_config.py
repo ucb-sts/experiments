@@ -18,7 +18,7 @@ command_line = ("java %s %s -jar target/floodlight.jar -cf __config__" % (jvm_op
 timestamp_results = True
 
 # Use POX as our controller
-controllers = [ ControllerConfig(command_line, cwd="../floodlight", port=6633, config_template="experiments/floodlight_test/floodlightconfig.properties") ]
+controllers = [ ControllerConfig(command_line, cwd="../floodlight", port=6633, config_template="experiments/floodlight_loop_2014/floodlightconfig.properties") ]
 topology_class = MeshTopology
 topology_params = "num_switches=3"
 

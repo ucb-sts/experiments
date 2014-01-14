@@ -18,7 +18,7 @@ command_line = ("java %s %s -jar target/floodlight.jar -cf __config__" % (jvm_op
 timestamp_results = True
 
 # Use POX as our controller
-controllers = [ ControllerConfig(command_line, cwd="../floodlight", port=6633, config_template="experiments/floodlight_test_loop/floodlightconfig.properties") ]
+controllers = [ ControllerConfig(command_line, cwd="../floodlight", port=6633, config_template="experiments/floodlight_loop_2014/floodlightconfig.properties") ]
 topology_class = MeshTopology
 topology_params = "num_switches=3"
 
@@ -27,7 +27,7 @@ simulation_config = SimulationConfig(controller_configs=controllers,
                                      topology_params=topology_params,
                                      )
 
-control_flow = Replayer(simulation_config, "experiments/floodlight_test_loop/events.trace",
+control_flow = Replayer(simulation_config, "experiments/floodlight_loop_2014/events.trace",
                         input_logger=InputLogger(),
                         wait_on_deterministic_values=False)
 # Invariant check: 'check_for_loops_blackholes'

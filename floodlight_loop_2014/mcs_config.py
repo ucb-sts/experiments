@@ -1,16 +1,33 @@
-
 from config.experiment_config_lib import ControllerConfig
-from sts.topology import *
+from sts.topology import MeshTopology
 from sts.control_flow import EfficientMCSFinder
+from sts.input_traces.input_logger import InputLogger
 from sts.invariant_checker import InvariantChecker
 from sts.simulation_state import SimulationConfig
 
-simulation_config = SimulationConfig(controller_configs=[ControllerConfig(start_cmd='java  -server -Xmx512m -Xms512m -Xmn128m -XX:+UseParallelGC -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -XX:MaxInlineSize=8192 -XX:FreqInlineSize=8192 -XX:CompileThreshold=1500 -XX:PreBlockSpin=8 -Dpython.security.respectJavaAccessibility=false -Dlogback.configurationFile=logback.xml -jar target/floodlight.jar -cf __config__', address='127.0.0.1', port=6633, cwd='../floodlight')],
-                 topology_class=MeshTopology,
-                 topology_params="num_switches=3",
-                 patch_panel_class=BufferedPatchPanel,
-                 multiplex_sockets=False)
+jvm_opts = ""
+jvm_opts += " -server"
+jvm_opts += " -Xmx512m -Xms512m -Xmn128m"
+jvm_opts += " -XX:+UseParallelGC -XX:+AggressiveOpts -XX:+UseFastAccessorMethods"
+jvm_opts += " -XX:MaxInlineSize=8192 -XX:FreqInlineSize=8192"
+jvm_opts += " -XX:CompileThreshold=1500 -XX:PreBlockSpin=8"
+jvm_opts += " -Dpython.security.respectJavaAccessibility=false"
+log_config = "-Dlogback.configurationFile=logback.xml"
+command_line = ("java %s %s -jar target/floodlight.jar -cf __config__" % (jvm_opts, log_config))
 
-control_flow = EfficientMCSFinder(simulation_config, "experiments/floodlight_test_2014_01_13_19_55_05/events.trace",
+timestamp_results = True
+
+# Use Floodlight as our controller
+controllers = [ ControllerConfig(command_line, cwd="../floodlight", port=6633, config_template="experiments/floodlight_loop_2014/floodlightconfig.properties") ]
+topology_class = MeshTopology
+topology_params = "num_switches=3"
+
+simulation_config = SimulationConfig(controller_configs=controllers,
+                                     topology_class=topology_class,
+                                     topology_params=topology_params,
+                                     )
+
+control_flow = EfficientMCSFinder(simulation_config, "experiments/floodlight_loop_2014/events.trace",
+                                  no_violation_verification_runs=1,
                                   wait_on_deterministic_values=False,
                                   invariant_check_name='check_for_loops_blackholes')
