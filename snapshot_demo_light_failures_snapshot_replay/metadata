@@ -1,0 +1,37 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-v",
+    "-c",
+    "experiments/snapshot_demo_light_failures/snapshot_replay_config.py"
+  ],
+  "cwd": "/Users/cs/Research/UCB/code/sts",
+  "host": {
+    "cpu_info": "",
+    "free": "",
+    "name": "yossarian",
+    "num_cores": "0",
+    "uptime": "12:43  up 15:42, 4 users, load averages: 1.21 1.14 1.13"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "master",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "debugger",
+      "commit": "32f3ac9cd34dca80fa55634255a11f3a41555cf7"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "4d3c8f5bcdd5049e41f197ea80f4b57f08f3bd69"
+    }
+  },
+  "sys": {
+    "lsb_release": "",
+    "uname": "Darwin yossarian 13.0.2 Darwin Kernel Version 13.0.2: Sun Sep 29 19:38:57 PDT 2013; root:xnu-2422.75.4~1/RELEASE_X86_64 x86_64"
+  },
+  "timestamp": "2014_01_15_12_43_38",
+  "user": "cs"
+}
