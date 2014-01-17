@@ -1,0 +1,36 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "config/fuzz_pyretic_mesh_flood_check_loop_with_linkfailure.py"
+  ],
+  "cwd": "/home/mininet/sts",
+  "host": {
+    "cpu_info": "Intel(R) Core(TM) i5-4250U CPU @ 1.30GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:       1019268     877944     141324          0      49672     673380\n-/+ buffers/cache:     154892     864376\nSwap:      1046524          0    1046524",
+    "name": "mininet-vm",
+    "num_cores": "1",
+    "uptime": "21:01:53 up 4 days,  2:22, 10 users,  load average: 0.08, 0.04, 0.05"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "master",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "debugger",
+      "commit": "2555a7aec0f373f90736e83a2b8a951082e44d58"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "4e5922f1a4312cba7663f21971b9924740395d55"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 12.10",
+    "uname": "Linux mininet-vm 3.5.0-17-generic #28-Ubuntu SMP Tue Oct 9 19:31:23 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_01_13_21_01_53",
+  "user": "mininet"
+}
