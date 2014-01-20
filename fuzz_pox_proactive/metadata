@@ -25,7 +25,7 @@
     },
     "pox": {
       "branch": "debugger",
-      "commit": "32f3ac9cd34dca80fa55634255a11f3a41555cf7"
+      "commit": "12a8465fa6bb0aae9411a09e902ebe74b2d48cdd"
     },
     "sts": {
       "branch": "master",
