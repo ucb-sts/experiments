@@ -27,10 +27,10 @@ peeker = SnapshotPeeker(simulation_config, default_dp_permit=True)
 control_flow = Replayer(simulation_config, "experiments/snapshot_proactive_pox/events.trace",
                         input_logger=InputLogger(),
                         wait_on_deterministic_values=False,
-                        allow_unexpected_messages=False,
-                        delay_flow_mods=False,
+                        allow_unexpected_messages=True,
+                        expected_message_round_window=99999,
                         default_dp_permit=True,
-                        pass_through_whitelisted_messages=True,
+                        pass_through_whitelisted_messages=False,
                         invariant_check_name='check_for_invalid_ports',
                         bug_signature="",
                         transform_dag=peeker.peek)
