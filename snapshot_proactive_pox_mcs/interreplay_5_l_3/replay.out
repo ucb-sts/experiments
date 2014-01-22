@@ -1,0 +1,617 @@
+[1;36mStarting POX controller c1[1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+Error connecting.  -- [Errno 111] Connection refused. Backing off 1 seconds ...
+[1;33m[c1] POX 0.3.0 (dart) / Copyright 2011-2013 James McCauley, et al.[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:POX 0.3.0 (dart) going up...[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Running on CPython (2.7.3/Sep 26 2013 20:03:06)[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Platform is Linux-3.8.0-35-generic-x86_64-with-Ubuntu-12.04-precise[1;m
+
+[1;41m[1;33m[c1] INFO:core:POX 0.3.0 (dart) is up.[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening on 127.0.0.1:6633[1;m
+
+[1;33m[c1] Incoming true socket connected[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 56434][1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 56434][1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 56434][1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 56434][1;m
+[1;36m[1;44m00:00.503 00:00.000 Successfully matched event ConnectToControllers:e1[1;m
+
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 56434][1;m
+
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 56434][1;m
+
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 56434][1;m
+
+[1;36m[1;44m00:00.542 00:00.001 Successfully matched event ControlMessageReceive:i2 c c1 -> s 5 [ofp_hello: ][1;m
+[1;36m[1;36mRound 1[1;37m[1;m
+[1;36m[1;44m00:00.544 00:00.001 Successfully matched event ControlMessageReceive:i3 c c1 -> s 3 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.546 00:00.001 Successfully matched event ControlMessageReceive:i4 c c1 -> s 1 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.547 00:00.001 Successfully matched event ControlMessageReceive:i5 c c1 -> s 7 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.549 00:00.002 Successfully matched event ControlMessageReceive:i6 c c1 -> s 6 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.550 00:00.002 Successfully matched event ControlMessageReceive:i7 c c1 -> s 4 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.550 00:00.002 Successfully matched event ControlMessageReceive:i8 c c1 -> s 2 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.551 00:00.002 Successfully matched event ControlMessageSend:i9 c 5 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.552 00:00.002 Successfully matched event ControlMessageSend:i10 c 3 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.553 00:00.002 Successfully matched event ControlMessageSend:i11 c 1 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.553 00:00.002 Successfully matched event ControlMessageSend:i12 c 7 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.554 00:00.002 Successfully matched event ControlMessageSend:i13 c 6 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.555 00:00.002 Successfully matched event ControlMessageSend:i14 c 4 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.555 00:00.003 Successfully matched event ControlMessageSend:i15 c 2 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.598 00:00.105 Successfully matched event ControlMessageReceive:i16 c c1 -> s 5 [ofp_features_request: ][1;m
+[1;36m[1;36mRound 2[1;37m[1;m
+[1;36m[1;44m00:00.600 00:00.105 Successfully matched event ControlMessageReceive:i17 c c1 -> s 7 [ofp_features_request: ][1;m
+[1;36m[1;44m00:00.601 00:00.105 Successfully matched event ControlMessageReceive:i18 c c1 -> s 1 [ofp_features_request: ][1;m
+[1;36m[1;44m00:00.603 00:00.105 Successfully matched event ControlMessageReceive:i19 c c1 -> s 3 [ofp_features_request: ][1;m
+[1;36m[1;44m00:00.604 00:00.106 Successfully matched event ControlMessageReceive:i20 c c1 -> s 2 [ofp_features_request: ][1;m
+[1;36m[1;44m00:00.606 00:00.106 Successfully matched event ControlMessageReceive:i21 c c1 -> s 4 [ofp_features_request: ][1;m
+[1;36m[1;44m00:00.607 00:00.106 Successfully matched event ControlMessageReceive:i22 c c1 -> s 6 [ofp_features_request: ][1;m
+[1;36m[1;44m00:00.609 00:00.106 Successfully matched event ControlMessageSend:i23 c 3 -> s c1 [ofp_features_reply: datapath_id=3][1;m
+[1;36m[1;44m00:00.609 00:00.106 Successfully matched event ControlMessageSend:i24 c 6 -> s c1 [ofp_features_reply: datapath_id=6][1;m
+[1;36m[1;44m00:00.610 00:00.107 Successfully matched event ControlMessageSend:i25 c 4 -> s c1 [ofp_features_reply: datapath_id=4][1;m
+[1;36m[1;44m00:00.611 00:00.107 Successfully matched event ControlMessageSend:i26 c 2 -> s c1 [ofp_features_reply: datapath_id=2][1;m
+[1;36m[1;44m00:00.611 00:00.107 Successfully matched event ControlMessageSend:i27 c 1 -> s c1 [ofp_features_reply: datapath_id=1][1;m
+[1;36m[1;44m00:00.612 00:00.107 Successfully matched event ControlMessageSend:i28 c 7 -> s c1 [ofp_features_reply: datapath_id=7][1;m
+[1;36m[1;44m00:00.613 00:00.107 Successfully matched event ControlMessageSend:i29 c 5 -> s c1 [ofp_features_reply: datapath_id=5][1;m
+[1;36m[1;44m00:00.613 00:00.211 Successfully matched event DataplanePermit:i32[1;m
+[1;36m[1;36mRound 3[1;37m[1;m
+[1;36m[1;44m00:00.614 00:00.211 Successfully matched event DataplanePermit:i33[1;m
+[1;36m[1;44m00:00.657 00:00.212 Successfully matched event ControlMessageReceive:i34 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:00.658 00:00.213 Successfully matched event ControlMessageReceive:i35 c c1 -> s 1 [ofp_set_config: ][1;m
+[1;36m[1;44m00:00.659 00:00.213 Successfully matched event ControlMessageReceive:i36 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:00.660 00:00.213 Successfully matched event ControlMessageReceive:i37 c c1 -> s 4 [ofp_set_config: ][1;m
+[1;36m[1;44m00:00.661 00:00.214 Successfully matched event ControlMessageReceive:i38 c c1 -> s 6 [ofp_set_config: ][1;m
+[1;36m[1;44m00:00.662 00:00.214 Successfully matched event ControlMessageReceive:i39 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:00.663 00:00.214 Successfully matched event ControlMessageReceive:i40 c c1 -> s 2 [ofp_set_config: ][1;m
+[1;36m[1;44m00:00.664 00:00.215 Successfully matched event ControlMessageReceive:i41 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:00.665 00:00.215 Successfully matched event ControlMessageReceive:i42 c c1 -> s 5 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:00.666 00:00.215 Successfully matched event ControlMessageReceive:i43 c c1 -> s 6 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:00.667 00:00.215 Successfully matched event ControlMessageReceive:i44 c c1 -> s 3 [ofp_set_config: ][1;m
+[1;36m[1;44m00:00.668 00:00.216 Successfully matched event ControlMessageReceive:i45 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:00.669 00:00.216 Successfully matched event ControlMessageReceive:i46 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:00.670 00:00.216 Successfully matched event ControlMessageReceive:i47 c c1 -> s 7 [ofp_set_config: ][1;m
+[1;36m[1;44m00:00.671 00:00.217 Successfully matched event ControlMessageReceive:i48 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:00.671 00:00.217 Successfully matched event ControlMessageReceive:i49 c c1 -> s 7 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:00.672 00:00.217 Successfully matched event ControlMessageReceive:i50 c c1 -> s 5 [ofp_set_config: ][1;m
+[1;36m[1;44m00:00.673 00:00.217 Successfully matched event ControlMessageReceive:i51 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:00.674 00:00.217 Successfully matched event ControlMessageReceive:i52 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:00.675 00:00.217 Successfully matched event ControlMessageReceive:i53 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:00.676 00:00.218 Successfully matched event ControlMessageReceive:i54 c c1 -> s 4 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:01.278 00:00.218 Event timed out ControlMessageSend:i55 c 2 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:02:00:01', u'nw_src': u'123.1.0.1', u'dl_src': u'00:00:00:01:00:01', u'nw_dst': u'123.2.0.1'}, in_port=1][1;m
+[1;36m[1;44m00:01.280 00:00.218 Successfully matched event ControlMessageSend:i56 c 7 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:01.282 00:00.218 Successfully matched event ControlMessageSend:i57 c 6 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:01.284 00:00.218 Successfully matched event ControlMessageSend:i58 c 4 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:01.286 00:00.219 Successfully matched event ControlMessageSend:i59 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:01.287 00:00.219 Successfully matched event ControlMessageSend:i60 c 5 -> s c1 [ofp_barrier_reply: ][1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-07 7] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-07[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-07:Connect [00-00-00-00-00-07 7][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 3 ports[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-06 6] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-06[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-06:Connect [00-00-00-00-00-06 6][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 3 ports[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-05 5] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-05[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-05:Connect [00-00-00-00-00-05 5][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 3 ports[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-04 4] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-04[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-04:Connect [00-00-00-00-00-04 4][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 3 ports[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-02 2] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-02[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-02:Connect [00-00-00-00-00-02 2][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 3 ports[1;m
+
+[1;35m[1;41m00:01.868 00:00.219 Event timed out ControlMessageSend:i61 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:02:00:01', u'nw_src': u'123.0.0.1', u'dl_src': u'00:00:00:00:00:01', u'nw_dst': u'123.2.0.1'}, in_port=1][1;m
+[1;36m[1;44m00:01.871 00:00.219 Successfully matched event ControlMessageSend:i62 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:01.872 00:00.219 Successfully matched event ControlMessageSend:i63 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:01.875 00:00.220 Successfully matched event TrafficInjection:e64[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:01.878 00:00.321 Successfully matched event DataplanePermit:i65[1;m
+[1;36m[1;36mRound 4[1;37m[1;m
+[1;36m[1;44m00:01.880 00:00.322 Successfully matched event ControlMessageReceive:i66 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.1.0/24,in_port:None][1;m
+[1;36m[1;44m00:01.882 00:00.322 Successfully matched event ControlMessageReceive:i67 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:01.883 00:00.322 Successfully matched event ControlMessageReceive:i68 c c1 -> s 5 [ofp_features_request: ][1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-03 3] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-03:Connect [00-00-00-00-00-03 3][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 3 ports[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-01 1] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-01[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-01:Connect [00-00-00-00-00-01 1][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 3 ports[1;m
+
+[1;36m[1;44m00:01.926 00:00.323 Successfully matched event ControlMessageReceive:i69 c c1 -> s 1 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=1][1;m
+[1;36m[1;44m00:01.929 00:00.323 Successfully matched event ControlMessageReceive:i70 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;36m[1;44m00:01.931 00:00.323 Successfully matched event ControlMessageReceive:i71 c c1 -> s 1 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=2][1;m
+[1;36m[1;44m00:01.933 00:00.324 Successfully matched event ControlMessageReceive:i72 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.2.0/24,in_port:None][1;m
+[1;36m[1;44m00:01.936 00:00.324 Successfully matched event ControlMessageReceive:i73 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:01.938 00:00.324 Successfully matched event ControlMessageReceive:i74 c c1 -> s 5 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:01.940 00:00.325 Successfully matched event ControlMessageReceive:i75 c c1 -> s 1 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=3][1;m
+[1;36m[1;44m00:01.944 00:00.325 Successfully matched event ControlMessageReceive:i76 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.1.0/24,in_port:None][1;m
+[1;36m[1;44m00:01.948 00:00.325 Successfully matched event ControlMessageReceive:i77 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;36m[1;44m00:01.949 00:00.326 Successfully matched event ControlMessageReceive:i78 c c1 -> s 5 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=3][1;m
+[1;36m[1;44m00:01.950 00:00.326 Successfully matched event ControlMessageReceive:i79 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;36m[1;44m00:01.951 00:00.327 Successfully matched event ControlMessageReceive:i80 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.2.0/24,in_port:None][1;m
+[1;36m[1;44m00:01.952 00:00.327 Successfully matched event ControlMessageReceive:i81 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.3.0/24,in_port:None][1;m
+[1;36m[1;44m00:01.953 00:00.327 Successfully matched event ControlMessageReceive:i82 c c1 -> s 1 [ofp_features_request: ][1;m
+[1;36m[1;44m00:01.954 00:00.328 Successfully matched event ControlMessageReceive:i83 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:01.955 00:00.328 Successfully matched event ControlMessageReceive:i84 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.2.3.0/24,in_port:None][1;m
+[1;36m[1;44m00:01.956 00:00.328 Successfully matched event ControlMessageReceive:i85 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.4.3.0/24,in_port:None][1;m
+[1;36m[1;44m00:01.957 00:00.329 Successfully matched event ControlMessageReceive:i86 c c1 -> s 6 [ofp_features_request: ][1;m
+[1;36m[1;44m00:01.958 00:00.329 Successfully matched event ControlMessageReceive:i87 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=28672, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2054,in_port:None][1;m
+[1;36m[1;44m00:01.960 00:00.329 Successfully matched event ControlMessageReceive:i88 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.2.0/24,in_port:None][1;m
+[1;36m[1;44m00:01.961 00:00.330 Successfully matched event ControlMessageReceive:i89 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:01.962 00:00.330 Successfully matched event ControlMessageReceive:i90 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:01.963 00:00.330 Successfully matched event ControlMessageReceive:i91 c c1 -> s 5 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=1][1;m
+[1;36m[1;44m00:01.964 00:00.330 Successfully matched event ControlMessageReceive:i92 c c1 -> s 7 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=2][1;m
+[1;36m[1;44m00:01.965 00:00.331 Successfully matched event ControlMessageReceive:i93 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.3.0/24,in_port:None][1;m
+[1;36m[1;44m00:01.966 00:00.331 Successfully matched event ControlMessageReceive:i94 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=28672, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2054,in_port:None][1;m
+[1;36m[1;44m00:01.967 00:00.331 Successfully matched event ControlMessageReceive:i95 c c1 -> s 5 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=2][1;m
+[1;36m[1;44m00:01.968 00:00.331 Successfully matched event ControlMessageReceive:i96 c c1 -> s 7 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=3][1;m
+[1;36m[1;44m00:01.969 00:00.332 Successfully matched event ControlMessageReceive:i97 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.1.0/24,in_port:None][1;m
+[1;36m[1;44m00:01.970 00:00.332 Successfully matched event ControlMessageReceive:i98 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.5.2.0/24,in_port:None][1;m
+[1;36m[1;44m00:01.971 00:00.333 Successfully matched event ControlMessageReceive:i99 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;36m[1;44m00:01.972 00:00.333 Successfully matched event ControlMessageReceive:i100 c c1 -> s 7 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=1][1;m
+[1;36m[1;44m00:01.973 00:00.333 Successfully matched event ControlMessageReceive:i101 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:01.974 00:00.333 Successfully matched event ControlMessageReceive:i102 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.1.0/24,in_port:None][1;m
+[1;36m[1;44m00:01.975 00:00.334 Successfully matched event ControlMessageReceive:i103 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;36m[1;44m00:01.977 00:00.334 Successfully matched event ControlMessageReceive:i104 c c1 -> s 7 [ofp_features_request: ][1;m
+[1;36m[1;44m00:01.977 00:00.334 Successfully matched event ControlMessageReceive:i105 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:01.979 00:00.335 Successfully matched event ControlMessageReceive:i106 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=28672, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2054,in_port:None][1;m
+[1;36m[1;44m00:01.980 00:00.335 Successfully matched event ControlMessageReceive:i107 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;36m[1;44m00:01.981 00:00.335 Successfully matched event ControlMessageReceive:i108 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;36m[1;44m00:01.982 00:00.336 Successfully matched event ControlMessageReceive:i109 c c1 -> s 4 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:01.983 00:00.336 Successfully matched event ControlMessageReceive:i110 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:01.984 00:00.336 Successfully matched event ControlMessageReceive:i111 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.5.1.0/24,in_port:None][1;m
+[1;36m[1;44m00:01.986 00:00.336 Successfully matched event ControlMessageReceive:i112 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=28672, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2054,in_port:None][1;m
+[1;36m[1;44m00:01.987 00:00.337 Successfully matched event ControlMessageReceive:i113 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;36m[1;44m00:01.988 00:00.337 Successfully matched event ControlMessageReceive:i114 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.2.1.0/24,in_port:None][1;m
+[1;36m[1;44m00:01.989 00:00.337 Successfully matched event ControlMessageReceive:i115 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;36m[1;44m00:01.990 00:00.338 Successfully matched event ControlMessageReceive:i116 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.4.2.0/24,in_port:None][1;m
+[1;36m[1;44m00:01.991 00:00.338 Successfully matched event ControlMessageReceive:i117 c c1 -> s 6 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=3][1;m
+[1;36m[1;44m00:01.992 00:00.338 Successfully matched event ControlMessageReceive:i118 c c1 -> s 3 [ofp_features_request: ][1;m
+[1;36m[1;44m00:01.993 00:00.338 Successfully matched event ControlMessageReceive:i119 c c1 -> s 4 [ofp_features_request: ][1;m
+[1;36m[1;44m00:01.994 00:00.339 Successfully matched event ControlMessageReceive:i120 c c1 -> s 6 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=2][1;m
+[1;36m[1;44m00:01.995 00:00.339 Successfully matched event ControlMessageReceive:i121 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:01.996 00:00.339 Successfully matched event ControlMessageReceive:i122 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;36m[1;44m00:01.997 00:00.340 Successfully matched event ControlMessageReceive:i123 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:01.998 00:00.340 Successfully matched event ControlMessageReceive:i124 c c1 -> s 6 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=1][1;m
+[1;36m[1;44m00:02.000 00:00.340 Successfully matched event ControlMessageReceive:i125 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=28672, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2054,in_port:None][1;m
+[1;36m[1;44m00:02.001 00:00.341 Successfully matched event ControlMessageReceive:i126 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;36m[1;44m00:02.002 00:00.341 Successfully matched event ControlMessageReceive:i127 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.3.0/24,in_port:None][1;m
+[1;36m[1;44m00:02.003 00:00.341 Successfully matched event ControlMessageReceive:i128 c c1 -> s 2 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=2][1;m
+[1;36m[1;44m00:02.004 00:00.342 Successfully matched event ControlMessageReceive:i129 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.2.0/24,in_port:None][1;m
+[1;36m[1;44m00:02.005 00:00.342 Successfully matched event ControlMessageReceive:i130 c c1 -> s 7 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:02.006 00:00.342 Successfully matched event ControlMessageReceive:i131 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:02.007 00:00.343 Successfully matched event ControlMessageReceive:i132 c c1 -> s 2 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=1][1;m
+[1;36m[1;44m00:02.008 00:00.343 Successfully matched event ControlMessageReceive:i133 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:02.009 00:00.343 Successfully matched event ControlMessageReceive:i134 c c1 -> s 4 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=3][1;m
+[1;36m[1;44m00:02.010 00:00.343 Successfully matched event ControlMessageReceive:i135 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;36m[1;44m00:02.011 00:00.344 Successfully matched event ControlMessageReceive:i136 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.5.3.0/24,in_port:None][1;m
+[1;36m[1;44m00:02.012 00:00.344 Successfully matched event ControlMessageReceive:i137 c c1 -> s 4 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=2][1;m
+[1;36m[1;44m00:02.013 00:00.344 Successfully matched event ControlMessageReceive:i138 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=28672, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2054,in_port:None][1;m
+[1;36m[1;44m00:02.015 00:00.345 Successfully matched event ControlMessageReceive:i139 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:02.016 00:00.345 Successfully matched event ControlMessageReceive:i140 c c1 -> s 2 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=3][1;m
+[1;36m[1;44m00:02.017 00:00.345 Successfully matched event ControlMessageReceive:i141 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:02.018 00:00.346 Successfully matched event ControlMessageReceive:i142 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=28672, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2054,in_port:None][1;m
+[1;36m[1;44m00:02.019 00:00.346 Successfully matched event ControlMessageReceive:i143 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:02.020 00:00.346 Successfully matched event ControlMessageReceive:i144 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:02.021 00:00.347 Successfully matched event ControlMessageReceive:i145 c c1 -> s 6 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:02.022 00:00.347 Successfully matched event ControlMessageReceive:i146 c c1 -> s 2 [ofp_features_request: ][1;m
+[1;36m[1;44m00:02.023 00:00.347 Successfully matched event ControlMessageReceive:i147 c c1 -> s 4 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=1][1;m
+[1;36m[1;44m00:02.024 00:00.347 Successfully matched event ControlMessageReceive:i148 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:02.025 00:00.347 Successfully matched event ControlMessageReceive:i149 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;36m[1;44m00:02.026 00:00.348 Successfully matched event ControlMessageReceive:i150 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.2.2.0/24,in_port:None][1;m
+[1;36m[1;44m00:02.027 00:00.348 Successfully matched event ControlMessageReceive:i151 c c1 -> s 3 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=2][1;m
+[1;36m[1;44m00:02.028 00:00.348 Successfully matched event ControlMessageReceive:i152 c c1 -> s 3 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=3][1;m
+[1;36m[1;44m00:02.029 00:00.348 Successfully matched event ControlMessageReceive:i153 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.3.0/24,in_port:None][1;m
+[1;36m[1;44m00:02.030 00:00.349 Successfully matched event ControlMessageReceive:i154 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;36m[1;44m00:02.032 00:00.349 Successfully matched event ControlMessageReceive:i155 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.4.1.0/24,in_port:None][1;m
+[1;36m[1;44m00:02.033 00:00.349 Successfully matched event ControlMessageReceive:i156 c c1 -> s 3 [ofp_port_mod: mask=16, advertise=0, config=16, port_no=1][1;m
+[1;36m[1;44m00:02.034 00:00.350 Successfully matched event ControlMessageSend:i157 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:01:00:01', u'nw_src': u'123.0.0.1', u'dl_src': u'00:00:00:00:00:01', u'nw_dst': u'123.1.0.1'}, in_port=1][1;m
+[1;36m[1;44m00:02.035 00:00.350 Successfully matched event ControlMessageSend:i158 c 7 -> s c1 [ofp_features_reply: datapath_id=7][1;m
+[1;36m[1;44m00:02.035 00:00.350 Successfully matched event ControlMessageSend:i159 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.036 00:00.350 Successfully matched event ControlMessageSend:i160 c 7 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.037 00:00.350 Successfully matched event ControlMessageSend:i161 c 6 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.038 00:00.350 Successfully matched event ControlMessageSend:i162 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.038 00:00.350 Successfully matched event ControlMessageSend:i163 c 4 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.039 00:00.350 Successfully matched event ControlMessageSend:i164 c 4 -> s c1 [ofp_features_reply: datapath_id=4][1;m
+[1;36m[1;44m00:02.040 00:00.351 Successfully matched event ControlMessageSend:i165 c 5 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.041 00:00.351 Successfully matched event ControlMessageSend:i166 c 6 -> s c1 [ofp_features_reply: datapath_id=6][1;m
+[1;36m[1;44m00:02.042 00:00.351 Successfully matched event ControlMessageSend:i167 c 1 -> s c1 [ofp_features_reply: datapath_id=1][1;m
+[1;36m[1;44m00:02.043 00:00.351 Successfully matched event ControlMessageSend:i168 c 3 -> s c1 [ofp_features_reply: datapath_id=3][1;m
+[1;36m[1;44m00:02.043 00:00.351 Successfully matched event ControlMessageSend:i169 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.044 00:00.351 Successfully matched event ControlMessageSend:i170 c 2 -> s c1 [ofp_features_reply: datapath_id=2][1;m
+[1;36m[1;44m00:02.045 00:00.351 Successfully matched event ControlMessageSend:i171 c 5 -> s c1 [ofp_features_reply: datapath_id=5][1;m
+[1;36m[1;44m00:02.046 00:00.455 Successfully matched event DataplanePermit:i173[1;m
+[1;36m[1;36mRound 5[1;37m[1;m
+[1;36m[1;44m00:02.047 00:00.455 Successfully matched event ControlMessageReceive:i174 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:02.048 00:00.456 Successfully matched event ControlMessageReceive:i175 c c1 -> s 5 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:02.049 00:00.456 Successfully matched event ControlMessageReceive:i176 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:02.050 00:00.456 Successfully matched event ControlMessageReceive:i177 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:02.051 00:00.457 Successfully matched event ControlMessageReceive:i178 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:02.052 00:00.457 Successfully matched event ControlMessageReceive:i179 c c1 -> s 4 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:02.053 00:00.457 Successfully matched event ControlMessageReceive:i180 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:02.054 00:00.458 Successfully matched event ControlMessageReceive:i181 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:02.055 00:00.458 Successfully matched event ControlMessageReceive:i182 c c1 -> s 7 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:02.056 00:00.458 Successfully matched event ControlMessageReceive:i183 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:02.057 00:00.459 Successfully matched event ControlMessageReceive:i184 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:02.058 00:00.459 Successfully matched event ControlMessageReceive:i185 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:02.059 00:00.460 Successfully matched event ControlMessageReceive:i186 c c1 -> s 6 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:02.060 00:00.460 Successfully matched event ControlMessageReceive:i187 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;41m[1;33m[c1] DEBUG:f.t_p:Need MAC for 123.1.0.1[1;m
+
+[1;36m[1;44m00:02.105 00:00.460 Successfully matched event ControlMessageReceive:i188 c c1 -> s 1 [ofp_packet_out: actions=(u'output(0)',), data={u'class': u'arp'}, in_port=65535][1;m
+[1;36m[1;44m00:02.107 00:00.460 Successfully matched event ControlMessageSend:i189 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.108 00:00.461 Successfully matched event ControlMessageSend:i190 c 7 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m00:02.624 00:00.461 Event timed out ControlMessageSend:i191 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:00:01', u'nw_src': u'123.2.0.1', u'dl_src': u'00:00:00:02:00:01', u'nw_dst': u'123.0.0.1'}, in_port=1][1;m
+[1;36m[1;44m00:02.626 00:00.461 Successfully matched event ControlMessageSend:i192 c 4 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.628 00:00.461 Successfully matched event ControlMessageSend:i193 c 6 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.629 00:00.461 Successfully matched event ControlMessageSend:i194 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.631 00:00.461 Successfully matched event ControlMessageSend:i195 c 5 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.633 00:00.461 Successfully matched event ControlMessageSend:i196 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.634 00:00.563 Successfully matched event ControlMessageReceive:i197 c c1 -> s 7 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 6[1;37m[1;m
+[1;36m[1;44m00:02.636 00:00.666 Successfully matched event DataplanePermit:i199[1;m
+[1;36m[1;36mRound 7[1;37m[1;m
+[1;36m[1;44m00:02.637 00:00.666 Successfully matched event ControlMessageSend:i200 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m00:03.302 00:00.768 Event timed out ControlMessageReceive:i201 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 8[1;37m[1;m
+[1;35m[1;41m00:03.817 00:00.769 Event timed out ControlMessageReceive:i202 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.1.0/24,in_port:None][1;m
+[1;35m[1;41m00:04.495 00:00.770 Event timed out ControlMessageReceive:i203 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m00:05.009 00:00.771 Event timed out ControlMessageReceive:i204 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.2.0/24,in_port:None][1;m
+[1;35m[1;41m00:05.687 00:00.771 Event timed out ControlMessageReceive:i205 c c1 -> s 5 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:06.203 00:00.772 Event timed out ControlMessageReceive:i206 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m00:06.880 00:00.772 Event timed out ControlMessageReceive:i207 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.5.1.0/24,in_port:None][1;m
+[1;35m[1;41m00:07.396 00:00.773 Event timed out ControlMessageReceive:i208 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.2.0/24,in_port:None][1;m
+[1;35m[1;41m00:08.073 00:00.773 Event timed out ControlMessageReceive:i209 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.3.0/24,in_port:None][1;m
+[1;35m[1;41m00:08.589 00:00.774 Event timed out ControlMessageReceive:i210 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:09.266 00:00.775 Event timed out ControlMessageReceive:i211 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.4.3.0/24,in_port:None][1;m
+[1;35m[1;41m00:09.782 00:00.775 Event timed out ControlMessageReceive:i212 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.2.0/24,in_port:None][1;m
+[1;35m[1;41m00:10.459 00:00.776 Event timed out ControlMessageReceive:i213 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:10.974 00:00.776 Event timed out ControlMessageReceive:i214 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:11.652 00:00.776 Event timed out ControlMessageReceive:i215 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.3.0/24,in_port:None][1;m
+[1;35m[1;41m00:12.167 00:00.777 Event timed out ControlMessageReceive:i216 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.1.0/24,in_port:None][1;m
+[1;35m[1;41m00:12.845 00:00.777 Event timed out ControlMessageReceive:i217 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.5.2.0/24,in_port:None][1;m
+[1;35m[1;41m00:13.360 00:00.778 Event timed out ControlMessageReceive:i218 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m00:14.038 00:00.778 Event timed out ControlMessageReceive:i219 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:14.554 00:00.779 Event timed out ControlMessageReceive:i220 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.1.0/24,in_port:None][1;m
+[1;35m[1;41m00:15.231 00:00.779 Event timed out ControlMessageReceive:i221 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:15.746 00:00.779 Event timed out ControlMessageReceive:i222 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m00:16.424 00:00.780 Event timed out ControlMessageReceive:i223 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m00:16.939 00:00.780 Event timed out ControlMessageReceive:i224 c c1 -> s 4 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:17.617 00:00.780 Event timed out ControlMessageReceive:i225 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:18.132 00:00.781 Event timed out ControlMessageReceive:i226 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.1.0/24,in_port:None][1;m
+[1;35m[1;41m00:18.810 00:00.781 Event timed out ControlMessageReceive:i227 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m00:19.325 00:00.781 Event timed out ControlMessageReceive:i228 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m00:20.002 00:00.782 Event timed out ControlMessageReceive:i229 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m00:20.517 00:00.782 Event timed out ControlMessageReceive:i230 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.4.2.0/24,in_port:None][1;m
+[1;35m[1;41m00:21.195 00:00.783 Event timed out ControlMessageReceive:i231 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:21.711 00:00.783 Event timed out ControlMessageReceive:i232 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:22.389 00:00.783 Event timed out ControlMessageReceive:i233 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.3.0/24,in_port:None][1;m
+[1;35m[1;41m00:22.904 00:00.784 Event timed out ControlMessageReceive:i234 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.2.0/24,in_port:None][1;m
+[1;35m[1;41m00:23.581 00:00.784 Event timed out ControlMessageReceive:i235 c c1 -> s 7 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:24.097 00:00.784 Event timed out ControlMessageReceive:i236 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:24.774 00:00.785 Event timed out ControlMessageReceive:i237 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:25.289 00:00.785 Event timed out ControlMessageReceive:i238 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m00:25.967 00:00.785 Event timed out ControlMessageReceive:i239 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.5.3.0/24,in_port:None][1;m
+[1;36m[1;44m00:25.969 00:00.785 Successfully matched event ControlMessageReceive:i240 c c1 -> s 7 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m00:26.482 00:00.786 Event timed out ControlMessageReceive:i241 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:27.160 00:00.786 Event timed out ControlMessageReceive:i242 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:27.675 00:00.787 Event timed out ControlMessageReceive:i243 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(2)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m00:28.353 00:00.787 Event timed out ControlMessageReceive:i244 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:28.868 00:00.787 Event timed out ControlMessageReceive:i245 c c1 -> s 6 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:29.546 00:00.788 Event timed out ControlMessageReceive:i246 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m00:30.061 00:00.788 Event timed out ControlMessageReceive:i247 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.3.0/24,in_port:None][1;m
+[1;36m[1;44m00:30.062 00:00.789 Successfully matched event ControlMessageReceive:i248 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;35m[1;41m00:30.739 00:00.789 Event timed out ControlMessageReceive:i249 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m00:31.254 00:00.789 Event timed out ControlMessageReceive:i250 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.4.1.0/24,in_port:None][1;m
+[1;35m[1;41m00:31.932 00:00.789 Event timed out ControlMessageSend:i251 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m00:32.447 00:00.790 Event timed out ControlMessageSend:i252 c 7 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m00:33.124 00:00.790 Event timed out ControlMessageSend:i253 c 6 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m00:33.640 00:00.790 Event timed out ControlMessageSend:i254 c 4 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m00:34.317 00:00.790 Event timed out ControlMessageSend:i255 c 5 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m00:34.833 00:00.790 Event timed out ControlMessageSend:i256 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:34.836 00:00.893 Successfully matched event DataplanePermit:i258[1;m
+[1;36m[1;36mRound 9[1;37m[1;m
+[1;36m[1;44m00:34.838 00:00.894 Successfully matched event DataplanePermit:i259[1;m
+[1;35m[1;41m00:35.510 00:00.895 Event timed out ControlMessageReceive:i260 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:36.026 00:00.896 Event timed out ControlMessageReceive:i261 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:36.703 00:00.897 Event timed out ControlMessageReceive:i262 c c1 -> s 5 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:37.219 00:00.897 Event timed out ControlMessageReceive:i263 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:37.896 00:00.898 Event timed out ControlMessageReceive:i264 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:38.412 00:00.898 Event timed out ControlMessageReceive:i265 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:38.415 00:00.899 Successfully matched event ControlMessageSend:i266 c 5 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;35m[1;41m00:39.090 00:00.899 Event timed out ControlMessageSend:i267 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:00:01', u'nw_src': u'123.2.0.1', u'dl_src': u'00:00:00:02:00:01', u'nw_dst': u'123.0.0.1'}, in_port=1][1;m
+[1;36m[1;44m00:39.092 00:01.001 Successfully matched event DataplanePermit:i270[1;m
+[1;36m[1;36mRound 10[1;37m[1;m
+[1;36m[1;44m00:39.094 00:01.001 Successfully matched event ControlMessageReceive:i271 c c1 -> s 7 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m00:39.605 00:01.002 Event timed out ControlMessageSend:i272 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:01:00:01', u'nw_src': u'123.0.0.1', u'dl_src': u'00:00:00:00:00:01', u'nw_dst': u'123.1.0.1'}, in_port=1][1;m
+[1;36m[1;44m00:39.606 00:01.104 Successfully matched event DataplanePermit:i273[1;m
+[1;36m[1;36mRound 11[1;37m[1;m
+[1;35m[1;41m00:40.282 00:01.105 Event timed out ControlMessageReceive:i274 c c1 -> s 1 [ofp_packet_out: actions=(u'output(0)',), data={u'class': u'arp'}, in_port=65535][1;m
+[1;36m[1;44m00:40.285 00:01.105 Successfully matched event ControlMessageSend:i275 c 6 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m00:40.998 00:01.207 Event timed out ControlMessageReceive:i276 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 12[1;37m[1;m
+[1;35m[1;41m00:41.513 00:01.208 Event timed out ControlMessageReceive:i277 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.1.0/24,in_port:None][1;m
+[1;35m[1;41m00:42.191 00:01.208 Event timed out ControlMessageReceive:i278 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m00:42.706 00:01.209 Event timed out ControlMessageReceive:i279 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.2.0/24,in_port:None][1;m
+[1;35m[1;41m00:43.384 00:01.209 Event timed out ControlMessageReceive:i280 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m00:43.899 00:01.210 Event timed out ControlMessageReceive:i281 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.2.0/24,in_port:None][1;m
+[1;35m[1;41m00:44.577 00:01.210 Event timed out ControlMessageReceive:i282 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.3.0/24,in_port:None][1;m
+[1;35m[1;41m00:45.092 00:01.211 Event timed out ControlMessageReceive:i283 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:45.770 00:01.211 Event timed out ControlMessageReceive:i284 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.4.3.0/24,in_port:None][1;m
+[1;35m[1;41m00:46.285 00:01.211 Event timed out ControlMessageReceive:i285 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.2.0/24,in_port:None][1;m
+[1;35m[1;41m00:46.963 00:01.212 Event timed out ControlMessageReceive:i286 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:47.478 00:01.212 Event timed out ControlMessageReceive:i287 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:48.156 00:01.212 Event timed out ControlMessageReceive:i288 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.3.0/24,in_port:None][1;m
+[1;35m[1;41m00:48.671 00:01.213 Event timed out ControlMessageReceive:i289 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.1.0/24,in_port:None][1;m
+[1;35m[1;41m00:49.349 00:01.213 Event timed out ControlMessageReceive:i290 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.1.0/24,in_port:None][1;m
+[1;35m[1;41m00:49.864 00:01.214 Event timed out ControlMessageReceive:i291 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:50.541 00:01.214 Event timed out ControlMessageReceive:i292 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m00:51.057 00:01.214 Event timed out ControlMessageReceive:i293 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m00:51.734 00:01.215 Event timed out ControlMessageReceive:i294 c c1 -> s 4 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:52.250 00:01.215 Event timed out ControlMessageReceive:i295 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:52.927 00:01.215 Event timed out ControlMessageReceive:i296 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.1.0/24,in_port:None][1;m
+[1;35m[1;41m00:53.443 00:01.216 Event timed out ControlMessageReceive:i297 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m00:54.120 00:01.216 Event timed out ControlMessageReceive:i298 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(2)',), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m00:54.635 00:01.216 Event timed out ControlMessageReceive:i299 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m00:55.313 00:01.217 Event timed out ControlMessageReceive:i300 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.4.2.0/24,in_port:None][1;m
+[1;35m[1;41m00:55.829 00:01.217 Event timed out ControlMessageReceive:i301 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m00:56.506 00:01.217 Event timed out ControlMessageReceive:i302 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:57.021 00:01.218 Event timed out ControlMessageReceive:i303 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:57.699 00:01.218 Event timed out ControlMessageReceive:i304 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.3.0/24,in_port:None][1;m
+[1;35m[1;41m00:58.214 00:01.219 Event timed out ControlMessageReceive:i305 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.2.0/24,in_port:None][1;m
+[1;35m[1;41m00:58.892 00:01.219 Event timed out ControlMessageReceive:i306 c c1 -> s 7 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:59.407 00:01.219 Event timed out ControlMessageReceive:i307 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m01:00.085 00:01.219 Event timed out ControlMessageReceive:i308 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;35m[1;41m01:00.601 00:01.220 Event timed out ControlMessageReceive:i309 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.3.0/24,in_port:None][1;m
+[1;35m[1;41m01:01.278 00:01.220 Event timed out ControlMessageReceive:i310 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m01:01.793 00:01.220 Event timed out ControlMessageReceive:i311 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:02.471 00:01.221 Event timed out ControlMessageReceive:i312 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:02.987 00:01.221 Event timed out ControlMessageReceive:i313 c c1 -> s 6 [ofp_barrier_request: ][1;m
+[1;36m[1;44m01:02.989 00:01.221 Successfully matched event ControlMessageReceive:i314 c c1 -> s 6 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;35m[1;41m01:03.664 00:01.221 Event timed out ControlMessageReceive:i315 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m01:04.180 00:01.222 Event timed out ControlMessageReceive:i316 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.4.1.0/24,in_port:None][1;m
+[1;35m[1;41m01:04.857 00:01.222 Event timed out ControlMessageSend:i317 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m01:05.372 00:01.222 Event timed out ControlMessageSend:i318 c 7 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m01:06.050 00:01.222 Event timed out ControlMessageSend:i319 c 6 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m01:06.565 00:01.222 Event timed out ControlMessageSend:i320 c 4 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m01:07.243 00:01.223 Event timed out ControlMessageSend:i321 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m01:07.245 00:01.326 Successfully matched event DataplanePermit:i323[1;m
+[1;36m[1;36mRound 13[1;37m[1;m
+[1;35m[1;41m01:07.758 00:01.327 Event timed out ControlMessageReceive:i324 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:08.436 00:01.328 Event timed out ControlMessageReceive:i325 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m01:08.438 00:01.328 Successfully matched event ControlMessageReceive:i326 c c1 -> s 6 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m01:08.951 00:01.328 Event timed out ControlMessageReceive:i327 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:09.629 00:01.329 Event timed out ControlMessageReceive:i328 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:10.144 00:01.329 Event timed out ControlMessageReceive:i329 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:10.822 00:01.330 Event timed out ControlMessageSend:i330 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:00:01', u'nw_src': u'123.2.0.1', u'dl_src': u'00:00:00:02:00:01', u'nw_dst': u'123.0.0.1'}, in_port=1][1;m
+[1;36m[1;44m01:10.824 00:01.432 Successfully matched event DataplanePermit:i331[1;m
+[1;36m[1;36mRound 14[1;37m[1;m
+[1;36m[1;44m01:10.826 00:01.432 Successfully matched event ControlMessageSend:i332 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;35m[1;41m01:11.538 00:01.534 Event timed out ControlMessageReceive:i333 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 15[1;37m[1;m
+[1;35m[1;41m01:12.053 00:01.535 Event timed out ControlMessageReceive:i334 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.1.0/24,in_port:None][1;m
+[1;35m[1;41m01:12.731 00:01.536 Event timed out ControlMessageReceive:i335 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m01:13.246 00:01.536 Event timed out ControlMessageReceive:i336 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.2.0/24,in_port:None][1;m
+[1;35m[1;41m01:13.924 00:01.537 Event timed out ControlMessageReceive:i337 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m01:14.439 00:01.538 Event timed out ControlMessageReceive:i338 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.2.0/24,in_port:None][1;m
+[1;35m[1;41m01:15.116 00:01.538 Event timed out ControlMessageReceive:i339 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.3.0/24,in_port:None][1;m
+[1;35m[1;41m01:15.632 00:01.539 Event timed out ControlMessageReceive:i340 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:16.309 00:01.539 Event timed out ControlMessageReceive:i341 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.4.3.0/24,in_port:None][1;m
+[1;35m[1;41m01:16.825 00:01.540 Event timed out ControlMessageReceive:i342 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.2.0/24,in_port:None][1;m
+[1;35m[1;41m01:17.502 00:01.540 Event timed out ControlMessageReceive:i343 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m01:18.018 00:01.541 Event timed out ControlMessageReceive:i344 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;35m[1;41m01:18.695 00:01.541 Event timed out ControlMessageReceive:i345 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.3.0/24,in_port:None][1;m
+[1;35m[1;41m01:19.211 00:01.541 Event timed out ControlMessageReceive:i346 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.1.0/24,in_port:None][1;m
+[1;35m[1;41m01:19.888 00:01.542 Event timed out ControlMessageReceive:i347 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(2)',), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m01:20.403 00:01.542 Event timed out ControlMessageReceive:i348 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.1.0/24,in_port:None][1;m
+[1;35m[1;41m01:21.081 00:01.543 Event timed out ControlMessageReceive:i349 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m01:21.596 00:01.543 Event timed out ControlMessageReceive:i350 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m01:22.275 00:01.543 Event timed out ControlMessageReceive:i351 c c1 -> s 4 [ofp_barrier_request: ][1;m
+[1;35m[1;41m01:22.790 00:01.544 Event timed out ControlMessageReceive:i352 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m01:23.467 00:01.544 Event timed out ControlMessageReceive:i353 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.1.0/24,in_port:None][1;m
+[1;35m[1;41m01:23.982 00:01.545 Event timed out ControlMessageReceive:i354 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;36m[1;44m01:23.984 00:01.545 Successfully matched event ControlMessageReceive:i355 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;35m[1;41m01:24.660 00:01.545 Event timed out ControlMessageReceive:i356 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(2)',), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m01:25.175 00:01.546 Event timed out ControlMessageReceive:i357 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m01:25.853 00:01.546 Event timed out ControlMessageReceive:i358 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.4.2.0/24,in_port:None][1;m
+[1;35m[1;41m01:26.368 00:01.546 Event timed out ControlMessageReceive:i359 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m01:27.046 00:01.547 Event timed out ControlMessageReceive:i360 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:27.562 00:01.547 Event timed out ControlMessageReceive:i361 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.3.0/24,in_port:None][1;m
+[1;35m[1;41m01:28.239 00:01.548 Event timed out ControlMessageReceive:i362 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.2.0/24,in_port:None][1;m
+[1;35m[1;41m01:28.755 00:01.548 Event timed out ControlMessageReceive:i363 c c1 -> s 7 [ofp_barrier_request: ][1;m
+[1;35m[1;41m01:29.432 00:01.548 Event timed out ControlMessageReceive:i364 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m01:29.948 00:01.549 Event timed out ControlMessageReceive:i365 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;35m[1;41m01:30.626 00:01.549 Event timed out ControlMessageReceive:i366 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m01:31.141 00:01.549 Event timed out ControlMessageReceive:i367 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m01:31.818 00:01.550 Event timed out ControlMessageReceive:i368 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:32.334 00:01.550 Event timed out ControlMessageReceive:i369 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:33.011 00:01.550 Event timed out ControlMessageReceive:i370 c c1 -> s 6 [ofp_barrier_request: ][1;m
+[1;36m[1;44m01:33.014 00:01.551 Successfully matched event ControlMessageReceive:i371 c c1 -> s 6 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m01:33.527 00:01.551 Event timed out ControlMessageReceive:i372 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.3.0/24,in_port:None][1;m
+[1;35m[1;41m01:34.204 00:01.551 Event timed out ControlMessageReceive:i373 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m01:34.720 00:01.552 Event timed out ControlMessageReceive:i374 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.4.1.0/24,in_port:None][1;m
+[1;35m[1;41m01:35.398 00:01.552 Event timed out ControlMessageSend:i375 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m01:35.913 00:01.552 Event timed out ControlMessageSend:i376 c 7 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m01:36.590 00:01.552 Event timed out ControlMessageSend:i377 c 6 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m01:37.105 00:01.552 Event timed out ControlMessageSend:i378 c 4 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m01:37.783 00:01.553 Event timed out ControlMessageSend:i379 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m01:37.784 00:01.655 Successfully matched event DataplanePermit:i381[1;m
+[1;36m[1;36mRound 16[1;37m[1;m
+[1;36m[1;44m01:37.785 00:01.656 Successfully matched event DataplanePermit:i382[1;m
+[1;35m[1;41m01:38.298 00:01.657 Event timed out ControlMessageReceive:i383 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:38.976 00:01.658 Event timed out ControlMessageReceive:i384 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:39.491 00:01.658 Event timed out ControlMessageReceive:i385 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:40.169 00:01.659 Event timed out ControlMessageReceive:i386 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:40.685 00:01.659 Event timed out ControlMessageReceive:i387 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m01:40.687 00:01.659 Successfully matched event ControlMessageSend:i388 c 7 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m01:41.362 00:01.659 Event timed out ControlMessageSend:i389 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:02:00:01', u'nw_src': u'123.0.0.1', u'dl_src': u'00:00:00:00:00:01', u'nw_dst': u'123.2.0.1'}, in_port=1][1;m
+[1;36m[1;44m01:41.364 00:01.763 Successfully matched event DataplanePermit:i391[1;m
+[1;36m[1;36mRound 17[1;37m[1;m
+[1;35m[1;41m01:41.877 00:01.763 Event timed out ControlMessageReceive:i392 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:42.555 00:01.764 Event timed out ControlMessageReceive:i393 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.1.0/24,in_port:None][1;m
+[1;35m[1;41m01:43.070 00:01.765 Event timed out ControlMessageReceive:i394 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m01:43.748 00:01.766 Event timed out ControlMessageReceive:i395 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.2.0/24,in_port:None][1;m
+[1;36m[1;44m01:43.750 00:01.766 Successfully matched event ControlMessageReceive:i396 c c1 -> s 7 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;35m[1;41m01:44.263 00:01.766 Event timed out ControlMessageReceive:i397 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m01:44.940 00:01.767 Event timed out ControlMessageReceive:i398 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.2.0/24,in_port:None][1;m
+[1;35m[1;41m01:45.456 00:01.767 Event timed out ControlMessageReceive:i399 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.3.0/24,in_port:None][1;m
+[1;35m[1;41m01:46.134 00:01.768 Event timed out ControlMessageReceive:i400 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:46.649 00:01.768 Event timed out ControlMessageReceive:i401 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.4.3.0/24,in_port:None][1;m
+[1;35m[1;41m01:47.326 00:01.769 Event timed out ControlMessageReceive:i402 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.2.0/24,in_port:None][1;m
+[1;35m[1;41m01:47.842 00:01.769 Event timed out ControlMessageReceive:i403 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m01:48.520 00:01.770 Event timed out ControlMessageReceive:i404 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m01:49.035 00:01.770 Event timed out ControlMessageReceive:i405 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;35m[1;41m01:49.712 00:01.770 Event timed out ControlMessageReceive:i406 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.3.0/24,in_port:None][1;m
+[1;35m[1;41m01:50.228 00:01.771 Event timed out ControlMessageReceive:i407 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.1.0/24,in_port:None][1;m
+[1;35m[1;41m01:50.906 00:01.771 Event timed out ControlMessageReceive:i408 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.1.0/24,in_port:None][1;m
+[1;35m[1;41m01:51.421 00:01.772 Event timed out ControlMessageReceive:i409 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m01:52.099 00:01.772 Event timed out ControlMessageReceive:i410 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m01:52.614 00:01.772 Event timed out ControlMessageReceive:i411 c c1 -> s 4 [ofp_barrier_request: ][1;m
+[1;35m[1;41m01:53.292 00:01.773 Event timed out ControlMessageReceive:i412 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m01:53.807 00:01.773 Event timed out ControlMessageReceive:i413 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.1.0/24,in_port:None][1;m
+[1;35m[1;41m01:54.485 00:01.774 Event timed out ControlMessageReceive:i414 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m01:55.000 00:01.774 Event timed out ControlMessageReceive:i415 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(2)',), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m01:55.678 00:01.774 Event timed out ControlMessageReceive:i416 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m01:56.193 00:01.775 Event timed out ControlMessageReceive:i417 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.4.2.0/24,in_port:None][1;m
+[1;35m[1;41m01:56.871 00:01.775 Event timed out ControlMessageReceive:i418 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m01:56.873 00:01.775 Successfully matched event ControlMessageReceive:i419 c c1 -> s 6 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m01:57.386 00:01.776 Event timed out ControlMessageReceive:i420 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:58.064 00:01.776 Event timed out ControlMessageReceive:i421 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.3.0/24,in_port:None][1;m
+[1;35m[1;41m01:58.579 00:01.777 Event timed out ControlMessageReceive:i422 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.2.0/24,in_port:None][1;m
+[1;35m[1;41m01:59.257 00:01.777 Event timed out ControlMessageReceive:i423 c c1 -> s 7 [ofp_barrier_request: ][1;m
+[1;35m[1;41m01:59.773 00:01.777 Event timed out ControlMessageReceive:i424 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m02:00.449 00:01.777 Event timed out ControlMessageReceive:i425 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;35m[1;41m02:00.965 00:01.778 Event timed out ControlMessageReceive:i426 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m02:01.643 00:01.778 Event timed out ControlMessageReceive:i427 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m02:02.158 00:01.778 Event timed out ControlMessageReceive:i428 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:02.836 00:01.779 Event timed out ControlMessageReceive:i429 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:03.351 00:01.779 Event timed out ControlMessageReceive:i430 c c1 -> s 6 [ofp_barrier_request: ][1;m
+[1;35m[1;41m02:04.028 00:01.779 Event timed out ControlMessageReceive:i431 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.3.0/24,in_port:None][1;m
+[1;35m[1;41m02:04.544 00:01.780 Event timed out ControlMessageReceive:i432 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m02:05.222 00:01.780 Event timed out ControlMessageReceive:i433 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.4.1.0/24,in_port:None][1;m
+[1;35m[1;41m02:05.737 00:01.780 Event timed out ControlMessageSend:i434 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m02:06.414 00:01.780 Event timed out ControlMessageSend:i435 c 7 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m02:06.929 00:01.780 Event timed out ControlMessageSend:i436 c 6 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m02:07.607 00:01.781 Event timed out ControlMessageSend:i437 c 4 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m02:08.123 00:01.781 Event timed out ControlMessageSend:i438 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m02:08.125 00:01.883 Successfully matched event DataplanePermit:i441[1;m
+[1;36m[1;36mRound 18[1;37m[1;m
+[1;36m[1;44m02:08.126 00:01.884 Successfully matched event DataplanePermit:i442[1;m
+[1;35m[1;41m02:08.801 00:01.884 Event timed out ControlMessageReceive:i443 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:09.316 00:01.885 Event timed out ControlMessageReceive:i444 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:09.993 00:01.885 Event timed out ControlMessageReceive:i445 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:10.508 00:01.886 Event timed out ControlMessageReceive:i446 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:11.186 00:01.886 Event timed out ControlMessageReceive:i447 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:11.702 00:01.886 Event timed out ControlMessageSend:i448 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:01:00:01', u'nw_src': u'123.0.0.1', u'dl_src': u'00:00:00:00:00:01', u'nw_dst': u'123.1.0.1'}, in_port=1][1;m
+[1;36m[1;44m02:11.704 00:01.887 Successfully matched event ControlMessageSend:i449 c 7 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m02:12.379 00:01.989 Event timed out ControlMessageReceive:i450 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.1.0/24,in_port:None][1;m
+[1;36m[1;36mRound 19[1;37m[1;m
+[1;35m[1;41m02:12.894 00:01.989 Event timed out ControlMessageReceive:i451 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(3)',), flags=0, match=dl_type:2048,nw_dst:10.6.0.0/16,in_port:None][1;m
+[1;35m[1;41m02:13.572 00:01.990 Event timed out ControlMessageReceive:i452 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m02:14.087 00:01.990 Event timed out ControlMessageReceive:i453 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.2.0/24,in_port:None][1;m
+[1;36m[1;44m02:14.090 00:01.990 Successfully matched event ControlMessageReceive:i454 c c1 -> s 7 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;35m[1;41m02:14.765 00:01.991 Event timed out ControlMessageReceive:i455 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.2.0/24,in_port:None][1;m
+[1;35m[1;41m02:15.280 00:01.991 Event timed out ControlMessageReceive:i456 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.7.3.0/24,in_port:None][1;m
+[1;35m[1;41m02:15.958 00:01.992 Event timed out ControlMessageReceive:i457 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:16.473 00:01.992 Event timed out ControlMessageReceive:i458 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.2.0/24,in_port:None][1;m
+[1;35m[1;41m02:17.151 00:01.993 Event timed out ControlMessageReceive:i459 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m02:17.665 00:01.993 Event timed out ControlMessageReceive:i460 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m02:18.343 00:01.993 Event timed out ControlMessageReceive:i461 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;35m[1;41m02:18.859 00:01.994 Event timed out ControlMessageReceive:i462 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.3.0/24,in_port:None][1;m
+[1;35m[1;41m02:19.537 00:01.994 Event timed out ControlMessageReceive:i463 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.1.0/24,in_port:None][1;m
+[1;35m[1;41m02:20.051 00:01.994 Event timed out ControlMessageReceive:i464 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.1.0/24,in_port:None][1;m
+[1;35m[1;41m02:20.729 00:01.995 Event timed out ControlMessageReceive:i465 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m02:21.244 00:01.995 Event timed out ControlMessageReceive:i466 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m02:21.922 00:01.996 Event timed out ControlMessageReceive:i467 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.1.0/24,in_port:None][1;m
+[1;35m[1;41m02:22.437 00:01.996 Event timed out ControlMessageReceive:i468 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m02:23.115 00:01.996 Event timed out ControlMessageReceive:i469 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(3)',), flags=0, match=dl_type:2048,nw_dst:10.7.0.0/16,in_port:None][1;m
+[1;35m[1;41m02:23.630 00:01.997 Event timed out ControlMessageReceive:i470 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(2)',), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m02:24.308 00:01.997 Event timed out ControlMessageReceive:i471 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m02:24.823 00:01.997 Event timed out ControlMessageReceive:i472 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m02:25.500 00:01.998 Event timed out ControlMessageReceive:i473 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:26.016 00:01.998 Event timed out ControlMessageReceive:i474 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.6.3.0/24,in_port:None][1;m
+[1;35m[1;41m02:26.694 00:01.999 Event timed out ControlMessageReceive:i475 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.1.2.0/24,in_port:None][1;m
+[1;35m[1;41m02:27.208 00:01.999 Event timed out ControlMessageReceive:i476 c c1 -> s 7 [ofp_barrier_request: ][1;m
+[1;35m[1;41m02:27.886 00:01.999 Event timed out ControlMessageReceive:i477 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m02:28.401 00:01.999 Event timed out ControlMessageReceive:i478 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;35m[1;41m02:29.078 00:02.000 Event timed out ControlMessageReceive:i479 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(1)', u'output(3)'), flags=0, match=dl_type:2048,nw_dst:255.255.255.255/32,in_port:None][1;m
+[1;35m[1;41m02:29.594 00:02.000 Event timed out ControlMessageReceive:i480 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:30.272 00:02.001 Event timed out ControlMessageReceive:i481 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:30.786 00:02.001 Event timed out ControlMessageReceive:i482 c c1 -> s 6 [ofp_barrier_request: ][1;m
+[1;35m[1;41m02:31.464 00:02.001 Event timed out ControlMessageReceive:i483 c c1 -> s 1 [ofp_packet_out: actions=(u'output(0)',), data={u'class': u'arp'}, in_port=65535][1;m
+[1;35m[1;41m02:31.979 00:02.002 Event timed out ControlMessageReceive:i484 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32767, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_dst:10.3.3.0/24,in_port:None][1;m
+[1;35m[1;41m02:32.657 00:02.002 Event timed out ControlMessageReceive:i485 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2048,nw_proto:17,tp_src:68,tp_dst:67,in_port:None][1;m
+[1;35m[1;41m02:33.172 00:02.002 Event timed out ControlMessageSend:i486 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m02:33.850 00:02.002 Event timed out ControlMessageSend:i487 c 7 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m02:34.365 00:02.002 Event timed out ControlMessageSend:i488 c 6 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m02:35.043 00:02.003 Event timed out ControlMessageSend:i489 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m02:35.758 00:02.105 Event timed out ControlMessageReceive:i490 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 20[1;37m[1;m
+[1;35m[1;41m02:36.274 00:02.106 Event timed out ControlMessageReceive:i491 c c1 -> s 6 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:36.951 00:02.106 Event timed out ControlMessageReceive:i492 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:37.466 00:02.107 Event timed out ControlMessageReceive:i493 c c1 -> s 7 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;41m[1;37mViolations at end of trace: ['(1, 0)'][1;m
+[1;42m[1;37mViolation found (1, 0)[1;m
+[1;36m[1;44mEvent Stats: Events matched: 219, timed out: 262
+Matches per event type:
+  ConnectToControllers 1
+  TrafficInjection 1
+  DataplanePermit 16
+  ControlMessageSend 49
+  ControlMessageReceive 152
+Timeouts per event type:
+  ControlMessageSend 33
+  ControlMessageReceive 229
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+[1;36mKilling controller c1[1;m
+Terminating child controllers...close() called on stdout during concurrent operation
+close() called on stderr during concurrent operation
+ OK

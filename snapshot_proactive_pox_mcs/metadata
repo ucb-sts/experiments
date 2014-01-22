@@ -1,0 +1,36 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/snapshot_proactive_pox/mcs_config.py"
+  ],
+  "cwd": "/mnt/rcs/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:     264105312   45269728  218835584          0     163076   26434096\n-/+ buffers/cache:   18672556  245432756\nSwap:            0          0          0",
+    "name": "c75",
+    "num_cores": "32",
+    "uptime": "16:37:04 up 6 days, 23:12,  2 users,  load average: 2.62, 1.86, 1.64"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "debugger",
+      "commit": "12a8465fa6bb0aae9411a09e902ebe74b2d48cdd"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "0e71efa3b1888c039338aeadc3694c0cdca5eb08"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 12.04.4 LTS",
+    "uname": "Linux c75 3.8.0-35-generic #50~precise1-Ubuntu SMP Wed Dec 4 17:25:51 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_01_21_16_37_04",
+  "user": "rcs"
+}
