@@ -16,5 +16,6 @@ control_flow = EfficientMCSFinder(simulation_config, "experiments/trigger_priori
                                   wait_on_deterministic_values=False,
                                   delay_flow_mods=False,
                                   default_dp_permit=True,
+                                  pass_through_whitelisted_messages=False,
                                   invariant_check_name='check_for_flow_entry',
                                   bug_signature="")
