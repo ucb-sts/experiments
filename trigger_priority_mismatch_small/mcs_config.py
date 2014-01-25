@@ -14,6 +14,8 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(start_
 
 control_flow = EfficientMCSFinder(simulation_config, "experiments/trigger_priority_mismatch_small/events.trace",
                                   wait_on_deterministic_values=False,
+                                  default_dp_permit=True,
+                                  pass_through_whitelisted_messages=False,
                                   delay_flow_mods=False,
                                   invariant_check_name='check_for_flow_entry',
                                   bug_signature="")
