@@ -7,7 +7,7 @@ DEBUG:Controller:Creating symlink /Users/cs/Research/UCB/code/sts/sts/util/socke
 DEBUG:Controller:Creating symlink /Users/cs/Research/UCB/code/sts/sts/util/socket_mux/base.py -> pox/ext/sts/util/socket_mux/base.py
 DEBUG:Controller:Creating symlink /Users/cs/Research/UCB/code/sts/sts/util/socket_mux/server_socket_multiplexer.py -> pox/ext/sts/util/socket_mux/server_socket_multiplexer.py
 INFO:Controller:Launching controller c1: ./pox.py --verbose openflow.discovery forwarding.l2_multi forwarding.capabilities_manager sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=127.0.0.1 --port=6633
-INFO:simulation:Launched controller c1: ./pox.py --verbose openflow.discovery forwarding.l2_multi forwarding.capabilities_manager sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=127.0.0.1 --port=6633 [PID 14617]
+INFO:simulation:Launched controller c1: ./pox.py --verbose openflow.discovery forwarding.l2_multi forwarding.capabilities_manager sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=127.0.0.1 --port=6633 [PID 14813]
 INFO:simulation:Creating topology...
 DEBUG:simulation:Monkeypatching STS select
 connect_socket_with_backoff ('127.0.0.1', 6633)
@@ -23,18 +23,18 @@ Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
 [1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening for connections on ('127.0.0.1', 6633)[1;m
 
 DEBUG:sts.topology:Connecting 2 switches to 1 controllers (setting up 1 conns per switch)...
-[1;33m[c1] Incoming true socket connected[1;m
 DEBUG:sts.topology:Connecting switch 0 / 2
+[1;33m[c1] Incoming true socket connected[1;m
 
 connect_socket_with_backoff ('127.0.0.1', 6633)
-[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 54718][1;m
 DEBUG:sts.topology:Connecting switch 1 / 2
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 55136][1;m
 connect_socket_with_backoff ('127.0.0.1', 6633)
 
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 55136][1;m
 DEBUG:sts.topology:Controller connections done
-DEBUG:input_logger:logging event ConnectToControllers:e1:('ConnectToControllers',)
-[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 54718][1;m
 
+DEBUG:input_logger:logging event ConnectToControllers:e1:('ConnectToControllers',)
 INFO:control_flow:Waiting until first OpenFlow message received..
 DEBUG:FuzzSoftwareSwitch(2):Receive hello SoftSwitch(2)
 DEBUG:FuzzSoftwareSwitch(2):Send hello SoftSwitch(2) 
@@ -309,7 +309,7 @@ actions:
 
 DEBUG:input_logger:logging event ControlMessageReceive:i26:('ControlMessageReceive', OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}, 2, 'c1')
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.2.2.2')]:Recieved packet [00:00:00:00:02:02>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:32><ttl:120><pox.lib.packet.lldp.system_description object at 0x1035e2850><tlv end> on interface eth2
+INFO:host:[IPAddr('10.2.2.2')]:Recieved packet [00:00:00:00:02:02>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:32><ttl:120><pox.lib.packet.lldp.system_description object at 0x10575d8d0><tlv end> on interface eth2
 DEBUG:input_logger:logging event DataplanePermit:i27:('DataplanePermit', DPFingerprint{'class': 'lldp'}, 2, 2)
 [1;36mRound 28 completed.[1;m
 [1;36mRound 29 completed.[1;m
@@ -402,10 +402,10 @@ DEBUG:input_logger:logging event ControlMessageReceive:i33:('ControlMessageRecei
 [1;36mRound 48 completed.[1;m
 [1;36mRound 49 completed.[1;m
 [1;36mRound 50 completed.[1;m
-INFO:host:[IPAddr('10.1.2.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:01:02:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.1.2.2>10.1.2.2]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-DEBUG:input_logger:logging event TrafficInjection:e34:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:02:[IPAddr('10.1.2.2')] Packet:[12:34:56:78:01:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:5199[10.1.2.2>10.1.2.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing, 1)
-INFO:host:[IPAddr('10.2.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:02:02:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.2.2.2>10.2.2.2]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-DEBUG:input_logger:logging event TrafficInjection:e35:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:02:[IPAddr('10.2.2.2')] Packet:[12:34:56:78:02:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:5196[10.2.2.2>10.2.2.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing, 2)
+INFO:host:[IPAddr('10.1.2.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:01:02:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.1.2.2>10.1.2.2]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+DEBUG:input_logger:logging event TrafficInjection:e34:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:02:[IPAddr('10.1.2.2')] Packet:[12:34:56:78:01:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:42ba[10.1.2.2>10.1.2.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing, 1)
+INFO:host:[IPAddr('10.2.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:02:02:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.2.2.2>10.2.2.2]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+DEBUG:input_logger:logging event TrafficInjection:e35:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:02:[IPAddr('10.2.2.2')] Packet:[12:34:56:78:02:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:42b7[10.2.2.2>10.2.2.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing, 2)
 [1;36mForwarding dataplane event[1;m
 DEBUG:FuzzSoftwareSwitch(1):Send PacketIn SoftSwitch(1) 
 DEBUG:input_logger:logging event DataplanePermit:i36:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:01:02', 'nw_src': '10.1.2.2', 'dl_src': '12:34:56:78:01:02', 'nw_dst': '10.1.2.2'}, 1, '12:34:56:78:01:02')
@@ -442,40 +442,6 @@ match:
   nw_proto: 1
   nw_src: 10.1.2.2
   nw_dst: 10.1.2.2
-  tp_src: 8
-  tp_dst: 0
-cookie: 0
-command: 0
-idle_timeout: 10
-hard_timeout: 30
-priority: 32768
-buffer_id: 1
-out_port: 65535
-flags: 0
-actions: 
-  type: 0
-  len: 8
-  port: 2
-  max_len: 0
-
-WARNING:FuzzSoftwareSwitch(1):out_port 2 == in_port. Dropping
-DEBUG:input_logger:logging event ControlMessageReceive:i41:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(2)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:01:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:10.1.2.2/32,nw_dst:10.1.2.2/32,tp_src:8,tp_dst:0,in_port:None'}, 1, 'c1')
-DEBUG:FuzzSoftwareSwitch(2):Flow mod SoftSwitch(2): header: 
-  version: 1
-  type:    14 (OFPT_FLOW_MOD)
-  length:  80
-  xid:     41
-match: 
-  wildcards: in_port (1 = 0x1)
-  dl_src: 12:34:56:78:02:02
-  dl_dst: 12:34:56:78:02:02
-  dl_vlan: 65535
-  dl_vlan_pcp: 0
-  dl_type: 0x800
-  nw_tos: 0
-  nw_proto: 1
-  nw_src: 10.2.2.2
-  nw_dst: 10.2.2.2
   tp_src: 0
   tp_dst: 0
 cookie: 0
@@ -492,8 +458,8 @@ actions:
   port: 2
   max_len: 0
 
-WARNING:FuzzSoftwareSwitch(2):out_port 2 == in_port. Dropping
-DEBUG:input_logger:logging event ControlMessageReceive:i42:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(2)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:02:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:10.2.2.2/32,nw_dst:10.2.2.2/32,tp_src:0,tp_dst:0,in_port:None'}, 2, 'c1')
+WARNING:FuzzSoftwareSwitch(1):out_port 2 == in_port. Dropping
+DEBUG:input_logger:logging event ControlMessageReceive:i41:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(2)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:01:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:10.1.2.2/32,nw_dst:10.1.2.2/32,tp_src:0,tp_dst:0,in_port:None'}, 1, 'c1')
 DEBUG:FuzzSoftwareSwitch(1):Packet out: header: 
   version: 1
   type:    13 (OFPT_PACKET_OUT)
@@ -508,12 +474,46 @@ actions:
   port: 2
   max_len: 0
 
-DEBUG:input_logger:logging event ControlMessageReceive:i43:('ControlMessageReceive', OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}, 1, 'c1')
+DEBUG:input_logger:logging event ControlMessageReceive:i42:('ControlMessageReceive', OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}, 1, 'c1')
+DEBUG:FuzzSoftwareSwitch(2):Flow mod SoftSwitch(2): header: 
+  version: 1
+  type:    14 (OFPT_FLOW_MOD)
+  length:  80
+  xid:     41
+match: 
+  wildcards: in_port (1 = 0x1)
+  dl_src: 12:34:56:78:02:02
+  dl_dst: 12:34:56:78:02:02
+  dl_vlan: 65535
+  dl_vlan_pcp: 0
+  dl_type: 0x800
+  nw_tos: 0
+  nw_proto: 1
+  nw_src: 10.2.2.2
+  nw_dst: 10.2.2.2
+  tp_src: 8
+  tp_dst: 0
+cookie: 0
+command: 0
+idle_timeout: 10
+hard_timeout: 30
+priority: 32768
+buffer_id: 1
+out_port: 65535
+flags: 0
+actions: 
+  type: 0
+  len: 8
+  port: 2
+  max_len: 0
+
+WARNING:FuzzSoftwareSwitch(2):out_port 2 == in_port. Dropping
+DEBUG:input_logger:logging event ControlMessageReceive:i43:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(2)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:02:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:10.2.2.2/32,nw_dst:10.2.2.2/32,tp_src:8,tp_dst:0,in_port:None'}, 2, 'c1')
 DEBUG:input_logger:logging event CheckInvariants:e44:('CheckInvariants',)
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 53 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.1.2.2')]:Recieved packet [00:00:00:00:01:02>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:32><ttl:120><pox.lib.packet.lldp.system_description object at 0x1035ea3d0><tlv end> on interface eth1
+INFO:host:[IPAddr('10.1.2.2')]:Recieved packet [00:00:00:00:01:02>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:32><ttl:120><pox.lib.packet.lldp.system_description object at 0x105760950><tlv end> on interface eth1
 DEBUG:input_logger:logging event DataplanePermit:i45:('DataplanePermit', DPFingerprint{'class': 'lldp'}, 1, 2)
 DEBUG:input_logger:logging event CheckInvariants:e46:('CheckInvariants',)
 [1;42m[1;37mNo correctness violations![1;m
@@ -539,92 +539,15 @@ DEBUG:input_logger:logging event CheckInvariants:e52:('CheckInvariants',)
 DEBUG:input_logger:logging event CheckInvariants:e53:('CheckInvariants',)
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 61 completed.[1;m
-[1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.1.2.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.1.2.2>10.2.2.2]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-DEBUG:input_logger:logging event TrafficInjection:e54:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:02:[IPAddr('10.1.2.2')] Packet:[12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:5194[10.1.2.2>10.2.2.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing, None)
-DEBUG:input_logger:logging event CheckInvariants:e55:('CheckInvariants',)
+DEBUG:input_logger:logging event CheckInvariants:e54:('CheckInvariants',)
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 62 completed.[1;m
-[1;36mForwarding dataplane event[1;m
-DEBUG:FuzzSoftwareSwitch(1):Send PacketIn SoftSwitch(1) 
-DEBUG:input_logger:logging event DataplanePermit:i56:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:02:02', 'nw_src': '10.1.2.2', 'dl_src': '12:34:56:78:01:02', 'nw_dst': '10.2.2.2'}, 1, '12:34:56:78:01:02')
-DEBUG:input_logger:logging event ControlMessageSend:i57:('ControlMessageSend', OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:02:02', 'nw_src': '10.1.2.2', 'dl_src': '12:34:56:78:01:02', 'nw_dst': '10.2.2.2'}, 'class': 'ofp_packet_in', 'in_port': 2}, 1, 'c1')
-DEBUG:input_logger:logging event CheckInvariants:e58:('CheckInvariants',)
+DEBUG:input_logger:logging event CheckInvariants:e55:('CheckInvariants',)
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 63 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Installing path for 12:34:56:78:01:02 -> 12:34:56:78:02:02 0800 (2 hops)[1;m
-
-DEBUG:FuzzSoftwareSwitch(2):Flow mod SoftSwitch(2): header: 
-  version: 1
-  type:    14 (OFPT_FLOW_MOD)
-  length:  80
-  xid:     45
-match: 
-  wildcards: in_port (1 = 0x1)
-  dl_src: 12:34:56:78:01:02
-  dl_dst: 12:34:56:78:02:02
-  dl_vlan: 65535
-  dl_vlan_pcp: 0
-  dl_type: 0x800
-  nw_tos: 0
-  nw_proto: 1
-  nw_src: 10.1.2.2
-  nw_dst: 10.2.2.2
-  tp_src: 0
-  tp_dst: 0
-cookie: 0
-command: 0
-idle_timeout: 10
-hard_timeout: 30
-priority: 32768
-buffer_id: -1
-out_port: 65535
-flags: 0
-actions: 
-  type: 0
-  len: 8
-  port: 2
-  max_len: 0
-
-DEBUG:input_logger:logging event ControlMessageReceive:i59:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(2)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:10.1.2.2/32,nw_dst:10.2.2.2/32,tp_src:0,tp_dst:0,in_port:None'}, 2, 'c1')
-DEBUG:FuzzSoftwareSwitch(1):Flow mod SoftSwitch(1): header: 
-  version: 1
-  type:    14 (OFPT_FLOW_MOD)
-  length:  80
-  xid:     47
-match: 
-  wildcards: in_port (1 = 0x1)
-  dl_src: 12:34:56:78:01:02
-  dl_dst: 12:34:56:78:02:02
-  dl_vlan: 65535
-  dl_vlan_pcp: 0
-  dl_type: 0x800
-  nw_tos: 0
-  nw_proto: 1
-  nw_src: 10.1.2.2
-  nw_dst: 10.2.2.2
-  tp_src: 0
-  tp_dst: 0
-cookie: 0
-command: 0
-idle_timeout: 10
-hard_timeout: 30
-priority: 32768
-buffer_id: 1
-out_port: 65535
-flags: 0
-actions: 
-  type: 0
-  len: 8
-  port: 1
-  max_len: 0
-
-DEBUG:input_logger:logging event ControlMessageReceive:i60:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(1)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:10.1.2.2/32,nw_dst:10.2.2.2/32,tp_src:0,tp_dst:0,in_port:None'}, 1, 'c1')
-DEBUG:input_logger:logging event CheckInvariants:e61:('CheckInvariants',)
+DEBUG:input_logger:logging event CheckInvariants:e56:('CheckInvariants',)
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 64 completed.[1;m
-[1;36mForwarding dataplane event[1;m
-DEBUG:input_logger:logging event DataplanePermit:i62:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:02:02', 'nw_src': '10.1.2.2', 'dl_src': '12:34:56:78:01:02', 'nw_dst': '10.2.2.2'}, 1, 1)
 DEBUG:FuzzSoftwareSwitch(2):Packet out: header: 
   version: 1
   type:    13 (OFPT_PACKET_OUT)
@@ -639,92 +562,64 @@ actions:
   port: 1
   max_len: 0
 
-DEBUG:input_logger:logging event ControlMessageReceive:i63:('ControlMessageReceive', OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}, 2, 'c1')
-[1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.1.2.2')]:sending packet on interface eth1: [12:34:56:78:01:02>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:01:02>ff:ff:ff:ff:ff:ff 10.1.2.2>10.2.2.2
-DEBUG:input_logger:logging event TrafficInjection:e64:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:02:[IPAddr('10.1.2.2')] Packet:[12:34:56:78:01:02>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:01:02>ff:ff:ff:ff:ff:ff 10.1.2.2>10.2.2.2, None)
-DEBUG:input_logger:logging event CheckInvariants:e65:('CheckInvariants',)
+DEBUG:input_logger:logging event ControlMessageReceive:i57:('ControlMessageReceive', OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}, 2, 'c1')
+DEBUG:input_logger:logging event CheckInvariants:e58:('CheckInvariants',)
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 65 completed.[1;m
 [1;36mForwarding dataplane event[1;m
 DEBUG:FuzzSoftwareSwitch(1):Send PacketIn SoftSwitch(1) 
-DEBUG:input_logger:logging event DataplanePermit:i66:('DataplanePermit', DPFingerprint{'class': 'lldp'}, 2, 1)
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.2.2.2')]:Sending RST on interface eth2: in reponse to: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:5194[10.1.2.2>10.2.2.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
-INFO:host:[IPAddr('10.2.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.2.2.2>10.1.2.2]){0>0} seq:0 ack:0 f:0x0
-INFO:host:[IPAddr('10.2.2.2')]:Recieved packet [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:5194[10.1.2.2>10.2.2.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth2
-DEBUG:input_logger:logging event DataplanePermit:i67:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:02:02', 'nw_src': '10.1.2.2', 'dl_src': '12:34:56:78:01:02', 'nw_dst': '10.2.2.2'}, 2, 2)
-[1;36mForwarding dataplane event[1;m
-DEBUG:FuzzSoftwareSwitch(1):Send PacketIn SoftSwitch(1) 
-DEBUG:input_logger:logging event DataplanePermit:i68:('DataplanePermit', DPFingerprint{'class': 'arp'}, 1, '12:34:56:78:01:02')
-DEBUG:input_logger:logging event ControlMessageSend:i69:('ControlMessageSend', OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 2}, 1, 'c1')
-DEBUG:input_logger:logging event ControlMessageSend:i70:('ControlMessageSend', OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1}, 1, 'c1')
-DEBUG:input_logger:logging event CheckInvariants:e71:('CheckInvariants',)
+DEBUG:input_logger:logging event DataplanePermit:i59:('DataplanePermit', DPFingerprint{'class': 'lldp'}, 2, 1)
+DEBUG:input_logger:logging event ControlMessageSend:i60:('ControlMessageSend', OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1}, 1, 'c1')
+DEBUG:input_logger:logging event CheckInvariants:e61:('CheckInvariants',)
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 66 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Flood multicast from 12:34:56:78:01:02[1;m
-
-[1;36mForwarding dataplane event[1;m
-DEBUG:FuzzSoftwareSwitch(2):Send PacketIn SoftSwitch(2) 
-INFO:packet:(tcp parse) warning TCP data offset too long or too short 0
-DEBUG:input_logger:logging event DataplanePermit:i72:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:01:02', 'nw_src': '10.2.2.2', 'dl_src': '12:34:56:78:02:02', 'nw_dst': '10.1.2.2'}, 2, '12:34:56:78:02:02')
 DEBUG:FuzzSoftwareSwitch(1):Packet out: header: 
   version: 1
   type:    13 (OFPT_PACKET_OUT)
   length:  16
-  xid:     51
+  xid:     45
 buffer_id: 1
 in_port: 1
 actions_len: 0
 actions: 
 
-DEBUG:input_logger:logging event ControlMessageReceive:i73:('ControlMessageReceive', OFFingerprint{'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}, 1, 'c1')
-DEBUG:FuzzSoftwareSwitch(1):Packet out: header: 
-  version: 1
-  type:    13 (OFPT_PACKET_OUT)
-  length:  24
-  xid:     49
-buffer_id: 2
-in_port: 2
-actions_len: 1
-actions: 
-  type: 0
-  len: 8
-  port: 65531
-  max_len: 0
-
-DEBUG:input_logger:logging event ControlMessageReceive:i74:('ControlMessageReceive', OFFingerprint{'actions': ('output(65531)',), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}, 1, 'c1')
-DEBUG:input_logger:logging event ControlMessageSend:i75:('ControlMessageSend', OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:01:02', 'nw_src': '10.2.2.2', 'dl_src': '12:34:56:78:02:02', 'nw_dst': '10.1.2.2'}, 'class': 'ofp_packet_in', 'in_port': 2}, 2, 'c1')
-DEBUG:input_logger:logging event CheckInvariants:e76:('CheckInvariants',)
+DEBUG:input_logger:logging event ControlMessageReceive:i62:('ControlMessageReceive', OFFingerprint{'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}, 1, 'c1')
+DEBUG:input_logger:logging event CheckInvariants:e63:('CheckInvariants',)
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 67 completed.[1;m
-[1;41m[1;33m[c1] INFO:packet:(tcp parse) warning TCP data offset too long or too short 0[1;m
-
-[1;41m[1;33m[c1] INFO:packet:(tcp parse) warning TCP data offset too long or too short 0[1;m
-
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Installing path for 12:34:56:78:02:02 -> 12:34:56:78:01:02 0800 (2 hops)[1;m
-
-[1;41m[1;33m[c1] INFO:packet:(tcp parse) warning TCP data offset too long or too short 0[1;m
-
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('10.2.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.2.2.2>10.1.2.2]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+DEBUG:input_logger:logging event TrafficInjection:e64:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:02:[IPAddr('10.2.2.2')] Packet:[12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:42b5[10.2.2.2>10.1.2.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing, None)
+DEBUG:input_logger:logging event CheckInvariants:e65:('CheckInvariants',)
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 68 completed.[1;m
 [1;36mForwarding dataplane event[1;m
 DEBUG:FuzzSoftwareSwitch(2):Send PacketIn SoftSwitch(2) 
-DEBUG:input_logger:logging event DataplanePermit:i77:('DataplanePermit', DPFingerprint{'class': 'arp'}, 1, 1)
+DEBUG:input_logger:logging event DataplanePermit:i66:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:01:02', 'nw_src': '10.2.2.2', 'dl_src': '12:34:56:78:02:02', 'nw_dst': '10.1.2.2'}, 2, '12:34:56:78:02:02')
+DEBUG:input_logger:logging event ControlMessageSend:i67:('ControlMessageSend', OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:01:02', 'nw_src': '10.2.2.2', 'dl_src': '12:34:56:78:02:02', 'nw_dst': '10.1.2.2'}, 'class': 'ofp_packet_in', 'in_port': 2}, 2, 'c1')
+DEBUG:input_logger:logging event CheckInvariants:e68:('CheckInvariants',)
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 69 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Installing path for 12:34:56:78:02:02 -> 12:34:56:78:01:02 0800 (2 hops)[1;m
+
 DEBUG:FuzzSoftwareSwitch(1):Flow mod SoftSwitch(1): header: 
   version: 1
   type:    14 (OFPT_FLOW_MOD)
   length:  80
-  xid:     53
+  xid:     47
 match: 
-  wildcards: tp_dst|in_port|tp_src (11000001 = 0xc1)
+  wildcards: in_port (1 = 0x1)
   dl_src: 12:34:56:78:02:02
   dl_dst: 12:34:56:78:01:02
   dl_vlan: 65535
   dl_vlan_pcp: 0
   dl_type: 0x800
   nw_tos: 0
-  nw_proto: 6
+  nw_proto: 1
   nw_src: 10.2.2.2
   nw_dst: 10.1.2.2
+  tp_src: 0
+  tp_dst: 0
 cookie: 0
 command: 0
 idle_timeout: 10
@@ -739,23 +634,25 @@ actions:
   port: 2
   max_len: 0
 
-DEBUG:input_logger:logging event ControlMessageReceive:i78:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(2)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:10.2.2.2/32,nw_dst:10.1.2.2/32,in_port:None'}, 1, 'c1')
+DEBUG:input_logger:logging event ControlMessageReceive:i69:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(2)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:10.2.2.2/32,nw_dst:10.1.2.2/32,tp_src:0,tp_dst:0,in_port:None'}, 1, 'c1')
 DEBUG:FuzzSoftwareSwitch(2):Flow mod SoftSwitch(2): header: 
   version: 1
   type:    14 (OFPT_FLOW_MOD)
   length:  80
-  xid:     55
+  xid:     49
 match: 
-  wildcards: tp_dst|in_port|tp_src (11000001 = 0xc1)
+  wildcards: in_port (1 = 0x1)
   dl_src: 12:34:56:78:02:02
   dl_dst: 12:34:56:78:01:02
   dl_vlan: 65535
   dl_vlan_pcp: 0
   dl_type: 0x800
   nw_tos: 0
-  nw_proto: 6
+  nw_proto: 1
   nw_src: 10.2.2.2
   nw_dst: 10.1.2.2
+  tp_src: 0
+  tp_dst: 0
 cookie: 0
 command: 0
 idle_timeout: 10
@@ -770,216 +667,31 @@ actions:
   port: 1
   max_len: 0
 
-DEBUG:input_logger:logging event ControlMessageReceive:i79:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(1)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:10.2.2.2/32,nw_dst:10.1.2.2/32,in_port:None'}, 2, 'c1')
-DEBUG:input_logger:logging event ControlMessageSend:i80:('ControlMessageSend', OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1}, 2, 'c1')
-DEBUG:input_logger:logging event CheckInvariants:e81:('CheckInvariants',)
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 68 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Flood multicast from 12:34:56:78:01:02[1;m
-
-[1;36mForwarding dataplane event[1;m
-DEBUG:input_logger:logging event DataplanePermit:i82:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:01:02', 'nw_src': '10.2.2.2', 'dl_src': '12:34:56:78:02:02', 'nw_dst': '10.1.2.2'}, 2, 1)
-DEBUG:FuzzSoftwareSwitch(2):Packet out: header: 
-  version: 1
-  type:    13 (OFPT_PACKET_OUT)
-  length:  24
-  xid:     57
-buffer_id: 2
-in_port: 1
-actions_len: 1
-actions: 
-  type: 0
-  len: 8
-  port: 65531
-  max_len: 0
-
-DEBUG:input_logger:logging event ControlMessageReceive:i83:('ControlMessageReceive', OFFingerprint{'actions': ('output(65531)',), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}, 2, 'c1')
-DEBUG:input_logger:logging event CheckInvariants:e84:('CheckInvariants',)
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 69 completed.[1;m
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.1.2.2')]:Recieved packet [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:40t:64]TCP cs:51ad[10.2.2.2>10.1.2.2]){0>0} seq:0 ack:0 f:0x0 on interface eth1
-DEBUG:input_logger:logging event DataplanePermit:i85:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:01:02', 'nw_src': '10.2.2.2', 'dl_src': '12:34:56:78:02:02', 'nw_dst': '10.1.2.2'}, 1, 2)
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.2.2.2')]:received valid arp packet on interface eth2: [12:34:56:78:01:02>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:01:02>ff:ff:ff:ff:ff:ff 10.1.2.2>10.2.2.2
-INFO:host:[IPAddr('10.2.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:ARP]|REPLY hw:1 p:2048 12:34:56:78:02:02>12:34:56:78:01:02 10.2.2.2>10.1.2.2
-DEBUG:input_logger:logging event DataplanePermit:i86:('DataplanePermit', DPFingerprint{'class': 'arp'}, 2, 2)
-[1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.2.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.2.2.2>10.1.2.2]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-DEBUG:input_logger:logging event TrafficInjection:e87:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:02:[IPAddr('10.2.2.2')] Packet:[12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:5190[10.2.2.2>10.1.2.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing, None)
-DEBUG:input_logger:logging event CheckInvariants:e88:('CheckInvariants',)
+DEBUG:input_logger:logging event ControlMessageReceive:i70:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(1)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:10.2.2.2/32,nw_dst:10.1.2.2/32,tp_src:0,tp_dst:0,in_port:None'}, 2, 'c1')
+DEBUG:input_logger:logging event CheckInvariants:e71:('CheckInvariants',)
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 70 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-DEBUG:FuzzSoftwareSwitch(2):Send PacketIn SoftSwitch(2) 
-DEBUG:input_logger:logging event DataplanePermit:i89:('DataplanePermit', DPFingerprint{'class': 'arp'}, 2, '12:34:56:78:02:02')
-[1;36mForwarding dataplane event[1;m
-DEBUG:FuzzSoftwareSwitch(2):Send PacketIn SoftSwitch(2) 
-DEBUG:input_logger:logging event DataplanePermit:i90:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:01:02', 'nw_src': '10.2.2.2', 'dl_src': '12:34:56:78:02:02', 'nw_dst': '10.1.2.2'}, 2, '12:34:56:78:02:02')
-DEBUG:input_logger:logging event ControlMessageSend:i91:('ControlMessageSend', OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 2}, 2, 'c1')
-DEBUG:input_logger:logging event ControlMessageSend:i92:('ControlMessageSend', OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:01:02', 'nw_src': '10.2.2.2', 'dl_src': '12:34:56:78:02:02', 'nw_dst': '10.1.2.2'}, 'class': 'ofp_packet_in', 'in_port': 2}, 2, 'c1')
-DEBUG:input_logger:logging event CheckInvariants:e93:('CheckInvariants',)
+DEBUG:input_logger:logging event DataplanePermit:i72:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:01:02', 'nw_src': '10.2.2.2', 'dl_src': '12:34:56:78:02:02', 'nw_dst': '10.1.2.2'}, 2, 1)
+DEBUG:input_logger:logging event CheckInvariants:e73:('CheckInvariants',)
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 71 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Installing path for 12:34:56:78:02:02 -> 12:34:56:78:01:02 0806 (2 hops)[1;m
-
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Installing path for 12:34:56:78:02:02 -> 12:34:56:78:01:02 0800 (2 hops)[1;m
-
-DEBUG:FuzzSoftwareSwitch(1):Flow mod SoftSwitch(1): header: 
-  version: 1
-  type:    14 (OFPT_FLOW_MOD)
-  length:  80
-  xid:     59
-match: 
-  wildcards: nw_tos|tp_dst|in_port|tp_src (1000000000000011000001 = 0x2000c1)
-  dl_src: 12:34:56:78:02:02
-  dl_dst: 12:34:56:78:01:02
-  dl_vlan: 65535
-  dl_vlan_pcp: 0
-  dl_type: 0x806
-  nw_proto: 2
-  nw_src: 10.2.2.2
-  nw_dst: 10.1.2.2
-cookie: 0
-command: 0
-idle_timeout: 10
-hard_timeout: 30
-priority: 32768
-buffer_id: -1
-out_port: 65535
-flags: 0
-actions: 
-  type: 0
-  len: 8
-  port: 2
-  max_len: 0
-
-DEBUG:input_logger:logging event ControlMessageReceive:i94:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(2)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_proto:2,nw_src:10.2.2.2/32,nw_dst:10.1.2.2/32,in_port:None'}, 1, 'c1')
-DEBUG:FuzzSoftwareSwitch(1):Flow mod SoftSwitch(1): header: 
-  version: 1
-  type:    14 (OFPT_FLOW_MOD)
-  length:  80
-  xid:     63
-match: 
-  wildcards: in_port (1 = 0x1)
-  dl_src: 12:34:56:78:02:02
-  dl_dst: 12:34:56:78:01:02
-  dl_vlan: 65535
-  dl_vlan_pcp: 0
-  dl_type: 0x800
-  nw_tos: 0
-  nw_proto: 1
-  nw_src: 10.2.2.2
-  nw_dst: 10.1.2.2
-  tp_src: 0
-  tp_dst: 0
-cookie: 0
-command: 0
-idle_timeout: 10
-hard_timeout: 30
-priority: 32768
-buffer_id: -1
-out_port: 65535
-flags: 0
-actions: 
-  type: 0
-  len: 8
-  port: 2
-  max_len: 0
-
-DEBUG:input_logger:logging event ControlMessageReceive:i95:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(2)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:10.2.2.2/32,nw_dst:10.1.2.2/32,tp_src:0,tp_dst:0,in_port:None'}, 1, 'c1')
-DEBUG:FuzzSoftwareSwitch(2):Flow mod SoftSwitch(2): header: 
-  version: 1
-  type:    14 (OFPT_FLOW_MOD)
-  length:  80
-  xid:     61
-match: 
-  wildcards: nw_tos|tp_dst|in_port|tp_src (1000000000000011000001 = 0x2000c1)
-  dl_src: 12:34:56:78:02:02
-  dl_dst: 12:34:56:78:01:02
-  dl_vlan: 65535
-  dl_vlan_pcp: 0
-  dl_type: 0x806
-  nw_proto: 2
-  nw_src: 10.2.2.2
-  nw_dst: 10.1.2.2
-cookie: 0
-command: 0
-idle_timeout: 10
-hard_timeout: 30
-priority: 32768
-buffer_id: 1
-out_port: 65535
-flags: 0
-actions: 
-  type: 0
-  len: 8
-  port: 1
-  max_len: 0
-
-DEBUG:input_logger:logging event ControlMessageReceive:i96:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(1)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2054,nw_proto:2,nw_src:10.2.2.2/32,nw_dst:10.1.2.2/32,in_port:None'}, 2, 'c1')
-DEBUG:FuzzSoftwareSwitch(2):Flow mod SoftSwitch(2): header: 
-  version: 1
-  type:    14 (OFPT_FLOW_MOD)
-  length:  80
-  xid:     65
-match: 
-  wildcards: in_port (1 = 0x1)
-  dl_src: 12:34:56:78:02:02
-  dl_dst: 12:34:56:78:01:02
-  dl_vlan: 65535
-  dl_vlan_pcp: 0
-  dl_type: 0x800
-  nw_tos: 0
-  nw_proto: 1
-  nw_src: 10.2.2.2
-  nw_dst: 10.1.2.2
-  tp_src: 0
-  tp_dst: 0
-cookie: 0
-command: 0
-idle_timeout: 10
-hard_timeout: 30
-priority: 32768
-buffer_id: 2
-out_port: 65535
-flags: 0
-actions: 
-  type: 0
-  len: 8
-  port: 1
-  max_len: 0
-
-DEBUG:input_logger:logging event ControlMessageReceive:i97:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(1)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:10.2.2.2/32,nw_dst:10.1.2.2/32,tp_src:0,tp_dst:0,in_port:None'}, 2, 'c1')
-DEBUG:input_logger:logging event CheckInvariants:e98:('CheckInvariants',)
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('10.1.2.2')]:Sending RST on interface eth1: in reponse to: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:42b5[10.2.2.2>10.1.2.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:host:[IPAddr('10.1.2.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.1.2.2>10.2.2.2]){0>0} seq:0 ack:0 f:0x0
+INFO:host:[IPAddr('10.1.2.2')]:Recieved packet [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:42b5[10.2.2.2>10.1.2.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth1
+DEBUG:input_logger:logging event DataplanePermit:i74:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:01:02', 'nw_src': '10.2.2.2', 'dl_src': '12:34:56:78:02:02', 'nw_dst': '10.1.2.2'}, 1, 2)
+DEBUG:input_logger:logging event CheckInvariants:e75:('CheckInvariants',)
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 72 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-DEBUG:input_logger:logging event DataplanePermit:i99:('DataplanePermit', DPFingerprint{'class': 'arp'}, 2, 1)
-[1;36mForwarding dataplane event[1;m
-DEBUG:input_logger:logging event DataplanePermit:i100:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:01:02', 'nw_src': '10.2.2.2', 'dl_src': '12:34:56:78:02:02', 'nw_dst': '10.1.2.2'}, 2, 1)
-DEBUG:input_logger:logging event CheckInvariants:e101:('CheckInvariants',)
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 73 completed.[1;m
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.1.2.2')]:received invalid arp packet on interface eth1: [12:34:56:78:02:02>12:34:56:78:01:02:ARP]|REPLY hw:1 p:2048 12:34:56:78:02:02>12:34:56:78:01:02 10.2.2.2>10.1.2.2
-DEBUG:input_logger:logging event DataplanePermit:i102:('DataplanePermit', DPFingerprint{'class': 'arp'}, 1, 2)
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.1.2.2')]:Sending RST on interface eth1: in reponse to: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:5190[10.2.2.2>10.1.2.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
-INFO:host:[IPAddr('10.1.2.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.1.2.2>10.2.2.2]){0>0} seq:0 ack:0 f:0x0
-INFO:host:[IPAddr('10.1.2.2')]:Recieved packet [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:5190[10.2.2.2>10.1.2.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth1
-DEBUG:input_logger:logging event DataplanePermit:i103:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:01:02', 'nw_src': '10.2.2.2', 'dl_src': '12:34:56:78:02:02', 'nw_dst': '10.1.2.2'}, 1, 2)
-DEBUG:input_logger:logging event CheckInvariants:e104:('CheckInvariants',)
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 74 completed.[1;m
-[1;36mForwarding dataplane event[1;m
 DEBUG:FuzzSoftwareSwitch(1):Send PacketIn SoftSwitch(1) 
 INFO:packet:(tcp parse) warning TCP data offset too long or too short 0
-DEBUG:input_logger:logging event DataplanePermit:i105:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:02:02', 'nw_src': '10.1.2.2', 'dl_src': '12:34:56:78:01:02', 'nw_dst': '10.2.2.2'}, 1, '12:34:56:78:01:02')
-DEBUG:input_logger:logging event ControlMessageSend:i106:('ControlMessageSend', OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:02:02', 'nw_src': '10.1.2.2', 'dl_src': '12:34:56:78:01:02', 'nw_dst': '10.2.2.2'}, 'class': 'ofp_packet_in', 'in_port': 2}, 1, 'c1')
-DEBUG:input_logger:logging event CheckInvariants:e107:('CheckInvariants',)
+DEBUG:input_logger:logging event DataplanePermit:i76:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:02:02', 'nw_src': '10.1.2.2', 'dl_src': '12:34:56:78:01:02', 'nw_dst': '10.2.2.2'}, 1, '12:34:56:78:01:02')
+DEBUG:input_logger:logging event ControlMessageSend:i77:('ControlMessageSend', OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:02:02', 'nw_src': '10.1.2.2', 'dl_src': '12:34:56:78:01:02', 'nw_dst': '10.2.2.2'}, 'class': 'ofp_packet_in', 'in_port': 2}, 1, 'c1')
+DEBUG:input_logger:logging event CheckInvariants:e78:('CheckInvariants',)
 [1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 75 completed.[1;m
+[1;36mRound 73 completed.[1;m
 [1;41m[1;33m[c1] INFO:packet:(tcp parse) warning TCP data offset too long or too short 0[1;m
 
 [1;41m[1;33m[c1] INFO:packet:(tcp parse) warning TCP data offset too long or too short 0[1;m
@@ -992,7 +704,7 @@ DEBUG:FuzzSoftwareSwitch(2):Flow mod SoftSwitch(2): header:
   version: 1
   type:    14 (OFPT_FLOW_MOD)
   length:  80
-  xid:     67
+  xid:     51
 match: 
   wildcards: tp_dst|in_port|tp_src (11000001 = 0xc1)
   dl_src: 12:34:56:78:01:02
@@ -1018,12 +730,12 @@ actions:
   port: 2
   max_len: 0
 
-DEBUG:input_logger:logging event ControlMessageReceive:i108:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(2)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:10.1.2.2/32,nw_dst:10.2.2.2/32,in_port:None'}, 2, 'c1')
+DEBUG:input_logger:logging event ControlMessageReceive:i79:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(2)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:10.1.2.2/32,nw_dst:10.2.2.2/32,in_port:None'}, 2, 'c1')
 DEBUG:FuzzSoftwareSwitch(1):Flow mod SoftSwitch(1): header: 
   version: 1
   type:    14 (OFPT_FLOW_MOD)
   length:  72
-  xid:     71
+  xid:     55
 match: 
   wildcards: nw_tos|tp_dst|dl_dst|dl_src|in_port|dl_vlan_pcp|nw_proto|dl_vlan|tp_src|dl_type|nw_src(/0)|nw_dst(/0) (1110000010000011111111 = 0x3820ff)
 cookie: 0
@@ -1036,12 +748,12 @@ out_port: 65535
 flags: 0
 actions: 
 
-DEBUG:input_logger:logging event ControlMessageReceive:i109:('ControlMessageReceive', OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 123, 'idle_timeout': 0, 'command': 'add', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}, 1, 'c1')
+DEBUG:input_logger:logging event ControlMessageReceive:i80:('ControlMessageReceive', OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 123, 'idle_timeout': 0, 'command': 'add', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}, 1, 'c1')
 DEBUG:FuzzSoftwareSwitch(1):Flow mod SoftSwitch(1): header: 
   version: 1
   type:    14 (OFPT_FLOW_MOD)
   length:  80
-  xid:     69
+  xid:     53
 match: 
   wildcards: tp_dst|in_port|tp_src (11000001 = 0xc1)
   dl_src: 12:34:56:78:01:02
@@ -1068,16 +780,13 @@ actions:
   max_len: 0
 
 WARNING:FuzzSoftwareSwitch(1):Buffer 0 has already been flushed
-DEBUG:input_logger:logging event ControlMessageReceive:i110:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(1)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:10.1.2.2/32,nw_dst:10.2.2.2/32,in_port:None'}, 1, 'c1')
-[1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.1.2.2')]:sending packet on interface eth1: [12:34:56:78:01:02>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:01:02>ff:ff:ff:ff:ff:ff 10.1.2.2>10.2.2.2
-DEBUG:input_logger:logging event TrafficInjection:e111:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:02:[IPAddr('10.1.2.2')] Packet:[12:34:56:78:01:02>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:01:02>ff:ff:ff:ff:ff:ff 10.1.2.2>10.2.2.2, None)
-DEBUG:input_logger:logging event CheckInvariants:e112:('CheckInvariants',)
+DEBUG:input_logger:logging event ControlMessageReceive:i81:('ControlMessageReceive', OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(1)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:10.1.2.2/32,nw_dst:10.2.2.2/32,in_port:None'}, 1, 'c1')
+DEBUG:input_logger:logging event CheckInvariants:e82:('CheckInvariants',)
 [1;41m[1;37mThe following correctness violations have occurred: ['123Found'][1;m
 [1;41m[1;37mPersistent violations detected!: ['123Found'][1;m
-DEBUG:input_logger:logging event InvariantViolation:e113:('InvariantViolation',)
-INFO:control_flow:Terminating fuzzing after 76 rounds
+DEBUG:input_logger:logging event InvariantViolation:e83:('InvariantViolation',)
+INFO:control_flow:Terminating fuzzing after 74 rounds
 INFO:control_flow:Pending Messages:
-DEBUG:input_logger:logging event WaitTime:e114:('WaitTime',)
-[1;36mKilling controller c1 (pid 14617)[1;m
+DEBUG:input_logger:logging event WaitTime:e84:('WaitTime',)
+[1;36mKilling controller c1 (pid 14813)[1;m
 Terminating child controllers... OK

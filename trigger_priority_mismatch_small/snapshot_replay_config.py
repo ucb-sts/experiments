@@ -17,20 +17,24 @@ simulation_config = SimulationConfig(
       snapshot_address="/tmp/snapshot_socket")
   ],
                  topology_class=MeshTopology,
-                 topology_params="num_switches=3",
+                 topology_params="num_switches=2",
                  patch_panel_class=BufferedPatchPanel,
                  multiplex_sockets=True,
                  kill_controllers_on_exit=True)
 
-peeker = SnapshotPeeker(simulation_config, default_dp_permit=True)
-control_flow = Replayer(simulation_config, "experiments/trigger_priority_mismatch/events.trace",
+peeker = SnapshotPeeker(simulation_config,
+                        default_dp_permit=True,
+                        pass_through_whitelisted_messages=True)
+
+control_flow = Replayer(simulation_config,
+                        "experiments/trigger_priority_mismatch_small/events.trace",
                         input_logger=InputLogger(),
                         wait_on_deterministic_values=False,
-                        #allow_unexpected_messages=True,
-                        #expected_message_round_window=9999,
+                        allow_unexpected_messages=True,
+                        expected_message_round_window=9999,
                         delay_flow_mods=False,
                         default_dp_permit=True,
-                        pass_through_whitelisted_messages=False,
+                        pass_through_whitelisted_messages=True,
                         invariant_check_name='check_for_flow_entry',
                         bug_signature="",
                         transform_dag=peeker.peek)
