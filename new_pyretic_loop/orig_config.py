@@ -17,9 +17,8 @@ simulation_config = SimulationConfig(controller_configs=controllers,
                             
 
 control_flow = Fuzzer(simulation_config,
+                      fuzzer_params='experiments/new_pyretic_loop/fuzzer_params.py',
                       input_logger=InputLogger(),
                       invariant_check_name="InvariantChecker.python_check_loops",
                       check_interval=1,
                       halt_on_violation=True)
-
-raise RuntimeError("Please add this parameter to Fuzzer: fuzzer_params='experiments/new_pyretic_loop/fuzzer_params.py'")
