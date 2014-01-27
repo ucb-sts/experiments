@@ -36,7 +36,7 @@ Current subset: r/0.r/1.l/2.l/3.r/4: a(e128,e133)
 Violation! Considering 1'th
 Violation found in 1th half. Recursing
 Base case [LinkFailure:e128:('LinkFailure', 3, 2, 1, 1), LinkRecovery:e133:('LinkRecovery', 3, 2, 1, 1)]
-=== Total replays: 9 ===
+=== Total replays: 16 ===
 Final MCS (2 elements):
  - LinkFailure:e128
  - LinkRecovery:e133
