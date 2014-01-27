@@ -1,0 +1,111 @@
+Violation reproduced successfully! Proceeding with pruning
+Subsets:
+l/0: e34 e35 e40 e44 e46 e47 e48 e49 e50 e51 e52 e53 e54 e55
+r/0: e56 e58 e61 e63 e64 e65 e68 e71 e73 e75 e78 e82 e84
+Current subset: l/0: e34 e35 e40 e44 e46 e47 e48 e49 e50 e51 e52 e53 e54 e55
+No violation in 0'th...
+Current subset: r/0: e56 e58 e61 e63 e64 e65 e68 e71 e73 e75 e78 e82 e84
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+r/0.l/1: e56 e58 e61 e63 e64 e65 e68
+r/0.r/1: e71 e73 e75 e78 e82 e84
+Current subset: r/0.l/1: e56 e58 e61 e63 e64 e65 e68
+No violation in 0'th...
+Current subset: r/0.r/1: e71 e73 e75 e78 e82 e84
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+r/0.il/1.l/2: e56 e58 e61 e63
+r/0.il/1.r/2: e64 e65 e68
+Current subset: r/0.il/1.l/2: e56 e58 e61 e63
+No violation in 0'th...
+Current subset: r/0.il/1.r/2: e64 e65 e68
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+r/0.il/1.r/2.l/3: e64 e65
+r/0.il/1.r/2.r/3: e68
+Current subset: r/0.il/1.r/2.l/3: e64 e65
+No violation in 0'th...
+Current subset: r/0.il/1.r/2.r/3: e68
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+r/0.il/1.r/2.il/3.l/4: e64
+r/0.il/1.r/2.il/3.r/4: e65
+Current subset: r/0.il/1.r/2.il/3.l/4: e64
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [TrafficInjection:e64:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:02:[IPAddr('10.2.2.2')] Packet:[12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:42b5[10.2.2.2>10.1.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)]
+Recursing on right half
+Base case [CheckInvariants:e68:('CheckInvariants',)]
+Recursing on right half
+Subsets:
+r/0.ir/1.l/2: e71 e73 e75
+r/0.ir/1.r/2: e78 e82 e84
+Current subset: r/0.ir/1.l/2: e71 e73 e75
+No violation in 0'th...
+Current subset: r/0.ir/1.r/2: e78 e82 e84
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+r/0.ir/1.il/2.l/3: e71 e73
+r/0.ir/1.il/2.r/3: e75
+Current subset: r/0.ir/1.il/2.l/3: e71 e73
+No violation in 0'th...
+Current subset: r/0.ir/1.il/2.r/3: e75
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+r/0.ir/1.il/2.il/3.l/4: e71
+r/0.ir/1.il/2.il/3.r/4: e73
+Current subset: r/0.ir/1.il/2.il/3.l/4: e71
+No violation in 0'th...
+Current subset: r/0.ir/1.il/2.il/3.r/4: e73
+No violation in 1'th...
+Interference
+Recursing on left half
+Base case [CheckInvariants:e71:('CheckInvariants',)]
+Recursing on right half
+Base case [CheckInvariants:e73:('CheckInvariants',)]
+Recursing on right half
+Base case [CheckInvariants:e75:('CheckInvariants',)]
+Recursing on right half
+Subsets:
+r/0.ir/1.ir/2.l/3: e78 e82
+r/0.ir/1.ir/2.r/3: e84
+Current subset: r/0.ir/1.ir/2.l/3: e78 e82
+No violation in 0'th...
+Current subset: r/0.ir/1.ir/2.r/3: e84
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+r/0.ir/1.ir/2.il/3.l/4: e78
+r/0.ir/1.ir/2.il/3.r/4: e82
+Current subset: r/0.ir/1.ir/2.il/3.l/4: e78
+No violation in 0'th...
+Current subset: r/0.ir/1.ir/2.il/3.r/4: e82
+No violation in 1'th...
+Interference
+Recursing on left half
+Base case [CheckInvariants:e78:('CheckInvariants',)]
+Recursing on right half
+Base case [CheckInvariants:e82:('CheckInvariants',)]
+Recursing on right half
+Base case [WaitTime:e84:('WaitTime',)]
+=== Total replays: 20 ===
+Final MCS (8 elements):
+ - TrafficInjection:e64
+ - CheckInvariants:e68
+ - CheckInvariants:e71
+ - CheckInvariants:e73
+ - CheckInvariants:e75
+ - CheckInvariants:e78
+ - CheckInvariants:e82
+ - WaitTime:e84

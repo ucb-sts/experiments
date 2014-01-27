@@ -1,0 +1,41 @@
+{
+  "additional_metadata": {
+    "branch": "carp",
+    "commit": "bab636bc89584b3bb2baaa5bc766be82fb81d1b2",
+    "remote": "* remote origin\n  Fetch URL: git@github.com:noxrepo/pox.git\n  Push  URL: git@github.com:noxrepo/pox.git\n  HEAD branch: carp\n  Remote branches:\n    angler   tracked\n    betta    tracked\n    carp     tracked\n    dart     tracked\n    debugger tracked\n  Local branch configured for 'git pull':\n    carp merges with remote carp\n  Local ref configured for 'git push':\n    carp pushes to carp (up to date)"
+  },
+  "argv": [
+    "./simulator.py",
+    "-v",
+    "-c",
+    "config/fuzz_pox_proactive.py"
+  ],
+  "cwd": "/Users/cs/Research/UCB/code/sts",
+  "host": {
+    "cpu_info": "",
+    "free": "",
+    "name": "yossarian",
+    "num_cores": "0",
+    "uptime": "12:52  up 1 day, 14 hrs, 3 users, load averages: 1.35 1.32 1.25"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "debugger",
+      "commit": "12a8465fa6bb0aae9411a09e902ebe74b2d48cdd"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "577f74480e0a03e31f305cac3ab7d1bc69109706"
+    }
+  },
+  "sys": {
+    "lsb_release": "",
+    "uname": "Darwin yossarian 13.0.2 Darwin Kernel Version 13.0.2: Sun Sep 29 19:38:57 PDT 2013; root:xnu-2422.75.4~1/RELEASE_X86_64 x86_64"
+  },
+  "timestamp": "2014_01_20_12_52_18",
+  "user": "cs"
+}
