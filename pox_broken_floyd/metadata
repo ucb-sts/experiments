@@ -1,0 +1,36 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "config/pox_broken_floyd.py"
+  ],
+  "cwd": "/mnt/rcs/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:     264105312   16034708  248070604          0     153656    6095040\n-/+ buffers/cache:    9786012  254319300\nSwap:            0          0          0",
+    "name": "c75",
+    "num_cores": "32",
+    "uptime": "17:50:07 up 2 days, 20:20,  6 users,  load average: 0.16, 0.27, 0.35"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "debugger",
+      "commit": "8a34e52a23d43bfe1fd4848212e3bc5700f8bf1e"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "2d292c93004659dcc46878758100833ab3bf7668"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 12.04.4 LTS",
+    "uname": "Linux c75 3.8.0-35-generic #50~precise1-Ubuntu SMP Wed Dec 4 17:25:51 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_01_26_17_50_07",
+  "user": "rcs"
+}
