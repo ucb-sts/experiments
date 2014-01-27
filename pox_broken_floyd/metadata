@@ -8,10 +8,10 @@
   "cwd": "/mnt/rcs/sts",
   "host": {
     "cpu_info": "Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz",
-    "free": "total       used       free     shared    buffers     cached\nMem:     264105312   16034708  248070604          0     153656    6095040\n-/+ buffers/cache:    9786012  254319300\nSwap:            0          0          0",
+    "free": "total       used       free     shared    buffers     cached\nMem:     264105312   16076284  248029028          0     157032    6131864\n-/+ buffers/cache:    9787388  254317924\nSwap:            0          0          0",
     "name": "c75",
     "num_cores": "32",
-    "uptime": "17:50:07 up 2 days, 20:20,  6 users,  load average: 0.16, 0.27, 0.35"
+    "uptime": "21:29:31 up 3 days, 0 min,  7 users,  load average: 0.45, 0.47, 0.49"
   },
   "modules": {
     "hassel": {
@@ -24,13 +24,13 @@
     },
     "sts": {
       "branch": "master",
-      "commit": "2d292c93004659dcc46878758100833ab3bf7668"
+      "commit": "9ecde13936e38fc21917d855079670b8545e5b5a"
     }
   },
   "sys": {
     "lsb_release": "Ubuntu 12.04.4 LTS",
     "uname": "Linux c75 3.8.0-35-generic #50~precise1-Ubuntu SMP Wed Dec 4 17:25:51 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
   },
-  "timestamp": "2014_01_26_17_50_07",
+  "timestamp": "2014_01_26_21_29_31",
   "user": "rcs"
 }

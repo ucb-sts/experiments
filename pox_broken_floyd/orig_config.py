@@ -14,7 +14,7 @@ start_cmd = ('''./pox.py --verbose '''
 
 controllers = [ControllerConfig(start_cmd, cwd="pox", port=7777)]
 topology_class = MeshTopology
-topology_params = "num_switches=4"
+topology_params = "num_switches=3"
 
 simulation_config = SimulationConfig(controller_configs=controllers,
                                      topology_class=topology_class,

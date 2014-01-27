@@ -1,7 +1,7 @@
 INFO:Controller: =====> Starting POX Controller <===== 
 [1;36mStarting POX controller c1[1;m
 INFO:Controller:Launching controller c1: ./pox.py --verbose openflow.discovery forwarding.l2_multi_broken_floyd sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=127.0.0.1 --port=7777
-INFO:simulation:Launched controller c1: ./pox.py --verbose openflow.discovery forwarding.l2_multi_broken_floyd sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=127.0.0.1 --port=7777 [PID 33449]
+INFO:simulation:Launched controller c1: ./pox.py --verbose openflow.discovery forwarding.l2_multi_broken_floyd sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=127.0.0.1 --port=7777 [PID 47380]
 INFO:simulation:Creating topology...
 connect_socket_with_backoff ('127.0.0.1', 7777)
 Error connecting.  -- [Errno 111] Connection refused. Backing off 1 seconds ...
@@ -15,30 +15,21 @@ Error connecting.  -- [Errno 111] Connection refused. Backing off 1 seconds ...
 
 [1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening for connections on ('127.0.0.1', 7777)[1;m
 
-connect_socket_with_backoff ('127.0.0.1', 7777)[1;33m[c1] Incoming true socket connected[1;m
+[1;33m[c1] Incoming true socket connected[1;m
+connect_socket_with_backoff ('127.0.0.1', 7777)
 
-
-connect_socket_with_backoff ('127.0.0.1', 7777)[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 34780][1;m
-
-
-connect_socket_with_backoff ('127.0.0.1', 7777)[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 34780][1;m
+connect_socket_with_backoff ('127.0.0.1', 7777)[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 34985][1;m
 
 
 connect_socket_with_backoff ('127.0.0.1', 7777)
-[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 34780][1;m
-
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 34985][1;m
 INFO:control_flow:Waiting until first OpenFlow message received..
-[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 34780][1;m
-[1;36mRound 1 completed.[1;m
+
+[1;36mRound 1 completed.[1;m[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 34985][1;m
+
 
 [1;36mRound 2 completed.[1;m
 [1;36mRound 3 completed.[1;m
-[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 4/4] Connected to 00-00-00-00-00-04[1;m
-
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Connect [Con 4/4][1;m
-
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-04[1;m
-
 [1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 3/3] Connected to 00-00-00-00-00-03[1;m
 
 [1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Connect [Con 3/3][1;m
@@ -60,100 +51,79 @@ INFO:control_flow:Waiting until first OpenFlow message received..
 [1;36mRound 4 completed.[1;m
 [1;36mRound 5 completed.[1;m
 [1;36mRound 6 completed.[1;m
-[1;36mForwarding dataplane event[1;m
 [1;36mRound 7 completed.[1;m
 [1;36mRound 8 completed.[1;m
-[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
-
+[1;36mForwarding dataplane event[1;m
 [1;36mRound 9 completed.[1;m
-[1;36mForwarding dataplane event[1;m
 [1;36mRound 10 completed.[1;m
-[1;36mRound 11 completed.[1;m
-[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.2 -> 00-00-00-00-00-02.1[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
 
+[1;36mRound 11 completed.[1;m
 [1;36mRound 12 completed.[1;m
-[1;36mForwarding dataplane event[1;m
 [1;36mRound 13 completed.[1;m
 [1;36mRound 14 completed.[1;m
-[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.3 -> 00-00-00-00-00-01.1[1;m
-
-[1;36mRound 15 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.4.4.2')]:Recieved packet [00:00:00:00:04:04>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:34><port ID:34><ttl:120><pox.lib.packet.lldp.system_description object at 0x28c3310><tlv end> on interface eth4
+[1;36mRound 15 completed.[1;m
 [1;36mRound 16 completed.[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
+
 [1;36mRound 17 completed.[1;m
 [1;36mRound 18 completed.[1;m
-[1;36mForwarding dataplane event[1;m
 [1;36mRound 19 completed.[1;m
-[1;36mRound 20 completed.[1;m
-[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
-
-[1;36mRound 21 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x17a02d0><tlv end> on interface eth3
+[1;36mRound 20 completed.[1;m
+[1;36mRound 21 completed.[1;m
 [1;36mRound 22 completed.[1;m
 [1;36mRound 23 completed.[1;m
-[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.2 -> 00-00-00-00-00-02.2[1;m
-
 [1;36mRound 24 completed.[1;m
-[1;36mForwarding dataplane event[1;m
 [1;36mRound 25 completed.[1;m
-[1;36mRound 26 completed.[1;m
-[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.3 -> 00-00-00-00-00-01.2[1;m
-
-[1;36mRound 27 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.3.4.2')]:Recieved packet [00:00:00:00:03:04>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:34><ttl:120><pox.lib.packet.lldp.system_description object at 0x28c3650><tlv end> on interface eth3
+[1;36mRound 26 completed.[1;m
+[1;36mRound 27 completed.[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
+
 [1;36mRound 28 completed.[1;m
 [1;36mRound 29 completed.[1;m
 [1;36mRound 30 completed.[1;m
 [1;36mForwarding dataplane event[1;m
 [1;36mRound 31 completed.[1;m
 [1;36mRound 32 completed.[1;m
-[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-04.2[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
 
 [1;36mRound 33 completed.[1;m
-[1;36mForwarding dataplane event[1;m
 [1;36mRound 34 completed.[1;m
 [1;36mRound 35 completed.[1;m
-[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.2 -> 00-00-00-00-00-03.2[1;m
-
 [1;36mRound 36 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x179a4d0><tlv end> on interface eth2
 [1;36mRound 37 completed.[1;m
 [1;36mRound 38 completed.[1;m
-[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.3 -> 00-00-00-00-00-01.3[1;m
-
 [1;36mRound 39 completed.[1;m
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.2.4.2')]:Recieved packet [00:00:00:00:02:04>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:34><ttl:120><pox.lib.packet.lldp.system_description object at 0x28323d0><tlv end> on interface eth2
 [1;36mRound 40 completed.[1;m
 [1;36mRound 41 completed.[1;m
-[1;36mRound 42 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+[1;36mRound 42 completed.[1;m
 [1;36mRound 43 completed.[1;m
-[1;36mRound 44 completed.[1;m
-[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-04.3[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
 
+[1;36mRound 44 completed.[1;m
 [1;36mRound 45 completed.[1;m
 [1;36mRound 46 completed.[1;m
-[1;36mForwarding dataplane event[1;m
 [1;36mRound 47 completed.[1;m
-[1;36mRound 48 completed.[1;m
-[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
-
-[1;36mRound 49 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+[1;36mRound 48 completed.[1;m
+[1;36mRound 49 completed.[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
+
 [1;36mRound 50 completed.[1;m
 [1;36mRound 51 completed.[1;m
-[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.3 -> 00-00-00-00-00-02.3[1;m
-
 [1;36mRound 52 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.1.4.2')]:Recieved packet [00:00:00:00:01:04>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:34><ttl:120><pox.lib.packet.lldp.system_description object at 0x283b190><tlv end> on interface eth1
+INFO:host:[IPAddr('10.1.3.2')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x17a0d50><tlv end> on interface eth1
 [1;36mRound 53 completed.[1;m
 [1;36mRound 54 completed.[1;m
 [1;36mRound 55 completed.[1;m
-[1;36mForwarding dataplane event[1;m
 [1;36mRound 56 completed.[1;m
 [1;36mRound 57 completed.[1;m
 [1;36mRound 58 completed.[1;m
@@ -161,62 +131,59 @@ INFO:host:[IPAddr('10.1.4.2')]:Recieved packet [00:00:00:00:01:04>01:23:20:00:00
 [1;36mRound 59 completed.[1;m
 [1;36mRound 60 completed.[1;m
 [1;36mRound 61 completed.[1;m
-[1;36mForwarding dataplane event[1;m
 [1;36mRound 62 completed.[1;m
 [1;36mRound 63 completed.[1;m
-[1;36mRound 64 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.4.4.2')]:Recieved packet [00:00:00:00:04:04>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:34><port ID:34><ttl:120><pox.lib.packet.lldp.system_description object at 0x283e210><tlv end> on interface eth4
+[1;36mRound 64 completed.[1;m
 [1;36mRound 65 completed.[1;m
 [1;36mRound 66 completed.[1;m
 [1;36mRound 67 completed.[1;m
-[1;36mForwarding dataplane event[1;m
 [1;36mRound 68 completed.[1;m
 [1;36mRound 69 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x17a3910><tlv end> on interface eth3
 [1;36mRound 70 completed.[1;m
-INFO:host:[IPAddr('10.1.4.2')]:sending packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:01:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.1.4.2>10.1.4.2]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-INFO:host:[IPAddr('10.2.4.2')]:sending packet on interface eth2: [12:34:56:78:02:04>12:34:56:78:02:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.2.4.2>10.2.4.2]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-INFO:host:[IPAddr('10.3.4.2')]:sending packet on interface eth3: [12:34:56:78:03:04>12:34:56:78:03:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.3.4.2>10.3.4.2]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-INFO:host:[IPAddr('10.4.4.2')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:04:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.4.4.2>10.4.4.2]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('10.1.3.2')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71f3[10.1.3.2>10.1.3.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:host:[IPAddr('10.2.3.2')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71f0[10.2.3.2>10.2.3.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71ed[10.3.3.2>10.3.3.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
 [1;36mForwarding dataplane event[1;m
 [1;36mForwarding dataplane event[1;m
 [1;36mForwarding dataplane event[1;m
 [1;36mRound 71 completed.[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('10.2.3.2')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71ec[10.2.3.2>10.1.3.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 72 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Learned 12:34:56:78:04:04 at 00-00-00-00-00-04.4[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Learned 12:34:56:78:03:03 at 00-00-00-00-00-03.3[1;m
 
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:04:04 -> 12:34:56:78:04:04 0800 (1 hops)[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:03:03 -> 12:34:56:78:03:03 0800 (1 hops)[1;m
 
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Learned 12:34:56:78:03:04 at 00-00-00-00-00-03.4[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Learned 12:34:56:78:02:03 at 00-00-00-00-00-02.3[1;m
 
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:03:04 -> 12:34:56:78:03:04 0800 (1 hops)[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:02:03 -> 12:34:56:78:02:03 0800 (1 hops)[1;m
 
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Learned 12:34:56:78:02:04 at 00-00-00-00-00-02.4[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Learned 12:34:56:78:01:03 at 00-00-00-00-00-01.3[1;m
 
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:02:04 -> 12:34:56:78:02:04 0800 (1 hops)[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:01:03 -> 12:34:56:78:01:03 0800 (1 hops)[1;m
 
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Learned 12:34:56:78:01:04 at 00-00-00-00-00-01.4[1;m
-
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:01:04 -> 12:34:56:78:01:04 0800 (1 hops)[1;m
-
-WARNING:FuzzSoftwareSwitch(4):out_port 4 == in_port. Dropping
-WARNING:FuzzSoftwareSwitch(2):out_port 4 == in_port. Dropping
-WARNING:FuzzSoftwareSwitch(1):out_port 4 == in_port. Dropping
-WARNING:FuzzSoftwareSwitch(3):out_port 4 == in_port. Dropping
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(1):out_port 3 == in_port. Dropping
+WARNING:FuzzSoftwareSwitch(2):out_port 3 == in_port. Dropping
+WARNING:FuzzSoftwareSwitch(3):out_port 3 == in_port. Dropping
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 73 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:02:03 -> 12:34:56:78:01:03 0800 (2 hops)[1;m
+
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 74 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 75 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('10.1.3.2')]:Recieved packet [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71ec[10.2.3.2>10.1.3.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth1
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 76 completed.[1;m
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.3.4.2')]:Recieved packet [00:00:00:00:03:04>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:34><ttl:120><pox.lib.packet.lldp.system_description object at 0x283b350><tlv end> on interface eth3
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 77 completed.[1;m
 [1;42m[1;37mNo correctness violations![1;m
@@ -225,78 +192,100 @@ INFO:host:[IPAddr('10.3.4.2')]:Recieved packet [00:00:00:00:03:04>01:23:20:00:00
 [1;36mRound 79 completed.[1;m
 [1;36mForwarding dataplane event[1;m
 [1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.4.4.2')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:03:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.4.4.2>10.3.4.2]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:host:[IPAddr('10.2.3.2')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71e8[10.2.3.2>10.3.3.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 80 completed.[1;m
 [1;36mForwarding dataplane event[1;m
 [1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.1.4.2')]:sending packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.1.4.2>10.2.4.2]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71e6[10.3.3.2>10.2.3.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 81 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:04:04 -> 12:34:56:78:03:04 0800 (2 hops)[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:02:03 -> 12:34:56:78:03:03 0800 (2 hops)[1;m
 
-[1;36mForwarding dataplane event[1;m
 [1;36mForwarding dataplane event[1;m
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 82 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:01:04 -> 12:34:56:78:02:04 0800 (2 hops)[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:03:03 -> 12:34:56:78:02:03 0800 (2 hops)[1;m
 
 [1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('10.2.3.2')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71e4[10.2.3.2>10.3.3.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 83 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.3.4.2')]:Recieved packet [12:34:56:78:04:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:a352[10.4.4.2>10.3.4.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth3
 [1;36mForwarding dataplane event[1;m
-[1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.3.4.2')]:sending packet on interface eth3: [12:34:56:78:03:04>12:34:56:78:04:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.3.4.2>10.4.4.2]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-[1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.4.4.2')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:01:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.4.4.2>10.1.4.2]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x17a42d0><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71e8[10.2.3.2>10.3.3.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth3
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 84 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:02:03 -> 12:34:56:78:03:03 0800 (2 hops)[1;m
+
 [1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.2.4.2')]:Recieved packet [12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:a354[10.1.4.2>10.2.4.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth2
-[1;36mCutting link (1:3) -> (2:3)[1;m
+INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71e6[10.3.3.2>10.2.3.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth2
+[1;36mCutting link (1:1) -> (3:2)[1;m
 [1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.2.4.2')]:sending packet on interface eth2: [12:34:56:78:02:04>12:34:56:78:04:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.2.4.2>10.4.4.2]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:host:[IPAddr('10.2.3.2')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71e4[10.2.3.2>10.1.3.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 85 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:04:04 -> 12:34:56:78:01:04 0800 (2 hops)[1;m
-
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:03:04 -> 12:34:56:78:04:04 0800 (2 hops)[1;m
-
 [1;36mForwarding dataplane event[1;m
-[1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.1.4.2')]:sending packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:03:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.1.4.2>10.3.4.2]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-[1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.2.4.2')]:sending packet on interface eth2: [12:34:56:78:02:04>12:34:56:78:04:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.2.4.2>10.4.4.2]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 86 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:02:04 -> 12:34:56:78:04:04 0800 (2 hops)[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:02:03 -> 12:34:56:78:01:03 0800 (2 hops)[1;m
 
 [1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.2.4.2')]:Recieved packet [00:00:00:00:02:04>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:34><ttl:120><pox.lib.packet.lldp.system_description object at 0x283e050><tlv end> on interface eth2
-[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71e4[10.2.3.2>10.3.3.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth3
 [1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 87 completed.[1;m
-[1;33m[c1] SYNTHETIC BUG[1;m
+[1;36mForwarding dataplane event[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 88 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('10.1.3.2')]:Recieved packet [12:34:56:78:02:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71e4[10.2.3.2>10.1.3.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth1
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('10.2.3.2')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71e0[10.2.3.2>10.3.3.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 89 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRestoring link (1:1) -> (3:2)[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 90 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 91 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71e0[10.2.3.2>10.3.3.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth3
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('10.1.3.2')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71e1[10.1.3.2>10.2.3.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 92 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 93 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:01:03 -> 12:34:56:78:02:03 0800 (2 hops)[1;m
 
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:02:04 -> 12:34:56:78:04:04 0800 (2 hops)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('10.1.3.2')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71de[10.1.3.2>10.3.3.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 94 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71dc[10.3.3.2>10.1.3.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 95 completed.[1;m
+[1;33m[c1] SYNTHETIC BUG[1;m
 
 [1;33m[c1] MATCH ofp_match[1;m
 
 [1;33m[c1]   wildcards: in_port (1 = 0x1)[1;m
 
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:01:04 -> 12:34:56:78:03:04 0800 (3 hops)[1;m
+[1;33m[c1]   dl_src: 12:34:56:78:01:03[1;m
 
-[1;33m[c1]   dl_src: 12:34:56:78:01:04[1;m
-
-[1;33m[c1]   dl_dst: 12:34:56:78:03:04[1;m
+[1;33m[c1]   dl_dst: 12:34:56:78:03:03[1;m
 
 [1;33m[c1]   dl_vlan: 65535[1;m
 
@@ -304,119 +293,28 @@ INFO:host:[IPAddr('10.2.4.2')]:Recieved packet [00:00:00:00:02:04>01:23:20:00:00
 
 [1;33m[c1]   dl_type: 0x800[1;m
 
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:01:03 -> 12:34:56:78:03:03 0800 (3 hops)[1;m
+
 [1;33m[c1]   nw_tos: 0[1;m
 
 [1;33m[c1]   nw_proto: 1[1;m
 
-[1;33m[c1]   nw_src: 10.1.4.2[1;m
+[1;33m[c1]   nw_src: 10.1.3.2[1;m
 
-[1;33m[c1]   nw_dst: 10.3.4.2[1;m
+[1;33m[c1]   nw_dst: 10.3.3.2[1;m
 
-[1;33m[c1]   tp_src: 8[1;m
+[1;33m[c1]   tp_src: 0[1;m
 
 [1;33m[c1]   tp_dst: 0[1;m
 
-[1;33m[c1] [(00-00-00-00-00-01, 3), (00-00-00-00-00-02, 2), (00-00-00-00-00-03, 3)][1;m
-
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.4.4.2')]:Recieved packet [12:34:56:78:03:04>12:34:56:78:04:04:IP]|([v:4hl:5l:72t:64]ICMP cs:a34e[10.3.4.2>10.4.4.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth4
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.1.4.2')]:Recieved packet [12:34:56:78:04:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:a34f[10.4.4.2>10.1.4.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth1
-[1;36mForwarding dataplane event[1;m
-WARNING:FuzzSoftwareSwitch(1):Port 3 is currently down. Dropping packet
-[1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.2.4.2')]:sending packet on interface eth2: [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.2.4.2>10.1.4.2]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-[1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.3.4.2')]:sending packet on interface eth3: [12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.3.4.2>10.2.4.2]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 88 completed.[1;m
-[1;36mDropping dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.4.4.2')]:Recieved packet [12:34:56:78:02:04>12:34:56:78:04:04:IP]|([v:4hl:5l:72t:64]ICMP cs:a34b[10.2.4.2>10.4.4.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth4
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 89 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:03:04 -> 12:34:56:78:02:04 0800 (2 hops)[1;m
-
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:02:04 -> 12:34:56:78:01:04 0800 (2 hops)[1;m
+[1;33m[c1] [(00-00-00-00-00-01, 2), (00-00-00-00-00-02, 1), (00-00-00-00-00-03, 2)][1;m
 
 [1;36mForwarding dataplane event[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.4.4.2')]:Recieved packet [12:34:56:78:02:04>12:34:56:78:04:04:IP]|([v:4hl:5l:72t:64]ICMP cs:a348[10.2.4.2>10.4.4.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth4
-[1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.3.4.2')]:sending packet on interface eth3: [12:34:56:78:03:04>12:34:56:78:04:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.3.4.2>10.4.4.2]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 90 completed.[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 91 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:03:04 -> 12:34:56:78:04:04 0800 (2 hops)[1;m
-
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.2.4.2')]:Recieved packet [12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:a345[10.3.4.2>10.2.4.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth2
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.1.4.2')]:Recieved packet [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:a348[10.2.4.2>10.1.4.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth1
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 92 completed.[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.2.4.2')]:sending packet on interface eth2: [12:34:56:78:02:04>12:34:56:78:03:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.2.4.2>10.3.4.2]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-[1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.4.4.2')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:01:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.4.4.2>10.1.4.2]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 93 completed.[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.4.4.2')]:Recieved packet [12:34:56:78:03:04>12:34:56:78:04:04:IP]|([v:4hl:5l:72t:64]ICMP cs:a340[10.3.4.2>10.4.4.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth4
-[1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.4.4.2')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.4.4.2>10.2.4.2]){t:ECHO_REQUEST c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 94 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:02:04 -> 12:34:56:78:03:04 0800 (2 hops)[1;m
-
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.1.4.2')]:Recieved packet [00:00:00:00:01:04>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:34><ttl:120><pox.lib.packet.lldp.system_description object at 0x285a050><tlv end> on interface eth1
-[1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.2.4.2')]:sending packet on interface eth2: [12:34:56:78:02:04>12:34:56:78:04:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.2.4.2>10.4.4.2]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 95 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:04:04 -> 12:34:56:78:02:04 0800 (2 hops)[1;m
-
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.1.4.2')]:Recieved packet [12:34:56:78:04:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:a33f[10.4.4.2>10.1.4.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth1
-[1;36mInjecting a random packet[1;m
-INFO:host:[IPAddr('10.3.4.2')]:sending packet on interface eth3: [12:34:56:78:03:04>12:34:56:78:01:04:IP]|([v:4hl:5l:20t:64]ICMP cs:0[10.3.4.2>10.1.4.2]){t:ECHO_REPLY c:0 chk:0}PingPingPingPingPingPingPingPingPingPingPingPing
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 96 completed.[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.3.4.2')]:Recieved packet [12:34:56:78:02:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:a340[10.2.4.2>10.3.4.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth3
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 97 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:03:04 -> 12:34:56:78:01:04 0800 (2 hops)[1;m
-
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.2.4.2')]:Recieved packet [12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:a33c[10.4.4.2>10.2.4.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth2
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.4.4.2')]:Recieved packet [12:34:56:78:02:04>12:34:56:78:04:04:IP]|([v:4hl:5l:72t:64]ICMP cs:a33a[10.2.4.2>10.4.4.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth4
-[1;36mRestoring link (1:3) -> (2:3)[1;m
-[1;41m[1;37mThe following correctness violations have occurred: ["(200004, ['-> Port: 200004', '-> Port: 300002', '-> Port: 100002', '-> Port: 200003', '-> Port: 300002'], (dl_src:12:34:56:78:01:04,dl_dst:12:34:56:78:03:04,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:10.1.4.2/32,nw_dst:10.3.4.2/32,tp_src:8,tp_dst:0) - ([]))"][1;m
-[1;41m[1;37mPersistent violations detected!: ["(200004, ['-> Port: 200004', '-> Port: 300002', '-> Port: 100002', '-> Port: 200003', '-> Port: 300002'], (dl_src:12:34:56:78:01:04,dl_dst:12:34:56:78:03:04,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:10.1.4.2/32,nw_dst:10.3.4.2/32,tp_src:8,tp_dst:0) - ([]))"][1;m
-INFO:control_flow:Terminating fuzzing after 98 rounds
+INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71e1[10.1.3.2>10.2.3.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing on interface eth2
+[1;41m[1;37mThe following correctness violations have occurred: ["(300003, ['-> Port: 300003', '-> Port: 100001', '-> Port: 200002', '-> Port: 300001', '-> Port: 100001'], (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:10.1.3.2/32,nw_dst:10.3.3.2/32,tp_src:0,tp_dst:0) - ([]))", "(200003, ['-> Port: 200003', '-> Port: 300001', '-> Port: 100001', '-> Port: 200002', '-> Port: 300001'], (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:10.1.3.2/32,nw_dst:10.3.3.2/32,tp_src:0,tp_dst:0) - ([]))"][1;m
+[1;41m[1;37mPersistent violations detected!: ["(300003, ['-> Port: 300003', '-> Port: 100001', '-> Port: 200002', '-> Port: 300001', '-> Port: 100001'], (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:10.1.3.2/32,nw_dst:10.3.3.2/32,tp_src:0,tp_dst:0) - ([]))", "(200003, ['-> Port: 200003', '-> Port: 300001', '-> Port: 100001', '-> Port: 200002', '-> Port: 300001'], (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:10.1.3.2/32,nw_dst:10.3.3.2/32,tp_src:0,tp_dst:0) - ([]))"][1;m
+INFO:control_flow:Terminating fuzzing after 96 rounds
 INFO:control_flow:Pending Messages:
-INFO:control_flow:- PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'reason': 0, 'class': 'ofp_port_status', 'desc': (3, '00:00:00:00:01:03')})
-[1;36mKilling controller c1 (pid 33449)[1;m
+[1;36mKilling controller c1 (pid 47380)[1;m
 Terminating child controllers... OK
