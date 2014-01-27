@@ -1,0 +1,155 @@
+Violation reproduced successfully! Proceeding with pruning
+Subsets:
+l/0: e87 e88 e89 e96 e97 e103 e107 e111 e114 e115 e116 e118 e121 e122 e126 e127 e132 e137 e138 e144
+r/0: a(e148,e166) e149 e150 e155 e159 e161 e163 e164 e167 e170 e173 e174 e179 e183 e184 e188 e189 e197 e199
+Current subset: l/0: e87 e88 e89 e96 e97 e103 e107 e111 e114 e115 e116 e118 e121 e122 e126 e127 e132 e137 e138 e144
+No violation in 0'th...
+Current subset: r/0: a(e148,e166) e149 e150 e155 e159 e161 e163 e164 e167 e170 e173 e174 e179 e183 e184 e188 e189 e197 e199
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.l/1: e87 e88 e89 e96 e97 e103 e107 e111 e114 e115
+il/0.r/1: e116 e118 e121 e122 e126 e127 e132 e137 e138 e144
+Current subset: il/0.l/1: e87 e88 e89 e96 e97 e103 e107 e111 e114 e115
+No violation in 0'th...
+Current subset: il/0.r/1: e116 e118 e121 e122 e126 e127 e132 e137 e138 e144
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.il/1.l/2: e87 e88 e89 e96 e97
+il/0.il/1.r/2: e103 e107 e111 e114 e115
+Current subset: il/0.il/1.l/2: e87 e88 e89 e96 e97
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.il/1.l/2.l/3: e87 e88 e89
+il/0.il/1.l/2.r/3: e96 e97
+Current subset: il/0.il/1.l/2.l/3: e87 e88 e89
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.il/1.l/2.l/3.l/4: e87 e88
+il/0.il/1.l/2.l/3.r/4: e89
+Current subset: il/0.il/1.l/2.l/3.l/4: e87 e88
+No violation in 0'th...
+Current subset: il/0.il/1.l/2.l/3.r/4: e89
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.il/1.l/2.l/3.il/4.l/5: e87
+il/0.il/1.l/2.l/3.il/4.r/5: e88
+Current subset: il/0.il/1.l/2.l/3.il/4.l/5: e87
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [TrafficInjection:e87:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:03:[IPAddr('10.1.3.2')] Packet:[12:34:56:78:01:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71f3[10.1.3.2>10.1.3.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, 1)]
+Recursing on right half
+Base case [TrafficInjection:e89:('TrafficInjection', Interface:HostInterface:eth3:12:34:56:78:03:03:[IPAddr('10.3.3.2')] Packet:[12:34:56:78:03:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71ed[10.3.3.2>10.3.3.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, 3)]
+Recursing on right half
+Subsets:
+il/0.ir/1.l/2: e116 e118 e121 e122 e126
+il/0.ir/1.r/2: e127 e132 e137 e138 e144
+Current subset: il/0.ir/1.l/2: e116 e118 e121 e122 e126
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.ir/1.l/2.l/3: e116 e118 e121
+il/0.ir/1.l/2.r/3: e122 e126
+Current subset: il/0.ir/1.l/2.l/3: e116 e118 e121
+No violation in 0'th...
+Current subset: il/0.ir/1.l/2.r/3: e122 e126
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.ir/1.l/2.il/3.l/4: e116 e118
+il/0.ir/1.l/2.il/3.r/4: e121
+Current subset: il/0.ir/1.l/2.il/3.l/4: e116 e118
+No violation in 0'th...
+Current subset: il/0.ir/1.l/2.il/3.r/4: e121
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [TrafficInjection:e121:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:03:[IPAddr('10.2.3.2')] Packet:[12:34:56:78:02:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71e8[10.2.3.2>10.3.3.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)]
+Recursing on right half
+Subsets:
+il/0.ir/1.l/2.ir/3.l/4: e122
+il/0.ir/1.l/2.ir/3.r/4: e126
+Current subset: il/0.ir/1.l/2.ir/3.l/4: e122
+No violation in 0'th...
+Current subset: il/0.ir/1.l/2.ir/3.r/4: e126
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [TrafficInjection:e126:('TrafficInjection', Interface:HostInterface:eth3:12:34:56:78:03:03:[IPAddr('10.3.3.2')] Packet:[12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71e6[10.3.3.2>10.2.3.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)]
+Recursing on right half
+Subsets:
+ir/0.l/1: a(e148,e166) e149 e150 e155 e159 e161 e163 e164 e167 e170
+ir/0.r/1: e173 e174 e179 e183 e184 e188 e189 e197 e199
+Current subset: ir/0.l/1: a(e148,e166) e149 e150 e155 e159 e161 e163 e164 e167 e170
+No violation in 0'th...
+Current subset: ir/0.r/1: e173 e174 e179 e183 e184 e188 e189 e197 e199
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+ir/0.il/1.l/2: a(e148,e166) e149 e150 e155 e159
+ir/0.il/1.r/2: e161 e163 e164 e167 e170
+Current subset: ir/0.il/1.l/2: a(e148,e166) e149 e150 e155 e159
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.il/1.l/2.l/3: a(e148,e166) e149 e150
+ir/0.il/1.l/2.r/3: e155 e159
+Current subset: ir/0.il/1.l/2.l/3: a(e148,e166) e149 e150
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.il/1.l/2.l/3.l/4: a(e148,e166) e149
+ir/0.il/1.l/2.l/3.r/4: e150
+Current subset: ir/0.il/1.l/2.l/3.l/4: a(e148,e166) e149
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.il/1.l/2.l/3.l/4.l/5: a(e148,e166)
+ir/0.il/1.l/2.l/3.l/4.r/5: e149
+Current subset: ir/0.il/1.l/2.l/3.l/4.l/5: a(e148,e166)
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [LinkFailure:e148:('LinkFailure', 1, 1, 3, 2), LinkRecovery:e166:('LinkRecovery', 1, 1, 3, 2)]
+Recursing on right half
+Subsets:
+ir/0.ir/1.l/2: e173 e174 e179 e183 e184
+ir/0.ir/1.r/2: e188 e189 e197 e199
+Current subset: ir/0.ir/1.l/2: e173 e174 e179 e183 e184
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.ir/1.l/2.l/3: e173 e174 e179
+ir/0.ir/1.l/2.r/3: e183 e184
+Current subset: ir/0.ir/1.l/2.l/3: e173 e174 e179
+No violation in 0'th...
+Current subset: ir/0.ir/1.l/2.r/3: e183 e184
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+ir/0.ir/1.l/2.r/3.l/4: e183
+ir/0.ir/1.l/2.r/3.r/4: e184
+Current subset: ir/0.ir/1.l/2.r/3.l/4: e183
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [TrafficInjection:e183:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:03:[IPAddr('10.1.3.2')] Packet:[12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:71de[10.1.3.2>10.3.3.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)]
+=== Total replays: 27 ===
+Final MCS (7 elements):
+ - TrafficInjection:e87
+ - TrafficInjection:e89
+ - TrafficInjection:e121
+ - TrafficInjection:e126
+ - LinkFailure:e148
+ - LinkRecovery:e166
+ - TrafficInjection:e183
+Warning: MCS did not result in violation. Trying replay again without timed out events.
+Warning! Final MCS did not result in violation, even after ignoring timed out internal events. Your run ''
+                   '' is probably effected by non-determinism.
+Try setting MCSFinder's max_replays_per_subsequence parameter in your config file (e.g. max_replays_per_subsequence=10)
+If that still doesn't work, see tools/visualization/visualize1D.html for debugging
