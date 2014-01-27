@@ -11,7 +11,7 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(start_
                  patch_panel_class=BufferedPatchPanel,
                  multiplex_sockets=False)
 
-control_flow = Replayer(simulation_config, "experiments/floodlight_loop_2014_mcs_2014_01_14_21_42_58/mcs.trace.notimeouts",
+control_flow = Replayer(simulation_config, "experiments/floodlight_loop_2014_mcs_2014_01_24_11_28_56/mcs.trace.notimeouts",
                         input_logger=InputLogger(),
                         wait_on_deterministic_values=False)
 # Invariant check: 'None'

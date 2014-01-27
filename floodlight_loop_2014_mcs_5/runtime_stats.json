@@ -7,72 +7,81 @@
   },
   "initial_verification_runs_needed": 0,
   "iteration_size": {
-    "0": 5
+    "0": 9
   },
   "matched_events": {
     "1": {
-      "CheckInvariants": 5,
+      "CheckInvariants": 10,
       "ConnectToControllers": 1,
-      "ControlMessageReceive": 186,
-      "ControlMessageSend": 147,
+      "ControlMessageReceive": 167,
+      "ControlMessageSend": 166,
       "DataplaneDrop": 10,
-      "DataplanePermit": 202,
-      "LinkFailure": 9,
-      "LinkRecovery": 9,
-      "SwitchFailure": 4,
-      "SwitchRecovery": 3,
-      "TrafficInjection": 36
+      "DataplanePermit": 144,
+      "LinkFailure": 14,
+      "LinkRecovery": 14,
+      "SwitchFailure": 7,
+      "SwitchRecovery": 7,
+      "TrafficInjection": 61
     }
   },
   "new_internal_events": {
     "1": [
       "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 0, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L'})",
+      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_barrier_request'})",
       "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_echo_request'})",
       "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
       "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
       "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
       "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(65531)',), 'data': DPFingerprint{'dl_dst': '12:34:56:78:02:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.2.3'}, 'class': 'ofp_packet_out', 'in_port': 3})",
       "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 0, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L'})",
       "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_echo_request'})",
-      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
       "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 0, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L'})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_barrier_request'})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_echo_request'})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_barrier_request'})",
       "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
       "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
-      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
-      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
-      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(65531)',), 'data': DPFingerprint{'dl_dst': '12:34:56:78:03:03', 'nw_src': '123.123.1.3', 'dl_src': '12:34:56:78:01:03', 'nw_dst': '123.123.3.3'}, 'class': 'ofp_packet_out', 'in_port': 3})",
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
       "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
-      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_echo_request'})",
+      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
       "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_echo_request'})"
     ]
   },
   "original_duration_seconds": 23.627130031585693,
   "peeker": false,
-  "prune_duration_seconds": 12050.119612932205,
-  "prune_end_epoch": 1389732294.997227,
-  "prune_start_epoch": 1389720244.877614,
-  "replay_duration_seconds": 39.20972681045532,
-  "replay_end_epoch": 1389720244.877498,
-  "replay_start_epoch": 1389720205.667771,
-  "runtime_stats_file": "experiments/floodlight_loop_2014_mcs_2014_01_14_09_23_25/runtime_stats.json",
+  "prune_duration_seconds": 22965.17924618721,
+  "prune_end_epoch": 1390576576.032602,
+  "prune_start_epoch": 1390553610.853356,
+  "replay_duration_seconds": 0,
+  "replay_end_epoch": 0,
+  "replay_start_epoch": 0,
+  "runtime_stats_file": "experiments/floodlight_loop_2014_mcs_2014_01_24_00_53_30/runtime_stats.json",
   "timed_out_events": {
     "1": {
-      "ControlMessageReceive": 49,
-      "ControlMessageSend": 50,
-      "DataplaneDrop": 3,
-      "DataplanePermit": 117
+      "ControlMessageReceive": 68,
+      "ControlMessageSend": 31,
+      "DataplaneDrop": 14,
+      "DataplanePermit": 175
     }
   },
   "total_events": 910,
   "total_inputs": 157,
-  "total_inputs_replayed": 6572,
-  "total_replays": 74,
+  "total_inputs_replayed": 14585,
+  "total_replays": 125,
   "violation_found_in_run": {
-    "0": 9,
-    "1": 2
+    "0": 6,
+    "1": 4,
+    "2": 3,
+    "3": 3,
+    "4": 1
   }
 }
