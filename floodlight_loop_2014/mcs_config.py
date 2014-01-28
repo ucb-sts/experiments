@@ -18,7 +18,7 @@ command_line = ("java %s %s -jar target/floodlight.jar -cf __config__" % (jvm_op
 timestamp_results = True
 
 # Use Floodlight as our controller
-controllers = [ ControllerConfig(command_line, cwd="../floodlight", port=6633, config_template="experiments/floodlight_loop_2014/floodlightconfig.properties") ]
+controllers = [ ControllerConfig(command_line, cwd="../floodlight", port=6688, config_template="experiments/floodlight_loop_2014/floodlightconfig.properties") ]
 topology_class = MeshTopology
 topology_params = "num_switches=3"
 
@@ -28,6 +28,6 @@ simulation_config = SimulationConfig(controller_configs=controllers,
                                      )
 
 control_flow = EfficientMCSFinder(simulation_config, "experiments/floodlight_loop_2014/events.trace",
-                                  no_violation_verification_runs=1,
+                                  no_violation_verification_runs=8,
                                   wait_on_deterministic_values=False,
                                   invariant_check_name='check_for_loops_blackholes')

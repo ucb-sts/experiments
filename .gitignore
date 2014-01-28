@@ -19,3 +19,5 @@ old.*
 mcs_simple_test/*
 fuzzer_simple_test/*
 replayer_simple_test/*
+
+floodlight_loop_2014*/inter*
