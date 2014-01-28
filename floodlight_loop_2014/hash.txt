@@ -1,5 +1,0 @@
-ucb-sts/sts - fc1c80f9c482c71244553b97fcbb0a4b06c1a796
-ucb-sts/pox (debugger branch) - 851ef1379d7aef75fdc9960cde1f75751be7d168
-ucb-sts/experiments - 1985b81ed94a0bf9ab323ade71134109d0462f51
-hassel (submodule) - d63193500fca48cba053205c413d72eebfd233e9
-floodlight/floodlight - 737086ca11acd103697b257ffa5a7cf9755c526d
