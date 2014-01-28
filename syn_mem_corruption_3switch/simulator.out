@@ -1,0 +1,244 @@
+INFO:Controller: =====> Starting POX Controller <===== 
+[1;36mStarting POX controller c1[1;m
+INFO:Controller:Launching controller c1: ./pox.py --verbose openflow.of_01 --address=127.0.0.1 --port=8888 openflow.discovery forwarding.l2_multi_syn_mem_corruption
+INFO:simulation:Launched controller c1: ./pox.py --verbose openflow.of_01 --address=127.0.0.1 --port=8888 openflow.discovery forwarding.l2_multi_syn_mem_corruption [PID 40348]
+INFO:simulation:Creating topology...
+connect_socket_with_backoff ('127.0.0.1', 8888)
+Error connecting.  -- [Errno 111] Connection refused. Backing off 1 seconds ...
+[1;33m[c1] POX 0.0.0 / Copyright 2011 James McCauley[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:POX 0.0.0 going up...[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Running on CPython (2.7.3/Sep 26 2013 20:03:06)[1;m
+
+[1;41m[1;33m[c1] INFO:core:POX 0.0.0 is up.[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening for connections on ('127.0.0.1', 8888)[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 8888)
+connect_socket_with_backoff ('127.0.0.1', 8888)
+[1;32mSTS Interactive console.[1;37m
+Python expressions and sts commands supported.
+Type 'help' for an overview of available commands.
+
+INFO:openflow_buffer:Received fp: {'class': 'ofp_hello'}
+INFO:openflow_buffer:Received fp: {'class': 'ofp_hello'}
+INFO:openflow_buffer:Received fp: {'class': 'ofp_hello'}
+INFO:openflow_buffer:Received fp: {'class': 'ofp_features_request'}
+INFO:openflow_buffer:Received fp: {'class': 'ofp_features_request'}
+INFO:openflow_buffer:Received fp: {'class': 'ofp_features_request'}
+INFO:openflow_buffer:Received fp: {'class': 'ofp_set_config'}
+INFO:openflow_buffer:Received fp: {'class': 'ofp_set_config'}
+INFO:openflow_buffer:Received fp: {'class': 'ofp_set_config'}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'class': 'ofp_barrier_request'}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'class': 'ofp_barrier_request'}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'class': 'ofp_barrier_request'}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'add', 'actions': ('output(65533)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None'}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'add', 'actions': ('output(65533)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None'}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'add', 'actions': ('output(65533)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None'}
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x1f54b10><tlv end> on interface eth3
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x235bf90><tlv end> on interface eth2
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:host:[IPAddr('10.1.3.2')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x1f53f90><tlv end> on interface eth1
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:host:[IPAddr('10.1.3.2')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x235e050><tlv end> on interface eth1
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2364290><tlv end> on interface eth3
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x23661d0><tlv end> on interface eth2
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:host:[IPAddr('10.1.3.2')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x235ed10><tlv end> on interface eth1
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x235b650><tlv end> on interface eth3
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x1f53110><tlv end> on interface eth2
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:host:[IPAddr('10.1.3.2')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x236b090><tlv end> on interface eth1
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x1f4de10><tlv end> on interface eth3
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x235e690><tlv end> on interface eth2
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+  File "<console>", line 1
+    sl 2
+       ^
+SyntaxError: invalid syntax
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:host:[IPAddr('10.1.3.2')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2364a90><tlv end> on interface eth1
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x236b790><tlv end> on interface eth3
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x235e1d0><tlv end> on interface eth2
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+WARNING:FuzzSoftwareSwitch(1):Port 2 is currently down. Dropping packet
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/mnt/andi/sts/sts/sts/control_flow/interactive.py", line 434, in cut_link
+    link = topology.get_link(dpid1, dpid2)
+  File "/mnt/andi/sts/sts/sts/topology.py", line 511, in get_link
+    raise ValueError("Unknown link (%d -> %d)" % (dpid1, dpid2))
+ValueError: Unknown link (3 -> 4)
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2366d90><tlv end> on interface eth3
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+WARNING:FuzzSoftwareSwitch(1):Port 2 is currently down. Dropping packet
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x235b990><tlv end> on interface eth3
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:host:[IPAddr('10.1.3.2')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x1f54410><tlv end> on interface eth1
+INFO:host:[IPAddr('10.1.3.2')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2366890><tlv end> on interface eth1
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x237de10><tlv end> on interface eth2
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2364cd0><tlv end> on interface eth2
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/mnt/andi/sts/sts/sts/control_flow/interactive.py", line 434, in cut_link
+    link = topology.get_link(dpid1, dpid2)
+  File "/mnt/andi/sts/sts/sts/topology.py", line 511, in get_link
+    raise ValueError("Unknown link (%d -> %d)" % (dpid1, dpid2))
+ValueError: Unknown link (1 -> 34)
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2364dd0><tlv end> on interface eth3
+INFO:host:[IPAddr('10.1.3.2')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2385dd0><tlv end> on interface eth1
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x235e310><tlv end> on interface eth2
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2}
+INFO:openflow_buffer:Received fp: {'actions': (), 'data': (), 'class': 'ofp_packet_out', 'in_port': 1}
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+WARNING:FuzzSoftwareSwitch(1):Port 1 is currently down. Dropping packet
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(3)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+INFO:openflow_buffer:Received fp: {'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}
+WARNING:FuzzSoftwareSwitch(1):Port 1 is currently down. Dropping packet
+WARNING:io_master:Closing socket due to empty read
+WARNING:io_master:Closing socket due to empty read
+WARNING:io_master:Closing socket due to empty read
+INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x237d8d0><tlv end> on interface eth3
+INFO:host:[IPAddr('10.1.3.2')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2366a10><tlv end> on interface eth1
+INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x237d990><tlv end> on interface eth2
+WARNING:interactive:Unknown invariant kind...
+INFO:invariant_checker:Problems found while checking controller liveness:
+INFO:invariant_checker:Controller c1 - Controller c1: Alive, but controller process terminated with return code 1
+INFO:invariant_checker:No live controllers left
+

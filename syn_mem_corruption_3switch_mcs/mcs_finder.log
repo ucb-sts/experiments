@@ -1,0 +1,20 @@
+Violation reproduced successfully! Proceeding with pruning
+Subsets:
+l/0: a(e180,[u'e223']) a(e277,[u'e297'])
+r/0: e320 e322
+Current subset: l/0: a(e180,[u'e223']) a(e277,[u'e297'])
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1: a(e180,[u'e223'])
+l/0.r/1: a(e277,[u'e297'])
+Current subset: l/0.l/1: a(e180,[u'e223'])
+No violation in 0'th...
+Current subset: l/0.r/1: a(e277,[u'e297'])
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [LinkFailure:e277:('LinkFailure', 1, 1, 3, 2), LinkRecovery:e297:('LinkRecovery', 1, 1, 3, 2)]
+=== Total replays: 4 ===
+Final MCS (2 elements):
+ - LinkFailure:e277
+ - LinkRecovery:e297

@@ -1,0 +1,36 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/syn_mem_corruption_3switch/mcs_config.py"
+  ],
+  "cwd": "/mnt/andi/sts/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:     264105312   26556840  237548472          0     188468   15100712\n-/+ buffers/cache:   11267660  252837652\nSwap:            0          0          0",
+    "name": "c75",
+    "num_cores": "32",
+    "uptime": "21:51:25 up 4 days, 21 min, 14 users,  load average: 1.34, 1.26, 1.25"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "debugger",
+      "commit": "4018758449a4eeb3dd99fccbea6b60b6197d2c81"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "057a005ece9960a5676f7cc46df2b27fe4fefdb4"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 12.04.4 LTS",
+    "uname": "Linux c75 3.8.0-35-generic #50~precise1-Ubuntu SMP Wed Dec 4 17:25:51 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_01_27_21_51_25",
+  "user": "andi"
+}
