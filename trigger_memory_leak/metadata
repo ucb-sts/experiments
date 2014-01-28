@@ -1,0 +1,36 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "config/trigger_memory_leak.py"
+  ],
+  "cwd": "/Users/cs/Research/UCB/code/sts",
+  "host": {
+    "cpu_info": "",
+    "free": "",
+    "name": "yossarian",
+    "num_cores": "0",
+    "uptime": "17:38  up 6 days,  5:57, 3 users, load averages: 1.13 1.27 1.26"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "debugger",
+      "commit": "2a6016d8ab1efbba267c82196b43b97679c904c0"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "964c7cc107e765061db71394fa698d893728db0c"
+    }
+  },
+  "sys": {
+    "lsb_release": "",
+    "uname": "Darwin yossarian 13.0.2 Darwin Kernel Version 13.0.2: Sun Sep 29 19:38:57 PDT 2013; root:xnu-2422.75.4~1/RELEASE_X86_64 x86_64"
+  },
+  "timestamp": "2014_01_27_17_38_04",
+  "user": "cs"
+}
