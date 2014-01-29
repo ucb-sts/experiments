@@ -1,0 +1,2842 @@
+WARNING:setup:No get_additional_metadata() defined for config file. See config/nox_routing.py for an example.
+INFO:Controller: =====> Starting POX Controller <===== 
+[1;36mStarting POX controller c1[1;m
+INFO:Controller:Launching controller c1: ./pox.py --verbose openflow.discovery forwarding.topo_proactive sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=127.0.0.1 --port=6633
+INFO:simulation:Launched controller c1: ./pox.py --verbose openflow.discovery forwarding.topo_proactive sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=127.0.0.1 --port=6633 [PID 65570]
+INFO:simulation:Creating topology...
+connect_socket_with_backoff ('127.0.0.1', 6633)
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+[1;33m[c1] POX 0.3.0 (dart) / Copyright 2011-2013 James McCauley, et al.[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:POX 0.3.0 (dart) going up...[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Running on CPython (2.7.5/Sep 12 2013 21:33:34)[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Platform is Darwin-13.0.2-x86_64-i386-64bit[1;m
+
+[1;41m[1;33m[c1] INFO:core:POX 0.3.0 (dart) is up.[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening on 127.0.0.1:6633[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)[1;33m[c1] Incoming true socket connected[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+INFO:control_flow:Waiting until first OpenFlow message received..
+[1;36mCutting link (9:5) -> (5:2)[1;m
+ [1;36mCutting link (3:2) -> (9:7)[1;m
+[1;36mCutting link (2:8) -> (3:8)[1;m[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+
+
+[1;36mCutting link (10:5) -> (5:1)[1;m
+[1;36mCutting link (8:7) -> (3:3)[1;m[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+
+[1;36mCutting link (9:2) -> (8:2)[1;m
+
+[1;36mCutting link (8:6) -> (4:3)[1;m[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+
+
+[1;36mCutting link (4:9) -> (1:7)[1;m
+[1;36mCutting link (5:5) -> (6:5)[1;m[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+
+
+[1;36mCutting link (1:3) -> (8:9)[1;m[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+
+[1;36mInjecting a random packet[1;m
+
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+
+INFO:host:[IPAddr('123.123.5.10')]:sending packet on interface eth5: [12:34:56:78:05:0a>12:34:56:78:07:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e3bb[123.123.5.10>123.123.7.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.10.10')] (10), New switch 9, New port 11[1;m
+ INFO:host:[IPAddr('123.123.10.10')]:sending packet on interface eth10: [12:34:56:78:0a:0a>12:34:56:78:0a:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:dbba[123.123.10.10>123.123.10.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+[1;36mMigrating host host:[IPAddr('123.123.6.10')] (6), New switch 3, New port 11[1;m
+
+INFO:host:[IPAddr('123.123.6.10')]:sending packet on interface eth6: [12:34:56:78:06:0a>12:34:56:78:06:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e3b9[123.123.6.10>123.123.6.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+[1;42m[1;37mNo correctness violations![1;m
+
+[1;36mRound 1 completed.[1;m
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (2:7) -> (4:8)[1;m
+[1;36mCutting link (5:2) -> (9:5)[1;m
+[1;36mCutting link (2:9) -> (1:9)[1;m
+[1;36mCutting link (9:8) -> (2:2)[1;m
+[1;36mCutting link (1:1) -> (10:9)[1;m
+[1;36mCutting link (4:6) -> (5:6)[1;m
+[1;36mCutting link (9:1) -> (10:1)[1;m
+[1;36mCutting link (1:4) -> (7:9)[1;m
+[1;36mCutting link (6:6) -> (4:5)[1;m
+[1;36mCutting link (7:2) -> (9:3)[1;m
+[1;36mRestoring link (3:2) -> (9:7)[1;m
+[1;36mRestoring link (8:6) -> (4:3)[1;m
+[1;36mRestoring link (4:9) -> (1:7)[1;m
+[1;36mRestoring link (8:7) -> (3:3)[1;m
+[1;36mRestoring link (9:2) -> (8:2)[1;m
+[1;36mRestoring link (2:8) -> (3:8)[1;m
+[1;36mRestoring link (1:3) -> (8:9)[1;m
+[1;36mRestoring link (5:5) -> (6:5)[1;m
+[1;36mMigrating host host:[IPAddr('123.123.10.10')] (10), New switch 1, New port 11[1;m
+INFO:host:[IPAddr('123.123.10.10')]:sending packet on interface eth10: [12:34:56:78:0a:0a>12:34:56:78:0a:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:dbb5[123.123.10.10>123.123.10.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.9.10')] (9), New switch 5, New port 11[1;m
+INFO:host:[IPAddr('123.123.9.10')]:sending packet on interface eth9: [12:34:56:78:09:0a>12:34:56:78:09:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:ddb4[123.123.9.10>123.123.9.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.5.10')] (5), New switch 8, New port 11[1;m
+INFO:host:[IPAddr('123.123.5.10')]:sending packet on interface eth5: [12:34:56:78:05:0a>12:34:56:78:05:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e5b3[123.123.5.10>123.123.5.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 2 completed.[1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PacketIn'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PacketIn'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PacketIn'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 9][1;m
+[1;36mCutting link (10:8) -> (2:1)[1;m
+[1;36mCutting link (3:6) -> (5:7)[1;m
+[1;36mCutting link (10:6) -> (4:1)[1;m
+[1;36mCutting link (3:1) -> (10:7)[1;m
+[1;36mCutting link (4:1) -> (10:6)[1;m
+[1;36mCutting link (8:7) -> (3:3)[1;m
+[1;36mCutting link (8:1) -> (10:2)[1;m
+[1;36mCutting link (3:9) -> (1:8)[1;m
+[1;36mRestoring link (2:9) -> (1:9)[1;m
+[1;36mRestoring link (9:5) -> (5:2)[1;m
+[1;36mRestoring link (1:1) -> (10:9)[1;m
+[1;36mRestoring link (5:2) -> (9:5)[1;m
+[1;36mRestoring link (7:2) -> (9:3)[1;m
+[1;36mRestoring link (9:8) -> (2:2)[1;m
+[1;36mRestoring link (9:1) -> (10:1)[1;m
+[1;36mRestoring link (1:4) -> (7:9)[1;m
+[1;36mRestoring link (6:6) -> (4:5)[1;m
+[1;36mMigrating host host:[IPAddr('123.123.4.10')] (4), New switch 10, New port 11[1;m
+INFO:host:[IPAddr('123.123.4.10')]:sending packet on interface eth4: [12:34:56:78:04:0a>12:34:56:78:04:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e7af[123.123.4.10>123.123.4.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 3 completed.[1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-01 1] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-01[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-01:Connect [00-00-00-00-00-01 1][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 10 ports[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 10][1;m
+[1;36mUnblocking connection [Con 9][1;m
+[1;36mCrashing software_switch SoftwareSwitch(dpid=3, num_ports=11)[1;m
+[1;36mCutting link (9:8) -> (2:2)[1;m
+[1;36mRestoring link (2:7) -> (4:8)[1;m
+[1;36mRestoring link (3:6) -> (5:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (8:7) -> (3:3)[1;m
+[1;36mRestoring link (4:1) -> (10:6)[1;m
+[1;36mRestoring link (3:1) -> (10:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (10:5) -> (5:1)[1;m
+[1;36mRestoring link (8:1) -> (10:2)[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 4 completed.[1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-08 8] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-08[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-08:Connect [00-00-00-00-00-08 8][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 11 ports[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-07 7] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-07[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-07:Connect [00-00-00-00-00-07 7][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 10 ports[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-06 6] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-06[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-06:Connect [00-00-00-00-00-06 6][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 10 ports[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-05 5] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-05[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-05:Connect [00-00-00-00-00-05 5][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 11 ports[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-04 4] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-04[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-04:Connect [00-00-00-00-00-04 4][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 10 ports[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-02 2] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-02[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-02:Connect [00-00-00-00-00-02 2][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 10 ports[1;m
+
+[1;36mCutting link (7:7) -> (3:4)[1;m
+[1;36mCutting link (4:9) -> (1:7)[1;m
+[1;36mCutting link (2:6) -> (5:8)[1;m
+[1;36mCutting link (8:8) -> (2:3)[1;m
+[1;36mCutting link (6:3) -> (8:4)[1;m
+[1;36mCutting link (5:7) -> (3:6)[1;m
+[1;36mCutting link (8:4) -> (6:3)[1;m
+[1;36mCutting link (7:5) -> (5:4)[1;m
+[1;36mCutting link (2:2) -> (9:8)[1;m
+[1;36mRestoring link (9:8) -> (2:2)[1;m
+[1;36mRestoring link (10:6) -> (4:1)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:04:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e3ad[123.123.8.10>123.123.4.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 5 completed.[1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-09 9] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-09[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-09:Connect [00-00-00-00-00-09 9][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 11 ports[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 5][1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 5][1;m
+[1;36mUnblocking connection [Con 10][1;m
+[1;36mCutting link (5:8) -> (2:6)[1;m
+[1;36mCutting link (10:4) -> (6:1)[1;m
+[1;36mCutting link (9:2) -> (8:2)[1;m
+[1;36mCutting link (9:3) -> (7:2)[1;m
+[1;36mCutting link (9:7) -> (3:2)[1;m
+[1;36mCutting link (4:5) -> (6:6)[1;m
+[1;36mRestoring link (10:8) -> (2:1)[1;m
+[1;36mRestoring link (5:7) -> (3:6)[1;m
+[1;36mRestoring link (6:3) -> (8:4)[1;m
+[1;36mRestoring link (2:6) -> (5:8)[1;m
+[1;36mRestoring link (4:6) -> (5:6)[1;m
+[1;36mRestoring link (7:5) -> (5:4)[1;m
+[1;36mRestoring link (2:2) -> (9:8)[1;m
+[1;36mRestoring link (3:9) -> (1:8)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (7:7) -> (3:4)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:06:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e6ab[123.123.3.10>123.123.6.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.1.10')] (1), New switch 8, New port 12[1;m
+INFO:host:[IPAddr('123.123.1.10')]:sending packet on interface eth1: [12:34:56:78:01:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:edaa[123.123.1.10>123.123.1.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 6 completed.[1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-0a 10] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-0a[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-0a:Connect [00-00-00-00-00-0a 10][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 10 ports[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mUnblocking connection [Con 8][1;m
+[1;36mCutting link (1:5) -> (6:9)[1;m
+[1;36mCutting link (10:2) -> (8:1)[1;m
+[1;36mCutting link (7:8) -> (2:4)[1;m
+[1;36mCutting link (1:4) -> (7:9)[1;m
+[1;36mCutting link (3:4) -> (7:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mCutting link (2:3) -> (8:8)[1;m
+[1;36mCutting link (8:9) -> (1:3)[1;m
+[1;36mRestoring link (4:9) -> (1:7)[1;m
+[1;36mRestoring link (8:8) -> (2:3)[1;m
+[1;36mRestoring link (5:8) -> (2:6)[1;m
+[1;36mRestoring link (4:5) -> (6:6)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.10.10')]:sending packet on interface eth10: [12:34:56:78:0a:0a>12:34:56:78:09:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:dca8[123.123.10.10>123.123.9.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.1.10')] (1), New switch 6, New port 11[1;m
+INFO:host:[IPAddr('123.123.1.10')]:sending packet on interface eth1: [12:34:56:78:01:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:eda7[123.123.1.10>123.123.1.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 7 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 4][1;m
+[1;36mUnblocking connection [Con 4][1;m
+WARNING:FuzzSoftwareSwitch(1):Port 5 is currently down. Dropping packet
+[1;36mCutting link (5:2) -> (9:5)[1;m
+[1;36mCutting link (9:4) -> (6:2)[1;m
+[1;36mCutting link (7:1) -> (10:3)[1;m
+[1;36mCutting link (4:7) -> (3:7)[1;m
+[1;36mCutting link (1:1) -> (10:9)[1;m
+[1;36mCutting link (2:5) -> (6:8)[1;m
+[1;36mCutting link (6:9) -> (1:5)[1;m
+[1;36mCutting link (4:1) -> (10:6)[1;m
+[1;36mCutting link (5:8) -> (2:6)[1;m
+[1;36mCutting link (3:1) -> (10:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mCutting link (3:5) -> (6:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (8:4) -> (6:3)[1;m
+[1;36mRestoring link (1:4) -> (7:9)[1;m
+[1;36mRestoring link (9:2) -> (8:2)[1;m
+[1;36mRestoring link (8:9) -> (1:3)[1;m
+[1;36mRestoring link (10:2) -> (8:1)[1;m
+[1;36mRestoring link (7:8) -> (2:4)[1;m
+[1;36mRestoring link (1:5) -> (6:9)[1;m
+[1;36mRestoring link (9:3) -> (7:2)[1;m
+[1;36mMigrating host host:[IPAddr('123.123.7.10')] (7), New switch 5, New port 12[1;m
+INFO:host:[IPAddr('123.123.7.10')]:sending packet on interface eth7: [12:34:56:78:07:0a>12:34:56:78:07:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e1a4[123.123.7.10>123.123.7.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 8 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (5:7) -> (3:6)[1;m
+[1;36mCutting link (9:1) -> (10:1)[1;m
+[1;36mCutting link (3:2) -> (9:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mCutting link (5:3) -> (8:5)[1;m
+[1;36mRestoring link (1:1) -> (10:9)[1;m
+[1;36mRestoring link (9:7) -> (3:2)[1;m
+[1;36mRestoring link (7:1) -> (10:3)[1;m
+[1;36mRestoring link (3:5) -> (6:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (9:4) -> (6:2)[1;m
+[1;36mRestoring link (2:3) -> (8:8)[1;m
+[1;36mRestoring link (2:5) -> (6:8)[1;m
+[1;36mRestoring link (6:9) -> (1:5)[1;m
+[1;36mRestoring link (10:4) -> (6:1)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.6.10')]:sending packet on interface eth6: [12:34:56:78:06:0a>12:34:56:78:07:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e2a2[123.123.6.10>123.123.7.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.9.10')] (9), New switch 10, New port 12[1;m
+INFO:host:[IPAddr('123.123.9.10')]:sending packet on interface eth9: [12:34:56:78:09:0a>12:34:56:78:09:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:dda1[123.123.9.10>123.123.9.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 9 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-09.9[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.5 -> 00-00-00-00-00-06.9[1;m
+
+[1;36mForwarding dataplane event[1;m[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 3[1;m
+
+
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.6 -> 00-00-00-00-00-05.9[1;m
+
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mCrashing software_switch SoftwareSwitch(dpid=5, num_ports=12)[1;m
+[1;36mCutting link (1:9) -> (2:9)[1;m
+[1;36mCutting link (2:6) -> (5:8)[1;m
+[1;36mCutting link (10:1) -> (9:1)[1;m
+[1;36mCutting link (7:8) -> (2:4)[1;m
+[1;36mCutting link (4:2) -> (9:6)[1;m
+[1;36mCutting link (9:2) -> (8:2)[1;m
+[1;36mRestoring link (5:7) -> (3:6)[1;m
+WARNING:FuzzSoftwareSwitch(5):Currently down. Dropping send()
+[1;36mRestoring link (5:2) -> (9:5)[1;m
+WARNING:FuzzSoftwareSwitch(5):Currently down. Dropping send()
+[1;36mRestoring link (5:8) -> (2:6)[1;m
+WARNING:FuzzSoftwareSwitch(5):Currently down. Dropping send()
+[1;36mRestoring link (3:1) -> (10:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (3:2) -> (9:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (4:1) -> (10:6)[1;m
+[1;36mRestoring link (4:7) -> (3:7)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:03:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:ea9f[123.123.2.10>123.123.3.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 10 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 10][1;m
+WARNING:FuzzSoftwareSwitch(5):Currently down. Dropping send()
+[1;36mCrashing software_switch SoftwareSwitch(dpid=6, num_ports=11)[1;m
+[1;36mRebooting software_switch SoftwareSwitch(dpid=5, num_ports=12)[1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+[1;36mCutting link (10:9) -> (1:1)[1;m
+[1;36mCutting link (5:2) -> (9:5)[1;m
+
+[1;36mCutting link (7:1) -> (10:3)[1;m
+[1;36mCutting link (1:4) -> (7:9)[1;m
+[1;36mCutting link (4:5) -> (6:6)[1;m
+[1;36mRestoring link (1:9) -> (2:9)[1;m
+[1;36mRestoring link (4:2) -> (9:6)[1;m
+[1;36mMigrating host host:[IPAddr('123.123.3.10')] (3), New switch 4, New port 11[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:03:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e99d[123.123.3.10>123.123.3.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.1.10')] (1), New switch 4, New port 12[1;m
+WARNING:FuzzSoftwareSwitch(6):Currently down. Dropping send()
+INFO:host:[IPAddr('123.123.1.10')]:sending packet on interface eth1: [12:34:56:78:01:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:ed9c[123.123.1.10>123.123.1.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 11 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.7 -> 00-00-00-00-00-04.9[1;m
+
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(6):Currently down. Dropping send()
+[1;36mCutting link (1:9) -> (2:9)[1;m
+[1;36mCutting link (1:6) -> (5:9)[1;m
+[1;36mCutting link (6:9) -> (1:5)[1;m
+WARNING:FuzzSoftwareSwitch(6):Currently down. Dropping send()
+[1;36mCutting link (7:9) -> (1:4)[1;m
+[1;36mCutting link (10:6) -> (4:1)[1;m
+[1;36mCutting link (8:7) -> (3:3)[1;m
+[1;36mCutting link (8:9) -> (1:3)[1;m
+[1;36mRestoring link (9:1) -> (10:1)[1;m
+[1;36mRestoring link (7:1) -> (10:3)[1;m
+[1;36mRestoring link (5:2) -> (9:5)[1;m
+[1;36mRestoring link (9:2) -> (8:2)[1;m
+[1;36mRestoring link (2:6) -> (5:8)[1;m
+[1;36mRestoring link (10:1) -> (9:1)[1;m
+[1;36mRestoring link (1:4) -> (7:9)[1;m
+[1;36mRestoring link (3:4) -> (7:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.9.10')]:sending packet on interface eth9: [12:34:56:78:09:0a>12:34:56:78:04:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e299[123.123.9.10>123.123.4.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.3.10')] (3), New switch 9, New port 12[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:03:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e998[123.123.3.10>123.123.3.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 12 completed.[1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 2][1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 8][1;m
+[1;36mCutting link (8:4) -> (6:3)[1;m
+[1;36mCutting link (5:4) -> (7:5)[1;m
+[1;36mCutting link (6:5) -> (5:5)[1;m
+WARNING:FuzzSoftwareSwitch(6):Currently down. Dropping send()
+[1;36mCutting link (6:6) -> (4:5)[1;m
+WARNING:FuzzSoftwareSwitch(6):Currently down. Dropping send()
+[1;36mCutting link (3:4) -> (7:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (1:9) -> (2:9)[1;m
+[1;36mRestoring link (10:6) -> (4:1)[1;m
+[1;36mRestoring link (10:9) -> (1:1)[1;m
+[1;36mRestoring link (7:8) -> (2:4)[1;m
+[1;36mRestoring link (8:7) -> (3:3)[1;m
+[1;36mRestoring link (1:6) -> (5:9)[1;m
+[1;36mRestoring link (6:9) -> (1:5)[1;m
+WARNING:FuzzSoftwareSwitch(6):Currently down. Dropping send()
+[1;36mRestoring link (5:3) -> (8:5)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.10')]:sending packet on interface eth1: [12:34:56:78:01:0a>12:34:56:78:06:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e895[123.123.1.10>123.123.6.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.8.10')] (8), New switch 1, New port 12[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:08:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:df94[123.123.8.10>123.123.8.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 13 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.10.10')]:Recieved packet [00:00:00:00:0a:0a>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:31:31><ttl:120><pox.lib.packet.lldp.system_description object at 0x102c0c190><tlv end> on interface eth10
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mUnblocking connection [Con 2][1;m
+[1;36mUnblocking connection [Con 10][1;m
+[1;36mCrashing software_switch SoftwareSwitch(dpid=9, num_ports=12)[1;m
+[1;36mRebooting software_switch SoftwareSwitch(dpid=6, num_ports=11)[1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;36mCutting link (10:9) -> (1:1)[1;m[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+
+
+[1;36mCutting link (3:6) -> (5:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mCutting link (8:6) -> (4:3)[1;m
+[1;36mCutting link (4:8) -> (2:7)[1;m
+[1;36mCutting link (5:7) -> (3:6)[1;m
+[1;36mCutting link (9:1) -> (10:1)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mCutting link (1:4) -> (7:9)[1;m
+[1;36mCutting link (3:7) -> (4:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (3:4) -> (7:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (5:4) -> (7:5)[1;m
+[1;36mRestoring link (7:9) -> (1:4)[1;m
+[1;36mRestoring link (6:6) -> (4:5)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.10')]:sending packet on interface eth1: [12:34:56:78:01:0a>12:34:56:78:0a:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e491[123.123.1.10>123.123.10.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:04:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e990[123.123.2.10>123.123.4.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.5.10')]:sending packet on interface eth5: [12:34:56:78:05:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e98f[123.123.5.10>123.123.1.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:0a:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:dd8e[123.123.8.10>123.123.10.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.10.10')]:sending packet on interface eth10: [12:34:56:78:0a:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e38d[123.123.10.10>123.123.2.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.8.10')] (8), New switch 5, New port 13[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:08:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:df8c[123.123.8.10>123.123.8.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 14 completed.[1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-05 11] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-05[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disconnect [00-00-00-00-00-05 5][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-05:Connect [00-00-00-00-00-05 11][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 12 ports[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 4[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.3 -> 00-00-00-00-00-08.9[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mCutting link (7:3) -> (8:3)[1;m
+[1;36mCutting link (10:4) -> (6:1)[1;m
+[1;36mCutting link (7:4) -> (6:4)[1;m
+[1;36mCutting link (8:1) -> (10:2)[1;m
+[1;36mCutting link (1:2) -> (9:9)[1;m
+[1;36mCutting link (10:5) -> (5:1)[1;m
+[1;36mCutting link (3:5) -> (6:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (10:9) -> (1:1)[1;m
+[1;36mRestoring link (1:4) -> (7:9)[1;m
+[1;36mRestoring link (8:9) -> (1:3)[1;m
+[1;36mRestoring link (5:7) -> (3:6)[1;m
+[1;36mRestoring link (4:5) -> (6:6)[1;m
+[1;36mRestoring link (9:1) -> (10:1)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mRestoring link (6:5) -> (5:5)[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 15 completed.[1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (6:9) -> (1:5)[1;m
+[1;36mCutting link (6:1) -> (10:4)[1;m
+[1;36mCutting link (9:5) -> (5:2)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mCutting link (10:1) -> (9:1)[1;m
+[1;36mCutting link (2:1) -> (10:8)[1;m
+[1;36mCutting link (2:8) -> (3:8)[1;m
+[1;36mRestoring link (4:8) -> (2:7)[1;m
+[1;36mRestoring link (10:5) -> (5:1)[1;m
+[1;36mRestoring link (7:3) -> (8:3)[1;m
+[1;36mRestoring link (8:4) -> (6:3)[1;m
+[1;36mRestoring link (3:7) -> (4:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.6.10')]:sending packet on interface eth6: [12:34:56:78:06:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e785[123.123.6.10>123.123.2.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 16 completed.[1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-08.3 -> 00-00-00-00-00-07.3[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.5.10')]:Recieved packet [00:00:00:00:05:0a>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:38><port ID:31:31><ttl:120><pox.lib.packet.lldp.system_description object at 0x102be20d0><tlv end> on interface eth5
+[1;36mCutting link (1:6) -> (5:9)[1;m
+[1;36mCutting link (5:1) -> (10:5)[1;m
+[1;36mCutting link (4:1) -> (10:6)[1;m
+[1;36mCutting link (7:6) -> (4:4)[1;m
+[1;36mRestoring link (2:1) -> (10:8)[1;m
+[1;36mRestoring link (9:5) -> (5:2)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mRestoring link (6:9) -> (1:5)[1;m
+[1;36mRestoring link (6:1) -> (10:4)[1;m
+[1;36mRestoring link (10:1) -> (9:1)[1;m
+[1;36mRestoring link (8:1) -> (10:2)[1;m
+[1;36mRestoring link (2:8) -> (3:8)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:ea84[123.123.3.10>123.123.2.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.5.10')]:sending packet on interface eth5: [12:34:56:78:05:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e883[123.123.5.10>123.123.2.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 17 completed.[1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-06 12] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-06[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disconnect [00-00-00-00-00-06 6][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-06:Connect [00-00-00-00-00-06 12][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 11 ports[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 7[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-08.5 -> 00-00-00-00-00-05.3[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mCutting link (9:8) -> (2:2)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mCutting link (10:5) -> (5:1)[1;m
+[1;36mCutting link (7:3) -> (8:3)[1;m
+[1;36mCutting link (8:8) -> (2:3)[1;m
+[1;36mCutting link (9:2) -> (8:2)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mCutting link (9:1) -> (10:1)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mCutting link (2:3) -> (8:8)[1;m
+[1;36mCutting link (8:1) -> (10:2)[1;m
+[1;36mCutting link (4:5) -> (6:6)[1;m
+[1;36mRestoring link (1:6) -> (5:9)[1;m
+[1;36mRestoring link (3:5) -> (6:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (10:4) -> (6:1)[1;m
+[1;36mRestoring link (4:1) -> (10:6)[1;m
+[1;36mRestoring link (7:6) -> (4:4)[1;m
+[1;36mRestoring link (8:6) -> (4:3)[1;m
+[1;36mRestoring link (1:2) -> (9:9)[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 18 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mRebooting software_switch SoftwareSwitch(dpid=9, num_ports=12)[1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+[1;36mCutting link (4:8) -> (2:7)[1;m
+
+[1;36mCutting link (5:7) -> (3:6)[1;m
+[1;36mCutting link (6:2) -> (9:4)[1;m
+[1;36mCutting link (2:6) -> (5:8)[1;m
+[1;36mCutting link (6:7) -> (3:5)[1;m
+[1;36mCutting link (9:9) -> (1:2)[1;m
+[1;36mCutting link (8:9) -> (1:3)[1;m
+[1;36mCutting link (7:5) -> (5:4)[1;m
+[1;36mRestoring link (3:6) -> (5:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (5:1) -> (10:5)[1;m
+[1;36mRestoring link (7:3) -> (8:3)[1;m
+[1;36mRestoring link (4:5) -> (6:6)[1;m
+[1;36mRestoring link (9:2) -> (8:2)[1;m
+[1;36mRestoring link (8:8) -> (2:3)[1;m
+[1;36mRestoring link (9:1) -> (10:1)[1;m
+[1;36mRestoring link (10:5) -> (5:1)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.6.10')]:sending packet on interface eth6: [12:34:56:78:06:0a>12:34:56:78:07:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e281[123.123.6.10>123.123.7.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.9.10')]:sending packet on interface eth9: [12:34:56:78:09:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e580[123.123.9.10>123.123.1.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.2.10')] (2), New switch 6, New port 12[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:eb7f[123.123.2.10>123.123.2.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.10.10')] (10), New switch 5, New port 14[1;m
+INFO:host:[IPAddr('123.123.10.10')]:sending packet on interface eth10: [12:34:56:78:0a:0a>12:34:56:78:0a:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:db7e[123.123.10.10>123.123.10.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 19 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 4][1;m
+[1;36mCutting link (9:4) -> (6:2)[1;m
+[1;36mCutting link (1:7) -> (4:9)[1;m
+[1;36mCutting link (10:6) -> (4:1)[1;m
+[1;36mCutting link (10:7) -> (3:1)[1;m
+[1;36mCutting link (4:3) -> (8:6)[1;m
+[1;36mCutting link (3:7) -> (4:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (4:8) -> (2:7)[1;m
+[1;36mRestoring link (2:6) -> (5:8)[1;m
+[1;36mRestoring link (6:7) -> (3:5)[1;m
+[1;36mRestoring link (2:3) -> (8:8)[1;m
+[1;36mRestoring link (6:2) -> (9:4)[1;m
+[1;36mRestoring link (8:9) -> (1:3)[1;m
+[1;36mRestoring link (8:1) -> (10:2)[1;m
+[1;36mRestoring link (9:8) -> (2:2)[1;m
+[1;36mRestoring link (9:9) -> (1:2)[1;m
+[1;36mMigrating host host:[IPAddr('123.123.1.10')] (1), New switch 6, New port 13[1;m
+INFO:host:[IPAddr('123.123.1.10')]:sending packet on interface eth1: [12:34:56:78:01:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:ed7a[123.123.1.10>123.123.1.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.8.10')] (8), New switch 4, New port 13[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:08:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:df79[123.123.8.10>123.123.8.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 20 completed.[1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 6[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.3 -> 00-00-00-00-00-08.6[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.4 -> 00-00-00-00-00-07.6[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (10:9) -> (1:1)[1;m
+[1;36mCutting link (2:9) -> (1:9)[1;m
+[1;36mCutting link (8:2) -> (9:2)[1;m
+[1;36mCutting link (8:9) -> (1:3)[1;m
+[1;36mRestoring link (9:4) -> (6:2)[1;m
+[1;36mRestoring link (7:5) -> (5:4)[1;m
+[1;36mRestoring link (5:7) -> (3:6)[1;m
+[1;36mRestoring link (3:7) -> (4:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 21 completed.[1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mUnblocking connection [Con 4][1;m
+WARNING:FuzzSoftwareSwitch(2):Port 9 is currently down. Dropping packet
+[1;36mCutting link (9:4) -> (6:2)[1;m
+[1;36mCutting link (9:1) -> (10:1)[1;m
+[1;36mCutting link (4:2) -> (9:6)[1;m
+[1;36mCutting link (7:5) -> (5:4)[1;m
+[1;36mRestoring link (10:6) -> (4:1)[1;m
+[1;36mRestoring link (4:3) -> (8:6)[1;m
+[1;36mRestoring link (8:2) -> (9:2)[1;m
+[1;36mRestoring link (8:9) -> (1:3)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:09:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e376[123.123.3.10>123.123.9.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 22 completed.[1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-09 13] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-09[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disconnect [00-00-00-00-00-09 9][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-09:Connect [00-00-00-00-00-09 13][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 12 ports[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.4 -> 00-00-00-00-00-07.8[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 5[1;m
+
+[1;36mDropping dataplane event[1;m 
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-07.6 -> 00-00-00-00-00-04.4[1;m
+[1;36mForwarding dataplane event[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (7:9) -> (1:4)[1;m
+[1;36mCutting link (1:4) -> (7:9)[1;m
+[1;36mCutting link (8:1) -> (10:2)[1;m
+[1;36mRestoring link (2:9) -> (1:9)[1;m
+[1;36mRestoring link (9:1) -> (10:1)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:06:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e774[123.123.2.10>123.123.6.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.5.10')]:sending packet on interface eth5: [12:34:56:78:05:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e873[123.123.5.10>123.123.2.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.7.10')] (7), New switch 4, New port 14[1;m
+INFO:host:[IPAddr('123.123.7.10')]:sending packet on interface eth7: [12:34:56:78:07:0a>12:34:56:78:07:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e172[123.123.7.10>123.123.7.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.6.10')] (6), New switch 2, New port 11[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+INFO:host:[IPAddr('123.123.6.10')]:sending packet on interface eth6: [12:34:56:78:06:0a>12:34:56:78:06:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e371[123.123.6.10>123.123.6.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 23 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 8[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-09.5 -> 00-00-00-00-00-05.2[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 10][1;m
+[1;36mCutting link (2:6) -> (5:8)[1;m
+[1;36mCutting link (8:8) -> (2:3)[1;m
+[1;36mCutting link (10:3) -> (7:1)[1;m
+[1;36mCutting link (2:8) -> (3:8)[1;m
+[1;36mCutting link (3:5) -> (6:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (1:4) -> (7:9)[1;m
+[1;36mRestoring link (7:9) -> (1:4)[1;m
+[1;36mRestoring link (4:2) -> (9:6)[1;m
+[1;36mRestoring link (8:1) -> (10:2)[1;m
+[1;36mRestoring link (7:5) -> (5:4)[1;m
+[1;36mRestoring link (10:7) -> (3:1)[1;m
+[1;36mRestoring link (7:4) -> (6:4)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e66c[123.123.8.10>123.123.1.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.3.10')] (3), New switch 6, New port 14[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:03:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e96b[123.123.3.10>123.123.3.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.9.10')] (9), New switch 7, New port 11[1;m
+INFO:host:[IPAddr('123.123.9.10')]:sending packet on interface eth9: [12:34:56:78:09:0a>12:34:56:78:09:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:dd6a[123.123.9.10>123.123.9.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 24 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 7[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-09.6 -> 00-00-00-00-00-04.2[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 5[1;m
+
+[1;36mForwarding dataplane event[1;m[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-09.9 -> 00-00-00-00-00-01.2[1;m
+
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mUnblocking connection [Con 10][1;m
+[1;36mCutting link (4:7) -> (3:7)[1;m
+[1;36mCutting link (5:7) -> (3:6)[1;m
+[1;36mCutting link (4:1) -> (10:6)[1;m
+[1;36mCutting link (9:3) -> (7:2)[1;m
+[1;36mRestoring link (10:9) -> (1:1)[1;m
+[1;36mRestoring link (1:7) -> (4:9)[1;m
+[1;36mRestoring link (2:6) -> (5:8)[1;m
+[1;36mRestoring link (3:5) -> (6:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (9:4) -> (6:2)[1;m
+[1;36mRestoring link (2:8) -> (3:8)[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 25 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 9[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.7 -> 00-00-00-00-00-04.8[1;m
+
+WARNING:FuzzSoftwareSwitch(10):Port 3 is currently down. Dropping packet
+[1;36mCutting link (3:4) -> (7:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mCutting link (10:8) -> (2:1)[1;m
+[1;36mCutting link (2:5) -> (6:8)[1;m
+[1;36mCutting link (5:1) -> (10:5)[1;m
+[1;36mCutting link (6:3) -> (8:4)[1;m
+[1;36mCutting link (10:4) -> (6:1)[1;m
+[1;36mCutting link (9:2) -> (8:2)[1;m
+[1;36mCutting link (10:5) -> (5:1)[1;m
+[1;36mRestoring link (10:3) -> (7:1)[1;m
+[1;36mRestoring link (4:7) -> (3:7)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.10')]:sending packet on interface eth4: [12:34:56:78:04:0a>12:34:56:78:05:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e666[123.123.4.10>123.123.5.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 26 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 11][1;m
+[1;36mUnblocking connection [Con 11][1;m
+WARNING:FuzzSoftwareSwitch(10):Port 10 is currently down. Dropping packet
+[1;36mCrashing software_switch SoftwareSwitch(dpid=10, num_ports=12)[1;m
+[1;36mCutting link (6:9) -> (1:5)[1;m
+[1;36mCutting link (4:4) -> (7:6)[1;m
+[1;36mCutting link (10:7) -> (3:1)[1;m
+WARNING:FuzzSoftwareSwitch(10):Currently down. Dropping send()
+[1;36mRestoring link (5:7) -> (3:6)[1;m
+[1;36mRestoring link (4:1) -> (10:6)[1;m
+[1;36mRestoring link (2:5) -> (6:8)[1;m
+[1;36mRestoring link (10:4) -> (6:1)[1;m
+WARNING:FuzzSoftwareSwitch(10):Currently down. Dropping send()
+[1;36mRestoring link (3:4) -> (7:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (9:2) -> (8:2)[1;m
+[1;36mRestoring link (8:8) -> (2:3)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.7.10')]:sending packet on interface eth7: [12:34:56:78:07:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e764[123.123.7.10>123.123.1.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 27 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-0a.3 -> 00-00-00-00-00-07.1[1;m
+
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.4.10')]:Recieved packet [00:00:00:00:04:0a>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:61><port ID:31:31><ttl:120><pox.lib.packet.lldp.system_description object at 0x102d1e1d0><tlv end> on interface eth4
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(10):Currently down. Dropping send()
+[1;36mRebooting software_switch SoftwareSwitch(dpid=3, num_ports=11)[1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;36mCutting link (10:9) -> (1:1)[1;m[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+
+
+WARNING:FuzzSoftwareSwitch(10):Currently down. Dropping send()
+[1;36mCutting link (2:6) -> (5:8)[1;m
+[1;36mCutting link (1:3) -> (8:9)[1;m
+[1;36mCutting link (4:3) -> (8:6)[1;m
+[1;36mCutting link (4:1) -> (10:6)[1;m
+[1;36mCutting link (2:3) -> (8:8)[1;m
+[1;36mCutting link (7:4) -> (6:4)[1;m
+[1;36mCutting link (5:8) -> (2:6)[1;m
+[1;36mCutting link (2:8) -> (3:8)[1;m
+[1;36mCutting link (3:7) -> (4:7)[1;m
+[1;36mRestoring link (6:9) -> (1:5)[1;m
+[1;36mRestoring link (9:3) -> (7:2)[1;m
+[1;36mRestoring link (6:3) -> (8:4)[1;m
+[1;36mRestoring link (4:4) -> (7:6)[1;m
+[1;36mRestoring link (10:7) -> (3:1)[1;m
+WARNING:FuzzSoftwareSwitch(10):Currently down. Dropping send()
+[1;36mRestoring link (10:5) -> (5:1)[1;m
+WARNING:FuzzSoftwareSwitch(10):Currently down. Dropping send()
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.10.10')]:sending packet on interface eth10: [12:34:56:78:0a:0a>12:34:56:78:07:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:de62[123.123.10.10>123.123.7.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.9.10')] (9), New switch 5, New port 15[1;m
+INFO:host:[IPAddr('123.123.9.10')]:sending packet on interface eth9: [12:34:56:78:09:0a>12:34:56:78:09:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:dd61[123.123.9.10>123.123.9.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.5.10')] (5), New switch 8, New port 13[1;m
+INFO:host:[IPAddr('123.123.5.10')]:sending packet on interface eth5: [12:34:56:78:05:0a>12:34:56:78:05:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e560[123.123.5.10>123.123.5.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 28 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 4][1;m
+[1;36mUnblocking connection [Con 4][1;m
+[1;36mCutting link (7:1) -> (10:3)[1;m
+[1;36mCutting link (9:8) -> (2:2)[1;m
+[1;36mCutting link (1:6) -> (5:9)[1;m
+[1;36mCutting link (10:6) -> (4:1)[1;m
+WARNING:FuzzSoftwareSwitch(10):Currently down. Dropping send()
+[1;36mCutting link (9:7) -> (3:2)[1;m
+[1;36mCutting link (7:5) -> (5:4)[1;m
+[1;36mCutting link (9:6) -> (4:2)[1;m
+[1;36mRestoring link (10:9) -> (1:1)[1;m
+WARNING:FuzzSoftwareSwitch(10):Currently down. Dropping send()
+[1;36mRestoring link (2:6) -> (5:8)[1;m
+[1;36mRestoring link (5:8) -> (2:6)[1;m
+[1;36mRestoring link (5:1) -> (10:5)[1;m
+[1;36mRestoring link (4:3) -> (8:6)[1;m
+[1;36mRestoring link (2:8) -> (3:8)[1;m
+[1;36mRestoring link (3:7) -> (4:7)[1;m
+[1;36mRestoring link (7:4) -> (6:4)[1;m
+[1;36mMigrating host host:[IPAddr('123.123.10.10')] (10), New switch 8, New port 14[1;m
+INFO:host:[IPAddr('123.123.10.10')]:sending packet on interface eth10: [12:34:56:78:0a:0a>12:34:56:78:0a:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:db5c[123.123.10.10>123.123.10.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 29 completed.[1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mUnblocking connection [Con 8][1;m
+[1;36mRestoring link (4:1) -> (10:6)[1;m
+[1;36mRestoring link (10:6) -> (4:1)[1;m
+WARNING:FuzzSoftwareSwitch(10):Currently down. Dropping send()
+[1;36mRestoring link (2:3) -> (8:8)[1;m
+[1;36mRestoring link (9:8) -> (2:2)[1;m
+[1;36mMigrating host host:[IPAddr('123.123.4.10')] (4), New switch 3, New port 12[1;m
+WARNING:FuzzSoftwareSwitch(10):Currently down. Dropping send()
+INFO:host:[IPAddr('123.123.4.10')]:sending packet on interface eth4: [12:34:56:78:04:0a>12:34:56:78:04:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e75a[123.123.4.10>123.123.4.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.1.10')] (1), New switch 2, New port 12[1;m
+INFO:host:[IPAddr('123.123.1.10')]:sending packet on interface eth1: [12:34:56:78:01:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:ed59[123.123.1.10>123.123.1.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 30 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 7[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-07.7 -> 00-00-00-00-00-03.4[1;m
+
+[1;41m[1;33m[c1] ERROR:core:Exception while handling Discovery!LinkEvent...[1;m
+
+[1;41m[1;33m[c1] Traceback (most recent call last):[1;m
+
+[1;41m[1;33m[c1]   File "/Users/cs/Research/UCB/code/sts/dart_pox/pox/lib/revent/revent.py", line 231, in raiseEventNoErrors[1;m
+
+[1;41m[1;33m[c1]     return self.raiseEvent(event, *args, **kw)[1;m
+
+[1;41m[1;33m[c1]   File "/Users/cs/Research/UCB/code/sts/dart_pox/pox/lib/revent/revent.py", line 278, in raiseEvent[1;m
+
+[1;41m[1;33m[c1]     rv = event._invoke(handler, *args, **kw)[1;m
+
+[1;41m[1;33m[c1]   File "/Users/cs/Research/UCB/code/sts/dart_pox/pox/lib/revent/revent.py", line 156, in _invoke[1;m
+
+[1;41m[1;33m[c1]     return handler(self, *args, **kw)[1;m
+
+[1;41m[1;33m[c1]   File "/Users/cs/Research/UCB/code/sts/dart_pox/pox/forwarding/topo_proactive.py", line 417, in _handle_openflow_discovery_LinkEvent[1;m
+
+[1;41m[1;33m[c1]     sw2 = switches_by_dpid[l.dpid2][1;m
+
+[1;41m[1;33m[c1] KeyError: 3[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 7[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.2 -> 00-00-00-00-00-09.8[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 10[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.6 -> 00-00-00-00-00-05.6[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRebooting software_switch SoftwareSwitch(dpid=10, num_ports=12)[1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+[1;36mCutting link (10:9) -> (1:1)[1;m
+
+[1;36mCutting link (2:6) -> (5:8)[1;m
+[1;36mCutting link (4:7) -> (3:7)[1;m
+[1;36mCutting link (6:7) -> (3:5)[1;m
+[1;36mCutting link (8:8) -> (2:3)[1;m
+[1;36mCutting link (6:8) -> (2:5)[1;m
+[1;36mCutting link (5:7) -> (3:6)[1;m
+[1;36mCutting link (3:1) -> (10:7)[1;m
+[1;36mCutting link (5:5) -> (6:5)[1;m
+[1;36mCutting link (8:4) -> (6:3)[1;m
+[1;36mCutting link (7:2) -> (9:3)[1;m
+[1;36mRestoring link (10:8) -> (2:1)[1;m
+[1;36mRestoring link (1:6) -> (5:9)[1;m
+[1;36mRestoring link (9:7) -> (3:2)[1;m
+[1;36mRestoring link (9:6) -> (4:2)[1;m
+[1;36mRestoring link (1:3) -> (8:9)[1;m
+[1;36mMigrating host host:[IPAddr('123.123.10.10')] (10), New switch 10, New port 13[1;m
+INFO:host:[IPAddr('123.123.10.10')]:sending packet on interface eth10: [12:34:56:78:0a:0a>12:34:56:78:0a:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:db56[123.123.10.10>123.123.10.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 31 completed.[1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-03 14] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-03:Connect [00-00-00-00-00-03 14][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 11 ports[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 5[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.9 -> 00-00-00-00-00-01.7[1;m
+
+[1;36mCrashing software_switch SoftwareSwitch(dpid=8, num_ports=14)[1;m
+[1;36mCutting link (5:9) -> (1:6)[1;m
+[1;36mCutting link (8:5) -> (5:3)[1;m
+WARNING:FuzzSoftwareSwitch(8):Currently down. Dropping send()
+[1;36mCutting link (4:3) -> (8:6)[1;m
+[1;36mRestoring link (10:9) -> (1:1)[1;m
+[1;36mRestoring link (8:4) -> (6:3)[1;m
+WARNING:FuzzSoftwareSwitch(8):Currently down. Dropping send()
+[1;36mRestoring link (7:5) -> (5:4)[1;m
+[1;36mRestoring link (6:7) -> (3:5)[1;m
+[1;36mRestoring link (7:2) -> (9:3)[1;m
+[1;36mRestoring link (5:5) -> (6:5)[1;m
+[1;36mRestoring link (7:1) -> (10:3)[1;m
+[1;36mRestoring link (8:8) -> (2:3)[1;m
+WARNING:FuzzSoftwareSwitch(8):Currently down. Dropping send()
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 32 completed.[1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PacketIn'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (10:9) -> (1:1)[1;m
+[1;36mCutting link (6:9) -> (1:5)[1;m
+[1;36mCutting link (9:3) -> (7:2)[1;m
+[1;36mCutting link (3:3) -> (8:7)[1;m
+[1;36mCutting link (8:2) -> (9:2)[1;m
+WARNING:FuzzSoftwareSwitch(8):Currently down. Dropping send()
+[1;36mCutting link (8:7) -> (3:3)[1;m
+WARNING:FuzzSoftwareSwitch(8):Currently down. Dropping send()
+[1;36mCutting link (3:7) -> (4:7)[1;m
+[1;36mRestoring link (5:7) -> (3:6)[1;m
+[1;36mRestoring link (2:6) -> (5:8)[1;m
+[1;36mRestoring link (4:7) -> (3:7)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:06:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e654[123.123.3.10>123.123.6.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 33 completed.[1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 6[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 14][1;m
+[1;36mBlocking connection [Con 13][1;m
+[1;36mUnblocking connection [Con 13][1;m
+[1;36mCutting link (10:8) -> (2:1)[1;m
+[1;36mCutting link (7:3) -> (8:3)[1;m
+[1;36mCutting link (9:9) -> (1:2)[1;m
+[1;36mCutting link (6:5) -> (5:5)[1;m
+[1;36mCutting link (4:2) -> (9:6)[1;m
+[1;36mCutting link (2:1) -> (10:8)[1;m
+[1;36mRestoring link (5:9) -> (1:6)[1;m
+[1;36mRestoring link (6:8) -> (2:5)[1;m
+[1;36mRestoring link (6:9) -> (1:5)[1;m
+[1;36mRestoring link (8:7) -> (3:3)[1;m
+WARNING:FuzzSoftwareSwitch(8):Currently down. Dropping send()
+[1;36mRestoring link (4:3) -> (8:6)[1;m
+[1;36mRestoring link (3:1) -> (10:7)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.6.10')]:sending packet on interface eth6: [12:34:56:78:06:0a>12:34:56:78:08:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e152[123.123.6.10>123.123.8.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.9.10')]:sending packet on interface eth9: [12:34:56:78:09:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e451[123.123.9.10>123.123.2.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 34 completed.[1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-0a 15] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-0a[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disconnect [00-00-00-00-00-0a 10][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-0a:Connect [00-00-00-00-00-0a 15][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 13 ports[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 7[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-0a.9[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mUnblocking connection [Con 14][1;m
+[1;36mCutting link (7:7) -> (3:4)[1;m
+[1;36mCutting link (2:9) -> (1:9)[1;m
+[1;36mCutting link (9:8) -> (2:2)[1;m
+[1;36mCutting link (5:9) -> (1:6)[1;m
+[1;36mCutting link (4:6) -> (5:6)[1;m
+[1;36mCutting link (1:3) -> (8:9)[1;m
+[1;36mCutting link (7:9) -> (1:4)[1;m
+[1;36mCutting link (5:3) -> (8:5)[1;m
+[1;36mCutting link (5:5) -> (6:5)[1;m
+[1;36mCutting link (7:5) -> (5:4)[1;m
+[1;36mRestoring link (10:8) -> (2:1)[1;m
+[1;36mRestoring link (10:9) -> (1:1)[1;m
+[1;36mRestoring link (2:1) -> (10:8)[1;m
+[1;36mRestoring link (7:3) -> (8:3)[1;m
+[1;36mRestoring link (9:3) -> (7:2)[1;m
+[1;36mRestoring link (6:5) -> (5:5)[1;m
+[1;36mRestoring link (3:7) -> (4:7)[1;m
+[1;36mRestoring link (8:2) -> (9:2)[1;m
+WARNING:FuzzSoftwareSwitch(8):Currently down. Dropping send()
+[1;36mRestoring link (8:5) -> (5:3)[1;m
+WARNING:FuzzSoftwareSwitch(8):Currently down. Dropping send()
+[1;36mRestoring link (9:9) -> (1:2)[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 35 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 7[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.8 -> 00-00-00-00-00-03.9[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 7[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-05.2 -> 00-00-00-00-00-09.5[1;m
+
+WARNING:FuzzSoftwareSwitch(5):Port 10 is currently down. Dropping packet
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 9[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-05.6 -> 00-00-00-00-00-04.6[1;m
+
+[1;36mCutting link (3:4) -> (7:7)[1;m
+[1;36mCutting link (6:9) -> (1:5)[1;m
+[1;36mCutting link (7:8) -> (2:4)[1;m
+[1;36mCutting link (7:4) -> (6:4)[1;m
+[1;36mCutting link (7:2) -> (9:3)[1;m
+[1;36mCutting link (5:8) -> (2:6)[1;m
+[1;36mCutting link (10:5) -> (5:1)[1;m
+[1;36mRestoring link (2:9) -> (1:9)[1;m
+[1;36mRestoring link (5:9) -> (1:6)[1;m
+[1;36mRestoring link (7:7) -> (3:4)[1;m
+[1;36mRestoring link (7:9) -> (1:4)[1;m
+[1;36mRestoring link (1:3) -> (8:9)[1;m
+[1;36mRestoring link (5:3) -> (8:5)[1;m
+[1;36mRestoring link (4:2) -> (9:6)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.9.10')]:sending packet on interface eth9: [12:34:56:78:09:0a>12:34:56:78:08:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:de4e[123.123.9.10>123.123.8.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.7.10')] (7), New switch 3, New port 13[1;m
+INFO:host:[IPAddr('123.123.7.10')]:sending packet on interface eth7: [12:34:56:78:07:0a>12:34:56:78:07:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e14d[123.123.7.10>123.123.7.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 36 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 13][1;m
+[1;36mCutting link (4:9) -> (1:7)[1;m
+[1;36mCutting link (1:6) -> (5:9)[1;m
+[1;36mCutting link (3:8) -> (2:8)[1;m
+[1;36mCutting link (4:8) -> (2:7)[1;m
+[1;36mCutting link (3:7) -> (4:7)[1;m
+[1;36mRestoring link (6:9) -> (1:5)[1;m
+[1;36mRestoring link (5:5) -> (6:5)[1;m
+[1;36mRestoring link (7:8) -> (2:4)[1;m
+[1;36mRestoring link (3:3) -> (8:7)[1;m
+[1;36mRestoring link (3:4) -> (7:7)[1;m
+[1;36mRestoring link (7:4) -> (6:4)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:08:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e54a[123.123.2.10>123.123.8.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:04:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e349[123.123.8.10>123.123.4.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 37 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 14][1;m
+[1;36mUnblocking connection [Con 14][1;m
+WARNING:FuzzSoftwareSwitch(5):Port 11 is currently down. Dropping packet
+[1;36mCutting link (5:2) -> (9:5)[1;m
+[1;36mCutting link (9:4) -> (6:2)[1;m
+[1;36mCutting link (7:3) -> (8:3)[1;m
+[1;36mCutting link (5:5) -> (6:5)[1;m
+[1;36mCutting link (3:4) -> (7:7)[1;m
+[1;36mCutting link (8:5) -> (5:3)[1;m
+WARNING:FuzzSoftwareSwitch(8):Currently down. Dropping send()
+[1;36mCutting link (2:1) -> (10:8)[1;m
+[1;36mCutting link (9:6) -> (4:2)[1;m
+[1;36mCutting link (5:3) -> (8:5)[1;m
+[1;36mRestoring link (4:8) -> (2:7)[1;m
+[1;36mRestoring link (4:9) -> (1:7)[1;m
+[1;36mRestoring link (5:8) -> (2:6)[1;m
+[1;36mRestoring link (10:5) -> (5:1)[1;m
+[1;36mRestoring link (7:2) -> (9:3)[1;m
+[1;36mRestoring link (3:8) -> (2:8)[1;m
+[1;36mRestoring link (3:7) -> (4:7)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.5.10')]:sending packet on interface eth5: [12:34:56:78:05:0a>12:34:56:78:07:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e346[123.123.5.10>123.123.7.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.7.10')]:sending packet on interface eth7: [12:34:56:78:07:0a>12:34:56:78:04:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e445[123.123.7.10>123.123.4.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.4.10')] (4), New switch 5, New port 16[1;m
+INFO:host:[IPAddr('123.123.4.10')]:sending packet on interface eth4: [12:34:56:78:04:0a>12:34:56:78:04:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e744[123.123.4.10>123.123.4.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.2.10')] (2), New switch 10, New port 14[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:eb43[123.123.2.10>123.123.2.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 38 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(8):Currently down. Dropping send()
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mUnblocking connection [Con 13][1;m
+[1;36mCutting link (4:8) -> (2:7)[1;m
+[1;36mCutting link (2:4) -> (7:8)[1;m
+[1;36mCutting link (10:1) -> (9:1)[1;m
+[1;36mCutting link (5:7) -> (3:6)[1;m
+[1;36mCutting link (10:2) -> (8:1)[1;m
+[1;36mCutting link (9:1) -> (10:1)[1;m
+[1;36mCutting link (5:4) -> (7:5)[1;m
+[1;36mCutting link (4:1) -> (10:6)[1;m
+[1;36mCutting link (1:2) -> (9:9)[1;m
+[1;36mRestoring link (2:1) -> (10:8)[1;m
+[1;36mRestoring link (5:2) -> (9:5)[1;m
+[1;36mRestoring link (1:6) -> (5:9)[1;m
+[1;36mRestoring link (4:6) -> (5:6)[1;m
+[1;36mRestoring link (9:4) -> (6:2)[1;m
+[1;36mRestoring link (3:4) -> (7:7)[1;m
+[1;36mRestoring link (7:5) -> (5:4)[1;m
+[1;36mRestoring link (5:3) -> (8:5)[1;m
+[1;36mRestoring link (9:8) -> (2:2)[1;m
+[1;36mRestoring link (9:6) -> (4:2)[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 39 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 6[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-07.8 -> 00-00-00-00-00-02.4[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mRebooting software_switch SoftwareSwitch(dpid=8, num_ports=14)[1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+[1;36mCutting link (4:9) -> (1:7)[1;m
+
+[1;36mCutting link (2:6) -> (5:8)[1;m
+[1;36mCutting link (6:7) -> (3:5)[1;m
+[1;36mCutting link (4:6) -> (5:6)[1;m
+[1;36mCutting link (7:6) -> (4:4)[1;m
+[1;36mCutting link (8:7) -> (3:3)[1;m
+[1;36mCutting link (7:2) -> (9:3)[1;m
+[1;36mRestoring link (4:8) -> (2:7)[1;m
+[1;36mRestoring link (5:7) -> (3:6)[1;m
+[1;36mRestoring link (5:4) -> (7:5)[1;m
+[1;36mRestoring link (5:5) -> (6:5)[1;m
+[1;36mRestoring link (7:3) -> (8:3)[1;m
+[1;36mRestoring link (10:2) -> (8:1)[1;m
+[1;36mRestoring link (1:2) -> (9:9)[1;m
+[1;36mRestoring link (8:5) -> (5:3)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:07:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e63f[123.123.2.10>123.123.7.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 40 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 7[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.9 -> 00-00-00-00-00-02.9[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 14][1;m
+[1;36mCutting link (7:7) -> (3:4)[1;m
+[1;36mCutting link (9:4) -> (6:2)[1;m
+[1;36mCutting link (9:8) -> (2:2)[1;m
+[1;36mCutting link (5:7) -> (3:6)[1;m
+[1;36mCutting link (3:4) -> (7:7)[1;m
+[1;36mCutting link (9:3) -> (7:2)[1;m
+[1;36mRestoring link (2:6) -> (5:8)[1;m
+[1;36mRestoring link (6:7) -> (3:5)[1;m
+[1;36mRestoring link (7:2) -> (9:3)[1;m
+[1;36mRestoring link (8:7) -> (3:3)[1;m
+[1;36mRestoring link (4:1) -> (10:6)[1;m
+[1;36mRestoring link (2:4) -> (7:8)[1;m
+[1;36mRestoring link (7:6) -> (4:4)[1;m
+[1;36mRestoring link (10:1) -> (9:1)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.10')]:sending packet on interface eth4: [12:34:56:78:04:0a>12:34:56:78:08:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e33d[123.123.4.10>123.123.8.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 41 completed.[1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mUnblocking connection [Con 14][1;m
+WARNING:FuzzSoftwareSwitch(6):Port 10 is currently down. Dropping packet
+[1;36mCutting link (5:9) -> (1:6)[1;m
+[1;36mCutting link (3:8) -> (2:8)[1;m
+[1;36mCutting link (1:3) -> (8:9)[1;m
+[1;36mCutting link (5:5) -> (6:5)[1;m
+[1;36mCutting link (10:1) -> (9:1)[1;m
+[1;36mCutting link (1:4) -> (7:9)[1;m
+[1;36mCutting link (7:5) -> (5:4)[1;m
+[1;36mCutting link (2:2) -> (9:8)[1;m
+[1;36mRestoring link (4:9) -> (1:7)[1;m
+[1;36mRestoring link (7:7) -> (3:4)[1;m
+[1;36mRestoring link (4:6) -> (5:6)[1;m
+[1;36mRestoring link (9:8) -> (2:2)[1;m
+[1;36mMigrating host host:[IPAddr('123.123.5.10')] (5), New switch 9, New port 13[1;m
+INFO:host:[IPAddr('123.123.5.10')]:sending packet on interface eth5: [12:34:56:78:05:0a>12:34:56:78:05:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e53b[123.123.5.10>123.123.5.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 42 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-06.4 -> 00-00-00-00-00-07.4[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 2][1;m
+[1;36mCutting link (5:1) -> (10:5)[1;m
+[1;36mCutting link (9:5) -> (5:2)[1;m
+[1;36mCutting link (6:6) -> (4:5)[1;m
+[1;36mCutting link (3:3) -> (8:7)[1;m
+[1;36mCutting link (5:4) -> (7:5)[1;m
+[1;36mCutting link (4:2) -> (9:6)[1;m
+[1;36mCutting link (2:1) -> (10:8)[1;m
+[1;36mCutting link (9:7) -> (3:2)[1;m
+[1;36mRestoring link (5:9) -> (1:6)[1;m
+[1;36mRestoring link (9:4) -> (6:2)[1;m
+[1;36mRestoring link (2:2) -> (9:8)[1;m
+[1;36mRestoring link (9:1) -> (10:1)[1;m
+[1;36mRestoring link (1:4) -> (7:9)[1;m
+[1;36mRestoring link (5:5) -> (6:5)[1;m
+[1;36mRestoring link (9:3) -> (7:2)[1;m
+[1;36mRestoring link (1:3) -> (8:9)[1;m
+[1;36mRestoring link (7:5) -> (5:4)[1;m
+[1;36mRestoring link (10:1) -> (9:1)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.10')]:sending packet on interface eth4: [12:34:56:78:04:0a>12:34:56:78:0a:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e139[123.123.4.10>123.123.10.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.10.10')]:sending packet on interface eth10: [12:34:56:78:0a:0a>12:34:56:78:08:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:dd38[123.123.10.10>123.123.8.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 43 completed.[1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-08 16] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-08[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disconnect [00-00-00-00-00-08 8][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-08:Connect [00-00-00-00-00-08 16][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 14 ports[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 10[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-06.6 -> 00-00-00-00-00-04.5[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(6):Port 11 is currently down. Dropping packet
+[1;36mCrashing software_switch SoftwareSwitch(dpid=9, num_ports=13)[1;m
+[1;36mCutting link (6:7) -> (3:5)[1;m
+[1;36mCutting link (9:1) -> (10:1)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mCutting link (8:5) -> (5:3)[1;m
+[1;36mCutting link (6:4) -> (7:4)[1;m
+[1;36mRestoring link (5:7) -> (3:6)[1;m
+[1;36mRestoring link (5:1) -> (10:5)[1;m
+[1;36mRestoring link (5:4) -> (7:5)[1;m
+[1;36mRestoring link (3:4) -> (7:7)[1;m
+[1;36mRestoring link (4:2) -> (9:6)[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 44 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (10:8) -> (2:1)[1;m
+[1;36mCutting link (10:9) -> (1:1)[1;m
+[1;36mCutting link (6:9) -> (1:5)[1;m
+[1;36mCutting link (1:8) -> (3:9)[1;m
+[1;36mRestoring link (6:7) -> (3:5)[1;m
+[1;36mRestoring link (6:6) -> (4:5)[1;m
+[1;36mRestoring link (6:4) -> (7:4)[1;m
+[1;36mRestoring link (3:8) -> (2:8)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.6.10')]:sending packet on interface eth6: [12:34:56:78:06:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e835[123.123.6.10>123.123.1.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.3.10')] (3), New switch 2, New port 13[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:03:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e934[123.123.3.10>123.123.3.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.6.10')] (6), New switch 3, New port 14[1;m
+INFO:host:[IPAddr('123.123.6.10')]:sending packet on interface eth6: [12:34:56:78:06:0a>12:34:56:78:06:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e333[123.123.6.10>123.123.6.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 45 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 8[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-08.4 -> 00-00-00-00-00-06.3[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (1:9) -> (2:9)[1;m
+[1;36mCutting link (4:9) -> (1:7)[1;m
+[1;36mCutting link (6:7) -> (3:5)[1;m
+[1;36mCutting link (1:5) -> (6:9)[1;m
+[1;36mCutting link (10:4) -> (6:1)[1;m
+[1;36mCutting link (3:5) -> (6:7)[1;m
+[1;36mRestoring link (2:1) -> (10:8)[1;m
+[1;36mRestoring link (10:9) -> (1:1)[1;m
+[1;36mRestoring link (9:5) -> (5:2)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mRestoring link (9:7) -> (3:2)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mRestoring link (10:8) -> (2:1)[1;m
+[1;36mRestoring link (6:9) -> (1:5)[1;m
+[1;36mRestoring link (3:3) -> (8:7)[1;m
+[1;36mRestoring link (1:8) -> (3:9)[1;m
+[1;36mRestoring link (8:5) -> (5:3)[1;m
+[1;36mRestoring link (9:1) -> (10:1)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.10')]:sending packet on interface eth4: [12:34:56:78:04:0a>12:34:56:78:08:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e32f[123.123.4.10>123.123.8.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.9.10')]:sending packet on interface eth9: [12:34:56:78:09:0a>12:34:56:78:08:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:de2e[123.123.9.10>123.123.8.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.2.10')] (2), New switch 7, New port 12[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:eb2d[123.123.2.10>123.123.2.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.8.10')] (8), New switch 7, New port 13[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:08:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:df2c[123.123.8.10>123.123.8.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 46 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 10[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-06.1 -> 00-00-00-00-00-0a.4[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 12][1;m
+[1;36mUnblocking connection [Con 2][1;m
+[1;36mUnblocking connection [Con 12][1;m
+[1;36mCutting link (4:7) -> (3:7)[1;m
+[1;36mCutting link (4:8) -> (2:7)[1;m
+[1;36mCutting link (9:2) -> (8:2)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mCutting link (10:2) -> (8:1)[1;m
+[1;36mCutting link (10:3) -> (7:1)[1;m
+[1;36mCutting link (9:1) -> (10:1)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mCutting link (8:2) -> (9:2)[1;m
+[1;36mCutting link (4:3) -> (8:6)[1;m
+[1;36mRestoring link (4:9) -> (1:7)[1;m
+[1;36mRestoring link (3:5) -> (6:7)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:03:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:ea27[123.123.2.10>123.123.3.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.6.10')]:sending packet on interface eth6: [12:34:56:78:06:0a>12:34:56:78:04:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e526[123.123.6.10>123.123.4.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.5.10')] (5), New switch 5, New port 17[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+INFO:host:[IPAddr('123.123.5.10')]:sending packet on interface eth5: [12:34:56:78:05:0a>12:34:56:78:05:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e525[123.123.5.10>123.123.5.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 47 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 4][1;m
+[1;36mCutting link (10:8) -> (2:1)[1;m
+[1;36mCutting link (9:4) -> (6:2)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mCutting link (1:4) -> (7:9)[1;m
+[1;36mCutting link (8:7) -> (3:3)[1;m
+[1;36mCutting link (9:6) -> (4:2)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mRestoring link (4:8) -> (2:7)[1;m
+[1;36mRestoring link (8:2) -> (9:2)[1;m
+[1;36mRestoring link (6:7) -> (3:5)[1;m
+[1;36mRestoring link (10:3) -> (7:1)[1;m
+[1;36mRestoring link (9:2) -> (8:2)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mRestoring link (10:2) -> (8:1)[1;m
+[1;36mRestoring link (4:3) -> (8:6)[1;m
+[1;36mRestoring link (4:7) -> (3:7)[1;m
+[1;36mMigrating host host:[IPAddr('123.123.2.10')] (2), New switch 6, New port 15[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:eb21[123.123.2.10>123.123.2.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.1.10')] (1), New switch 7, New port 14[1;m
+INFO:host:[IPAddr('123.123.1.10')]:sending packet on interface eth1: [12:34:56:78:01:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:ed20[123.123.1.10>123.123.1.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.7.10')] (7), New switch 6, New port 16[1;m
+INFO:host:[IPAddr('123.123.7.10')]:sending packet on interface eth7: [12:34:56:78:07:0a>12:34:56:78:07:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e11f[123.123.7.10>123.123.7.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 48 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 4][1;m
+[1;36mCutting link (6:2) -> (9:4)[1;m
+[1;36mCutting link (4:7) -> (3:7)[1;m
+[1;36mCutting link (6:3) -> (8:4)[1;m
+[1;36mCutting link (5:5) -> (6:5)[1;m
+[1;36mCutting link (10:6) -> (4:1)[1;m
+[1;36mCutting link (5:4) -> (7:5)[1;m
+[1;36mCutting link (10:3) -> (7:1)[1;m
+[1;36mCutting link (5:8) -> (2:6)[1;m
+[1;36mCutting link (3:7) -> (4:7)[1;m
+[1;36mRestoring link (1:5) -> (6:9)[1;m
+[1;36mRestoring link (9:1) -> (10:1)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mRestoring link (8:7) -> (3:3)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:05:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e71b[123.123.3.10>123.123.5.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.3.10')] (3), New switch 8, New port 15[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:03:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e91a[123.123.3.10>123.123.3.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 49 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 1][1;m
+[1;36mBlocking connection [Con 11][1;m
+[1;36mUnblocking connection [Con 1][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mRebooting software_switch SoftwareSwitch(dpid=9, num_ports=13)[1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+
+[1;36mCutting link (5:1) -> (10:5)[1;m
+[1;36mCutting link (6:1) -> (10:4)[1;m
+[1;36mCutting link (6:5) -> (5:5)[1;m
+[1;36mCutting link (9:3) -> (7:2)[1;m
+[1;36mCutting link (10:7) -> (3:1)[1;m
+[1;36mCutting link (2:8) -> (3:8)[1;m
+[1;36mRestoring link (10:8) -> (2:1)[1;m
+[1;36mRestoring link (6:3) -> (8:4)[1;m
+[1;36mRestoring link (3:7) -> (4:7)[1;m
+[1;36mRestoring link (9:4) -> (6:2)[1;m
+[1;36mRestoring link (10:6) -> (4:1)[1;m
+[1;36mRestoring link (5:4) -> (7:5)[1;m
+[1;36mRestoring link (9:6) -> (4:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.6.10')]:sending packet on interface eth6: [12:34:56:78:06:0a>12:34:56:78:09:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e017[123.123.6.10>123.123.9.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 50 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 10[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.5 -> 00-00-00-00-00-06.6[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 10[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 11[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (7:3) -> (8:3)[1;m
+[1;36mCutting link (6:8) -> (2:5)[1;m
+[1;36mCutting link (5:7) -> (3:6)[1;m
+[1;36mCutting link (9:1) -> (10:1)[1;m
+[1;36mCutting link (9:2) -> (8:2)[1;m
+[1;36mRestoring link (5:8) -> (2:6)[1;m
+[1;36mRestoring link (6:5) -> (5:5)[1;m
+[1;36mRestoring link (2:8) -> (3:8)[1;m
+[1;36mRestoring link (4:7) -> (3:7)[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 51 completed.[1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;36mCrashing software_switch SoftwareSwitch(dpid=9, num_ports=13)[1;m
+[1;36mCutting link (4:8) -> (2:7)[1;m
+[1;36mCutting link (2:6) -> (5:8)[1;m
+[1;36mCutting link (8:8) -> (2:3)[1;m
+[1;36mCutting link (1:1) -> (10:9)[1;m
+[1;36mCutting link (6:7) -> (3:5)[1;m
+[1;36mRestoring link (1:9) -> (2:9)[1;m
+[1;36mRestoring link (5:7) -> (3:6)[1;m
+[1;36mRestoring link (5:1) -> (10:5)[1;m
+[1;36mRestoring link (6:8) -> (2:5)[1;m
+[1;36mRestoring link (10:4) -> (6:1)[1;m
+[1;36mRestoring link (5:5) -> (6:5)[1;m
+[1;36mRestoring link (6:1) -> (10:4)[1;m
+[1;36mRestoring link (9:1) -> (10:1)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mRestoring link (9:2) -> (8:2)[1;m
+WARNING:FuzzSoftwareSwitch(9):Currently down. Dropping send()
+[1;36mRestoring link (10:3) -> (7:1)[1;m
+[1;36mRestoring link (6:2) -> (9:4)[1;m
+[1;36mRestoring link (10:7) -> (3:1)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.5.10')]:sending packet on interface eth5: [12:34:56:78:05:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e915[123.123.5.10>123.123.1.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.8.10')] (8), New switch 3, New port 15[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:08:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:df14[123.123.8.10>123.123.8.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 52 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (5:2) -> (9:5)[1;m
+[1;36mCutting link (3:2) -> (9:7)[1;m
+[1;36mCutting link (3:8) -> (2:8)[1;m
+[1;36mCutting link (6:9) -> (1:5)[1;m
+[1;36mCutting link (6:5) -> (5:5)[1;m
+[1;36mCutting link (8:7) -> (3:3)[1;m
+[1;36mCutting link (10:7) -> (3:1)[1;m
+[1;36mCutting link (6:4) -> (7:4)[1;m
+[1;36mRestoring link (4:8) -> (2:7)[1;m
+[1;36mRestoring link (2:6) -> (5:8)[1;m
+[1;36mRestoring link (7:3) -> (8:3)[1;m
+[1;36mRestoring link (8:8) -> (2:3)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:04:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e911[123.123.2.10>123.123.4.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.4.10')] (4), New switch 5, New port 18[1;m
+INFO:host:[IPAddr('123.123.4.10')]:sending packet on interface eth4: [12:34:56:78:04:0a>12:34:56:78:04:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e710[123.123.4.10>123.123.4.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 53 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 10[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.5 -> 00-00-00-00-00-06.8[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 6[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 14][1;m
+[1;36mBlocking connection [Con 15][1;m
+[1;36mUnblocking connection [Con 14][1;m
+[1;36mUnblocking connection [Con 11][1;m
+[1;36mCutting link (4:7) -> (3:7)[1;m
+[1;36mCutting link (5:7) -> (3:6)[1;m
+[1;36mCutting link (5:5) -> (6:5)[1;m
+[1;36mCutting link (8:3) -> (7:3)[1;m
+[1;36mCutting link (3:4) -> (7:7)[1;m
+[1;36mCutting link (4:4) -> (7:6)[1;m
+[1;36mRestoring link (5:2) -> (9:5)[1;m
+[1;36mRestoring link (6:7) -> (3:5)[1;m
+[1;36mRestoring link (1:4) -> (7:9)[1;m
+[1;36mRestoring link (8:7) -> (3:3)[1;m
+[1;36mRestoring link (3:2) -> (9:7)[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 54 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.9.10')]:Recieved packet [00:00:00:00:09:0a>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:35><port ID:31:35><ttl:120><pox.lib.packet.lldp.system_description object at 0x102c84950><tlv end> on interface eth9
+WARNING:FuzzSoftwareSwitch(3):Port 10 is currently down. Dropping packet
+[1;36mCutting link (3:6) -> (5:7)[1;m
+[1;36mCutting link (5:1) -> (10:5)[1;m
+[1;36mCutting link (10:4) -> (6:1)[1;m
+[1;36mCutting link (10:6) -> (4:1)[1;m
+[1;36mCutting link (7:4) -> (6:4)[1;m
+[1;36mCutting link (1:2) -> (9:9)[1;m
+[1;36mRestoring link (1:1) -> (10:9)[1;m
+[1;36mRestoring link (6:9) -> (1:5)[1;m
+[1;36mRestoring link (6:5) -> (5:5)[1;m
+[1;36mRestoring link (3:4) -> (7:7)[1;m
+[1;36mRestoring link (4:4) -> (7:6)[1;m
+[1;36mRestoring link (3:8) -> (2:8)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e50d[123.123.8.10>123.123.2.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 55 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 16][1;m
+[1;36mUnblocking connection [Con 15][1;m
+[1;36mRebooting software_switch SoftwareSwitch(dpid=9, num_ports=13)[1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;36mCutting link (4:8) -> (2:7)[1;m[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+
+
+[1;36mCutting link (8:1) -> (10:2)[1;m
+[1;36mCutting link (7:5) -> (5:4)[1;m
+[1;36mCutting link (9:6) -> (4:2)[1;m
+[1;36mCutting link (2:8) -> (3:8)[1;m
+[1;36mCutting link (3:9) -> (1:8)[1;m
+[1;36mRestoring link (5:7) -> (3:6)[1;m
+[1;36mRestoring link (5:1) -> (10:5)[1;m
+[1;36mRestoring link (3:6) -> (5:7)[1;m
+[1;36mRestoring link (9:3) -> (7:2)[1;m
+[1;36mRestoring link (5:5) -> (6:5)[1;m
+[1;36mRestoring link (1:2) -> (9:9)[1;m
+[1;36mRestoring link (10:7) -> (3:1)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:06:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e60b[123.123.3.10>123.123.6.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.10')]:sending packet on interface eth4: [12:34:56:78:04:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e90a[123.123.4.10>123.123.2.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 56 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 5[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.9 -> 00-00-00-00-00-01.8[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mUnblocking connection [Con 16][1;m
+WARNING:FuzzSoftwareSwitch(3):Port 11 is currently down. Dropping packet
+[1;36mCutting link (4:6) -> (5:6)[1;m
+[1;36mCutting link (4:4) -> (7:6)[1;m
+[1;36mCutting link (9:7) -> (3:2)[1;m
+[1;36mCutting link (9:2) -> (8:2)[1;m
+[1;36mCutting link (1:2) -> (9:9)[1;m
+[1;36mRestoring link (4:8) -> (2:7)[1;m
+[1;36mRestoring link (10:6) -> (4:1)[1;m
+[1;36mRestoring link (8:3) -> (7:3)[1;m
+[1;36mRestoring link (7:4) -> (6:4)[1;m
+[1;36mRestoring link (8:1) -> (10:2)[1;m
+[1;36mRestoring link (7:5) -> (5:4)[1;m
+[1;36mRestoring link (3:9) -> (1:8)[1;m
+[1;36mMigrating host host:[IPAddr('123.123.2.10')] (2), New switch 1, New port 13[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:eb07[123.123.2.10>123.123.2.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 57 completed.[1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 11][1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 11][1;m
+[1;36mCutting link (7:7) -> (3:4)[1;m
+[1;36mCutting link (4:9) -> (1:7)[1;m
+[1;36mCutting link (1:1) -> (10:9)[1;m
+[1;36mCutting link (10:2) -> (8:1)[1;m
+[1;36mCutting link (7:8) -> (2:4)[1;m
+[1;36mCutting link (10:1) -> (9:1)[1;m
+[1;36mCutting link (2:2) -> (9:8)[1;m
+[1;36mCutting link (4:2) -> (9:6)[1;m
+[1;36mRestoring link (4:6) -> (5:6)[1;m
+[1;36mRestoring link (10:4) -> (6:1)[1;m
+[1;36mRestoring link (9:7) -> (3:2)[1;m
+[1;36mRestoring link (2:8) -> (3:8)[1;m
+[1;36mRestoring link (4:7) -> (3:7)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:07:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e605[123.123.2.10>123.123.7.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 58 completed.[1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 13[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.3 -> 00-00-00-00-00-08.8[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 12][1;m
+[1;36mBlocking connection [Con 15][1;m
+[1;36mUnblocking connection [Con 7][1;m
+[1;36mCutting link (3:6) -> (5:7)[1;m
+[1;36mCutting link (1:6) -> (5:9)[1;m
+[1;36mCutting link (4:8) -> (2:7)[1;m
+[1;36mCutting link (1:4) -> (7:9)[1;m
+[1;36mCutting link (2:3) -> (8:8)[1;m
+[1;36mRestoring link (7:8) -> (2:4)[1;m
+[1;36mRestoring link (4:4) -> (7:6)[1;m
+[1;36mRestoring link (4:2) -> (9:6)[1;m
+[1;36mRestoring link (2:2) -> (9:8)[1;m
+[1;36mRestoring link (6:4) -> (7:4)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.10')]:sending packet on interface eth1: [12:34:56:78:01:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:ec03[123.123.1.10>123.123.2.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.10')]:sending packet on interface eth4: [12:34:56:78:04:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e902[123.123.4.10>123.123.2.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 59 completed.[1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-09 18] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-09[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disconnect [00-00-00-00-00-09 13][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-09:Connect [00-00-00-00-00-09 18][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 13 ports[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 10[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 1][1;m
+[1;36mUnblocking connection [Con 1][1;m
+[1;36mUnblocking connection [Con 15][1;m
+WARNING:FuzzSoftwareSwitch(10):Port 10 is currently down. Dropping packet
+WARNING:FuzzSoftwareSwitch(10):Port 11 is currently down. Dropping packet
+[1;36mCutting link (6:2) -> (9:4)[1;m
+[1;36mCutting link (10:4) -> (6:1)[1;m
+[1;36mCutting link (8:5) -> (5:3)[1;m
+[1;36mCutting link (5:3) -> (8:5)[1;m
+[1;36mCutting link (3:9) -> (1:8)[1;m
+[1;36mRestoring link (4:8) -> (2:7)[1;m
+[1;36mRestoring link (4:9) -> (1:7)[1;m
+[1;36mRestoring link (1:6) -> (5:9)[1;m
+[1;36mRestoring link (10:1) -> (9:1)[1;m
+[1;36mRestoring link (1:4) -> (7:9)[1;m
+[1;36mRestoring link (9:6) -> (4:2)[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 60 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 10[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-07.1 -> 00-00-00-00-00-0a.3[1;m
+
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 2][1;m
+[1;36mUnblocking connection [Con 2][1;m
+[1;36mUnblocking connection [Con 12][1;m
+WARNING:FuzzSoftwareSwitch(10):Port 12 is currently down. Dropping packet
+[1;36mCutting link (10:9) -> (1:1)[1;m
+[1;36mCutting link (2:9) -> (1:9)[1;m
+[1;36mCutting link (7:4) -> (6:4)[1;m
+[1;36mCutting link (3:1) -> (10:7)[1;m
+[1;36mRestoring link (1:1) -> (10:9)[1;m
+[1;36mRestoring link (3:6) -> (5:7)[1;m
+[1;36mRestoring link (6:2) -> (9:4)[1;m
+[1;36mRestoring link (10:4) -> (6:1)[1;m
+[1;36mRestoring link (7:7) -> (3:4)[1;m
+[1;36mRestoring link (1:2) -> (9:9)[1;m
+[1;36mRestoring link (8:5) -> (5:3)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.10')]:sending packet on interface eth4: [12:34:56:78:04:0a>12:34:56:78:05:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e5ff[123.123.4.10>123.123.5.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.2.10')] (2), New switch 7, New port 15[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:eafe[123.123.2.10>123.123.2.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.1.10')] (1), New switch 10, New port 15[1;m
+INFO:host:[IPAddr('123.123.1.10')]:sending packet on interface eth1: [12:34:56:78:01:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:ecfd[123.123.1.10>123.123.1.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 61 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 14][1;m
+[1;36mBlocking connection [Con 11][1;m
+WARNING:FuzzSoftwareSwitch(3):Port 1 is currently down. Dropping packet
+WARNING:FuzzSoftwareSwitch(5):Port 10 is currently down. Dropping packet
+[1;36mCutting link (5:6) -> (4:6)[1;m
+[1;36mCutting link (6:2) -> (9:4)[1;m
+[1;36mCutting link (10:1) -> (9:1)[1;m
+[1;36mCutting link (10:7) -> (3:1)[1;m
+[1;36mRestoring link (5:3) -> (8:5)[1;m
+[1;36mRestoring link (2:3) -> (8:8)[1;m
+[1;36mRestoring link (3:1) -> (10:7)[1;m
+[1;36mRestoring link (10:2) -> (8:1)[1;m
+[1;36mMigrating host host:[IPAddr('123.123.8.10')] (8), New switch 4, New port 15[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:08:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:def9[123.123.8.10>123.123.8.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 62 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.10.10')]:Recieved packet [00:00:00:00:0a:0a>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:61><port ID:31:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x102bd6bd0><tlv end> on interface eth10
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 4][1;m
+[1;36mBlocking connection [Con 18][1;m
+[1;36mUnblocking connection [Con 11][1;m
+WARNING:FuzzSoftwareSwitch(5):Port 11 is currently down. Dropping packet
+[1;36mCutting link (5:9) -> (1:6)[1;m
+[1;36mRestoring link (5:6) -> (4:6)[1;m
+[1;36mRestoring link (10:9) -> (1:1)[1;m
+[1;36mRestoring link (9:2) -> (8:2)[1;m
+[1;36mRestoring link (3:9) -> (1:8)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.10')]:sending packet on interface eth4: [12:34:56:78:04:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e9f7[123.123.4.10>123.123.1.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e5f6[123.123.8.10>123.123.1.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.3.10')] (3), New switch 6, New port 17[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:03:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e8f5[123.123.3.10>123.123.3.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 63 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 11[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-0a.7[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mUnblocking connection [Con 14][1;m
+[1;36mUnblocking connection [Con 4][1;m
+[1;36mUnblocking connection [Con 18][1;m
+[1;36mCutting link (7:7) -> (3:4)[1;m
+[1;36mCutting link (10:3) -> (7:1)[1;m
+[1;36mCutting link (10:4) -> (6:1)[1;m
+[1;36mCutting link (3:3) -> (8:7)[1;m
+[1;36mCutting link (8:2) -> (9:2)[1;m
+[1;36mCutting link (7:2) -> (9:3)[1;m
+[1;36mCutting link (2:1) -> (10:8)[1;m
+[1;36mCutting link (2:8) -> (3:8)[1;m
+[1;36mRestoring link (5:9) -> (1:6)[1;m
+[1;36mRestoring link (10:7) -> (3:1)[1;m
+[1;36mMigrating host host:[IPAddr('123.123.2.10')] (2), New switch 9, New port 14[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:eaf1[123.123.2.10>123.123.2.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.9.10')] (9), New switch 10, New port 16[1;m
+INFO:host:[IPAddr('123.123.9.10')]:sending packet on interface eth9: [12:34:56:78:09:0a>12:34:56:78:09:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:dcf0[123.123.9.10>123.123.9.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 64 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 24[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-0a.5 -> 00-00-00-00-00-05.1[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 11][1;m
+[1;36mBlocking connection [Con 16][1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 7[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-07.9 -> 00-00-00-00-00-01.4[1;m
+
+WARNING:FuzzSoftwareSwitch(6):Port 10 is currently down. Dropping packet
+[1;36mCutting link (2:7) -> (4:8)[1;m
+[1;36mCutting link (5:2) -> (9:5)[1;m
+[1;36mCutting link (1:6) -> (5:9)[1;m
+[1;36mCutting link (7:9) -> (1:4)[1;m
+[1;36mCutting link (3:1) -> (10:7)[1;m
+[1;36mCutting link (8:1) -> (10:2)[1;m
+[1;36mRestoring link (2:1) -> (10:8)[1;m
+[1;36mRestoring link (6:2) -> (9:4)[1;m
+[1;36mRestoring link (7:7) -> (3:4)[1;m
+[1;36mRestoring link (8:2) -> (9:2)[1;m
+[1;36mRestoring link (2:8) -> (3:8)[1;m
+[1;36mRestoring link (7:4) -> (6:4)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.5.10')]:sending packet on interface eth5: [12:34:56:78:05:0a>12:34:56:78:07:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e2ed[123.123.5.10>123.123.7.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 65 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mUnblocking connection [Con 11][1;m
+[1;36mCutting link (10:8) -> (2:1)[1;m
+[1;36mCutting link (8:4) -> (6:3)[1;m
+[1;36mCutting link (3:8) -> (2:8)[1;m
+[1;36mCutting link (1:1) -> (10:9)[1;m
+[1;36mCutting link (6:2) -> (9:4)[1;m
+[1;36mCutting link (9:3) -> (7:2)[1;m
+[1;36mCutting link (8:9) -> (1:3)[1;m
+[1;36mRestoring link (2:9) -> (1:9)[1;m
+[1;36mRestoring link (5:2) -> (9:5)[1;m
+[1;36mRestoring link (10:4) -> (6:1)[1;m
+[1;36mRestoring link (7:9) -> (1:4)[1;m
+[1;36mRestoring link (7:2) -> (9:3)[1;m
+[1;36mRestoring link (3:3) -> (8:7)[1;m
+[1;36mRestoring link (10:3) -> (7:1)[1;m
+[1;36mRestoring link (8:1) -> (10:2)[1;m
+[1;36mRestoring link (3:1) -> (10:7)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:0a:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e2eb[123.123.2.10>123.123.10.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.2.10')] (2), New switch 1, New port 14[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:eaea[123.123.2.10>123.123.2.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 66 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 12[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 4][1;m
+[1;36mBlocking connection [Con 12][1;m
+WARNING:FuzzSoftwareSwitch(6):Port 11 is currently down. Dropping packet
+[1;36mCutting link (1:9) -> (2:9)[1;m
+[1;36mCutting link (6:1) -> (10:4)[1;m
+[1;36mCutting link (1:4) -> (7:9)[1;m
+[1;36mCutting link (6:6) -> (4:5)[1;m
+[1;36mCutting link (1:8) -> (3:9)[1;m
+[1;36mCutting link (1:2) -> (9:9)[1;m
+[1;36mCutting link (6:4) -> (7:4)[1;m
+[1;36mRestoring link (10:8) -> (2:1)[1;m
+[1;36mRestoring link (1:1) -> (10:9)[1;m
+[1;36mRestoring link (2:7) -> (4:8)[1;m
+[1;36mRestoring link (1:6) -> (5:9)[1;m
+[1;36mRestoring link (6:2) -> (9:4)[1;m
+[1;36mRestoring link (8:4) -> (6:3)[1;m
+[1;36mRestoring link (9:3) -> (7:2)[1;m
+[1;36mRestoring link (8:9) -> (1:3)[1;m
+[1;36mRestoring link (10:1) -> (9:1)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.5.10')]:sending packet on interface eth5: [12:34:56:78:05:0a>12:34:56:78:0a:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:dfe7[123.123.5.10>123.123.10.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 67 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (3:6) -> (5:7)[1;m
+[1;36mCutting link (6:3) -> (8:4)[1;m
+[1;36mCutting link (5:7) -> (3:6)[1;m
+[1;36mCutting link (9:2) -> (8:2)[1;m
+[1;36mCutting link (8:5) -> (5:3)[1;m
+[1;36mCutting link (9:4) -> (6:2)[1;m
+[1;36mRestoring link (1:9) -> (2:9)[1;m
+[1;36mRestoring link (1:4) -> (7:9)[1;m
+[1;36mRestoring link (3:8) -> (2:8)[1;m
+[1;36mRestoring link (1:8) -> (3:9)[1;m
+[1;36mRestoring link (1:2) -> (9:9)[1;m
+[1;36mRestoring link (6:4) -> (7:4)[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 68 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 10[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-07.2 -> 00-00-00-00-00-09.3[1;m
+
+[1;36mUnblocking connection [Con 12][1;m[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 12[1;m
+
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.1 -> 00-00-00-00-00-0a.6[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 8[1;m
+
+[1;36mCutting link (2:9) -> (1:9)[1;m
+[1;36mCutting link (6:2) -> (9:4)[1;m
+[1;36mCutting link (7:7) -> (3:4)[1;m
+[1;36mCutting link (10:3) -> (7:1)[1;m
+[1;36mCutting link (7:4) -> (6:4)[1;m
+[1;36mCutting link (6:4) -> (7:4)[1;m
+[1;36mRestoring link (6:3) -> (8:4)[1;m
+[1;36mRestoring link (9:4) -> (6:2)[1;m
+[1;36mRestoring link (6:1) -> (10:4)[1;m
+[1;36mRestoring link (9:2) -> (8:2)[1;m
+[1;36mRestoring link (5:7) -> (3:6)[1;m
+[1;36mRestoring link (8:5) -> (5:3)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:0a:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e1e5[123.123.3.10>123.123.10.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.10')]:sending packet on interface eth4: [12:34:56:78:04:0a>12:34:56:78:09:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e1e4[123.123.4.10>123.123.9.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.10.10')]:sending packet on interface eth10: [12:34:56:78:0a:0a>12:34:56:78:07:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:dde3[123.123.10.10>123.123.7.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 69 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mUnblocking connection [Con 4][1;m
+[1;36mUnblocking connection [Con 16][1;m
+WARNING:FuzzSoftwareSwitch(8):Port 10 is currently down. Dropping packet
+WARNING:FuzzSoftwareSwitch(8):Port 13 is currently down. Dropping packet
+WARNING:FuzzSoftwareSwitch(8):Port 11 is currently down. Dropping packet
+WARNING:FuzzSoftwareSwitch(8):Port 12 is currently down. Dropping packet
+[1;36mCutting link (7:9) -> (1:4)[1;m
+[1;36mCutting link (9:2) -> (8:2)[1;m
+[1;36mCutting link (4:1) -> (10:6)[1;m
+[1;36mCutting link (3:7) -> (4:7)[1;m
+[1;36mRestoring link (2:9) -> (1:9)[1;m
+[1;36mRestoring link (3:6) -> (5:7)[1;m
+[1;36mRestoring link (6:6) -> (4:5)[1;m
+[1;36mRestoring link (10:3) -> (7:1)[1;m
+[1;36mRestoring link (6:2) -> (9:4)[1;m
+[1;36mRestoring link (6:4) -> (7:4)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.10.10')]:sending packet on interface eth10: [12:34:56:78:0a:0a>12:34:56:78:09:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:dbdf[123.123.10.10>123.123.9.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 70 completed.[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(8):Port 14 is currently down. Dropping packet
+[1;36mCutting link (3:4) -> (7:7)[1;m
+[1;36mCutting link (3:6) -> (5:7)[1;m
+[1;36mCutting link (3:2) -> (9:7)[1;m
+[1;36mCutting link (6:7) -> (3:5)[1;m
+[1;36mCutting link (3:8) -> (2:8)[1;m
+[1;36mCutting link (5:7) -> (3:6)[1;m
+[1;36mCutting link (1:7) -> (4:9)[1;m
+[1;36mCutting link (1:4) -> (7:9)[1;m
+[1;36mCutting link (4:3) -> (8:6)[1;m
+[1;36mCutting link (8:1) -> (10:2)[1;m
+[1;36mRestoring link (4:1) -> (10:6)[1;m
+[1;36mRestoring link (7:9) -> (1:4)[1;m
+[1;36mRestoring link (7:7) -> (3:4)[1;m
+[1;36mRestoring link (9:2) -> (8:2)[1;m
+[1;36mRestoring link (3:7) -> (4:7)[1;m
+[1;36mRestoring link (7:4) -> (6:4)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.10')]:sending packet on interface eth1: [12:34:56:78:01:0a>12:34:56:78:0a:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e3dd[123.123.1.10>123.123.10.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.9.10')]:sending packet on interface eth9: [12:34:56:78:09:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e4dc[123.123.9.10>123.123.1.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 71 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 13[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 12[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-08.6 -> 00-00-00-00-00-04.3[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 9[1;m
+
+
+INFO:host:[IPAddr('123.123.6.10')]:Recieved packet [00:00:00:00:06:0a>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:31:34><ttl:120><pox.lib.packet.lldp.system_description object at 0x102c955d0><tlv end> on interface eth6
+[1;36mBlocking connection [Con 2][1;m
+[1;36mBlocking connection [Con 12][1;m
+[1;36mUnblocking connection [Con 2][1;m[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-08.9 -> 00-00-00-00-00-01.3[1;m
+
+
+[1;36mCutting link (5:1) -> (10:5)[1;m
+[1;36mCutting link (4:1) -> (10:6)[1;m
+[1;36mCutting link (1:2) -> (9:9)[1;m
+[1;36mCutting link (3:7) -> (4:7)[1;m
+[1;36mRestoring link (1:7) -> (4:9)[1;m
+[1;36mRestoring link (3:6) -> (5:7)[1;m
+[1;36mRestoring link (6:7) -> (3:5)[1;m
+[1;36mRestoring link (8:1) -> (10:2)[1;m
+[1;36mRestoring link (5:7) -> (3:6)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.4.10')]:sending packet on interface eth4: [12:34:56:78:04:0a>12:34:56:78:08:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e2d9[123.123.4.10>123.123.8.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:06:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e0d8[123.123.8.10>123.123.6.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 72 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 13[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 2][1;m
+[1;36mBlocking connection [Con 4][1;m
+[1;36mUnblocking connection [Con 12][1;m
+[1;36mCutting link (10:8) -> (2:1)[1;m
+[1;36mCutting link (5:6) -> (4:6)[1;m
+[1;36mCutting link (6:9) -> (1:5)[1;m
+[1;36mCutting link (9:2) -> (8:2)[1;m
+[1;36mCutting link (4:4) -> (7:6)[1;m
+[1;36mCutting link (9:7) -> (3:2)[1;m
+[1;36mCutting link (8:5) -> (5:3)[1;m
+[1;36mCutting link (1:8) -> (3:9)[1;m
+[1;36mRestoring link (4:1) -> (10:6)[1;m
+[1;36mRestoring link (5:1) -> (10:5)[1;m
+[1;36mRestoring link (3:8) -> (2:8)[1;m
+[1;36mRestoring link (1:2) -> (9:9)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.7.10')]:sending packet on interface eth7: [12:34:56:78:07:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e6d5[123.123.7.10>123.123.1.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.6.10')] (6), New switch 9, New port 15[1;m
+INFO:host:[IPAddr('123.123.6.10')]:sending packet on interface eth6: [12:34:56:78:06:0a>12:34:56:78:06:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e2d4[123.123.6.10>123.123.6.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 73 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 14[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.5 -> 00-00-00-00-00-06.7[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 13[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 14][1;m
+[1;36mUnblocking connection [Con 2][1;m
+[1;36mUnblocking connection [Con 14][1;m
+[1;36mCutting link (3:8) -> (2:8)[1;m
+[1;36mCutting link (4:6) -> (5:6)[1;m
+[1;36mCutting link (8:6) -> (4:3)[1;m
+[1;36mCutting link (3:9) -> (1:8)[1;m
+[1;36mRestoring link (10:8) -> (2:1)[1;m
+[1;36mRestoring link (9:7) -> (3:2)[1;m
+[1;36mRestoring link (5:6) -> (4:6)[1;m
+[1;36mRestoring link (6:9) -> (1:5)[1;m
+[1;36mRestoring link (3:4) -> (7:7)[1;m
+[1;36mRestoring link (1:4) -> (7:9)[1;m
+[1;36mRestoring link (9:2) -> (8:2)[1;m
+[1;36mRestoring link (4:4) -> (7:6)[1;m
+[1;36mRestoring link (3:2) -> (9:7)[1;m
+[1;36mRestoring link (8:5) -> (5:3)[1;m
+[1;36mRestoring link (3:7) -> (4:7)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.5.10')]:sending packet on interface eth5: [12:34:56:78:05:0a>12:34:56:78:09:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e0d1[123.123.5.10>123.123.9.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.7.10')] (7), New switch 8, New port 16[1;m
+INFO:host:[IPAddr('123.123.7.10')]:sending packet on interface eth7: [12:34:56:78:07:0a>12:34:56:78:07:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e0d0[123.123.7.10>123.123.7.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 74 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.7.10')]:Recieved packet [00:00:00:00:07:0a>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:36><port ID:31:36><ttl:120><pox.lib.packet.lldp.system_description object at 0x102d336d0><tlv end> on interface eth7
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.5.10')]:Recieved packet [00:00:00:00:05:0a>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:35><port ID:31:37><ttl:120><pox.lib.packet.lldp.system_description object at 0x102c90a10><tlv end> on interface eth5
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mCutting link (8:8) -> (2:3)[1;m
+[1;36mCutting link (6:9) -> (1:5)[1;m
+[1;36mCutting link (9:2) -> (8:2)[1;m
+[1;36mCutting link (6:6) -> (4:5)[1;m
+[1;36mCutting link (8:2) -> (9:2)[1;m
+[1;36mCutting link (8:3) -> (7:3)[1;m
+[1;36mCutting link (7:4) -> (6:4)[1;m
+[1;36mCutting link (8:5) -> (5:3)[1;m
+[1;36mCutting link (6:4) -> (7:4)[1;m
+[1;36mCutting link (10:5) -> (5:1)[1;m
+[1;36mRestoring link (8:6) -> (4:3)[1;m
+[1;36mRestoring link (3:9) -> (1:8)[1;m
+[1;36mRestoring link (4:3) -> (8:6)[1;m
+[1;36mRestoring link (3:8) -> (2:8)[1;m
+[1;36mRestoring link (1:8) -> (3:9)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.10')]:sending packet on interface eth1: [12:34:56:78:01:0a>12:34:56:78:0a:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e3cd[123.123.1.10>123.123.10.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.3.10')] (3), New switch 5, New port 19[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:03:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e8cc[123.123.3.10>123.123.3.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.1.10')] (1), New switch 7, New port 16[1;m
+INFO:host:[IPAddr('123.123.1.10')]:sending packet on interface eth1: [12:34:56:78:01:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:eccb[123.123.1.10>123.123.1.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.6.10')] (6), New switch 2, New port 14[1;m
+INFO:host:[IPAddr('123.123.6.10')]:sending packet on interface eth6: [12:34:56:78:06:0a>12:34:56:78:06:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e2ca[123.123.6.10>123.123.6.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 75 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 16[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 14[1;m
+
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.4.10')]:Recieved packet [00:00:00:00:04:0a>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:35><port ID:31:38><ttl:120><pox.lib.packet.lldp.system_description object at 0x102d3f650><tlv end> on interface eth4
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mUnblocking connection [Con 4][1;m
+WARNING:FuzzSoftwareSwitch(3):Port 10 is currently down. Dropping packet
+[1;36mCutting link (1:1) -> (10:9)[1;m
+[1;36mCutting link (2:4) -> (7:8)[1;m
+[1;36mCutting link (3:5) -> (6:7)[1;m
+[1;36mCutting link (6:5) -> (5:5)[1;m
+[1;36mCutting link (7:7) -> (3:4)[1;m
+[1;36mRestoring link (10:5) -> (5:1)[1;m
+[1;36mRestoring link (6:9) -> (1:5)[1;m
+[1;36mRestoring link (8:2) -> (9:2)[1;m
+[1;36mRestoring link (6:4) -> (7:4)[1;m
+[1;36mRestoring link (8:8) -> (2:3)[1;m
+[1;36mRestoring link (8:5) -> (5:3)[1;m
+[1;36mRestoring link (7:4) -> (6:4)[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 76 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 14[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-07.3 -> 00-00-00-00-00-08.3[1;m
+
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 1][1;m
+[1;36mBlocking connection [Con 4][1;m
+[1;36mUnblocking connection [Con 1][1;m
+[1;36mUnblocking connection [Con 4][1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 10[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-05.4 -> 00-00-00-00-00-07.5[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 9[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-05.8 -> 00-00-00-00-00-02.6[1;m
+
+[1;36mCrashing software_switch SoftwareSwitch(dpid=3, num_ports=15)[1;m
+[1;36mCutting link (3:6) -> (5:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mCutting link (9:8) -> (2:2)[1;m
+[1;36mCutting link (6:3) -> (8:4)[1;m
+[1;36mCutting link (10:4) -> (6:1)[1;m
+[1;36mCutting link (5:4) -> (7:5)[1;m
+[1;36mCutting link (4:1) -> (10:6)[1;m
+[1;36mCutting link (8:1) -> (10:2)[1;m
+[1;36mCutting link (2:8) -> (3:8)[1;m
+[1;36mCutting link (2:2) -> (9:8)[1;m
+[1;36mCutting link (10:5) -> (5:1)[1;m
+[1;36mCutting link (3:9) -> (1:8)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (1:1) -> (10:9)[1;m
+[1;36mRestoring link (8:3) -> (7:3)[1;m
+[1;36mRestoring link (4:6) -> (5:6)[1;m
+[1;36mRestoring link (6:5) -> (5:5)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:08:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e3c5[123.123.3.10>123.123.8.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.5.10')]:sending packet on interface eth5: [12:34:56:78:05:0a>12:34:56:78:08:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e1c4[123.123.5.10>123.123.8.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.2.10')] (2), New switch 10, New port 17[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:eac3[123.123.2.10>123.123.2.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 77 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 7[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-06.8 -> 00-00-00-00-00-02.5[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 30[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.6 -> 00-00-00-00-00-05.8[1;m
+
+[1;36mCutting link (4:9) -> (1:7)[1;m
+[1;36mCutting link (5:2) -> (9:5)[1;m
+[1;36mCutting link (4:8) -> (2:7)[1;m
+[1;36mCutting link (3:2) -> (9:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mCutting link (4:2) -> (9:6)[1;m
+[1;36mCutting link (10:3) -> (7:1)[1;m
+[1;36mCutting link (10:2) -> (8:1)[1;m
+[1;36mCutting link (9:6) -> (4:2)[1;m
+[1;36mRestoring link (3:6) -> (5:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (6:3) -> (8:4)[1;m
+[1;36mRestoring link (2:2) -> (9:8)[1;m
+[1;36mRestoring link (6:6) -> (4:5)[1;m
+[1;36mRestoring link (4:1) -> (10:6)[1;m
+[1;36mRestoring link (7:7) -> (3:4)[1;m
+[1;36mRestoring link (9:2) -> (8:2)[1;m
+[1;36mRestoring link (8:1) -> (10:2)[1;m
+[1;36mRestoring link (5:4) -> (7:5)[1;m
+[1;36mRestoring link (3:9) -> (1:8)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (9:8) -> (2:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.10.10')]:sending packet on interface eth10: [12:34:56:78:0a:0a>12:34:56:78:03:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e1bf[123.123.10.10>123.123.3.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 78 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 4][1;m
+[1;36mCutting link (1:7) -> (4:9)[1;m
+[1;36mCutting link (8:4) -> (6:3)[1;m
+[1;36mCutting link (2:9) -> (1:9)[1;m
+[1;36mCutting link (1:6) -> (5:9)[1;m
+[1;36mCutting link (7:3) -> (8:3)[1;m
+[1;36mCutting link (1:3) -> (8:9)[1;m
+[1;36mCutting link (5:5) -> (6:5)[1;m
+[1;36mCutting link (5:4) -> (7:5)[1;m
+[1;36mCutting link (8:9) -> (1:3)[1;m
+[1;36mCutting link (1:2) -> (9:9)[1;m
+[1;36mRestoring link (10:5) -> (5:1)[1;m
+[1;36mRestoring link (5:2) -> (9:5)[1;m
+[1;36mRestoring link (10:3) -> (7:1)[1;m
+[1;36mRestoring link (9:6) -> (4:2)[1;m
+[1;36mRestoring link (2:8) -> (3:8)[1;m
+[1;36mRestoring link (4:2) -> (9:6)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:07:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e4bd[123.123.3.10>123.123.7.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.6.10')]:sending packet on interface eth6: [12:34:56:78:06:0a>12:34:56:78:04:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e4bc[123.123.6.10>123.123.4.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.7.10')]:sending packet on interface eth7: [12:34:56:78:07:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e5bb[123.123.7.10>123.123.2.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.10.10')]:sending packet on interface eth10: [12:34:56:78:0a:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e2ba[123.123.10.10>123.123.2.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.7.10')] (7), New switch 2, New port 15[1;m
+INFO:host:[IPAddr('123.123.7.10')]:sending packet on interface eth7: [12:34:56:78:07:0a>12:34:56:78:07:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e0b9[123.123.7.10>123.123.7.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 79 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 15][1;m
+[1;36mCutting link (10:5) -> (5:1)[1;m
+[1;36mCutting link (4:6) -> (5:6)[1;m
+[1;36mCutting link (5:8) -> (2:6)[1;m
+[1;36mCutting link (3:7) -> (4:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (4:8) -> (2:7)[1;m
+[1;36mRestoring link (4:9) -> (1:7)[1;m
+[1;36mRestoring link (1:6) -> (5:9)[1;m
+[1;36mRestoring link (7:3) -> (8:3)[1;m
+[1;36mRestoring link (10:2) -> (8:1)[1;m
+[1;36mRestoring link (2:4) -> (7:8)[1;m
+[1;36mRestoring link (1:2) -> (9:9)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.10')]:sending packet on interface eth1: [12:34:56:78:01:0a>12:34:56:78:04:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e9b3[123.123.1.10>123.123.4.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:06:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e5b2[123.123.3.10>123.123.6.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.7.10')]:sending packet on interface eth7: [12:34:56:78:07:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e5b1[123.123.7.10>123.123.2.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e5b0[123.123.8.10>123.123.1.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.9.10')]:sending packet on interface eth9: [12:34:56:78:09:0a>12:34:56:78:0a:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:dbaf[123.123.9.10>123.123.10.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.3.10')] (3), New switch 7, New port 17[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:03:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e8ae[123.123.3.10>123.123.3.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.8.10')] (8), New switch 1, New port 15[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:08:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:dead[123.123.8.10>123.123.8.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 80 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mUnblocking connection [Con 4][1;m
+WARNING:FuzzSoftwareSwitch(5):Port 5 is currently down. Dropping packet
+[1;36mCutting link (7:7) -> (3:4)[1;m
+[1;36mCutting link (6:7) -> (3:5)[1;m
+[1;36mCutting link (9:5) -> (5:2)[1;m
+[1;36mCutting link (8:6) -> (4:3)[1;m
+[1;36mCutting link (1:4) -> (7:9)[1;m
+[1;36mCutting link (8:2) -> (9:2)[1;m
+[1;36mCutting link (4:3) -> (8:6)[1;m
+[1;36mCutting link (10:7) -> (3:1)[1;m
+[1;36mRestoring link (8:4) -> (6:3)[1;m
+[1;36mRestoring link (5:8) -> (2:6)[1;m
+[1;36mRestoring link (10:5) -> (5:1)[1;m
+[1;36mRestoring link (3:5) -> (6:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (1:7) -> (4:9)[1;m
+[1;36mRestoring link (10:4) -> (6:1)[1;m
+[1;36mRestoring link (4:6) -> (5:6)[1;m
+[1;36mRestoring link (5:5) -> (6:5)[1;m
+[1;36mRestoring link (1:3) -> (8:9)[1;m
+[1;36mRestoring link (5:4) -> (7:5)[1;m
+[1;36mRestoring link (3:7) -> (4:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:03:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e3a5[123.123.8.10>123.123.3.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.10.10')]:sending packet on interface eth10: [12:34:56:78:0a:0a>12:34:56:78:09:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:dba4[123.123.10.10>123.123.9.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 81 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 4][1;m
+[1;36mBlocking connection [Con 11][1;m
+[1;36mUnblocking connection [Con 11][1;m
+WARNING:FuzzSoftwareSwitch(9):Port 5 is currently down. Dropping packet
+[1;36mCutting link (9:8) -> (2:2)[1;m
+[1;36mCutting link (6:3) -> (8:4)[1;m
+[1;36mCutting link (10:4) -> (6:1)[1;m
+[1;36mCutting link (8:4) -> (6:3)[1;m
+[1;36mCutting link (7:8) -> (2:4)[1;m
+[1;36mCutting link (2:1) -> (10:8)[1;m
+[1;36mCutting link (5:8) -> (2:6)[1;m
+[1;36mRestoring link (2:9) -> (1:9)[1;m
+[1;36mRestoring link (8:9) -> (1:3)[1;m
+[1;36mRestoring link (7:7) -> (3:4)[1;m
+[1;36mRestoring link (9:5) -> (5:2)[1;m
+[1;36mRestoring link (3:2) -> (9:7)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mRestoring link (8:2) -> (9:2)[1;m
+[1;36mRestoring link (4:3) -> (8:6)[1;m
+[1;36mRestoring link (10:7) -> (3:1)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.9.10')]:sending packet on interface eth9: [12:34:56:78:09:0a>12:34:56:78:06:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:dfa1[123.123.9.10>123.123.6.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.10.10')]:sending packet on interface eth10: [12:34:56:78:0a:0a>12:34:56:78:09:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:dba0[123.123.10.10>123.123.9.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.4.10')] (4), New switch 4, New port 16[1;m
+INFO:host:[IPAddr('123.123.4.10')]:sending packet on interface eth4: [12:34:56:78:04:0a>12:34:56:78:04:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e69f[123.123.4.10>123.123.4.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 82 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 13[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-05.5 -> 00-00-00-00-00-06.5[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 11][1;m
+[1;36mBlocking connection [Con 7][1;m
+[1;36mUnblocking connection [Con 4][1;m
+WARNING:FuzzSoftwareSwitch(9):Port 10 is currently down. Dropping packet
+[1;36mCutting link (2:5) -> (6:8)[1;m
+[1;36mCutting link (7:9) -> (1:4)[1;m
+[1;36mCutting link (6:2) -> (9:4)[1;m
+[1;36mCutting link (5:5) -> (6:5)[1;m
+[1;36mCutting link (1:7) -> (4:9)[1;m
+[1;36mCutting link (5:4) -> (7:5)[1;m
+[1;36mCutting link (6:6) -> (4:5)[1;m
+[1;36mCutting link (8:2) -> (9:2)[1;m
+[1;36mCutting link (8:7) -> (3:3)[1;m
+[1;36mRestoring link (2:1) -> (10:8)[1;m
+[1;36mRestoring link (6:3) -> (8:4)[1;m
+[1;36mRestoring link (5:8) -> (2:6)[1;m
+[1;36mRestoring link (8:6) -> (4:3)[1;m
+[1;36mRestoring link (1:4) -> (7:9)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:06:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e69b[123.123.2.10>123.123.6.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 83 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 12[1;m
+
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mUnblocking connection [Con 11][1;m
+[1;36mUnblocking connection [Con 15][1;m
+WARNING:FuzzSoftwareSwitch(10):Port 10 is currently down. Dropping packet
+WARNING:FuzzSoftwareSwitch(10):Port 11 is currently down. Dropping packet
+WARNING:FuzzSoftwareSwitch(9):Port 12 is currently down. Dropping packet
+WARNING:FuzzSoftwareSwitch(9):Port 11 is currently down. Dropping packet
+[1;36mCutting link (7:3) -> (8:3)[1;m
+[1;36mCutting link (8:8) -> (2:3)[1;m
+[1;36mCutting link (3:9) -> (1:8)[1;m
+WARNING:FuzzSoftwareSwitch(3):Currently down. Dropping send()
+[1;36mCutting link (1:3) -> (8:9)[1;m
+[1;36mCutting link (6:8) -> (2:5)[1;m
+[1;36mCutting link (7:7) -> (3:4)[1;m
+[1;36mCutting link (6:4) -> (7:4)[1;m
+[1;36mRestoring link (6:7) -> (3:5)[1;m
+[1;36mRestoring link (8:4) -> (6:3)[1;m
+[1;36mRestoring link (2:5) -> (6:8)[1;m
+[1;36mRestoring link (10:4) -> (6:1)[1;m
+[1;36mRestoring link (7:9) -> (1:4)[1;m
+[1;36mRestoring link (8:7) -> (3:3)[1;m
+[1;36mRestoring link (7:8) -> (2:4)[1;m
+[1;36mRestoring link (5:5) -> (6:5)[1;m
+[1;36mRestoring link (5:4) -> (7:5)[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 84 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 20[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-09.1 -> 00-00-00-00-00-0a.1[1;m
+
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 21[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 30[1;m
+
+WARNING:FuzzSoftwareSwitch(9):Port 13 is currently down. Dropping packet
+[1;36mRebooting software_switch SoftwareSwitch(dpid=3, num_ports=15)[1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;36mCutting link (3:8) -> (2:8)[1;m
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 50102][1;m
+
+[1;36mCutting link (10:4) -> (6:1)[1;m
+[1;36mCutting link (7:4) -> (6:4)[1;m
+[1;36mCutting link (9:3) -> (7:2)[1;m
+[1;36mCutting link (8:9) -> (1:3)[1;m
+[1;36mCutting link (4:2) -> (9:6)[1;m
+[1;36mRestoring link (6:2) -> (9:4)[1;m
+[1;36mRestoring link (6:8) -> (2:5)[1;m
+[1;36mRestoring link (6:6) -> (4:5)[1;m
+[1;36mRestoring link (8:2) -> (9:2)[1;m
+[1;36mRestoring link (7:3) -> (8:3)[1;m
+[1;36mRestoring link (8:8) -> (2:3)[1;m
+[1;36mRestoring link (9:8) -> (2:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:06:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e699[123.123.2.10>123.123.6.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.3.10')] (3), New switch 9, New port 16[1;m
+INFO:host:[IPAddr('123.123.3.10')]:sending packet on interface eth3: [12:34:56:78:03:0a>12:34:56:78:03:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e898[123.123.3.10>123.123.3.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 85 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 14[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-0a.6 -> 00-00-00-00-00-04.1[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mBlocking connection [Con 15][1;m
+[1;36mUnblocking connection [Con 7][1;m
+WARNING:FuzzSoftwareSwitch(10):Port 12 is currently down. Dropping packet
+[1;36mCutting link (4:9) -> (1:7)[1;m
+[1;36mCutting link (3:6) -> (5:7)[1;m
+[1;36mCutting link (5:6) -> (4:6)[1;m
+[1;36mCutting link (6:7) -> (3:5)[1;m
+[1;36mCutting link (9:5) -> (5:2)[1;m
+[1;36mCutting link (9:6) -> (4:2)[1;m
+[1;36mRestoring link (8:9) -> (1:3)[1;m
+[1;36mRestoring link (10:4) -> (6:1)[1;m
+[1;36mRestoring link (9:3) -> (7:2)[1;m
+[1;36mRestoring link (7:4) -> (6:4)[1;m
+[1;36mRestoring link (1:3) -> (8:9)[1;m
+[1;36mRestoring link (3:8) -> (2:8)[1;m
+[1;36mRestoring link (6:4) -> (7:4)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.10')]:sending packet on interface eth1: [12:34:56:78:01:0a>12:34:56:78:05:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e895[123.123.1.10>123.123.5.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.10.10')] (10), New switch 9, New port 17[1;m
+INFO:host:[IPAddr('123.123.10.10')]:sending packet on interface eth10: [12:34:56:78:0a:0a>12:34:56:78:0a:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:da94[123.123.10.10>123.123.10.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 86 completed.[1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+WARNING:FuzzSoftwareSwitch(5):Port 10 is currently down. Dropping packet
+[1;36mCutting link (6:2) -> (9:4)[1;m
+[1;36mCutting link (2:6) -> (5:8)[1;m
+[1;36mCutting link (5:1) -> (10:5)[1;m
+[1;36mCutting link (4:6) -> (5:6)[1;m
+[1;36mCutting link (1:5) -> (6:9)[1;m
+[1;36mCutting link (9:9) -> (1:2)[1;m
+[1;36mCutting link (10:1) -> (9:1)[1;m
+[1;36mCutting link (9:2) -> (8:2)[1;m
+[1;36mCutting link (10:2) -> (8:1)[1;m
+[1;36mCutting link (8:4) -> (6:3)[1;m
+[1;36mCutting link (2:1) -> (10:8)[1;m
+[1;36mCutting link (3:7) -> (4:7)[1;m
+[1;36mRestoring link (7:7) -> (3:4)[1;m
+[1;36mRestoring link (1:7) -> (4:9)[1;m
+[1;36mRestoring link (3:6) -> (5:7)[1;m
+[1;36mRestoring link (9:5) -> (5:2)[1;m
+[1;36mRestoring link (5:6) -> (4:6)[1;m
+[1;36mRestoring link (4:9) -> (1:7)[1;m
+[1;36mRestoring link (6:7) -> (3:5)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.10')]:sending packet on interface eth1: [12:34:56:78:01:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:eb91[123.123.1.10>123.123.2.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:06:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e090[123.123.8.10>123.123.6.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.9.10')]:sending packet on interface eth9: [12:34:56:78:09:0a>12:34:56:78:05:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e08f[123.123.9.10>123.123.5.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.4.10')] (4), New switch 1, New port 16[1;m
+INFO:host:[IPAddr('123.123.4.10')]:sending packet on interface eth4: [12:34:56:78:04:0a>12:34:56:78:04:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e68e[123.123.4.10>123.123.4.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.123.6.10')] (6), New switch 4, New port 17[1;m
+INFO:host:[IPAddr('123.123.6.10')]:sending packet on interface eth6: [12:34:56:78:06:0a>12:34:56:78:06:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e28d[123.123.6.10>123.123.6.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 87 completed.[1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PacketIn'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 30[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-07.5 -> 00-00-00-00-00-05.4[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 18][1;m
+WARNING:FuzzSoftwareSwitch(5):Port 11 is currently down. Dropping packet
+[1;36mCutting link (8:8) -> (2:3)[1;m
+[1;36mCutting link (6:9) -> (1:5)[1;m
+[1;36mCutting link (7:1) -> (10:3)[1;m
+[1;36mCutting link (9:3) -> (7:2)[1;m
+[1;36mRestoring link (5:1) -> (10:5)[1;m
+[1;36mRestoring link (6:2) -> (9:4)[1;m
+[1;36mRestoring link (3:7) -> (4:7)[1;m
+[1;36mRestoring link (9:2) -> (8:2)[1;m
+[1;36mRestoring link (4:2) -> (9:6)[1;m
+[1;36mRestoring link (3:9) -> (1:8)[1;m
+[1;36mRestoring link (10:1) -> (9:1)[1;m
+[1;36mRestoring link (9:6) -> (4:2)[1;m
+[1;36mMigrating host host:[IPAddr('123.123.2.10')] (2), New switch 6, New port 18[1;m
+INFO:host:[IPAddr('123.123.2.10')]:sending packet on interface eth2: [12:34:56:78:02:0a>12:34:56:78:02:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:ea87[123.123.2.10>123.123.2.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 88 completed.[1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-03 19] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disconnect [00-00-00-00-00-03 14][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p.00-00-00-00-00-03:Connect [00-00-00-00-00-03 19][1;m
+
+[1;41m[1;33m[c1] DEBUG:f.t_p:Disabling flooding for 15 ports[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 12[1;m
+
+[1;36mDropping dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 4][1;m
+[1;36mUnblocking connection [Con 18][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-0a.3 -> 00-00-00-00-00-07.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.6 -> 00-00-00-00-00-05.6[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.9 -> 00-00-00-00-00-01.7[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.6 -> 00-00-00-00-00-05.9[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-09.6 -> 00-00-00-00-00-04.2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.2 -> 00-00-00-00-00-09.8[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-07.7 -> 00-00-00-00-00-03.4[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-09.9[1;m
+[1;36mCutting link (4:9) -> (1:7)[1;m
+
+[1;36mCutting link (10:3) -> (7:1)[1;m[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.3 -> 00-00-00-00-00-08.6[1;m
+
+
+[1;36mCutting link (1:6) -> (5:9)[1;m
+[1;36mCutting link (3:8) -> (2:8)[1;m[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-08.5 -> 00-00-00-00-00-05.3[1;m
+
+[1;36mCutting link (2:4) -> (7:8)[1;m
+
+[1;36mCutting link (7:9) -> (1:4)[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-08.3 -> 00-00-00-00-00-07.3[1;m
+[1;36mCutting link (6:2) -> (9:4)[1;m
+
+[1;36mCutting link (3:5) -> (6:7)[1;m
+[1;36mCutting link (4:4) -> (7:6)[1;m
+[1;36mCutting link (7:4) -> (6:4)[1;m
+[1;36mCutting link (8:5) -> (5:3)[1;m
+[1;36mCutting link (1:8) -> (3:9)[1;m
+[1;36mRestoring link (2:1) -> (10:8)[1;m
+[1;36mRestoring link (2:6) -> (5:8)[1;m
+[1;36mRestoring link (1:5) -> (6:9)[1;m
+[1;36mRestoring link (9:3) -> (7:2)[1;m
+[1;36mRestoring link (4:6) -> (5:6)[1;m
+[1;36mRestoring link (8:4) -> (6:3)[1;m
+[1;36mRestoring link (7:1) -> (10:3)[1;m
+[1;36mRestoring link (8:8) -> (2:3)[1;m
+[1;36mRestoring link (10:2) -> (8:1)[1;m
+[1;36mRestoring link (9:9) -> (1:2)[1;m
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.1.10')]:sending packet on interface eth1: [12:34:56:78:01:0a>12:34:56:78:05:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e885[123.123.1.10>123.123.5.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.8.10')]:sending packet on interface eth8: [12:34:56:78:08:0a>12:34:56:78:03:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e384[123.123.8.10>123.123.3.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.9.10')]:sending packet on interface eth9: [12:34:56:78:09:0a>12:34:56:78:05:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e083[123.123.9.10>123.123.5.10]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mInjecting a random packet[1;m
+INFO:host:[IPAddr('123.123.10.10')]:sending packet on interface eth10: [12:34:56:78:0a:0a>12:34:56:78:01:0a:IP]|([v:4hl:5l:72t:64]ICMP cs:e382[123.123.10.10>123.123.1.10]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;41m[1;37mThe following correctness violations have occurred: ['c1'][1;m
+[1;41m[1;37mPersistent violations detected!: ['c1'][1;m
+INFO:control_flow:Terminating fuzzing after 89 rounds
+INFO:control_flow:Pending Messages:
+INFO:control_flow:- PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_barrier_request'})
+INFO:control_flow:- PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})
+INFO:control_flow:- PendingReceive(dpid=7, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})
+INFO:control_flow:- PendingReceive(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})
+INFO:control_flow:- PendingReceive(dpid=9, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})
+INFO:control_flow:- PendingReceive(dpid=5, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})
+INFO:control_flow:- PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})
+INFO:control_flow:- PendingReceive(dpid=6, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})
+INFO:control_flow:- PendingReceive(dpid=10, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})
+INFO:control_flow:- PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 65000, 'idle_timeout': 0, 'command': 'add', 'actions': ('output(65533)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None'})
+INFO:control_flow:- PendingReceive(dpid=8, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})
+INFO:control_flow:- PendingSend(dpid=7, controller_id='c1', fingerprint=OFFingerprint{'reason': 0, 'class': 'ofp_port_status', 'desc': (1, '00:00:00:00:07:01')})
+INFO:control_flow:- PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'reason': 0, 'class': 'ofp_port_status', 'desc': (1, '00:00:00:00:02:01')})
+INFO:control_flow:- PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'reason': 1, 'class': 'ofp_port_status', 'desc': (5, '00:00:00:00:03:05')})
+INFO:control_flow:- PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'reason': 1, 'class': 'ofp_port_status', 'desc': (6, '00:00:00:00:01:06')})
+INFO:control_flow:- PendingSend(dpid=9, controller_id='c1', fingerprint=OFFingerprint{'reason': 0, 'class': 'ofp_port_status', 'desc': (9, '00:00:00:00:09:09')})
+INFO:control_flow:- PendingSend(dpid=10, controller_id='c1', fingerprint=OFFingerprint{'reason': 1, 'class': 'ofp_port_status', 'desc': (3, '00:00:00:00:0a:03')})
+INFO:control_flow:- PendingSend(dpid=10, controller_id='c1', fingerprint=OFFingerprint{'reason': 0, 'class': 'ofp_port_status', 'desc': (2, '00:00:00:00:0a:02')})
+INFO:control_flow:- PendingSend(dpid=8, controller_id='c1', fingerprint=OFFingerprint{'reason': 0, 'class': 'ofp_port_status', 'desc': (4, '00:00:00:00:08:04')})
+INFO:control_flow:- PendingSend(dpid=7, controller_id='c1', fingerprint=OFFingerprint{'reason': 1, 'class': 'ofp_port_status', 'desc': (9, '00:00:00:00:07:09')})
+INFO:control_flow:- PendingSend(dpid=9, controller_id='c1', fingerprint=OFFingerprint{'reason': 0, 'class': 'ofp_port_status', 'desc': (3, '00:00:00:00:09:03')})
+INFO:control_flow:- PendingSend(dpid=8, controller_id='c1', fingerprint=OFFingerprint{'reason': 0, 'class': 'ofp_port_status', 'desc': (8, '00:00:00:00:08:08')})
+INFO:control_flow:- PendingSend(dpid=6, controller_id='c1', fingerprint=OFFingerprint{'reason': 1, 'class': 'ofp_port_status', 'desc': (2, '00:00:00:00:06:02')})
+INFO:control_flow:- PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'reason': 1, 'class': 'ofp_port_status', 'desc': (8, '00:00:00:00:03:08')})
+INFO:control_flow:- PendingSend(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'reason': 1, 'class': 'ofp_port_status', 'desc': (4, '00:00:00:00:04:04')})
+INFO:control_flow:- PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'reason': 1, 'class': 'ofp_port_status', 'desc': (4, '00:00:00:00:02:04')})
+INFO:control_flow:- PendingSend(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'reason': 0, 'class': 'ofp_port_status', 'desc': (6, '00:00:00:00:04:06')})
+INFO:control_flow:- PendingSend(dpid=7, controller_id='c1', fingerprint=OFFingerprint{'reason': 1, 'class': 'ofp_port_status', 'desc': (4, '00:00:00:00:07:04')})
+INFO:control_flow:- PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'reason': 1, 'class': 'ofp_port_status', 'desc': (8, '00:00:00:00:01:08')})
+INFO:control_flow:- PendingSend(dpid=8, controller_id='c1', fingerprint=OFFingerprint{'reason': 1, 'class': 'ofp_port_status', 'desc': (5, '00:00:00:00:08:05')})
+INFO:control_flow:- PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'reason': 0, 'class': 'ofp_port_status', 'desc': (6, '00:00:00:00:02:06')})
+INFO:control_flow:- PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'reason': 0, 'class': 'ofp_port_status', 'desc': (5, '00:00:00:00:01:05')})
+INFO:control_flow:- PendingSend(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'reason': 1, 'class': 'ofp_port_status', 'desc': (9, '00:00:00:00:04:09')})
