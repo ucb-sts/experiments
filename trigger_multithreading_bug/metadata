@@ -1,0 +1,36 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "config/trigger_multithreading_bug.py"
+  ],
+  "cwd": "/Users/cs/Research/UCB/code/sts",
+  "host": {
+    "cpu_info": "",
+    "free": "",
+    "name": "yossarian",
+    "num_cores": "0",
+    "uptime": "21:38  up 7 days,  9:58, 5 users, load averages: 1.13 1.25 1.24"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "debugger",
+      "commit": "331863162813d01e850fa77a8e144473bee52b51"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "fe1e86bb7e71633906dc4bde9cd50d1ef5d30ac5"
+    }
+  },
+  "sys": {
+    "lsb_release": "",
+    "uname": "Darwin yossarian 13.0.2 Darwin Kernel Version 13.0.2: Sun Sep 29 19:38:57 PDT 2013; root:xnu-2422.75.4~1/RELEASE_X86_64 x86_64"
+  },
+  "timestamp": "2014_01_28_21_38_54",
+  "user": "cs"
+}
