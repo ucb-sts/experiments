@@ -1,0 +1,210 @@
+No DataplaneDrops to replay. We suggest you set Replayer's default_dp_permit=True 
+[1;36mStarting POX controller c1[1;m
+[1;33m[c1] POX 0.2.0 (carp) / Copyright 2011-2013 James McCauley, et al.[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:POX 0.2.0 (carp) going up...[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Running on CPython (2.7.3/Sep 26 2013 20:03:06)[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Platform is Linux-3.8.0-35-generic-x86_64-with-Ubuntu-12.04-precise[1;m
+
+[1;41m[1;33m[c1] INFO:core:POX 0.2.0 (carp) is up.[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening on 127.0.0.1:6633[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;36m[1;44m00:00.503 00:00.000 Successfully matched event ConnectToControllers:e1[1;m
+[1;36m[1;44m00:00.546 00:01.014 Successfully matched event ControlMessageReceive:i2 c c1 -> s 1 [ofp_hello: ][1;m
+[1;36m[1;36mRound 1[1;37m[1;m
+[1;36m[1;44m00:00.547 00:01.015 Successfully matched event ControlMessageSend:i3 c 1 -> s c1 [ofp_hello: ][1;m
+[1;36mCutting link (1:3) -> (2:3)[1;m
+[1;36m[1;44m00:00.548 00:01.016 Successfully matched event LinkFailure:e4[1;m
+[1;36mCutting link (1:2) -> (3:3)[1;m
+[1;36m[1;44m00:00.548 00:01.016 Successfully matched event LinkFailure:e5[1;m
+[1;36mCutting link (2:2) -> (3:2)[1;m
+[1;36m[1;44m00:00.549 00:01.017 Successfully matched event LinkFailure:e6[1;m
+[1;36mCutting link (2:3) -> (1:3)[1;m
+[1;36m[1;44m00:00.550 00:01.017 Successfully matched event LinkFailure:e7[1;m
+[1;36m[1;44m00:00.551 00:01.120 Successfully matched event ControlMessageReceive:i11 c c1 -> s 4 [ofp_hello: ][1;m
+[1;36m[1;36mRound 2[1;37m[1;m
+[1;36m[1;44m00:00.551 00:01.121 Successfully matched event ControlMessageReceive:i12 c c1 -> s 3 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.552 00:01.121 Successfully matched event ControlMessageReceive:i13 c c1 -> s 2 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.553 00:01.122 Successfully matched event ControlMessageReceive:i14 c c1 -> s 1 [ofp_features_request: ][1;m
+[1;35m[1;41m00:01.154 00:01.122 Event timed out ControlMessageSend:i15 c 4 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:04:03')][1;m
+[1;36m[1;44m00:01.155 00:01.123 Successfully matched event ControlMessageSend:i16 c 1 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:01:03')][1;m
+[1;36m[1;44m00:01.156 00:01.123 Successfully matched event ControlMessageSend:i17 c 3 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:01.157 00:01.124 Successfully matched event ControlMessageSend:i18 c 2 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:02:03')][1;m
+[1;36m[1;44m00:01.158 00:01.124 Successfully matched event ControlMessageSend:i19 c 1 -> s c1 [ofp_features_reply: datapath_id=1][1;m
+[1;36m[1;44m00:01.158 00:01.125 Successfully matched event ControlMessageSend:i20 c 1 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:01:02')][1;m
+[1;36m[1;44m00:01.159 00:01.125 Successfully matched event ControlMessageSend:i21 c 2 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:02:02')][1;m
+[1;36m[1;44m00:01.160 00:01.125 Successfully matched event ControlMessageSend:i22 c 2 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:01.161 00:01.126 Successfully matched event ControlMessageSend:i23 c 4 -> s c1 [ofp_hello: ][1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;35m[1;41m00:01.773 00:01.126 Event timed out ControlMessageSend:i24 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;36mRestoring link (1:2) -> (3:3)[1;m
+[1;36m[1;44m00:01.774 00:01.128 Successfully matched event LinkRecovery:e27[1;m
+[1;36mRestoring link (2:2) -> (3:2)[1;m
+[1;36m[1;44m00:01.774 00:01.128 Successfully matched event LinkRecovery:e28[1;m
+[1;36mRestoring link (2:3) -> (1:3)[1;m
+[1;36m[1;44m00:01.774 00:01.129 Successfully matched event LinkRecovery:e30[1;m
+[1;36m[1;44m00:01.775 00:01.230 Successfully matched event ControlMessageReceive:i32 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;36m[1;36mRound 3[1;37m[1;m
+[1;36m[1;44m00:01.775 00:01.230 Successfully matched event ControlMessageReceive:i33 c c1 -> s 1 [ofp_set_config: ][1;m
+[1;36m[1;44m00:01.775 00:01.230 Successfully matched event ControlMessageReceive:i34 c c1 -> s 3 [ofp_features_request: ][1;m
+[1;36m[1;44m00:01.776 00:01.231 Successfully matched event ControlMessageReceive:i35 c c1 -> s 2 [ofp_features_request: ][1;m
+[1;36m[1;44m00:01.776 00:01.231 Successfully matched event ControlMessageReceive:i36 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:01.777 00:01.232 Successfully matched event ControlMessageReceive:i37 c c1 -> s 4 [ofp_features_request: ][1;m
+[1;35m[1;41m00:02.378 00:01.232 Event timed out ControlMessageSend:i38 c 4 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:04:02')][1;m
+[1;36m[1;44m00:02.379 00:01.232 Successfully matched event ControlMessageSend:i39 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-01 1] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-01[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Connect [00-00-00-00-00-01 1][1;m
+
+[1;35m[1;41m00:02.990 00:01.232 Event timed out ControlMessageSend:i40 c 3 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m00:02.991 00:01.232 Successfully matched event ControlMessageSend:i41 c 2 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:02:03')][1;m
+[1;36m[1;44m00:02.992 00:01.233 Successfully matched event ControlMessageSend:i42 c 2 -> s c1 [ofp_features_reply: datapath_id=2][1;m
+[1;36m[1;44m00:02.992 00:01.233 Successfully matched event ControlMessageSend:i43 c 1 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:01:02')][1;m
+[1;36m[1;44m00:02.993 00:01.233 Successfully matched event ControlMessageSend:i44 c 2 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:02:02')][1;m
+[1;36m[1;44m00:02.994 00:01.233 Successfully matched event ControlMessageSend:i45 c 3 -> s c1 [ofp_features_reply: datapath_id=3][1;m
+[1;41m[1;33m[c1] WARNING:openflow.of_01:<class 'pox.openflow.PortStatus'> raised on dummy OpenFlow nexus[1;m
+
+[1;35m[1;41m00:03.607 00:01.234 Event timed out ControlMessageSend:i46 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;36m[1;44m00:03.607 00:01.234 Successfully matched event ControlMessageSend:i47 c 4 -> s c1 [ofp_features_reply: datapath_id=4][1;m
+[1;36mRestoring link (1:3) -> (2:3)[1;m
+[1;36m[1;44m00:03.608 00:01.235 Successfully matched event LinkRecovery:e52[1;m
+[1;36m[1;44m00:03.621 00:01.336 Successfully matched event ControlMessageReceive:i57 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 4[1;37m[1;m
+[1;36m[1;44m00:03.621 00:01.338 Successfully matched event ControlMessageReceive:i58 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:03.622 00:01.338 Successfully matched event ControlMessageReceive:i59 c c1 -> s 4 [ofp_set_config: ][1;m
+[1;36m[1;44m00:03.622 00:01.339 Successfully matched event ControlMessageReceive:i60 c c1 -> s 2 [ofp_set_config: ][1;m
+[1;36m[1;44m00:03.622 00:01.339 Successfully matched event ControlMessageReceive:i61 c c1 -> s 3 [ofp_set_config: ][1;m
+[1;36m[1;44m00:03.623 00:01.339 Successfully matched event ControlMessageReceive:i62 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:03.623 00:01.340 Successfully matched event ControlMessageReceive:i63 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:03.624 00:01.342 Successfully matched event ControlMessageReceive:i64 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:03.625 00:01.343 Successfully matched event ControlMessageReceive:i65 c c1 -> s 4 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:03.625 00:01.343 Successfully matched event ControlMessageReceive:i66 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:04.254 00:01.344 Event timed out ControlMessageSend:i67 c 4 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:04:03')][1;m
+[1;35m[1;41m00:04.855 00:01.345 Event timed out ControlMessageSend:i68 c 1 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:01:01')][1;m
+[1;35m[1;41m00:05.519 00:01.345 Event timed out ControlMessageSend:i69 c 3 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:03:03')][1;m
+[1;36m[1;44m00:05.520 00:01.345 Successfully matched event ControlMessageSend:i70 c 1 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:01:03')][1;m
+[1;36m[1;44m00:05.520 00:01.345 Successfully matched event ControlMessageSend:i71 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-02 2] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-02[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Connect [00-00-00-00-00-02 2][1;m
+
+[1;35m[1;41m00:06.150 00:01.345 Event timed out ControlMessageSend:i72 c 4 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:04:02')][1;m
+[1;35m[1;41m00:06.816 00:01.346 Event timed out ControlMessageSend:i73 c 2 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:02:03')][1;m
+[1;36m[1;44m00:06.818 00:01.346 Successfully matched event ControlMessageSend:i74 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-03 3] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Connect [00-00-00-00-00-03 3][1;m
+
+[1;35m[1;41m00:07.463 00:01.346 Event timed out ControlMessageSend:i75 c 3 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:03:02')][1;m
+[1;35m[1;41m00:08.128 00:01.346 Event timed out ControlMessageSend:i76 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;36m[1;44m00:08.130 00:01.449 Successfully matched event ControlMessageReceive:i86 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;36mRound 5[1;37m[1;m
+[1;36m[1;44m00:08.132 00:01.451 Successfully matched event ControlMessageReceive:i87 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:08.657 00:01.452 Event timed out ControlMessageSend:i88 c 4 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:04:02')][1;m
+[1;35m[1;41m00:09.321 00:01.453 Event timed out ControlMessageSend:i89 c 4 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:04:01')][1;m
+[1;35m[1;41m00:09.986 00:01.453 Event timed out ControlMessageSend:i90 c 1 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:01:03')][1;m
+[1;35m[1;41m00:10.510 00:01.453 Event timed out ControlMessageSend:i91 c 1 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:01:01')][1;m
+[1;35m[1;41m00:11.175 00:01.453 Event timed out ControlMessageSend:i92 c 2 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:02:03')][1;m
+[1;35m[1;41m00:11.841 00:01.454 Event timed out ControlMessageSend:i93 c 1 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:01:02')][1;m
+[1;35m[1;41m00:12.523 00:01.454 Event timed out ControlMessageSend:i94 c 3 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:03:02')][1;m
+[1;35m[1;41m00:13.188 00:01.454 Event timed out ControlMessageSend:i95 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;35m[1;41m00:13.917 00:01.557 Event timed out ControlMessageSend:i107 c 4 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:04:02')][1;m
+[1;36m[1;36mRound 6[1;37m[1;m
+[1;35m[1;41m00:14.582 00:01.558 Event timed out ControlMessageSend:i108 c 3 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:03:03')][1;m
+[1;35m[1;41m00:15.111 00:01.558 Event timed out ControlMessageSend:i109 c 4 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:04:01')][1;m
+[1;35m[1;41m00:15.739 00:01.559 Event timed out ControlMessageSend:i110 c 1 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:01:03')][1;m
+[1;35m[1;41m00:16.404 00:01.559 Event timed out ControlMessageSend:i111 c 2 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:02:03')][1;m
+[1;35m[1;41m00:17.085 00:01.560 Event timed out ControlMessageSend:i112 c 1 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:01:02')][1;m
+[1;35m[1;41m00:17.750 00:01.560 Event timed out ControlMessageSend:i113 c 2 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:02:01')][1;m
+[1;35m[1;41m00:18.278 00:01.560 Event timed out ControlMessageSend:i114 c 2 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:02:02')][1;m
+[1;35m[1;41m00:18.942 00:01.561 Event timed out ControlMessageSend:i115 c 3 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:03:02')][1;m
+[1;35m[1;41m00:19.607 00:01.561 Event timed out ControlMessageSend:i116 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;35m[1;41m00:20.334 00:01.666 Event timed out ControlMessageSend:i126 c 4 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:04:03')][1;m
+[1;36m[1;36mRound 7[1;37m[1;m
+[1;35m[1;41m00:20.994 00:01.667 Event timed out ControlMessageSend:i127 c 3 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:03:03')][1;m
+[1;35m[1;41m00:21.522 00:01.667 Event timed out ControlMessageSend:i128 c 4 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:04:01')][1;m
+[1;35m[1;41m00:22.150 00:01.667 Event timed out ControlMessageSend:i129 c 2 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:02:03')][1;m
+[1;35m[1;41m00:22.814 00:01.667 Event timed out ControlMessageSend:i130 c 2 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:02:01')][1;m
+[1;35m[1;41m00:23.342 00:01.668 Event timed out ControlMessageSend:i131 c 2 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:02:02')][1;m
+[1;35m[1;41m00:24.007 00:01.668 Event timed out ControlMessageSend:i132 c 3 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:03:02')][1;m
+[1;35m[1;41m00:24.672 00:01.668 Event timed out ControlMessageSend:i133 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;35m[1;41m00:25.400 00:01.771 Event timed out ControlMessageSend:i145 c 4 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:04:03')][1;m
+[1;36m[1;36mRound 8[1;37m[1;m
+[1;35m[1;41m00:26.028 00:01.772 Event timed out ControlMessageSend:i146 c 1 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:01:01')][1;m
+[1;35m[1;41m00:26.556 00:01.772 Event timed out ControlMessageSend:i147 c 3 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:03:03')][1;m
+[1;35m[1;41m00:27.184 00:01.772 Event timed out ControlMessageSend:i148 c 4 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:04:01')][1;m
+[1;35m[1;41m00:27.848 00:01.772 Event timed out ControlMessageSend:i149 c 1 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:01:03')][1;m
+[1;35m[1;41m00:28.376 00:01.773 Event timed out ControlMessageSend:i150 c 4 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:04:02')][1;m
+[1;35m[1;41m00:29.041 00:01.773 Event timed out ControlMessageSend:i151 c 2 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:02:03')][1;m
+[1;35m[1;41m00:29.705 00:01.773 Event timed out ControlMessageSend:i152 c 1 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:01:02')][1;m
+[1;35m[1;41m00:30.234 00:01.773 Event timed out ControlMessageSend:i153 c 3 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:03:02')][1;m
+[1;35m[1;41m00:30.877 00:01.773 Event timed out ControlMessageSend:i154 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;36m[1;44m00:30.878 00:01.876 Successfully matched event ControlMessageReceive:i166 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 9[1;37m[1;m
+[1;35m[1;41m00:31.542 00:01.877 Event timed out ControlMessageSend:i167 c 4 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:04:03')][1;m
+[1;35m[1;41m00:32.034 00:01.877 Event timed out ControlMessageSend:i168 c 1 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:01:01')][1;m
+[1;35m[1;41m00:32.698 00:01.878 Event timed out ControlMessageSend:i169 c 3 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:03:03')][1;m
+[1;35m[1;41m00:33.363 00:01.878 Event timed out ControlMessageSend:i170 c 1 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:01:03')][1;m
+[1;35m[1;41m00:33.892 00:01.878 Event timed out ControlMessageSend:i171 c 2 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:02:03')][1;m
+[1;35m[1;41m00:34.556 00:01.878 Event timed out ControlMessageSend:i172 c 1 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:01:02')][1;m
+[1;35m[1;41m00:35.221 00:01.878 Event timed out ControlMessageSend:i173 c 2 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:02:01')][1;m
+[1;35m[1;41m00:35.713 00:01.879 Event timed out ControlMessageSend:i174 c 2 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:02:02')][1;m
+[1;35m[1;41m00:36.378 00:01.879 Event timed out ControlMessageSend:i175 c 3 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:03:02')][1;m
+[1;35m[1;41m00:37.042 00:01.879 Event timed out ControlMessageSend:i176 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:37.043 00:01.981 Successfully matched event DataplanePermit:i184[1;m
+[1;36m[1;36mRound 10[1;37m[1;m
+[1;35m[1;41m00:37.735 00:01.982 Event timed out ControlMessageSend:i185 c 4 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:04:03')][1;m
+[1;35m[1;41m00:38.399 00:01.982 Event timed out ControlMessageSend:i186 c 4 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:04:02')][1;m
+[1;35m[1;41m00:38.928 00:01.982 Event timed out ControlMessageSend:i187 c 1 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:01:03')][1;m
+[1;36m[1;44m00:38.928 00:01.983 Successfully matched event ControlMessageSend:i188 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-04.3[1;m
+
+[1;33m[c1] Failed to get switches: dpid1=1 dpid2=4 switches={1: 00-00-00-00-00-01, 2: 00-00-00-00-00-02, 3: 00-00-00-00-00-03}[1;m
+
+[1;35m[1;41m00:39.535 00:01.983 Event timed out ControlMessageSend:i189 c 2 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:02:03')][1;m
+[1;35m[1;41m00:40.136 00:01.983 Event timed out ControlMessageSend:i190 c 2 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:02:01')][1;m
+[1;35m[1;41m00:40.738 00:01.983 Event timed out ControlMessageSend:i191 c 2 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:02:02')][1;m
+[1;36m[1;44m00:40.739 00:02.088 Successfully matched event ControlMessageReceive:i201 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 11[1;37m[1;m
+[1;35m[1;41m00:41.340 00:02.089 Event timed out ControlMessageSend:i202 c 4 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:04:03')][1;m
+[1;35m[1;41m00:41.942 00:02.089 Event timed out ControlMessageSend:i203 c 4 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:04:01')][1;m
+[1;35m[1;41m00:42.543 00:02.090 Event timed out ControlMessageSend:i204 c 1 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:01:03')][1;m
+[1;35m[1;41m00:43.145 00:02.090 Event timed out ControlMessageSend:i205 c 2 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:02:03')][1;m
+[1;35m[1;41m00:43.746 00:02.091 Event timed out ControlMessageSend:i206 c 2 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:02:01')][1;m
+[1;35m[1;41m00:44.348 00:02.091 Event timed out ControlMessageSend:i207 c 1 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:01:02')][1;m
+[1;35m[1;41m00:44.949 00:02.091 Event timed out ControlMessageSend:i208 c 3 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:03:02')][1;m
+[1;35m[1;41m00:45.551 00:02.092 Event timed out ControlMessageSend:i209 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;41m[1;37mViolations at end of trace: ['c1'][1;m
+[1;42m[1;37mViolation found c1[1;m
+[1;36m[1;44mEvent Stats: Events matched: 55, timed out: 72
+Matches per event type:
+  ConnectToControllers 1
+  DataplanePermit 1
+  LinkFailure 4
+  LinkRecovery 4
+  ControlMessageSend 20
+  ControlMessageReceive 25
+Timeouts per event type:
+  ControlMessageSend 72
+[1;m

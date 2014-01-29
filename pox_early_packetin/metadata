@@ -1,0 +1,36 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/pox_switch_hash_bug_fuzz_fuzzer/mcs_config.py"
+  ],
+  "cwd": "/mnt/andi/sts/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:     264105312   24124600  239980712          0     198336   12554864\n-/+ buffers/cache:   11371400  252733912\nSwap:            0          0          0",
+    "name": "c75",
+    "num_cores": "32",
+    "uptime": "23:02:12 up 5 days,  1:32, 15 users,  load average: 1.71, 1.58, 1.69"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "debugger",
+      "commit": "cc37f7943b079f13c1c7525584f4a504771c62e8"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "36cfb48c84c73b796226d515b85ac0b74a0539f5"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 12.04.4 LTS",
+    "uname": "Linux c75 3.8.0-35-generic #50~precise1-Ubuntu SMP Wed Dec 4 17:25:51 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_01_28_23_02_12",
+  "user": "andi"
+}
