@@ -7,10 +7,10 @@
   "cwd": "/home/andrewor/sts",
   "host": {
     "cpu_info": "Intel(R) Xeon(R) CPU X5660 @ 2.80GHz",
-    "free": "total       used       free     shared    buffers     cached\nMem:       6103076    5212264     890812          0     368464    2479004\n-/+ buffers/cache:    2364796    3738280\nSwap:      6283260       5788    6277472",
+    "free": "total       used       free     shared    buffers     cached\nMem:       6103076    5760208     342868          0     332588    2459320\n-/+ buffers/cache:    2968300    3134776\nSwap:      6283260      10824    6272436",
     "name": "c5",
     "num_cores": "12",
-    "uptime": "11:28:56 up 60 days, 18:57,  2 users,  load average: 0.00, 0.01, 0.05"
+    "uptime": "16:14:40 up 65 days, 23:43,  1 user,  load average: 0.01, 0.04, 0.05"
   },
   "modules": {
     "pox": {
@@ -26,6 +26,6 @@
     "lsb_release": "Ubuntu 12.04.3 LTS",
     "uname": "Linux c5 3.2.0-56-generic #86-Ubuntu SMP Wed Oct 23 09:20:45 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
   },
-  "timestamp": "2014_01_24_11_28_56",
+  "timestamp": "2014_01_29_16_14_40",
   "user": "andrewor"
 }
