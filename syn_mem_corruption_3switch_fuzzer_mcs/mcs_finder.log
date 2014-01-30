@@ -1,0 +1,62 @@
+Violation reproduced successfully! Proceeding with pruning
+Subsets:
+l/0: e10 e19 e36 e41 e42 e43 e45 a(e48,[u'e381']) e49 e56 e58 e59 e60 e62 e65 e71 e73 e75 a(e76,[u'e120']) e77 e80 e83 e89 e91 e94 e100 e102 e105 e111 a(e113,[u'e145']) e114 e117 e118 e121 a(e125,[u'e243']) e126 e133 e135 e138 e144 e146 e150 e153 e159 e161 e163 e164 e166 a(e169,[u'e365']) e170 e177 e179 e182 e188 e190 e193 e199 e201 e203 e204 e206 e207 e208 e210 e211 e212 e214 e215 e216 e218 e220 e221 e223 e226 e228 e230 e233 e235 e236 e238 e241 e244 e247 e249 e250 e252 e255 e257 e259 e262 e264 e266 e267 e268 e270 e272 e273 e275 a(e278,[u'e728']) e279 e282 e284 e285 e286 e288 e291 e293 e295 e297 e298 e300 e303 e305 e307 e308 a(e309,[u'e739']) e310 e312 e314 e315 e316 e318 e320 e321 e323 e324 e325 e327 e330 e332 e334 e337 e339 e341 e343 e344 e346 e349 e351 e353 e356 e358 e360 e361 e362 a(e364,[u'e401']) e366 e370 e375 e382 e386 e388 e390 e391 e392 e394 e397 e399 e402 e405 a(e406,[u'e584']) e407
+r/0: e410 e413 e415 a(e416,[u'e538']) e417 e420 e423 a(e429,[u'e574']) e430 e433 e434 e435 a(e437,[u'e655']) e438 e441 e442 e444 e445 e446 e448 e451 e453 e455 e456 e457 e459 e461 e462 e464 e467 e469 e471 e472 e473 e475 e478 e484 e485 e488 e490 e495 e501 e504 e506 e508 e509 e510 a(e512,[u'e526']) e513 e515 a(e516,[u'e613']) e517 e520 e522 e523 a(e525,[u'e722']) e527 e530 e531 e533 e534 e535 e536 e539 e541 e542 e544 e546 e547 e549 e550 e551 e553 e556 e558 e559 e562 e563 e564 e566 e568 e569 e571 e575 e578 e580 e581 e582 e585 e587 e588 e590 e592 e597 e603 e604 e605 e607 e608 e609 e611 e612 e614 e617 e619 e620 e621 e623 e626 e628 e630 e631 e632 e634 e635 e636 e638 a(e640,[u'e645']) a(e641,[u'e650']) e642 e646 e649 e651 e653 e656 e660 e662 e664 e667 e673 e675 e677 e678 e680 e683 e685 e687 e690 e696 e698 e701 e703 e705 e707 e712 e718 e719 e720 e723 e725 e726 e729 e731 e732 e734 e736 e737 e740 e743 e746 e747 e749
+Current subset: l/0: e10 e19 e36 e41 e42 e43 e45 a(e48,[u'e381']) e49 e56 e58 e59 e60 e62 e65 e71 e73 e75 a(e76,[u'e120']) e77 e80 e83 e89 e91 e94 e100 e102 e105 e111 a(e113,[u'e145']) e114 e117 e118 e121 a(e125,[u'e243']) e126 e133 e135 e138 e144 e146 e150 e153 e159 e161 e163 e164 e166 a(e169,[u'e365']) e170 e177 e179 e182 e188 e190 e193 e199 e201 e203 e204 e206 e207 e208 e210 e211 e212 e214 e215 e216 e218 e220 e221 e223 e226 e228 e230 e233 e235 e236 e238 e241 e244 e247 e249 e250 e252 e255 e257 e259 e262 e264 e266 e267 e268 e270 e272 e273 e275 a(e278,[u'e728']) e279 e282 e284 e285 e286 e288 e291 e293 e295 e297 e298 e300 e303 e305 e307 e308 a(e309,[u'e739']) e310 e312 e314 e315 e316 e318 e320 e321 e323 e324 e325 e327 e330 e332 e334 e337 e339 e341 e343 e344 e346 e349 e351 e353 e356 e358 e360 e361 e362 a(e364,[u'e401']) e366 e370 e375 e382 e386 e388 e390 e391 e392 e394 e397 e399 e402 e405 a(e406,[u'e584']) e407
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1: e10 e19 e36 e41 e42 e43 e45 a(e48,[u'e381']) e49 e56 e58 e59 e60 e62 e65 e71 e73 e75 a(e76,[u'e120']) e77 e80 e83 e89 e91 e94 e100 e102 e105 e111 a(e113,[u'e145']) e114 e117 e118 e121 a(e125,[u'e243']) e126 e133 e135 e138 e144 e146 e150 e153 e159 e161 e163 e164 e166 a(e169,[u'e365']) e170 e177 e179 e182 e188 e190 e193 e199 e201 e203 e204 e206 e207 e208 e210 e211 e212 e214 e215 e216 e218 e220 e221 e223 e226 e228 e230 e233 e235 e236 e238 e241
+l/0.r/1: e244 e247 e249 e250 e252 e255 e257 e259 e262 e264 e266 e267 e268 e270 e272 e273 e275 a(e278,[u'e728']) e279 e282 e284 e285 e286 e288 e291 e293 e295 e297 e298 e300 e303 e305 e307 e308 a(e309,[u'e739']) e310 e312 e314 e315 e316 e318 e320 e321 e323 e324 e325 e327 e330 e332 e334 e337 e339 e341 e343 e344 e346 e349 e351 e353 e356 e358 e360 e361 e362 a(e364,[u'e401']) e366 e370 e375 e382 e386 e388 e390 e391 e392 e394 e397 e399 e402 e405 a(e406,[u'e584']) e407
+Current subset: l/0.l/1: e10 e19 e36 e41 e42 e43 e45 a(e48,[u'e381']) e49 e56 e58 e59 e60 e62 e65 e71 e73 e75 a(e76,[u'e120']) e77 e80 e83 e89 e91 e94 e100 e102 e105 e111 a(e113,[u'e145']) e114 e117 e118 e121 a(e125,[u'e243']) e126 e133 e135 e138 e144 e146 e150 e153 e159 e161 e163 e164 e166 a(e169,[u'e365']) e170 e177 e179 e182 e188 e190 e193 e199 e201 e203 e204 e206 e207 e208 e210 e211 e212 e214 e215 e216 e218 e220 e221 e223 e226 e228 e230 e233 e235 e236 e238 e241
+No violation in 0'th...
+Current subset: l/0.r/1: e244 e247 e249 e250 e252 e255 e257 e259 e262 e264 e266 e267 e268 e270 e272 e273 e275 a(e278,[u'e728']) e279 e282 e284 e285 e286 e288 e291 e293 e295 e297 e298 e300 e303 e305 e307 e308 a(e309,[u'e739']) e310 e312 e314 e315 e316 e318 e320 e321 e323 e324 e325 e327 e330 e332 e334 e337 e339 e341 e343 e344 e346 e349 e351 e353 e356 e358 e360 e361 e362 a(e364,[u'e401']) e366 e370 e375 e382 e386 e388 e390 e391 e392 e394 e397 e399 e402 e405 a(e406,[u'e584']) e407
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+l/0.r/1.l/2: e244 e247 e249 e250 e252 e255 e257 e259 e262 e264 e266 e267 e268 e270 e272 e273 e275 a(e278,[u'e728']) e279 e282 e284 e285 e286 e288 e291 e293 e295 e297 e298 e300 e303 e305 e307 e308 a(e309,[u'e739']) e310 e312 e314 e315 e316 e318
+l/0.r/1.r/2: e320 e321 e323 e324 e325 e327 e330 e332 e334 e337 e339 e341 e343 e344 e346 e349 e351 e353 e356 e358 e360 e361 e362 a(e364,[u'e401']) e366 e370 e375 e382 e386 e388 e390 e391 e392 e394 e397 e399 e402 e405 a(e406,[u'e584']) e407
+Current subset: l/0.r/1.l/2: e244 e247 e249 e250 e252 e255 e257 e259 e262 e264 e266 e267 e268 e270 e272 e273 e275 a(e278,[u'e728']) e279 e282 e284 e285 e286 e288 e291 e293 e295 e297 e298 e300 e303 e305 e307 e308 a(e309,[u'e739']) e310 e312 e314 e315 e316 e318
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.r/1.l/2.l/3: e244 e247 e249 e250 e252 e255 e257 e259 e262 e264 e266 e267 e268 e270 e272 e273 e275 a(e278,[u'e728']) e279 e282 e284
+l/0.r/1.l/2.r/3: e285 e286 e288 e291 e293 e295 e297 e298 e300 e303 e305 e307 e308 a(e309,[u'e739']) e310 e312 e314 e315 e316 e318
+Current subset: l/0.r/1.l/2.l/3: e244 e247 e249 e250 e252 e255 e257 e259 e262 e264 e266 e267 e268 e270 e272 e273 e275 a(e278,[u'e728']) e279 e282 e284
+No violation in 0'th...
+Current subset: l/0.r/1.l/2.r/3: e285 e286 e288 e291 e293 e295 e297 e298 e300 e303 e305 e307 e308 a(e309,[u'e739']) e310 e312 e314 e315 e316 e318
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+l/0.r/1.l/2.r/3.l/4: e285 e286 e288 e291 e293 e295 e297 e298 e300 e303
+l/0.r/1.l/2.r/3.r/4: e305 e307 e308 a(e309,[u'e739']) e310 e312 e314 e315 e316 e318
+Current subset: l/0.r/1.l/2.r/3.l/4: e285 e286 e288 e291 e293 e295 e297 e298 e300 e303
+No violation in 0'th...
+Current subset: l/0.r/1.l/2.r/3.r/4: e305 e307 e308 a(e309,[u'e739']) e310 e312 e314 e315 e316 e318
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+l/0.r/1.l/2.r/3.r/4.l/5: e305 e307 e308 a(e309,[u'e739']) e310
+l/0.r/1.l/2.r/3.r/4.r/5: e312 e314 e315 e316 e318
+Current subset: l/0.r/1.l/2.r/3.r/4.l/5: e305 e307 e308 a(e309,[u'e739']) e310
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.r/1.l/2.r/3.r/4.l/5.l/6: e305 e307 e308
+l/0.r/1.l/2.r/3.r/4.l/5.r/6: a(e309,[u'e739']) e310
+Current subset: l/0.r/1.l/2.r/3.r/4.l/5.l/6: e305 e307 e308
+No violation in 0'th...
+Current subset: l/0.r/1.l/2.r/3.r/4.l/5.r/6: a(e309,[u'e739']) e310
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+l/0.r/1.l/2.r/3.r/4.l/5.r/6.l/7: a(e309,[u'e739'])
+l/0.r/1.l/2.r/3.r/4.l/5.r/6.r/7: e310
+Current subset: l/0.r/1.l/2.r/3.r/4.l/5.r/6.l/7: a(e309,[u'e739'])
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [LinkFailure:e309:('LinkFailure', 1, 1, 4, 3), LinkRecovery:e739:('LinkRecovery', 1, 1, 4, 3)]
+=== Total replays: 14 ===
+Final MCS (2 elements):
+ - LinkFailure:e309
+ - LinkRecovery:e739

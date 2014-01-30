@@ -1,0 +1,38 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-n",
+    "trigger_memory_leak3",
+    "-c",
+    "experiments/trigger_memory_leak2/orig_config.py"
+  ],
+  "cwd": "/mnt/rcs/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:     264105312   22665256  241440056          0     201216   14271080\n-/+ buffers/cache:    8192960  255912352\nSwap:            0          0          0",
+    "name": "c75",
+    "num_cores": "32",
+    "uptime": "22:16:43 up 6 days, 47 min, 13 users,  load average: 0.56, 0.81, 0.88"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "debugger",
+      "commit": "e38c2a2d1746cd973d54fe76d2a0a2467b829d97"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "d22241e799f0bd4598458e7c5a2f3de36f6b787b"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 12.04.4 LTS",
+    "uname": "Linux c75 3.8.0-35-generic #50~precise1-Ubuntu SMP Wed Dec 4 17:25:51 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_01_29_22_16_43",
+  "user": "rcs"
+}
