@@ -28,6 +28,7 @@
   },
   "initial_verification_runs_needed": 0,
   "iteration_size": {
+    "0": 115,
     "3": 115,
     "4": 115,
     "5": 115,
