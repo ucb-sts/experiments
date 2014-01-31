@@ -1,0 +1,17 @@
+Violation reproduced successfully! Proceeding with pruning
+Subsets:
+l/0: e28 e39
+r/0: e54
+Current subset: l/0: e28 e39
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1: e28
+l/0.r/1: e39
+Current subset: l/0.l/1: e28
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [TrafficInjection:e28:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:02:[IPAddr('123.123.1.2')] Packet:[12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:9130[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)]
+=== Total replays: 4 ===
+Final MCS (1 elements):
+ - TrafficInjection:e28
