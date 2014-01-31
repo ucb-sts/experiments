@@ -1,0 +1,592 @@
+[1;33m[c1] Stop ONOS on all nodes[1;m
+
+[1;33m[c1] nosdev1: Killed existing process (pid: 12366)[1;m
+
+[1;33m[c1] opping ZK..[1;m
+
+[1;33m[c1] sdev1: Stopping zookeeper ... STOPPED[1;m
+
+[1;33m[c1] 2: Stopping zookeeper ... STOPPED[1;m
+
+[1;33m[c1] pping Cassandra..[1;m
+
+[1;33m[c1] nosdev1: Killed existing prosess (pid: 7283)[1;m
+
+[1;33m[c1] lled existing prosess (pid: 31195)[1;m
+
+[1;33m[c1] eping for 5sec[1;m
+
+[1;33m[c1] enrating conf files for 2-node cluster[1;m
+
+[1;33m[c1] ying confguration files[1;m
+
+[1;33m[c1] ing /mnt/ahassany/vagrant_onosdev/scripts/../conf/zoo.cfg /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/conf[1;m
+
+[1;33m[c1] pying /mnt/ahassany/vagrant_onosdev/scripts/../conf/cassandra.titan /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/conf[1;m
+
+[1;33m[c1] ying /mnt/ahassany/vagrant_onosdev/scripts/../conf/titan-embedded.properties /mnt/ahassany/vagrant_oosdev/scripts/../ONOS/con[1;m
+
+[1;33m[c1] ing /mnt/ahassany/vagrant_onosdev/scripts/../conf/cassandra.yaml.1 /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/conf[1;m
+
+[1;33m[c1] /mnt/ahassany/vagrant_onosdev/scripts/../conf/cassandra.yaml.2 /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/conf[1;m
+
+[1;33m[c1] ing /mnt/ahassany/vagrant_onosdev/scripts/../conf/config.json /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/web[1;m
+
+[1;33m[c1] ying /mnt/ahassany/vagrant_onosdev/scripts/../conf_common/configuration.json /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/web/ons-demo/data[1;m
+
+[1;33m[c1] pying /mnt/ahassany/vagrant_onosdev/scripts/../conf_common/controllers.json /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/web/ons-demo/data[1;m
+
+[1;33m[c1] ing /mnt/ahassany/vagrant_onosdev/scripts/../conf_common/dev_network.py /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/test-network/mininet[1;m
+
+[1;41m[1;33m[c1] cp: cannot stat `/mnt/ahassany/vagrant_onosdev/scripts/../conf_common/dev_network.py': No such file or directory[1;m
+
+[1;33m[c1] pying /mnt/ahassany/vagrant_onosdev/scripts/../conf_common/link.json.dev /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/web/link.json[1;m
+
+[1;41m[1;33m[c1] cp: cannot stat `/mnt/ahassany/vagrant_onosdev/scripts/../conf_common/link.json.dev': No such file or directory[1;m
+
+[1;33m[c1] ing /mnt/ahassany/vagrant_onosdev/scripts/../conf_common/cluster.hosts /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/.cluster.hosts[1;m
+
+[1;33m[c1] ing cassandra.yaml file to all VMs[1;m
+
+[1;33m[c1] emoving all data in /var/lib/cassandra/ [Y/n]?[1;m
+
+[1;41m[1;33m[c1] # onosdev2 SSH-2.0-OpenSSH_6.1p1 Debian-4[1;m
+
+[1;41m[1;33m[c1] # onosdev1 SSH-2.0-OpenSSH_6.1p1 Debian-4[1;m
+
+[1;41m[1;33m[c1] # onosdev2 SSH-2.0-OpenSSH_6.1p1 Debian-4[1;m
+
+[1;41m[1;33m[c1] # onosdev1 SSH-2.0-OpenSSH_6.1p1 Debian-4[1;m
+
+[1;33m[c1] arting ZK..[1;m
+
+[1;33m[c1] nosdev1: Starting Zookeeper[1;m
+
+[1;33m[c1] ting zookeeper ... STARTED[1;m
+
+[1;33m[c1] tarting Zookeeper[1;m
+
+[1;33m[c1] rting zookeeper ... STARTED[1;m
+
+[1;33m[c1] heck status[1;m
+
+[1;33m[c1] y's up: 0 up of of 2[1;m
+
+[1;33m[c1] heck status[1;m
+
+[1;33m[c1] erybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] heck status[1;m
+
+[1;33m[c1] 's up: 2 up of of 2[1;m
+
+[1;33m[c1] tarting Cassandra..[1;m
+
+[1;33m[c1] ssandra at the seed node[1;m
+
+[1;33m[c1] nosdev1: rotate log:[1;m
+
+[1;33m[c1] ting cassandra[1;m
+
+[1;33m[c1]  start cassandra in rest nodes[1;m
+
+[1;33m[c1] nosdev2: rotate log:[1;m
+
+[1;33m[c1] ing cassandra[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] g for everybody's up: 0 up of of 2[1;m
+
+[1;33m[c1] 6943[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] atacenter: datacenter1[1;m
+
+[1;33m[c1] 1[1;m
+
+[1;33m[c1] nosdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] osdev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 6943[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1]  Datacenter: datacenter1[1;m
+
+[1;33m[c1] ==========[1;m
+
+[1;33m[c1] onosdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] sdev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 6943[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] dev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] ========[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] ddress        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] osdev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] g for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 943[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] : Datacenter: datacenter1[1;m
+
+[1;33m[c1] =======[1;m
+
+[1;33m[c1] licas: 1[1;m
+
+[1;33m[c1] onosdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] osdev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] waiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 6943[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] dev1:[1;m
+
+[1;33m[c1] ev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] 1: ==========[1;m
+
+[1;33m[c1] ev1: Replicas: 1[1;m
+
+[1;33m[c1] dev1:[1;m
+
+[1;33m[c1] v1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] dev1:[1;m
+
+[1;33m[c1] ev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] v1:[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 6943[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1]  Datacenter: datacenter1[1;m
+
+[1;33m[c1] ==========[1;m
+
+[1;33m[c1] sdev1:[1;m
+
+[1;33m[c1] dress        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] 68.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 6943[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] v1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] v1: ==========[1;m
+
+[1;33m[c1] dev1: Replicas: 1[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] sdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] dev1:[1;m
+
+[1;33m[c1] sdev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] ev1:[1;m
+
+[1;33m[c1] ing for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] : 1 instance of cassandra running[1;m
+
+[1;33m[c1] sdev1: ==========[1;m
+
+[1;33m[c1] ress        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] 68.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] g for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 943[1;m
+
+[1;33m[c1] dev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] v1: Replicas: 1[1;m
+
+[1;33m[c1]         Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] iting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 6943[1;m
+
+[1;33m[c1] osdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1]  Datacenter: datacenter1[1;m
+
+[1;33m[c1] ======[1;m
+
+[1;33m[c1] icas: 1[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1]        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] onosdev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 6943[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] enter: datacenter1[1;m
+
+[1;33m[c1] =[1;m
+
+[1;33m[c1] eplicas: 1[1;m
+
+[1;33m[c1] osdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1]     Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 6943[1;m
+
+[1;33m[c1] osdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] dev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] ======[1;m
+
+[1;33m[c1] licas: 1[1;m
+
+[1;33m[c1] sdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] dev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 6943[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1]  Datacenter: datacenter1[1;m
+
+[1;33m[c1] Replicas: 1[1;m
+
+[1;33m[c1]    Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1]  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] iting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 6943[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] er: datacenter1[1;m
+
+[1;33m[c1] onosdev1:[1;m
+
+[1;33m[c1]   Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] dev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 6943[1;m
+
+[1;33m[c1] 1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] 1: ==========[1;m
+
+[1;33m[c1] osdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] 168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 6943[1;m
+
+[1;33m[c1] sdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] enter1[1;m
+
+[1;33m[c1] plicas: 1[1;m
+
+[1;33m[c1] : Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] .56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 6943[1;m
+
+[1;33m[c1] sdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] osdev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] ========[1;m
+
+[1;33m[c1] : Replicas: 1[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] ress        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1]  192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 6943[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] sdev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] =======[1;m
+
+[1;33m[c1] Replicas: 1[1;m
+
+[1;33m[c1] dev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1]                                                                              -9223372036854775808[1;m
+
+[1;33m[c1] 192.168.56.12  rack1       Up     Normal  36.67 KB        50.00%              0[1;m
+
+[1;33m[c1] 56.11  rack1       Up     Normal  55.26 KB        50.00%              -9223372036854775808[1;m
+
+[1;33m[c1] erybody's up: 2 up of of 2[1;m
+
+[1;33m[c1] rted[1;m
+
+[1;33m[c1] leeping for 10sec[1;m
+
+[1;33m[c1] tarting ONOS on all nodes[1;m
+
+[1;33m[c1] osdev1: rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33m[c1] og: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33m[c1] tarting ONOS controller ...[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] onosdev1: /home/mininet/ONOS[1;m
+
+[1;33m[c1] Waiting for ONOS to start...[1;m
+
+[1;33m[c1]  .[1;m
+
+[1;33m[c1] nosdev2: rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33m[c1] sdev2.pcap[1;m
+
+[1;33m[c1] ler ...[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1]  .[1;m
+
+[1;33m[c1] ninet/ONOS[1;m
+
+[1;33m[c1] aiting for ONOS to start...[1;m
+
+[1;33m[c1] nosdev1: killing: /usr/bin/python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] nosdev2: killing: /usr/bin/python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] killing: python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] killing:[1;m
+
+[1;33m[c1]  40 secs[1;m
+
+[1;33m[c1] top ONOS on all nodes[1;m
+
+[1;33m[c1] nosdev1: Killed existing process (pid: 18410)[1;m
+
+[1;33m[c1] ev2: Killed existing process (pid: 8218)[1;m
+
+[1;33m[c1] emoving all data in db[1;m
+
+[1;33m[c1] tarting ONOS on all nodes[1;m
+
+[1;33m[c1] nosdev1: rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33m[c1] og: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33m[c1] rting ONOS controller ...[1;m
+
+[1;33m[c1] dev1: .[1;m
+
+[1;33m[c1] home/mininet/ONOS[1;m
+
+[1;33m[c1] aiting for ONOS to start...[1;m
+
+[1;33m[c1] onosdev2: rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33m[c1] nosdev2: rotate log: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33m[c1] rting ONOS controller ...[1;m
+
+[1;33m[c1] nosdev2: .[1;m
+
+[1;33m[c1] e/mininet/ONOS[1;m
+
+[1;33m[c1] iting for ONOS to start...[1;m
+
+[1;33m[c1] onosdev1: killing: /usr/bin/python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] g: python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] ling:[1;m
+
+[1;33m[c1] g: /usr/bin/python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1]  killing: python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] illing:[1;m
+
+[1;33m[c2] DUMMY COMMAND[1;m
+
+Connecting switch 0 to controller ControllerConfig(start_cmd=' onos stop; zk stop ; cassandra stop; echo "sleeping for 5sec"; sleep 5; /mnt/ahassany/vagrant_onosdev/scripts/conf_setup.sh 2 ; zk start ; cassandra start; echo "sleeping for 10sec"; sleep 10 ; onos start ; echo "sleeping for 40 secs"; sleep 40 ; onos stop; sleep 10; cassandra cleandb; onos start; sleep 40', label='c1', address='192.168.56.11', cwd='/mnt/ahassany/vagrant_onosdev', controller_type='onos', kill_cmd=' ssh onosdev1 "cd ONOS; ./start-onos.sh stop"; echo "killed"; sleep 5', restart_cmd='ssh onosdev1 "cd ONOS; ./start-onos.sh start"; echo "restarted"; sleep 20') - <bound method Simulation.create_connection of <sts.simulation_state.Simulation object at 0x11bf050>>
+connect_socket_with_backoff ('192.168.56.11', 6633)
+Connecting switch 1 to controller ControllerConfig(start_cmd='echo "DUMMY COMMAND"; sleep 1', label='c2', address='192.168.56.12', cwd='/mnt/ahassany/vagrant_onosdev', controller_type='onos', kill_cmd=' ssh onosdev2 "cd ONOS; ./start-onos.sh stop"; echo "killed"; sleep 5', restart_cmd='ssh onosdev2 "cd ONOS; ./start-onos.sh start"; echo "restarted"; sleep 20') - <bound method Simulation.create_connection of <sts.simulation_state.Simulation object at 0x11bf050>>
+connect_socket_with_backoff ('192.168.56.12', 6633)
+[1;36m[1;44m00:00.505 00:00.000 Successfully matched event ConnectToControllers:e1[1;m
+[1;36m[1;44m00:00.795 00:00.136 Successfully matched event ControlMessageReceive:i2 c c1 -> s 1 [ofp_hello: ][1;m
+[1;36m[1;36mRound 1[1;37m[1;m
+[1;36m[1;44m00:00.796 00:00.137 Successfully matched event ControlMessageSend:i3 c 1 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.871 00:00.238 Successfully matched event ControlMessageReceive:i4 c c1 -> s 1 [ofp_features_request: ][1;m
+[1;36m[1;36mRound 2[1;37m[1;m
+[1;36m[1;44m00:00.873 00:00.239 Successfully matched event ControlMessageReceive:i5 c c2 -> s 2 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.874 00:00.240 Successfully matched event ControlMessageSend:i6 c 2 -> s c2 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.875 00:00.240 Successfully matched event ControlMessageSend:i7 c 1 -> s c1 [ofp_features_reply: datapath_id=1][1;m
+[1;36m[1;44m00:01.041 00:00.339 Successfully matched event ControlMessageReceive:i8 c c1 -> s 1 [ofp_stats_request: flags=0, type=0][1;m
+[1;36m[1;36mRound 3[1;37m[1;m
+[1;36m[1;44m00:01.042 00:00.345 Successfully matched event ControlMessageReceive:i9 c c1 -> s 1 [ofp_set_config: ][1;m
+[1;36m[1;44m00:01.043 00:00.345 Successfully matched event ControlMessageReceive:i10 c c1 -> s 1 [ofp_get_config_request: ][1;m
+[1;36m[1;44m00:01.043 00:00.346 Successfully matched event ControlMessageReceive:i11 c c2 -> s 2 [ofp_features_request: ][1;m
+[1;36m[1;44m00:01.044 00:00.346 Successfully matched event ControlMessageSend:i12 c 2 -> s c2 [ofp_features_reply: datapath_id=2][1;m
+[1;36m[1;44m00:01.044 00:00.346 Successfully matched event ControlMessageSend:i13 c 1 -> s c1 [ofp_get_config_reply: ][1;m
+[1;36m[1;44m00:01.045 00:00.347 Successfully matched event ControlMessageSend:i14 c 1 -> s c1 [ofp_stats_reply: flags=0, type=0][1;m
+[1;36m[1;44m00:01.096 00:00.447 Successfully matched event ControlMessageReceive:i15 c c1 -> s 1 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 4[1;37m[1;m
+[1;36m[1;44m00:01.097 00:00.448 Successfully matched event ControlMessageReceive:i16 c c2 -> s 2 [ofp_set_config: ][1;m
+[1;36m[1;44m00:01.097 00:00.448 Successfully matched event ControlMessageReceive:i17 c c2 -> s 2 [ofp_get_config_request: ][1;m
+[1;36m[1;44m00:01.098 00:00.449 Successfully matched event ControlMessageSend:i18 c 2 -> s c2 [ofp_get_config_reply: ][1;m
+[1;36m[1;44m00:01.098 00:00.449 Successfully matched event ControlMessageSend:i19 c 1 -> s c1 [ofp_vendor: ][1;m
+[1;36m[1;44m00:01.192 00:00.549 Successfully matched event ControlMessageReceive:i20 c c1 -> s 1 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 5[1;37m[1;m
+[1;36m[1;44m00:01.198 00:00.551 Successfully matched event ControlMessageReceive:i21 c c2 -> s 2 [ofp_stats_request: flags=0, type=0][1;m
+[1;36m[1;44m00:01.198 00:00.556 Successfully matched event ControlMessageSend:i22 c 2 -> s c2 [ofp_stats_reply: flags=0, type=0][1;m
+[1;36m[1;44m00:01.199 00:00.557 Successfully matched event ControlMessageSend:i23 c 1 -> s c1 [ofp_vendor: ][1;m
+[1;36m[1;44m00:01.256 00:00.657 Successfully matched event ControlMessageReceive:i24 c c2 -> s 2 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 6[1;37m[1;m
+[1;36m[1;44m00:01.257 00:00.658 Successfully matched event ControlMessageSend:i25 c 2 -> s c2 [ofp_vendor: ][1;m
+[1;36m[1;44m00:01.316 00:00.759 Successfully matched event ControlMessageReceive:i26 c c2 -> s 2 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 7[1;37m[1;m
+[1;36m[1;44m00:01.317 00:00.760 Successfully matched event ControlMessageSend:i27 c 2 -> s c2 [ofp_vendor: ][1;m
+[1;36m[1;44m00:02.626 00:02.066 Successfully matched event TrafficInjection:e28[1;m
+[1;36m[1;36mRound 20[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:02.727 00:02.167 Successfully matched event DataplanePermit:i29[1;m
+[1;36m[1;36mRound 21[1;37m[1;m
+[1;36m[1;44m00:02.728 00:02.169 Successfully matched event ControlMessageSend:i30 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:02', u'nw_src': u'123.123.1.2', u'dl_src': u'12:34:56:78:01:02', u'nw_dst': u'123.123.2.2'}, in_port=2][1;m
+[1;36m[1;44m00:02.825 00:02.265 Successfully matched event ControlMessageReceive:i31 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 22[1;37m[1;m
+[1;36m[1;44m00:02.826 00:02.267 Successfully matched event ControlMessageReceive:i32 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:02.928 00:02.369 Successfully matched event DataplanePermit:i33[1;m
+[1;36m[1;36mRound 23[1;37m[1;m
+[1;36m[1;44m00:02.928 00:02.370 Successfully matched event DataplanePermit:i34[1;m
+[1;36m[1;44m00:03.046 00:02.371 Successfully matched event ControlMessageReceive:i35 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_dst': u'12:34:56:78:02:02', u'nw_src': u'123.123.1.2', u'dl_src': u'12:34:56:78:01:02', u'nw_dst': u'123.123.2.2'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:03.089 00:02.373 Successfully matched event ControlMessageReceive:i36 c c1 -> s 1 [ofp_stats_request: flags=0, type=1][1;m
+[1;36m[1;44m00:03.090 00:02.375 Successfully matched event ControlMessageSend:i37 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m00:03.090 00:02.375 Successfully matched event ControlMessageSend:i38 c 1 -> s c1 [ofp_stats_reply: flags=0, type=0][1;m
+[1;36m[1;44m00:03.091 00:02.376 Successfully matched event TrafficInjection:e39[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:03.185 00:02.470 Successfully matched event DataplanePermit:i40[1;m
+[1;36m[1;36mRound 24[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:03.189 00:02.471 Successfully matched event DataplanePermit:i41[1;m
+[1;36m[1;44m00:03.222 00:02.472 Successfully matched event ControlMessageReceive:i42 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:03.224 00:02.472 Successfully matched event ControlMessageReceive:i43 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:03.224 00:02.473 Successfully matched event ControlMessageReceive:i44 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:03.225 00:02.474 Successfully matched event ControlMessageReceive:i45 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:03.225 00:02.474 Successfully matched event ControlMessageSend:i46 c 2 -> s c2 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:02', u'nw_src': u'123.123.1.2', u'dl_src': u'12:34:56:78:01:02', u'nw_dst': u'123.123.2.2'}, in_port=1][1;m
+[1;36m[1;44m00:03.226 00:02.475 Successfully matched event ControlMessageSend:i47 c 2 -> s c2 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=2][1;m
+[1;36m[1;44m00:03.327 00:02.576 Successfully matched event DataplanePermit:i48[1;m
+[1;36m[1;36mRound 25[1;37m[1;m
+[1;36m[1;44m00:03.328 00:02.577 Successfully matched event DataplanePermit:i49[1;m
+[1;36m[1;44m00:03.328 00:02.578 Successfully matched event DataplanePermit:i50[1;m
+[1;36m[1;44m00:03.328 00:02.579 Successfully matched event DataplanePermit:i51[1;m
+[1;36m[1;44m00:03.329 00:02.580 Successfully matched event ControlMessageSend:i52 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m00:03.329 00:02.580 Successfully matched event ControlMessageSend:i53 c 2 -> s c2 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;36m[1;44m00:04.839 00:04.088 Successfully matched event TrafficInjection:e54[1;m
+[1;36m[1;36mRound 40[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:05.954 00:04.090 Successfully matched event CheckInvariants:e55[1;m
+[1;36m[1;44m00:06.956 00:05.114 Successfully matched event WaitTime:e57[1;m
+[1;36m[1;36mRound -1[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44mEvent Stats: Events matched: 56, timed out: 0
+Matches per event type:
+  WaitTime 1
+  ConnectToControllers 1
+  CheckInvariants 1
+  TrafficInjection 3
+  DataplanePermit 9
+  ControlMessageSend 19
+  ControlMessageReceive 22
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
