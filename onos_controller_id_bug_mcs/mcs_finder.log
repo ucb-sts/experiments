@@ -1,0 +1,35 @@
+Violation reproduced successfully! Proceeding with pruning
+Subsets:
+l/0: e28 e65 e82 a(e83,[u'e86']) e122 e150 a(e152,[u'e158']) e203 a(e225,[u'e230']) e274 e313
+r/0: a(e318,[u'e323']) e357 e362 a(e395,[u'e396']) e428 a(e444,[u'e450']) e492 e530 e533 a(e538,[u'e540']) a(e583,[u'e590'])
+Current subset: l/0: e28 e65 e82 a(e83,[u'e86']) e122 e150 a(e152,[u'e158']) e203 a(e225,[u'e230']) e274 e313
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1: e28 e65 e82 a(e83,[u'e86']) e122 e150
+l/0.r/1: a(e152,[u'e158']) e203 a(e225,[u'e230']) e274 e313
+Current subset: l/0.l/1: e28 e65 e82 a(e83,[u'e86']) e122 e150
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1.l/2: e28 e65 e82
+l/0.l/1.r/2: a(e83,[u'e86']) e122 e150
+Current subset: l/0.l/1.l/2: e28 e65 e82
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1.l/2.l/3: e28 e65
+l/0.l/1.l/2.r/3: e82
+Current subset: l/0.l/1.l/2.l/3: e28 e65
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1.l/2.l/3.l/4: e28
+l/0.l/1.l/2.l/3.r/4: e65
+Current subset: l/0.l/1.l/2.l/3.l/4: e28
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [TrafficInjection:e28:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:02:[IPAddr('123.123.2.2')] Packet:[12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:1524[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)]
+=== Total replays: 16 ===
+Final MCS (1 elements):
+ - TrafficInjection:e28
