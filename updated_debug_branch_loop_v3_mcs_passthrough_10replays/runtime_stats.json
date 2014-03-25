@@ -1,0 +1,71 @@
+{
+  "ambiguous_counts": {},
+  "ambiguous_events": {},
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./pox.py --verbose sts.syncproto.pox_syncer --blocking=False openflow.discovery forwarding.l2_multi sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=__address__ --port=__port__', address='127.0.0.1', port=6633, cwd='pox', sync='tcp:localhost:18899')],\n                 topology_class=MeshTopology,\n                 topology_params=\"num_switches=2\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=True)",
+  "early_internal_events": {
+    "1": [
+      "ControllerStateChange:i56:(u'ControllerStateChange', u'%s moved from %s.%i to %s.%i?', u'c1', u'c1')",
+      "ControllerStateChange:i56:(u'ControllerStateChange', u'%s moved from %s.%i to %s.%i?', u'c1', u'c1')",
+      "ControllerStateChange:i85:(u'ControllerStateChange', u\"Can't get from %s to %s\", u'c1', u'c1')",
+      "ControllerStateChange:i85:(u'ControllerStateChange', u\"Can't get from %s to %s\", u'c1', u'c1')"
+    ]
+  },
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 5
+  },
+  "matched_events": {
+    "1": {
+      "CheckInvariants": 4,
+      "ConnectToControllers": 1,
+      "ControllerStateChange": 28,
+      "DataplaneDrop": 12,
+      "DataplanePermit": 22,
+      "HostMigration": 5,
+      "TrafficInjection": 14
+    }
+  },
+  "new_internal_events": {
+    "1": [
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395656409, microSeconds=206915), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395656409, microSeconds=206915), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395656409, microSeconds=203257), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395656409, microSeconds=205531), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x223a0d0>,)',))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395656422, microSeconds=979107), fingerprint=u'Flood multicast from %s', name=None, value=(u\"(EthAddr('12:34:56:78:02:02'),)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395656424, microSeconds=771774), fingerprint=u'Flood multicast from %s', name=None, value=(u\"(EthAddr('12:34:56:78:02:02'),)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395656427, microSeconds=290889), fingerprint=u'Installing path for %s -> %s %04x (%i hops)', name=None, value=(u\"(EthAddr('12:34:56:78:01:02'), EthAddr('12:34:56:78:02:02'), 2054, 1)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395656429, microSeconds=225059), fingerprint=u\"Can't get from %s to %s\", name=None, value=(u\"(EthAddr('12:34:56:78:01:02'), EthAddr('12:34:56:78:02:02'))\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395656430, microSeconds=450405), fingerprint=u'Installing path for %s -> %s %04x (%i hops)', name=None, value=(u\"(EthAddr('12:34:56:78:02:02'), EthAddr('12:34:56:78:02:02'), 2048, 1)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395656433, microSeconds=473498), fingerprint=u'Installing path for %s -> %s %04x (%i hops)', name=None, value=(u\"(EthAddr('12:34:56:78:01:02'), EthAddr('12:34:56:78:01:02'), 2048, 1)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395656443, microSeconds=194235), fingerprint=u\"Can't get from %s to %s\", name=None, value=(u\"(EthAddr('12:34:56:78:02:02'), EthAddr('12:34:56:78:01:02'))\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395656443, microSeconds=195612), fingerprint=u'Dest unreachable (%s -> %s)', name=None, value=(u\"(EthAddr('12:34:56:78:02:02'), EthAddr('12:34:56:78:01:02'))\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395656448, microSeconds=591565), fingerprint=u'Flood multicast from %s', name=None, value=(u\"(EthAddr('12:34:56:78:02:02'),)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395656450, microSeconds=406503), fingerprint=u'Flood multicast from %s', name=None, value=(u\"(EthAddr('12:34:56:78:02:02'),)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395656455, microSeconds=781330), fingerprint=u'Installing path for %s -> %s %04x (%i hops)', name=None, value=(u\"(EthAddr('12:34:56:78:01:02'), EthAddr('12:34:56:78:02:02'), 2054, 1)\",))"
+    ]
+  },
+  "original_duration_seconds": 13.07961106300354,
+  "peeker": false,
+  "prune_duration_seconds": 1600.78315782547,
+  "prune_end_epoch": 1395656470.710744,
+  "prune_start_epoch": 1395654869.927586,
+  "replay_duration_seconds": 56.15342092514038,
+  "replay_end_epoch": 1395654869.927445,
+  "replay_start_epoch": 1395654813.774024,
+  "runtime_stats_file": "experiments/updated_debug_branch_loop_v3_mcs_passthrough_10replays/runtime_stats.json",
+  "timed_out_events": {
+    "1": {
+      "ControlMessageReceive": 34,
+      "ControlMessageSend": 37,
+      "ControllerStateChange": 24,
+      "DataplanePermit": 4
+    }
+  },
+  "total_events": 196,
+  "total_inputs": 46,
+  "total_inputs_replayed": 809,
+  "total_replays": 25,
+  "violation_found_in_run": {
+    "0": 13
+  }
+}

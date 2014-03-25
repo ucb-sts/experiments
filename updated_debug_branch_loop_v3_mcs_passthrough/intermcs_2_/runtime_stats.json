@@ -1,0 +1,73 @@
+{
+  "ambiguous_counts": {},
+  "ambiguous_events": {},
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./pox.py --verbose sts.syncproto.pox_syncer --blocking=False openflow.discovery forwarding.l2_multi sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=__address__ --port=__port__', address='127.0.0.1', port=6633, cwd='pox', sync='tcp:localhost:18899')],\n                 topology_class=MeshTopology,\n                 topology_params=\"num_switches=2\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=True)",
+  "early_internal_events": {
+    "1": [
+      "ControllerStateChange:i56:(u'ControllerStateChange', u'%s moved from %s.%i to %s.%i?', u'c1', u'c1')",
+      "ControllerStateChange:i56:(u'ControllerStateChange', u'%s moved from %s.%i to %s.%i?', u'c1', u'c1')"
+    ]
+  },
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 34
+  },
+  "matched_events": {
+    "1": {
+      "CheckInvariants": 4,
+      "ConnectToControllers": 1,
+      "ControllerStateChange": 23,
+      "DataplaneDrop": 6,
+      "DataplanePermit": 18,
+      "HostMigration": 4,
+      "TrafficInjection": 11
+    }
+  },
+  "new_internal_events": {
+    "1": [
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653092, microSeconds=768153), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653092, microSeconds=768153), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653092, microSeconds=764553), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653092, microSeconds=766770), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x27720d0>,)',))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653106, microSeconds=540488), fingerprint=u'Flood multicast from %s', name=None, value=(u\"(EthAddr('12:34:56:78:02:02'),)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653108, microSeconds=305465), fingerprint=u'Flood multicast from %s', name=None, value=(u\"(EthAddr('12:34:56:78:02:02'),)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653110, microSeconds=824195), fingerprint=u'Installing path for %s -> %s %04x (%i hops)', name=None, value=(u\"(EthAddr('12:34:56:78:01:02'), EthAddr('12:34:56:78:02:02'), 2054, 1)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653112, microSeconds=758392), fingerprint=u\"Can't get from %s to %s\", name=None, value=(u\"(EthAddr('12:34:56:78:01:02'), EthAddr('12:34:56:78:02:02'))\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653113, microSeconds=981120), fingerprint=u'Installing path for %s -> %s %04x (%i hops)', name=None, value=(u\"(EthAddr('12:34:56:78:02:02'), EthAddr('12:34:56:78:02:02'), 2048, 1)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653126, microSeconds=985058), fingerprint=u'Unlearned %s', name=None, value=(u\"(EthAddr('12:34:56:78:01:02'),)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653138, microSeconds=801086), fingerprint=u'Installing path for %s -> %s %04x (%i hops)', name=None, value=(u\"(EthAddr('12:34:56:78:01:02'), EthAddr('12:34:56:78:02:02'), 2048, 1)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653138, microSeconds=797770), fingerprint=u'Learned %s at %s.%i', name=None, value=(u\"(EthAddr('12:34:56:78:01:02'), 00-00-00-00-00-01, 2)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653142, microSeconds=406310), fingerprint=u'Flood multicast from %s', name=None, value=(u\"(EthAddr('12:34:56:78:02:02'),)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653145, microSeconds=475808), fingerprint=u'Flood multicast from %s', name=None, value=(u\"(EthAddr('12:34:56:78:02:02'),)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653150, microSeconds=895679), fingerprint=u'Installing path for %s -> %s %04x (%i hops)', name=None, value=(u\"(EthAddr('12:34:56:78:01:02'), EthAddr('12:34:56:78:02:02'), 2054, 1)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653152, microSeconds=654532), fingerprint=u'Installing path for %s -> %s %04x (%i hops)', name=None, value=(u\"(EthAddr('12:34:56:78:01:02'), EthAddr('12:34:56:78:01:02'), 2048, 1)\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653155, microSeconds=673222), fingerprint=u\"Can't get from %s to %s\", name=None, value=(u\"(EthAddr('12:34:56:78:02:02'), EthAddr('12:34:56:78:01:02'))\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653155, microSeconds=674598), fingerprint=u'Dest unreachable (%s -> %s)', name=None, value=(u\"(EthAddr('12:34:56:78:02:02'), EthAddr('12:34:56:78:01:02'))\",))",
+      "PendingStateChange(controller_id='c1', time=SyncTime(seconds=1395653158, microSeconds=535030), fingerprint=u'link detected: %s.%i -> %s.%i', name=None, value=(u\"('00-00-00-00-00-01', 1, '00-00-00-00-00-02', 1)\",))"
+    ]
+  },
+  "original_duration_seconds": 13.07961106300354,
+  "peeker": false,
+  "prune_duration_seconds": 0,
+  "prune_start_epoch": 1395652876.858982,
+  "replay_duration_seconds": 56.207489013671875,
+  "replay_end_epoch": 1395652876.858827,
+  "replay_start_epoch": 1395652820.651338,
+  "runtime_stats_file": "experiments/updated_debug_branch_loop_v3_mcs_passthrough/intermcs_2_/runtime_stats.json",
+  "timed_out_events": {
+    "1": {
+      "ControlMessageReceive": 34,
+      "ControlMessageSend": 37,
+      "ControllerStateChange": 29,
+      "DataplaneDrop": 3,
+      "DataplanePermit": 8
+    }
+  },
+  "total_events": 196,
+  "total_inputs": 46,
+  "total_inputs_replayed": 152,
+  "total_replays": 5,
+  "violation_found_in_run": {
+    "0": 2
+  }
+}

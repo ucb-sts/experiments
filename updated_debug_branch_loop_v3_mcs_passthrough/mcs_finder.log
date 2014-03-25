@@ -1,0 +1,162 @@
+Sleeping 0 seconds after run
+Violation reproduced successfully! Proceeding with pruning
+Subsets:
+l/0: e30 e44 e45 e46 e54 e55 e67 e68 e69 e70 e79 e80 e83 e84 e87 e91 e92 e93 e101 e102 e107 e108 e117
+r/0: e118 e123 e124 e126 e133 e141 e142 e143 e149 e152 e153 e154 e155 e156 e158 e163 e164 e165 e173 e174 e183 e195
+Current subset: l/0: e30 e44 e45 e46 e54 e55 e67 e68 e69 e70 e79 e80 e83 e84 e87 e91 e92 e93 e101 e102 e107 e108 e117
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: r/0: e118 e123 e124 e126 e133 e141 e142 e143 e149 e152 e153 e154 e155 e156 e158 e163 e164 e165 e173 e174 e183 e195
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.l/1: e30 e44 e45 e46 e54 e55 e67 e68 e69 e70 e79 e80
+il/0.r/1: e83 e84 e87 e91 e92 e93 e101 e102 e107 e108 e117
+Current subset: il/0.l/1: e30 e44 e45 e46 e54 e55 e67 e68 e69 e70 e79 e80
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.l/1.l/2: e30 e44 e45 e46 e54 e55
+il/0.l/1.r/2: e67 e68 e69 e70 e79 e80
+Current subset: il/0.l/1.l/2: e30 e44 e45 e46 e54 e55
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.l/1.l/2.l/3: e30 e44 e45
+il/0.l/1.l/2.r/3: e46 e54 e55
+Current subset: il/0.l/1.l/2.l/3: e30 e44 e45
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: il/0.l/1.l/2.r/3: e46 e54 e55
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.l/1.l/2.il/3.l/4: e30 e44
+il/0.l/1.l/2.il/3.r/4: e45
+Current subset: il/0.l/1.l/2.il/3.l/4: e30 e44
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.l/1.l/2.il/3.l/4.l/5: e30
+il/0.l/1.l/2.il/3.l/4.r/5: e44
+Current subset: il/0.l/1.l/2.il/3.l/4.l/5: e30
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [TrafficInjection:e30:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:02:[IPAddr('123.123.2.2')] Packet:[12:34:56:78:02:02>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:02:02>00:00:00:00:00:00 123.123.2.2>123.123.1.2, 2)]
+Recursing on right half
+Subsets:
+il/0.l/1.l/2.ir/3.l/4: e46 e54
+il/0.l/1.l/2.ir/3.r/4: e55
+Current subset: il/0.l/1.l/2.ir/3.l/4: e46 e54
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.l/1.l/2.ir/3.l/4.l/5: e46
+il/0.l/1.l/2.ir/3.l/4.r/5: e54
+Current subset: il/0.l/1.l/2.ir/3.l/4.l/5: e46
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: il/0.l/1.l/2.ir/3.l/4.r/5: e54
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Base case [TrafficInjection:e46:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:02:[IPAddr('123.123.1.2')] Packet:[12:34:56:78:01:02>12:34:56:78:02:02:ARP]|REPLY hw:1 p:2048 12:34:56:78:01:02>12:34:56:78:02:02 123.123.1.2>123.123.2.2, 1)]
+Recursing on right half
+Base case [HostMigration:e54:('HostMigration', 2, 2, 1, 3, 2)]
+Recursing on right half
+Subsets:
+ir/0.l/1: e118 e123 e124 e126 e133 e141 e142 e143 e149 e152 e153
+ir/0.r/1: e154 e155 e156 e158 e163 e164 e165 e173 e174 e183 e195
+Current subset: ir/0.l/1: e118 e123 e124 e126 e133 e141 e142 e143 e149 e152 e153
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.r/1: e154 e155 e156 e158 e163 e164 e165 e173 e174 e183 e195
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+ir/0.il/1.l/2: e118 e123 e124 e126 e133 e141
+ir/0.il/1.r/2: e142 e143 e149 e152 e153
+Current subset: ir/0.il/1.l/2: e118 e123 e124 e126 e133 e141
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.il/1.l/2.l/3: e118 e123 e124
+ir/0.il/1.l/2.r/3: e126 e133 e141
+Current subset: ir/0.il/1.l/2.l/3: e118 e123 e124
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.il/1.l/2.r/3: e126 e133 e141
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+ir/0.il/1.l/2.r/3.l/4: e126 e133
+ir/0.il/1.l/2.r/3.r/4: e141
+Current subset: ir/0.il/1.l/2.r/3.l/4: e126 e133
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.il/1.l/2.r/3.l/4.l/5: e126
+ir/0.il/1.l/2.r/3.l/4.r/5: e133
+Current subset: ir/0.il/1.l/2.r/3.l/4.l/5: e126
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.il/1.l/2.r/3.l/4.r/5: e133
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [TrafficInjection:e133:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:02:[IPAddr('123.123.2.2')] Packet:[12:34:56:78:02:02>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:02:02>00:00:00:00:00:00 123.123.2.2>123.123.1.2, 2)]
+Recursing on right half
+Subsets:
+ir/0.ir/1.l/2: e154 e155 e156 e158 e163 e164
+ir/0.ir/1.r/2: e165 e173 e174 e183 e195
+Current subset: ir/0.ir/1.l/2: e154 e155 e156 e158 e163 e164
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.ir/1.r/2: e165 e173 e174 e183 e195
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+ir/0.ir/1.r/2.l/3: e165 e173 e174
+ir/0.ir/1.r/2.r/3: e183 e195
+Current subset: ir/0.ir/1.r/2.l/3: e165 e173 e174
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.ir/1.r/2.l/3.l/4: e165 e173
+ir/0.ir/1.r/2.l/3.r/4: e174
+Current subset: ir/0.ir/1.r/2.l/3.l/4: e165 e173
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.ir/1.r/2.l/3.l/4.l/5: e165
+ir/0.ir/1.r/2.l/3.l/4.r/5: e173
+Current subset: ir/0.ir/1.r/2.l/3.l/4.l/5: e165
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [TrafficInjection:e165:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:02:[IPAddr('123.123.1.2')] Packet:[12:34:56:78:01:02>12:34:56:78:02:02:ARP]|REPLY hw:1 p:2048 12:34:56:78:01:02>12:34:56:78:02:02 123.123.1.2>123.123.2.2, 1)]
+Final MCS (5 elements):
+ - TrafficInjection:e30
+ - TrafficInjection:e46
+ - HostMigration:e54
+ - TrafficInjection:e133
+ - TrafficInjection:e165
+=== Total replays: 0 ===
