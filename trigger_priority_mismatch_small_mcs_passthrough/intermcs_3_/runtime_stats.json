@@ -1,0 +1,105 @@
+{
+  "_iteration": 5,
+  "_runtime_stats_path": "experiments/trigger_priority_mismatch_small_mcs_passthrough/intermcs_3_/runtime_stats.json",
+  "ambiguous_counts": {},
+  "ambiguous_events": {},
+  "buffered_message_receipts": {
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": []
+  },
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./pox.py --verbose openflow.discovery forwarding.l2_multi forwarding.capabilities_manager sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=__address__ --port=__port__', label='c1', address='127.0.0.1', cwd='pox')],\n                 topology_class=MeshTopology,\n                 topology_params=\"num_switches=2\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=True,\n                 kill_controllers_on_exit=True)",
+  "early_internal_events": {
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": []
+  },
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 27,
+    "1": 27,
+    "2": 13,
+    "3": 7,
+    "4": 7
+  },
+  "matched_events": {
+    "2": {
+      "CheckInvariants": 12,
+      "ConnectToControllers": 1,
+      "DataplanePermit": 11,
+      "TrafficInjection": 2
+    },
+    "3": {
+      "CheckInvariants": 11,
+      "ConnectToControllers": 1,
+      "DataplanePermit": 11,
+      "TrafficInjection": 1,
+      "WaitTime": 1
+    },
+    "4": {
+      "CheckInvariants": 6,
+      "ConnectToControllers": 1,
+      "DataplanePermit": 11,
+      "TrafficInjection": 1
+    },
+    "5": {
+      "CheckInvariants": 4,
+      "ConnectToControllers": 1,
+      "DataplanePermit": 11
+    },
+    "6": {
+      "CheckInvariants": 2,
+      "ConnectToControllers": 1,
+      "DataplanePermit": 11,
+      "TrafficInjection": 1
+    }
+  },
+  "new_internal_events": {
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": []
+  },
+  "original_duration_seconds": 7.429013013839722,
+  "peeker": false,
+  "prune_duration_seconds": 0,
+  "prune_start_epoch": 1397037671.019113,
+  "replay_duration_seconds": 36.09746718406677,
+  "replay_end_epoch": 1397037671.019025,
+  "replay_start_epoch": 1397037634.921558,
+  "subsequence_id": 0,
+  "timed_out_events": {
+    "2": {
+      "ControlMessageReceive": 31,
+      "ControlMessageSend": 13
+    },
+    "3": {
+      "ControlMessageReceive": 31,
+      "ControlMessageSend": 13
+    },
+    "4": {
+      "ControlMessageReceive": 31,
+      "ControlMessageSend": 13
+    },
+    "5": {
+      "ControlMessageReceive": 31,
+      "ControlMessageSend": 13
+    },
+    "6": {
+      "ControlMessageReceive": 31,
+      "ControlMessageSend": 13
+    }
+  },
+  "total_events": 84,
+  "total_inputs": 27,
+  "total_inputs_replayed": 68,
+  "total_replays": 6,
+  "violation_found_in_run": {
+    "0": 3
+  }
+}

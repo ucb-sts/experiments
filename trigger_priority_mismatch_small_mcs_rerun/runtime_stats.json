@@ -1,0 +1,219 @@
+{
+  "_iteration": 12,
+  "_runtime_stats_path": "experiments/trigger_priority_mismatch_small_mcs_rerun/runtime_stats.json",
+  "ambiguous_counts": {},
+  "ambiguous_events": {},
+  "buffered_message_receipts": {
+    "10": [],
+    "11": [],
+    "12": [],
+    "2": [
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "3": [
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(65531)',), 'data': (), 'class': 'ofp_packet_out', 'in_port': 2})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "4": [
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "5": [
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "6": [
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "7": [
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "8": [],
+    "9": [
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ]
+  },
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./pox.py --verbose openflow.discovery forwarding.l2_multi forwarding.capabilities_manager sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=__address__ --port=__port__', label='c1', address='127.0.0.1', cwd='pox')],\n                 topology_class=MeshTopology,\n                 topology_params=\"num_switches=2\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=True,\n                 kill_controllers_on_exit=True)",
+  "early_internal_events": {
+    "10": [],
+    "11": [],
+    "12": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": [],
+    "8": [],
+    "9": []
+  },
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 27,
+    "1": 27,
+    "2": 27,
+    "3": 20,
+    "4": 17,
+    "5": 15,
+    "6": 14,
+    "7": 8,
+    "8": 8,
+    "9": 4,
+    "10": 3,
+    "11": 2
+  },
+  "matched_events": {
+    "10": {
+      "CheckInvariants": 14,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 31,
+      "ControlMessageSend": 13,
+      "DataplanePermit": 11,
+      "TrafficInjection": 3
+    },
+    "11": {
+      "CheckInvariants": 13,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 31,
+      "ControlMessageSend": 13,
+      "DataplanePermit": 11,
+      "TrafficInjection": 3
+    },
+    "12": {
+      "CheckInvariants": 12,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 31,
+      "ControlMessageSend": 13,
+      "DataplanePermit": 11,
+      "TrafficInjection": 3
+    },
+    "2": {
+      "CheckInvariants": 12,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 26,
+      "ControlMessageSend": 11,
+      "DataplanePermit": 11,
+      "TrafficInjection": 2
+    },
+    "3": {
+      "CheckInvariants": 11,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 24,
+      "ControlMessageSend": 10,
+      "DataplanePermit": 11,
+      "TrafficInjection": 1,
+      "WaitTime": 1
+    },
+    "4": {
+      "CheckInvariants": 16,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 31,
+      "ControlMessageSend": 13,
+      "DataplanePermit": 11,
+      "TrafficInjection": 3,
+      "WaitTime": 1
+    },
+    "5": {
+      "CheckInvariants": 13,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 31,
+      "ControlMessageSend": 13,
+      "DataplanePermit": 11,
+      "TrafficInjection": 3,
+      "WaitTime": 1
+    },
+    "6": {
+      "CheckInvariants": 11,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 31,
+      "ControlMessageSend": 13,
+      "DataplanePermit": 11,
+      "TrafficInjection": 3,
+      "WaitTime": 1
+    },
+    "7": {
+      "CheckInvariants": 11,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 30,
+      "ControlMessageSend": 12,
+      "DataplanePermit": 11,
+      "TrafficInjection": 2,
+      "WaitTime": 1
+    },
+    "8": {
+      "CheckInvariants": 18,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 31,
+      "ControlMessageSend": 13,
+      "DataplanePermit": 11,
+      "TrafficInjection": 3
+    },
+    "9": {
+      "CheckInvariants": 16,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 26,
+      "ControlMessageSend": 11,
+      "DataplanePermit": 11,
+      "TrafficInjection": 2
+    }
+  },
+  "new_internal_events": {
+    "10": [],
+    "11": [],
+    "12": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": [],
+    "8": [],
+    "9": []
+  },
+  "original_duration_seconds": 7.429013013839722,
+  "peeker": false,
+  "prune_duration_seconds": 123.78620409965515,
+  "prune_end_epoch": 1397035373.432496,
+  "prune_start_epoch": 1397035249.646292,
+  "replay_duration_seconds": 9.636794090270996,
+  "replay_end_epoch": 1397035249.646151,
+  "replay_start_epoch": 1397035240.009357,
+  "subsequence_id": 0,
+  "timed_out_events": {
+    "10": {},
+    "11": {},
+    "12": {},
+    "2": {
+      "ControlMessageReceive": 5,
+      "ControlMessageSend": 2
+    },
+    "3": {
+      "ControlMessageReceive": 7,
+      "ControlMessageSend": 3
+    },
+    "4": {},
+    "5": {},
+    "6": {},
+    "7": {
+      "ControlMessageReceive": 1,
+      "ControlMessageSend": 1
+    },
+    "8": {},
+    "9": {
+      "ControlMessageReceive": 5,
+      "ControlMessageSend": 2
+    }
+  },
+  "total_events": 84,
+  "total_inputs": 27,
+  "total_inputs_replayed": 207,
+  "total_replays": 12,
+  "violation_found_in_run": {
+    "0": 8
+  }
+}
