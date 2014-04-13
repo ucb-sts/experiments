@@ -1,0 +1,38 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/trigger_memory_leak3_mcs/orig_config.py",
+    "-n",
+    "trigger_memory_leak3_mcs_rerun"
+  ],
+  "cwd": "/home/jefflai2/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5560 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:      12321316    4311988    8009328          0     549068    2594492\n-/+ buffers/cache:    1168428   11152888\nSwap:     12571644      51572   12520072",
+    "name": "c3",
+    "num_cores": "8",
+    "uptime": "23:03:47 up 161 days, 22:45,  7 users,  load average: 0.03, 0.02, 0.05"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "master",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "HEAD",
+      "commit": "e38c2a2d1746cd973d54fe76d2a0a2467b829d97"
+    },
+    "sts": {
+      "branch": "HEAD",
+      "commit": "d22241e799f0bd4598458e7c5a2f3de36f6b787b"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.04",
+    "uname": "Linux c3 2.6.38-8-server #42-Ubuntu SMP Mon Apr 11 03:49:04 UTC 2011 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_04_09_23_03_47",
+  "user": "jefflai2"
+}
