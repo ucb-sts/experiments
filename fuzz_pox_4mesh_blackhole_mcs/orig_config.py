@@ -9,7 +9,7 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(cmdlin
                  topology_class=MeshTopology,
                  topology_params="num_switches=4",
                  patch_panel_class=BufferedPatchPanel,
-                 dataplane_trace="exp/fuzz_pox_4mesh_blackhole/dataplane.trace",
+                 dataplane_trace="experiments/fuzz_pox_4mesh_blackhole/dataplane.trace",
                  multiplex_sockets=True)
 
 def check_stale_entries(simulation):
@@ -28,6 +28,6 @@ def check_stale_entries(simulation):
 
   return []
 
-control_flow = EfficientMCSFinder(simulation_config, "exp/fuzz_pox_4mesh_blackhole/events.trace",
+control_flow = EfficientMCSFinder(simulation_config, "experiments/fuzz_pox_4mesh_blackhole/events.trace",
                                   invariant_check=check_stale_entries,
                                   wait_on_deterministic_values=False)
