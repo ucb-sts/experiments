@@ -19,7 +19,7 @@
       "commit": "d63193500fca48cba053205c413d72eebfd233e9"
     },
     "pox": {
-      "branch": "debugger",
+      "branch": "frenetic_test",
       "commit": "f3fb6eee2dda26733cf87f8422ead4ce2c1c723b"
     },
     "sts": {
