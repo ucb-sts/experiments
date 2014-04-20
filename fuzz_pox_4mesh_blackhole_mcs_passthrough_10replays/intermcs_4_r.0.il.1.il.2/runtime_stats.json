@@ -1,0 +1,335 @@
+{
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(cmdline='./pox.py --verbose --no-cli sts.syncproto.pox_syncer openflow.discovery openflow.spanning_tree forwarding.l2_multi sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=__address__ --port=__port__', address='127.0.0.1', port=6632, cwd='pox', sync='tcp:localhost:18901')],\n                 topology_class=MeshTopology,\n                 topology_params=\"num_switches=4\",\n                 patch_panel_class=BufferedPatchPanel,\n                 dataplane_trace=\"experiments/fuzz_pox_4mesh_blackhole/dataplane.trace\",\n                 multiplex_sockets=True)",
+  "early_internal_events": {
+    "1": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [
+      "ControllerStateChange:i352:(u'ControllerStateChange', u'Installing path for %s -> %s %04x (%i hops)', (u'127.0.0.1', 6632))",
+      "ControllerStateChange:i352:(u'ControllerStateChange', u'Installing path for %s -> %s %04x (%i hops)', (u'127.0.0.1', 6632))",
+      "ControllerStateChange:i352:(u'ControllerStateChange', u'Installing path for %s -> %s %04x (%i hops)', (u'127.0.0.1', 6632))",
+      "ControllerStateChange:i352:(u'ControllerStateChange', u'Installing path for %s -> %s %04x (%i hops)', (u'127.0.0.1', 6632))",
+      "ControllerStateChange:i352:(u'ControllerStateChange', u'Installing path for %s -> %s %04x (%i hops)', (u'127.0.0.1', 6632))",
+      "ControllerStateChange:i352:(u'ControllerStateChange', u'Installing path for %s -> %s %04x (%i hops)', (u'127.0.0.1', 6632))",
+      "ControllerStateChange:i352:(u'ControllerStateChange', u'Installing path for %s -> %s %04x (%i hops)', (u'127.0.0.1', 6632))",
+      "ControllerStateChange:i352:(u'ControllerStateChange', u'Installing path for %s -> %s %04x (%i hops)', (u'127.0.0.1', 6632))",
+      "ControllerStateChange:i352:(u'ControllerStateChange', u'Installing path for %s -> %s %04x (%i hops)', (u'127.0.0.1', 6632))",
+      "ControllerStateChange:i352:(u'ControllerStateChange', u'Installing path for %s -> %s %04x (%i hops)', (u'127.0.0.1', 6632))",
+      "ControllerStateChange:i352:(u'ControllerStateChange', u'Installing path for %s -> %s %04x (%i hops)', (u'127.0.0.1', 6632))",
+      "ControllerStateChange:i352:(u'ControllerStateChange', u'Installing path for %s -> %s %04x (%i hops)', (u'127.0.0.1', 6632))",
+      "ControllerStateChange:i352:(u'ControllerStateChange', u'Installing path for %s -> %s %04x (%i hops)', (u'127.0.0.1', 6632))",
+      "ControllerStateChange:i352:(u'ControllerStateChange', u'Installing path for %s -> %s %04x (%i hops)', (u'127.0.0.1', 6632))"
+    ],
+    "6": [],
+    "7": [],
+    "8": [],
+    "9": []
+  },
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "3": 115,
+    "4": 115,
+    "5": 57,
+    "6": 57,
+    "7": 57,
+    "8": 57
+  },
+  "matched_events": {
+    "1": {
+      "ConnectToControllers": 1,
+      "ControllerStateChange": 6,
+      "TrafficInjection": 25
+    },
+    "2": {
+      "ConnectToControllers": 1,
+      "ControllerStateChange": 37,
+      "DataplanePermit": 23
+    },
+    "3": {
+      "ConnectToControllers": 1,
+      "ControllerStateChange": 6,
+      "HostMigration": 1
+    },
+    "4": {
+      "ConnectToControllers": 1,
+      "ControllerStateChange": 53,
+      "DataplanePermit": 46,
+      "TrafficInjection": 12
+    },
+    "5": {
+      "CheckInvariants": 1,
+      "ConnectToControllers": 1,
+      "ControllerStateChange": 10,
+      "DataplanePermit": 20,
+      "HostMigration": 1,
+      "TrafficInjection": 13
+    },
+    "6": {
+      "ConnectToControllers": 1,
+      "ControllerStateChange": 7,
+      "DataplanePermit": 8,
+      "TrafficInjection": 8
+    },
+    "7": {
+      "CheckInvariants": 1,
+      "ConnectToControllers": 1,
+      "ControllerStateChange": 6,
+      "DataplanePermit": 3,
+      "HostMigration": 1,
+      "TrafficInjection": 5
+    },
+    "8": {
+      "CheckInvariants": 1,
+      "ConnectToControllers": 1,
+      "ControllerStateChange": 6,
+      "DataplanePermit": 5,
+      "HostMigration": 1,
+      "TrafficInjection": 9
+    },
+    "9": {
+      "CheckInvariants": 1,
+      "ConnectToControllers": 1,
+      "ControllerStateChange": 6,
+      "DataplanePermit": 4,
+      "HostMigration": 1,
+      "TrafficInjection": 9
+    }
+  },
+  "new_internal_events": {
+    "1": [
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971537, microSeconds=805431), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x1ac7590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971537, microSeconds=805431), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x1ac7590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971537, microSeconds=805431), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x1ac7590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971537, microSeconds=805431), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x1ac7590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971537, microSeconds=806873), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971537, microSeconds=806873), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971537, microSeconds=806873), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971537, microSeconds=806873), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971537, microSeconds=803185), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971537, microSeconds=803185), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))"
+    ],
+    "2": [
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971703, microSeconds=625463), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2763590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971703, microSeconds=625463), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2763590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971703, microSeconds=625463), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2763590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971703, microSeconds=625463), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2763590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971703, microSeconds=626922), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971703, microSeconds=626922), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971703, microSeconds=626922), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971703, microSeconds=626922), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971703, microSeconds=623165), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971703, microSeconds=623165), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))"
+    ],
+    "3": [
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971852, microSeconds=145589), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2c12590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971852, microSeconds=145589), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2c12590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971852, microSeconds=145589), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2c12590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971852, microSeconds=145589), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2c12590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971852, microSeconds=147046), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971852, microSeconds=147046), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971852, microSeconds=147046), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971852, microSeconds=147046), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971852, microSeconds=143262), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397971852, microSeconds=143262), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))"
+    ],
+    "4": [
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972017, microSeconds=955601), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0xd55590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972017, microSeconds=955601), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0xd55590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972017, microSeconds=955601), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0xd55590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972017, microSeconds=955601), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0xd55590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972017, microSeconds=957078), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972017, microSeconds=957078), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972017, microSeconds=957078), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972017, microSeconds=957078), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972017, microSeconds=953246), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972017, microSeconds=953246), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))"
+    ],
+    "5": [
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972156, microSeconds=557365), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2404590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972156, microSeconds=557365), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2404590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972156, microSeconds=557365), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2404590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972156, microSeconds=557365), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2404590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972156, microSeconds=558852), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972156, microSeconds=558852), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972156, microSeconds=558852), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972156, microSeconds=558852), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972156, microSeconds=553286), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972156, microSeconds=553286), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972294, microSeconds=150417), fingerprint=u'link detected: %s.%i -> %s.%i', name=None, value=(u\"('00-00-00-00-00-03', 3, '00-00-00-00-00-01', 2)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972294, microSeconds=151877), fingerprint=u'Spanning tree updated', name=None, value=(u'()',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972304, microSeconds=72691), fingerprint=u'link detected: %s.%i -> %s.%i', name=None, value=(u\"('00-00-00-00-00-02', 1, '00-00-00-00-00-04', 2)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972304, microSeconds=74111), fingerprint=u'Spanning tree updated', name=None, value=(u'()',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972304, microSeconds=834490), fingerprint=u'Dest unreachable (%s -> %s)', name=None, value=(u\"(EthAddr('12:34:56:78:01:04'), EthAddr('12:34:56:78:02:04'))\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972304, microSeconds=820026), fingerprint=u'%s unknown -- flooding', name=None, value=(u\"(EthAddr('12:34:56:78:01:04'),)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972304, microSeconds=820026), fingerprint=u'%s unknown -- flooding', name=None, value=(u\"(EthAddr('12:34:56:78:01:04'),)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972304, microSeconds=820026), fingerprint=u'%s unknown -- flooding', name=None, value=(u\"(EthAddr('12:34:56:78:01:04'),)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972304, microSeconds=833057), fingerprint=u\"Can't get from %s to %s\", name=None, value=(u\"(EthAddr('12:34:56:78:01:04'), EthAddr('12:34:56:78:02:04'))\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972304, microSeconds=818697), fingerprint=u'Learned %s at %s.%i', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), 00-00-00-00-00-04, 4)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972304, microSeconds=818697), fingerprint=u'Learned %s at %s.%i', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), 00-00-00-00-00-04, 4)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972304, microSeconds=818697), fingerprint=u'Learned %s at %s.%i', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), 00-00-00-00-00-04, 4)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972304, microSeconds=818697), fingerprint=u'Learned %s at %s.%i', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), 00-00-00-00-00-04, 4)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972311, microSeconds=131657), fingerprint=u'link detected: %s.%i -> %s.%i', name=None, value=(u\"('00-00-00-00-00-02', 2, '00-00-00-00-00-03', 2)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972310, microSeconds=419296), fingerprint=u'Installing path for %s -> %s %04x (%i hops)', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), EthAddr('12:34:56:78:01:04'), 2048, 1)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972312, microSeconds=631357), fingerprint=u'Dest unreachable (%s -> %s)', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), EthAddr('12:34:56:78:02:04'))\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972312, microSeconds=631357), fingerprint=u'Dest unreachable (%s -> %s)', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), EthAddr('12:34:56:78:02:04'))\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972312, microSeconds=631357), fingerprint=u'Dest unreachable (%s -> %s)', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), EthAddr('12:34:56:78:02:04'))\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972312, microSeconds=631357), fingerprint=u'Dest unreachable (%s -> %s)', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), EthAddr('12:34:56:78:02:04'))\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972312, microSeconds=647283), fingerprint=u'link detected: %s.%i -> %s.%i', name=None, value=(u\"('00-00-00-00-00-02', 3, '00-00-00-00-00-01', 3)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972312, microSeconds=726432), fingerprint=u'Installing path for %s -> %s %04x (%i hops)', name=None, value=(u\"(EthAddr('12:34:56:78:01:04'), EthAddr('12:34:56:78:01:04'), 2048, 1)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972310, microSeconds=414407), fingerprint=u'%s moved from %s.%i to %s.%i?', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), '00-00-00-00-00-04', 4, '00-00-00-00-00-01', 1)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972310, microSeconds=414407), fingerprint=u'%s moved from %s.%i to %s.%i?', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), '00-00-00-00-00-04', 4, '00-00-00-00-00-01', 1)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972310, microSeconds=414407), fingerprint=u'%s moved from %s.%i to %s.%i?', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), '00-00-00-00-00-04', 4, '00-00-00-00-00-01', 1)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972310, microSeconds=414407), fingerprint=u'%s moved from %s.%i to %s.%i?', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), '00-00-00-00-00-04', 4, '00-00-00-00-00-01', 1)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972310, microSeconds=414407), fingerprint=u'%s moved from %s.%i to %s.%i?', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), '00-00-00-00-00-04', 4, '00-00-00-00-00-01', 1)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972310, microSeconds=414407), fingerprint=u'%s moved from %s.%i to %s.%i?', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), '00-00-00-00-00-04', 4, '00-00-00-00-00-01', 1)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972312, microSeconds=629981), fingerprint=u\"Can't get from %s to %s\", name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), EthAddr('12:34:56:78:02:04'))\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972312, microSeconds=629981), fingerprint=u\"Can't get from %s to %s\", name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), EthAddr('12:34:56:78:02:04'))\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972312, microSeconds=629981), fingerprint=u\"Can't get from %s to %s\", name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), EthAddr('12:34:56:78:02:04'))\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972312, microSeconds=629981), fingerprint=u\"Can't get from %s to %s\", name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), EthAddr('12:34:56:78:02:04'))\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972310, microSeconds=415816), fingerprint=u'Learned %s at %s.%i', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), 00-00-00-00-00-01, 1)\",))"
+    ],
+    "6": [
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972320, microSeconds=115521), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x1618590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972320, microSeconds=115521), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x1618590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972320, microSeconds=115521), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x1618590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972320, microSeconds=115521), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x1618590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972320, microSeconds=116999), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972320, microSeconds=116999), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972320, microSeconds=116999), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972320, microSeconds=116999), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972320, microSeconds=113180), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972320, microSeconds=113180), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972457, microSeconds=446941), fingerprint=u'link detected: %s.%i -> %s.%i', name=None, value=(u\"('00-00-00-00-00-03', 3, '00-00-00-00-00-01', 2)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972457, microSeconds=448303), fingerprint=u'Spanning tree updated', name=None, value=(u'()',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972467, microSeconds=369935), fingerprint=u'link detected: %s.%i -> %s.%i', name=None, value=(u\"('00-00-00-00-00-02', 1, '00-00-00-00-00-04', 2)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972467, microSeconds=371328), fingerprint=u'Spanning tree updated', name=None, value=(u'()',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972468, microSeconds=129599), fingerprint=u'Dest unreachable (%s -> %s)', name=None, value=(u\"(EthAddr('12:34:56:78:01:04'), EthAddr('12:34:56:78:02:04'))\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972468, microSeconds=116784), fingerprint=u'%s unknown -- flooding', name=None, value=(u\"(EthAddr('12:34:56:78:01:04'),)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972468, microSeconds=116784), fingerprint=u'%s unknown -- flooding', name=None, value=(u\"(EthAddr('12:34:56:78:01:04'),)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972468, microSeconds=116784), fingerprint=u'%s unknown -- flooding', name=None, value=(u\"(EthAddr('12:34:56:78:01:04'),)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972468, microSeconds=127960), fingerprint=u\"Can't get from %s to %s\", name=None, value=(u\"(EthAddr('12:34:56:78:01:04'), EthAddr('12:34:56:78:02:04'))\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972468, microSeconds=115607), fingerprint=u'Learned %s at %s.%i', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), 00-00-00-00-00-04, 4)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972468, microSeconds=115607), fingerprint=u'Learned %s at %s.%i', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), 00-00-00-00-00-04, 4)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972468, microSeconds=115607), fingerprint=u'Learned %s at %s.%i', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), 00-00-00-00-00-04, 4)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972468, microSeconds=115607), fingerprint=u'Learned %s at %s.%i', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), 00-00-00-00-00-04, 4)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972473, microSeconds=708450), fingerprint=u'%s moved from %s.%i to %s.%i?', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), '00-00-00-00-00-04', 4, '00-00-00-00-00-01', 1)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972473, microSeconds=709869), fingerprint=u'Learned %s at %s.%i', name=None, value=(u\"(EthAddr('12:34:56:78:04:04'), 00-00-00-00-00-01, 1)\",))"
+    ],
+    "7": [
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972485, microSeconds=135526), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2533590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972485, microSeconds=135526), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2533590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972485, microSeconds=135526), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2533590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972485, microSeconds=135526), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x2533590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972485, microSeconds=136988), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972485, microSeconds=136988), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972485, microSeconds=136988), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972485, microSeconds=136988), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972485, microSeconds=133217), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972485, microSeconds=133217), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972639, microSeconds=601687), fingerprint=u'link detected: %s.%i -> %s.%i', name=None, value=(u\"('00-00-00-00-00-02', 2, '00-00-00-00-00-03', 2)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972639, microSeconds=603091), fingerprint=u'Spanning tree updated', name=None, value=(u'()',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972641, microSeconds=93665), fingerprint=u'link detected: %s.%i -> %s.%i', name=None, value=(u\"('00-00-00-00-00-02', 3, '00-00-00-00-00-01', 3)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972641, microSeconds=95071), fingerprint=u'Spanning tree updated', name=None, value=(u'()',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972642, microSeconds=340012), fingerprint=u'Installing path for %s -> %s %04x (%i hops)', name=None, value=(u\"(EthAddr('12:34:56:78:01:04'), EthAddr('12:34:56:78:01:04'), 2048, 1)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972642, microSeconds=336514), fingerprint=u'Learned %s at %s.%i', name=None, value=(u\"(EthAddr('12:34:56:78:01:04'), 00-00-00-00-00-04, 5)\",))"
+    ],
+    "8": [
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972651, microSeconds=15556), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x1347590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972651, microSeconds=15556), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x1347590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972651, microSeconds=15556), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x1347590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972651, microSeconds=15556), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x1347590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972651, microSeconds=17027), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972651, microSeconds=17027), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972651, microSeconds=17027), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972651, microSeconds=17027), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972651, microSeconds=13223), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972651, microSeconds=13223), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972788, microSeconds=349566), fingerprint=u'link detected: %s.%i -> %s.%i', name=None, value=(u\"('00-00-00-00-00-03', 3, '00-00-00-00-00-01', 2)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972788, microSeconds=351005), fingerprint=u'Spanning tree updated', name=None, value=(u'()',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972805, microSeconds=200374), fingerprint=u'link detected: %s.%i -> %s.%i', name=None, value=(u\"('00-00-00-00-00-02', 2, '00-00-00-00-00-03', 2)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972805, microSeconds=201835), fingerprint=u'Spanning tree updated', name=None, value=(u'()',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972806, microSeconds=692236), fingerprint=u'link detected: %s.%i -> %s.%i', name=None, value=(u\"('00-00-00-00-00-02', 3, '00-00-00-00-00-01', 3)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972806, microSeconds=693671), fingerprint=u'Spanning tree updated', name=None, value=(u'()',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972807, microSeconds=939105), fingerprint=u'Installing path for %s -> %s %04x (%i hops)', name=None, value=(u\"(EthAddr('12:34:56:78:01:04'), EthAddr('12:34:56:78:01:04'), 2048, 1)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972807, microSeconds=935561), fingerprint=u'Learned %s at %s.%i', name=None, value=(u\"(EthAddr('12:34:56:78:01:04'), 00-00-00-00-00-04, 5)\",))"
+    ],
+    "9": [
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972816, microSeconds=565641), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x20fd590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972816, microSeconds=565641), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x20fd590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972816, microSeconds=565641), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x20fd590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972816, microSeconds=565641), fingerprint=u'Connect %s', name=None, value=(u'(<pox.openflow.of_01.Connection object at 0x20fd590>,)',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972816, microSeconds=567128), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972816, microSeconds=567128), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972816, microSeconds=567128), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972816, microSeconds=567128), fingerprint=u'Installing flow for %s', name=None, value=(u\"('00-00-00-00-00-01',)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972816, microSeconds=563281), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972816, microSeconds=563281), fingerprint=u'of_01 %s Connected to %s', name=None, value=(u\"('[Con 1/1]', '00-00-00-00-00-01')\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972964, microSeconds=110589), fingerprint=u'link detected: %s.%i -> %s.%i', name=None, value=(u\"('00-00-00-00-00-02', 1, '00-00-00-00-00-04', 2)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972964, microSeconds=111988), fingerprint=u'Spanning tree updated', name=None, value=(u'()',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972971, microSeconds=147629), fingerprint=u'link detected: %s.%i -> %s.%i', name=None, value=(u\"('00-00-00-00-00-02', 2, '00-00-00-00-00-03', 2)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972971, microSeconds=149049), fingerprint=u'Spanning tree updated', name=None, value=(u'()',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972972, microSeconds=639669), fingerprint=u'link detected: %s.%i -> %s.%i', name=None, value=(u\"('00-00-00-00-00-02', 3, '00-00-00-00-00-01', 3)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972972, microSeconds=641456), fingerprint=u'Spanning tree updated', name=None, value=(u'()',))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972973, microSeconds=887218), fingerprint=u'Installing path for %s -> %s %04x (%i hops)', name=None, value=(u\"(EthAddr('12:34:56:78:01:04'), EthAddr('12:34:56:78:01:04'), 2048, 1)\",))",
+      "PendingStateChange(controller_id=('127.0.0.1', 6632), time=SyncTime(seconds=1397972973, microSeconds=883666), fingerprint=u'Learned %s at %s.%i', name=None, value=(u\"(EthAddr('12:34:56:78:01:04'), 00-00-00-00-00-04, 5)\",))"
+    ]
+  },
+  "original_duration_seconds": 10.33643102645874,
+  "peeker": false,
+  "prune_start_epoch": 1397971536.206461,
+  "replay_duration_seconds": 132.04290795326233,
+  "replay_end_epoch": 1397971536.20641,
+  "replay_start_epoch": 1397971404.163502,
+  "timed_out_events": {
+    "1": {
+      "ControlMessageReceive": 184,
+      "ControllerStateChange": 69
+    },
+    "2": {
+      "ControlMessageReceive": 184,
+      "ControllerStateChange": 38,
+      "DataplanePermit": 65
+    },
+    "3": {
+      "ControlMessageReceive": 184,
+      "ControllerStateChange": 69
+    },
+    "4": {
+      "ControlMessageReceive": 184,
+      "ControllerStateChange": 22
+    },
+    "5": {
+      "ControlMessageReceive": 184,
+      "ControllerStateChange": 65,
+      "DataplanePermit": 22
+    },
+    "6": {
+      "ControlMessageReceive": 184,
+      "ControllerStateChange": 68,
+      "DataplanePermit": 13
+    },
+    "7": {
+      "ControlMessageReceive": 184,
+      "ControllerStateChange": 69,
+      "DataplanePermit": 18
+    },
+    "8": {
+      "ControlMessageReceive": 184,
+      "ControllerStateChange": 69,
+      "DataplanePermit": 27
+    },
+    "9": {
+      "ControlMessageReceive": 184,
+      "ControllerStateChange": 69,
+      "DataplanePermit": 27
+    }
+  },
+  "total_events": 376,
+  "total_inputs": 116,
+  "total_inputs_replayed": 371,
+  "total_replays": 9,
+  "violation_found_in_run": {
+    "0": 1
+  }
+}

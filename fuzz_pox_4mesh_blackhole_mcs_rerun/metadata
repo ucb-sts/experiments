@@ -1,0 +1,33 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/fuzz_pox_4mesh_blackhole_mcs/orig_config.py",
+    "-n",
+    "fuzz_pox_4mesh_blackhole_mcs_rerun"
+  ],
+  "cwd": "/home/jefflai2/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5560 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:      12321316    6244088    6077228          0     466512    4504296\n-/+ buffers/cache:    1273280   11048036\nSwap:     12571644      51572   12520072",
+    "name": "c3",
+    "num_cores": "8",
+    "uptime": "14:28:00 up 171 days, 14:10,  3 users,  load average: 0.01, 0.02, 0.05"
+  },
+  "modules": {
+    "pox": {
+      "branch": "HEAD",
+      "commit": "6a6a98d9211a273f98f793af15739d8190dd322a"
+    },
+    "sts": {
+      "branch": "pox_blackhole",
+      "commit": "dfa103536299fd00f307736d6dc8e4edc085a9d8"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.04",
+    "uname": "Linux c3 2.6.38-8-server #42-Ubuntu SMP Mon Apr 11 03:49:04 UTC 2011 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_04_19_14_28_00",
+  "user": "jefflai2"
+}
