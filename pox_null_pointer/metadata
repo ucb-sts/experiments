@@ -5,13 +5,13 @@
     "-c",
     "config/pox_null_pointer.py"
   ],
-  "cwd": "/Users/cs/Research/UCB/code/sts",
+  "cwd": "/home/rcs/Research/UCB/code/sts",
   "host": {
-    "cpu_info": "",
-    "free": "",
-    "name": "yossarian",
-    "num_cores": "0",
-    "uptime": "22:58  up 6 days, 11:17, 5 users, load averages: 1.73 1.44 1.31"
+    "cpu_info": "Intel(R) Xeon(R) CPU X5660 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:       6103072    4893796    1209276          0     161668    2542428\n-/+ buffers/cache:    2189700    3913372\nSwap:      6283260          0    6283260",
+    "name": "c5",
+    "num_cores": "12",
+    "uptime": "17:55:54 up 9 days,  4:14,  1 user,  load average: 0.23, 0.14, 0.14"
   },
   "modules": {
     "hassel": {
@@ -19,18 +19,18 @@
       "commit": "d63193500fca48cba053205c413d72eebfd233e9"
     },
     "pox": {
-      "branch": "frenetic_test",
-      "commit": "88b801e73443df3ffa15ced9392ccb1d1650fc7a"
+      "branch": "debugger",
+      "commit": "8d6d995b5fcf93942b958b8c53bdbc018e2f31e3"
     },
     "sts": {
       "branch": "master",
-      "commit": "59a257de64d881f52a8e998d614f339f1a3c10fe"
+      "commit": "afb8c98dac0987ac87ab0a6e85820fb7069788f3"
     }
   },
   "sys": {
-    "lsb_release": "",
-    "uname": "Darwin yossarian 13.0.2 Darwin Kernel Version 13.0.2: Sun Sep 29 19:38:57 PDT 2013; root:xnu-2422.75.4~1/RELEASE_X86_64 x86_64"
+    "lsb_release": "Ubuntu 12.04.4 LTS",
+    "uname": "Linux c5 3.2.0-60-generic #91-Ubuntu SMP Wed Feb 19 03:54:44 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux"
   },
-  "timestamp": "2014_01_27_22_58_22",
-  "user": "cs"
+  "timestamp": "2014_04_22_17_55_54",
+  "user": "rcs"
 }

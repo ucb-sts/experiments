@@ -25,6 +25,10 @@
     "sts": {
       "branch": "master",
       "commit": "fbe0700352ff931405485e5cbf0e3c046cca2f60"
+    },
+    "pyretic": {
+      "branch": "master",
+      "commit": "8a8e630b4521a97d489e690908baf53d33210518"
     }
   },
   "sys": {
