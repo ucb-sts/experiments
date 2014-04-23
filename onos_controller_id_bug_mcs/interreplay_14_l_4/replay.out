@@ -1,0 +1,1347 @@
+[1;33m[c1] Stop ONOS on all nodes[1;m
+
+[1;33m[c1] nosdev1: Killed existing process (pid: 7606)[1;m
+
+[1;33m[c1] topping ZK..[1;m
+
+[1;33m[c1] nosdev1: Stopping zookeeper ... STOPPED[1;m
+
+[1;33m[c1] : Stopping zookeeper ... STOPPED[1;m
+
+[1;33m[c1] topping Cassandra..[1;m
+
+[1;33m[c1] nosdev1: Killed existing prosess (pid: 2438)[1;m
+
+[1;33m[c1] d existing prosess (pid: 32516)[1;m
+
+[1;33m[c1] leeping for 5sec[1;m
+
+[1;33m[c1] enrating conf files for 2-node cluster[1;m
+
+[1;33m[c1] ying confguration files[1;m
+
+[1;33m[c1] grant_onosdev/scripts/../conf/zoo.cfg /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/conf[1;m
+
+[1;33m[c1] opying /mnt/ahassany/vagrant_onosdev/scripts/../conf/cassandra.titan /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/conf[1;m
+
+[1;33m[c1] opying /mnt/ahassany/vagrant_onosdev/scripts/../conf/titan-embedded.properties /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/conf[1;m
+
+[1;33m[c1] opying /mnt/ahassany/vagrant_onosdev/scripts/../conf/cassandra.yaml.1 /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/conf[1;m
+
+[1;33m[c1] ing /mnt/ahassany/vagrant_onosdev/scripts/../conf/cassandra.yaml.2 /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/conf[1;m
+
+[1;33m[c1] ing /mnt/ahassany/vagrant_onosdev/scripts/../conf/config.json /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/web[1;m
+
+[1;33m[c1] ng /mnt/ahassany/vagrant_onosdev/scripts/../conf_common/configuration.json /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/web/ons-demo/data[1;m
+
+[1;33m[c1] ing /mnt/ahassany/vagrant_onosdev/scripts/../conf_common/controllers.json /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/web/ons-demo/data[1;m
+
+[1;33m[c1] ng /mnt/ahassany/vagrant_onosdev/scripts/../conf_common/dev_network.py /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/test-network/mininet[1;m
+
+[1;41m[1;33m[c1] cp: cannot stat `/mnt/ahassany/vagrant_onosdev/scripts/../conf_common/dev_network.py': No such file or directory[1;m
+
+[1;33m[c1] ying /mnt/ahassany/vagrant_onosdev/scripts/../conf_common/link.json.dev /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/web/link.json[1;m
+
+[1;41m[1;33m[c1] cp: cannot stat `/mnt/ahassany/vagrant_onosdev/scripts/../conf_common/link.json.dev': No such file or directory[1;m
+
+[1;33m[c1] g /mnt/ahassany/vagrant_onosdev/scripts/../conf_common/cluster.hosts /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/.cluster.hosts[1;m
+
+[1;33m[c1] pying cassandra.yaml file to all VMs[1;m
+
+[1;33m[c1] emoving all data in /var/lib/cassandra/ [Y/n]?[1;m
+
+[1;41m[1;33m[c1] # onosdev2 SSH-2.0-OpenSSH_6.1p1 Debian-4[1;m
+
+[1;41m[1;33m[c1] # onosdev1 SSH-2.0-OpenSSH_6.1p1 Debian-4[1;m
+
+[1;41m[1;33m[c1] # onosdev2 SSH-2.0-OpenSSH_6.1p1 Debian-4[1;m
+
+[1;41m[1;33m[c1] # onosdev1 SSH-2.0-OpenSSH_6.1p1 Debian-4[1;m
+
+[1;33m[c1] tarting ZK..[1;m
+
+[1;33m[c1] nosdev1: Starting Zookeeper[1;m
+
+[1;33m[c1] rting zookeeper ... STARTED[1;m
+
+[1;33m[c1] tarting Zookeeper[1;m
+
+[1;33m[c1] tarting zookeeper ... STARTED[1;m
+
+[1;33m[c1] heck status[1;m
+
+[1;33m[c1] everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] heck status[1;m
+
+[1;33m[c1] s up: 1 up of of 2[1;m
+
+[1;33m[c1] heck status[1;m
+
+[1;33m[c1] dy's up: 2 up of of 2[1;m
+
+[1;33m[c1] Starting Cassandra..[1;m
+
+[1;33m[c1] sandra at the seed node[1;m
+
+[1;33m[c1] nosdev1: rotate log:[1;m
+
+[1;33m[c1] ng cassandra[1;m
+
+[1;33m[c1]  start cassandra in rest nodes[1;m
+
+[1;33m[c1] nosdev2: rotate log:[1;m
+
+[1;33m[c1] Starting cassandra[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] aiting for everybody's up: 0 up of of 2[1;m
+
+[1;33m[c1] 9967[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] : Datacenter: datacenter1[1;m
+
+[1;33m[c1] =====[1;m
+
+[1;33m[c1] 1:[1;m
+
+[1;33m[c1] ack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] .168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 9967[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] : datacenter1[1;m
+
+[1;33m[c1] : ==========[1;m
+
+[1;33m[c1] Replicas: 1[1;m
+
+[1;33m[c1] sdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] osdev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] iting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 9967[1;m
+
+[1;33m[c1] osdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] 1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] =[1;m
+
+[1;33m[c1] plicas: 1[1;m
+
+[1;33m[c1] nosdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] sdev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 9967[1;m
+
+[1;33m[c1] sdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] acenter1[1;m
+
+[1;33m[c1] =======[1;m
+
+[1;33m[c1]  Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1]   Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 9967[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] enter: datacenter1[1;m
+
+[1;33m[c1] =========[1;m
+
+[1;33m[c1] Replicas: 1[1;m
+
+[1;33m[c1] osdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] sdev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 9967[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] sdev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] ========[1;m
+
+[1;33m[c1] cas: 1[1;m
+
+[1;33m[c1] osdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] nosdev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 9967[1;m
+
+[1;33m[c1] ev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] sdev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] ======[1;m
+
+[1;33m[c1] as: 1[1;m
+
+[1;33m[c1] onosdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] 1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1]  for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 9967[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1]  Datacenter: datacenter1[1;m
+
+[1;33m[c1] ===[1;m
+
+[1;33m[c1] cas: 1[1;m
+
+[1;33m[c1] osdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] dev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 9967[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] dev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] =======[1;m
+
+[1;33m[c1] Replicas: 1[1;m
+
+[1;33m[c1] nosdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] onosdev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 67[1;m
+
+[1;33m[c1] sdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] ev1:[1;m
+
+[1;33m[c1] enter: datacenter1[1;m
+
+[1;33m[c1] ========[1;m
+
+[1;33m[c1]  1[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] ev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] :[1;m
+
+[1;33m[c1] 6.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 67[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] 1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] ======[1;m
+
+[1;33m[c1] eplicas: 1[1;m
+
+[1;33m[c1] :[1;m
+
+[1;33m[c1] Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] waiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 967[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] ev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] ==========[1;m
+
+[1;33m[c1] plicas: 1[1;m
+
+[1;33m[c1] dev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] 1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 7[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] nosdev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] ======[1;m
+
+[1;33m[c1] as: 1[1;m
+
+[1;33m[c1] onosdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] sdev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 7[1;m
+
+[1;33m[c1] ev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1]  Datacenter: datacenter1[1;m
+
+[1;33m[c1] ======[1;m
+
+[1;33m[c1] s: 1[1;m
+
+[1;33m[c1] nosdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] nosdev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 7[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] atacenter: datacenter1[1;m
+
+[1;33m[c1] =====[1;m
+
+[1;33m[c1] eplicas: 1[1;m
+
+[1;33m[c1] nosdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] sdev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 7[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] ev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] ========[1;m
+
+[1;33m[c1]  Replicas: 1[1;m
+
+[1;33m[c1] nosdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] 100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] waiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 9967[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] nter: datacenter1[1;m
+
+[1;33m[c1] ========[1;m
+
+[1;33m[c1] s: 1[1;m
+
+[1;33m[c1] dev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] sdev1: 192.168.56.11  rack1       Up     Normal  45.95 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 67[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1]  Datacenter: datacenter1[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] plicas: 1[1;m
+
+[1;33m[c1] nosdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] onosdev1: 192.168.56.11  rack1       Up     Normal  50.52 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 9967[1;m
+
+[1;33m[c1] v1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] sdev1: ==========[1;m
+
+[1;33m[c1] dev1:[1;m
+
+[1;33m[c1]  State   Load            Owns                Token[1;m
+
+[1;33m[c1]                                                                -9223372036854775808[1;m
+
+[1;33m[c1] k1       Up     Normal  36.67 KB        50.00%              0[1;m
+
+[1;33m[c1] KB        50.00%              -9223372036854775808[1;m
+
+[1;33m[c1] erybody's up: 2 up of of 2[1;m
+
+[1;33m[c1] arted[1;m
+
+[1;33m[c1] Starting ONOS on all nodes[1;m
+
+[1;33m[c1] sdev1: rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33m[c1] NOS controller ...[1;m
+
+[1;33m[c1] nosdev1: /home/mininet/ONOS[1;m
+
+[1;33m[c1] v1: .[1;m
+
+[1;33m[c1] nosdev2: rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33m[c1] g: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33m[c1] arting ONOS controller ...[1;m
+
+[1;33m[c1] : .[1;m
+
+[1;33m[c1] v2: /home/mininet/ONOS[1;m
+
+[1;33m[c1]  Waiting for ONOS to start...[1;m
+
+[1;33m[c1] 2: .[1;m
+
+[1;33m[c1] nosdev1: killing: /usr/bin/python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] ng: python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] ev1: killing:[1;m
+
+[1;33m[c1] g: /usr/bin/python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] lling: python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1]  killing:[1;m
+
+[1;33m[c1] ecs[1;m
+
+[1;33m[c1] top ONOS on all nodes[1;m
+
+[1;33m[c1] nosdev1: Killed existing process (pid: 28579)[1;m
+
+[1;33m[c1] nosdev2: Killed existing process (pid: 24381)[1;m
+
+[1;33m[c1] emoving all data in db[1;m
+
+[1;33m[c1] tarting ONOS on all nodes[1;m
+
+[1;33m[c1] nosdev1: rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33m[c1] nos-logs/onos.onosdev1.pcap[1;m
+
+[1;33m[c1] ng ONOS controller ...[1;m
+
+[1;33m[c1] sdev1: .[1;m
+
+[1;33m[c1]  /home/mininet/ONOS[1;m
+
+[1;33m[c1] aiting for ONOS to start...[1;m
+
+[1;33m[c1] onosdev2: rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33m[c1] gs/onos.onosdev2.pcap[1;m
+
+[1;33m[c1] rting ONOS controller ...[1;m
+
+[1;33m[c1] sdev2: .[1;m
+
+[1;33m[c1] me/mininet/ONOS[1;m
+
+[1;33m[c1] Waiting for ONOS to start...[1;m
+
+[1;33m[c1] nosdev1: killing: /usr/bin/python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1]  /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] ing:[1;m
+
+[1;33m[c1] 2: killing: /usr/bin/python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] ling: python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1]  killing:[1;m
+
+[1;33m[c2] DUMMY COMMAND[1;m
+
+Connecting switch 0 to controller ControllerConfig(start_cmd=' onos stop; zk stop ; cassandra stop; echo "sleeping for 5sec"; sleep 5; /mnt/ahassany/vagrant_onosdev/scripts/conf_setup.sh 2 ; zk start ; cassandra start; echo "sleeping for 10sec"; sleep 10 ; onos start ; echo "sleeping for 40 secs"; sleep 40 ; onos stop; sleep 10; cassandra cleandb; onos start; sleep 40', label='c1', address='192.168.56.11', cwd='/mnt/ahassany/vagrant_onosdev', controller_type='onos', kill_cmd=' ssh onosdev1 "cd ONOS; ./start-onos.sh stop"; echo "killed"; sleep 5', restart_cmd='ssh onosdev1 "cd ONOS; ./start-onos.sh start"; echo "restarted"; sleep 20') - <bound method Simulation.create_connection of <sts.simulation_state.Simulation object at 0x2f2b5d0>>
+connect_socket_with_backoff ('192.168.56.11', 6633)
+Connecting switch 1 to controller ControllerConfig(start_cmd='echo "DUMMY COMMAND"; sleep 1', label='c2', address='192.168.56.12', cwd='/mnt/ahassany/vagrant_onosdev', controller_type='onos', kill_cmd=' ssh onosdev2 "cd ONOS; ./start-onos.sh stop"; echo "killed"; sleep 5', restart_cmd='ssh onosdev2 "cd ONOS; ./start-onos.sh start"; echo "restarted"; sleep 20') - <bound method Simulation.create_connection of <sts.simulation_state.Simulation object at 0x2f2b5d0>>
+connect_socket_with_backoff ('192.168.56.12', 6633)
+[1;36m[1;44m00:00.504 00:00.000 Successfully matched event ConnectToControllers:e1[1;m
+[1;36m[1;44m00:00.587 00:00.090 Successfully matched event ControlMessageReceive:i2 c c2 -> s 2 [ofp_hello: ][1;m
+[1;36m[1;36mRound 1[1;37m[1;m
+[1;36m[1;44m00:00.587 00:00.091 Successfully matched event ControlMessageSend:i3 c 2 -> s c2 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.588 00:00.192 Successfully matched event ControlMessageReceive:i4 c c1 -> s 1 [ofp_hello: ][1;m
+[1;36m[1;36mRound 2[1;37m[1;m
+[1;36m[1;44m00:00.601 00:00.193 Successfully matched event ControlMessageReceive:i5 c c2 -> s 2 [ofp_features_request: ][1;m
+[1;36m[1;44m00:00.602 00:00.194 Successfully matched event ControlMessageSend:i6 c 2 -> s c2 [ofp_features_reply: datapath_id=2][1;m
+[1;36m[1;44m00:00.603 00:00.194 Successfully matched event ControlMessageSend:i7 c 1 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.611 00:00.295 Successfully matched event ControlMessageReceive:i8 c c2 -> s 2 [ofp_set_config: ][1;m
+[1;36m[1;36mRound 3[1;37m[1;m
+[1;36m[1;44m00:00.625 00:00.296 Successfully matched event ControlMessageReceive:i9 c c1 -> s 1 [ofp_features_request: ][1;m
+[1;36m[1;44m00:00.699 00:00.297 Successfully matched event ControlMessageReceive:i10 c c2 -> s 2 [ofp_stats_request: flags=0, type=0][1;m
+[1;36m[1;44m00:00.700 00:00.303 Successfully matched event ControlMessageReceive:i11 c c2 -> s 2 [ofp_get_config_request: ][1;m
+[1;36m[1;44m00:00.701 00:00.304 Successfully matched event ControlMessageSend:i12 c 2 -> s c2 [ofp_get_config_reply: ][1;m
+[1;36m[1;44m00:00.702 00:00.305 Successfully matched event ControlMessageSend:i13 c 2 -> s c2 [ofp_stats_reply: flags=0, type=0][1;m
+[1;36m[1;44m00:00.703 00:00.306 Successfully matched event ControlMessageSend:i14 c 1 -> s c1 [ofp_features_reply: datapath_id=1][1;m
+[1;36m[1;44m00:00.712 00:00.407 Successfully matched event ControlMessageReceive:i15 c c1 -> s 1 [ofp_set_config: ][1;m
+[1;36m[1;36mRound 4[1;37m[1;m
+[1;36m[1;44m00:00.764 00:00.407 Successfully matched event ControlMessageReceive:i16 c c2 -> s 2 [ofp_vendor: ][1;m
+[1;36m[1;44m00:00.765 00:00.407 Successfully matched event ControlMessageReceive:i17 c c1 -> s 1 [ofp_get_config_request: ][1;m
+[1;36m[1;44m00:00.765 00:00.408 Successfully matched event ControlMessageSend:i18 c 2 -> s c2 [ofp_vendor: ][1;m
+[1;36m[1;44m00:00.766 00:00.408 Successfully matched event ControlMessageSend:i19 c 1 -> s c1 [ofp_get_config_reply: ][1;m
+[1;36m[1;44m00:00.816 00:00.509 Successfully matched event ControlMessageReceive:i20 c c1 -> s 1 [ofp_stats_request: flags=0, type=0][1;m
+[1;36m[1;36mRound 5[1;37m[1;m
+[1;36m[1;44m00:00.818 00:00.514 Successfully matched event ControlMessageReceive:i21 c c2 -> s 2 [ofp_vendor: ][1;m
+[1;36m[1;44m00:00.819 00:00.515 Successfully matched event ControlMessageSend:i22 c 2 -> s c2 [ofp_vendor: ][1;m
+[1;36m[1;44m00:00.820 00:00.516 Successfully matched event ControlMessageSend:i23 c 1 -> s c1 [ofp_stats_reply: flags=0, type=0][1;m
+[1;36m[1;44m00:00.880 00:00.617 Successfully matched event ControlMessageReceive:i24 c c1 -> s 1 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 6[1;37m[1;m
+[1;36m[1;44m00:00.881 00:00.618 Successfully matched event ControlMessageSend:i25 c 1 -> s c1 [ofp_vendor: ][1;m
+[1;36m[1;44m00:00.960 00:00.719 Successfully matched event ControlMessageReceive:i26 c c1 -> s 1 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 7[1;37m[1;m
+[1;36m[1;44m00:00.961 00:00.720 Successfully matched event ControlMessageSend:i27 c 1 -> s c1 [ofp_vendor: ][1;m
+[1;36m[1;44m00:00.962 00:00.721 Successfully matched event TrafficInjection:e28[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:01.064 00:00.823 Successfully matched event DataplanePermit:i29[1;m
+[1;36m[1;36mRound 8[1;37m[1;m
+[1;36m[1;44m00:01.065 00:00.825 Successfully matched event ControlMessageSend:i30 c 2 -> s c2 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=2][1;m
+[1;36m[1;44m00:02.543 00:02.132 Successfully matched event ControlMessageReceive:i31 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 21[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:02.545 00:02.133 Successfully matched event ControlMessageReceive:i32 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:02.598 00:02.133 Successfully matched event ControlMessageReceive:i33 c c2 -> s 2 [ofp_stats_request: flags=0, type=1][1;m
+[1;36m[1;44m00:02.598 00:02.134 Successfully matched event ControlMessageSend:i34 c 2 -> s c2 [ofp_stats_reply: flags=0, type=0][1;m
+[1;36m[1;44m00:02.690 00:02.235 Successfully matched event DataplanePermit:i35[1;m
+[1;36m[1;36mRound 22[1;37m[1;m
+[1;36m[1;44m00:02.690 00:02.236 Successfully matched event DataplanePermit:i36[1;m
+[1;36m[1;44m00:02.691 00:02.236 Successfully matched event ControlMessageReceive:i37 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:02.693 00:02.237 Successfully matched event ControlMessageReceive:i38 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:02.694 00:02.237 Successfully matched event ControlMessageReceive:i39 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:02.695 00:02.238 Successfully matched event ControlMessageReceive:i40 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:02.696 00:02.239 Successfully matched event ControlMessageSend:i41 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m00:02.797 00:02.339 Successfully matched event DataplanePermit:i42[1;m
+[1;36m[1;36mRound 23[1;37m[1;m
+[1;36m[1;44m00:02.797 00:02.340 Successfully matched event DataplanePermit:i43[1;m
+[1;36m[1;44m00:02.798 00:02.341 Successfully matched event DataplanePermit:i44[1;m
+[1;36m[1;44m00:02.798 00:02.341 Successfully matched event DataplanePermit:i45[1;m
+[1;36m[1;44m00:02.873 00:02.342 Successfully matched event ControlMessageReceive:i46 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:02.874 00:02.343 Successfully matched event ControlMessageReceive:i47 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:02.875 00:02.344 Successfully matched event ControlMessageSend:i48 c 1 -> s c1 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;36m[1;44m00:02.876 00:02.344 Successfully matched event ControlMessageSend:i49 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m00:02.977 00:02.445 Successfully matched event DataplanePermit:i50[1;m
+[1;36m[1;36mRound 24[1;37m[1;m
+[1;36m[1;44m00:02.978 00:02.446 Successfully matched event DataplanePermit:i51[1;m
+[1;36m[1;44m00:03.139 00:02.448 Successfully matched event ControlMessageReceive:i52 c c1 -> s 1 [ofp_stats_request: flags=0, type=1][1;m
+[1;36m[1;44m00:03.140 00:02.450 Successfully matched event ControlMessageSend:i53 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m00:03.140 00:02.450 Successfully matched event ControlMessageSend:i54 c 1 -> s c1 [ofp_stats_reply: flags=0, type=0][1;m
+[1;36m[1;44m00:03.165 00:02.551 Successfully matched event ControlMessageReceive:i55 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 25[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:03.166 00:02.553 Successfully matched event ControlMessageReceive:i56 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:03.268 00:02.655 Successfully matched event DataplanePermit:i57[1;m
+[1;36m[1;36mRound 26[1;37m[1;m
+[1;36m[1;44m00:03.269 00:02.656 Successfully matched event DataplanePermit:i58[1;m
+[1;36m[1;44m00:03.270 00:02.657 Successfully matched event ControlMessageReceive:i59 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:03.273 00:02.658 Successfully matched event ControlMessageReceive:i60 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:03.274 00:02.660 Successfully matched event ControlMessageSend:i61 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m00:03.375 00:02.760 Successfully matched event DataplanePermit:i62[1;m
+[1;36m[1;36mRound 27[1;37m[1;m
+[1;36m[1;44m00:03.376 00:02.761 Successfully matched event DataplanePermit:i63[1;m
+[1;36m[1;44m00:03.377 00:02.762 Successfully matched event ControlMessageSend:i64 c 2 -> s c2 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;36m[1;44m00:04.687 00:04.071 Successfully matched event DataplanePermit:i66[1;m
+[1;36m[1;36mRound 40[1;37m[1;m
+[1;35m[1;41m00:05.289 00:04.073 Event timed out ControlMessageSend:i67 c 2 -> s c2 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=2][1;m
+[1;35m[1;41m00:06.693 00:04.892 Event timed out ControlMessageReceive:i69 c c2 -> s 2 [ofp_packet_out: actions=(), data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=65535][1;m
+[1;36m[1;36mRound 41[1;37m[1;m
+[1;35m[1;41m00:07.296 00:04.893 Event timed out ControlMessageReceive:i70 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=65535][1;m
+[1;36m[1;44m00:07.397 00:04.994 Successfully matched event DataplanePermit:i71[1;m
+[1;36m[1;36mRound 42[1;37m[1;m
+[1;35m[1;41m00:10.403 00:07.405 Event timed out ControlMessageReceive:i72 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 66[1;37m[1;m
+[1;35m[1;41m00:11.006 00:07.407 Event timed out ControlMessageReceive:i73 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m00:11.108 00:07.509 Successfully matched event DataplanePermit:i74[1;m
+[1;36m[1;36mRound 67[1;37m[1;m
+[1;36m[1;44m00:11.109 00:07.510 Successfully matched event DataplanePermit:i75[1;m
+[1;35m[1;41m00:11.711 00:07.511 Event timed out ControlMessageReceive:i76 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m00:12.313 00:07.513 Event timed out ControlMessageReceive:i77 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m00:12.916 00:07.514 Event timed out ControlMessageSend:i78 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m00:13.018 00:07.615 Successfully matched event DataplanePermit:i79[1;m
+[1;36m[1;36mRound 68[1;37m[1;m
+[1;36m[1;44m00:13.019 00:07.616 Successfully matched event DataplanePermit:i80[1;m
+[1;35m[1;41m00:13.621 00:07.617 Event timed out ControlMessageSend:i81 c 1 -> s c1 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;36m[1;44m00:19.394 00:13.386 Successfully matched event DataplanePermit:i84[1;m
+[1;36m[1;36mRound 70[1;37m[1;m
+[1;35m[1;41m00:19.996 00:13.388 Event timed out ControlMessageSend:i85 c 2 -> s c2 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=2][1;m
+[1;35m[1;41m00:46.565 00:39.370 Event timed out ControlMessageReceive:i87 c c2 -> s 2 [ofp_hello: ][1;m
+[1;36m[1;36mRound 71[1;37m[1;m
+[1;36m[1;44m00:46.566 00:39.371 Successfully matched event ControlMessageReceive:i88 c c1 -> s 1 [ofp_echo_request: ][1;m
+[1;36m[1;44m00:46.567 00:39.372 Successfully matched event ControlMessageReceive:i89 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:46.568 00:39.373 Successfully matched event ControlMessageReceive:i90 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:46.570 00:39.375 Successfully matched event ControlMessageReceive:i91 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:46.571 00:39.377 Successfully matched event ControlMessageReceive:i92 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:46.572 00:39.378 Successfully matched event ControlMessageSend:i93 c 1 -> s c1 [ofp_echo_reply: ][1;m
+[1;35m[1;41m00:47.173 00:39.378 Event timed out ControlMessageSend:i94 c 2 -> s c2 [ofp_hello: ][1;m
+[1;36m[1;44m00:47.275 00:39.480 Successfully matched event DataplanePermit:i95[1;m
+[1;36m[1;36mRound 72[1;37m[1;m
+[1;36m[1;44m00:47.276 00:39.481 Successfully matched event DataplanePermit:i96[1;m
+[1;36m[1;44m00:47.277 00:39.482 Successfully matched event DataplanePermit:i97[1;m
+[1;36m[1;44m00:47.278 00:39.483 Successfully matched event DataplanePermit:i98[1;m
+[1;36m[1;44m00:47.280 00:39.484 Successfully matched event ControlMessageReceive:i99 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:47.283 00:39.485 Successfully matched event ControlMessageReceive:i100 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:47.286 00:39.486 Successfully matched event ControlMessageReceive:i101 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:47.287 00:39.488 Successfully matched event ControlMessageReceive:i102 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;35m[1;41m00:47.889 00:39.488 Event timed out ControlMessageReceive:i103 c c2 -> s 2 [ofp_features_request: ][1;m
+[1;36m[1;44m00:47.890 00:39.489 Successfully matched event ControlMessageSend:i104 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m00:48.491 00:39.489 Event timed out ControlMessageSend:i105 c 2 -> s c2 [ofp_features_reply: datapath_id=2][1;m
+[1;36m[1;44m00:48.493 00:39.490 Successfully matched event ControlMessageSend:i106 c 2 -> s c2 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;36m[1;44m00:48.594 00:39.590 Successfully matched event DataplanePermit:i107[1;m
+[1;36m[1;36mRound 73[1;37m[1;m
+[1;36m[1;44m00:48.595 00:39.591 Successfully matched event DataplanePermit:i108[1;m
+[1;36m[1;44m00:48.596 00:39.591 Successfully matched event DataplanePermit:i109[1;m
+[1;36m[1;44m00:48.597 00:39.592 Successfully matched event DataplanePermit:i110[1;m
+[1;35m[1;41m00:49.199 00:39.592 Event timed out ControlMessageReceive:i111 c c2 -> s 2 [ofp_get_config_request: ][1;m
+[1;35m[1;41m00:49.801 00:39.593 Event timed out ControlMessageReceive:i112 c c2 -> s 2 [ofp_set_config: ][1;m
+[1;36m[1;44m00:49.803 00:39.593 Successfully matched event ControlMessageSend:i113 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m00:49.804 00:39.593 Successfully matched event ControlMessageSend:i114 c 2 -> s c2 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;35m[1;41m00:50.407 00:39.594 Event timed out ControlMessageSend:i115 c 2 -> s c2 [ofp_get_config_reply: ][1;m
+[1;35m[1;41m00:51.009 00:39.694 Event timed out ControlMessageReceive:i116 c c2 -> s 2 [ofp_stats_request: flags=0, type=0][1;m
+[1;36m[1;36mRound 74[1;37m[1;m
+[1;35m[1;41m00:51.612 00:39.700 Event timed out ControlMessageSend:i117 c 2 -> s c2 [ofp_stats_reply: flags=0, type=0][1;m
+[1;35m[1;41m00:52.214 00:39.801 Event timed out ControlMessageReceive:i118 c c2 -> s 2 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 75[1;37m[1;m
+[1;35m[1;41m00:52.816 00:39.802 Event timed out ControlMessageSend:i119 c 2 -> s c2 [ofp_vendor: ][1;m
+[1;35m[1;41m00:53.418 00:39.902 Event timed out ControlMessageReceive:i120 c c2 -> s 2 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 76[1;37m[1;m
+[1;35m[1;41m00:54.020 00:39.904 Event timed out ControlMessageSend:i121 c 2 -> s c2 [ofp_vendor: ][1;m
+[1;36m[1;44m00:54.324 00:40.207 Successfully matched event DataplanePermit:i123[1;m
+[1;36m[1;36mRound 79[1;37m[1;m
+[1;35m[1;41m00:54.927 00:40.209 Event timed out ControlMessageSend:i124 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:02', u'nw_src': u'123.123.1.2', u'dl_src': u'12:34:56:78:01:02', u'nw_dst': u'123.123.2.2'}, in_port=2][1;m
+[1;35m[1;41m00:57.533 00:42.187 Event timed out ControlMessageReceive:i126 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 81[1;37m[1;m
+[1;35m[1;41m00:58.135 00:42.188 Event timed out ControlMessageReceive:i127 c c2 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(2)',), flags=1, match=dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_type:2048,in_port:1][1;m
+[1;35m[1;41m00:58.737 00:42.188 Event timed out ControlMessageReceive:i128 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data=(), in_port=2][1;m
+[1;35m[1;41m00:59.340 00:42.189 Event timed out ControlMessageReceive:i129 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(2)',), flags=1, match=dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_type:2048,in_port:1][1;m
+[1;35m[1;41m00:59.942 00:42.189 Event timed out ControlMessageReceive:i130 c c2 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(1)',), flags=1, match=dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_type:2048,in_port:2][1;m
+[1;35m[1;41m01:00.544 00:42.190 Event timed out ControlMessageReceive:i131 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m01:01.208 00:42.191 Event timed out ControlMessageReceive:i132 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(1)',), flags=1, match=dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_type:2048,in_port:2][1;m
+[1;35m[1;41m01:01.811 00:42.191 Event timed out ControlMessageReceive:i133 c c2 -> s 2 [ofp_stats_request: flags=0, type=1][1;m
+[1;35m[1;41m01:02.413 00:42.192 Event timed out ControlMessageSend:i134 c 2 -> s c2 [ofp_stats_reply: flags=0, type=0][1;m
+[1;36m[1;44m01:02.514 00:42.292 Successfully matched event DataplanePermit:i135[1;m
+[1;36m[1;36mRound 82[1;37m[1;m
+[1;36m[1;44m01:02.515 00:42.293 Successfully matched event DataplanePermit:i136[1;m
+[1;36m[1;44m01:02.516 00:42.294 Successfully matched event DataplanePermit:i137[1;m
+[1;35m[1;41m01:03.118 00:42.294 Event timed out ControlMessageReceive:i138 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m01:03.720 00:42.295 Event timed out ControlMessageReceive:i139 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m01:04.322 00:42.295 Event timed out ControlMessageSend:i140 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m01:04.424 00:42.396 Successfully matched event DataplanePermit:i141[1;m
+[1;36m[1;36mRound 83[1;37m[1;m
+[1;36m[1;44m01:04.424 00:42.397 Successfully matched event DataplanePermit:i142[1;m
+[1;36m[1;44m01:04.424 00:42.398 Successfully matched event DataplanePermit:i143[1;m
+[1;35m[1;41m01:05.026 00:42.399 Event timed out ControlMessageReceive:i144 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m01:05.628 00:42.400 Event timed out ControlMessageReceive:i145 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m01:06.231 00:42.401 Event timed out ControlMessageSend:i146 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m01:06.333 00:42.503 Successfully matched event DataplanePermit:i147[1;m
+[1;36m[1;36mRound 84[1;37m[1;m
+[1;36m[1;44m01:06.334 00:42.504 Successfully matched event DataplanePermit:i148[1;m
+[1;35m[1;41m01:06.844 00:42.505 Event timed out ControlMessageSend:i149 c 1 -> s c1 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;36m[1;44m01:07.350 00:43.009 Successfully matched event DataplanePermit:i151[1;m
+[1;36m[1;36mRound 89[1;37m[1;m
+[1;36m[1;44m01:13.292 00:48.945 Successfully matched event DataplanePermit:i153[1;m
+[1;36m[1;36mRound 90[1;37m[1;m
+[1;36m[1;44m01:13.295 00:48.947 Successfully matched event ControlMessageReceive:i154 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:13.297 00:48.949 Successfully matched event ControlMessageReceive:i155 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:13.299 00:48.950 Successfully matched event ControlMessageReceive:i156 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:13.302 00:48.951 Successfully matched event ControlMessageReceive:i157 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:38.972 01:14.613 Successfully matched event DataplanePermit:i159[1;m
+[1;36m[1;36mRound 91[1;37m[1;m
+[1;36m[1;44m01:38.974 01:14.614 Successfully matched event DataplanePermit:i160[1;m
+[1;36m[1;44m01:38.975 01:14.616 Successfully matched event DataplanePermit:i161[1;m
+[1;36m[1;44m01:38.975 01:14.617 Successfully matched event DataplanePermit:i162[1;m
+[1;36m[1;44m01:38.976 01:14.618 Successfully matched event DataplanePermit:i163[1;m
+[1;35m[1;41m01:39.578 01:14.619 Event timed out ControlMessageReceive:i164 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m01:40.180 01:14.620 Event timed out ControlMessageReceive:i165 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m01:40.782 01:14.622 Event timed out ControlMessageReceive:i166 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m01:41.384 01:14.623 Event timed out ControlMessageReceive:i167 c c2 -> s 2 [ofp_echo_request: ][1;m
+[1;35m[1;41m01:41.986 01:14.624 Event timed out ControlMessageReceive:i168 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m01:42.589 01:14.624 Event timed out ControlMessageReceive:i169 c c1 -> s 1 [ofp_hello: ][1;m
+[1;36m[1;44m01:42.590 01:14.625 Successfully matched event ControlMessageSend:i170 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m01:42.591 01:14.625 Successfully matched event ControlMessageSend:i171 c 2 -> s c2 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;35m[1;41m01:43.193 01:14.625 Event timed out ControlMessageSend:i172 c 2 -> s c2 [ofp_echo_reply: ][1;m
+[1;35m[1;41m01:43.795 01:14.626 Event timed out ControlMessageSend:i173 c 1 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m01:43.896 01:14.726 Successfully matched event DataplanePermit:i174[1;m
+[1;36m[1;36mRound 92[1;37m[1;m
+[1;36m[1;44m01:43.898 01:14.727 Successfully matched event DataplanePermit:i175[1;m
+[1;36m[1;44m01:43.898 01:14.729 Successfully matched event DataplanePermit:i176[1;m
+[1;36m[1;44m01:43.899 01:14.730 Successfully matched event DataplanePermit:i177[1;m
+[1;35m[1;41m01:44.501 01:14.731 Event timed out ControlMessageReceive:i178 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m01:45.103 01:14.732 Event timed out ControlMessageReceive:i179 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m01:45.632 01:14.732 Event timed out ControlMessageReceive:i180 c c1 -> s 1 [ofp_features_request: ][1;m
+[1;35m[1;41m01:46.234 01:14.733 Event timed out ControlMessageReceive:i181 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m01:46.844 01:14.733 Event timed out ControlMessageReceive:i182 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m01:47.446 01:14.734 Event timed out ControlMessageSend:i183 c 1 -> s c1 [ofp_features_reply: datapath_id=1][1;m
+[1;35m[1;41m01:48.048 01:14.734 Event timed out ControlMessageSend:i184 c 1 -> s c1 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;35m[1;41m01:48.650 01:14.734 Event timed out ControlMessageSend:i185 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m01:48.752 01:14.835 Successfully matched event DataplanePermit:i186[1;m
+[1;36m[1;36mRound 93[1;37m[1;m
+[1;36m[1;44m01:48.752 01:14.835 Successfully matched event DataplanePermit:i187[1;m
+[1;36m[1;44m01:48.753 01:14.836 Successfully matched event DataplanePermit:i188[1;m
+[1;36m[1;44m01:48.754 01:14.838 Successfully matched event DataplanePermit:i189[1;m
+[1;35m[1;41m01:49.356 01:14.838 Event timed out ControlMessageReceive:i190 c c1 -> s 1 [ofp_set_config: ][1;m
+[1;35m[1;41m01:49.957 01:14.839 Event timed out ControlMessageReceive:i191 c c1 -> s 1 [ofp_stats_request: flags=0, type=0][1;m
+[1;35m[1;41m01:50.560 01:14.842 Event timed out ControlMessageReceive:i192 c c1 -> s 1 [ofp_get_config_request: ][1;m
+[1;35m[1;41m01:51.162 01:14.842 Event timed out ControlMessageSend:i193 c 1 -> s c1 [ofp_get_config_reply: ][1;m
+[1;35m[1;41m01:51.764 01:14.843 Event timed out ControlMessageSend:i194 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m01:52.366 01:14.843 Event timed out ControlMessageSend:i195 c 1 -> s c1 [ofp_stats_reply: flags=0, type=0][1;m
+[1;35m[1;41m01:52.968 01:14.843 Event timed out ControlMessageSend:i196 c 1 -> s c1 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;35m[1;41m01:53.570 01:14.944 Event timed out ControlMessageReceive:i197 c c1 -> s 1 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 94[1;37m[1;m
+[1;35m[1;41m01:54.172 01:14.944 Event timed out ControlMessageSend:i198 c 1 -> s c1 [ofp_vendor: ][1;m
+[1;35m[1;41m01:54.774 01:15.045 Event timed out ControlMessageReceive:i199 c c1 -> s 1 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 95[1;37m[1;m
+[1;35m[1;41m01:55.376 01:15.046 Event timed out ControlMessageSend:i200 c 1 -> s c1 [ofp_vendor: ][1;m
+[1;36m[1;44m01:55.378 01:16.150 Successfully matched event ControlMessageReceive:i201 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 106[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:55.381 01:16.151 Successfully matched event ControlMessageReceive:i202 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:55.479 01:16.248 Successfully matched event DataplanePermit:i204[1;m
+[1;36m[1;36mRound 107[1;37m[1;m
+[1;36m[1;44m01:55.479 01:16.250 Successfully matched event DataplanePermit:i205[1;m
+[1;36m[1;44m01:55.480 01:16.251 Successfully matched event DataplanePermit:i206[1;m
+[1;35m[1;41m01:56.082 01:16.252 Event timed out ControlMessageReceive:i207 c c1 -> s 1 [ofp_stats_request: flags=0, type=1][1;m
+[1;36m[1;44m01:56.083 01:16.254 Successfully matched event ControlMessageSend:i208 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m01:56.685 01:16.255 Event timed out ControlMessageSend:i209 c 1 -> s c1 [ofp_stats_reply: flags=0, type=0][1;m
+[1;36m[1;44m01:56.787 01:16.356 Successfully matched event DataplanePermit:i210[1;m
+[1;36m[1;36mRound 108[1;37m[1;m
+[1;36m[1;44m01:56.889 01:16.457 Successfully matched event DataplanePermit:i211[1;m
+[1;36m[1;36mRound 109[1;37m[1;m
+[1;35m[1;41m01:57.491 01:16.559 Event timed out ControlMessageReceive:i212 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(2)',), flags=1, match=dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_type:2048,in_port:1][1;m
+[1;36m[1;36mRound 110[1;37m[1;m
+[1;35m[1;41m01:58.094 01:16.560 Event timed out ControlMessageReceive:i213 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(1)',), flags=1, match=dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_type:2048,in_port:2][1;m
+[1;36m[1;44m01:58.095 01:16.661 Successfully matched event ControlMessageReceive:i214 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 111[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:58.097 01:16.662 Successfully matched event ControlMessageReceive:i215 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:58.198 01:16.762 Successfully matched event DataplanePermit:i216[1;m
+[1;36m[1;36mRound 112[1;37m[1;m
+[1;36m[1;44m01:58.199 01:16.763 Successfully matched event DataplanePermit:i217[1;m
+[1;36m[1;44m01:58.200 01:16.764 Successfully matched event ControlMessageReceive:i218 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:58.201 01:16.764 Successfully matched event ControlMessageReceive:i219 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:58.202 01:16.765 Successfully matched event ControlMessageSend:i220 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m01:58.303 01:16.865 Successfully matched event DataplanePermit:i221[1;m
+[1;36m[1;36mRound 113[1;37m[1;m
+[1;36m[1;44m01:58.304 01:16.866 Successfully matched event DataplanePermit:i222[1;m
+[1;36m[1;44m01:58.305 01:16.866 Successfully matched event ControlMessageSend:i223 c 2 -> s c2 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;35m[1;41m02:08.046 01:26.112 Event timed out ControlMessageReceive:i226 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 138[1;37m[1;m
+[1;35m[1;41m02:08.649 01:26.114 Event timed out ControlMessageReceive:i227 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m02:09.251 01:26.115 Event timed out ControlMessageReceive:i228 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m02:09.854 01:26.117 Event timed out ControlMessageReceive:i229 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36m[1;44m02:35.895 01:52.151 Successfully matched event DataplanePermit:i231[1;m
+[1;36m[1;36mRound 139[1;37m[1;m
+[1;36m[1;44m02:35.896 01:52.153 Successfully matched event DataplanePermit:i232[1;m
+[1;36m[1;44m02:35.897 01:52.154 Successfully matched event DataplanePermit:i233[1;m
+[1;36m[1;44m02:35.898 01:52.156 Successfully matched event DataplanePermit:i234[1;m
+[1;35m[1;41m02:36.499 01:52.157 Event timed out ControlMessageReceive:i235 c c2 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=1, priority=100, idle_timeout=5, command=delete_strict, actions=(u'output(1)',), flags=1, match=dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_type:2048,in_port:2][1;m
+[1;35m[1;41m02:37.101 01:52.159 Event timed out ControlMessageReceive:i236 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m02:37.704 01:52.160 Event timed out ControlMessageReceive:i237 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m02:38.306 01:52.161 Event timed out ControlMessageReceive:i238 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m02:38.908 01:52.161 Event timed out ControlMessageReceive:i239 c c2 -> s 2 [ofp_echo_request: ][1;m
+[1;35m[1;41m02:39.510 01:52.162 Event timed out ControlMessageReceive:i240 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m02:40.113 01:52.162 Event timed out ControlMessageReceive:i241 c c1 -> s 1 [ofp_hello: ][1;m
+[1;35m[1;41m02:40.715 01:52.163 Event timed out ControlMessageReceive:i242 c c2 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=2, priority=100, idle_timeout=5, command=delete_strict, actions=(u'output(2)',), flags=1, match=dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_type:2048,in_port:1][1;m
+[1;35m[1;41m02:41.317 01:52.164 Event timed out ControlMessageSend:i243 c 2 -> s c2 [ofp_echo_reply: ][1;m
+[1;35m[1;41m02:41.919 01:52.164 Event timed out ControlMessageSend:i244 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m02:42.521 01:52.164 Event timed out ControlMessageSend:i245 c 1 -> s c1 [ofp_hello: ][1;m
+[1;35m[1;41m02:43.123 01:52.164 Event timed out ControlMessageSend:i246 c 1 -> s c1 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;36m[1;44m02:43.225 01:52.265 Successfully matched event DataplanePermit:i247[1;m
+[1;36m[1;36mRound 140[1;37m[1;m
+[1;36m[1;44m02:43.226 01:52.266 Successfully matched event DataplanePermit:i248[1;m
+[1;36m[1;44m02:43.227 01:52.268 Successfully matched event DataplanePermit:i249[1;m
+[1;36m[1;44m02:43.228 01:52.269 Successfully matched event DataplanePermit:i250[1;m
+[1;35m[1;41m02:43.830 01:52.270 Event timed out ControlMessageReceive:i251 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m02:44.432 01:52.272 Event timed out ControlMessageReceive:i252 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m02:45.034 01:52.273 Event timed out ControlMessageReceive:i253 c c1 -> s 1 [ofp_features_request: ][1;m
+[1;35m[1;41m02:45.608 01:52.274 Event timed out ControlMessageReceive:i254 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m02:46.296 01:52.275 Event timed out ControlMessageReceive:i255 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m02:46.844 01:52.276 Event timed out ControlMessageSend:i256 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m02:47.447 01:52.277 Event timed out ControlMessageSend:i257 c 1 -> s c1 [ofp_features_reply: datapath_id=1][1;m
+[1;35m[1;41m02:48.049 01:52.277 Event timed out ControlMessageSend:i258 c 1 -> s c1 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;36m[1;44m02:48.147 01:52.375 Successfully matched event DataplanePermit:i259[1;m
+[1;36m[1;36mRound 141[1;37m[1;m
+[1;36m[1;44m02:48.149 01:52.376 Successfully matched event DataplanePermit:i260[1;m
+[1;36m[1;44m02:48.150 01:52.377 Successfully matched event DataplanePermit:i261[1;m
+[1;36m[1;44m02:48.150 01:52.378 Successfully matched event DataplanePermit:i262[1;m
+[1;35m[1;41m02:48.752 01:52.379 Event timed out ControlMessageReceive:i263 c c1 -> s 1 [ofp_set_config: ][1;m
+[1;35m[1;41m02:49.354 01:52.380 Event timed out ControlMessageReceive:i264 c c1 -> s 1 [ofp_stats_request: flags=0, type=0][1;m
+[1;35m[1;41m02:49.956 01:52.386 Event timed out ControlMessageReceive:i265 c c1 -> s 1 [ofp_get_config_request: ][1;m
+[1;35m[1;41m02:50.558 01:52.387 Event timed out ControlMessageSend:i266 c 1 -> s c1 [ofp_get_config_reply: ][1;m
+[1;35m[1;41m02:51.160 01:52.387 Event timed out ControlMessageSend:i267 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m02:51.763 01:52.388 Event timed out ControlMessageSend:i268 c 1 -> s c1 [ofp_stats_reply: flags=0, type=0][1;m
+[1;35m[1;41m02:52.365 01:52.388 Event timed out ControlMessageSend:i269 c 1 -> s c1 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;35m[1;41m02:52.967 01:52.479 Event timed out ControlMessageReceive:i270 c c1 -> s 1 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 142[1;37m[1;m
+[1;35m[1;41m02:53.569 01:52.480 Event timed out ControlMessageSend:i271 c 1 -> s c1 [ofp_vendor: ][1;m
+[1;35m[1;41m02:54.171 01:52.581 Event timed out ControlMessageReceive:i272 c c1 -> s 1 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 143[1;37m[1;m
+[1;35m[1;41m02:54.774 01:52.582 Event timed out ControlMessageSend:i273 c 1 -> s c1 [ofp_vendor: ][1;m
+[1;36m[1;44m02:55.280 01:53.087 Successfully matched event DataplanePermit:i275[1;m
+[1;36m[1;36mRound 148[1;37m[1;m
+[1;35m[1;41m02:55.882 01:53.088 Event timed out ControlMessageSend:i276 c 2 -> s c2 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=2][1;m
+[1;35m[1;41m02:56.485 01:53.189 Event timed out ControlMessageReceive:i277 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=65535][1;m
+[1;36m[1;36mRound 149[1;37m[1;m
+[1;36m[1;44m02:56.587 01:53.290 Successfully matched event DataplanePermit:i278[1;m
+[1;36m[1;36mRound 150[1;37m[1;m
+[1;36m[1;44m02:56.686 01:53.389 Successfully matched event DataplanePermit:i279[1;m
+[1;36m[1;36mRound 151[1;37m[1;m
+[1;36m[1;44m02:56.689 01:53.390 Successfully matched event ControlMessageReceive:i280 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:56.692 01:53.391 Successfully matched event ControlMessageReceive:i281 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:56.793 01:53.492 Successfully matched event DataplanePermit:i282[1;m
+[1;36m[1;36mRound 152[1;37m[1;m
+[1;36m[1;44m02:56.794 01:53.493 Successfully matched event DataplanePermit:i283[1;m
+[1;35m[1;41m02:57.396 01:53.494 Event timed out ControlMessageReceive:i284 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)', u'output(1)'), data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=65535][1;m
+[1;35m[1;41m02:57.998 01:53.496 Event timed out ControlMessageReceive:i285 c c1 -> s 1 [ofp_stats_request: flags=0, type=1][1;m
+[1;36m[1;44m02:57.999 01:53.498 Successfully matched event ControlMessageSend:i286 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m02:58.601 01:53.498 Event timed out ControlMessageSend:i287 c 1 -> s c1 [ofp_stats_reply: flags=0, type=0][1;m
+[1;36m[1;44m02:58.703 01:53.599 Successfully matched event DataplanePermit:i288[1;m
+[1;36m[1;36mRound 153[1;37m[1;m
+[1;36m[1;44m02:58.704 01:53.600 Successfully matched event DataplanePermit:i289[1;m
+[1;35m[1;41m02:59.306 01:53.601 Event timed out ControlMessageSend:i290 c 2 -> s c2 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=1][1;m
+[1;35m[1;41m02:59.908 01:53.702 Event timed out ControlMessageReceive:i291 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=65535][1;m
+[1;36m[1;36mRound 154[1;37m[1;m
+[1;36m[1;44m03:00.010 01:53.803 Successfully matched event DataplanePermit:i292[1;m
+[1;36m[1;36mRound 155[1;37m[1;m
+[1;35m[1;41m03:00.613 01:53.804 Event timed out ControlMessageReceive:i293 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)', u'output(1)'), data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=65535][1;m
+[1;36m[1;44m03:00.714 01:53.905 Successfully matched event DataplanePermit:i294[1;m
+[1;36m[1;36mRound 156[1;37m[1;m
+[1;36m[1;44m03:00.715 01:53.906 Successfully matched event DataplanePermit:i295[1;m
+[1;35m[1;41m03:01.317 01:53.907 Event timed out ControlMessageReceive:i296 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(1)',), flags=1, match=dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_type:2048,in_port:2][1;m
+[1;35m[1;41m03:01.919 01:53.908 Event timed out ControlMessageSend:i297 c 2 -> s c2 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=1][1;m
+[1;36m[1;44m03:01.922 01:54.009 Successfully matched event ControlMessageReceive:i298 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36m[1;36mRound 157[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:01.924 01:54.010 Successfully matched event ControlMessageReceive:i299 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:01.927 01:54.011 Successfully matched event ControlMessageReceive:i300 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:01.928 01:54.013 Successfully matched event ControlMessageReceive:i301 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:02.030 01:54.114 Successfully matched event DataplanePermit:i302[1;m
+[1;36m[1;36mRound 158[1;37m[1;m
+[1;36m[1;44m03:02.031 01:54.116 Successfully matched event DataplanePermit:i303[1;m
+[1;36m[1;44m03:02.032 01:54.117 Successfully matched event DataplanePermit:i304[1;m
+[1;36m[1;44m03:02.032 01:54.118 Successfully matched event DataplanePermit:i305[1;m
+[1;36m[1;44m03:02.033 01:54.119 Successfully matched event ControlMessageSend:i306 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m03:02.034 01:54.119 Successfully matched event ControlMessageSend:i307 c 2 -> s c2 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;35m[1;41m03:02.836 01:54.321 Event timed out ControlMessageReceive:i308 c c2 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(1)',), flags=1, match=dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_type:2048,in_port:2][1;m
+[1;36m[1;36mRound 160[1;37m[1;m
+[1;35m[1;41m03:03.438 01:54.322 Event timed out ControlMessageReceive:i309 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(2)',), flags=1, match=dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_type:2048,in_port:1][1;m
+[1;35m[1;41m03:04.041 01:54.323 Event timed out ControlMessageReceive:i310 c c2 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(2)',), flags=1, match=dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_type:2048,in_port:1][1;m
+[1;35m[1;41m03:04.643 01:54.324 Event timed out ControlMessageReceive:i311 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(1)',), flags=1, match=dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_type:2048,in_port:2][1;m
+[1;36m[1;44m03:07.047 01:56.726 Successfully matched event DataplanePermit:i314[1;m
+[1;36m[1;36mRound 167[1;37m[1;m
+[1;36m[1;44m03:07.149 01:56.828 Successfully matched event DataplanePermit:i315[1;m
+[1;36m[1;36mRound 168[1;37m[1;m
+[1;36m[1;44m03:07.252 01:56.930 Successfully matched event DataplanePermit:i316[1;m
+[1;36m[1;36mRound 169[1;37m[1;m
+[1;35m[1;41m03:18.687 02:07.833 Event timed out ControlMessageReceive:i319 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 208[1;37m[1;m
+[1;35m[1;41m03:19.290 02:07.835 Event timed out ControlMessageReceive:i320 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m03:19.892 02:07.836 Event timed out ControlMessageReceive:i321 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m03:20.494 02:07.838 Event timed out ControlMessageReceive:i322 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36m[1;44m03:46.571 02:33.913 Successfully matched event DataplanePermit:i324[1;m
+[1;36m[1;36mRound 209[1;37m[1;m
+[1;36m[1;44m03:46.572 02:33.915 Successfully matched event DataplanePermit:i325[1;m
+[1;36m[1;44m03:46.573 02:33.916 Successfully matched event DataplanePermit:i326[1;m
+[1;36m[1;44m03:46.574 02:33.918 Successfully matched event DataplanePermit:i327[1;m
+[1;35m[1;41m03:47.255 02:33.919 Event timed out ControlMessageReceive:i328 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m03:47.857 02:33.920 Event timed out ControlMessageReceive:i329 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m03:48.459 02:33.921 Event timed out ControlMessageReceive:i330 c c2 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=1, priority=100, idle_timeout=5, command=delete_strict, actions=(u'output(1)',), flags=1, match=dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_type:2048,in_port:2][1;m
+[1;35m[1;41m03:49.062 02:33.922 Event timed out ControlMessageReceive:i331 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m03:49.665 02:33.922 Event timed out ControlMessageReceive:i332 c c2 -> s 2 [ofp_echo_request: ][1;m
+[1;35m[1;41m03:50.267 02:33.923 Event timed out ControlMessageReceive:i333 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m03:50.869 02:33.923 Event timed out ControlMessageReceive:i334 c c1 -> s 1 [ofp_hello: ][1;m
+[1;35m[1;41m03:51.471 02:33.924 Event timed out ControlMessageReceive:i335 c c2 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=2, priority=100, idle_timeout=5, command=delete_strict, actions=(u'output(2)',), flags=1, match=dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_type:2048,in_port:1][1;m
+[1;35m[1;41m03:52.074 02:33.925 Event timed out ControlMessageSend:i336 c 2 -> s c2 [ofp_echo_reply: ][1;m
+[1;35m[1;41m03:52.676 02:33.925 Event timed out ControlMessageSend:i337 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m03:53.279 02:33.925 Event timed out ControlMessageSend:i338 c 1 -> s c1 [ofp_hello: ][1;m
+[1;35m[1;41m03:53.880 02:33.926 Event timed out ControlMessageSend:i339 c 1 -> s c1 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;36m[1;44m03:53.982 02:34.026 Successfully matched event DataplanePermit:i340[1;m
+[1;36m[1;36mRound 210[1;37m[1;m
+[1;36m[1;44m03:53.982 02:34.027 Successfully matched event DataplanePermit:i341[1;m
+[1;36m[1;44m03:53.983 02:34.028 Successfully matched event DataplanePermit:i342[1;m
+[1;36m[1;44m03:53.983 02:34.030 Successfully matched event DataplanePermit:i343[1;m
+[1;35m[1;41m03:54.584 02:34.031 Event timed out ControlMessageReceive:i344 c c1 -> s 1 [ofp_features_request: ][1;m
+[1;35m[1;41m03:55.187 02:34.032 Event timed out ControlMessageSend:i345 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m03:55.789 02:34.032 Event timed out ControlMessageSend:i346 c 1 -> s c1 [ofp_features_reply: datapath_id=1][1;m
+[1;35m[1;41m03:56.391 02:34.033 Event timed out ControlMessageSend:i347 c 1 -> s c1 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;35m[1;41m03:56.993 02:34.125 Event timed out ControlMessageReceive:i348 c c1 -> s 1 [ofp_set_config: ][1;m
+[1;36m[1;36mRound 211[1;37m[1;m
+[1;35m[1;41m03:57.596 02:34.126 Event timed out ControlMessageReceive:i349 c c1 -> s 1 [ofp_stats_request: flags=0, type=0][1;m
+[1;35m[1;41m03:58.198 02:34.132 Event timed out ControlMessageReceive:i350 c c1 -> s 1 [ofp_get_config_request: ][1;m
+[1;35m[1;41m03:58.799 02:34.133 Event timed out ControlMessageSend:i351 c 1 -> s c1 [ofp_get_config_reply: ][1;m
+[1;35m[1;41m03:59.402 02:34.133 Event timed out ControlMessageSend:i352 c 1 -> s c1 [ofp_stats_reply: flags=0, type=0][1;m
+[1;35m[1;41m04:00.005 02:34.234 Event timed out ControlMessageReceive:i353 c c1 -> s 1 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 212[1;37m[1;m
+[1;35m[1;41m04:00.607 02:34.235 Event timed out ControlMessageSend:i354 c 1 -> s c1 [ofp_vendor: ][1;m
+[1;35m[1;41m04:01.209 02:34.336 Event timed out ControlMessageReceive:i355 c c1 -> s 1 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 213[1;37m[1;m
+[1;35m[1;41m04:01.811 02:34.337 Event timed out ControlMessageSend:i356 c 1 -> s c1 [ofp_vendor: ][1;m
+[1;36m[1;44m04:02.217 02:34.741 Successfully matched event DataplanePermit:i358[1;m
+[1;36m[1;36mRound 217[1;37m[1;m
+[1;36m[1;44m04:02.319 02:34.843 Successfully matched event DataplanePermit:i359[1;m
+[1;36m[1;36mRound 218[1;37m[1;m
+[1;35m[1;41m04:02.921 02:34.844 Event timed out ControlMessageSend:i360 c 2 -> s c2 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:02', u'nw_src': u'123.123.1.2', u'dl_src': u'12:34:56:78:01:02', u'nw_dst': u'123.123.2.2'}, in_port=1][1;m
+[1;35m[1;41m04:03.524 02:34.945 Event timed out ControlMessageReceive:i361 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_dst': u'12:34:56:78:02:02', u'nw_src': u'123.123.1.2', u'dl_src': u'12:34:56:78:01:02', u'nw_dst': u'123.123.2.2'}, in_port=65535][1;m
+[1;36m[1;36mRound 219[1;37m[1;m
+[1;36m[1;44m04:03.627 02:35.047 Successfully matched event DataplanePermit:i363[1;m
+[1;36m[1;36mRound 220[1;37m[1;m
+[1;36m[1;44m04:03.628 02:35.048 Successfully matched event DataplanePermit:i364[1;m
+[1;36m[1;44m04:03.729 02:35.149 Successfully matched event DataplanePermit:i365[1;m
+[1;36m[1;36mRound 221[1;37m[1;m
+[1;36m[1;44m04:03.732 02:35.150 Successfully matched event ControlMessageReceive:i366 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m04:03.734 02:35.151 Successfully matched event ControlMessageReceive:i367 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;35m[1;41m04:04.337 02:35.151 Event timed out ControlMessageSend:i368 c 2 -> s c2 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:02', u'nw_src': u'123.123.1.2', u'dl_src': u'12:34:56:78:01:02', u'nw_dst': u'123.123.2.2'}, in_port=1][1;m
+[1;36m[1;44m04:04.439 02:35.252 Successfully matched event DataplanePermit:i369[1;m
+[1;36m[1;36mRound 222[1;37m[1;m
+[1;36m[1;44m04:04.440 02:35.253 Successfully matched event DataplanePermit:i370[1;m
+[1;35m[1;41m04:05.041 02:35.253 Event timed out ControlMessageReceive:i371 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)', u'output(1)'), data={u'dl_dst': u'12:34:56:78:02:02', u'nw_src': u'123.123.1.2', u'dl_src': u'12:34:56:78:01:02', u'nw_dst': u'123.123.2.2'}, in_port=65535][1;m
+[1;35m[1;41m04:05.644 02:35.254 Event timed out ControlMessageReceive:i372 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_dst': u'12:34:56:78:02:02', u'nw_src': u'123.123.1.2', u'dl_src': u'12:34:56:78:01:02', u'nw_dst': u'123.123.2.2'}, in_port=65535][1;m
+[1;35m[1;41m04:06.247 02:35.255 Event timed out ControlMessageReceive:i373 c c1 -> s 1 [ofp_stats_request: flags=0, type=1][1;m
+[1;36m[1;44m04:06.248 02:35.256 Successfully matched event ControlMessageSend:i374 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m04:06.850 02:35.256 Event timed out ControlMessageSend:i375 c 1 -> s c1 [ofp_stats_reply: flags=0, type=0][1;m
+[1;36m[1;44m04:06.951 02:35.357 Successfully matched event DataplanePermit:i376[1;m
+[1;36m[1;36mRound 223[1;37m[1;m
+[1;36m[1;44m04:06.952 02:35.358 Successfully matched event DataplanePermit:i377[1;m
+[1;36m[1;44m04:06.952 02:35.359 Successfully matched event DataplanePermit:i378[1;m
+[1;35m[1;41m04:07.554 02:35.359 Event timed out ControlMessageReceive:i379 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)', u'output(1)'), data={u'dl_dst': u'12:34:56:78:02:02', u'nw_src': u'123.123.1.2', u'dl_src': u'12:34:56:78:01:02', u'nw_dst': u'123.123.2.2'}, in_port=65535][1;m
+[1;35m[1;41m04:08.156 02:35.360 Event timed out ControlMessageSend:i380 c 2 -> s c2 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:02', u'nw_src': u'123.123.1.2', u'dl_src': u'12:34:56:78:01:02', u'nw_dst': u'123.123.2.2'}, in_port=1][1;m
+[1;36m[1;44m04:08.256 02:35.460 Successfully matched event DataplanePermit:i381[1;m
+[1;36m[1;36mRound 224[1;37m[1;m
+[1;36m[1;44m04:08.257 02:35.460 Successfully matched event DataplanePermit:i382[1;m
+[1;35m[1;41m04:08.858 02:35.461 Event timed out ControlMessageReceive:i383 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(1)',), flags=1, match=dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_type:2048,in_port:2][1;m
+[1;36m[1;44m04:08.861 02:35.462 Successfully matched event ControlMessageReceive:i384 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;35m[1;41m04:09.464 02:35.463 Event timed out ControlMessageSend:i385 c 2 -> s c2 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:02', u'nw_src': u'123.123.1.2', u'dl_src': u'12:34:56:78:01:02', u'nw_dst': u'123.123.2.2'}, in_port=1][1;m
+[1;36m[1;44m04:09.565 02:35.564 Successfully matched event DataplanePermit:i386[1;m
+[1;36m[1;36mRound 225[1;37m[1;m
+[1;36m[1;44m04:09.566 02:35.564 Successfully matched event ControlMessageReceive:i387 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m04:09.568 02:35.565 Successfully matched event ControlMessageReceive:i388 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m04:09.569 02:35.566 Successfully matched event ControlMessageReceive:i389 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m04:09.670 02:35.666 Successfully matched event DataplanePermit:i390[1;m
+[1;36m[1;36mRound 226[1;37m[1;m
+[1;36m[1;44m04:09.671 02:35.667 Successfully matched event DataplanePermit:i391[1;m
+[1;36m[1;44m04:09.671 02:35.667 Successfully matched event DataplanePermit:i392[1;m
+[1;36m[1;44m04:09.671 02:35.668 Successfully matched event ControlMessageSend:i393 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m04:09.672 02:35.669 Successfully matched event ControlMessageSend:i394 c 2 -> s c2 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;35m[1;41m04:42.525 03:07.844 Event timed out ControlMessageReceive:i397 c c2 -> s 2 [ofp_hello: ][1;m
+[1;36m[1;36mRound 232[1;37m[1;m
+[1;36m[1;44m04:42.527 03:07.845 Successfully matched event ControlMessageReceive:i398 c c1 -> s 1 [ofp_echo_request: ][1;m
+[1;36m[1;44m04:42.529 03:07.846 Successfully matched event ControlMessageReceive:i399 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m04:42.531 03:07.847 Successfully matched event ControlMessageReceive:i400 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m04:42.534 03:07.849 Successfully matched event ControlMessageReceive:i401 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m04:42.535 03:07.851 Successfully matched event ControlMessageReceive:i402 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;35m[1;41m04:43.137 03:07.852 Event timed out ControlMessageSend:i403 c 2 -> s c2 [ofp_hello: ][1;m
+[1;36m[1;44m04:43.137 03:07.853 Successfully matched event ControlMessageSend:i404 c 1 -> s c1 [ofp_echo_reply: ][1;m
+[1;36m[1;44m04:43.238 03:07.954 Successfully matched event DataplanePermit:i405[1;m
+[1;36m[1;36mRound 233[1;37m[1;m
+[1;36m[1;44m04:43.239 03:07.955 Successfully matched event DataplanePermit:i406[1;m
+[1;36m[1;44m04:43.239 03:07.956 Successfully matched event DataplanePermit:i407[1;m
+[1;36m[1;44m04:43.240 03:07.957 Successfully matched event DataplanePermit:i408[1;m
+[1;36m[1;44m04:43.240 03:07.958 Successfully matched event ControlMessageReceive:i409 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m04:43.241 03:07.959 Successfully matched event ControlMessageReceive:i410 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m04:43.243 03:07.961 Successfully matched event ControlMessageReceive:i411 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m04:43.246 03:07.962 Successfully matched event ControlMessageReceive:i412 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;35m[1;41m04:43.848 03:07.963 Event timed out ControlMessageReceive:i413 c c2 -> s 2 [ofp_features_request: ][1;m
+[1;36m[1;44m04:43.850 03:07.964 Successfully matched event ControlMessageSend:i414 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m04:44.452 03:07.964 Event timed out ControlMessageSend:i415 c 2 -> s c2 [ofp_features_reply: datapath_id=2][1;m
+[1;36m[1;44m04:44.454 03:07.965 Successfully matched event ControlMessageSend:i416 c 2 -> s c2 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;36m[1;44m04:44.550 03:08.060 Successfully matched event DataplanePermit:i417[1;m
+[1;36m[1;36mRound 234[1;37m[1;m
+[1;36m[1;44m04:44.551 03:08.061 Successfully matched event DataplanePermit:i418[1;m
+[1;36m[1;44m04:44.551 03:08.062 Successfully matched event DataplanePermit:i419[1;m
+[1;36m[1;44m04:44.552 03:08.063 Successfully matched event DataplanePermit:i420[1;m
+[1;35m[1;41m04:45.154 03:08.064 Event timed out ControlMessageReceive:i421 c c2 -> s 2 [ofp_get_config_request: ][1;m
+[1;35m[1;41m04:45.755 03:08.065 Event timed out ControlMessageReceive:i422 c c2 -> s 2 [ofp_stats_request: flags=0, type=0][1;m
+[1;35m[1;41m04:46.358 03:08.070 Event timed out ControlMessageReceive:i423 c c2 -> s 2 [ofp_set_config: ][1;m
+[1;36m[1;44m04:46.358 03:08.071 Successfully matched event ControlMessageSend:i424 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m04:46.960 03:08.072 Event timed out ControlMessageSend:i425 c 2 -> s c2 [ofp_stats_reply: flags=0, type=0][1;m
+[1;36m[1;44m04:46.962 03:08.072 Successfully matched event ControlMessageSend:i426 c 2 -> s c2 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;35m[1;41m04:47.564 03:08.072 Event timed out ControlMessageSend:i427 c 2 -> s c2 [ofp_get_config_reply: ][1;m
+[1;36m[1;44m04:47.665 03:08.174 Successfully matched event DataplanePermit:i429[1;m
+[1;36m[1;36mRound 235[1;37m[1;m
+[1;35m[1;41m04:48.268 03:08.174 Event timed out ControlMessageReceive:i430 c c2 -> s 2 [ofp_vendor: ][1;m
+[1;35m[1;41m04:48.870 03:08.175 Event timed out ControlMessageSend:i431 c 2 -> s c2 [ofp_vendor: ][1;m
+[1;36m[1;44m04:48.971 03:08.276 Successfully matched event DataplanePermit:i432[1;m
+[1;36m[1;36mRound 236[1;37m[1;m
+[1;35m[1;41m04:49.573 03:08.277 Event timed out ControlMessageReceive:i433 c c2 -> s 2 [ofp_vendor: ][1;m
+[1;35m[1;41m04:50.176 03:08.278 Event timed out ControlMessageSend:i434 c 2 -> s c2 [ofp_vendor: ][1;m
+[1;35m[1;41m04:50.778 03:08.279 Event timed out ControlMessageSend:i435 c 2 -> s c2 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:02', u'nw_src': u'123.123.1.2', u'dl_src': u'12:34:56:78:01:02', u'nw_dst': u'123.123.2.2'}, in_port=1][1;m
+[1;35m[1;41m04:52.782 03:09.639 Event timed out ControlMessageReceive:i437 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 241[1;37m[1;m
+[1;35m[1;41m04:53.385 03:09.640 Event timed out ControlMessageReceive:i438 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m04:53.987 03:09.641 Event timed out ControlMessageReceive:i439 c c2 -> s 2 [ofp_stats_request: flags=0, type=1][1;m
+[1;35m[1;41m04:54.589 03:09.643 Event timed out ControlMessageSend:i440 c 2 -> s c2 [ofp_stats_reply: flags=0, type=0][1;m
+[1;36m[1;44m04:54.691 03:09.744 Successfully matched event DataplanePermit:i441[1;m
+[1;36m[1;36mRound 242[1;37m[1;m
+[1;36m[1;44m04:54.692 03:09.745 Successfully matched event DataplanePermit:i442[1;m
+[1;35m[1;41m04:55.293 03:09.745 Event timed out ControlMessageSend:i443 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m05:01.505 03:15.326 Event timed out ControlMessageReceive:i445 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 243[1;37m[1;m
+[1;35m[1;41m05:02.108 03:15.327 Event timed out ControlMessageReceive:i446 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m05:02.709 03:15.329 Event timed out ControlMessageReceive:i447 c c2 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(2)',), flags=1, match=dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_type:2048,in_port:1][1;m
+[1;35m[1;41m05:03.312 03:15.330 Event timed out ControlMessageReceive:i448 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m05:03.914 03:15.332 Event timed out ControlMessageReceive:i449 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36m[1;44m05:29.907 03:41.322 Successfully matched event DataplanePermit:i451[1;m
+[1;36m[1;36mRound 244[1;37m[1;m
+[1;36m[1;44m05:29.908 03:41.324 Successfully matched event DataplanePermit:i452[1;m
+[1;36m[1;44m05:29.909 03:41.325 Successfully matched event DataplanePermit:i453[1;m
+[1;36m[1;44m05:29.909 03:41.327 Successfully matched event DataplanePermit:i454[1;m
+[1;35m[1;41m05:30.511 03:41.327 Event timed out ControlMessageReceive:i455 c c2 -> s 2 [ofp_hello: ][1;m
+[1;36m[1;44m05:30.513 03:41.329 Successfully matched event ControlMessageReceive:i456 c c1 -> s 1 [ofp_echo_request: ][1;m
+[1;36m[1;44m05:30.514 03:41.329 Successfully matched event ControlMessageReceive:i457 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m05:30.517 03:41.331 Successfully matched event ControlMessageReceive:i458 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m05:30.520 03:41.332 Successfully matched event ControlMessageReceive:i459 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m05:30.522 03:41.333 Successfully matched event ControlMessageReceive:i460 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;35m[1;41m05:31.124 03:41.334 Event timed out ControlMessageSend:i461 c 2 -> s c2 [ofp_hello: ][1;m
+[1;35m[1;41m05:31.726 03:41.335 Event timed out ControlMessageSend:i462 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m05:31.727 03:41.335 Successfully matched event ControlMessageSend:i463 c 1 -> s c1 [ofp_echo_reply: ][1;m
+[1;35m[1;41m05:32.329 03:41.336 Event timed out ControlMessageSend:i464 c 1 -> s c1 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;36m[1;44m05:32.431 03:41.437 Successfully matched event DataplanePermit:i465[1;m
+[1;36m[1;36mRound 245[1;37m[1;m
+[1;36m[1;44m05:32.431 03:41.438 Successfully matched event DataplanePermit:i466[1;m
+[1;36m[1;44m05:32.431 03:41.439 Successfully matched event DataplanePermit:i467[1;m
+[1;36m[1;44m05:32.432 03:41.440 Successfully matched event DataplanePermit:i468[1;m
+[1;36m[1;44m05:32.433 03:41.441 Successfully matched event ControlMessageReceive:i469 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m05:32.434 03:41.442 Successfully matched event ControlMessageReceive:i470 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m05:32.435 03:41.443 Successfully matched event ControlMessageReceive:i471 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m05:32.436 03:41.444 Successfully matched event ControlMessageReceive:i472 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;35m[1;41m05:33.038 03:41.445 Event timed out ControlMessageReceive:i473 c c2 -> s 2 [ofp_features_request: ][1;m
+[1;36m[1;44m05:33.040 03:41.445 Successfully matched event ControlMessageSend:i474 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m05:33.642 03:41.446 Event timed out ControlMessageSend:i475 c 2 -> s c2 [ofp_features_reply: datapath_id=2][1;m
+[1;36m[1;44m05:33.643 03:41.446 Successfully matched event ControlMessageSend:i476 c 2 -> s c2 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;36m[1;44m05:33.744 03:41.546 Successfully matched event DataplanePermit:i477[1;m
+[1;36m[1;36mRound 246[1;37m[1;m
+[1;36m[1;44m05:33.745 03:41.547 Successfully matched event DataplanePermit:i478[1;m
+[1;36m[1;44m05:33.745 03:41.548 Successfully matched event DataplanePermit:i479[1;m
+[1;36m[1;44m05:33.746 03:41.548 Successfully matched event DataplanePermit:i480[1;m
+[1;35m[1;41m05:34.347 03:41.549 Event timed out ControlMessageReceive:i481 c c2 -> s 2 [ofp_get_config_request: ][1;m
+[1;35m[1;41m05:34.949 03:41.549 Event timed out ControlMessageReceive:i482 c c2 -> s 2 [ofp_set_config: ][1;m
+[1;36m[1;44m05:34.951 03:41.549 Successfully matched event ControlMessageSend:i483 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m05:34.952 03:41.550 Successfully matched event ControlMessageSend:i484 c 2 -> s c2 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;35m[1;41m05:35.554 03:41.550 Event timed out ControlMessageSend:i485 c 2 -> s c2 [ofp_get_config_reply: ][1;m
+[1;35m[1;41m05:36.156 03:41.651 Event timed out ControlMessageReceive:i486 c c2 -> s 2 [ofp_stats_request: flags=0, type=0][1;m
+[1;36m[1;36mRound 247[1;37m[1;m
+[1;35m[1;41m05:36.758 03:41.657 Event timed out ControlMessageSend:i487 c 2 -> s c2 [ofp_stats_reply: flags=0, type=0][1;m
+[1;35m[1;41m05:37.360 03:41.757 Event timed out ControlMessageReceive:i488 c c2 -> s 2 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 248[1;37m[1;m
+[1;35m[1;41m05:37.962 03:41.758 Event timed out ControlMessageSend:i489 c 2 -> s c2 [ofp_vendor: ][1;m
+[1;35m[1;41m05:38.564 03:41.859 Event timed out ControlMessageReceive:i490 c c2 -> s 2 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 249[1;37m[1;m
+[1;35m[1;41m05:39.166 03:41.860 Event timed out ControlMessageSend:i491 c 2 -> s c2 [ofp_vendor: ][1;m
+[1;36m[1;44m05:39.973 03:42.665 Successfully matched event DataplanePermit:i493[1;m
+[1;36m[1;36mRound 257[1;37m[1;m
+[1;35m[1;41m05:40.576 03:42.666 Event timed out ControlMessageReceive:i494 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m05:41.178 03:42.667 Event timed out ControlMessageReceive:i495 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m05:41.781 03:42.668 Event timed out ControlMessageSend:i496 c 2 -> s c2 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=2][1;m
+[1;36m[1;44m05:41.882 03:42.769 Successfully matched event DataplanePermit:i497[1;m
+[1;36m[1;36mRound 258[1;37m[1;m
+[1;36m[1;44m05:41.883 03:42.770 Successfully matched event DataplanePermit:i498[1;m
+[1;35m[1;41m05:42.485 03:42.770 Event timed out ControlMessageSend:i499 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m05:43.087 03:42.871 Event timed out ControlMessageReceive:i500 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)', u'output(1)'), data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=65535][1;m
+[1;36m[1;36mRound 259[1;37m[1;m
+[1;35m[1;41m05:43.689 03:42.873 Event timed out ControlMessageReceive:i501 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=65535][1;m
+[1;35m[1;41m05:44.291 03:42.874 Event timed out ControlMessageReceive:i502 c c2 -> s 2 [ofp_stats_request: flags=0, type=1][1;m
+[1;35m[1;41m05:44.893 03:42.876 Event timed out ControlMessageSend:i503 c 2 -> s c2 [ofp_stats_reply: flags=0, type=0][1;m
+[1;36m[1;44m05:44.995 03:42.977 Successfully matched event DataplanePermit:i504[1;m
+[1;36m[1;36mRound 260[1;37m[1;m
+[1;36m[1;44m05:44.997 03:42.978 Successfully matched event DataplanePermit:i505[1;m
+[1;36m[1;44m05:44.998 03:42.978 Successfully matched event DataplanePermit:i506[1;m
+[1;35m[1;41m05:45.600 03:42.979 Event timed out ControlMessageSend:i507 c 2 -> s c2 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=1][1;m
+[1;36m[1;44m05:45.699 03:43.078 Successfully matched event DataplanePermit:i508[1;m
+[1;36m[1;36mRound 261[1;37m[1;m
+[1;35m[1;41m05:46.301 03:43.078 Event timed out ControlMessageReceive:i509 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)', u'output(1)'), data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=65535][1;m
+[1;35m[1;41m05:46.904 03:43.079 Event timed out ControlMessageReceive:i510 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=65535][1;m
+[1;35m[1;41m05:47.506 03:43.080 Event timed out ControlMessageReceive:i511 c c2 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(2)',), flags=1, match=dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_type:2048,in_port:1][1;m
+[1;36m[1;44m05:47.608 03:43.181 Successfully matched event DataplanePermit:i512[1;m
+[1;36m[1;36mRound 262[1;37m[1;m
+[1;36m[1;44m05:47.609 03:43.182 Successfully matched event DataplanePermit:i513[1;m
+[1;36m[1;44m05:47.610 03:43.182 Successfully matched event DataplanePermit:i514[1;m
+[1;35m[1;41m05:48.212 03:43.183 Event timed out ControlMessageReceive:i515 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m05:48.814 03:43.184 Event timed out ControlMessageReceive:i516 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m05:49.416 03:43.185 Event timed out ControlMessageReceive:i517 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m05:50.019 03:43.185 Event timed out ControlMessageReceive:i518 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m05:50.622 03:43.186 Event timed out ControlMessageSend:i519 c 2 -> s c2 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:01:02', u'nw_src': u'123.123.2.2', u'dl_src': u'12:34:56:78:02:02', u'nw_dst': u'123.123.1.2'}, in_port=1][1;m
+[1;36m[1;44m05:50.723 03:43.286 Successfully matched event DataplanePermit:i520[1;m
+[1;36m[1;36mRound 263[1;37m[1;m
+[1;36m[1;44m05:50.724 03:43.287 Successfully matched event DataplanePermit:i521[1;m
+[1;36m[1;44m05:50.725 03:43.288 Successfully matched event DataplanePermit:i522[1;m
+[1;36m[1;44m05:50.726 03:43.288 Successfully matched event DataplanePermit:i523[1;m
+[1;35m[1;41m05:51.327 03:43.289 Event timed out ControlMessageSend:i524 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m05:51.930 03:43.289 Event timed out ControlMessageSend:i525 c 1 -> s c1 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;35m[1;41m05:52.732 03:43.490 Event timed out ControlMessageReceive:i526 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(2)',), flags=1, match=dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_type:2048,in_port:1][1;m
+[1;36m[1;36mRound 265[1;37m[1;m
+[1;35m[1;41m05:53.335 03:43.492 Event timed out ControlMessageReceive:i527 c c2 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(1)',), flags=1, match=dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_type:2048,in_port:2][1;m
+[1;35m[1;41m05:53.937 03:43.593 Event timed out ControlMessageReceive:i528 c c2 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(2)',), flags=1, match=dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_type:2048,in_port:1][1;m
+[1;36m[1;36mRound 266[1;37m[1;m
+[1;35m[1;41m05:54.540 03:43.594 Event timed out ControlMessageReceive:i529 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(1)',), flags=1, match=dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_type:2048,in_port:2][1;m
+[1;36m[1;44m05:55.547 03:44.599 Successfully matched event DataplanePermit:i531[1;m
+[1;36m[1;36mRound 276[1;37m[1;m
+[1;36m[1;44m05:55.650 03:44.701 Successfully matched event DataplanePermit:i532[1;m
+[1;36m[1;36mRound 277[1;37m[1;m
+[1;36m[1;44m05:55.753 03:44.805 Successfully matched event DataplanePermit:i534[1;m
+[1;36m[1;36mRound 278[1;37m[1;m
+[1;36m[1;44m05:55.754 03:44.806 Successfully matched event DataplanePermit:i535[1;m
+[1;36m[1;44m05:55.857 03:44.907 Successfully matched event DataplanePermit:i536[1;m
+[1;36m[1;36mRound 279[1;37m[1;m
+[1;36m[1;44m05:55.959 03:45.009 Successfully matched event DataplanePermit:i537[1;m
+[1;36m[1;36mRound 280[1;37m[1;m
+[1;35m[1;41m06:32.821 04:21.366 Event timed out ControlMessageReceive:i541 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 282[1;37m[1;m
+[1;35m[1;41m06:33.423 04:21.368 Event timed out ControlMessageReceive:i542 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m06:34.025 04:21.369 Event timed out ControlMessageReceive:i543 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m06:34.627 04:21.370 Event timed out ControlMessageReceive:i544 c c2 -> s 2 [ofp_echo_request: ][1;m
+[1;35m[1;41m06:35.230 04:21.371 Event timed out ControlMessageReceive:i545 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m06:35.832 04:21.372 Event timed out ControlMessageReceive:i546 c c1 -> s 1 [ofp_hello: ][1;m
+[1;35m[1;41m06:36.435 04:21.373 Event timed out ControlMessageSend:i547 c 2 -> s c2 [ofp_echo_reply: ][1;m
+[1;35m[1;41m06:37.037 04:21.374 Event timed out ControlMessageSend:i548 c 1 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m06:37.138 04:21.474 Successfully matched event DataplanePermit:i549[1;m
+[1;36m[1;36mRound 283[1;37m[1;m
+[1;36m[1;44m06:37.138 04:21.476 Successfully matched event DataplanePermit:i550[1;m
+[1;36m[1;44m06:37.139 04:21.477 Successfully matched event DataplanePermit:i551[1;m
+[1;36m[1;44m06:37.139 04:21.478 Successfully matched event DataplanePermit:i552[1;m
+[1;35m[1;41m06:37.740 04:21.479 Event timed out ControlMessageReceive:i553 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m06:38.343 04:21.481 Event timed out ControlMessageReceive:i554 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m06:38.945 04:21.482 Event timed out ControlMessageReceive:i555 c c1 -> s 1 [ofp_features_request: ][1;m
+[1;35m[1;41m06:39.547 04:21.483 Event timed out ControlMessageReceive:i556 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m06:40.150 04:21.484 Event timed out ControlMessageReceive:i557 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m06:40.752 04:21.485 Event timed out ControlMessageSend:i558 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m06:41.354 04:21.486 Event timed out ControlMessageSend:i559 c 1 -> s c1 [ofp_features_reply: datapath_id=1][1;m
+[1;35m[1;41m06:41.956 04:21.487 Event timed out ControlMessageSend:i560 c 1 -> s c1 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;36m[1;44m06:42.052 04:21.582 Successfully matched event DataplanePermit:i561[1;m
+[1;36m[1;36mRound 284[1;37m[1;m
+[1;36m[1;44m06:42.053 04:21.583 Successfully matched event DataplanePermit:i562[1;m
+[1;36m[1;44m06:42.054 04:21.584 Successfully matched event DataplanePermit:i563[1;m
+[1;36m[1;44m06:42.055 04:21.586 Successfully matched event DataplanePermit:i564[1;m
+[1;35m[1;41m06:42.656 04:21.587 Event timed out ControlMessageReceive:i565 c c1 -> s 1 [ofp_set_config: ][1;m
+[1;35m[1;41m06:43.258 04:21.588 Event timed out ControlMessageReceive:i566 c c1 -> s 1 [ofp_stats_request: flags=0, type=0][1;m
+[1;35m[1;41m06:43.860 04:21.593 Event timed out ControlMessageReceive:i567 c c1 -> s 1 [ofp_get_config_request: ][1;m
+[1;35m[1;41m06:44.462 04:21.594 Event timed out ControlMessageSend:i568 c 1 -> s c1 [ofp_get_config_reply: ][1;m
+[1;35m[1;41m06:45.065 04:21.595 Event timed out ControlMessageSend:i569 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m06:45.667 04:21.595 Event timed out ControlMessageSend:i570 c 1 -> s c1 [ofp_stats_reply: flags=0, type=0][1;m
+[1;35m[1;41m06:46.269 04:21.596 Event timed out ControlMessageSend:i571 c 1 -> s c1 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;35m[1;41m06:46.871 04:21.697 Event timed out ControlMessageReceive:i572 c c1 -> s 1 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 285[1;37m[1;m
+[1;35m[1;41m06:47.474 04:21.697 Event timed out ControlMessageSend:i573 c 1 -> s c1 [ofp_vendor: ][1;m
+[1;35m[1;41m06:48.076 04:21.798 Event timed out ControlMessageReceive:i574 c c1 -> s 1 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 286[1;37m[1;m
+[1;35m[1;41m06:48.678 04:21.798 Event timed out ControlMessageSend:i575 c 1 -> s c1 [ofp_vendor: ][1;m
+[1;36m[1;44m06:48.679 04:22.700 Successfully matched event ControlMessageReceive:i576 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 295[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m06:48.781 04:22.801 Successfully matched event DataplanePermit:i577[1;m
+[1;36m[1;36mRound 296[1;37m[1;m
+[1;36m[1;44m06:48.783 04:22.802 Successfully matched event ControlMessageReceive:i578 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;35m[1;41m06:49.385 04:22.804 Event timed out ControlMessageReceive:i579 c c1 -> s 1 [ofp_stats_request: flags=0, type=1][1;m
+[1;35m[1;41m06:49.988 04:22.806 Event timed out ControlMessageSend:i580 c 1 -> s c1 [ofp_stats_reply: flags=0, type=0][1;m
+[1;36m[1;44m06:50.089 04:22.908 Successfully matched event DataplanePermit:i581[1;m
+[1;36m[1;36mRound 297[1;37m[1;m
+[1;36m[1;44m06:50.090 04:22.908 Successfully matched event ControlMessageSend:i582 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m06:56.501 04:28.691 Event timed out ControlMessageReceive:i584 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(2)',), flags=1, match=dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_type:2048,in_port:1][1;m
+[1;36m[1;36mRound 299[1;37m[1;m
+[1;36m[1;44m06:56.504 04:28.694 Successfully matched event ControlMessageReceive:i585 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m06:56.507 04:28.695 Successfully matched event ControlMessageReceive:i586 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;35m[1;41m06:57.109 04:28.697 Event timed out ControlMessageReceive:i587 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(1)',), flags=1, match=dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_type:2048,in_port:2][1;m
+[1;36m[1;44m06:57.111 04:28.699 Successfully matched event ControlMessageReceive:i588 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m06:57.112 04:28.700 Successfully matched event ControlMessageReceive:i589 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m07:22.898 04:54.460 Successfully matched event DataplanePermit:i591[1;m
+[1;36m[1;36mRound 300[1;37m[1;m
+[1;36m[1;44m07:22.899 04:54.462 Successfully matched event DataplanePermit:i592[1;m
+[1;36m[1;44m07:22.899 04:54.462 Successfully matched event DataplanePermit:i593[1;m
+[1;36m[1;44m07:22.899 04:54.463 Successfully matched event DataplanePermit:i594[1;m
+[1;35m[1;41m07:23.501 04:54.464 Event timed out ControlMessageReceive:i595 c c2 -> s 2 [ofp_hello: ][1;m
+[1;36m[1;44m07:23.503 04:54.465 Successfully matched event ControlMessageReceive:i596 c c1 -> s 1 [ofp_echo_request: ][1;m
+[1;36m[1;44m07:23.504 04:54.465 Successfully matched event ControlMessageReceive:i597 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;35m[1;41m07:24.107 04:54.466 Event timed out ControlMessageReceive:i598 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m07:24.108 04:54.466 Successfully matched event ControlMessageReceive:i599 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;35m[1;41m07:24.711 04:54.467 Event timed out ControlMessageReceive:i600 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m07:24.713 04:54.468 Successfully matched event ControlMessageSend:i601 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m07:25.315 04:54.468 Event timed out ControlMessageSend:i602 c 2 -> s c2 [ofp_hello: ][1;m
+[1;36m[1;44m07:25.316 04:54.468 Successfully matched event ControlMessageSend:i603 c 2 -> s c2 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;36m[1;44m07:25.317 04:54.469 Successfully matched event ControlMessageSend:i604 c 1 -> s c1 [ofp_echo_reply: ][1;m
+[1;36m[1;44m07:25.418 04:54.569 Successfully matched event DataplanePermit:i605[1;m
+[1;36m[1;36mRound 301[1;37m[1;m
+[1;36m[1;44m07:25.419 04:54.570 Successfully matched event DataplanePermit:i606[1;m
+[1;36m[1;44m07:25.420 04:54.570 Successfully matched event DataplanePermit:i607[1;m
+[1;36m[1;44m07:25.421 04:54.571 Successfully matched event DataplanePermit:i608[1;m
+[1;36m[1;44m07:25.422 04:54.571 Successfully matched event ControlMessageReceive:i609 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;35m[1;41m07:26.025 04:54.572 Event timed out ControlMessageReceive:i610 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m07:26.027 04:54.573 Successfully matched event ControlMessageReceive:i611 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;35m[1;41m07:26.630 04:54.574 Event timed out ControlMessageReceive:i612 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m07:27.232 04:54.576 Event timed out ControlMessageReceive:i613 c c2 -> s 2 [ofp_features_request: ][1;m
+[1;35m[1;41m07:27.834 04:54.577 Event timed out ControlMessageSend:i614 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m07:28.437 04:54.577 Event timed out ControlMessageSend:i615 c 2 -> s c2 [ofp_features_reply: datapath_id=2][1;m
+[1;36m[1;44m07:28.438 04:54.578 Successfully matched event ControlMessageSend:i616 c 2 -> s c2 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;36m[1;44m07:28.530 04:54.670 Successfully matched event DataplanePermit:i617[1;m
+[1;36m[1;36mRound 302[1;37m[1;m
+[1;36m[1;44m07:28.531 04:54.671 Successfully matched event DataplanePermit:i618[1;m
+[1;36m[1;44m07:28.532 04:54.672 Successfully matched event DataplanePermit:i619[1;m
+[1;36m[1;44m07:28.533 04:54.673 Successfully matched event DataplanePermit:i620[1;m
+[1;35m[1;41m07:29.134 04:54.674 Event timed out ControlMessageReceive:i621 c c2 -> s 2 [ofp_get_config_request: ][1;m
+[1;35m[1;41m07:29.737 04:54.675 Event timed out ControlMessageReceive:i622 c c2 -> s 2 [ofp_stats_request: flags=0, type=0][1;m
+[1;35m[1;41m07:30.339 04:54.680 Event timed out ControlMessageReceive:i623 c c2 -> s 2 [ofp_set_config: ][1;m
+[1;35m[1;41m07:30.941 04:54.680 Event timed out ControlMessageSend:i624 c 2 -> s c2 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m07:31.544 04:54.681 Event timed out ControlMessageSend:i625 c 2 -> s c2 [ofp_stats_reply: flags=0, type=0][1;m
+[1;36m[1;44m07:31.545 04:54.681 Successfully matched event ControlMessageSend:i626 c 2 -> s c2 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;35m[1;41m07:32.147 04:54.681 Event timed out ControlMessageSend:i627 c 2 -> s c2 [ofp_get_config_reply: ][1;m
+[1;35m[1;41m07:32.950 04:54.882 Event timed out ControlMessageReceive:i628 c c2 -> s 2 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 304[1;37m[1;m
+[1;35m[1;41m07:33.552 04:54.883 Event timed out ControlMessageSend:i629 c 2 -> s c2 [ofp_vendor: ][1;m
+[1;35m[1;41m07:34.154 04:54.984 Event timed out ControlMessageReceive:i630 c c2 -> s 2 [ofp_vendor: ][1;m
+[1;36m[1;36mRound 305[1;37m[1;m
+[1;35m[1;41m07:34.756 04:54.985 Event timed out ControlMessageSend:i631 c 2 -> s c2 [ofp_vendor: ][1;m
+[1;35m[1;41m07:35.959 04:55.689 Event timed out ControlMessageReceive:i632 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 312[1;37m[1;m
+[1;35m[1;41m07:36.562 04:55.690 Event timed out ControlMessageReceive:i633 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m07:36.664 04:55.791 Successfully matched event DataplanePermit:i634[1;m
+[1;36m[1;36mRound 313[1;37m[1;m
+[1;36m[1;44m07:36.665 04:55.792 Successfully matched event DataplanePermit:i635[1;m
+[1;35m[1;41m07:37.266 04:55.793 Event timed out ControlMessageReceive:i636 c c2 -> s 2 [ofp_stats_request: flags=0, type=1][1;m
+[1;35m[1;41m07:37.868 04:55.796 Event timed out ControlMessageSend:i637 c 2 -> s c2 [ofp_stats_reply: flags=0, type=0][1;m
+[1;35m[1;41m07:38.471 04:55.796 Event timed out ControlMessageSend:i638 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m07:39.273 04:55.988 Event timed out ControlMessageReceive:i639 c c2 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(2)',), flags=1, match=dl_src:12:34:56:78:01:02,dl_dst:12:34:56:78:02:02,dl_type:2048,in_port:1][1;m
+[1;36m[1;36mRound 315[1;37m[1;m
+[1;35m[1;41m07:39.876 04:55.990 Event timed out ControlMessageReceive:i640 c c2 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=100, idle_timeout=5, command=add, actions=(u'output(1)',), flags=1, match=dl_src:12:34:56:78:02:02,dl_dst:12:34:56:78:01:02,dl_type:2048,in_port:2][1;m
+[1;35m[1;41m07:40.478 04:56.091 Event timed out ControlMessageReceive:i641 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 316[1;37m[1;m
+[1;35m[1;41m07:41.081 04:56.093 Event timed out ControlMessageReceive:i642 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;44m07:41.183 04:56.195 Successfully matched event DataplanePermit:i643[1;m
+[1;36m[1;36mRound 317[1;37m[1;m
+[1;36m[1;44m07:41.184 04:56.196 Successfully matched event DataplanePermit:i644[1;m
+[1;35m[1;41m07:41.786 04:56.197 Event timed out ControlMessageReceive:i645 c c2 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m07:42.388 04:56.199 Event timed out ControlMessageReceive:i646 c c2 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'dl_type': 35138}, in_port=65535][1;m
+[1;35m[1;41m07:42.990 04:56.200 Event timed out ControlMessageSend:i647 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m07:43.092 04:56.301 Successfully matched event DataplanePermit:i648[1;m
+[1;36m[1;36mRound 318[1;37m[1;m
+[1;36m[1;44m07:43.093 04:56.302 Successfully matched event DataplanePermit:i649[1;m
+[1;35m[1;41m07:43.695 04:56.304 Event timed out ControlMessageSend:i650 c 1 -> s c1 [ofp_packet_in: data={u'dl_type': 35138}, in_port=1][1;m
+[1;36m[1;36mRound 320[1;37m[1;m
+[1;41m[1;37mViolations at end of trace: ['c2'][1;m
+[1;36m[1;44mEvent Stats: Events matched: 329, timed out: 285
+Matches per event type:
+  ConnectToControllers 1
+  TrafficInjection 1
+  ControlMessageSend 53
+  ControlMessageReceive 88
+  DataplanePermit 186
+Timeouts per event type:
+  ControlMessageSend 108
+  ControlMessageReceive 177
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m

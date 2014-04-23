@@ -1,0 +1,21 @@
+OpenJDK 64-Bit Server VM warning: ignoring option PreBlockSpin=8; support was removed in 7.0_40
+OpenJDK 64-Bit Server VM warning: ignoring option PreBlockSpin=8; support was removed in 7.0_40
+OpenJDK 64-Bit Server VM warning: disabling UseAdaptiveSizePolicy; it is incompatible with UseConcMarkSweepGC.
+16:47:05,060 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [./logback.onosdev1.xml] at [file:/vagrant/ONOS/./logback.onosdev1.xml]
+16:47:05,330 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - Setting ReconfigureOnChangeFilter scanning period to 1 minutes
+16:47:05,331 |-INFO in ReconfigureOnChangeFilter{invocationCounter=0} - Will scan for changes in [[/vagrant/ONOS/./logback.onosdev1.xml]] every 60 seconds. 
+16:47:05,331 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - Adding ReconfigureOnChangeFilter as a turbo filter
+16:47:05,340 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:47:05,344 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+16:47:05,384 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:47:05,464 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+16:47:05,468 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+16:47:05,477 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:47:05,484 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [./onos-logs/onos.onosdev1.log]
+16:47:05,498 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org] to WARN
+16:47:05,502 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [LogService] to WARN
+16:47:05,502 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [net.floodlightcontroller.logging] to WARN
+16:47:05,502 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+16:47:05,502 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[ROOT]
+16:47:05,503 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+16:47:05,508 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@2c7ba30c - Registering current configuration as safe fallback point

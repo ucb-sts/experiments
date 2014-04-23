@@ -1,0 +1,17 @@
+onosdev1: Getting BBDP from a different controller myId 66987026166504578: remoteId 801512055980499728 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: bug not triggered oldCid: 0 CID: 66987026166504578 RemoteCID: 801512055980499728
+onosdev2: I'm claiming link myId 801512055980499728: remoteId 66987026166504578 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev1: Getting BBDP from a different controller myId 66987026166504578: remoteId 801512055980499728 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: bug not triggered oldCid: 0 CID: 66987026166504578 RemoteCID: 801512055980499728
+onosdev1: Getting BBDP from a different controller myId 66987026166504578: remoteId 1047198036772259218 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: bug not triggered oldCid: 0 CID: 66987026166504578 RemoteCID: 1047198036772259218
+onosdev2: I'm claiming link myId 1047198036772259218: remoteId 66987026166504578 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: I'm claiming link myId 1047198036772259218: remoteId 810191500357517601 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: I'm claiming link myId 1047198036772259218: remoteId 781273835108582977 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 1047198036772259218: remoteId 1063261520666555149 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 1047198036772259218 CID: 1047198036772259218 RemoteCID: 1063261520666555149
+onosdev1: Getting BBDP from a different controller myId 1063261520666555149: remoteId 1076592083371456242 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: bug not triggered oldCid: 0 CID: 1063261520666555149 RemoteCID: 1076592083371456242
+onosdev1: I'm claiming link myId 1063261520666555149: remoteId 840580879024526872 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: Getting BBDP from a different controller myId 599257501091684702: remoteId 727781333364318989 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: KILL bug triggered oldCid: 1063261520666555149 CID: 599257501091684702 RemoteCID: 727781333364318989

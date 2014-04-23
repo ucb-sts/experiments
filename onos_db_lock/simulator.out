@@ -1,0 +1,1024 @@
+INFO:Controller: =====> Starting ONOS Controller <===== 
+INFO:Controller:Launching controller c1: onos stop; zk stop ; cassandra stop; echo "sleeping for 5sec"; sleep 5; /mnt/ahassany/vagrant_onosdev/scripts/conf_setup.sh 2 ; zk start ; cassandra start; echo "sleeping for 10sec"; sleep 10 ; onos start ; echo "sleeping for 40 secs"; sleep 40 ; onos stop; sleep 10; cassandra cleandb; onos start; sleep 40
+[1;33m[c1] Stop ONOS on all nodes[1;m
+
+[1;33m[c1] topping ZK..[1;m
+
+[1;33m[c1] dev1: Stopping zookeeper ... no zookeeper to stop (could not find file /var/lib/zookeeper/zookeeper_server.pid)[1;m
+
+[1;33m[c1] Stopping zookeeper ... no zookeeper to stop (could not find file /var/lib/zookeeper/zookeeper_server.pid)[1;m
+
+[1;33m[c1] ing Cassandra..[1;m
+
+[1;33m[c1] leeping for 5sec[1;m
+
+[1;33m[c1] enrating conf files for 2-node cluster[1;m
+
+[1;33m[c1] opying confguration files[1;m
+
+[1;33m[c1] opying /mnt/ahassany/vagrant_onosdev/scripts/../conf/zoo.cfg /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/conf[1;m
+
+[1;33m[c1] opying /mnt/ahassany/vagrant_onosdev/scripts/../conf/cassandra.titan /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/conf[1;m
+
+[1;33m[c1] ying /mnt/ahassany/vagrant_onosdev/scripts/../conf/titan-embedded.properties /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/cof[1;m
+
+[1;33m[c1] opying /mnt/ahassany/vagrant_onosdev/scripts/../conf/cassandra.yaml.1 /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/conf[1;m
+
+[1;33m[c1] opying /mnt/ahassany/vagrant_onosdev/scripts/../conf/cassandra.yaml.2 /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/conf[1;m
+
+[1;33m[c1] opying /mnt/ahassany/vagrant_onosdev/scripts/../conf/config.json /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/web[1;m
+
+[1;33m[c1] opying /mnt/ahassany/vagrant_onosdev/scripts/../conf_common/configuration.json /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/web/ons-demo/data[1;m
+
+[1;33m[c1] opying /mnt/ahassany/vagrant_onosdev/scripts/../conf_common/controllers.json /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/web/ons-demo/data[1;m
+
+[1;33m[c1] opying /mnt/ahassany/vagrant_onosdev/scripts/../conf_common/dev_network.py /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/test-network/mininet[1;m
+
+[1;41m[1;33m[c1] cp: cannot stat `/mnt/ahassany/vagrant_onosdev/scripts/../conf_common/dev_network.py': No such file or directory[1;m
+
+[1;33m[c1] opying /mnt/ahassany/vagrant_onosdev/scripts/../conf_common/link.json.dev /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/web/link.json[1;m
+
+[1;41m[1;33m[c1] cp: cannot stat `/mnt/ahassany/vagrant_onosdev/scripts/../conf_common/link.json.dev': No such file or directory[1;m
+
+[1;33m[c1] ing /mnt/ahassany/vagrant_onosdev/scripts/../conf_common/cluster.hosts /mnt/ahassany/vagrant_onosdev/scripts/../ONOS/.cluster.hosts[1;m
+
+[1;33m[c1] opying cassandra.yaml file to all VMs[1;m
+
+[1;33m[c1] emoving all data in /var/lib/cassandra/ [Y/n]?[1;m
+
+[1;41m[1;33m[c1] # onosdev2 SSH-2.0-OpenSSH_6.1p1 Debian-4[1;m
+
+[1;41m[1;33m[c1] # onosdev1 SSH-2.0-OpenSSH_6.1p1 Debian-4[1;m
+
+[1;41m[1;33m[c1] # onosdev2 SSH-2.0-OpenSSH_6.1p1 Debian-4[1;m
+
+[1;41m[1;33m[c1] # onosdev1 SSH-2.0-OpenSSH_6.1p1 Debian-4[1;m
+
+[1;33m[c1] tarting ZK..[1;m
+
+[1;33m[c1] nosdev1: Starting Zookeeper[1;m
+
+[1;33m[c1] osdev2: Starting Zookeeper[1;m
+
+[1;33m[c1] ookeeper ... STARTED[1;m
+
+[1;33m[c1] heck status[1;m
+
+[1;33m[c1] ybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] heck status[1;m
+
+[1;33m[c1] everybody's up: 2 up of of 2[1;m
+
+[1;33m[c1] Starting Cassandra..[1;m
+
+[1;33m[c1]  cassandra at the seed node[1;m
+
+[1;33m[c1] osdev1: rotate log:[1;m
+
+[1;33m[c1] dev1: Starting cassandra[1;m
+
+[1;33m[c1]  start cassandra in rest nodes[1;m
+
+[1;33m[c1] nosdev2: rotate log:[1;m
+
+[1;33m[c1]  Starting cassandra[1;m
+
+[1;33m[c1] assandra running[1;m
+
+[1;33m[c1] aiting for everybody's up: 0 up of of 2[1;m
+
+[1;33m[c1] 3127[1;m
+
+[1;33m[c1] sdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] ====[1;m
+
+[1;33m[c1] ev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] 2.168.56.11  rack1       Up     Normal  46.07 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] ody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 3127[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] er: datacenter1[1;m
+
+[1;33m[c1]  Replicas: 1[1;m
+
+[1;33m[c1] sdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] 192.168.56.11  rack1       Up     Normal  46.07 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] ting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 3127[1;m
+
+[1;33m[c1] dev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] nosdev1: ==========[1;m
+
+[1;33m[c1] ss        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] 2.168.56.11  rack1       Up     Normal  46.07 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] or everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 27[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1]  Datacenter: datacenter1[1;m
+
+[1;33m[c1] sdev1: ==========[1;m
+
+[1;33m[c1] onosdev1:[1;m
+
+[1;33m[c1] ess        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] v1:[1;m
+
+[1;33m[c1] 1: 192.168.56.11  rack1       Up     Normal  46.07 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] sdev1:[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 3127[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] sdev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1]  ==========[1;m
+
+[1;33m[c1] eplicas: 1[1;m
+
+[1;33m[c1] nosdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] 1: 192.168.56.11  rack1       Up     Normal  46.07 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 127[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] :[1;m
+
+[1;33m[c1]  Datacenter: datacenter1[1;m
+
+[1;33m[c1] ==========[1;m
+
+[1;33m[c1] eplicas: 1[1;m
+
+[1;33m[c1] ev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] 1: 192.168.56.11  rack1       Up     Normal  46.07 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] waiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 3127[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] nosdev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] : ==========[1;m
+
+[1;33m[c1] 1: Replicas: 1[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] :[1;m
+
+[1;33m[c1] 1: 192.168.56.11  rack1       Up     Normal  46.07 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] waiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 3127[1;m
+
+[1;33m[c1] sdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] ==========[1;m
+
+[1;33m[c1] v1:[1;m
+
+[1;33m[c1] State   Load            Owns                Token[1;m
+
+[1;33m[c1]  192.168.56.11  rack1       Up     Normal  46.07 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 3127[1;m
+
+[1;33m[c1] ev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] nter: datacenter1[1;m
+
+[1;33m[c1] ev1: Replicas: 1[1;m
+
+[1;33m[c1] dress        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] 68.56.11  rack1       Up     Normal  46.07 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] 1 up of of 2[1;m
+
+[1;33m[c1] 3127[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] ev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] 1: ==========[1;m
+
+[1;33m[c1] licas: 1[1;m
+
+[1;33m[c1] 1:[1;m
+
+[1;33m[c1]  Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] : 192.168.56.11  rack1       Up     Normal  46.07 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 3127[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] nosdev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] : ==========[1;m
+
+[1;33m[c1] plicas: 1[1;m
+
+[1;33m[c1] v1:[1;m
+
+[1;33m[c1] : Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1]  192.168.56.11  rack1       Up     Normal  46.07 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 3127[1;m
+
+[1;33m[c1] ev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] ===[1;m
+
+[1;33m[c1] osdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] onosdev1: 192.168.56.11  rack1       Up     Normal  46.07 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] iting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 3127[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] osdev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] : ==========[1;m
+
+[1;33m[c1] : Replicas: 1[1;m
+
+[1;33m[c1] sdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] nosdev1: 192.168.56.11  rack1       Up     Normal  46.07 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 3127[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] ev1:[1;m
+
+[1;33m[c1]  Datacenter: datacenter1[1;m
+
+[1;33m[c1] ========[1;m
+
+[1;33m[c1]  Replicas: 1[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1]  Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] 192.168.56.11  rack1       Up     Normal  46.07 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] ing for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 3127[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] ev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] ======[1;m
+
+[1;33m[c1] Replicas: 1[1;m
+
+[1;33m[c1] onosdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] :[1;m
+
+[1;33m[c1] : 192.168.56.11  rack1       Up     Normal  46.07 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] 1:[1;m
+
+[1;33m[c1] ng for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 127[1;m
+
+[1;33m[c1] osdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] onosdev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] ev1: ==========[1;m
+
+[1;33m[c1] s: 1[1;m
+
+[1;33m[c1] sdev1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] 2.168.56.11  rack1       Up     Normal  46.07 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 3127[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] v1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] ====[1;m
+
+[1;33m[c1] : Replicas: 1[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] v1: Address        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] : 192.168.56.11  rack1       Up     Normal  46.07 KB        100.00%             -9223372036854775808[1;m
+
+[1;33m[c1] :[1;m
+
+[1;33m[c1] aiting for everybody's up: 1 up of of 2[1;m
+
+[1;33m[c1] 27[1;m
+
+[1;33m[c1] nosdev1: 1 instance of cassandra running[1;m
+
+[1;33m[c1] onosdev1: Datacenter: datacenter1[1;m
+
+[1;33m[c1] ========[1;m
+
+[1;33m[c1] plicas: 1[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] ddress        Rack        Status State   Load            Owns                Token[1;m
+
+[1;33m[c1]                                                                -9223372036854775808[1;m
+
+[1;33m[c1]  192.168.56.12  rack1       Up     Normal  36.67 KB        50.00%              0[1;m
+
+[1;33m[c1] 92.168.56.11  rack1       Up     Normal  55.38 KB        50.00%              -9223372036854775808[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] verybody's up: 2 up of of 2[1;m
+
+[1;33m[c1] a started[1;m
+
+[1;33m[c1] leeping for 10sec[1;m
+
+[1;33m[c1] tarting ONOS on all nodes[1;m
+
+[1;33m[c1] nosdev1: rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33m[c1] rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33m[c1] v1: Starting ONOS controller ...[1;m
+
+[1;33m[c1] 1: .[1;m
+
+[1;33m[c1]  /home/mininet/ONOS[1;m
+
+[1;33m[c1] ting for ONOS to start...[1;m
+
+[1;33m[c1] 1: .[1;m
+
+[1;33m[c1] nosdev2: rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33m[c1] onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33m[c1]  Starting ONOS controller ...[1;m
+
+[1;33m[c1] sdev2: .[1;m
+
+[1;33m[c1] v2: Waiting for ONOS to start...[1;m
+
+[1;33m[c1] nosdev1: killing: /usr/bin/python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] e/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] v1: killing:[1;m
+
+[1;33m[c1]  /usr/bin/python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] 2: killing: python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] ing:[1;m
+
+[1;33m[c1]  secs[1;m
+
+[1;33m[c1] top ONOS on all nodes[1;m
+
+[1;33m[c1] osdev1: Killed existing process (pid: 30140)[1;m
+
+[1;33m[c1] isting process (pid: 7111)[1;m
+
+[1;33m[c1] emoving all data in db[1;m
+
+[1;33m[c1] tarting ONOS on all nodes[1;m
+
+[1;33m[c1] nosdev1: rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33m[c1] tate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33m[c1] ting ONOS controller ...[1;m
+
+[1;33m[c1] onosdev1: .[1;m
+
+[1;33m[c1] /home/mininet/ONOS[1;m
+
+[1;33m[c1] v1: Waiting for ONOS to start...[1;m
+
+[1;33m[c1] : .[1;m
+
+[1;33m[c1] nosdev2: rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33m[c1] s-logs/onos.onosdev2.pcap[1;m
+
+[1;33m[c1] OS controller ...[1;m
+
+[1;33m[c1] [1;m
+
+[1;33m[c1] 2: .[1;m
+
+[1;33m[c1] me/mininet/ONOS[1;m
+
+[1;33m[c1] Waiting for ONOS to start...[1;m
+
+[1;33m[c1] 2: .[1;m
+
+[1;33m[c1] nosdev1: killing: /usr/bin/python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] on][1;m
+
+[1;33m[c1] ev1: killing:[1;m
+
+[1;33m[c1] ing: /usr/bin/python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] illing: python /home/mininet/ONOS/web/topology_rest.py[1;m
+
+[1;33m[c1] killing:[1;m
+
+INFO:simulation:Launched controller c1: onos stop; zk stop ; cassandra stop; echo "sleeping for 5sec"; sleep 5; /mnt/ahassany/vagrant_onosdev/scripts/conf_setup.sh 2 ; zk start ; cassandra start; echo "sleeping for 10sec"; sleep 10 ; onos start ; echo "sleeping for 40 secs"; sleep 40 ; onos stop; sleep 10; cassandra cleandb; onos start; sleep 40 [PID -1]
+INFO:Controller: =====> Starting ONOS Controller <===== 
+INFO:Controller:Launching controller c2: echo "DUMMY COMMAND"; sleep 1
+[1;33m[c2] DUMMY COMMAND[1;m
+
+INFO:simulation:Launched controller c2: echo "DUMMY COMMAND"; sleep 1 [PID -1]
+INFO:simulation:Creating topology...
+DEBUG:input_logger:logging event ConnectToControllers:e1:('ConnectToControllers',)
+DEBUG:sts.topology:Connecting 2 switches to 2 controllers (setting up 1 conns per switch)...
+DEBUG:sts.topology:Connecting switch 0 / 2
+Connecting switch 0 to controller ControllerConfig(start_cmd=' onos stop; zk stop ; cassandra stop; echo "sleeping for 5sec"; sleep 5; /mnt/ahassany/vagrant_onosdev/scripts/conf_setup.sh 2 ; zk start ; cassandra start; echo "sleeping for 10sec"; sleep 10 ; onos start ; echo "sleeping for 40 secs"; sleep 40 ; onos stop; sleep 10; cassandra cleandb; onos start; sleep 40', label='c1', address='192.168.56.11', cwd='/mnt/ahassany/vagrant_onosdev', controller_type='onos', kill_cmd=' ssh onosdev1 "cd ONOS; ./start-onos.sh stop"; echo "killed"; sleep 5', restart_cmd='ssh onosdev1 "cd ONOS; ./start-onos.sh start"; echo "restarted"; sleep 20') - <bound method Simulation.create_connection of <sts.simulation_state.Simulation object at 0x1f58a10>>
+connect_socket_with_backoff ('192.168.56.11', 6633)
+DEBUG:sts.topology:Connecting switch 1 / 2
+Connecting switch 1 to controller ControllerConfig(start_cmd='echo "DUMMY COMMAND"; sleep 1', label='c2', address='192.168.56.12', cwd='/mnt/ahassany/vagrant_onosdev', controller_type='onos', kill_cmd=' ssh onosdev2 "cd ONOS; ./start-onos.sh stop"; echo "killed"; sleep 5', restart_cmd='ssh onosdev2 "cd ONOS; ./start-onos.sh start"; echo "restarted"; sleep 20') - <bound method Simulation.create_connection of <sts.simulation_state.Simulation object at 0x1f58a10>>
+connect_socket_with_backoff ('192.168.56.12', 6633)
+DEBUG:sts.topology:Controller connections done
+INFO:control_flow:Waiting until first OpenFlow message received..
+DEBUG:input_logger:logging event ControlMessageReceive:i2:('ControlMessageReceive', OFFingerprint{'class': 'ofp_hello'}, 1, 'c1')
+DEBUG:FuzzSoftwareSwitch(1):Receive hello SoftSwitch(1)
+DEBUG:FuzzSoftwareSwitch(1):Send hello SoftSwitch(1) 
+DEBUG:input_logger:logging event ControlMessageSend:i3:('ControlMessageSend', OFFingerprint{'class': 'ofp_hello'}, 1, 'c1')
+[1;36mRound 1 completed.[1;m
+DEBUG:input_logger:logging event ControlMessageReceive:i4:('ControlMessageReceive', OFFingerprint{'class': 'ofp_features_request'}, 1, 'c1')
+DEBUG:FuzzSoftwareSwitch(1):Reply features request of xid ofp_features_request
+  header: 
+    version: 1
+    type:    5 (OFPT_FEATURES_REQUEST)
+    length:  8
+    xid:     0 SoftSwitch(1)
+DEBUG:input_logger:logging event ControlMessageReceive:i5:('ControlMessageReceive', OFFingerprint{'class': 'ofp_hello'}, 2, 'c2')
+DEBUG:FuzzSoftwareSwitch(2):Receive hello SoftSwitch(2)
+DEBUG:FuzzSoftwareSwitch(2):Send hello SoftSwitch(2) 
+DEBUG:input_logger:logging event ControlMessageSend:i6:('ControlMessageSend', OFFingerprint{'class': 'ofp_hello'}, 2, 'c2')
+DEBUG:input_logger:logging event ControlMessageSend:i7:('ControlMessageSend', OFFingerprint{'datapath_id': 1, 'class': 'ofp_features_reply'}, 1, 'c1')
+[1;36mRound 2 completed.[1;m
+DEBUG:input_logger:logging event ControlMessageReceive:i8:('ControlMessageReceive', OFFingerprint{'flags': 0, 'type': 0, 'class': 'ofp_stats_request'}, 1, 'c1')
+DEBUG:FuzzSoftwareSwitch(1):Get stats request SoftSwitch(1) ofp_stats_request
+  header: 
+    version: 1
+    type:    16 (OFPT_STATS_REQUEST)
+    length:  12
+    xid:     1
+  type: 0
+  flags: 0
+  body: 
+DEBUG:FuzzSoftwareSwitch(1):Type: 0
+DEBUG:FuzzSoftwareSwitch(1):Sending stats reply SoftSwitch(1) ofp_stats_reply
+  header: 
+    version: 1
+    type:    17 (OFPT_STATS_REPLY)
+    length:  8
+    xid:     1
+  type: 0
+  flags: 0
+  body:
+    0000: 42 61 64 41 73 73 45 6d  75 6c 61 74 65 64 50 6f   BadAssEmulatedPo
+    0010: 78 53 77 69 74 63 68 28  54 4d 29 00 00 00 00 00   xSwitch(TM).....
+    0020: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0030: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0040: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0050: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0060: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0070: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0080: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0090: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    00a0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    00b0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    00c0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    00d0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    00e0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    00f0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0100: 79 6f 75 72 20 66 69 6e  65 73 74 20 65 6d 75 6c   your finest emul
+    0110: 61 74 65 64 20 61 73 69  63 73 00 00 00 00 00 00   ated asics......
+    0120: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0130: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0140: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0150: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0160: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0170: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0180: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0190: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    01a0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    01b0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    01c0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    01d0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    01e0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    01f0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0200: 70 6f 78 2e 20 72 65 6c  69 61 62 6c 65 2c 20 66   pox. reliable, f
+    0210: 61 73 74 2c 20 73 74 61  62 6c 65 2e 20 43 68 6f   ast, stable. Cho
+    0220: 6f 73 65 20 30 20 28 6f  72 20 6d 6f 72 65 3f 29   ose 0 (or more?)
+    0230: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0240: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0250: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0260: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0270: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0280: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0290: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    02a0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    02b0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    02c0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    02d0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    02e0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    02f0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0300: 31 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   1...............
+    0310: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0320: 68 69 67 68 20 70 65 72  66 6f 72 6d 61 6e 63 65   high performance
+    0330: 20 65 6d 75 73 77 69 74  63 68 2e 20 53 65 76 65    emuswitch. Seve
+    0340: 72 61 6c 20 70 61 63 6b  65 74 73 20 70 65 72 20   ral packets per 
+    0350: 73 65 63 6f 6e 64 20 68  61 76 65 20 62 65 65 6e   second have been
+    0360: 20 6f 62 73 65 72 76 65  64 20 28 62 75 74 20 6e    observed (but n
+    0370: 6f 74 20 62 79 20 72 65  6c 69 61 62 6c 65 20 77   ot by reliable w
+    0380: 69 74 6e 65 73 73 65 73  29 00 00 00 00 00 00 00   itnesses).......
+    0390: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    03a0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    03b0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    03c0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    03d0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    03e0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    03f0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0400: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0410: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+DEBUG:input_logger:logging event ControlMessageReceive:i9:('ControlMessageReceive', OFFingerprint{'class': 'ofp_set_config'}, 1, 'c1')
+DEBUG:FuzzSoftwareSwitch(1):Set config SoftSwitch(1) ofp_set_config
+  header: 
+    version: 1
+    type:    9 (OFPT_SET_CONFIG)
+    length:  12
+    xid:     0
+  flags: 0
+  miss_send_len: 65535
+DEBUG:input_logger:logging event ControlMessageReceive:i10:('ControlMessageReceive', OFFingerprint{'class': 'ofp_get_config_request'}, 1, 'c1')
+DEBUG:FuzzSoftwareSwitch(1):Get config request SoftSwitch(1) ofp_get_config_request
+  header: 
+    version: 1
+    type:    7 (OFPT_GET_CONFIG_REQUEST)
+    length:  8
+    xid:     0 
+DEBUG:input_logger:logging event ControlMessageReceive:i11:('ControlMessageReceive', OFFingerprint{'class': 'ofp_features_request'}, 2, 'c2')
+DEBUG:FuzzSoftwareSwitch(2):Reply features request of xid ofp_features_request
+  header: 
+    version: 1
+    type:    5 (OFPT_FEATURES_REQUEST)
+    length:  8
+    xid:     0 SoftSwitch(2)
+DEBUG:input_logger:logging event ControlMessageSend:i12:('ControlMessageSend', OFFingerprint{'datapath_id': 2, 'class': 'ofp_features_reply'}, 2, 'c2')
+DEBUG:input_logger:logging event ControlMessageSend:i13:('ControlMessageSend', OFFingerprint{'class': 'ofp_get_config_reply'}, 1, 'c1')
+DEBUG:input_logger:logging event ControlMessageSend:i14:('ControlMessageSend', OFFingerprint{'flags': 0, 'type': 0, 'class': 'ofp_stats_reply'}, 1, 'c1')
+[1;36mRound 3 completed.[1;m
+DEBUG:input_logger:logging event ControlMessageReceive:i15:('ControlMessageReceive', OFFingerprint{'class': 'ofp_vendor'}, 1, 'c1')
+DEBUG:FuzzSoftwareSwitch(1):Vendor SoftSwitch(1) ofp_vendor
+  header: 
+    version: 1
+    type:    4 (OFPT_VENDOR)
+    length:  20
+    xid:     2
+  vendor: 8992
+  data: [8 bytes]
+DEBUG:input_logger:logging event ControlMessageReceive:i16:('ControlMessageReceive', OFFingerprint{'class': 'ofp_set_config'}, 2, 'c2')
+DEBUG:FuzzSoftwareSwitch(2):Set config SoftSwitch(2) ofp_set_config
+  header: 
+    version: 1
+    type:    9 (OFPT_SET_CONFIG)
+    length:  12
+    xid:     0
+  flags: 0
+  miss_send_len: 65535
+DEBUG:input_logger:logging event ControlMessageReceive:i17:('ControlMessageReceive', OFFingerprint{'class': 'ofp_get_config_request'}, 2, 'c2')
+DEBUG:FuzzSoftwareSwitch(2):Get config request SoftSwitch(2) ofp_get_config_request
+  header: 
+    version: 1
+    type:    7 (OFPT_GET_CONFIG_REQUEST)
+    length:  8
+    xid:     0 
+DEBUG:input_logger:logging event ControlMessageSend:i18:('ControlMessageSend', OFFingerprint{'class': 'ofp_get_config_reply'}, 2, 'c2')
+DEBUG:input_logger:logging event ControlMessageSend:i19:('ControlMessageSend', OFFingerprint{'class': 'ofp_vendor'}, 1, 'c1')
+[1;36mRound 4 completed.[1;m
+DEBUG:input_logger:logging event ControlMessageReceive:i20:('ControlMessageReceive', OFFingerprint{'class': 'ofp_vendor'}, 1, 'c1')
+DEBUG:FuzzSoftwareSwitch(1):Vendor SoftSwitch(1) ofp_vendor
+  header: 
+    version: 1
+    type:    4 (OFPT_VENDOR)
+    length:  20
+    xid:     3
+  vendor: 8992
+  data: [8 bytes]
+DEBUG:input_logger:logging event ControlMessageReceive:i21:('ControlMessageReceive', OFFingerprint{'flags': 0, 'type': 0, 'class': 'ofp_stats_request'}, 2, 'c2')
+DEBUG:FuzzSoftwareSwitch(2):Get stats request SoftSwitch(2) ofp_stats_request
+  header: 
+    version: 1
+    type:    16 (OFPT_STATS_REQUEST)
+    length:  12
+    xid:     1
+  type: 0
+  flags: 0
+  body: 
+DEBUG:FuzzSoftwareSwitch(2):Type: 0
+DEBUG:FuzzSoftwareSwitch(2):Sending stats reply SoftSwitch(2) ofp_stats_reply
+  header: 
+    version: 1
+    type:    17 (OFPT_STATS_REPLY)
+    length:  8
+    xid:     1
+  type: 0
+  flags: 0
+  body:
+    0000: 42 61 64 41 73 73 45 6d  75 6c 61 74 65 64 50 6f   BadAssEmulatedPo
+    0010: 78 53 77 69 74 63 68 28  54 4d 29 00 00 00 00 00   xSwitch(TM).....
+    0020: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0030: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0040: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0050: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0060: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0070: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0080: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0090: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    00a0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    00b0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    00c0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    00d0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    00e0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    00f0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0100: 79 6f 75 72 20 66 69 6e  65 73 74 20 65 6d 75 6c   your finest emul
+    0110: 61 74 65 64 20 61 73 69  63 73 00 00 00 00 00 00   ated asics......
+    0120: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0130: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0140: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0150: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0160: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0170: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0180: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0190: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    01a0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    01b0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    01c0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    01d0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    01e0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    01f0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0200: 70 6f 78 2e 20 72 65 6c  69 61 62 6c 65 2c 20 66   pox. reliable, f
+    0210: 61 73 74 2c 20 73 74 61  62 6c 65 2e 20 43 68 6f   ast, stable. Cho
+    0220: 6f 73 65 20 30 20 28 6f  72 20 6d 6f 72 65 3f 29   ose 0 (or more?)
+    0230: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0240: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0250: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0260: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0270: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0280: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0290: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    02a0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    02b0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    02c0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    02d0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    02e0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    02f0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0300: 32 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   2...............
+    0310: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0320: 68 69 67 68 20 70 65 72  66 6f 72 6d 61 6e 63 65   high performance
+    0330: 20 65 6d 75 73 77 69 74  63 68 2e 20 53 65 76 65    emuswitch. Seve
+    0340: 72 61 6c 20 70 61 63 6b  65 74 73 20 70 65 72 20   ral packets per 
+    0350: 73 65 63 6f 6e 64 20 68  61 76 65 20 62 65 65 6e   second have been
+    0360: 20 6f 62 73 65 72 76 65  64 20 28 62 75 74 20 6e    observed (but n
+    0370: 6f 74 20 62 79 20 72 65  6c 69 61 62 6c 65 20 77   ot by reliable w
+    0380: 69 74 6e 65 73 73 65 73  29 00 00 00 00 00 00 00   itnesses).......
+    0390: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    03a0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    03b0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    03c0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    03d0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    03e0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    03f0: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0400: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0410: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+DEBUG:input_logger:logging event ControlMessageSend:i22:('ControlMessageSend', OFFingerprint{'flags': 0, 'type': 0, 'class': 'ofp_stats_reply'}, 2, 'c2')
+DEBUG:input_logger:logging event ControlMessageSend:i23:('ControlMessageSend', OFFingerprint{'class': 'ofp_vendor'}, 1, 'c1')
+[1;36mRound 5 completed.[1;m
+DEBUG:input_logger:logging event ControlMessageReceive:i24:('ControlMessageReceive', OFFingerprint{'class': 'ofp_vendor'}, 2, 'c2')
+DEBUG:FuzzSoftwareSwitch(2):Vendor SoftSwitch(2) ofp_vendor
+  header: 
+    version: 1
+    type:    4 (OFPT_VENDOR)
+    length:  20
+    xid:     2
+  vendor: 8992
+  data: [8 bytes]
+DEBUG:input_logger:logging event ControlMessageSend:i25:('ControlMessageSend', OFFingerprint{'class': 'ofp_vendor'}, 2, 'c2')
+[1;36mRound 6 completed.[1;m
+DEBUG:input_logger:logging event ControlMessageReceive:i26:('ControlMessageReceive', OFFingerprint{'class': 'ofp_vendor'}, 2, 'c2')
+DEBUG:FuzzSoftwareSwitch(2):Vendor SoftSwitch(2) ofp_vendor
+  header: 
+    version: 1
+    type:    4 (OFPT_VENDOR)
+    length:  20
+    xid:     3
+  vendor: 8992
+  data: [8 bytes]
+DEBUG:input_logger:logging event ControlMessageSend:i27:('ControlMessageSend', OFFingerprint{'class': 'ofp_vendor'}, 2, 'c2')
+[1;36mRound 7 completed.[1;m
+[1;36mRound 8 completed.[1;m
+[1;36mRound 9 completed.[1;m
+[1;36mRound 10 completed.[1;m
+[1;36mRound 11 completed.[1;m
+[1;36mRound 12 completed.[1;m
+[1;36mRound 13 completed.[1;m
+[1;36mRound 14 completed.[1;m
+[1;36mRound 15 completed.[1;m
+[1;36mRound 16 completed.[1;m
+[1;36mRound 17 completed.[1;m
+[1;36mRound 18 completed.[1;m
+[1;36mRound 19 completed.[1;m
+[1;36mInjecting a random packet[1;m
+DEBUG:input_logger:logging event TrafficInjection:e28:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:02:[IPAddr('123.123.1.2')] Packet:[12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:9130[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing, None)
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:9130[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 20 completed.[1;m
+DEBUG:input_logger:logging event DataplanePermit:i29:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:02:02', 'nw_src': '123.123.1.2', 'dl_src': '12:34:56:78:01:02', 'nw_dst': '123.123.2.2'}, 1, '12:34:56:78:01:02')
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(1):Send PacketIn SoftSwitch(1) 
+DEBUG:input_logger:logging event ControlMessageSend:i30:('ControlMessageSend', OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:02:02', 'nw_src': '123.123.1.2', 'dl_src': '12:34:56:78:01:02', 'nw_dst': '123.123.2.2'}, 'class': 'ofp_packet_in', 'in_port': 2}, 1, 'c1')
+[1;36mRound 21 completed.[1;m
+DEBUG:input_logger:logging event ControlMessageReceive:i31:('ControlMessageReceive', OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}, 1, 'c1')
+DEBUG:FuzzSoftwareSwitch(1):Packet out: header: 
+  version: 1
+  type:    13 (OFPT_PACKET_OUT)
+  length:  85
+  xid:     0
+buffer_id: -1
+in_port: 65535
+actions_len: 1
+actions: 
+  type: 0
+  len: 8
+  port: 1
+  max_len: 0
+
+DEBUG:input_logger:logging event ControlMessageReceive:i32:('ControlMessageReceive', OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}, 1, 'c1')
+DEBUG:FuzzSoftwareSwitch(1):Packet out: header: 
+  version: 1
+  type:    13 (OFPT_PACKET_OUT)
+  length:  85
+  xid:     0
+buffer_id: -1
+in_port: 65535
+actions_len: 1
+actions: 
+  type: 0
+  len: 8
+  port: 2
+  max_len: 0
+
+[1;36mRound 22 completed.[1;m
+DEBUG:input_logger:logging event DataplanePermit:i33:('DataplanePermit', DPFingerprint{'class': 'lldp'}, 1, 2)
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Recieved packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x20255d0><pox.lib.packet.lldp.unknown_tlv object at 0x2025690><pox.lib.packet.lldp.unknown_tlv object at 0x2025650><tlv end> on interface eth1
+DEBUG:input_logger:logging event DataplanePermit:i34:('DataplanePermit', DPFingerprint{'class': 'lldp'}, 1, 1)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(2):Send PacketIn SoftSwitch(2) 
+DEBUG:input_logger:logging event ControlMessageReceive:i35:('ControlMessageReceive', OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_dst': '12:34:56:78:02:02', 'nw_src': '123.123.1.2', 'dl_src': '12:34:56:78:01:02', 'nw_dst': '123.123.2.2'}, 'class': 'ofp_packet_out', 'in_port': 65535}, 1, 'c1')
+DEBUG:FuzzSoftwareSwitch(1):Packet out: header: 
+  version: 1
+  type:    13 (OFPT_PACKET_OUT)
+  length:  110
+  xid:     0
+buffer_id: -1
+in_port: 65535
+actions_len: 1
+actions: 
+  type: 0
+  len: 8
+  port: 1
+  max_len: 0
+
+DEBUG:input_logger:logging event ControlMessageReceive:i36:('ControlMessageReceive', OFFingerprint{'flags': 0, 'type': 1, 'class': 'ofp_stats_request'}, 1, 'c1')
+DEBUG:FuzzSoftwareSwitch(1):Get stats request SoftSwitch(1) ofp_stats_request
+  header: 
+    version: 1
+    type:    16 (OFPT_STATS_REQUEST)
+    length:  56
+    xid:     4
+  type: 1
+  flags: 0
+  body:
+    0000: 00 3f ff ff 00 00 00 00  00 00 00 00 00 00 00 00   .?..............
+    0010: 00 00 ff ff 00 00 00 00  00 00 00 00 00 00 00 00   ................
+    0020: 00 00 00 00 00 00 00 00  ff 00 ff ff               ............ 
+DEBUG:FuzzSoftwareSwitch(1):Type: 1
+DEBUG:FuzzSoftwareSwitch(1):Sending stats reply SoftSwitch(1) ofp_stats_reply
+  header: 
+    version: 1
+    type:    17 (OFPT_STATS_REPLY)
+    length:  8
+    xid:     4
+  type: 0
+  flags: 0
+  body:
+DEBUG:input_logger:logging event ControlMessageSend:i37:('ControlMessageSend', OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1}, 2, 'c2')
+DEBUG:input_logger:logging event ControlMessageSend:i38:('ControlMessageSend', OFFingerprint{'flags': 0, 'type': 0, 'class': 'ofp_stats_reply'}, 1, 'c1')
+[1;36mInjecting a random packet[1;m
+DEBUG:input_logger:logging event TrafficInjection:e39:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:02:[IPAddr('123.123.2.2')] Packet:[12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:912c[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing, None)
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:912c[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mRound 23 completed.[1;m
+DEBUG:input_logger:logging event DataplanePermit:i40:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:01:02', 'nw_src': '123.123.2.2', 'dl_src': '12:34:56:78:02:02', 'nw_dst': '123.123.1.2'}, 2, '12:34:56:78:02:02')
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(2):Send PacketIn SoftSwitch(2) 
+DEBUG:input_logger:logging event DataplanePermit:i41:('DataplanePermit', DPFingerprint{'dl_dst': '12:34:56:78:02:02', 'nw_src': '123.123.1.2', 'dl_src': '12:34:56:78:01:02', 'nw_dst': '123.123.2.2'}, 1, 1)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(2):Send PacketIn SoftSwitch(2) 
+DEBUG:input_logger:logging event ControlMessageReceive:i42:('ControlMessageReceive', OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535}, 1, 'c1')
+DEBUG:FuzzSoftwareSwitch(1):Packet out: header: 
+  version: 1
+  type:    13 (OFPT_PACKET_OUT)
+  length:  93
+  xid:     0
+buffer_id: -1
+in_port: 65535
+actions_len: 1
+actions: 
+  type: 0
+  len: 8
+  port: 1
+  max_len: 0
+
+DEBUG:input_logger:logging event ControlMessageReceive:i43:('ControlMessageReceive', OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535}, 1, 'c1')
+DEBUG:FuzzSoftwareSwitch(1):Packet out: header: 
+  version: 1
+  type:    13 (OFPT_PACKET_OUT)
+  length:  93
+  xid:     0
+buffer_id: -1
+in_port: 65535
+actions_len: 1
+actions: 
+  type: 0
+  len: 8
+  port: 2
+  max_len: 0
+
+DEBUG:input_logger:logging event ControlMessageReceive:i44:('ControlMessageReceive', OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}, 1, 'c1')
+DEBUG:FuzzSoftwareSwitch(1):Packet out: header: 
+  version: 1
+  type:    13 (OFPT_PACKET_OUT)
+  length:  85
+  xid:     0
+buffer_id: -1
+in_port: 65535
+actions_len: 1
+actions: 
+  type: 0
+  len: 8
+  port: 1
+  max_len: 0
+
+DEBUG:input_logger:logging event ControlMessageReceive:i45:('ControlMessageReceive', OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_out', 'in_port': 65535}, 1, 'c1')
+DEBUG:FuzzSoftwareSwitch(1):Packet out: header: 
+  version: 1
+  type:    13 (OFPT_PACKET_OUT)
+  length:  85
+  xid:     0
+buffer_id: -1
+in_port: 65535
+actions_len: 1
+actions: 
+  type: 0
+  len: 8
+  port: 2
+  max_len: 0
+
+DEBUG:input_logger:logging event ControlMessageSend:i46:('ControlMessageSend', OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:02:02', 'nw_src': '123.123.1.2', 'dl_src': '12:34:56:78:01:02', 'nw_dst': '123.123.2.2'}, 'class': 'ofp_packet_in', 'in_port': 1}, 2, 'c2')
+DEBUG:input_logger:logging event ControlMessageSend:i47:('ControlMessageSend', OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:01:02', 'nw_src': '123.123.2.2', 'dl_src': '12:34:56:78:02:02', 'nw_dst': '123.123.1.2'}, 'class': 'ofp_packet_in', 'in_port': 2}, 2, 'c2')
+[1;36mRound 24 completed.[1;m
+ERROR:io_master:Socket error: Connection reset by peer
+DEBUG:input_logger:logging event DataplanePermit:i48:('DataplanePermit', DPFingerprint{'class': 'lldp'}, 1, 2)
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Recieved packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x2025ed0><pox.lib.packet.lldp.unknown_tlv object at 0x2025d50><pox.lib.packet.lldp.unknown_tlv object at 0x2025950><tlv end> on interface eth1
+DEBUG:input_logger:logging event DataplanePermit:i49:('DataplanePermit', DPFingerprint{'class': 'lldp'}, 1, 1)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(2):Send PacketIn SoftSwitch(2) 
+DEBUG:input_logger:logging event DataplanePermit:i50:('DataplanePermit', DPFingerprint{'dl_type': 35138}, 1, 1)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(2):Send PacketIn SoftSwitch(2) 
+DEBUG:input_logger:logging event DataplanePermit:i51:('DataplanePermit', DPFingerprint{'dl_type': 35138}, 1, 2)
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Recieved packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+DEBUG:input_logger:logging event ControlMessageSend:i52:('ControlMessageSend', OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1}, 2, 'c2')
+DEBUG:input_logger:logging event ControlMessageSend:i53:('ControlMessageSend', OFFingerprint{'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_in', 'in_port': 1}, 2, 'c2')
+[1;36mRound 25 completed.[1;m
+[1;36mRound 26 completed.[1;m
+[1;36mRound 27 completed.[1;m
+[1;36mRound 28 completed.[1;m
+[1;36mRound 29 completed.[1;m
+[1;36mRound 30 completed.[1;m
+[1;36mRound 31 completed.[1;m
+[1;36mRound 32 completed.[1;m
+[1;36mRound 33 completed.[1;m
+[1;36mRound 34 completed.[1;m
+[1;36mRound 35 completed.[1;m
+[1;36mRound 36 completed.[1;m
+[1;36mRound 37 completed.[1;m
+[1;36mRound 38 completed.[1;m
+[1;36mRound 39 completed.[1;m
+[1;36mInjecting a random packet[1;m
+DEBUG:input_logger:logging event TrafficInjection:e54:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:02:[IPAddr('123.123.1.2')] Packet:[12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:9129[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing, None)
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:9129[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+DEBUG:input_logger:logging event CheckInvariants:e55:('CheckInvariants',)
+INFO:Controller:Checking status of controller c1: cd ONOS; ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: cd ONOS; ./start-onos.sh status
+DEBUG:invariant_checker:Checking controller liveness...
+INFO:Controller:Checking status of controller c1: cd ONOS; ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: cd ONOS; ./start-onos.sh status
+INFO:invariant_checker:Problems found while checking controller liveness:
+INFO:invariant_checker:Controller c2 - Alive, but no controller process found!
+[1;41m[1;37mThe following correctness violations have occurred: ['c2'][1;m
+[1;41m[1;37mPersistent violations detected!: ['c2'][1;m
+DEBUG:input_logger:logging event InvariantViolation:e56:('InvariantViolation',)
+INFO:control_flow:Terminating fuzzing after 40 rounds
+INFO:control_flow:Pending Messages:
+DEBUG:input_logger:logging event WaitTime:e57:('WaitTime',)

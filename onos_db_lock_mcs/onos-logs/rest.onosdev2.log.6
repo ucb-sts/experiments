@@ -1,0 +1,12 @@
+ * Running on http://0.0.0.0:9000/
+ * Restarting with reloader
+Traceback (most recent call last):
+  File "/home/mininet/ONOS/web/topology_rest.py", line 1001, in <module>
+    app.run(threaded=True, host="0.0.0.0", port=9000)
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 739, in run
+    run_simple(host, port, self, **options)
+  File "/usr/lib/python2.7/dist-packages/werkzeug/serving.py", line 613, in run_simple
+    test_socket.bind((hostname, port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use
