@@ -1,7 +1,7 @@
 
 from config.experiment_config_lib import ControllerConfig
 from sts.topology import *
-from sts.control_flow import EfficientMCSFinder
+from sts.control_flow.mcs_finder import EfficientMCSFinder
 from sts.invariant_checker import InvariantChecker
 from sts.simulation_state import SimulationConfig
 
@@ -14,8 +14,8 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(start_
 
 control_flow = EfficientMCSFinder(simulation_config, "experiments/pox_null_pointer/events.trace",
                                   wait_on_deterministic_values=False,
-                                  default_dp_permit=True,
-                                  pass_through_whitelisted_messages=True,
+                                  default_dp_permit=False,
+                                  pass_through_whitelisted_messages=False,
                                   delay_flow_mods=False,
                                   invariant_check_name='InvariantChecker.check_liveness',
                                   bug_signature="")

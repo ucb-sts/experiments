@@ -1,299 +1,179 @@
 {
-  "_iteration": 6,
+  "_iteration": 4,
   "_runtime_stats_path": "experiments/pox_null_pointer_mcs/intermcs_4_/runtime_stats.json",
   "ambiguous_counts": {},
   "ambiguous_events": {},
   "buffered_message_receipts": {
-    "2": [
-      "PendingReceive(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=11, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=16, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=12, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=6, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=19, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=15, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=10, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=18, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_hello'})",
-      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_hello'})",
-      "PendingReceive(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_hello'})",
-      "PendingReceive(dpid=9, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=7, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=5, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=20, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=14, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=17, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=8, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=13, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})"
-    ],
-    "3": [
-      "PendingReceive(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=11, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=7, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=16, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=12, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=6, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=19, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=15, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=10, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=18, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=9, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=5, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=20, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=14, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=17, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=8, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=7, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(9)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:00:00:00:03:01:02,dl_dst:00:00:00:03:01:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.3.1.2/32,nw_dst:123.3.1.2/32,tp_src:8,tp_dst:0,in_port:None'})",
-      "PendingReceive(dpid=13, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})"
-    ],
-    "4": [
-      "PendingReceive(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=11, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=16, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=12, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=6, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=19, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=15, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=10, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=18, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=5, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=9, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=7, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=20, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=14, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=17, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=8, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=7, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(9)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:00:00:00:03:01:02,dl_dst:00:00:00:03:01:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.3.1.2/32,nw_dst:123.3.1.2/32,tp_src:8,tp_dst:0,in_port:None'})",
-      "PendingReceive(dpid=13, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})"
-    ],
-    "5": [
-      "PendingReceive(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=11, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=16, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=12, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=6, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=19, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=15, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=10, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=18, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=5, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=9, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=7, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=20, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=14, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=17, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=8, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=13, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})"
-    ],
-    "6": [
-      "PendingReceive(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=11, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=7, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=16, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=12, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=6, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=19, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=15, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=10, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=18, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=9, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=5, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=20, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=14, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=17, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=8, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=7, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 30, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 10, 'command': 'add', 'actions': ('output(9)',), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'dl_src:00:00:00:03:01:02,dl_dst:00:00:00:03:01:02,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.3.1.2/32,nw_dst:123.3.1.2/32,tp_src:8,tp_dst:0,in_port:None'})",
-      "PendingReceive(dpid=13, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})"
-    ],
-    "7": [
-      "PendingReceive(dpid=4, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=11, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=16, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=12, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=6, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=19, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=15, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=10, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=18, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=5, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=9, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=7, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=20, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=14, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=17, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=8, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})",
-      "PendingReceive(dpid=13, controller_id='c1', fingerprint=OFFingerprint{'hard_timeout': 0, 'out_port': 65535, 'priority': 32768, 'idle_timeout': 0, 'command': 'delete', 'actions': (), 'flags': 0, 'class': 'ofp_flow_mod', 'match': 'x^L,in_port:None'})"
-    ]
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": []
   },
   "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./pox.py --verbose openflow.discovery forwarding.l2_multi_null_pointer sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=../sts_socket_pipe', label='c1', address='sts_socket_pipe', cwd='pox')],\n                 topology_class=FatTree,\n                 topology_params=\"\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=True,\n                 kill_controllers_on_exit=True)",
   "early_internal_events": {
     "2": [],
     "3": [],
     "4": [],
-    "5": [],
-    "6": [],
-    "7": []
+    "5": []
   },
   "initial_verification_runs_needed": 0,
   "iteration_size": {
-    "0": 365,
-    "1": 365,
-    "2": 173,
-    "3": 92,
-    "4": 92,
-    "5": 49
+    "0": 62,
+    "1": 38,
+    "2": 21,
+    "3": 12
   },
   "matched_events": {
     "2": {
-      "CheckInvariants": 12,
+      "CheckInvariants": 1,
       "ConnectToControllers": 1,
-      "ControlChannelBlock": 9,
-      "ControlChannelUnblock": 9,
-      "ControlMessageReceive": 254,
-      "ControlMessageSend": 234,
-      "DataplanePermit": 45,
-      "HostMigration": 16,
-      "LinkFailure": 64,
-      "LinkRecovery": 64,
-      "SwitchFailure": 2,
-      "SwitchRecovery": 1,
-      "TrafficInjection": 15
-    },
-    "3": {
-      "CheckInvariants": 12,
-      "ConnectToControllers": 1,
-      "ControlChannelBlock": 17,
-      "ControlChannelUnblock": 15,
-      "ControlMessageReceive": 287,
-      "ControlMessageSend": 175,
-      "DataplanePermit": 45,
-      "HostMigration": 18,
-      "LinkFailure": 47,
-      "LinkRecovery": 39,
-      "SwitchFailure": 3,
-      "SwitchRecovery": 2,
-      "TrafficInjection": 19,
-      "WaitTime": 1
-    },
-    "4": {
-      "CheckInvariants": 5,
-      "ConnectToControllers": 1,
-      "ControlChannelBlock": 9,
-      "ControlChannelUnblock": 8,
-      "ControlMessageReceive": 279,
-      "ControlMessageSend": 128,
-      "DataplanePermit": 45,
-      "HostMigration": 10,
-      "LinkFailure": 23,
-      "LinkRecovery": 23,
-      "SwitchFailure": 2,
-      "SwitchRecovery": 2,
-      "TrafficInjection": 10
-    },
-    "5": {
-      "CheckInvariants": 2,
-      "ConnectToControllers": 1,
-      "ControlChannelBlock": 3,
-      "ControlChannelUnblock": 3,
-      "ControlMessageReceive": 274,
-      "ControlMessageSend": 98,
-      "DataplanePermit": 45,
-      "HostMigration": 7,
-      "LinkFailure": 10,
-      "LinkRecovery": 10,
-      "TrafficInjection": 8
-    },
-    "6": {
-      "CheckInvariants": 3,
-      "ConnectToControllers": 1,
-      "ControlChannelBlock": 6,
-      "ControlChannelUnblock": 5,
-      "ControlMessageReceive": 271,
-      "ControlMessageSend": 99,
-      "DataplanePermit": 45,
-      "HostMigration": 3,
+      "ControlChannelBlock": 2,
+      "ControlChannelUnblock": 2,
+      "ControlMessageReceive": {
+        "ofp_barrier_request": 18,
+        "ofp_features_request": 19,
+        "ofp_flow_mod": 18,
+        "ofp_hello": 20,
+        "ofp_set_config": 18,
+        "total": 93
+      },
+      "ControlMessageSend": {
+        "ofp_barrier_reply": 18,
+        "ofp_features_reply": 19,
+        "ofp_hello": 20,
+        "ofp_packet_in": 3,
+        "ofp_port_status": 31,
+        "total": 91
+      },
+      "DataplanePermit": 3,
+      "HostMigration": 4,
       "LinkFailure": 13,
       "LinkRecovery": 13,
-      "SwitchFailure": 2,
-      "SwitchRecovery": 2,
-      "TrafficInjection": 2
+      "TrafficInjection": 3
     },
-    "7": {
-      "CheckInvariants": 2,
+    "3": {
       "ConnectToControllers": 1,
-      "ControlChannelBlock": 5,
-      "ControlChannelUnblock": 4,
-      "ControlMessageReceive": 270,
-      "ControlMessageSend": 84,
-      "DataplanePermit": 45,
+      "ControlChannelBlock": 2,
+      "ControlChannelUnblock": 2,
+      "ControlMessageReceive": {
+        "ofp_barrier_request": 18,
+        "ofp_features_request": 19,
+        "ofp_flow_mod": 18,
+        "ofp_hello": 20,
+        "ofp_set_config": 18,
+        "total": 93
+      },
+      "ControlMessageSend": {
+        "ofp_barrier_reply": 18,
+        "ofp_features_reply": 19,
+        "ofp_hello": 20,
+        "ofp_packet_in": 1,
+        "ofp_port_status": 17,
+        "total": 75
+      },
+      "DataplanePermit": 1,
+      "HostMigration": 2,
       "LinkFailure": 7,
       "LinkRecovery": 7,
-      "SwitchFailure": 1,
-      "SwitchRecovery": 1
+      "TrafficInjection": 1
+    },
+    "4": {
+      "ConnectToControllers": 1,
+      "ControlChannelBlock": 2,
+      "ControlChannelUnblock": 2,
+      "ControlMessageReceive": {
+        "ofp_barrier_request": 18,
+        "ofp_features_request": 19,
+        "ofp_flow_mod": 18,
+        "ofp_hello": 20,
+        "ofp_set_config": 18,
+        "total": 93
+      },
+      "ControlMessageSend": {
+        "ofp_barrier_reply": 18,
+        "ofp_features_reply": 19,
+        "ofp_hello": 20,
+        "ofp_port_status": 7,
+        "total": 64
+      },
+      "LinkFailure": 4,
+      "LinkRecovery": 4
+    },
+    "5": {
+      "ConnectToControllers": 1,
+      "ControlChannelBlock": 2,
+      "ControlChannelUnblock": 2,
+      "ControlMessageReceive": {
+        "ofp_barrier_request": 18,
+        "ofp_features_request": 19,
+        "ofp_flow_mod": 18,
+        "ofp_hello": 20,
+        "ofp_set_config": 18,
+        "total": 93
+      },
+      "ControlMessageSend": {
+        "ofp_barrier_reply": 18,
+        "ofp_features_reply": 19,
+        "ofp_hello": 20,
+        "ofp_port_status": 2,
+        "total": 59
+      },
+      "LinkFailure": 1,
+      "LinkRecovery": 1
     }
   },
   "new_internal_events": {
     "2": [],
     "3": [],
     "4": [],
-    "5": [],
-    "6": [],
-    "7": []
+    "5": []
   },
-  "original_duration_seconds": 2.6780600547790527,
+  "original_duration_seconds": 0.40200185775756836,
   "peeker": false,
   "prune_duration_seconds": 0,
-  "prune_start_epoch": 1390940215.063912,
-  "replay_duration_seconds": 28.511128187179565,
-  "replay_end_epoch": 1390940215.063563,
-  "replay_start_epoch": 1390940186.552435,
+  "prune_start_epoch": 1398214605.04655,
+  "replay_duration_seconds": 10.429635047912598,
+  "replay_end_epoch": 1398214605.046411,
+  "replay_start_epoch": 1398214594.616776,
   "subsequence_id": 0,
   "timed_out_events": {
     "2": {
-      "ControlMessageReceive": 49,
-      "ControlMessageSend": 122
+      "ControlMessageSend": {
+        "ofp_packet_in": 3,
+        "ofp_port_status": 6,
+        "total": 9
+      },
+      "DataplanePermit": 3
     },
     "3": {
-      "ControlMessageReceive": 16,
-      "ControlMessageSend": 181
+      "ControlMessageSend": {
+        "ofp_packet_in": 5,
+        "ofp_port_status": 20,
+        "total": 25
+      },
+      "DataplanePermit": 5
     },
     "4": {
-      "ControlMessageReceive": 24,
-      "ControlMessageSend": 228
+      "ControlMessageSend": {
+        "ofp_packet_in": 6,
+        "ofp_port_status": 30,
+        "total": 36
+      },
+      "DataplanePermit": 6
     },
     "5": {
-      "ControlMessageReceive": 29,
-      "ControlMessageSend": 258
-    },
-    "6": {
-      "ControlMessageReceive": 32,
-      "ControlMessageSend": 257
-    },
-    "7": {
-      "ControlMessageReceive": 33,
-      "ControlMessageSend": 272
+      "ControlMessageSend": {
+        "ofp_packet_in": 6,
+        "ofp_port_status": 35,
+        "total": 41
+      },
+      "DataplanePermit": 6
     }
   },
-  "total_events": 1071,
-  "total_inputs": 365,
-  "total_inputs_replayed": 941,
-  "total_replays": 7,
+  "total_events": 263,
+  "total_inputs": 62,
+  "total_inputs_replayed": 139,
+  "total_replays": 5,
   "violation_found_in_run": {
     "0": 4
   }

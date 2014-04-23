@@ -1,7 +1,7 @@
 
 from config.experiment_config_lib import ControllerConfig
 from sts.topology import *
-from sts.control_flow import InteractiveReplayer
+from sts.control_flow.interactive_replayer import InteractiveReplayer
 from sts.simulation_state import SimulationConfig
 from sts.input_traces.input_logger import InputLogger
 
