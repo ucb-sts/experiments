@@ -1,0 +1,36 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/trigger_multithreading_bug/mcs_config.py"
+  ],
+  "cwd": "/home/rcs/Research/UCB/code/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5660 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:       6103076    5496244     606832          0     330216    2341876\n-/+ buffers/cache:    2824152    3278924\nSwap:      6283260      10824    6272436",
+    "name": "c5",
+    "num_cores": "12",
+    "uptime": "11:59:23 up 65 days, 19:28,  2 users,  load average: 0.09, 0.04, 0.12"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "debugger",
+      "commit": "ada6cb9e298db776dd8f8b37ed39219063b3eeb9"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "044e1c98dee9480d69c69e5ad82ee6b5fb0bcc02"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 12.04.3 LTS",
+    "uname": "Linux c5 3.2.0-56-generic #86-Ubuntu SMP Wed Oct 23 09:20:45 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_01_29_11_59_23",
+  "user": "rcs"
+}
