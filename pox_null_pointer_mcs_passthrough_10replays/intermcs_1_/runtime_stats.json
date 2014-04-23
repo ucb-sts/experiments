@@ -1,0 +1,69 @@
+{
+  "_iteration": 1,
+  "_runtime_stats_path": "experiments/pox_null_pointer_mcs_passthrough_10replays/intermcs_1_/runtime_stats.json",
+  "ambiguous_counts": {},
+  "ambiguous_events": {},
+  "buffered_message_receipts": {
+    "2": []
+  },
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./pox.py --verbose openflow.discovery forwarding.l2_multi_null_pointer sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=../sts_socket_pipe', label='c1', address='sts_socket_pipe', cwd='pox')],\n                 topology_class=FatTree,\n                 topology_params=\"\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=True,\n                 kill_controllers_on_exit=True)",
+  "early_internal_events": {
+    "2": []
+  },
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 62
+  },
+  "matched_events": {
+    "2": {
+      "CheckInvariants": 1,
+      "ConnectToControllers": 1,
+      "ControlChannelBlock": 2,
+      "ControlChannelUnblock": 2,
+      "DataplanePermit": 3,
+      "HostMigration": 4,
+      "LinkFailure": 13,
+      "LinkRecovery": 13,
+      "TrafficInjection": 3
+    }
+  },
+  "new_internal_events": {
+    "2": []
+  },
+  "original_duration_seconds": 0.40200185775756836,
+  "peeker": false,
+  "prune_duration_seconds": 0,
+  "prune_start_epoch": 1398251019.037926,
+  "replay_duration_seconds": 119.32466411590576,
+  "replay_end_epoch": 1398251019.037774,
+  "replay_start_epoch": 1398250899.71311,
+  "subsequence_id": 0,
+  "timed_out_events": {
+    "2": {
+      "ControlMessageReceive": {
+        "ofp_barrier_request": 18,
+        "ofp_features_request": 19,
+        "ofp_flow_mod": 18,
+        "ofp_hello": 20,
+        "ofp_set_config": 18,
+        "total": 93
+      },
+      "ControlMessageSend": {
+        "ofp_barrier_reply": 18,
+        "ofp_features_reply": 19,
+        "ofp_hello": 20,
+        "ofp_packet_in": 6,
+        "ofp_port_status": 37,
+        "total": 100
+      },
+      "DataplanePermit": 3
+    }
+  },
+  "total_events": 263,
+  "total_inputs": 62,
+  "total_inputs_replayed": 100,
+  "total_replays": 2,
+  "violation_found_in_run": {
+    "0": 1
+  }
+}

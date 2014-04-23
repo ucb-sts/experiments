@@ -1,0 +1,42 @@
+Violation reproduced successfully! Proceeding with pruning
+Subsets:
+l/0: a(e2,[u'e136']) a(e3,[u'e61']) a(e44,[u'e122']) a(e45,[u'e124']) a(e46,[u'e123']) a(e47,[u'e260']) a(e48,[u'e120']) a(e49,[u'e230']) a(e50,[u'e121']) e51 e52 e53 e54 e55 e56 e57 a(e114,[u'e232']) a(e115,[u'e259']) a(e116,[u'e234']) a(e117,[u'e231']) a(e118,[u'e233']) a(e119,[u'e258']) e125
+r/0: e126 e127 e128 e129 e132 e133 e134 a(e135,[u'e240']) a(e228,[u'e257']) e229 e235 e236 e237 e239 e251 e252 e253 e254 e255 e256 e261 e273
+Current subset: l/0: a(e2,[u'e136']) a(e3,[u'e61']) a(e44,[u'e122']) a(e45,[u'e124']) a(e46,[u'e123']) a(e47,[u'e260']) a(e48,[u'e120']) a(e49,[u'e230']) a(e50,[u'e121']) e51 e52 e53 e54 e55 e56 e57 a(e114,[u'e232']) a(e115,[u'e259']) a(e116,[u'e234']) a(e117,[u'e231']) a(e118,[u'e233']) a(e119,[u'e258']) e125
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1: a(e2,[u'e136']) a(e3,[u'e61']) a(e44,[u'e122']) a(e45,[u'e124']) a(e46,[u'e123']) a(e47,[u'e260']) a(e48,[u'e120']) a(e49,[u'e230']) a(e50,[u'e121']) e51 e52 e53
+l/0.r/1: e54 e55 e56 e57 a(e114,[u'e232']) a(e115,[u'e259']) a(e116,[u'e234']) a(e117,[u'e231']) a(e118,[u'e233']) a(e119,[u'e258']) e125
+Current subset: l/0.l/1: a(e2,[u'e136']) a(e3,[u'e61']) a(e44,[u'e122']) a(e45,[u'e124']) a(e46,[u'e123']) a(e47,[u'e260']) a(e48,[u'e120']) a(e49,[u'e230']) a(e50,[u'e121']) e51 e52 e53
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1.l/2: a(e2,[u'e136']) a(e3,[u'e61']) a(e44,[u'e122']) a(e45,[u'e124']) a(e46,[u'e123']) a(e47,[u'e260'])
+l/0.l/1.r/2: a(e48,[u'e120']) a(e49,[u'e230']) a(e50,[u'e121']) e51 e52 e53
+Current subset: l/0.l/1.l/2: a(e2,[u'e136']) a(e3,[u'e61']) a(e44,[u'e122']) a(e45,[u'e124']) a(e46,[u'e123']) a(e47,[u'e260'])
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1.l/2.l/3: a(e2,[u'e136']) a(e3,[u'e61']) a(e44,[u'e122'])
+l/0.l/1.l/2.r/3: a(e45,[u'e124']) a(e46,[u'e123']) a(e47,[u'e260'])
+Current subset: l/0.l/1.l/2.l/3: a(e2,[u'e136']) a(e3,[u'e61']) a(e44,[u'e122'])
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1.l/2.l/3.l/4: a(e2,[u'e136']) a(e3,[u'e61'])
+l/0.l/1.l/2.l/3.r/4: a(e44,[u'e122'])
+Current subset: l/0.l/1.l/2.l/3.l/4: a(e2,[u'e136']) a(e3,[u'e61'])
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+l/0.l/1.l/2.l/3.l/4.l/5: a(e2,[u'e136'])
+l/0.l/1.l/2.l/3.l/4.r/5: a(e3,[u'e61'])
+Current subset: l/0.l/1.l/2.l/3.l/4.l/5: a(e2,[u'e136'])
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [ControlChannelBlock:e2:('ControlChannelBlock', 7, u'c1'), ControlChannelUnblock:e136:('ControlChannelUnblock', 7, u'c1')]
+=== Total replays: 8 ===
+Final MCS (2 elements):
+ - ControlChannelBlock:e2
+ - ControlChannelUnblock:e136

@@ -1,0 +1,38 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/pox_null_pointer_mcs/orig_config.py",
+    "-n",
+    "pox_null_pointer_mcs_passthrough_10replays"
+  ],
+  "cwd": "/home/jefflai2/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5560 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:      12321316    2801080    9520236          0      64992    1580256\n-/+ buffers/cache:    1155832   11165484\nSwap:     12571644     113784   12457860",
+    "name": "c3",
+    "num_cores": "8",
+    "uptime": "04:01:39 up 175 days,  3:43,  4 users,  load average: 0.00, 0.01, 0.05"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "HEAD",
+      "commit": "8d6d995b5fcf93942b958b8c53bdbc018e2f31e3"
+    },
+    "sts": {
+      "branch": "HEAD",
+      "commit": "afb8c98dac0987ac87ab0a6e85820fb7069788f3"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.04",
+    "uname": "Linux c3 2.6.38-8-server #42-Ubuntu SMP Mon Apr 11 03:49:04 UTC 2011 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_04_23_04_01_39",
+  "user": "jefflai2"
+}
