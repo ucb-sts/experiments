@@ -1,0 +1,112 @@
+{
+  "_iteration": 2,
+  "_runtime_stats_path": "experiments/pox_null_pointer_mcs/intermcs_2_/runtime_stats.json",
+  "ambiguous_counts": {},
+  "ambiguous_events": {},
+  "buffered_message_receipts": {
+    "2": [],
+    "3": []
+  },
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./pox.py --verbose openflow.discovery forwarding.l2_multi_null_pointer sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=../sts_socket_pipe', label='c1', address='sts_socket_pipe', cwd='pox')],\n                 topology_class=FatTree,\n                 topology_params=\"\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=True,\n                 kill_controllers_on_exit=True)",
+  "early_internal_events": {
+    "2": [],
+    "3": []
+  },
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 62,
+    "1": 38
+  },
+  "matched_events": {
+    "2": {
+      "CheckInvariants": 1,
+      "ConnectToControllers": 1,
+      "ControlChannelBlock": 2,
+      "ControlChannelUnblock": 2,
+      "ControlMessageReceive": {
+        "ofp_barrier_request": 18,
+        "ofp_features_request": 19,
+        "ofp_flow_mod": 18,
+        "ofp_hello": 20,
+        "ofp_set_config": 18,
+        "total": 93
+      },
+      "ControlMessageSend": {
+        "ofp_barrier_reply": 18,
+        "ofp_features_reply": 19,
+        "ofp_hello": 20,
+        "ofp_packet_in": 3,
+        "ofp_port_status": 31,
+        "total": 91
+      },
+      "DataplanePermit": 3,
+      "HostMigration": 4,
+      "LinkFailure": 13,
+      "LinkRecovery": 13,
+      "TrafficInjection": 3
+    },
+    "3": {
+      "ConnectToControllers": 1,
+      "ControlChannelBlock": 2,
+      "ControlChannelUnblock": 2,
+      "ControlMessageReceive": {
+        "ofp_barrier_request": 18,
+        "ofp_features_request": 19,
+        "ofp_flow_mod": 18,
+        "ofp_hello": 20,
+        "ofp_set_config": 18,
+        "total": 93
+      },
+      "ControlMessageSend": {
+        "ofp_barrier_reply": 18,
+        "ofp_features_reply": 19,
+        "ofp_hello": 20,
+        "ofp_packet_in": 1,
+        "ofp_port_status": 17,
+        "total": 75
+      },
+      "DataplanePermit": 1,
+      "HostMigration": 2,
+      "LinkFailure": 7,
+      "LinkRecovery": 7,
+      "TrafficInjection": 1
+    }
+  },
+  "new_internal_events": {
+    "2": [],
+    "3": []
+  },
+  "original_duration_seconds": 0.40200185775756836,
+  "peeker": false,
+  "prune_duration_seconds": 0,
+  "prune_start_epoch": 1398214605.04655,
+  "replay_duration_seconds": 10.429635047912598,
+  "replay_end_epoch": 1398214605.046411,
+  "replay_start_epoch": 1398214594.616776,
+  "subsequence_id": 0,
+  "timed_out_events": {
+    "2": {
+      "ControlMessageSend": {
+        "ofp_packet_in": 3,
+        "ofp_port_status": 6,
+        "total": 9
+      },
+      "DataplanePermit": 3
+    },
+    "3": {
+      "ControlMessageSend": {
+        "ofp_packet_in": 5,
+        "ofp_port_status": 20,
+        "total": 25
+      },
+      "DataplanePermit": 5
+    }
+  },
+  "total_events": 263,
+  "total_inputs": 62,
+  "total_inputs_replayed": 121,
+  "total_replays": 3,
+  "violation_found_in_run": {
+    "0": 2
+  }
+}

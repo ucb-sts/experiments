@@ -1,0 +1,354 @@
+INFO:Controller: =====> Starting POX Controller <===== 
+[1;36mStarting POX controller c1[1;m
+INFO:Controller:Launching controller c1: ./pox.py --verbose openflow.discovery forwarding.l2_multi_null_pointer sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=../sts_socket_pipe
+INFO:simulation:Launched controller c1: ./pox.py --verbose openflow.discovery forwarding.l2_multi_null_pointer sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=../sts_socket_pipe [PID 10732]
+INFO:simulation:Creating topology...
+connect_socket_with_backoff sts_socket_pipe
+Error connecting.  -- [Errno 111] Connection refused. Backing off 1 seconds ...
+[1;33m[c1] POX 0.0.0 / Copyright 2011 James McCauley[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:POX 0.0.0 going up...[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Running on CPython (2.7.3/Feb 27 2014 19:58:35)[1;m
+
+[1;41m[1;33m[c1] INFO:core:POX 0.0.0 is up.[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening for connections on ../sts_socket_pipe[1;m
+
+connect_socket_with_backoff sts_socket_pipe
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] Incoming true socket connected[1;m
+connect_socket_with_backoff sts_socket_pipe
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] Incoming MockSocket connection[1;m
+
+
+[1;33m[c1] MAX_CONNS -2[1;m
+connect_socket_with_backoff sts_socket_pipe
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+[1;33m[c1] MAX_CONNS -3[1;m
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+
+[1;33m[c1] MAX_CONNS -4[1;m
+
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] MAX_CONNS -5[1;m
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] MAX_CONNS -6[1;m
+
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] MAX_CONNS -7[1;m
+
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] MAX_CONNS -8[1;m
+
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] MAX_CONNS -9[1;m
+
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] MAX_CONNS -10[1;m
+connect_socket_with_backoff sts_socket_pipe
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] MAX_CONNS -11[1;m
+
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] MAX_CONNS -12[1;m
+
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] Incoming MockSocket connection[1;m
+
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] MAX_CONNS -13[1;m
+
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] Incoming MockSocket connection[1;m
+
+
+[1;33m[c1] MAX_CONNS -14[1;m
+
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+INFO:control_flow:Waiting until first OpenFlow message received..
+[1;33m[c1] MAX_CONNS -15[1;m
+[1;36mBlocking connection [Con 7][1;m
+
+[1;36mBlocking connection [Con 8][1;m[1;33m[c1] Incoming MockSocket connection[1;m
+
+
+[1;33m[c1] MAX_CONNS -16[1;m
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+[1;33m[c1] MAX_CONNS -17[1;m
+
+[1;36mCutting link (20:4) -> (16:4)[1;m
+ [1;36mCutting link (5:4) -> (14:1)[1;m[1;33m[c1] Incoming MockSocket connection[1;m
+
+
+[1;36mCutting link (6:3) -> (13:2)[1;m[1;33m[c1] MAX_CONNS -18[1;m
+
+[1;36mCutting link (9:3) -> (17:1)[1;m
+
+[1;36mCutting link (17:3) -> (13:3)[1;m[1;33m[c1] Incoming MockSocket connection[1;m
+
+[1;36mCutting link (14:3) -> (19:3)[1;m
+
+[1;36mCutting link (18:4) -> (15:4)[1;m[1;33m[c1] MAX_CONNS -19[1;m
+
+[1;36mMigrating host host:[IPAddr('123.1.0.1')] (5), New switch 6, New port 5[1;m
+
+INFO:host:[IPAddr('123.1.0.1')]:sending packet on interface eth3: [00:00:00:01:00:01>00:00:00:01:00:01:IP]|([v:4hl:5l:72t:64]ICMP cs:7516[123.1.0.1>123.1.0.1]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;33m[c1] Incoming MockSocket connection[1;m
+[1;36mMigrating host host:[IPAddr('123.0.1.1')] (3), New switch 6, New port 6[1;m
+
+INFO:host:[IPAddr('123.0.1.1')]:sending packet on interface eth2: [00:00:00:00:01:01>00:00:00:00:01:01:IP]|([v:4hl:5l:72t:64]ICMP cs:7317[123.0.1.1>123.0.1.1]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;33m[c1] MAX_CONNS -20[1;m
+[1;36mMigrating host host:[IPAddr('123.0.0.2')] (2), New switch 8, New port 5[1;m
+
+INFO:host:[IPAddr('123.0.0.2')]:sending packet on interface eth1: [00:00:00:00:00:02>00:00:00:00:00:02:IP]|([v:4hl:5l:72t:64]ICMP cs:7514[123.0.0.2>123.0.0.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;33m[c1] Incoming MockSocket connection[1;m
+[1;42m[1;37mNo correctness violations![1;m
+
+[1;36mRound 1 completed.[1;m
+ [1;33m[c1] MAX_CONNS -21[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mUnblocking connection [Con 8][1;m
+WARNING:ControllerConnection(id=9):In state FEATURE_REPLY -- supressing unexpected message: ofp_port_status
+  header: 
+    version: 1
+    type:    12 (OFPT_PORT_STATUS)
+    length:  64
+    xid:     47
+  reason: 2
+  desc:
+WARNING:ControllerConnection(id=20):In state FEATURE_REPLY -- supressing unexpected message: ofp_port_status
+  header: 
+    version: 1
+    type:    12 (OFPT_PORT_STATUS)
+    length:  64
+    xid:     41
+  reason: 2
+  desc:
+WARNING:ControllerConnection(id=1):In state FEATURE_REPLY -- supressing unexpected message: ofp_port_status
+  header: 
+    version: 1
+    type:    12 (OFPT_PORT_STATUS)
+    length:  64
+    xid:     63
+  reason: 2
+  desc:
+WARNING:ControllerConnection(id=18):In state FEATURE_REPLY -- supressing unexpected message: ofp_port_status
+  header: 
+    version: 1
+    type:    12 (OFPT_PORT_STATUS)
+    length:  64
+    xid:     53
+  reason: 2
+  desc:
+WARNING:ControllerConnection(id=14):In state FEATURE_REPLY -- supressing unexpected message: ofp_port_status
+  header: 
+    version: 1
+    type:    12 (OFPT_PORT_STATUS)
+    length:  64
+    xid:     51
+  reason: 2
+  desc:
+WARNING:ControllerConnection(id=5):In state FEATURE_REPLY -- supressing unexpected message: ofp_port_status
+  header: 
+    version: 1
+    type:    12 (OFPT_PORT_STATUS)
+    length:  64
+    xid:     43
+  reason: 2
+  desc:
+WARNING:ControllerConnection(id=17):In state FEATURE_REPLY -- supressing unexpected message: ofp_port_status
+  header: 
+    version: 1
+    type:    12 (OFPT_PORT_STATUS)
+    length:  64
+    xid:     49
+  reason: 2
+  desc:
+WARNING:ControllerConnection(id=3):In state FEATURE_REPLY -- supressing unexpected message: ofp_port_status
+  header: 
+    version: 1
+    type:    12 (OFPT_PORT_STATUS)
+    length:  64
+    xid:     55
+  reason: 2
+  desc:
+WARNING:ControllerConnection(id=6):In state FEATURE_REPLY -- supressing unexpected message: ofp_port_status
+  header: 
+    version: 1
+    type:    12 (OFPT_PORT_STATUS)
+    length:  64
+    xid:     45
+  reason: 2
+  desc:
+WARNING:ControllerConnection(id=6):In state FEATURE_REPLY -- supressing unexpected message: ofp_port_status
+  header: 
+    version: 1
+    type:    12 (OFPT_PORT_STATUS)
+    length:  64
+    xid:     57
+  reason: 2
+  desc:
+WARNING:ControllerConnection(id=6):In state FEATURE_REPLY -- supressing unexpected message: ofp_port_status
+  header: 
+    version: 1
+    type:    12 (OFPT_PORT_STATUS)
+    length:  64
+    xid:     61
+  reason: 2
+  desc:
+WARNING:ControllerConnection(id=6):In state FEATURE_REPLY -- supressing unexpected message: ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     1
+  buffer_id: 1
+  _total_len: 104
+  in_port: 5
+  reason: 0
+  data: '\x00\x00\x00\x01\x00\x01\x00\x00\x00\x01\x00\x01\x08\x00E\x00\x00H\x0f\x9b\x00\x00@\x01u\x16{\x01\x00\x01{\x01\x00\x01\x08\x00\x067PingPingPingPingPingPingPingPingPingPingPingPing'
+WARNING:ControllerConnection(id=6):In state FEATURE_REPLY -- supressing unexpected message: ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     2
+  buffer_id: 2
+  _total_len: 104
+  in_port: 6
+  reason: 0
+  data: '\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x01\x01\x08\x00E\x00\x00H\x0f\x9c\x00\x00@\x01s\x17{\x00\x01\x01{\x00\x01\x01\x00\x00\x0e7PingPingPingPingPingPingPingPingPingPingPingPing'
+WARNING:ControllerConnection(id=8):In state FEATURE_REPLY -- supressing unexpected message: ofp_port_status
+  header: 
+    version: 1
+    type:    12 (OFPT_PORT_STATUS)
+    length:  64
+    xid:     65
+  reason: 2
+  desc:
+WARNING:ControllerConnection(id=8):In state FEATURE_REPLY -- supressing unexpected message: ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     1
+  buffer_id: 1
+  _total_len: 104
+  in_port: 5
+  reason: 0
+  data: '\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x08\x00E\x00\x00H\x0f\x9d\x00\x00@\x01u\x14{\x00\x00\x02{\x00\x00\x02\x08\x00\x067PingPingPingPingPingPingPingPingPingPingPingPing'
+WARNING:ControllerConnection(id=2):In state FEATURE_REPLY -- supressing unexpected message: ofp_port_status
+  header: 
+    version: 1
+    type:    12 (OFPT_PORT_STATUS)
+    length:  64
+    xid:     59
+  reason: 2
+  desc:
+[1;36mCutting link (10:2) -> (2:4)[1;m
+[1;36mCutting link (13:1) -> (5:3)[1;m
+[1;36mCutting link (15:2) -> (8:3)[1;m
+[1;36mCutting link (16:1) -> (7:4)[1;m
+[1;36mCutting link (15:1) -> (7:3)[1;m
+[1;36mCutting link (18:3) -> (13:4)[1;m
+[1;36mRestoring link (17:3) -> (13:3)[1;m
+[1;36mRestoring link (18:4) -> (15:4)[1;m
+[1;36mRestoring link (20:4) -> (16:4)[1;m
+[1;36mRestoring link (6:3) -> (13:2)[1;m
+[1;36mRestoring link (5:4) -> (14:1)[1;m
+[1;36mMigrating host host:[IPAddr('123.3.1.1')] (15), New switch 1, New port 5[1;m
+INFO:host:[IPAddr('123.3.1.1')]:sending packet on interface eth8: [00:00:00:03:01:01>00:00:00:03:01:01:IP]|([v:4hl:5l:72t:64]ICMP cs:730c[123.3.1.1>123.3.1.1]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mMigrating host host:[IPAddr('123.2.1.1')] (11), New switch 5, New port 5[1;m
+INFO:host:[IPAddr('123.2.1.1')]:sending packet on interface eth6: [00:00:00:02:01:01>00:00:00:02:01:01:IP]|([v:4hl:5l:72t:64]ICMP cs:730d[123.2.1.1>123.2.1.1]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 2 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 3][1;m
+[1;36mBlocking connection [Con 8][1;m
+[1;36mBlocking connection [Con 14][1;m
+[1;36mBlocking connection [Con 17][1;m
+[1;36mUnblocking connection [Con 7][1;m
+WARNING:ControllerConnection(id=8):In state FEATURE_REPLY -- supressing unexpected message: ofp_port_status
+  header: 
+    version: 1
+    type:    12 (OFPT_PORT_STATUS)
+    length:  64
+    xid:     89
+  reason: 2
+  desc:
+[1;36mCutting link (5:3) -> (13:1)[1;m
+[1;36mCutting link (6:3) -> (13:2)[1;m
+[1;36mRestoring link (14:3) -> (19:3)[1;m
+[1;36mRestoring link (16:1) -> (7:4)[1;m
+[1;36mRestoring link (10:2) -> (2:4)[1;m
+[1;36mRestoring link (15:1) -> (7:3)[1;m
+[1;36mRestoring link (15:2) -> (8:3)[1;m
+[1;36mMigrating host host:[IPAddr('123.1.1.1')] (7), New switch 6, New port 7[1;m
+INFO:host:[IPAddr('123.1.1.1')]:sending packet on interface eth4: [00:00:00:01:01:01>00:00:00:01:01:01:IP]|([v:4hl:5l:72t:64]ICMP cs:730c[123.1.1.1>123.1.1.1]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 3 completed.[1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 20/20] Connected to 00-00-00-00-00-14[1;m
+
+[1;33m[c1] YOU FOUND THE NULL POINTER. 10 POINTS TO HUFFLEPUFF[1;m
+
+Socket read error: Connection reset by peer
+[1;36mForwarding dataplane event[1;m
+[1;36mBlocking connection [Con 13][1;m
+[1;36mUnblocking connection [Con 17][1;m
+[1;36mCutting link (10:3) -> (19:1)[1;m
+[1;36mCutting link (17:1) -> (9:3)[1;m
+[1;36mCutting link (9:4) -> (18:1)[1;m
+[1;36mCutting link (15:4) -> (18:4)[1;m
+[1;36mCutting link (12:1) -> (3:4)[1;m
+[1;36mCutting link (11:1) -> (3:3)[1;m
+[1;36mRestoring link (5:3) -> (13:1)[1;m
+[1;36mRestoring link (18:3) -> (13:4)[1;m
+[1;36mRestoring link (13:1) -> (5:3)[1;m
+[1;36mRestoring link (9:3) -> (17:1)[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['c1'][1;m
+[1;41m[1;37mPersistent violations detected!: ['c1'][1;m
+INFO:control_flow:Terminating fuzzing after 4 rounds
+INFO:control_flow:Pending Receives:
+INFO:control_flow:Pending Sends:
+INFO:control_flow:- PendingSend(dpid=9, controller_id='c1', fingerprint=OFFingerprint{'reason': 2, 'class': 'ofp_port_status', 'desc': (4, '00:00:00:00:09:04')})
+INFO:control_flow:- PendingSend(dpid=9, controller_id='c1', fingerprint=OFFingerprint{'reason': 2, 'class': 'ofp_port_status', 'desc': (3, '00:00:00:00:09:03')})
+INFO:control_flow:- PendingSend(dpid=12, controller_id='c1', fingerprint=OFFingerprint{'reason': 2, 'class': 'ofp_port_status', 'desc': (1, '00:00:00:00:0c:01')})
+INFO:control_flow:- PendingSend(dpid=13, controller_id='c1', fingerprint=OFFingerprint{'reason': 2, 'class': 'ofp_port_status', 'desc': (1, '00:00:00:00:0d:01')})
+INFO:control_flow:- PendingSend(dpid=18, controller_id='c1', fingerprint=OFFingerprint{'reason': 2, 'class': 'ofp_port_status', 'desc': (3, '00:00:00:00:12:03')})
+INFO:control_flow:- PendingSend(dpid=11, controller_id='c1', fingerprint=OFFingerprint{'reason': 2, 'class': 'ofp_port_status', 'desc': (1, '00:00:00:00:0b:01')})
+INFO:control_flow:- PendingSend(dpid=5, controller_id='c1', fingerprint=OFFingerprint{'reason': 2, 'class': 'ofp_port_status', 'desc': (3, '00:00:00:00:05:03')})
+INFO:control_flow:- PendingSend(dpid=10, controller_id='c1', fingerprint=OFFingerprint{'reason': 2, 'class': 'ofp_port_status', 'desc': (3, '00:00:00:00:0a:03')})
+INFO:control_flow:- PendingSend(dpid=17, controller_id='c1', fingerprint=OFFingerprint{'reason': 2, 'class': 'ofp_port_status', 'desc': (1, '00:00:00:00:11:01')})
+INFO:control_flow:- PendingSend(dpid=15, controller_id='c1', fingerprint=OFFingerprint{'reason': 2, 'class': 'ofp_port_status', 'desc': (4, '00:00:00:00:0f:04')})
