@@ -23,6 +23,14 @@
     "sts": {
       "branch": "master",
       "commit": "b2d0f767d2dc0d59529dc185b6b3b5853401733e"
+    },
+    "nox": {
+      "branch": "destiny",
+      "commit": "aee2a3fb696a497a87a30cfc3285d142a464cbc0"
+    },
+    "hassel": {
+      "branch": "master",
+      "commit": "2b22412f5569c52e72e214732663a8a4fa7aba25"
     }
   },
   "sys": {
