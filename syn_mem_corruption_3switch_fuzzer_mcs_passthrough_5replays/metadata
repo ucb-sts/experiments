@@ -1,0 +1,38 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/syn_mem_corruption_3switch_fuzzer_mcs/orig_config.py",
+    "-n",
+    "syn_mem_corruption_3switch_fuzzer_mcs_passthrough_5replays"
+  ],
+  "cwd": "/home/jefflai2/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5560 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:      12321316    4898808    7422508          0      70216    3657280\n-/+ buffers/cache:    1171312   11150004\nSwap:     12571644     113520   12458124",
+    "name": "c3",
+    "num_cores": "8",
+    "uptime": "21:17:03 up 175 days, 20:59,  4 users,  load average: 0.02, 0.02, 0.05"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "HEAD",
+      "commit": "937d3192217e4ad91aa7b3a2d494bd104f32b687"
+    },
+    "sts": {
+      "branch": "HEAD",
+      "commit": "d22241e799f0bd4598458e7c5a2f3de36f6b787b"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.04",
+    "uname": "Linux c3 2.6.38-8-server #42-Ubuntu SMP Mon Apr 11 03:49:04 UTC 2011 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_04_23_21_17_03",
+  "user": "jefflai2"
+}

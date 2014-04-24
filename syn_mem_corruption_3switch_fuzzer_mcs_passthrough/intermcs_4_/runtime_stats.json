@@ -1,0 +1,36 @@
+{
+  "_iteration": 6,
+  "_runtime_stats_path": "experiments/syn_mem_corruption_3switch_fuzzer_mcs_passthrough/intermcs_4_/runtime_stats.json",
+  "ambiguous_counts": {},
+  "ambiguous_events": {},
+  "buffered_message_receipts": {},
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./pox.py --verbose openflow.of_01 --address=__address__ --port=__port__ openflow.discovery forwarding.l2_multi_syn_mem_corruption', label='c1', address='127.0.0.1', cwd='pox')],\n                 topology_class=MeshTopology,\n                 topology_params=\"num_switches=4\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=False,\n                 kill_controllers_on_exit=True)",
+  "early_internal_events": {},
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 341,
+    "1": 171,
+    "2": 171,
+    "3": 85,
+    "4": 43,
+    "5": 43
+  },
+  "matched_events": {},
+  "new_internal_events": {},
+  "original_duration_seconds": 31.69321084022522,
+  "peeker": false,
+  "prune_duration_seconds": 0,
+  "prune_start_epoch": 1398308540.730487,
+  "replay_duration_seconds": 226.01106214523315,
+  "replay_end_epoch": 1398308540.730334,
+  "replay_start_epoch": 1398308314.719272,
+  "subsequence_id": 0,
+  "timed_out_events": {},
+  "total_events": 749,
+  "total_inputs": 341,
+  "total_inputs_replayed": 769,
+  "total_replays": 7,
+  "violation_found_in_run": {
+    "0": 4
+  }
+}

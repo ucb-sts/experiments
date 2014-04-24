@@ -1,0 +1,1749 @@
+No DataplaneDrops to replay. We suggest you set Replayer's default_dp_permit=True 
+[1;36mStarting POX controller c1[1;m
+[1;33m[c1] POX 0.0.0 / Copyright 2011 James McCauley[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:POX 0.0.0 going up...[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Running on CPython (2.7.4/Apr 8 2013 22:49:24)[1;m
+
+[1;41m[1;33m[c1] INFO:core:POX 0.0.0 is up.[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening for connections on ('127.0.0.1', 6633)[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] MAX_CONNS -2[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)[1;33m[c1] MAX_CONNS -3[1;m
+
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] MAX_CONNS -4[1;m
+[1;36m[1;44m00:00.503 00:00.000 Successfully matched event ConnectToControllers:e1[1;m
+
+[1;33m[c1] MAX_CONNS -5[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 1/1] Connected to 00-00-00-00-00-01[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_syn_mem_corruption:Connect [Con 1/1][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-01[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 3/3] Connected to 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_syn_mem_corruption:Connect [Con 3/3][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 4/4] Connected to 00-00-00-00-00-04[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_syn_mem_corruption:Connect [Con 4/4][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-04[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 2/2] Connected to 00-00-00-00-00-02[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_syn_mem_corruption:Connect [Con 2/2][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-02[1;m
+
+[1;35m[1;41m00:02.012 00:01.007 Event timed out ControlMessageReceive:i2 c c1 -> s 1 [ofp_hello: ][1;m
+[1;36m[1;36mRound 1[1;37m[1;m
+[1;35m[1;41m00:02.638 00:01.008 Event timed out ControlMessageReceive:i3 c c1 -> s 4 [ofp_hello: ][1;m
+[1;35m[1;41m00:03.264 00:01.008 Event timed out ControlMessageReceive:i4 c c1 -> s 3 [ofp_hello: ][1;m
+[1;35m[1;41m00:03.890 00:01.008 Event timed out ControlMessageReceive:i5 c c1 -> s 2 [ofp_hello: ][1;m
+[1;35m[1;41m00:04.516 00:01.009 Event timed out ControlMessageSend:i6 c 1 -> s c1 [ofp_hello: ][1;m
+[1;35m[1;41m00:05.142 00:01.009 Event timed out ControlMessageSend:i7 c 4 -> s c1 [ofp_hello: ][1;m
+[1;35m[1;41m00:05.767 00:01.009 Event timed out ControlMessageSend:i8 c 3 -> s c1 [ofp_hello: ][1;m
+[1;35m[1;41m00:06.394 00:01.010 Event timed out ControlMessageSend:i9 c 2 -> s c1 [ofp_hello: ][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:06.394 00:01.010 Successfully matched event CheckInvariants:e10[1;m
+[1;35m[1;41m00:07.020 00:01.111 Event timed out ControlMessageReceive:i11 c c1 -> s 1 [ofp_features_request: ][1;m
+[1;36m[1;36mRound 2[1;37m[1;m
+[1;35m[1;41m00:07.645 00:01.112 Event timed out ControlMessageReceive:i12 c c1 -> s 4 [ofp_features_request: ][1;m
+[1;35m[1;41m00:08.271 00:01.113 Event timed out ControlMessageReceive:i13 c c1 -> s 3 [ofp_features_request: ][1;m
+[1;35m[1;41m00:08.897 00:01.114 Event timed out ControlMessageReceive:i14 c c1 -> s 2 [ofp_features_request: ][1;m
+[1;35m[1;41m00:09.523 00:01.115 Event timed out ControlMessageSend:i15 c 1 -> s c1 [ofp_features_reply: datapath_id=1][1;m
+[1;35m[1;41m00:10.149 00:01.116 Event timed out ControlMessageSend:i16 c 4 -> s c1 [ofp_features_reply: datapath_id=4][1;m
+[1;35m[1;41m00:10.775 00:01.117 Event timed out ControlMessageSend:i17 c 3 -> s c1 [ofp_features_reply: datapath_id=3][1;m
+[1;35m[1;41m00:11.401 00:01.117 Event timed out ControlMessageSend:i18 c 2 -> s c1 [ofp_features_reply: datapath_id=2][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:11.402 00:01.118 Successfully matched event CheckInvariants:e19[1;m
+[1;35m[1;41m00:12.027 00:01.219 Event timed out ControlMessageReceive:i20 c c1 -> s 1 [ofp_set_config: ][1;m
+[1;36m[1;36mRound 3[1;37m[1;m
+[1;35m[1;41m00:12.656 00:01.219 Event timed out ControlMessageReceive:i21 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:13.279 00:01.221 Event timed out ControlMessageReceive:i22 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:13.905 00:01.222 Event timed out ControlMessageReceive:i23 c c1 -> s 4 [ofp_set_config: ][1;m
+[1;35m[1;41m00:14.531 00:01.223 Event timed out ControlMessageReceive:i24 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:15.157 00:01.224 Event timed out ControlMessageReceive:i25 c c1 -> s 4 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:15.782 00:01.225 Event timed out ControlMessageReceive:i26 c c1 -> s 3 [ofp_set_config: ][1;m
+[1;35m[1;41m00:16.408 00:01.226 Event timed out ControlMessageReceive:i27 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:17.034 00:01.227 Event timed out ControlMessageReceive:i28 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:17.660 00:01.228 Event timed out ControlMessageReceive:i29 c c1 -> s 2 [ofp_set_config: ][1;m
+[1;35m[1;41m00:18.286 00:01.229 Event timed out ControlMessageReceive:i30 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:18.912 00:01.230 Event timed out ControlMessageReceive:i31 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:19.538 00:01.231 Event timed out ControlMessageSend:i32 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m00:20.164 00:01.232 Event timed out ControlMessageSend:i33 c 4 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m00:20.790 00:01.232 Event timed out ControlMessageSend:i34 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m00:21.416 00:01.233 Event timed out ControlMessageSend:i35 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:21.416 00:01.233 Successfully matched event CheckInvariants:e36[1;m
+[1;35m[1;41m00:22.042 00:01.334 Event timed out ControlMessageReceive:i37 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;36mRound 4[1;37m[1;m
+[1;35m[1;41m00:22.668 00:01.335 Event timed out ControlMessageReceive:i38 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:23.294 00:01.337 Event timed out ControlMessageReceive:i39 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:23.920 00:01.338 Event timed out ControlMessageReceive:i40 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:23.921 00:01.339 Successfully matched event CheckInvariants:e41[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:24.022 00:01.440 Successfully matched event CheckInvariants:e42[1;m
+[1;36m[1;36mRound 5[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:24.123 00:01.541 Successfully matched event CheckInvariants:e43[1;m
+[1;36m[1;36mRound 6[1;37m[1;m
+[1;35m[1;41m00:24.859 00:01.642 Event timed out ControlMessageReceive:i44 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 7[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:24.860 00:01.643 Successfully matched event CheckInvariants:e45[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:24.861 00:01.744 Successfully matched event DataplanePermit:i46[1;m
+[1;36m[1;36mRound 8[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
+
+[1;35m[1;41m00:25.484 00:01.746 Event timed out ControlMessageSend:i47 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36mCutting link (3:2) -> (2:2)[1;m
+[1;36m[1;44m00:25.485 00:01.747 Successfully matched event LinkFailure:e48[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:25.486 00:01.747 Successfully matched event CheckInvariants:e49[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m00:26.110 00:01.848 Event timed out ControlMessageReceive:i50 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 9[1;37m[1;m
+[1;35m[1;41m00:26.736 00:01.850 Event timed out ControlMessageReceive:i51 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:27.362 00:01.851 Event timed out ControlMessageReceive:i52 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;35m[1;41m00:27.988 00:01.852 Event timed out ControlMessageReceive:i53 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:28.614 00:01.853 Event timed out ControlMessageReceive:i54 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:29.240 00:01.854 Event timed out ControlMessageSend:i55 c 3 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:03:02')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:29.241 00:01.855 Successfully matched event CheckInvariants:e56[1;m
+[1;35m[1;41m00:29.866 00:01.956 Event timed out ControlMessageReceive:i57 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 10[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:29.867 00:01.958 Successfully matched event CheckInvariants:e58[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:29.968 00:02.059 Successfully matched event CheckInvariants:e59[1;m
+[1;36m[1;36mRound 11[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:30.070 00:02.159 Successfully matched event CheckInvariants:e60[1;m
+[1;36m[1;36mRound 12[1;37m[1;m
+[1;35m[1;41m00:30.805 00:02.260 Event timed out ControlMessageReceive:i61 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 13[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:30.805 00:02.262 Successfully matched event CheckInvariants:e62[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:30.806 00:02.362 Successfully matched event DataplanePermit:i63[1;m
+[1;36m[1;36mRound 14[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.3 -> 00-00-00-00-00-01.2[1;m
+
+[1;35m[1;41m00:31.430 00:02.364 Event timed out ControlMessageSend:i64 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:31.431 00:02.365 Successfully matched event CheckInvariants:e65[1;m
+[1;35m[1;41m00:32.056 00:02.465 Event timed out ControlMessageReceive:i66 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 15[1;37m[1;m
+[1;35m[1;41m00:32.683 00:02.467 Event timed out ControlMessageReceive:i67 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;35m[1;41m00:33.308 00:02.467 Event timed out ControlMessageReceive:i68 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:33.934 00:02.469 Event timed out ControlMessageReceive:i69 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:34.560 00:02.470 Event timed out ControlMessageReceive:i70 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:34.561 00:02.471 Successfully matched event CheckInvariants:e71[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
+
+[1;35m[1;41m00:35.163 00:02.572 Event timed out ControlMessageReceive:i72 c c1 -> s 3 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 16[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:35.163 00:02.573 Successfully matched event CheckInvariants:e73[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:35.164 00:02.674 Successfully matched event DataplanePermit:i74[1;m
+[1;36m[1;36mRound 17[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:35.164 00:02.675 Successfully matched event CheckInvariants:e75[1;m
+[1;36mCutting link (4:1) -> (3:1)[1;m
+[1;36m[1;44m00:35.266 00:02.776 Successfully matched event LinkFailure:e76[1;m
+[1;36m[1;36mRound 18[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:35.266 00:02.777 Successfully matched event CheckInvariants:e77[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m00:35.925 00:02.877 Event timed out ControlMessageReceive:i78 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 19[1;37m[1;m
+[1;35m[1;41m00:36.438 00:02.879 Event timed out ControlMessageSend:i79 c 4 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:04:01')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:36.439 00:02.880 Successfully matched event CheckInvariants:e80[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:36.440 00:02.980 Successfully matched event DataplanePermit:i81[1;m
+[1;36m[1;36mRound 20[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-04.3[1;m
+
+[1;35m[1;41m00:37.064 00:02.982 Event timed out ControlMessageSend:i82 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:37.064 00:02.983 Successfully matched event CheckInvariants:e83[1;m
+[1;35m[1;41m00:37.690 00:03.084 Event timed out ControlMessageReceive:i84 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 21[1;37m[1;m
+[1;35m[1;41m00:38.316 00:03.085 Event timed out ControlMessageReceive:i85 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:38.942 00:03.086 Event timed out ControlMessageReceive:i86 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;35m[1;41m00:39.568 00:03.087 Event timed out ControlMessageReceive:i87 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:40.194 00:03.088 Event timed out ControlMessageReceive:i88 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:40.195 00:03.089 Successfully matched event CheckInvariants:e89[1;m
+[1;35m[1;41m00:40.820 00:03.190 Event timed out ControlMessageReceive:i90 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 22[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:40.820 00:03.193 Successfully matched event CheckInvariants:e91[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:40.821 00:03.293 Successfully matched event DataplanePermit:i92[1;m
+[1;36m[1;36mRound 23[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m00:41.445 00:03.295 Event timed out ControlMessageSend:i93 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:41.446 00:03.296 Successfully matched event CheckInvariants:e94[1;m
+[1;35m[1;41m00:42.071 00:03.397 Event timed out ControlMessageReceive:i95 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 24[1;37m[1;m
+[1;35m[1;41m00:42.698 00:03.398 Event timed out ControlMessageReceive:i96 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:43.323 00:03.399 Event timed out ControlMessageReceive:i97 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:43.949 00:03.400 Event timed out ControlMessageReceive:i98 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;35m[1;41m00:44.575 00:03.401 Event timed out ControlMessageReceive:i99 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:44.576 00:03.402 Successfully matched event CheckInvariants:e100[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.3 -> 00-00-00-00-00-01.2[1;m
+
+[1;35m[1;41m00:45.314 00:03.503 Event timed out ControlMessageReceive:i101 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 25[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:45.315 00:03.505 Successfully matched event CheckInvariants:e102[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:45.315 00:03.605 Successfully matched event DataplanePermit:i103[1;m
+[1;36m[1;36mRound 26[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.3 -> 00-00-00-00-00-02.3[1;m
+
+[1;35m[1;41m00:45.827 00:03.607 Event timed out ControlMessageSend:i104 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:45.828 00:03.608 Successfully matched event CheckInvariants:e105[1;m
+[1;35m[1;41m00:46.453 00:03.709 Event timed out ControlMessageReceive:i106 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 27[1;37m[1;m
+[1;35m[1;41m00:47.079 00:03.710 Event timed out ControlMessageReceive:i107 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:47.705 00:03.711 Event timed out ControlMessageReceive:i108 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:48.331 00:03.712 Event timed out ControlMessageReceive:i109 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:48.957 00:03.713 Event timed out ControlMessageReceive:i110 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:48.958 00:03.714 Successfully matched event CheckInvariants:e111[1;m
+[1;35m[1;41m00:49.583 00:03.815 Event timed out ControlMessageReceive:i112 c c1 -> s 1 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 28[1;37m[1;m
+[1;36mCutting link (1:2) -> (3:3)[1;m
+[1;36m[1;44m00:49.584 00:03.816 Successfully matched event LinkFailure:e113[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:49.584 00:03.817 Successfully matched event CheckInvariants:e114[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:49.585 00:03.918 Successfully matched event DataplanePermit:i115[1;m
+[1;36m[1;36mRound 29[1;37m[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.1 -> 00-00-00-00-00-04.3[1;m
+
+[1;35m[1;41m00:50.164 00:03.919 Event timed out ControlMessageSend:i116 c 1 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:01:02')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:50.164 00:03.920 Successfully matched event CheckInvariants:e117[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:50.266 00:04.021 Successfully matched event CheckInvariants:e118[1;m
+[1;36m[1;36mRound 30[1;37m[1;m
+[1;35m[1;41m00:50.948 00:04.121 Event timed out ControlMessageReceive:i119 c c1 -> s 4 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 31[1;37m[1;m
+[1;36mRestoring link (4:1) -> (3:1)[1;m
+[1;36m[1;44m00:50.948 00:04.123 Successfully matched event LinkRecovery:e120[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:50.949 00:04.124 Successfully matched event CheckInvariants:e121[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:50.950 00:04.225 Successfully matched event DataplanePermit:i122[1;m
+[1;36m[1;36mRound 32[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m00:51.461 00:04.226 Event timed out ControlMessageSend:i123 c 4 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:04:01')][1;m
+[1;35m[1;41m00:52.087 00:04.227 Event timed out ControlMessageSend:i124 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36mCutting link (3:1) -> (4:1)[1;m
+[1;36m[1;44m00:52.088 00:04.227 Successfully matched event LinkFailure:e125[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:52.088 00:04.228 Successfully matched event CheckInvariants:e126[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m00:52.713 00:04.329 Event timed out ControlMessageReceive:i127 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 33[1;37m[1;m
+[1;35m[1;41m00:53.338 00:04.330 Event timed out ControlMessageReceive:i128 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:53.964 00:04.332 Event timed out ControlMessageReceive:i129 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:54.590 00:04.333 Event timed out ControlMessageReceive:i130 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m00:55.164 00:04.334 Event timed out ControlMessageReceive:i131 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:55.842 00:04.335 Event timed out ControlMessageSend:i132 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:55.843 00:04.336 Successfully matched event CheckInvariants:e133[1;m
+[1;35m[1;41m00:56.468 00:04.436 Event timed out ControlMessageReceive:i134 c c1 -> s 4 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 34[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:56.469 00:04.438 Successfully matched event CheckInvariants:e135[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:56.470 00:04.539 Successfully matched event DataplanePermit:i136[1;m
+[1;36m[1;36mRound 35[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.2 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m00:57.094 00:04.540 Event timed out ControlMessageSend:i137 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:57.095 00:04.541 Successfully matched event CheckInvariants:e138[1;m
+[1;35m[1;41m00:57.720 00:04.642 Event timed out ControlMessageReceive:i139 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 36[1;37m[1;m
+[1;35m[1;41m00:58.347 00:04.643 Event timed out ControlMessageReceive:i140 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:58.972 00:04.644 Event timed out ControlMessageReceive:i141 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:59.598 00:04.645 Event timed out ControlMessageReceive:i142 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.3 -> 00-00-00-00-00-02.3[1;m
+
+[1;35m[1;41m01:00.164 00:04.647 Event timed out ControlMessageReceive:i143 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36mCutting link (3:3) -> (1:2)[1;m
+[1;36m[1;44m01:00.165 00:04.647 Successfully matched event LinkFailure:e144[1;m
+[1;36mRestoring link (1:2) -> (3:3)[1;m
+[1;36m[1;44m01:00.166 00:04.648 Successfully matched event LinkRecovery:e145[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:00.166 00:04.649 Successfully matched event CheckInvariants:e146[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m01:00.850 00:04.750 Event timed out ControlMessageReceive:i147 c c1 -> s 4 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 37[1;37m[1;m
+[1;35m[1;41m01:01.476 00:04.751 Event timed out ControlMessageSend:i148 c 1 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:01:02')][1;m
+[1;35m[1;41m01:02.102 00:04.752 Event timed out ControlMessageSend:i149 c 3 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:03:03')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:02.103 00:04.753 Successfully matched event CheckInvariants:e150[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:02.103 00:04.853 Successfully matched event DataplanePermit:i151[1;m
+[1;36m[1;36mRound 38[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.3 -> 00-00-00-00-00-01.1[1;m
+
+[1;35m[1;41m01:02.728 00:04.855 Event timed out ControlMessageSend:i152 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:02.728 00:04.856 Successfully matched event CheckInvariants:e153[1;m
+[1;35m[1;41m01:03.354 00:04.956 Event timed out ControlMessageReceive:i154 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 39[1;37m[1;m
+[1;35m[1;41m01:03.980 00:04.958 Event timed out ControlMessageReceive:i155 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;35m[1;41m01:04.606 00:04.959 Event timed out ControlMessageReceive:i156 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m01:05.165 00:04.960 Event timed out ControlMessageReceive:i157 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:05.657 00:04.961 Event timed out ControlMessageReceive:i158 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:05.658 00:04.962 Successfully matched event CheckInvariants:e159[1;m
+[1;35m[1;41m01:06.283 00:05.063 Event timed out ControlMessageReceive:i160 c c1 -> s 4 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 40[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:06.284 00:05.064 Successfully matched event CheckInvariants:e161[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:06.284 00:05.165 Successfully matched event DataplanePermit:i162[1;m
+[1;36m[1;36mRound 41[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:06.285 00:05.166 Successfully matched event CheckInvariants:e163[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:06.386 00:05.267 Successfully matched event CheckInvariants:e164[1;m
+[1;36m[1;36mRound 42[1;37m[1;m
+[1;35m[1;41m01:07.109 00:05.368 Event timed out ControlMessageReceive:i165 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 43[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:07.110 00:05.369 Successfully matched event CheckInvariants:e166[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:07.111 00:05.470 Successfully matched event DataplanePermit:i167[1;m
+[1;36m[1;36mRound 44[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-04.2[1;m
+
+[1;35m[1;41m01:07.735 00:05.471 Event timed out ControlMessageSend:i168 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36mCutting link (4:3) -> (1:1)[1;m
+[1;36m[1;44m01:07.736 00:05.472 Successfully matched event LinkFailure:e169[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:07.736 00:05.473 Successfully matched event CheckInvariants:e170[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m01:08.361 00:05.574 Event timed out ControlMessageReceive:i171 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 45[1;37m[1;m
+[1;35m[1;41m01:08.987 00:05.575 Event timed out ControlMessageReceive:i172 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:09.612 00:05.577 Event timed out ControlMessageReceive:i173 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.2 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m01:10.165 00:05.577 Event timed out ControlMessageReceive:i174 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:10.664 00:05.579 Event timed out ControlMessageReceive:i175 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:11.177 00:05.580 Event timed out ControlMessageSend:i176 c 4 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:04:03')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:11.178 00:05.581 Successfully matched event CheckInvariants:e177[1;m
+[1;35m[1;41m01:11.803 00:05.681 Event timed out ControlMessageReceive:i178 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 46[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:11.804 00:05.683 Successfully matched event CheckInvariants:e179[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:11.805 00:05.784 Successfully matched event DataplanePermit:i180[1;m
+[1;36m[1;36mRound 47[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.2 -> 00-00-00-00-00-03.2[1;m
+
+[1;35m[1;41m01:12.429 00:05.785 Event timed out ControlMessageSend:i181 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:12.429 00:05.786 Successfully matched event CheckInvariants:e182[1;m
+[1;35m[1;41m01:13.055 00:05.887 Event timed out ControlMessageReceive:i183 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 48[1;37m[1;m
+[1;35m[1;41m01:13.680 00:05.888 Event timed out ControlMessageReceive:i184 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:14.306 00:05.889 Event timed out ControlMessageReceive:i185 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:14.932 00:05.890 Event timed out ControlMessageReceive:i186 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.3 -> 00-00-00-00-00-01.1[1;m
+
+[1;35m[1;41m01:15.558 00:05.891 Event timed out ControlMessageReceive:i187 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:15.559 00:05.893 Successfully matched event CheckInvariants:e188[1;m
+[1;35m[1;41m01:16.184 00:05.993 Event timed out ControlMessageReceive:i189 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 49[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:16.184 00:05.995 Successfully matched event CheckInvariants:e190[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:16.184 00:06.096 Successfully matched event DataplanePermit:i191[1;m
+[1;36m[1;36mRound 50[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.3 -> 00-00-00-00-00-01.3[1;m
+
+[1;35m[1;41m01:16.809 00:06.097 Event timed out ControlMessageSend:i192 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:16.810 00:06.098 Successfully matched event CheckInvariants:e193[1;m
+[1;35m[1;41m01:17.435 00:06.199 Event timed out ControlMessageReceive:i194 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 51[1;37m[1;m
+[1;35m[1;41m01:18.061 00:06.200 Event timed out ControlMessageReceive:i195 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;35m[1;41m01:18.687 00:06.201 Event timed out ControlMessageReceive:i196 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:19.313 00:06.202 Event timed out ControlMessageReceive:i197 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:19.939 00:06.203 Event timed out ControlMessageReceive:i198 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:19.940 00:06.205 Successfully matched event CheckInvariants:e199[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.1 -> 00-00-00-00-00-04.2[1;m
+
+[1;35m[1;41m01:20.565 00:06.305 Event timed out ControlMessageReceive:i200 c c1 -> s 2 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 52[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:20.566 00:06.307 Successfully matched event CheckInvariants:e201[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:20.567 00:06.407 Successfully matched event DataplanePermit:i202[1;m
+[1;36m[1;36mRound 53[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:20.567 00:06.409 Successfully matched event CheckInvariants:e203[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:20.669 00:06.509 Successfully matched event CheckInvariants:e204[1;m
+[1;36m[1;36mRound 54[1;37m[1;m
+[1;35m[1;41m01:21.303 00:06.610 Event timed out ControlMessageReceive:i205 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 55[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:21.304 00:06.611 Successfully matched event CheckInvariants:e206[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:21.405 00:06.712 Successfully matched event CheckInvariants:e207[1;m
+[1;36m[1;36mRound 56[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:21.506 00:06.813 Successfully matched event CheckInvariants:e208[1;m
+[1;36m[1;36mRound 57[1;37m[1;m
+[1;35m[1;41m01:22.129 00:06.913 Event timed out ControlMessageReceive:i209 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 58[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:22.130 00:06.914 Successfully matched event CheckInvariants:e210[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:22.231 00:07.015 Successfully matched event CheckInvariants:e211[1;m
+[1;36m[1;36mRound 59[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:22.332 00:07.116 Successfully matched event CheckInvariants:e212[1;m
+[1;36m[1;36mRound 60[1;37m[1;m
+[1;35m[1;41m01:23.068 00:07.216 Event timed out ControlMessageReceive:i213 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 61[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:23.069 00:07.217 Successfully matched event CheckInvariants:e214[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:23.170 00:07.318 Successfully matched event CheckInvariants:e215[1;m
+[1;36m[1;36mRound 62[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:23.271 00:07.418 Successfully matched event CheckInvariants:e216[1;m
+[1;36m[1;36mRound 63[1;37m[1;m
+[1;35m[1;41m01:24.007 00:07.519 Event timed out ControlMessageReceive:i217 c c1 -> s 3 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 64[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:24.008 00:07.520 Successfully matched event CheckInvariants:e218[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:24.008 00:07.620 Successfully matched event DataplanePermit:i219[1;m
+[1;36m[1;36mRound 65[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:24.009 00:07.621 Successfully matched event CheckInvariants:e220[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:24.110 00:07.722 Successfully matched event CheckInvariants:e221[1;m
+[1;36m[1;36mRound 66[1;37m[1;m
+[1;35m[1;41m01:24.745 00:07.822 Event timed out ControlMessageReceive:i222 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 67[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:24.746 00:07.823 Successfully matched event CheckInvariants:e223[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:24.747 00:07.923 Successfully matched event DataplanePermit:i224[1;m
+[1;36m[1;36mRound 68[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-04.3[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.2 -> 00-00-00-00-00-03.2[1;m
+
+[1;35m[1;41m01:25.368 00:07.924 Event timed out ControlMessageSend:i225 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:25.368 00:07.924 Successfully matched event CheckInvariants:e226[1;m
+[1;35m[1;41m01:25.997 00:08.025 Event timed out ControlMessageReceive:i227 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 69[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:26.000 00:08.025 Successfully matched event CheckInvariants:e228[1;m
+[1;35m[1;41m01:26.623 00:08.123 Event timed out ControlMessageReceive:i229 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 70[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:26.623 00:08.124 Successfully matched event CheckInvariants:e230[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:26.624 00:08.224 Successfully matched event DataplanePermit:i231[1;m
+[1;36m[1;36mRound 71[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m01:27.136 00:08.225 Event timed out ControlMessageSend:i232 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:27.137 00:08.225 Successfully matched event CheckInvariants:e233[1;m
+[1;35m[1;41m01:27.762 00:08.326 Event timed out ControlMessageReceive:i234 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 72[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:27.763 00:08.326 Successfully matched event CheckInvariants:e235[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:27.864 00:08.427 Successfully matched event CheckInvariants:e236[1;m
+[1;36m[1;36mRound 73[1;37m[1;m
+[1;35m[1;41m01:28.500 00:08.527 Event timed out ControlMessageReceive:i237 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 74[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:28.501 00:08.528 Successfully matched event CheckInvariants:e238[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:28.502 00:08.629 Successfully matched event DataplanePermit:i239[1;m
+[1;36m[1;36mRound 75[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.3 -> 00-00-00-00-00-02.3[1;m
+
+[1;35m[1;41m01:29.014 00:08.629 Event timed out ControlMessageSend:i240 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:29.014 00:08.630 Successfully matched event CheckInvariants:e241[1;m
+[1;35m[1;41m01:29.639 00:08.730 Event timed out ControlMessageReceive:i242 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 76[1;37m[1;m
+[1;36mRestoring link (3:1) -> (4:1)[1;m
+[1;36m[1;44m01:29.640 00:08.731 Successfully matched event LinkRecovery:e243[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:29.641 00:08.731 Successfully matched event CheckInvariants:e244[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.3 -> 00-00-00-00-00-01.3[1;m
+
+[1;35m[1;41m01:30.368 00:08.832 Event timed out ControlMessageReceive:i245 c c1 -> s 1 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 77[1;37m[1;m
+[1;35m[1;41m01:30.891 00:08.832 Event timed out ControlMessageSend:i246 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:30.891 00:08.833 Successfully matched event CheckInvariants:e247[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:30.892 00:08.933 Successfully matched event DataplanePermit:i248[1;m
+[1;36m[1;36mRound 78[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:30.892 00:08.934 Successfully matched event CheckInvariants:e249[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:30.993 00:09.034 Successfully matched event CheckInvariants:e250[1;m
+[1;36m[1;36mRound 79[1;37m[1;m
+[1;35m[1;41m01:31.629 00:09.135 Event timed out ControlMessageReceive:i251 c c1 -> s 4 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 80[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:31.630 00:09.136 Successfully matched event CheckInvariants:e252[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:31.631 00:09.236 Successfully matched event DataplanePermit:i253[1;m
+[1;36m[1;36mRound 81[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m01:32.143 00:09.237 Event timed out ControlMessageSend:i254 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:32.143 00:09.237 Successfully matched event CheckInvariants:e255[1;m
+[1;35m[1;41m01:32.769 00:09.338 Event timed out ControlMessageReceive:i256 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 82[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:32.769 00:09.338 Successfully matched event CheckInvariants:e257[1;m
+[1;35m[1;41m01:33.394 00:09.439 Event timed out ControlMessageReceive:i258 c c1 -> s 4 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 83[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:33.395 00:09.439 Successfully matched event CheckInvariants:e259[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:33.396 00:09.540 Successfully matched event DataplanePermit:i260[1;m
+[1;36m[1;36mRound 84[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.2 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m01:34.020 00:09.540 Event timed out ControlMessageSend:i261 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:34.021 00:09.541 Successfully matched event CheckInvariants:e262[1;m
+[1;35m[1;41m01:34.646 00:09.641 Event timed out ControlMessageReceive:i263 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 85[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:34.647 00:09.643 Successfully matched event CheckInvariants:e264[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.1 -> 00-00-00-00-00-04.3[1;m
+
+[1;35m[1;41m01:35.368 00:09.743 Event timed out ControlMessageReceive:i265 c c1 -> s 4 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 86[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:35.369 00:09.745 Successfully matched event CheckInvariants:e266[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:35.471 00:09.846 Successfully matched event CheckInvariants:e267[1;m
+[1;36m[1;36mRound 87[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:35.572 00:09.947 Successfully matched event CheckInvariants:e268[1;m
+[1;36m[1;36mRound 88[1;37m[1;m
+[1;35m[1;41m01:36.210 00:10.048 Event timed out ControlMessageReceive:i269 c c1 -> s 4 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 89[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:36.213 00:10.049 Successfully matched event CheckInvariants:e270[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:36.214 00:10.150 Successfully matched event DataplanePermit:i271[1;m
+[1;36m[1;36mRound 90[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:36.214 00:10.151 Successfully matched event CheckInvariants:e272[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:36.316 00:10.252 Successfully matched event CheckInvariants:e273[1;m
+[1;36m[1;36mRound 91[1;37m[1;m
+[1;35m[1;41m01:36.949 00:10.353 Event timed out ControlMessageReceive:i274 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 92[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:36.950 00:10.354 Successfully matched event CheckInvariants:e275[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:36.950 00:10.455 Successfully matched event DataplanePermit:i276[1;m
+[1;36m[1;36mRound 93[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-04.2[1;m
+
+[1;35m[1;41m01:37.462 00:10.456 Event timed out ControlMessageSend:i277 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36mCutting link (2:2) -> (3:2)[1;m
+[1;36m[1;44m01:37.463 00:10.457 Successfully matched event LinkFailure:e278[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:37.463 00:10.458 Successfully matched event CheckInvariants:e279[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m01:38.088 00:10.559 Event timed out ControlMessageReceive:i280 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;36mRound 94[1;37m[1;m
+[1;35m[1;41m01:38.714 00:10.559 Event timed out ControlMessageSend:i281 c 2 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:02:02')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:38.714 00:10.560 Successfully matched event CheckInvariants:e282[1;m
+[1;35m[1;41m01:39.340 00:10.661 Event timed out ControlMessageReceive:i283 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 95[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:39.340 00:10.663 Successfully matched event CheckInvariants:e284[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:39.442 00:10.764 Successfully matched event CheckInvariants:e285[1;m
+[1;36m[1;36mRound 96[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:39.544 00:10.865 Successfully matched event CheckInvariants:e286[1;m
+[1;36m[1;36mRound 97[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.3 -> 00-00-00-00-00-02.3[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m01:40.166 00:10.965 Event timed out ControlMessageReceive:i287 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 98[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:40.167 00:10.967 Successfully matched event CheckInvariants:e288[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:40.168 00:11.068 Successfully matched event DataplanePermit:i289[1;m
+[1;36m[1;36mRound 99[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.3 -> 00-00-00-00-00-01.3[1;m
+
+[1;35m[1;41m01:40.704 00:11.069 Event timed out ControlMessageSend:i290 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:40.704 00:11.070 Successfully matched event CheckInvariants:e291[1;m
+[1;35m[1;41m01:41.331 00:11.171 Event timed out ControlMessageReceive:i292 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 100[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:41.332 00:11.172 Successfully matched event CheckInvariants:e293[1;m
+[1;35m[1;41m01:41.956 00:11.273 Event timed out ControlMessageReceive:i294 c c1 -> s 2 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 101[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:41.956 00:11.274 Successfully matched event CheckInvariants:e295[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:41.957 00:11.375 Successfully matched event DataplanePermit:i296[1;m
+[1;36m[1;36mRound 102[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:41.957 00:11.376 Successfully matched event CheckInvariants:e297[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:42.059 00:11.477 Successfully matched event CheckInvariants:e298[1;m
+[1;36m[1;36mRound 103[1;37m[1;m
+[1;35m[1;41m01:42.782 00:11.577 Event timed out ControlMessageReceive:i299 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 104[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:42.783 00:11.579 Successfully matched event CheckInvariants:e300[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:42.784 00:11.679 Successfully matched event DataplanePermit:i301[1;m
+[1;36m[1;36mRound 105[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
+
+[1;35m[1;41m01:43.408 00:11.681 Event timed out ControlMessageSend:i302 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:43.408 00:11.682 Successfully matched event CheckInvariants:e303[1;m
+[1;35m[1;41m01:44.033 00:11.783 Event timed out ControlMessageReceive:i304 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 106[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:44.034 00:11.784 Successfully matched event CheckInvariants:e305[1;m
+[1;35m[1;41m01:44.659 00:11.878 Event timed out ControlMessageReceive:i306 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 107[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:44.660 00:11.879 Successfully matched event CheckInvariants:e307[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:44.762 00:11.980 Successfully matched event CheckInvariants:e308[1;m
+[1;36m[1;36mRound 108[1;37m[1;m
+[1;36mCutting link (1:1) -> (4:3)[1;m
+[1;36m[1;44m01:44.863 00:12.081 Successfully matched event LinkFailure:e309[1;m
+[1;36m[1;36mRound 109[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:44.864 00:12.082 Successfully matched event CheckInvariants:e310[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Port down event, triggering synthetic memory corruption[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.2 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m01:45.598 00:12.183 Event timed out ControlMessageSend:i311 c 1 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:01:01')][1;m
+[1;36m[1;36mRound 110[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:45.598 00:12.184 Successfully matched event CheckInvariants:e312[1;m
+[1;35m[1;41m01:46.224 00:12.285 Event timed out ControlMessageReceive:i313 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 111[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:46.225 00:12.286 Successfully matched event CheckInvariants:e314[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:46.326 00:12.387 Successfully matched event CheckInvariants:e315[1;m
+[1;36m[1;36mRound 112[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:46.428 00:12.488 Successfully matched event CheckInvariants:e316[1;m
+[1;36m[1;36mRound 113[1;37m[1;m
+[1;35m[1;41m01:47.163 00:12.589 Event timed out ControlMessageReceive:i317 c c1 -> s 3 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 114[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:47.163 00:12.590 Successfully matched event CheckInvariants:e318[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:47.164 00:12.691 Successfully matched event DataplanePermit:i319[1;m
+[1;36m[1;36mRound 115[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:47.164 00:12.692 Successfully matched event CheckInvariants:e320[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:47.266 00:12.793 Successfully matched event CheckInvariants:e321[1;m
+[1;36m[1;36mRound 116[1;37m[1;m
+[1;35m[1;41m01:47.901 00:12.894 Event timed out ControlMessageReceive:i322 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 117[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:47.902 00:12.895 Successfully matched event CheckInvariants:e323[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:48.004 00:12.997 Successfully matched event CheckInvariants:e324[1;m
+[1;36m[1;36mRound 118[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:48.105 00:13.098 Successfully matched event CheckInvariants:e325[1;m
+[1;36m[1;36mRound 119[1;37m[1;m
+[1;35m[1;41m01:48.727 00:13.198 Event timed out ControlMessageReceive:i326 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 120[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:48.728 00:13.200 Successfully matched event CheckInvariants:e327[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:48.729 00:13.300 Successfully matched event DataplanePermit:i328[1;m
+[1;36m[1;36mRound 121[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m01:49.353 00:13.302 Event timed out ControlMessageSend:i329 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:49.354 00:13.303 Successfully matched event CheckInvariants:e330[1;m
+[1;35m[1;41m01:49.979 00:13.404 Event timed out ControlMessageReceive:i331 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 122[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:49.979 00:13.405 Successfully matched event CheckInvariants:e332[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.1 -> 00-00-00-00-00-04.2[1;m
+
+[1;35m[1;41m01:50.605 00:13.506 Event timed out ControlMessageReceive:i333 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 123[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:50.605 00:13.507 Successfully matched event CheckInvariants:e334[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:50.606 00:13.608 Successfully matched event DataplanePermit:i335[1;m
+[1;36m[1;36mRound 124[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.3 -> 00-00-00-00-00-02.3[1;m
+
+[1;35m[1;41m01:51.230 00:13.609 Event timed out ControlMessageSend:i336 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:51.231 00:13.610 Successfully matched event CheckInvariants:e337[1;m
+[1;35m[1;41m01:51.856 00:13.711 Event timed out ControlMessageReceive:i338 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 125[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:51.859 00:13.712 Successfully matched event CheckInvariants:e339[1;m
+[1;35m[1;41m01:52.482 00:13.813 Event timed out ControlMessageReceive:i340 c c1 -> s 1 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 126[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:52.483 00:13.815 Successfully matched event CheckInvariants:e341[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:52.483 00:13.915 Successfully matched event DataplanePermit:i342[1;m
+[1;36m[1;36mRound 127[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:52.484 00:13.916 Successfully matched event CheckInvariants:e343[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:52.585 00:14.017 Successfully matched event CheckInvariants:e344[1;m
+[1;36m[1;36mRound 128[1;37m[1;m
+[1;35m[1;41m01:53.221 00:14.118 Event timed out ControlMessageReceive:i345 c c1 -> s 4 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 129[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:53.221 00:14.119 Successfully matched event CheckInvariants:e346[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:53.222 00:14.220 Successfully matched event DataplanePermit:i347[1;m
+[1;36m[1;36mRound 130[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m01:53.734 00:14.221 Event timed out ControlMessageSend:i348 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:53.734 00:14.222 Successfully matched event CheckInvariants:e349[1;m
+[1;35m[1;41m01:54.360 00:14.323 Event timed out ControlMessageReceive:i350 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 131[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:54.361 00:14.324 Successfully matched event CheckInvariants:e351[1;m
+[1;35m[1;41m01:54.986 00:14.425 Event timed out ControlMessageReceive:i352 c c1 -> s 4 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 132[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:54.986 00:14.426 Successfully matched event CheckInvariants:e353[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:54.987 00:14.527 Successfully matched event DataplanePermit:i354[1;m
+[1;36m[1;36mRound 133[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.2 -> 00-00-00-00-00-02.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.3 -> 00-00-00-00-00-01.3[1;m
+
+[1;35m[1;41m01:55.611 00:14.528 Event timed out ControlMessageSend:i355 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:55.612 00:14.530 Successfully matched event CheckInvariants:e356[1;m
+[1;35m[1;41m01:56.237 00:14.630 Event timed out ControlMessageReceive:i357 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 134[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:56.238 00:14.631 Successfully matched event CheckInvariants:e358[1;m
+[1;35m[1;41m01:56.863 00:14.732 Event timed out ControlMessageReceive:i359 c c1 -> s 4 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 135[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:56.864 00:14.734 Successfully matched event CheckInvariants:e360[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:56.966 00:14.835 Successfully matched event CheckInvariants:e361[1;m
+[1;36m[1;36mRound 136[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:57.067 00:14.936 Successfully matched event CheckInvariants:e362[1;m
+[1;36m[1;36mRound 137[1;37m[1;m
+[1;35m[1;41m01:57.802 00:15.037 Event timed out ControlMessageReceive:i363 c c1 -> s 4 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 138[1;37m[1;m
+[1;36mCutting link (4:2) -> (2:1)[1;m
+[1;36m[1;44m01:57.803 00:15.038 Successfully matched event LinkFailure:e364[1;m
+[1;36mRestoring link (4:3) -> (1:1)[1;m
+[1;36m[1;44m01:57.804 00:15.039 Successfully matched event LinkRecovery:e365[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:57.804 00:15.039 Successfully matched event CheckInvariants:e366[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:57.804 00:15.140 Successfully matched event DataplanePermit:i367[1;m
+[1;36m[1;36mRound 139[1;37m[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m01:58.428 00:15.141 Event timed out ControlMessageSend:i368 c 4 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:04:02')][1;m
+[1;35m[1;41m01:59.053 00:15.142 Event timed out ControlMessageSend:i369 c 4 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:04:03')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:59.054 00:15.143 Successfully matched event CheckInvariants:e370[1;m
+[1;35m[1;41m01:59.679 00:15.243 Event timed out ControlMessageReceive:i371 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 140[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m02:00.369 00:15.244 Event timed out ControlMessageReceive:i372 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:00.931 00:15.244 Event timed out ControlMessageReceive:i373 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:01.557 00:15.246 Event timed out ControlMessageReceive:i374 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:01.558 00:15.247 Successfully matched event CheckInvariants:e375[1;m
+[1;35m[1;41m02:02.183 00:15.348 Event timed out ControlMessageReceive:i376 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 141[1;37m[1;m
+[1;35m[1;41m02:02.809 00:15.349 Event timed out ControlMessageReceive:i377 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:03.434 00:15.350 Event timed out ControlMessageReceive:i378 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:04.060 00:15.351 Event timed out ControlMessageReceive:i379 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:04.686 00:15.353 Event timed out ControlMessageReceive:i380 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mRestoring link (3:2) -> (2:2)[1;m
+[1;36m[1;44m02:04.687 00:15.354 Successfully matched event LinkRecovery:e381[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:04.687 00:15.355 Successfully matched event CheckInvariants:e382[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:04.688 00:15.455 Successfully matched event DataplanePermit:i383[1;m
+[1;36m[1;36mRound 142[1;37m[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-04.2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.3 -> 00-00-00-00-00-02.3[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.2 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m02:05.374 00:15.457 Event timed out ControlMessageSend:i384 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;35m[1;41m02:05.937 00:15.458 Event timed out ControlMessageSend:i385 c 3 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:03:02')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:05.938 00:15.459 Successfully matched event CheckInvariants:e386[1;m
+[1;35m[1;41m02:06.563 00:15.559 Event timed out ControlMessageReceive:i387 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;36mRound 143[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:06.564 00:15.560 Successfully matched event CheckInvariants:e388[1;m
+[1;35m[1;41m02:07.189 00:15.661 Event timed out ControlMessageReceive:i389 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 144[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:07.192 00:15.663 Successfully matched event CheckInvariants:e390[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:07.294 00:15.764 Successfully matched event CheckInvariants:e391[1;m
+[1;36m[1;36mRound 145[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:07.395 00:15.865 Successfully matched event CheckInvariants:e392[1;m
+[1;36m[1;36mRound 146[1;37m[1;m
+[1;35m[1;41m02:08.128 00:15.965 Event timed out ControlMessageReceive:i393 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 147[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:08.129 00:15.967 Successfully matched event CheckInvariants:e394[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:08.130 00:16.068 Successfully matched event DataplanePermit:i395[1;m
+[1;36m[1;36mRound 148[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.3 -> 00-00-00-00-00-01.3[1;m
+
+[1;35m[1;41m02:08.754 00:16.069 Event timed out ControlMessageSend:i396 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:08.754 00:16.070 Successfully matched event CheckInvariants:e397[1;m
+[1;35m[1;41m02:09.380 00:16.171 Event timed out ControlMessageReceive:i398 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 149[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:09.380 00:16.172 Successfully matched event CheckInvariants:e399[1;m
+[1;35m[1;41m02:10.005 00:16.273 Event timed out ControlMessageReceive:i400 c c1 -> s 2 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 150[1;37m[1;m
+[1;36mRestoring link (4:2) -> (2:1)[1;m
+[1;36m[1;44m02:10.006 00:16.274 Successfully matched event LinkRecovery:e401[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:10.007 00:16.275 Successfully matched event CheckInvariants:e402[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:10.007 00:16.375 Successfully matched event DataplanePermit:i403[1;m
+[1;36m[1;36mRound 151[1;37m[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m02:10.631 00:16.376 Event timed out ControlMessageSend:i404 c 4 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:04:02')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:10.632 00:16.377 Successfully matched event CheckInvariants:e405[1;m
+[1;36mCutting link (1:3) -> (2:3)[1;m
+[1;36m[1;44m02:10.733 00:16.478 Successfully matched event LinkFailure:e406[1;m
+[1;36m[1;36mRound 152[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:10.734 00:16.479 Successfully matched event CheckInvariants:e407[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m02:11.369 00:16.570 Event timed out ControlMessageReceive:i408 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 153[1;37m[1;m
+[1;35m[1;41m02:11.883 00:16.571 Event timed out ControlMessageSend:i409 c 1 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:01:03')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:11.883 00:16.572 Successfully matched event CheckInvariants:e410[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:11.884 00:16.673 Successfully matched event DataplanePermit:i411[1;m
+[1;36m[1;36mRound 154[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
+
+[1;35m[1;41m02:12.508 00:16.674 Event timed out ControlMessageSend:i412 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:12.509 00:16.675 Successfully matched event CheckInvariants:e413[1;m
+[1;35m[1;41m02:13.134 00:16.776 Event timed out ControlMessageReceive:i414 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 155[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:13.135 00:16.777 Successfully matched event CheckInvariants:e415[1;m
+[1;36mCutting link (2:3) -> (1:3)[1;m
+[1;36m[1;44m02:13.237 00:16.878 Successfully matched event LinkFailure:e416[1;m
+[1;36m[1;36mRound 156[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:13.237 00:16.879 Successfully matched event CheckInvariants:e417[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m02:13.872 00:16.980 Event timed out ControlMessageReceive:i418 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 157[1;37m[1;m
+[1;35m[1;41m02:14.386 00:16.981 Event timed out ControlMessageSend:i419 c 2 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:02:03')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:14.386 00:16.982 Successfully matched event CheckInvariants:e420[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:14.387 00:17.083 Successfully matched event DataplanePermit:i421[1;m
+[1;36m[1;36mRound 158[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;35m[1;41m02:15.011 00:17.084 Event timed out ControlMessageSend:i422 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:15.012 00:17.085 Successfully matched event CheckInvariants:e423[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.1 -> 00-00-00-00-00-04.2[1;m
+
+[1;35m[1;41m02:15.637 00:17.186 Event timed out ControlMessageReceive:i424 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 159[1;37m[1;m
+[1;35m[1;41m02:16.263 00:17.187 Event timed out ControlMessageReceive:i425 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:16.889 00:17.189 Event timed out ControlMessageReceive:i426 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:17.515 00:17.190 Event timed out ControlMessageReceive:i427 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:18.141 00:17.191 Event timed out ControlMessageReceive:i428 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36mCutting link (3:1) -> (4:1)[1;m
+[1;36m[1;44m02:18.142 00:17.192 Successfully matched event LinkFailure:e429[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:18.142 00:17.193 Successfully matched event CheckInvariants:e430[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m02:18.766 00:17.293 Event timed out ControlMessageReceive:i431 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 160[1;37m[1;m
+[1;35m[1;41m02:19.392 00:17.294 Event timed out ControlMessageSend:i432 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:19.393 00:17.294 Successfully matched event CheckInvariants:e433[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:19.494 00:17.395 Successfully matched event CheckInvariants:e434[1;m
+[1;36m[1;36mRound 161[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:19.595 00:17.495 Successfully matched event CheckInvariants:e435[1;m
+[1;36m[1;36mRound 162[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.3 -> 00-00-00-00-00-01.3[1;m
+
+[1;35m[1;41m02:20.370 00:17.596 Event timed out ControlMessageReceive:i436 c c1 -> s 3 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 163[1;37m[1;m
+[1;36mCutting link (4:2) -> (2:1)[1;m
+[1;36m[1;44m02:20.371 00:17.597 Successfully matched event LinkFailure:e437[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:20.371 00:17.598 Successfully matched event CheckInvariants:e438[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:20.372 00:17.698 Successfully matched event DataplanePermit:i439[1;m
+[1;36m[1;36mRound 164[1;37m[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m02:20.957 00:17.699 Event timed out ControlMessageSend:i440 c 4 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:04:02')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:20.957 00:17.700 Successfully matched event CheckInvariants:e441[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:21.059 00:17.801 Successfully matched event CheckInvariants:e442[1;m
+[1;36m[1;36mRound 165[1;37m[1;m
+[1;35m[1;41m02:21.695 00:17.902 Event timed out ControlMessageReceive:i443 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 166[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:21.696 00:17.904 Successfully matched event CheckInvariants:e444[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:21.798 00:18.005 Successfully matched event CheckInvariants:e445[1;m
+[1;36m[1;36mRound 167[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:21.899 00:18.106 Successfully matched event CheckInvariants:e446[1;m
+[1;36m[1;36mRound 168[1;37m[1;m
+[1;35m[1;41m02:22.521 00:18.206 Event timed out ControlMessageReceive:i447 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 169[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:22.522 00:18.208 Successfully matched event CheckInvariants:e448[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:22.523 00:18.309 Successfully matched event DataplanePermit:i449[1;m
+[1;36m[1;36mRound 170[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m02:23.147 00:18.310 Event timed out ControlMessageSend:i450 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:23.148 00:18.311 Successfully matched event CheckInvariants:e451[1;m
+[1;35m[1;41m02:23.773 00:18.412 Event timed out ControlMessageReceive:i452 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 171[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:23.774 00:18.413 Successfully matched event CheckInvariants:e453[1;m
+[1;35m[1;41m02:24.399 00:18.514 Event timed out ControlMessageReceive:i454 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 172[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:24.400 00:18.515 Successfully matched event CheckInvariants:e455[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:24.501 00:18.617 Successfully matched event CheckInvariants:e456[1;m
+[1;36m[1;36mRound 173[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:24.603 00:18.718 Successfully matched event CheckInvariants:e457[1;m
+[1;36m[1;36mRound 174[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;35m[1;41m02:25.373 00:18.818 Event timed out ControlMessageReceive:i458 c c1 -> s 1 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 175[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:25.373 00:18.820 Successfully matched event CheckInvariants:e459[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:25.374 00:18.920 Successfully matched event DataplanePermit:i460[1;m
+[1;36m[1;36mRound 176[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:25.374 00:18.922 Successfully matched event CheckInvariants:e461[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:25.476 00:19.023 Successfully matched event CheckInvariants:e462[1;m
+[1;36m[1;36mRound 177[1;37m[1;m
+[1;35m[1;41m02:26.076 00:19.123 Event timed out ControlMessageReceive:i463 c c1 -> s 4 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 178[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:26.077 00:19.125 Successfully matched event CheckInvariants:e464[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:26.078 00:19.225 Successfully matched event DataplanePermit:i465[1;m
+[1;36m[1;36mRound 179[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m02:26.589 00:19.227 Event timed out ControlMessageSend:i466 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:26.590 00:19.228 Successfully matched event CheckInvariants:e467[1;m
+[1;35m[1;41m02:27.215 00:19.329 Event timed out ControlMessageReceive:i468 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 180[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:27.216 00:19.330 Successfully matched event CheckInvariants:e469[1;m
+[1;35m[1;41m02:27.841 00:19.430 Event timed out ControlMessageReceive:i470 c c1 -> s 4 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 181[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:27.842 00:19.432 Successfully matched event CheckInvariants:e471[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:27.943 00:19.533 Successfully matched event CheckInvariants:e472[1;m
+[1;36m[1;36mRound 182[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:28.045 00:19.634 Successfully matched event CheckInvariants:e473[1;m
+[1;36m[1;36mRound 183[1;37m[1;m
+[1;35m[1;41m02:28.780 00:19.735 Event timed out ControlMessageReceive:i474 c c1 -> s 4 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 184[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:28.781 00:19.736 Successfully matched event CheckInvariants:e475[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:28.781 00:19.837 Successfully matched event DataplanePermit:i476[1;m
+[1;36m[1;36mRound 185[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.3 -> 00-00-00-00-00-01.1[1;m
+
+[1;35m[1;41m02:29.406 00:19.838 Event timed out ControlMessageSend:i477 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:29.406 00:19.839 Successfully matched event CheckInvariants:e478[1;m
+[1;35m[1;41m02:30.031 00:19.940 Event timed out ControlMessageReceive:i479 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 186[1;37m[1;m
+[1;35m[1;41m02:30.657 00:19.941 Event timed out ControlMessageReceive:i480 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;35m[1;41m02:31.283 00:19.942 Event timed out ControlMessageReceive:i481 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:31.909 00:19.943 Event timed out ControlMessageReceive:i482 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:32.535 00:19.944 Event timed out ControlMessageReceive:i483 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36mCutting link (3:2) -> (2:2)[1;m
+[1;36m[1;44m02:32.536 00:19.946 Successfully matched event LinkFailure:e484[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:32.537 00:19.947 Successfully matched event CheckInvariants:e485[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m02:33.161 00:20.047 Event timed out ControlMessageReceive:i486 c c1 -> s 4 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 187[1;37m[1;m
+[1;35m[1;41m02:33.786 00:20.048 Event timed out ControlMessageSend:i487 c 3 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:03:02')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:33.814 00:20.049 Successfully matched event CheckInvariants:e488[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:33.815 00:20.150 Successfully matched event DataplanePermit:i489[1;m
+[1;36m[1;36mRound 188[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:33.815 00:20.151 Successfully matched event CheckInvariants:e490[1;m
+[1;35m[1;41m02:34.412 00:20.252 Event timed out ControlMessageReceive:i491 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 189[1;37m[1;m
+[1;35m[1;41m02:35.038 00:20.253 Event timed out ControlMessageReceive:i492 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m02:35.664 00:20.254 Event timed out ControlMessageReceive:i493 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:36.290 00:20.256 Event timed out ControlMessageReceive:i494 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:36.291 00:20.257 Successfully matched event CheckInvariants:e495[1;m
+[1;35m[1;41m02:36.916 00:20.358 Event timed out ControlMessageReceive:i496 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 190[1;37m[1;m
+[1;35m[1;41m02:37.542 00:20.359 Event timed out ControlMessageReceive:i497 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:38.168 00:20.360 Event timed out ControlMessageReceive:i498 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:38.793 00:20.361 Event timed out ControlMessageReceive:i499 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:39.419 00:20.363 Event timed out ControlMessageReceive:i500 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:39.420 00:20.364 Successfully matched event CheckInvariants:e501[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:39.421 00:20.465 Successfully matched event DataplanePermit:i502[1;m
+[1;36m[1;36mRound 191[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-04.2[1;m
+
+[1;35m[1;41m02:40.045 00:20.466 Event timed out ControlMessageSend:i503 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:40.046 00:20.467 Successfully matched event CheckInvariants:e504[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.3 -> 00-00-00-00-00-01.1[1;m
+
+[1;35m[1;41m02:40.671 00:20.568 Event timed out ControlMessageReceive:i505 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;36mRound 192[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:40.671 00:20.569 Successfully matched event CheckInvariants:e506[1;m
+[1;35m[1;41m02:41.297 00:20.669 Event timed out ControlMessageReceive:i507 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 193[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:41.297 00:20.671 Successfully matched event CheckInvariants:e508[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:41.399 00:20.772 Successfully matched event CheckInvariants:e509[1;m
+[1;36m[1;36mRound 194[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:41.501 00:20.873 Successfully matched event CheckInvariants:e510[1;m
+[1;36m[1;36mRound 195[1;37m[1;m
+[1;35m[1;41m02:42.235 00:20.974 Event timed out ControlMessageReceive:i511 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 196[1;37m[1;m
+[1;36mCutting link (4:1) -> (3:1)[1;m
+[1;36m[1;44m02:42.236 00:20.975 Successfully matched event LinkFailure:e512[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:42.237 00:20.976 Successfully matched event CheckInvariants:e513[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m02:42.861 00:21.077 Event timed out ControlMessageSend:i514 c 4 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:04:01')][1;m
+[1;36m[1;36mRound 197[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:42.862 00:21.078 Successfully matched event CheckInvariants:e515[1;m
+[1;36mCutting link (4:3) -> (1:1)[1;m
+[1;36m[1;44m02:42.963 00:21.179 Successfully matched event LinkFailure:e516[1;m
+[1;36m[1;36mRound 198[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:42.964 00:21.180 Successfully matched event CheckInvariants:e517[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m02:43.600 00:21.281 Event timed out ControlMessageReceive:i518 c c1 -> s 2 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 199[1;37m[1;m
+[1;35m[1;41m02:44.113 00:21.282 Event timed out ControlMessageSend:i519 c 4 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:04:03')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:44.113 00:21.283 Successfully matched event CheckInvariants:e520[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:44.114 00:21.384 Successfully matched event DataplanePermit:i521[1;m
+[1;36m[1;36mRound 200[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:44.114 00:21.385 Successfully matched event CheckInvariants:e522[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:44.216 00:21.486 Successfully matched event CheckInvariants:e523[1;m
+[1;36m[1;36mRound 201[1;37m[1;m
+[1;35m[1;41m02:44.851 00:21.586 Event timed out ControlMessageReceive:i524 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 202[1;37m[1;m
+[1;36mCutting link (2:1) -> (4:2)[1;m
+[1;36m[1;44m02:44.852 00:21.588 Successfully matched event LinkFailure:e525[1;m
+[1;36mRestoring link (4:1) -> (3:1)[1;m
+[1;36m[1;44m02:44.853 00:21.589 Successfully matched event LinkRecovery:e526[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:44.853 00:21.589 Successfully matched event CheckInvariants:e527[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m02:45.477 00:21.690 Event timed out ControlMessageSend:i528 c 4 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:04:01')][1;m
+[1;36m[1;36mRound 203[1;37m[1;m
+[1;35m[1;41m02:45.990 00:21.691 Event timed out ControlMessageSend:i529 c 2 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:02:01')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:45.991 00:21.692 Successfully matched event CheckInvariants:e530[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:46.092 00:21.793 Successfully matched event CheckInvariants:e531[1;m
+[1;36m[1;36mRound 204[1;37m[1;m
+[1;35m[1;41m02:46.729 00:21.889 Event timed out ControlMessageReceive:i532 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 205[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:46.729 00:21.890 Successfully matched event CheckInvariants:e533[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:46.831 00:21.991 Successfully matched event CheckInvariants:e534[1;m
+[1;36m[1;36mRound 206[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:46.933 00:22.092 Successfully matched event CheckInvariants:e535[1;m
+[1;36m[1;36mRound 207[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:47.034 00:22.193 Successfully matched event CheckInvariants:e536[1;m
+[1;36m[1;36mRound 208[1;37m[1;m
+[1;35m[1;41m02:47.668 00:22.294 Event timed out ControlMessageReceive:i537 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 209[1;37m[1;m
+[1;36mRestoring link (2:3) -> (1:3)[1;m
+[1;36m[1;44m02:47.669 00:22.296 Successfully matched event LinkRecovery:e538[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:47.669 00:22.297 Successfully matched event CheckInvariants:e539[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m02:48.293 00:22.397 Event timed out ControlMessageSend:i540 c 2 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:02:03')][1;m
+[1;36m[1;36mRound 210[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:48.294 00:22.398 Successfully matched event CheckInvariants:e541[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:48.395 00:22.499 Successfully matched event CheckInvariants:e542[1;m
+[1;36m[1;36mRound 211[1;37m[1;m
+[1;35m[1;41m02:49.120 00:22.600 Event timed out ControlMessageReceive:i543 c c1 -> s 3 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 212[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:49.123 00:22.602 Successfully matched event CheckInvariants:e544[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:49.124 00:22.702 Successfully matched event DataplanePermit:i545[1;m
+[1;36m[1;36mRound 213[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:49.124 00:22.703 Successfully matched event CheckInvariants:e546[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:49.225 00:22.804 Successfully matched event CheckInvariants:e547[1;m
+[1;36m[1;36mRound 214[1;37m[1;m
+[1;35m[1;41m02:49.858 00:22.905 Event timed out ControlMessageReceive:i548 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 215[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:49.859 00:22.907 Successfully matched event CheckInvariants:e549[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:49.961 00:23.008 Successfully matched event CheckInvariants:e550[1;m
+[1;36m[1;36mRound 216[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:50.062 00:23.109 Successfully matched event CheckInvariants:e551[1;m
+[1;36m[1;36mRound 217[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.1 -> 00-00-00-00-00-04.2[1;m
+
+[1;35m[1;41m02:50.684 00:23.209 Event timed out ControlMessageReceive:i552 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 218[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:50.685 00:23.211 Successfully matched event CheckInvariants:e553[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:50.686 00:23.312 Successfully matched event DataplanePermit:i554[1;m
+[1;36m[1;36mRound 219[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m02:51.310 00:23.313 Event timed out ControlMessageSend:i555 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:51.311 00:23.314 Successfully matched event CheckInvariants:e556[1;m
+[1;35m[1;41m02:51.936 00:23.415 Event timed out ControlMessageReceive:i557 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 220[1;37m[1;m
+[1;36mCutting link (2:3) -> (1:3)[1;m
+[1;36m[1;44m02:51.936 00:23.416 Successfully matched event LinkFailure:e558[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:51.937 00:23.417 Successfully matched event CheckInvariants:e559[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m02:52.561 00:23.517 Event timed out ControlMessageReceive:i560 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 221[1;37m[1;m
+[1;35m[1;41m02:53.187 00:23.519 Event timed out ControlMessageSend:i561 c 2 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:02:03')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:53.188 00:23.520 Successfully matched event CheckInvariants:e562[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:53.289 00:23.621 Successfully matched event CheckInvariants:e563[1;m
+[1;36m[1;36mRound 222[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:53.391 00:23.722 Successfully matched event CheckInvariants:e564[1;m
+[1;36m[1;36mRound 223[1;37m[1;m
+[1;35m[1;41m02:54.126 00:23.822 Event timed out ControlMessageReceive:i565 c c1 -> s 1 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 224[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:54.130 00:23.824 Successfully matched event CheckInvariants:e566[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:54.130 00:23.925 Successfully matched event DataplanePermit:i567[1;m
+[1;36m[1;36mRound 225[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:54.131 00:23.926 Successfully matched event CheckInvariants:e568[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:54.232 00:24.027 Successfully matched event CheckInvariants:e569[1;m
+[1;36m[1;36mRound 226[1;37m[1;m
+[1;35m[1;41m02:54.865 00:24.128 Event timed out ControlMessageReceive:i570 c c1 -> s 4 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 227[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:54.865 00:24.129 Successfully matched event CheckInvariants:e571[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:54.866 00:24.230 Successfully matched event DataplanePermit:i572[1;m
+[1;36m[1;36mRound 228[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m02:55.378 00:24.231 Event timed out ControlMessageSend:i573 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36mRestoring link (3:1) -> (4:1)[1;m
+[1;36m[1;44m02:55.379 00:24.232 Successfully matched event LinkRecovery:e574[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:55.379 00:24.233 Successfully matched event CheckInvariants:e575[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m02:56.003 00:24.334 Event timed out ControlMessageReceive:i576 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 229[1;37m[1;m
+[1;35m[1;41m02:56.630 00:24.334 Event timed out ControlMessageSend:i577 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:56.630 00:24.335 Successfully matched event CheckInvariants:e578[1;m
+[1;35m[1;41m02:57.255 00:24.436 Event timed out ControlMessageReceive:i579 c c1 -> s 4 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 230[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:57.256 00:24.438 Successfully matched event CheckInvariants:e580[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:57.358 00:24.539 Successfully matched event CheckInvariants:e581[1;m
+[1;36m[1;36mRound 231[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:57.459 00:24.640 Successfully matched event CheckInvariants:e582[1;m
+[1;36m[1;36mRound 232[1;37m[1;m
+[1;35m[1;41m02:58.195 00:24.740 Event timed out ControlMessageReceive:i583 c c1 -> s 4 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 233[1;37m[1;m
+[1;36mRestoring link (1:3) -> (2:3)[1;m
+[1;36m[1;44m02:58.196 00:24.742 Successfully matched event LinkRecovery:e584[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:58.196 00:24.743 Successfully matched event CheckInvariants:e585[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m02:58.820 00:24.844 Event timed out ControlMessageSend:i586 c 1 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:01:03')][1;m
+[1;36m[1;36mRound 234[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:58.821 00:24.845 Successfully matched event CheckInvariants:e587[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:58.922 00:24.946 Successfully matched event CheckInvariants:e588[1;m
+[1;36m[1;36mRound 235[1;37m[1;m
+[1;35m[1;41m02:59.559 00:25.046 Event timed out ControlMessageReceive:i589 c c1 -> s 4 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 236[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:59.560 00:25.048 Successfully matched event CheckInvariants:e590[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:59.560 00:25.148 Successfully matched event DataplanePermit:i591[1;m
+[1;36m[1;36mRound 237[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:59.561 00:25.150 Successfully matched event CheckInvariants:e592[1;m
+[1;35m[1;41m03:00.185 00:25.250 Event timed out ControlMessageReceive:i593 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 238[1;37m[1;m
+[1;35m[1;41m03:00.698 00:25.252 Event timed out ControlMessageReceive:i594 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:01.324 00:25.253 Event timed out ControlMessageReceive:i595 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:01.950 00:25.254 Event timed out ControlMessageReceive:i596 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:01.951 00:25.255 Successfully matched event CheckInvariants:e597[1;m
+[1;35m[1;41m03:02.576 00:25.356 Event timed out ControlMessageReceive:i598 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 239[1;37m[1;m
+[1;35m[1;41m03:03.202 00:25.357 Event timed out ControlMessageReceive:i599 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:03.828 00:25.359 Event timed out ControlMessageReceive:i600 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:04.454 00:25.360 Event timed out ControlMessageReceive:i601 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:05.080 00:25.361 Event timed out ControlMessageReceive:i602 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:05.080 00:25.362 Successfully matched event CheckInvariants:e603[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:05.175 00:25.463 Successfully matched event CheckInvariants:e604[1;m
+[1;36m[1;36mRound 240[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:05.276 00:25.564 Successfully matched event CheckInvariants:e605[1;m
+[1;36m[1;36mRound 241[1;37m[1;m
+[1;35m[1;41m03:06.018 00:25.665 Event timed out ControlMessageReceive:i606 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 242[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:06.019 00:25.667 Successfully matched event CheckInvariants:e607[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:06.121 00:25.768 Successfully matched event CheckInvariants:e608[1;m
+[1;36m[1;36mRound 243[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:06.222 00:25.869 Successfully matched event CheckInvariants:e609[1;m
+[1;36m[1;36mRound 244[1;37m[1;m
+[1;35m[1;41m03:06.958 00:25.970 Event timed out ControlMessageReceive:i610 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 245[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:06.958 00:25.971 Successfully matched event CheckInvariants:e611[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:07.060 00:26.072 Successfully matched event CheckInvariants:e612[1;m
+[1;36m[1;36mRound 246[1;37m[1;m
+[1;36mRestoring link (4:3) -> (1:1)[1;m
+[1;36m[1;44m03:07.161 00:26.173 Successfully matched event LinkRecovery:e613[1;m
+[1;36m[1;36mRound 247[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:07.162 00:26.174 Successfully matched event CheckInvariants:e614[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m03:07.896 00:26.269 Event timed out ControlMessageReceive:i615 c c1 -> s 2 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 248[1;37m[1;m
+[1;35m[1;41m03:08.522 00:26.270 Event timed out ControlMessageSend:i616 c 4 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:04:03')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:08.523 00:26.271 Successfully matched event CheckInvariants:e617[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:08.523 00:26.372 Successfully matched event DataplanePermit:i618[1;m
+[1;36m[1;36mRound 249[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:08.524 00:26.373 Successfully matched event CheckInvariants:e619[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:08.625 00:26.474 Successfully matched event CheckInvariants:e620[1;m
+[1;36m[1;36mRound 250[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:08.727 00:26.575 Successfully matched event CheckInvariants:e621[1;m
+[1;36m[1;36mRound 251[1;37m[1;m
+[1;35m[1;41m03:09.461 00:26.675 Event timed out ControlMessageReceive:i622 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 252[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:09.462 00:26.677 Successfully matched event CheckInvariants:e623[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:09.463 00:26.777 Successfully matched event DataplanePermit:i624[1;m
+[1;36m[1;36mRound 253[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
+
+[1;35m[1;41m03:10.087 00:26.779 Event timed out ControlMessageSend:i625 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:10.090 00:26.780 Successfully matched event CheckInvariants:e626[1;m
+[1;35m[1;41m03:10.714 00:26.881 Event timed out ControlMessageReceive:i627 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 254[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:10.715 00:26.882 Successfully matched event CheckInvariants:e628[1;m
+[1;35m[1;41m03:11.339 00:26.983 Event timed out ControlMessageReceive:i629 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 255[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:11.340 00:26.985 Successfully matched event CheckInvariants:e630[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:11.441 00:27.086 Successfully matched event CheckInvariants:e631[1;m
+[1;36m[1;36mRound 256[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:11.543 00:27.187 Successfully matched event CheckInvariants:e632[1;m
+[1;36m[1;36mRound 257[1;37m[1;m
+[1;35m[1;41m03:12.278 00:27.288 Event timed out ControlMessageReceive:i633 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 258[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:12.278 00:27.289 Successfully matched event CheckInvariants:e634[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:12.380 00:27.390 Successfully matched event CheckInvariants:e635[1;m
+[1;36m[1;36mRound 259[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:12.481 00:27.491 Successfully matched event CheckInvariants:e636[1;m
+[1;36m[1;36mRound 260[1;37m[1;m
+[1;35m[1;41m03:13.217 00:27.592 Event timed out ControlMessageReceive:i637 c c1 -> s 3 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 261[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:13.217 00:27.593 Successfully matched event CheckInvariants:e638[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:13.218 00:27.694 Successfully matched event DataplanePermit:i639[1;m
+[1;36m[1;36mRound 262[1;37m[1;m
+[1;36mCutting link (3:1) -> (4:1)[1;m
+[1;36m[1;44m03:13.219 00:27.695 Successfully matched event LinkFailure:e640[1;m
+[1;36mCutting link (1:3) -> (2:3)[1;m
+[1;36m[1;44m03:13.219 00:27.696 Successfully matched event LinkFailure:e641[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:13.220 00:27.697 Successfully matched event CheckInvariants:e642[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m03:13.842 00:27.798 Event timed out ControlMessageSend:i643 c 1 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:01:03')][1;m
+[1;36m[1;36mRound 263[1;37m[1;m
+[1;35m[1;41m03:14.468 00:27.798 Event timed out ControlMessageSend:i644 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;36mRestoring link (3:1) -> (4:1)[1;m
+[1;36m[1;44m03:14.469 00:27.799 Successfully matched event LinkRecovery:e645[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:14.470 00:27.800 Successfully matched event CheckInvariants:e646[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m03:15.094 00:27.901 Event timed out ControlMessageReceive:i647 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 264[1;37m[1;m
+[1;35m[1;41m03:15.720 00:27.902 Event timed out ControlMessageSend:i648 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:15.721 00:27.903 Successfully matched event CheckInvariants:e649[1;m
+[1;36mRestoring link (1:3) -> (2:3)[1;m
+[1;36m[1;44m03:15.822 00:28.004 Successfully matched event LinkRecovery:e650[1;m
+[1;36m[1;36mRound 265[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:15.823 00:28.005 Successfully matched event CheckInvariants:e651[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m03:16.458 00:28.106 Event timed out ControlMessageSend:i652 c 1 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:01:03')][1;m
+[1;36m[1;36mRound 266[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:16.459 00:28.107 Successfully matched event CheckInvariants:e653[1;m
+[1;35m[1;41m03:17.084 00:28.208 Event timed out ControlMessageReceive:i654 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 267[1;37m[1;m
+[1;36mRestoring link (4:2) -> (2:1)[1;m
+[1;36m[1;44m03:17.085 00:28.209 Successfully matched event LinkRecovery:e655[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:17.086 00:28.210 Successfully matched event CheckInvariants:e656[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:17.086 00:28.310 Successfully matched event DataplanePermit:i657[1;m
+[1;36m[1;36mRound 268[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m03:17.598 00:28.312 Event timed out ControlMessageSend:i658 c 4 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:04:02')][1;m
+[1;35m[1;41m03:18.224 00:28.312 Event timed out ControlMessageSend:i659 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:18.224 00:28.313 Successfully matched event CheckInvariants:e660[1;m
+[1;35m[1;41m03:18.850 00:28.414 Event timed out ControlMessageReceive:i661 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 269[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:18.850 00:28.415 Successfully matched event CheckInvariants:e662[1;m
+[1;35m[1;41m03:19.476 00:28.516 Event timed out ControlMessageReceive:i663 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 270[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:19.476 00:28.518 Successfully matched event CheckInvariants:e664[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:19.477 00:28.618 Successfully matched event DataplanePermit:i665[1;m
+[1;36m[1;36mRound 271[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.3 -> 00-00-00-00-00-02.3[1;m
+
+[1;35m[1;41m03:20.101 00:28.620 Event timed out ControlMessageSend:i666 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:20.104 00:28.621 Successfully matched event CheckInvariants:e667[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
+
+[1;35m[1;41m03:20.727 00:28.721 Event timed out ControlMessageReceive:i668 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 272[1;37m[1;m
+[1;35m[1;41m03:21.353 00:28.723 Event timed out ControlMessageReceive:i669 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:21.979 00:28.724 Event timed out ControlMessageReceive:i670 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:22.605 00:28.725 Event timed out ControlMessageReceive:i671 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:23.231 00:28.726 Event timed out ControlMessageReceive:i672 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:23.232 00:28.727 Successfully matched event CheckInvariants:e673[1;m
+[1;35m[1;41m03:23.857 00:28.828 Event timed out ControlMessageReceive:i674 c c1 -> s 1 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 273[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:23.858 00:28.829 Successfully matched event CheckInvariants:e675[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:23.858 00:28.930 Successfully matched event DataplanePermit:i676[1;m
+[1;36m[1;36mRound 274[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:23.859 00:28.931 Successfully matched event CheckInvariants:e677[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:23.960 00:29.032 Successfully matched event CheckInvariants:e678[1;m
+[1;36m[1;36mRound 275[1;37m[1;m
+[1;35m[1;41m03:24.595 00:29.132 Event timed out ControlMessageReceive:i679 c c1 -> s 4 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 276[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:24.596 00:29.134 Successfully matched event CheckInvariants:e680[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:24.597 00:29.234 Successfully matched event DataplanePermit:i681[1;m
+[1;36m[1;36mRound 277[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m03:25.109 00:29.236 Event timed out ControlMessageSend:i682 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:25.113 00:29.237 Successfully matched event CheckInvariants:e683[1;m
+[1;35m[1;41m03:25.735 00:29.337 Event timed out ControlMessageReceive:i684 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 278[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:25.735 00:29.339 Successfully matched event CheckInvariants:e685[1;m
+[1;35m[1;41m03:26.361 00:29.439 Event timed out ControlMessageReceive:i686 c c1 -> s 4 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 279[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:26.361 00:29.441 Successfully matched event CheckInvariants:e687[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:26.362 00:29.541 Successfully matched event DataplanePermit:i688[1;m
+[1;36m[1;36mRound 280[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.2 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m03:26.986 00:29.543 Event timed out ControlMessageSend:i689 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:26.987 00:29.544 Successfully matched event CheckInvariants:e690[1;m
+[1;35m[1;41m03:27.612 00:29.645 Event timed out ControlMessageReceive:i691 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 281[1;37m[1;m
+[1;35m[1;41m03:28.238 00:29.646 Event timed out ControlMessageReceive:i692 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:28.864 00:29.647 Event timed out ControlMessageReceive:i693 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:29.490 00:29.648 Event timed out ControlMessageReceive:i694 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:30.116 00:29.649 Event timed out ControlMessageReceive:i695 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:30.119 00:29.650 Successfully matched event CheckInvariants:e696[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.3 -> 00-00-00-00-00-02.3[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m03:30.742 00:29.751 Event timed out ControlMessageReceive:i697 c c1 -> s 4 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 282[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:30.743 00:29.753 Successfully matched event CheckInvariants:e698[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:30.744 00:29.853 Successfully matched event DataplanePermit:i699[1;m
+[1;36m[1;36mRound 283[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.3 -> 00-00-00-00-00-01.1[1;m
+
+[1;35m[1;41m03:31.368 00:29.855 Event timed out ControlMessageSend:i700 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:31.368 00:29.856 Successfully matched event CheckInvariants:e701[1;m
+[1;35m[1;41m03:31.994 00:29.956 Event timed out ControlMessageReceive:i702 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 284[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:31.994 00:29.957 Successfully matched event CheckInvariants:e703[1;m
+[1;35m[1;41m03:32.620 00:30.058 Event timed out ControlMessageReceive:i704 c c1 -> s 4 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 285[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:32.620 00:30.059 Successfully matched event CheckInvariants:e705[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:32.621 00:30.160 Successfully matched event DataplanePermit:i706[1;m
+[1;36m[1;36mRound 286[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:32.621 00:30.161 Successfully matched event CheckInvariants:e707[1;m
+[1;35m[1;41m03:33.246 00:30.262 Event timed out ControlMessageReceive:i708 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 287[1;37m[1;m
+[1;35m[1;41m03:33.872 00:30.262 Event timed out ControlMessageReceive:i709 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:34.498 00:30.263 Event timed out ControlMessageReceive:i710 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:35.124 00:30.264 Event timed out ControlMessageReceive:i711 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:35.125 00:30.264 Successfully matched event CheckInvariants:e712[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m03:35.750 00:30.365 Event timed out ControlMessageReceive:i713 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 288[1;37m[1;m
+[1;35m[1;41m03:36.375 00:30.366 Event timed out ControlMessageReceive:i714 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:37.001 00:30.367 Event timed out ControlMessageReceive:i715 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:37.627 00:30.368 Event timed out ControlMessageReceive:i716 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:38.253 00:30.370 Event timed out ControlMessageReceive:i717 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:38.254 00:30.371 Successfully matched event CheckInvariants:e718[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:38.355 00:30.472 Successfully matched event CheckInvariants:e719[1;m
+[1;36m[1;36mRound 289[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:38.457 00:30.573 Successfully matched event CheckInvariants:e720[1;m
+[1;36m[1;36mRound 290[1;37m[1;m
+[1;35m[1;41m03:39.192 00:30.674 Event timed out ControlMessageReceive:i721 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 291[1;37m[1;m
+[1;36mRestoring link (2:1) -> (4:2)[1;m
+[1;36m[1;44m03:39.193 00:30.675 Successfully matched event LinkRecovery:e722[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:39.193 00:30.676 Successfully matched event CheckInvariants:e723[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m03:39.818 00:30.777 Event timed out ControlMessageSend:i724 c 2 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:02:01')][1;m
+[1;36m[1;36mRound 292[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:39.819 00:30.778 Successfully matched event CheckInvariants:e725[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:39.920 00:30.879 Successfully matched event CheckInvariants:e726[1;m
+[1;36m[1;36mRound 293[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.2 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m03:40.556 00:30.980 Event timed out ControlMessageReceive:i727 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 294[1;37m[1;m
+[1;36mRestoring link (2:2) -> (3:2)[1;m
+[1;36m[1;44m03:40.557 00:30.981 Successfully matched event LinkRecovery:e728[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:40.558 00:30.982 Successfully matched event CheckInvariants:e729[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m03:41.182 00:31.083 Event timed out ControlMessageSend:i730 c 2 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:02:02')][1;m
+[1;36m[1;36mRound 295[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:41.183 00:31.084 Successfully matched event CheckInvariants:e731[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:41.284 00:31.185 Successfully matched event CheckInvariants:e732[1;m
+[1;36m[1;36mRound 296[1;37m[1;m
+[1;35m[1;41m03:42.009 00:31.286 Event timed out ControlMessageReceive:i733 c c1 -> s 2 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 297[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:42.009 00:31.287 Successfully matched event CheckInvariants:e734[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:42.010 00:31.388 Successfully matched event DataplanePermit:i735[1;m
+[1;36m[1;36mRound 298[1;37m[1;m
+[1;36mCutting link (1:2) -> (3:3)[1;m
+[1;36m[1;44m03:42.011 00:31.389 Successfully matched event LinkFailure:e736[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:42.011 00:31.390 Successfully matched event CheckInvariants:e737[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Ignoring port status[1;m
+
+[1;35m[1;41m03:42.634 00:31.491 Event timed out ControlMessageSend:i738 c 1 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:01:02')][1;m
+[1;36m[1;36mRound 299[1;37m[1;m
+[1;36mRestoring link (1:1) -> (4:3)[1;m
+[1;36m[1;44m03:42.635 00:31.492 Successfully matched event LinkRecovery:e739[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:42.636 00:31.492 Successfully matched event CheckInvariants:e740[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_syn_mem_corruption:Invoking controller crash aaaaaargh[1;m
+
+[1;35m[1;41m03:43.240 00:31.587 Event timed out ControlMessageReceive:i741 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 300[1;37m[1;m
+[1;35m[1;41m03:43.842 00:31.588 Event timed out ControlMessageSend:i742 c 1 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:01:01')][1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['c1'][1;m
+[1;41m[1;37mPersistent violations detected!: ['c1'][1;m
+[1;36m[1;44m03:43.843 00:31.589 Successfully matched event CheckInvariants:e743[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:43.843 00:31.689 Successfully matched event DataplanePermit:i744[1;m
+[1;36m[1;36mRound 301[1;37m[1;m
+[1;35m[1;41m03:44.445 00:31.691 Event timed out ControlMessageSend:i745 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36mCutting link (4:1) -> (3:1)[1;m
+[1;36m[1;44m03:44.446 00:31.692 Successfully matched event LinkFailure:e746[1;m
+[1;41m[1;37mViolation encountered again after 1 steps: c1[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['c1'][1;m
+[1;41m[1;37mPersistent violations detected!: ['c1'][1;m
+[1;36m[1;44m03:44.446 00:31.692 Successfully matched event CheckInvariants:e747[1;m
+[1;36m[1;44m03:45.448 00:31.693 Successfully matched event WaitTime:e749[1;m
+[1;36m[1;36mRound -1[1;37m[1;m
+[1;41m[1;37mViolations at end of trace: ['c1'][1;m
+[1;42m[1;37mViolation found c1[1;m
+[1;36m[1;44mEvent Stats: Events matched: 406, timed out: 342
+Matches per event type:
+  WaitTime 1
+  ConnectToControllers 1
+  LinkRecovery 17
+  LinkFailure 22
+  DataplanePermit 64
+  CheckInvariants 301
+Timeouts per event type:
+  ControlMessageSend 90
+  ControlMessageReceive 252
+[1;m

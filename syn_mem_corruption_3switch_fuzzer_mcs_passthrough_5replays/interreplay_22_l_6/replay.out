@@ -1,0 +1,914 @@
+No DataplaneDrops to replay. We suggest you set Replayer's default_dp_permit=True 
+[1;36mStarting POX controller c1[1;m
+[1;33m[c1] POX 0.0.0 / Copyright 2011 James McCauley[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:POX 0.0.0 going up...[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Running on CPython (2.7.4/Apr 8 2013 22:49:24)[1;m
+
+[1;41m[1;33m[c1] INFO:core:POX 0.0.0 is up.[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening for connections on ('127.0.0.1', 6633)[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)[1;33m[c1] MAX_CONNS -2[1;m
+
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] MAX_CONNS -3[1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+
+[1;36m[1;44m00:00.503 00:00.000 Successfully matched event ConnectToControllers:e1[1;m[1;33m[c1] MAX_CONNS -4[1;m
+
+
+[1;33m[c1] MAX_CONNS -5[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 1/1] Connected to 00-00-00-00-00-01[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_syn_mem_corruption:Connect [Con 1/1][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-01[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 4/4] Connected to 00-00-00-00-00-04[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_syn_mem_corruption:Connect [Con 4/4][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-04[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 3/3] Connected to 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_syn_mem_corruption:Connect [Con 3/3][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 2/2] Connected to 00-00-00-00-00-02[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_syn_mem_corruption:Connect [Con 2/2][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-02[1;m
+
+[1;35m[1;41m00:02.010 00:01.007 Event timed out ControlMessageReceive:i2 c c1 -> s 1 [ofp_hello: ][1;m
+[1;36m[1;36mRound 1[1;37m[1;m
+[1;35m[1;41m00:02.636 00:01.008 Event timed out ControlMessageReceive:i3 c c1 -> s 4 [ofp_hello: ][1;m
+[1;35m[1;41m00:03.262 00:01.008 Event timed out ControlMessageReceive:i4 c c1 -> s 3 [ofp_hello: ][1;m
+[1;35m[1;41m00:03.888 00:01.008 Event timed out ControlMessageReceive:i5 c c1 -> s 2 [ofp_hello: ][1;m
+[1;35m[1;41m00:04.514 00:01.009 Event timed out ControlMessageSend:i6 c 1 -> s c1 [ofp_hello: ][1;m
+[1;35m[1;41m00:05.140 00:01.009 Event timed out ControlMessageSend:i7 c 4 -> s c1 [ofp_hello: ][1;m
+[1;35m[1;41m00:05.765 00:01.009 Event timed out ControlMessageSend:i8 c 3 -> s c1 [ofp_hello: ][1;m
+[1;35m[1;41m00:06.391 00:01.010 Event timed out ControlMessageSend:i9 c 2 -> s c1 [ofp_hello: ][1;m
+[1;35m[1;41m00:07.017 00:01.111 Event timed out ControlMessageReceive:i11 c c1 -> s 1 [ofp_features_request: ][1;m
+[1;36m[1;36mRound 2[1;37m[1;m
+[1;35m[1;41m00:07.643 00:01.112 Event timed out ControlMessageReceive:i12 c c1 -> s 4 [ofp_features_request: ][1;m
+[1;35m[1;41m00:08.269 00:01.113 Event timed out ControlMessageReceive:i13 c c1 -> s 3 [ofp_features_request: ][1;m
+[1;35m[1;41m00:08.898 00:01.114 Event timed out ControlMessageReceive:i14 c c1 -> s 2 [ofp_features_request: ][1;m
+[1;35m[1;41m00:09.520 00:01.115 Event timed out ControlMessageSend:i15 c 1 -> s c1 [ofp_features_reply: datapath_id=1][1;m
+[1;35m[1;41m00:10.146 00:01.116 Event timed out ControlMessageSend:i16 c 4 -> s c1 [ofp_features_reply: datapath_id=4][1;m
+[1;35m[1;41m00:10.772 00:01.117 Event timed out ControlMessageSend:i17 c 3 -> s c1 [ofp_features_reply: datapath_id=3][1;m
+[1;35m[1;41m00:11.398 00:01.117 Event timed out ControlMessageSend:i18 c 2 -> s c1 [ofp_features_reply: datapath_id=2][1;m
+[1;35m[1;41m00:12.023 00:01.219 Event timed out ControlMessageReceive:i20 c c1 -> s 1 [ofp_set_config: ][1;m
+[1;36m[1;36mRound 3[1;37m[1;m
+[1;35m[1;41m00:12.649 00:01.219 Event timed out ControlMessageReceive:i21 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:13.275 00:01.221 Event timed out ControlMessageReceive:i22 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:13.901 00:01.222 Event timed out ControlMessageReceive:i23 c c1 -> s 4 [ofp_set_config: ][1;m
+[1;35m[1;41m00:14.527 00:01.223 Event timed out ControlMessageReceive:i24 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:15.153 00:01.224 Event timed out ControlMessageReceive:i25 c c1 -> s 4 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:15.778 00:01.225 Event timed out ControlMessageReceive:i26 c c1 -> s 3 [ofp_set_config: ][1;m
+[1;35m[1;41m00:16.404 00:01.226 Event timed out ControlMessageReceive:i27 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:17.030 00:01.227 Event timed out ControlMessageReceive:i28 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:17.656 00:01.228 Event timed out ControlMessageReceive:i29 c c1 -> s 2 [ofp_set_config: ][1;m
+[1;35m[1;41m00:18.282 00:01.229 Event timed out ControlMessageReceive:i30 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:18.908 00:01.230 Event timed out ControlMessageReceive:i31 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:19.534 00:01.231 Event timed out ControlMessageSend:i32 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m00:20.159 00:01.232 Event timed out ControlMessageSend:i33 c 4 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m00:20.785 00:01.232 Event timed out ControlMessageSend:i34 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m00:21.411 00:01.233 Event timed out ControlMessageSend:i35 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m00:22.037 00:01.334 Event timed out ControlMessageReceive:i37 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;36mRound 4[1;37m[1;m
+[1;35m[1;41m00:22.662 00:01.335 Event timed out ControlMessageReceive:i38 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:23.288 00:01.337 Event timed out ControlMessageReceive:i39 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:23.914 00:01.338 Event timed out ControlMessageReceive:i40 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:24.853 00:01.642 Event timed out ControlMessageReceive:i44 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 7[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:24.855 00:01.744 Successfully matched event DataplanePermit:i46[1;m
+[1;36m[1;36mRound 8[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
+
+[1;35m[1;41m00:25.478 00:01.746 Event timed out ControlMessageSend:i47 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m00:26.104 00:01.848 Event timed out ControlMessageReceive:i50 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 9[1;37m[1;m
+[1;35m[1;41m00:26.730 00:01.850 Event timed out ControlMessageReceive:i51 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:27.356 00:01.851 Event timed out ControlMessageReceive:i52 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;35m[1;41m00:27.982 00:01.852 Event timed out ControlMessageReceive:i53 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:28.608 00:01.853 Event timed out ControlMessageReceive:i54 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:29.234 00:01.854 Event timed out ControlMessageSend:i55 c 3 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:03:02')][1;m
+[1;35m[1;41m00:29.860 00:01.956 Event timed out ControlMessageReceive:i57 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 10[1;37m[1;m
+[1;35m[1;41m00:30.798 00:02.260 Event timed out ControlMessageReceive:i61 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 13[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:30.799 00:02.362 Successfully matched event DataplanePermit:i63[1;m
+[1;36m[1;36mRound 14[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.3 -> 00-00-00-00-00-01.2[1;m
+
+[1;35m[1;41m00:31.424 00:02.364 Event timed out ControlMessageSend:i64 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;35m[1;41m00:32.050 00:02.465 Event timed out ControlMessageReceive:i66 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 15[1;37m[1;m
+[1;35m[1;41m00:32.676 00:02.467 Event timed out ControlMessageReceive:i67 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;35m[1;41m00:33.301 00:02.467 Event timed out ControlMessageReceive:i68 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:33.927 00:02.469 Event timed out ControlMessageReceive:i69 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:34.553 00:02.470 Event timed out ControlMessageReceive:i70 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
+
+[1;35m[1;41m00:35.165 00:02.572 Event timed out ControlMessageReceive:i72 c c1 -> s 3 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 16[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:35.166 00:02.674 Successfully matched event DataplanePermit:i74[1;m
+[1;36m[1;36mRound 17[1;37m[1;m
+[1;35m[1;41m00:35.917 00:02.877 Event timed out ControlMessageReceive:i78 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 19[1;37m[1;m
+[1;35m[1;41m00:36.430 00:02.879 Event timed out ControlMessageSend:i79 c 4 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:04:01')][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:36.431 00:02.980 Successfully matched event DataplanePermit:i81[1;m
+[1;36m[1;36mRound 20[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-04.3[1;m
+
+[1;35m[1;41m00:37.056 00:02.982 Event timed out ControlMessageSend:i82 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m00:37.682 00:03.084 Event timed out ControlMessageReceive:i84 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 21[1;37m[1;m
+[1;35m[1;41m00:38.308 00:03.085 Event timed out ControlMessageReceive:i85 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:38.934 00:03.086 Event timed out ControlMessageReceive:i86 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;35m[1;41m00:39.560 00:03.087 Event timed out ControlMessageReceive:i87 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:40.185 00:03.088 Event timed out ControlMessageReceive:i88 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:40.811 00:03.190 Event timed out ControlMessageReceive:i90 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 22[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:40.812 00:03.293 Successfully matched event DataplanePermit:i92[1;m
+[1;36m[1;36mRound 23[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m00:41.437 00:03.295 Event timed out ControlMessageSend:i93 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m00:42.063 00:03.397 Event timed out ControlMessageReceive:i95 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 24[1;37m[1;m
+[1;35m[1;41m00:42.688 00:03.398 Event timed out ControlMessageReceive:i96 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:43.314 00:03.399 Event timed out ControlMessageReceive:i97 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:43.940 00:03.400 Event timed out ControlMessageReceive:i98 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;35m[1;41m00:44.566 00:03.401 Event timed out ControlMessageReceive:i99 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.3 -> 00-00-00-00-00-01.2[1;m
+
+[1;35m[1;41m00:45.165 00:03.503 Event timed out ControlMessageReceive:i101 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 25[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:45.166 00:03.605 Successfully matched event DataplanePermit:i103[1;m
+[1;36m[1;36mRound 26[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.3 -> 00-00-00-00-00-02.3[1;m
+
+[1;35m[1;41m00:45.818 00:03.607 Event timed out ControlMessageSend:i104 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m00:46.444 00:03.709 Event timed out ControlMessageReceive:i106 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 27[1;37m[1;m
+[1;35m[1;41m00:47.069 00:03.710 Event timed out ControlMessageReceive:i107 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:47.695 00:03.711 Event timed out ControlMessageReceive:i108 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:48.321 00:03.712 Event timed out ControlMessageReceive:i109 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:48.947 00:03.713 Event timed out ControlMessageReceive:i110 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;35m[1;41m00:49.573 00:03.815 Event timed out ControlMessageReceive:i112 c c1 -> s 1 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 28[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:49.576 00:03.918 Successfully matched event DataplanePermit:i115[1;m
+[1;36m[1;36mRound 29[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.1 -> 00-00-00-00-00-04.3[1;m
+
+[1;35m[1;41m00:50.165 00:03.919 Event timed out ControlMessageSend:i116 c 1 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:01:02')][1;m
+[1;35m[1;41m00:50.937 00:04.121 Event timed out ControlMessageReceive:i119 c c1 -> s 4 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 31[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:50.938 00:04.225 Successfully matched event DataplanePermit:i122[1;m
+[1;36m[1;36mRound 32[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m00:51.451 00:04.226 Event timed out ControlMessageSend:i123 c 4 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:04:01')][1;m
+[1;35m[1;41m00:52.076 00:04.227 Event timed out ControlMessageSend:i124 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m00:52.702 00:04.329 Event timed out ControlMessageReceive:i127 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 33[1;37m[1;m
+[1;35m[1;41m00:53.328 00:04.330 Event timed out ControlMessageReceive:i128 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:53.954 00:04.332 Event timed out ControlMessageReceive:i129 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:54.580 00:04.333 Event timed out ControlMessageReceive:i130 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m00:55.166 00:04.334 Event timed out ControlMessageReceive:i131 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:55.831 00:04.335 Event timed out ControlMessageSend:i132 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;35m[1;41m00:56.457 00:04.436 Event timed out ControlMessageReceive:i134 c c1 -> s 4 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 34[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:56.458 00:04.539 Successfully matched event DataplanePermit:i136[1;m
+[1;36m[1;36mRound 35[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.2 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m00:57.083 00:04.540 Event timed out ControlMessageSend:i137 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m00:57.708 00:04.642 Event timed out ControlMessageReceive:i139 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 36[1;37m[1;m
+[1;35m[1;41m00:58.334 00:04.643 Event timed out ControlMessageReceive:i140 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:58.960 00:04.644 Event timed out ControlMessageReceive:i141 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:59.586 00:04.645 Event timed out ControlMessageReceive:i142 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.3 -> 00-00-00-00-00-02.3[1;m
+
+[1;35m[1;41m01:00.166 00:04.647 Event timed out ControlMessageReceive:i143 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;35m[1;41m01:00.838 00:04.750 Event timed out ControlMessageReceive:i147 c c1 -> s 4 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 37[1;37m[1;m
+[1;35m[1;41m01:01.464 00:04.751 Event timed out ControlMessageSend:i148 c 1 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:01:02')][1;m
+[1;35m[1;41m01:02.089 00:04.752 Event timed out ControlMessageSend:i149 c 3 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:03:03')][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:02.090 00:04.853 Successfully matched event DataplanePermit:i151[1;m
+[1;36m[1;36mRound 38[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.3 -> 00-00-00-00-00-01.1[1;m
+
+[1;35m[1;41m01:02.715 00:04.855 Event timed out ControlMessageSend:i152 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m01:03.341 00:04.956 Event timed out ControlMessageReceive:i154 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 39[1;37m[1;m
+[1;35m[1;41m01:03.967 00:04.958 Event timed out ControlMessageReceive:i155 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;35m[1;41m01:04.593 00:04.959 Event timed out ControlMessageReceive:i156 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m01:05.166 00:04.960 Event timed out ControlMessageReceive:i157 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:05.844 00:04.961 Event timed out ControlMessageReceive:i158 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:06.470 00:05.063 Event timed out ControlMessageReceive:i160 c c1 -> s 4 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 40[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:06.471 00:05.165 Successfully matched event DataplanePermit:i162[1;m
+[1;36m[1;36mRound 41[1;37m[1;m
+[1;35m[1;41m01:07.208 00:05.368 Event timed out ControlMessageReceive:i165 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 43[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:07.210 00:05.470 Successfully matched event DataplanePermit:i167[1;m
+[1;36m[1;36mRound 44[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-04.2[1;m
+
+[1;35m[1;41m01:07.722 00:05.471 Event timed out ControlMessageSend:i168 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;35m[1;41m01:08.348 00:05.574 Event timed out ControlMessageReceive:i171 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 45[1;37m[1;m
+[1;35m[1;41m01:08.973 00:05.575 Event timed out ControlMessageReceive:i172 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:09.599 00:05.577 Event timed out ControlMessageReceive:i173 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.2 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m01:10.167 00:05.577 Event timed out ControlMessageReceive:i174 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:10.851 00:05.579 Event timed out ControlMessageReceive:i175 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:11.477 00:05.580 Event timed out ControlMessageSend:i176 c 4 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:04:03')][1;m
+[1;35m[1;41m01:12.103 00:05.681 Event timed out ControlMessageReceive:i178 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 46[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:12.104 00:05.784 Successfully matched event DataplanePermit:i180[1;m
+[1;36m[1;36mRound 47[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.2 -> 00-00-00-00-00-03.2[1;m
+
+[1;35m[1;41m01:12.728 00:05.785 Event timed out ControlMessageSend:i181 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;35m[1;41m01:13.354 00:05.887 Event timed out ControlMessageReceive:i183 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 48[1;37m[1;m
+[1;35m[1;41m01:13.980 00:05.888 Event timed out ControlMessageReceive:i184 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:14.606 00:05.889 Event timed out ControlMessageReceive:i185 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.3 -> 00-00-00-00-00-01.1[1;m
+
+[1;35m[1;41m01:15.167 00:05.890 Event timed out ControlMessageReceive:i186 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;35m[1;41m01:15.858 00:05.891 Event timed out ControlMessageReceive:i187 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:16.483 00:05.993 Event timed out ControlMessageReceive:i189 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 49[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:16.485 00:06.096 Successfully matched event DataplanePermit:i191[1;m
+[1;36m[1;36mRound 50[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.3 -> 00-00-00-00-00-01.3[1;m
+
+[1;35m[1;41m01:17.109 00:06.097 Event timed out ControlMessageSend:i192 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m01:17.735 00:06.199 Event timed out ControlMessageReceive:i194 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 51[1;37m[1;m
+[1;35m[1;41m01:18.361 00:06.200 Event timed out ControlMessageReceive:i195 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;35m[1;41m01:18.987 00:06.201 Event timed out ControlMessageReceive:i196 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:19.613 00:06.202 Event timed out ControlMessageReceive:i197 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.1 -> 00-00-00-00-00-04.2[1;m
+
+[1;35m[1;41m01:20.167 00:06.203 Event timed out ControlMessageReceive:i198 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m01:20.864 00:06.305 Event timed out ControlMessageReceive:i200 c c1 -> s 2 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 52[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:20.865 00:06.407 Successfully matched event DataplanePermit:i202[1;m
+[1;36m[1;36mRound 53[1;37m[1;m
+[1;35m[1;41m01:21.603 00:06.610 Event timed out ControlMessageReceive:i205 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 55[1;37m[1;m
+[1;35m[1;41m01:22.429 00:06.913 Event timed out ControlMessageReceive:i209 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 58[1;37m[1;m
+[1;35m[1;41m01:23.368 00:07.216 Event timed out ControlMessageReceive:i213 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 61[1;37m[1;m
+[1;35m[1;41m01:24.306 00:07.519 Event timed out ControlMessageReceive:i217 c c1 -> s 3 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 64[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:24.307 00:07.620 Successfully matched event DataplanePermit:i219[1;m
+[1;36m[1;36mRound 65[1;37m[1;m
+[1;35m[1;41m01:25.045 00:07.822 Event timed out ControlMessageReceive:i222 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 67[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:25.046 00:07.923 Successfully matched event DataplanePermit:i224[1;m
+[1;36m[1;36mRound 68[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-04.3[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.2 -> 00-00-00-00-00-03.2[1;m
+
+[1;35m[1;41m01:25.558 00:07.924 Event timed out ControlMessageSend:i225 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m01:26.184 00:08.025 Event timed out ControlMessageReceive:i227 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 69[1;37m[1;m
+[1;35m[1;41m01:26.810 00:08.123 Event timed out ControlMessageReceive:i229 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 70[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:26.811 00:08.224 Successfully matched event DataplanePermit:i231[1;m
+[1;36m[1;36mRound 71[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m01:27.435 00:08.225 Event timed out ControlMessageSend:i232 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m01:28.061 00:08.326 Event timed out ControlMessageReceive:i234 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 72[1;37m[1;m
+[1;35m[1;41m01:28.800 00:08.527 Event timed out ControlMessageReceive:i237 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 74[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:28.801 00:08.629 Successfully matched event DataplanePermit:i239[1;m
+[1;36m[1;36mRound 75[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.3 -> 00-00-00-00-00-02.3[1;m
+
+[1;35m[1;41m01:29.313 00:08.629 Event timed out ControlMessageSend:i240 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m01:29.939 00:08.730 Event timed out ControlMessageReceive:i242 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 76[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.3 -> 00-00-00-00-00-01.3[1;m
+
+[1;35m[1;41m01:30.565 00:08.832 Event timed out ControlMessageReceive:i245 c c1 -> s 1 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 77[1;37m[1;m
+[1;35m[1;41m01:31.191 00:08.832 Event timed out ControlMessageSend:i246 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:31.191 00:08.933 Successfully matched event DataplanePermit:i248[1;m
+[1;36m[1;36mRound 78[1;37m[1;m
+[1;35m[1;41m01:31.929 00:09.135 Event timed out ControlMessageReceive:i251 c c1 -> s 4 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 80[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:31.930 00:09.236 Successfully matched event DataplanePermit:i253[1;m
+[1;36m[1;36mRound 81[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m01:32.443 00:09.237 Event timed out ControlMessageSend:i254 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m01:33.068 00:09.338 Event timed out ControlMessageReceive:i256 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 82[1;37m[1;m
+[1;35m[1;41m01:33.694 00:09.439 Event timed out ControlMessageReceive:i258 c c1 -> s 4 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 83[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:33.695 00:09.540 Successfully matched event DataplanePermit:i260[1;m
+[1;36m[1;36mRound 84[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.2 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m01:34.320 00:09.540 Event timed out ControlMessageSend:i261 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m01:34.946 00:09.641 Event timed out ControlMessageReceive:i263 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 85[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.1 -> 00-00-00-00-00-04.3[1;m
+
+[1;35m[1;41m01:35.571 00:09.743 Event timed out ControlMessageReceive:i265 c c1 -> s 4 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 86[1;37m[1;m
+[1;35m[1;41m01:36.510 00:10.048 Event timed out ControlMessageReceive:i269 c c1 -> s 4 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 89[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:36.511 00:10.150 Successfully matched event DataplanePermit:i271[1;m
+[1;36m[1;36mRound 90[1;37m[1;m
+[1;35m[1;41m01:37.249 00:10.353 Event timed out ControlMessageReceive:i274 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 92[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:37.250 00:10.455 Successfully matched event DataplanePermit:i276[1;m
+[1;36m[1;36mRound 93[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-04.2[1;m
+
+[1;35m[1;41m01:37.762 00:10.456 Event timed out ControlMessageSend:i277 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;35m[1;41m01:38.388 00:10.559 Event timed out ControlMessageReceive:i280 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;36mRound 94[1;37m[1;m
+[1;35m[1;41m01:39.014 00:10.559 Event timed out ControlMessageSend:i281 c 2 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:02:02')][1;m
+[1;35m[1;41m01:39.640 00:10.661 Event timed out ControlMessageReceive:i283 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 95[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.3 -> 00-00-00-00-00-02.3[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m01:40.578 00:10.965 Event timed out ControlMessageReceive:i287 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 98[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:40.608 00:11.068 Successfully matched event DataplanePermit:i289[1;m
+[1;36m[1;36mRound 99[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.3 -> 00-00-00-00-00-01.3[1;m
+
+[1;35m[1;41m01:41.204 00:11.069 Event timed out ControlMessageSend:i290 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m01:41.830 00:11.171 Event timed out ControlMessageReceive:i292 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 100[1;37m[1;m
+[1;35m[1;41m01:42.456 00:11.273 Event timed out ControlMessageReceive:i294 c c1 -> s 2 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 101[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:42.457 00:11.375 Successfully matched event DataplanePermit:i296[1;m
+[1;36m[1;36mRound 102[1;37m[1;m
+[1;35m[1;41m01:43.194 00:11.577 Event timed out ControlMessageReceive:i299 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 104[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:43.196 00:11.679 Successfully matched event DataplanePermit:i301[1;m
+[1;36m[1;36mRound 105[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
+
+[1;35m[1;41m01:43.708 00:11.681 Event timed out ControlMessageSend:i302 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m01:44.333 00:11.783 Event timed out ControlMessageReceive:i304 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 106[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:44.334 00:11.784 Successfully matched event CheckInvariants:e305[1;m
+[1;35m[1;41m01:44.959 00:11.878 Event timed out ControlMessageReceive:i306 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 107[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:44.960 00:11.879 Successfully matched event CheckInvariants:e307[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:45.062 00:11.980 Successfully matched event CheckInvariants:e308[1;m
+[1;36m[1;36mRound 108[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.2 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m01:45.898 00:12.183 Event timed out ControlMessageSend:i311 c 1 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:01:01')][1;m
+[1;36m[1;36mRound 110[1;37m[1;m
+[1;35m[1;41m01:46.524 00:12.285 Event timed out ControlMessageReceive:i313 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 111[1;37m[1;m
+[1;35m[1;41m01:47.463 00:12.589 Event timed out ControlMessageReceive:i317 c c1 -> s 3 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 114[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:47.464 00:12.691 Successfully matched event DataplanePermit:i319[1;m
+[1;36m[1;36mRound 115[1;37m[1;m
+[1;35m[1;41m01:48.201 00:12.894 Event timed out ControlMessageReceive:i322 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 117[1;37m[1;m
+[1;35m[1;41m01:49.027 00:13.198 Event timed out ControlMessageReceive:i326 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 120[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:49.028 00:13.300 Successfully matched event DataplanePermit:i328[1;m
+[1;36m[1;36mRound 121[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m01:49.653 00:13.302 Event timed out ControlMessageSend:i329 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.1 -> 00-00-00-00-00-04.2[1;m
+
+[1;35m[1;41m01:50.371 00:13.404 Event timed out ControlMessageReceive:i331 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 122[1;37m[1;m
+[1;35m[1;41m01:51.017 00:13.506 Event timed out ControlMessageReceive:i333 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 123[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:51.046 00:13.608 Successfully matched event DataplanePermit:i335[1;m
+[1;36m[1;36mRound 124[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.3 -> 00-00-00-00-00-02.3[1;m
+
+[1;35m[1;41m01:51.643 00:13.609 Event timed out ControlMessageSend:i336 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m01:52.269 00:13.711 Event timed out ControlMessageReceive:i338 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 125[1;37m[1;m
+[1;35m[1;41m01:52.894 00:13.813 Event timed out ControlMessageReceive:i340 c c1 -> s 1 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 126[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:52.895 00:13.915 Successfully matched event DataplanePermit:i342[1;m
+[1;36m[1;36mRound 127[1;37m[1;m
+[1;35m[1;41m01:53.721 00:14.118 Event timed out ControlMessageReceive:i345 c c1 -> s 4 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 129[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:53.722 00:14.220 Successfully matched event DataplanePermit:i347[1;m
+[1;36m[1;36mRound 130[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m01:54.346 00:14.221 Event timed out ControlMessageSend:i348 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m01:54.972 00:14.323 Event timed out ControlMessageReceive:i350 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 131[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.3 -> 00-00-00-00-00-01.3[1;m
+
+[1;35m[1;41m01:55.598 00:14.425 Event timed out ControlMessageReceive:i352 c c1 -> s 4 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 132[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:55.599 00:14.527 Successfully matched event DataplanePermit:i354[1;m
+[1;36m[1;36mRound 133[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.2 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m01:56.224 00:14.528 Event timed out ControlMessageSend:i355 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m01:56.850 00:14.630 Event timed out ControlMessageReceive:i357 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 134[1;37m[1;m
+[1;35m[1;41m01:57.476 00:14.732 Event timed out ControlMessageReceive:i359 c c1 -> s 4 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 135[1;37m[1;m
+[1;35m[1;41m01:58.414 00:15.037 Event timed out ControlMessageReceive:i363 c c1 -> s 4 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 138[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:58.415 00:15.140 Successfully matched event DataplanePermit:i367[1;m
+[1;36m[1;36mRound 139[1;37m[1;m
+[1;35m[1;41m01:59.040 00:15.141 Event timed out ControlMessageSend:i368 c 4 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:04:02')][1;m
+[1;35m[1;41m01:59.666 00:15.142 Event timed out ControlMessageSend:i369 c 4 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:04:03')][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m02:00.371 00:15.243 Event timed out ControlMessageReceive:i371 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 140[1;37m[1;m
+[1;35m[1;41m02:00.918 00:15.244 Event timed out ControlMessageReceive:i372 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:01.544 00:15.244 Event timed out ControlMessageReceive:i373 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:02.169 00:15.246 Event timed out ControlMessageReceive:i374 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:02.795 00:15.348 Event timed out ControlMessageReceive:i376 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 141[1;37m[1;m
+[1;35m[1;41m02:03.421 00:15.349 Event timed out ControlMessageReceive:i377 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:04.047 00:15.350 Event timed out ControlMessageReceive:i378 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:04.673 00:15.351 Event timed out ControlMessageReceive:i379 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.3 -> 00-00-00-00-00-02.3[1;m
+
+[1;35m[1;41m02:05.169 00:15.353 Event timed out ControlMessageReceive:i380 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:05.170 00:15.455 Successfully matched event DataplanePermit:i383[1;m
+[1;36m[1;36mRound 142[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-04.2[1;m
+
+[1;35m[1;41m02:05.724 00:15.457 Event timed out ControlMessageSend:i384 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;35m[1;41m02:06.237 00:15.458 Event timed out ControlMessageSend:i385 c 3 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:03:02')][1;m
+[1;35m[1;41m02:06.863 00:15.559 Event timed out ControlMessageReceive:i387 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;36mRound 143[1;37m[1;m
+[1;35m[1;41m02:07.489 00:15.661 Event timed out ControlMessageReceive:i389 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 144[1;37m[1;m
+[1;35m[1;41m02:08.428 00:15.965 Event timed out ControlMessageReceive:i393 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 147[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:08.429 00:16.068 Successfully matched event DataplanePermit:i395[1;m
+[1;36m[1;36mRound 148[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.3 -> 00-00-00-00-00-01.3[1;m
+
+[1;35m[1;41m02:09.053 00:16.069 Event timed out ControlMessageSend:i396 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m02:09.679 00:16.171 Event timed out ControlMessageReceive:i398 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 149[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.2 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m02:10.371 00:16.273 Event timed out ControlMessageReceive:i400 c c1 -> s 2 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 150[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:10.372 00:16.375 Successfully matched event DataplanePermit:i403[1;m
+[1;36m[1;36mRound 151[1;37m[1;m
+[1;35m[1;41m02:10.931 00:16.376 Event timed out ControlMessageSend:i404 c 4 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:04:02')][1;m
+[1;35m[1;41m02:11.669 00:16.570 Event timed out ControlMessageReceive:i408 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 153[1;37m[1;m
+[1;35m[1;41m02:12.183 00:16.571 Event timed out ControlMessageSend:i409 c 1 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:01:03')][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:12.184 00:16.673 Successfully matched event DataplanePermit:i411[1;m
+[1;36m[1;36mRound 154[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
+
+[1;35m[1;41m02:12.808 00:16.674 Event timed out ControlMessageSend:i412 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m02:13.434 00:16.776 Event timed out ControlMessageReceive:i414 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 155[1;37m[1;m
+[1;35m[1;41m02:14.173 00:16.980 Event timed out ControlMessageReceive:i418 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 157[1;37m[1;m
+[1;35m[1;41m02:14.686 00:16.981 Event timed out ControlMessageSend:i419 c 2 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:02:03')][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:14.687 00:17.083 Successfully matched event DataplanePermit:i421[1;m
+[1;36m[1;36mRound 158[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;35m[1;41m02:15.312 00:17.084 Event timed out ControlMessageSend:i422 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;35m[1;41m02:15.938 00:17.186 Event timed out ControlMessageReceive:i424 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 159[1;37m[1;m
+[1;35m[1;41m02:16.563 00:17.187 Event timed out ControlMessageReceive:i425 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:17.189 00:17.189 Event timed out ControlMessageReceive:i426 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:17.815 00:17.190 Event timed out ControlMessageReceive:i427 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:18.441 00:17.191 Event timed out ControlMessageReceive:i428 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;35m[1;41m02:19.067 00:17.293 Event timed out ControlMessageReceive:i431 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 160[1;37m[1;m
+[1;35m[1;41m02:19.693 00:17.294 Event timed out ControlMessageSend:i432 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.3 -> 00-00-00-00-00-01.3[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.1 -> 00-00-00-00-00-04.2[1;m
+
+[1;35m[1;41m02:20.631 00:17.596 Event timed out ControlMessageReceive:i436 c c1 -> s 3 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 163[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:20.632 00:17.698 Successfully matched event DataplanePermit:i439[1;m
+[1;36m[1;36mRound 164[1;37m[1;m
+[1;35m[1;41m02:21.257 00:17.699 Event timed out ControlMessageSend:i440 c 4 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:04:02')][1;m
+[1;35m[1;41m02:21.996 00:17.902 Event timed out ControlMessageReceive:i443 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 166[1;37m[1;m
+[1;35m[1;41m02:22.822 00:18.206 Event timed out ControlMessageReceive:i447 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 169[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:22.823 00:18.309 Successfully matched event DataplanePermit:i449[1;m
+[1;36m[1;36mRound 170[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m02:23.448 00:18.310 Event timed out ControlMessageSend:i450 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m02:24.073 00:18.412 Event timed out ControlMessageReceive:i452 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 171[1;37m[1;m
+[1;35m[1;41m02:24.699 00:18.514 Event timed out ControlMessageReceive:i454 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 172[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;35m[1;41m02:25.638 00:18.818 Event timed out ControlMessageReceive:i458 c c1 -> s 1 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 175[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:25.639 00:18.920 Successfully matched event DataplanePermit:i460[1;m
+[1;36m[1;36mRound 176[1;37m[1;m
+[1;35m[1;41m02:26.376 00:19.123 Event timed out ControlMessageReceive:i463 c c1 -> s 4 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 178[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:26.378 00:19.225 Successfully matched event DataplanePermit:i465[1;m
+[1;36m[1;36mRound 179[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m02:26.890 00:19.227 Event timed out ControlMessageSend:i466 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m02:27.516 00:19.329 Event timed out ControlMessageReceive:i468 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 180[1;37m[1;m
+[1;35m[1;41m02:28.142 00:19.430 Event timed out ControlMessageReceive:i470 c c1 -> s 4 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 181[1;37m[1;m
+[1;35m[1;41m02:29.080 00:19.735 Event timed out ControlMessageReceive:i474 c c1 -> s 4 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 184[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:29.085 00:19.837 Successfully matched event DataplanePermit:i476[1;m
+[1;36m[1;36mRound 185[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.3 -> 00-00-00-00-00-01.1[1;m
+
+[1;35m[1;41m02:29.706 00:19.838 Event timed out ControlMessageSend:i477 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m02:30.332 00:19.940 Event timed out ControlMessageReceive:i479 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 186[1;37m[1;m
+[1;35m[1;41m02:30.958 00:19.941 Event timed out ControlMessageReceive:i480 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;35m[1;41m02:31.584 00:19.942 Event timed out ControlMessageReceive:i481 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:32.210 00:19.943 Event timed out ControlMessageReceive:i482 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:32.835 00:19.944 Event timed out ControlMessageReceive:i483 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:33.461 00:20.047 Event timed out ControlMessageReceive:i486 c c1 -> s 4 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 187[1;37m[1;m
+[1;35m[1;41m02:34.087 00:20.048 Event timed out ControlMessageSend:i487 c 3 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:03:02')][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:34.091 00:20.150 Successfully matched event DataplanePermit:i489[1;m
+[1;36m[1;36mRound 188[1;37m[1;m
+[1;35m[1;41m02:34.713 00:20.252 Event timed out ControlMessageReceive:i491 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 189[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m02:35.372 00:20.253 Event timed out ControlMessageReceive:i492 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:35.965 00:20.254 Event timed out ControlMessageReceive:i493 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:36.590 00:20.256 Event timed out ControlMessageReceive:i494 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:37.216 00:20.358 Event timed out ControlMessageReceive:i496 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 190[1;37m[1;m
+[1;35m[1;41m02:37.842 00:20.359 Event timed out ControlMessageReceive:i497 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:38.468 00:20.360 Event timed out ControlMessageReceive:i498 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:39.094 00:20.361 Event timed out ControlMessageReceive:i499 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m02:39.720 00:20.363 Event timed out ControlMessageReceive:i500 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:39.721 00:20.465 Successfully matched event DataplanePermit:i502[1;m
+[1;36m[1;36mRound 191[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-04.2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.3 -> 00-00-00-00-00-01.1[1;m
+
+[1;35m[1;41m02:40.375 00:20.466 Event timed out ControlMessageSend:i503 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;35m[1;41m02:40.971 00:20.568 Event timed out ControlMessageReceive:i505 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;36mRound 192[1;37m[1;m
+[1;35m[1;41m02:41.597 00:20.669 Event timed out ControlMessageReceive:i507 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 193[1;37m[1;m
+[1;35m[1;41m02:42.536 00:20.974 Event timed out ControlMessageReceive:i511 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 196[1;37m[1;m
+[1;35m[1;41m02:43.162 00:21.077 Event timed out ControlMessageSend:i514 c 4 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:04:01')][1;m
+[1;36m[1;36mRound 197[1;37m[1;m
+[1;35m[1;41m02:43.900 00:21.281 Event timed out ControlMessageReceive:i518 c c1 -> s 2 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 199[1;37m[1;m
+[1;35m[1;41m02:44.413 00:21.282 Event timed out ControlMessageSend:i519 c 4 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:04:03')][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:44.414 00:21.384 Successfully matched event DataplanePermit:i521[1;m
+[1;36m[1;36mRound 200[1;37m[1;m
+[1;35m[1;41m02:45.152 00:21.586 Event timed out ControlMessageReceive:i524 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 202[1;37m[1;m
+[1;35m[1;41m02:45.778 00:21.690 Event timed out ControlMessageSend:i528 c 4 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:04:01')][1;m
+[1;36m[1;36mRound 203[1;37m[1;m
+[1;35m[1;41m02:46.291 00:21.691 Event timed out ControlMessageSend:i529 c 2 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:02:01')][1;m
+[1;35m[1;41m02:47.029 00:21.889 Event timed out ControlMessageReceive:i532 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 205[1;37m[1;m
+[1;35m[1;41m02:47.968 00:22.294 Event timed out ControlMessageReceive:i537 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 209[1;37m[1;m
+[1;35m[1;41m02:48.594 00:22.397 Event timed out ControlMessageSend:i540 c 2 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:02:03')][1;m
+[1;36m[1;36mRound 210[1;37m[1;m
+[1;35m[1;41m02:49.420 00:22.600 Event timed out ControlMessageReceive:i543 c c1 -> s 3 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 212[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:49.421 00:22.702 Successfully matched event DataplanePermit:i545[1;m
+[1;36m[1;36mRound 213[1;37m[1;m
+[1;35m[1;41m02:50.158 00:22.905 Event timed out ControlMessageReceive:i548 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 215[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.1 -> 00-00-00-00-00-04.2[1;m
+
+[1;35m[1;41m02:50.985 00:23.209 Event timed out ControlMessageReceive:i552 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 218[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:50.986 00:23.312 Successfully matched event DataplanePermit:i554[1;m
+[1;36m[1;36mRound 219[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m02:51.610 00:23.313 Event timed out ControlMessageSend:i555 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m02:52.236 00:23.415 Event timed out ControlMessageReceive:i557 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 220[1;37m[1;m
+[1;35m[1;41m02:52.862 00:23.517 Event timed out ControlMessageReceive:i560 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 221[1;37m[1;m
+[1;35m[1;41m02:53.488 00:23.519 Event timed out ControlMessageSend:i561 c 2 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:02:03')][1;m
+[1;35m[1;41m02:54.427 00:23.822 Event timed out ControlMessageReceive:i565 c c1 -> s 1 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 224[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:54.428 00:23.925 Successfully matched event DataplanePermit:i567[1;m
+[1;36m[1;36mRound 225[1;37m[1;m
+[1;35m[1;41m02:55.165 00:24.128 Event timed out ControlMessageReceive:i570 c c1 -> s 4 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 227[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:55.169 00:24.230 Successfully matched event DataplanePermit:i572[1;m
+[1;36m[1;36mRound 228[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m02:55.679 00:24.231 Event timed out ControlMessageSend:i573 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m02:56.304 00:24.334 Event timed out ControlMessageReceive:i576 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 229[1;37m[1;m
+[1;35m[1;41m02:56.930 00:24.334 Event timed out ControlMessageSend:i577 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;35m[1;41m02:57.556 00:24.436 Event timed out ControlMessageReceive:i579 c c1 -> s 4 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 230[1;37m[1;m
+[1;35m[1;41m02:58.495 00:24.740 Event timed out ControlMessageReceive:i583 c c1 -> s 4 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 233[1;37m[1;m
+[1;35m[1;41m02:59.121 00:24.844 Event timed out ControlMessageSend:i586 c 1 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:01:03')][1;m
+[1;36m[1;36mRound 234[1;37m[1;m
+[1;35m[1;41m02:59.859 00:25.046 Event timed out ControlMessageReceive:i589 c c1 -> s 4 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 236[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:59.860 00:25.148 Successfully matched event DataplanePermit:i591[1;m
+[1;36m[1;36mRound 237[1;37m[1;m
+[1;35m[1;41m03:00.485 00:25.250 Event timed out ControlMessageReceive:i593 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 238[1;37m[1;m
+[1;35m[1;41m03:00.998 00:25.252 Event timed out ControlMessageReceive:i594 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:01.624 00:25.253 Event timed out ControlMessageReceive:i595 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:02.250 00:25.254 Event timed out ControlMessageReceive:i596 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:02.876 00:25.356 Event timed out ControlMessageReceive:i598 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 239[1;37m[1;m
+[1;35m[1;41m03:03.502 00:25.357 Event timed out ControlMessageReceive:i599 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:04.128 00:25.359 Event timed out ControlMessageReceive:i600 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:04.753 00:25.360 Event timed out ControlMessageReceive:i601 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m03:05.379 00:25.361 Event timed out ControlMessageReceive:i602 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m03:06.318 00:25.665 Event timed out ControlMessageReceive:i606 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 242[1;37m[1;m
+[1;35m[1;41m03:07.257 00:25.970 Event timed out ControlMessageReceive:i610 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 245[1;37m[1;m
+[1;35m[1;41m03:08.196 00:26.269 Event timed out ControlMessageReceive:i615 c c1 -> s 2 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 248[1;37m[1;m
+[1;35m[1;41m03:08.821 00:26.270 Event timed out ControlMessageSend:i616 c 4 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:04:03')][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:08.822 00:26.372 Successfully matched event DataplanePermit:i618[1;m
+[1;36m[1;36mRound 249[1;37m[1;m
+[1;35m[1;41m03:09.760 00:26.675 Event timed out ControlMessageReceive:i622 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 252[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:09.761 00:26.777 Successfully matched event DataplanePermit:i624[1;m
+[1;36m[1;36mRound 253[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
+
+[1;35m[1;41m03:10.386 00:26.779 Event timed out ControlMessageSend:i625 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m03:11.011 00:26.881 Event timed out ControlMessageReceive:i627 c c1 -> s 4 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 254[1;37m[1;m
+[1;35m[1;41m03:11.637 00:26.983 Event timed out ControlMessageReceive:i629 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 255[1;37m[1;m
+[1;35m[1;41m03:12.576 00:27.288 Event timed out ControlMessageReceive:i633 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 258[1;37m[1;m
+[1;35m[1;41m03:13.515 00:27.592 Event timed out ControlMessageReceive:i637 c c1 -> s 3 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 261[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:13.516 00:27.694 Successfully matched event DataplanePermit:i639[1;m
+[1;36m[1;36mRound 262[1;37m[1;m
+[1;35m[1;41m03:14.141 00:27.798 Event timed out ControlMessageSend:i643 c 1 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:01:03')][1;m
+[1;36m[1;36mRound 263[1;37m[1;m
+[1;35m[1;41m03:14.767 00:27.798 Event timed out ControlMessageSend:i644 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;35m[1;41m03:15.392 00:27.901 Event timed out ControlMessageReceive:i647 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 264[1;37m[1;m
+[1;35m[1;41m03:16.018 00:27.902 Event timed out ControlMessageSend:i648 c 3 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:03:01')][1;m
+[1;35m[1;41m03:16.756 00:28.106 Event timed out ControlMessageSend:i652 c 1 -> s c1 [ofp_port_status: reason=2, desc=(3, u'00:00:00:00:01:03')][1;m
+[1;36m[1;36mRound 266[1;37m[1;m
+[1;35m[1;41m03:17.382 00:28.208 Event timed out ControlMessageReceive:i654 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 267[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:17.383 00:28.310 Successfully matched event DataplanePermit:i657[1;m
+[1;36m[1;36mRound 268[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m03:17.896 00:28.312 Event timed out ControlMessageSend:i658 c 4 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:04:02')][1;m
+[1;35m[1;41m03:18.521 00:28.312 Event timed out ControlMessageSend:i659 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m03:19.147 00:28.414 Event timed out ControlMessageReceive:i661 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 269[1;37m[1;m
+[1;35m[1;41m03:19.773 00:28.516 Event timed out ControlMessageReceive:i663 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 270[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:19.774 00:28.618 Successfully matched event DataplanePermit:i665[1;m
+[1;36m[1;36mRound 271[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.3 -> 00-00-00-00-00-02.3[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
+
+[1;35m[1;41m03:20.399 00:28.620 Event timed out ControlMessageSend:i666 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=3][1;m
+[1;35m[1;41m03:21.024 00:28.721 Event timed out ControlMessageReceive:i668 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 272[1;37m[1;m
+[1;35m[1;41m03:21.650 00:28.723 Event timed out ControlMessageReceive:i669 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:22.276 00:28.724 Event timed out ControlMessageReceive:i670 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:22.902 00:28.725 Event timed out ControlMessageReceive:i671 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:23.528 00:28.726 Event timed out ControlMessageReceive:i672 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;35m[1;41m03:24.154 00:28.828 Event timed out ControlMessageReceive:i674 c c1 -> s 1 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 273[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:24.155 00:28.930 Successfully matched event DataplanePermit:i676[1;m
+[1;36m[1;36mRound 274[1;37m[1;m
+[1;35m[1;41m03:24.892 00:29.132 Event timed out ControlMessageReceive:i679 c c1 -> s 4 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 276[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:24.893 00:29.234 Successfully matched event DataplanePermit:i681[1;m
+[1;36m[1;36mRound 277[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m03:25.405 00:29.236 Event timed out ControlMessageSend:i682 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m03:26.031 00:29.337 Event timed out ControlMessageReceive:i684 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 278[1;37m[1;m
+[1;35m[1;41m03:26.657 00:29.439 Event timed out ControlMessageReceive:i686 c c1 -> s 4 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 279[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:26.658 00:29.541 Successfully matched event DataplanePermit:i688[1;m
+[1;36m[1;36mRound 280[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.2 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m03:27.282 00:29.543 Event timed out ControlMessageSend:i689 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m03:27.908 00:29.645 Event timed out ControlMessageReceive:i691 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 281[1;37m[1;m
+[1;35m[1;41m03:28.534 00:29.646 Event timed out ControlMessageReceive:i692 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:29.160 00:29.647 Event timed out ControlMessageReceive:i693 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:29.786 00:29.648 Event timed out ControlMessageReceive:i694 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.3 -> 00-00-00-00-00-02.3[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-03.3[1;m
+
+[1;35m[1;41m03:30.412 00:29.649 Event timed out ControlMessageReceive:i695 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;35m[1;41m03:31.038 00:29.751 Event timed out ControlMessageReceive:i697 c c1 -> s 4 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 282[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:31.039 00:29.853 Successfully matched event DataplanePermit:i699[1;m
+[1;36m[1;36mRound 283[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-04.3 -> 00-00-00-00-00-01.1[1;m
+
+[1;35m[1;41m03:31.663 00:29.855 Event timed out ControlMessageSend:i700 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m03:32.289 00:29.956 Event timed out ControlMessageReceive:i702 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 284[1;37m[1;m
+[1;35m[1;41m03:32.915 00:30.058 Event timed out ControlMessageReceive:i704 c c1 -> s 4 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 285[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:32.919 00:30.160 Successfully matched event DataplanePermit:i706[1;m
+[1;36m[1;36mRound 286[1;37m[1;m
+[1;35m[1;41m03:33.541 00:30.262 Event timed out ControlMessageReceive:i708 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 287[1;37m[1;m
+[1;35m[1;41m03:34.167 00:30.262 Event timed out ControlMessageReceive:i709 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:34.793 00:30.263 Event timed out ControlMessageReceive:i710 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m03:35.418 00:30.264 Event timed out ControlMessageReceive:i711 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:36.044 00:30.365 Event timed out ControlMessageReceive:i713 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 288[1;37m[1;m
+[1;35m[1;41m03:36.670 00:30.366 Event timed out ControlMessageReceive:i714 c c1 -> s 4 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:37.296 00:30.367 Event timed out ControlMessageReceive:i715 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:37.921 00:30.368 Event timed out ControlMessageReceive:i716 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m03:38.547 00:30.370 Event timed out ControlMessageReceive:i717 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m03:39.486 00:30.674 Event timed out ControlMessageReceive:i721 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 291[1;37m[1;m
+[1;35m[1;41m03:40.112 00:30.777 Event timed out ControlMessageSend:i724 c 2 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:02:01')][1;m
+[1;36m[1;36mRound 292[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.2 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m03:40.850 00:30.980 Event timed out ControlMessageReceive:i727 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 294[1;37m[1;m
+[1;35m[1;41m03:41.476 00:31.083 Event timed out ControlMessageSend:i730 c 2 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:02:02')][1;m
+[1;36m[1;36mRound 295[1;37m[1;m
+[1;35m[1;41m03:42.302 00:31.286 Event timed out ControlMessageReceive:i733 c c1 -> s 2 [ofp_packet_out: actions=(u'output(4)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 297[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:42.303 00:31.388 Successfully matched event DataplanePermit:i735[1;m
+[1;36m[1;36mRound 298[1;37m[1;m
+[1;35m[1;41m03:42.928 00:31.491 Event timed out ControlMessageSend:i738 c 1 -> s c1 [ofp_port_status: reason=2, desc=(2, u'00:00:00:00:01:02')][1;m
+[1;36m[1;36mRound 299[1;37m[1;m
+[1;35m[1;41m03:43.554 00:31.587 Event timed out ControlMessageReceive:i741 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 300[1;37m[1;m
+[1;35m[1;41m03:44.180 00:31.588 Event timed out ControlMessageSend:i742 c 1 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:01:01')][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:44.181 00:31.689 Successfully matched event DataplanePermit:i744[1;m
+[1;36m[1;36mRound 301[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-04.1[1;m
+
+[1;35m[1;41m03:44.805 00:31.691 Event timed out ControlMessageSend:i745 c 4 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-04.3 -> 00-00-00-00-00-01.1[1;m
+
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44mEvent Stats: Events matched: 68, timed out: 342
+Matches per event type:
+  ConnectToControllers 1
+  CheckInvariants 3
+  DataplanePermit 64
+Timeouts per event type:
+  ControlMessageSend 90
+  ControlMessageReceive 252
+[1;m
+[1;36mKilling controller c1 (pid 13095)[1;m
+Terminating child controllers... OK
