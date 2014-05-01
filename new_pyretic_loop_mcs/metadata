@@ -1,0 +1,36 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/new_pyretic_loop/mcs_config.py"
+  ],
+  "cwd": "/home/mininet/sts",
+  "host": {
+    "cpu_info": "Intel(R) Core(TM) i7-4960HQ CPU @ 2.60GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:       8178284    2048112    6130172          0      56004    1809408\n-/+ buffers/cache:     182700    7995584\nSwap:      1046524          0    1046524",
+    "name": "mininet-vm",
+    "num_cores": "3",
+    "uptime": "16:05:22 up  2:12,  1 user,  load average: 0.05, 0.03, 0.05"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "debugger",
+      "commit": "e0ff3f7838f6fde3bd38f974cd05c78d307c4c87"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "fbe0700352ff931405485e5cbf0e3c046cca2f60"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 12.10",
+    "uname": "Linux mininet-vm 3.5.0-17-generic #28-Ubuntu SMP Tue Oct 9 19:31:23 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_01_26_16_05_22",
+  "user": "mininet"
+}
