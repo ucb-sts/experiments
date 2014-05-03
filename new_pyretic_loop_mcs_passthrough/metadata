@@ -1,0 +1,38 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/new_pyretic_loop_mcs/orig_config.py",
+    "-n",
+    "new_pyretic_loop_mcs_passthrough"
+  ],
+  "cwd": "/home/mininet/sts",
+  "host": {
+    "cpu_info": "Intel(R) Core(TM) i5-2415M CPU @ 2.30GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:       1019012     911316     107696          0      77580     719352\n-/+ buffers/cache:     114384     904628\nSwap:      1046524          0    1046524",
+    "name": "mininet-vm",
+    "num_cores": "1",
+    "uptime": "13:38:18 up  9:57,  2 users,  load average: 0.00, 0.01, 0.05"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "master",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "HEAD",
+      "commit": "e0ff3f7838f6fde3bd38f974cd05c78d307c4c87"
+    },
+    "sts": {
+      "branch": "updated_pyretic_loop",
+      "commit": "2ffc9f6aa248517933095d9cfd6010e83b459f3d"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 13.04",
+    "uname": "Linux mininet-vm 3.8.0-19-generic #29-Ubuntu SMP Wed Apr 17 18:16:28 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_05_03_13_38_18",
+  "user": "mininet"
+}

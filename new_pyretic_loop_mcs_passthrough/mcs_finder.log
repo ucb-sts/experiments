@@ -1,0 +1,39 @@
+Violation reproduced successfully! Proceeding with pruning
+Subsets:
+l/0: e4 e11 e20 e33 e47 e58 e59 e60 e84 e103 e110
+r/0: e111 e112 e113 e114 e115 e117 e119 e120 e151 e167 e172
+Current subset: l/0: e4 e11 e20 e33 e47 e58 e59 e60 e84 e103 e110
+No violation in 0'th...
+Current subset: r/0: e111 e112 e113 e114 e115 e117 e119 e120 e151 e167 e172
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+r/0.l/1: e111 e112 e113 e114 e115 e117
+r/0.r/1: e119 e120 e151 e167 e172
+Current subset: r/0.l/1: e111 e112 e113 e114 e115 e117
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+r/0.l/1.l/2: e111 e112 e113
+r/0.l/1.r/2: e114 e115 e117
+Current subset: r/0.l/1.l/2: e111 e112 e113
+No violation in 0'th...
+Current subset: r/0.l/1.r/2: e114 e115 e117
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+r/0.l/1.r/2.l/3: e114 e115
+r/0.l/1.r/2.r/3: e117
+Current subset: r/0.l/1.r/2.l/3: e114 e115
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+r/0.l/1.r/2.l/3.l/4: e114
+r/0.l/1.r/2.l/3.r/4: e115
+Current subset: r/0.l/1.r/2.l/3.l/4: e114
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [LinkFailure:e114:('LinkFailure', 1, 1, 3, 2)]
+=== Total replays: 10 ===
+Final MCS (1 elements):
+ - LinkFailure:e114
