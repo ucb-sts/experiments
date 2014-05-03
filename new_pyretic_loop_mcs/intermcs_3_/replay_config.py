@@ -20,4 +20,4 @@ control_flow = Replayer(simulation_config, "experiments/new_pyretic_loop_mcs/int
                         default_dp_permit=False,
                         pass_through_whitelisted_messages=False,
                         invariant_check_name='InvariantChecker.python_check_loops',
-                        bug_signature="{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100002, 300002, 200001], 'port': 100002}")
+                        bug_signature="{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100001, 200002, 300001], 'port': 100001}")

@@ -14,6 +14,9 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(start_
 
 control_flow = EfficientMCSFinder(simulation_config, "experiments/new_pyretic_loop/events.trace",
                                   wait_on_deterministic_values=False,
+                                  default_dp_permit=True,
+                                  pass_through_whitelisted_messages=False,
                                   delay_flow_mods=False,
+                                  max_replays_per_subsequence=2,
                                   invariant_check_name='InvariantChecker.python_check_loops',
                                   bug_signature="")
