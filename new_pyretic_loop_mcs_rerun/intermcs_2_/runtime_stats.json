@@ -1,0 +1,91 @@
+{
+  "_iteration": 3,
+  "_runtime_stats_path": "experiments/new_pyretic_loop_mcs_rerun/intermcs_2_/runtime_stats.json",
+  "ambiguous_counts": {},
+  "ambiguous_events": {},
+  "buffered_message_receipts": {
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": []
+  },
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./pyretic.py -m p0 -v high pyretic.modules.hub', label='c1', address='127.0.0.1', cwd='../pyretic', kill_cmd='ps aux | grep -e pox -e pyretic | grep -v simulator | cut -c 9-15 | xargs kill -9')],\n                 topology_class=MeshTopology,\n                 topology_params=\"num_switches=3\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=False,\n                 kill_controllers_on_exit=True)",
+  "early_internal_events": {
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": []
+  },
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 22,
+    "1": 22,
+    "2": 11
+  },
+  "matched_events": {
+    "2": {
+      "CheckInvariants": 11,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 65,
+      "ControlMessageSend": 24,
+      "DataplanePermit": 9
+    },
+    "3": {
+      "CheckInvariants": 11,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 65,
+      "ControlMessageSend": 24,
+      "DataplanePermit": 9
+    },
+    "4": {
+      "CheckInvariants": 9,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 105,
+      "ControlMessageSend": 31,
+      "DataplanePermit": 9,
+      "LinkFailure": 1,
+      "WaitTime": 1
+    },
+    "5": {
+      "CheckInvariants": 5,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": 105,
+      "ControlMessageSend": 31,
+      "DataplanePermit": 9,
+      "LinkFailure": 1
+    }
+  },
+  "new_internal_events": {
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": []
+  },
+  "original_duration_seconds": 3.257765054702759,
+  "peeker": false,
+  "prune_duration_seconds": 0,
+  "prune_start_epoch": 1399145590.652308,
+  "replay_duration_seconds": 6.3488450050354,
+  "replay_end_epoch": 1399145590.65212,
+  "replay_start_epoch": 1399145584.303275,
+  "subsequence_id": 0,
+  "timed_out_events": {
+    "2": {
+      "ControlMessageReceive": 40,
+      "ControlMessageSend": 7
+    },
+    "3": {
+      "ControlMessageReceive": 40,
+      "ControlMessageSend": 7
+    },
+    "4": {},
+    "5": {}
+  },
+  "total_events": 169,
+  "total_inputs": 22,
+  "total_inputs_replayed": 61,
+  "total_replays": 5,
+  "violation_found_in_run": {
+    "0": 2
+  }
+}

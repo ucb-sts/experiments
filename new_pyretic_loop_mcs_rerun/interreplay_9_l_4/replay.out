@@ -1,0 +1,1041 @@
+connect_socket_with_backoff ('127.0.0.1', 6633)
+Error connecting.  -- [Errno 111] Connection refused. Backing off 1 seconds ...
+[1;33m[c1] INFO:core:POX 0.1.0 (betta) is up.[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;36m[1;44m00:01.509 00:00.000 Successfully matched event ConnectToControllers:e1[1;m
+[1;36m[1;44m00:01.544 00:01.026 Successfully matched event ControlMessageReceive:i2 c c1 -> s 1 [ofp_hello: ][1;m
+[1;36m[1;36mRound 1[1;37m[1;m
+[1;36m[1;44m00:01.549 00:01.026 Successfully matched event ControlMessageSend:i3 c 1 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:01.551 00:01.131 Successfully matched event ControlMessageReceive:i5 c c1 -> s 3 [ofp_hello: ][1;m
+[1;36m[1;36mRound 2[1;37m[1;m
+[1;36m[1;44m00:01.553 00:01.131 Successfully matched event ControlMessageReceive:i6 c c1 -> s 2 [ofp_hello: ][1;m
+[1;36m[1;44m00:01.564 00:01.132 Successfully matched event ControlMessageReceive:i7 c c1 -> s 1 [ofp_features_request: ][1;m
+[1;36m[1;44m00:01.566 00:01.132 Successfully matched event ControlMessageSend:i8 c 3 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:01.568 00:01.132 Successfully matched event ControlMessageSend:i9 c 2 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:01.570 00:01.132 Successfully matched event ControlMessageSend:i10 c 1 -> s c1 [ofp_features_reply: datapath_id=1][1;m
+[1;36m[1;44m00:01.620 00:01.235 Successfully matched event ControlMessageReceive:i12 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;36m[1;36mRound 3[1;37m[1;m
+[1;36m[1;44m00:01.623 00:01.235 Successfully matched event ControlMessageReceive:i13 c c1 -> s 1 [ofp_set_config: ][1;m
+[1;36m[1;44m00:01.625 00:01.236 Successfully matched event ControlMessageReceive:i14 c c1 -> s 3 [ofp_features_request: ][1;m
+[1;36m[1;44m00:01.627 00:01.236 Successfully matched event ControlMessageReceive:i15 c c1 -> s 2 [ofp_features_request: ][1;m
+[1;36m[1;44m00:01.629 00:01.236 Successfully matched event ControlMessageReceive:i16 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:01.631 00:01.237 Successfully matched event ControlMessageSend:i17 c 3 -> s c1 [ofp_features_reply: datapath_id=3][1;m
+[1;36m[1;44m00:01.633 00:01.238 Successfully matched event ControlMessageSend:i18 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:01.636 00:01.238 Successfully matched event ControlMessageSend:i19 c 2 -> s c1 [ofp_features_reply: datapath_id=2][1;m
+[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-01 1] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_switch_joins[1;m
+
+[1;41m[1;33m[c1] INFO:pyretic.core.runtime.ConcreteNetwork: OpenFlow switch 1 connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ---------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |  egress ports  |[1;m
+
+[1;41m[1;33m[c1] ---------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |                |[1;m
+
+[1;41m[1;33m[c1] ---------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 1:1:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ---------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |  egress ports  |[1;m
+
+[1;41m[1;33m[c1] ---------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[1]---       |[1;m
+
+[1;41m[1;33m[c1] ---------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 1:2:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: -------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |  egress ports      |[1;m
+
+[1;41m[1;33m[c1] -------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] -------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 1:3:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;36m[1;44m00:01.689 00:01.341 Successfully matched event ControlMessageReceive:i21 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 4[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:01.696 00:01.342 Successfully matched event ControlMessageReceive:i22 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:01.698 00:01.343 Successfully matched event ControlMessageReceive:i23 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:01.701 00:01.343 Successfully matched event ControlMessageReceive:i24 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:01.703 00:01.344 Successfully matched event ControlMessageReceive:i25 c c1 -> s 2 [ofp_set_config: ][1;m
+[1;36m[1;44m00:01.705 00:01.344 Successfully matched event ControlMessageReceive:i26 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:01.711 00:01.345 Successfully matched event ControlMessageReceive:i27 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:01.713 00:01.345 Successfully matched event ControlMessageReceive:i28 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:01.715 00:01.346 Successfully matched event ControlMessageReceive:i29 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:01.720 00:01.346 Successfully matched event ControlMessageReceive:i30 c c1 -> s 3 [ofp_set_config: ][1;m
+[1;36m[1;44m00:01.721 00:01.346 Successfully matched event ControlMessageSend:i31 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:01.722 00:01.346 Successfully matched event ControlMessageSend:i32 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:01.723 00:01.461 Successfully matched event DataplanePermit:i34[1;m
+[1;36m[1;36mRound 5[1;37m[1;m
+[1;36m[1;44m00:01.725 00:01.463 Successfully matched event DataplanePermit:i35[1;m
+[1;36m[1;44m00:01.726 00:01.464 Successfully matched event DataplanePermit:i36[1;m
+[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-03 3] connected[1;m
+
+[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-02 2] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_switch_joins[1;m
+
+[1;41m[1;33m[c1] INFO:pyretic.core.runtime.ConcreteNetwork: OpenFlow switch 3 connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 3       |                  |                             |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 3:1:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 3       |                  |  3[1]---                    |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 3:2:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 3       |                  |  3[2]---, 3[1]---           |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 3:3:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 3       |                  |  3[2]---, 3[1]---, 3[3]---  |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;36m[1;44m00:01.804 00:01.464 Successfully matched event ControlMessageReceive:i37 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m [1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_switch_joins[1;m
+
+[1;41m[1;33m[c1] INFO:pyretic.core.runtime.ConcreteNetwork: OpenFlow switch 2 connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 2       |                  |                             |[1;m
+
+
+[1;41m[1;33m[c1] 3       |                  |  3[2]---, 3[1]---, 3[3]---  |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 2:1:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 2       |                  |  2[1]---                    |[1;m
+
+[1;41m[1;33m[c1] 3       |                  |  3[2]---, 3[1]---, 3[3]---  |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 2:2:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 2       |                  |  2[1]---, 2[2]---           |[1;m
+
+[1;41m[1;33m[c1] 3       |                  |  3[2]---, 3[1]---, 3[3]---  |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 2:3:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 2       |                  |  2[3]---, 2[1]---, 2[2]---  |[1;m
+
+[1;41m[1;33m[c1] 3       |                  |  3[2]---, 3[1]---, 3[3]---  |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;36m[1;44m00:01.835 00:01.465 Successfully matched event ControlMessageReceive:i38 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:01.848 00:01.465 Successfully matched event ControlMessageReceive:i39 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:01.852 00:01.465 Successfully matched event ControlMessageReceive:i40 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:01.856 00:01.466 Successfully matched event ControlMessageReceive:i41 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:01.858 00:01.466 Successfully matched event ControlMessageReceive:i42 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:01.860 00:01.467 Successfully matched event ControlMessageReceive:i43 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:01.865 00:01.467 Successfully matched event ControlMessageReceive:i44 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:01.868 00:01.468 Successfully matched event ControlMessageSend:i45 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36m[1;44m00:01.870 00:01.468 Successfully matched event ControlMessageSend:i46 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36m[1;44m00:01.872 00:01.570 Successfully matched event DataplanePermit:i48[1;m
+[1;36m[1;36mRound 6[1;37m[1;m
+[1;36m[1;44m00:01.874 00:01.571 Successfully matched event DataplanePermit:i49[1;m
+[1;36m[1;44m00:01.876 00:01.572 Successfully matched event DataplanePermit:i50[1;m
+[1;36m[1;44m00:01.877 00:01.573 Successfully matched event DataplanePermit:i51[1;m
+[1;36m[1;44m00:01.878 00:01.573 Successfully matched event DataplanePermit:i52[1;m
+[1;36m[1;44m00:01.879 00:01.574 Successfully matched event DataplanePermit:i53[1;m
+[1;36m[1;44m00:01.881 00:01.575 Successfully matched event ControlMessageSend:i54 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m00:01.882 00:01.576 Successfully matched event ControlMessageSend:i55 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;44m00:01.883 00:01.576 Successfully matched event ControlMessageSend:i56 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36m[1;44m00:01.884 00:01.576 Successfully matched event ControlMessageSend:i57 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_link_updates[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |  1[2] --- 2[2]   |  1[3]---, 1[1]---           |[1;m
+
+[1;41m[1;33m[c1] 2       |  1[2] --- 2[2]   |  2[3]---, 2[1]---           |[1;m
+
+[1;41m[1;33m[c1] 3       |                  |  3[2]---, 3[1]---, 3[3]---  |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_link_updates[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ---------------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |     switch edges               |  egress ports      |[1;m
+
+[1;41m[1;33m[c1] ---------------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |  1[2] --- 2[2], 1[1] --- 3[2]  |  1[3]---           |[1;m
+
+[1;41m[1;33m[c1] 2       |  1[2] --- 2[2]                 |  2[3]---, 2[1]---  |[1;m
+
+[1;41m[1;33m[c1] 3       |  1[1] --- 3[2]                 |  3[1]---, 3[3]---  |[1;m
+
+[1;41m[1;33m[c1] ---------------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_link_updates[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: nothing to do[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_link_updates[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: -----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |     switch edges               |  egress ports  |[1;m
+
+[1;41m[1;33m[c1] -----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |  1[2] --- 2[2], 1[1] --- 3[2]  |  1[3]---       |[1;m
+
+[1;41m[1;33m[c1] 2       |  1[2] --- 2[2], 2[1] --- 3[1]  |  2[3]---       |[1;m
+
+[1;41m[1;33m[c1] 3       |  1[1] --- 3[2], 2[1] --- 3[1]  |  3[3]---       |[1;m
+
+[1;41m[1;33m[c1] -----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_link_updates[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: nothing to do[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_link_updates[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: nothing to do[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.733744|[1;m
+
+[1;41m[1;33m[c1] 	generate classifier[1;m
+
+[1;41m[1;33m[c1] 	policy=flood on:[1;m
+
+[1;41m[1;33m[c1] -----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |     switch edges               |  egress ports  |[1;m
+
+[1;41m[1;33m[c1] -----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |  1[2] --- 2[2], 1[1] --- 3[2]  |  1[3]---       |[1;m
+
+[1;41m[1;33m[c1] 2       |  1[2] --- 2[2]                 |  2[3]---       |[1;m
+
+[1;41m[1;33m[c1] 3       |  1[1] --- 3[2]                 |  3[3]---       |[1;m
+
+[1;41m[1;33m[c1] -----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 	classifier=match: ('switch', 1) ('inport', 1)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 1) ('inport', 2)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 1) ('inport', 3)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 2)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 1)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 2) ('inport', 2)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 2) ('inport', 3)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 2)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 2)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 3) ('inport', 2)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 3) ('inport', 3)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 2)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 3)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  identity[1;m
+
+[1;41m[1;33m[c1]   -> [drop][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.749434|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	0 {'switch': 1} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.750991|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	0 {'switch': 2} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.751474|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	0 {'switch': 3} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.751708|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	60000 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535, 'ethtype': 35020} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.752034|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	60000 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535, 'ethtype': 35020} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.752276|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	60000 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535, 'ethtype': 35020} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.752516|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59999 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 1} [{'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.752783|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59998 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 2} [{'outport': 1}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.753004|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59997 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 3} [{'outport': 1}, {'outport': 2}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.753206|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59996 {'switch': 1, 'vlan_pcp': 0, 'inport': 1, 'vlan_id': 65535} [{'outport': 65528}, {'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.753452|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59995 {'switch': 1, 'vlan_pcp': 0, 'inport': 2, 'vlan_id': 65535} [{'outport': 1}, {'outport': 65528}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.753657|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59994 {'switch': 1, 'vlan_pcp': 0, 'inport': 3, 'vlan_id': 65535} [{'outport': 1}, {'outport': 2}, {'outport': 65528}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.753886|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59993 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535} [{'outport': 1}, {'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.754084|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59999 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 2} [{'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.768549|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59998 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 3} [{'outport': 2}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.779443|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+[1;36m[1;44m00:02.322 00:01.896 Successfully matched event ControlMessageReceive:i61 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59997, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:3][1;m
+[1;36m[1;36mRound 9[1;37m[1;m
+[1;36m[1;44m00:02.350 00:01.897 Successfully matched event ControlMessageReceive:i62 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=0, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+
+[1;36m[1;44m00:02.353 00:01.897 Successfully matched event ControlMessageReceive:i63 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59998, idle_timeout=0, command=add, actions=(u'output(1)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m [1;41m[1;33m[c1] 	59997 {'switch': 2, 'vlan_pcp': 0, 'inport': 2, 'vlan_id': 65535} [{'outport': 65528}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.779711|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59996 {'switch': 2, 'vlan_pcp': 0, 'inport': 3, 'vlan_id': 65535} [{'outport': 2}, {'outport': 65528}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.779943|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59995 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535} [{'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.780235|[1;m
+
+
+[1;36m[1;44m00:02.362 00:01.898 Successfully matched event ControlMessageReceive:i64 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59999 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 2} [{'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.780449|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59998 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 3} [{'outport': 2}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.780655|[1;m
+
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59997 {'switch': 3, 'vlan_pcp': 0, 'inport': 2, 'vlan_id': 65535} [{'outport': 65528}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.780904|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59996 {'switch': 3, 'vlan_pcp': 0, 'inport': 3, 'vlan_id': 65535} [{'outport': 2}, {'outport': 65528}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.781268|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59995 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535} [{'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.781438|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59992 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535} [][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.781972|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59994 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535} [][1;m
+
+[1;36m[1;44m00:02.370 00:01.898 Successfully matched event ControlMessageReceive:i65 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59999, idle_timeout=0, command=add, actions=(u'output(3)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;36m[1;44m00:02.380 00:01.899 Successfully matched event ControlMessageReceive:i66 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59996, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m[1;41m[1;33m[c1] [1;m
+
+[1;36m[1;44m00:02.383 00:01.900 Successfully matched event ControlMessageReceive:i67 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:48.782216|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59994 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535} [][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+
+[1;36m[1;44m00:02.388 00:01.900 Successfully matched event ControlMessageReceive:i68 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=60000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:02.390 00:01.901 Successfully matched event ControlMessageReceive:i69 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=60000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:02.392 00:01.902 Successfully matched event ControlMessageReceive:i70 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59995, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;36m[1;44m00:02.395 00:01.902 Successfully matched event ControlMessageReceive:i71 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:02.398 00:01.904 Successfully matched event ControlMessageReceive:i72 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59999, idle_timeout=0, command=add, actions=(u'output(2)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m
+[1;36m[1;44m00:02.401 00:01.904 Successfully matched event ControlMessageReceive:i73 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:02.404 00:01.905 Successfully matched event ControlMessageReceive:i74 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:02.406 00:01.906 Successfully matched event ControlMessageReceive:i75 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=0, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:02.409 00:01.907 Successfully matched event ControlMessageReceive:i76 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=60000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:02.411 00:01.908 Successfully matched event ControlMessageReceive:i77 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59994, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:3][1;m
+[1;36m[1;44m00:02.413 00:01.909 Successfully matched event ControlMessageReceive:i78 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:02.415 00:01.910 Successfully matched event ControlMessageReceive:i79 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=0, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:02.417 00:01.911 Successfully matched event ControlMessageReceive:i80 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59993, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;36m[1;44m00:02.418 00:01.912 Successfully matched event ControlMessageSend:i81 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.419 00:01.912 Successfully matched event ControlMessageSend:i82 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.421 00:01.912 Successfully matched event ControlMessageSend:i83 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.429 00:02.018 Successfully matched event ControlMessageReceive:i85 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59994, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;36m[1;36mRound 10[1;37m[1;m
+[1;36m[1;44m00:02.432 00:02.018 Successfully matched event ControlMessageReceive:i86 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59995, idle_timeout=0, command=add, actions=(u'output(2)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;36m[1;44m00:02.436 00:02.020 Successfully matched event ControlMessageReceive:i87 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59996, idle_timeout=0, command=add, actions=(u'output(2)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:3][1;m
+[1;36m[1;44m00:02.439 00:02.020 Successfully matched event ControlMessageReceive:i88 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59994, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;36m[1;44m00:02.442 00:02.021 Successfully matched event ControlMessageReceive:i89 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59999, idle_timeout=0, command=add, actions=(u'output(3)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;36m[1;44m00:02.445 00:02.021 Successfully matched event ControlMessageReceive:i90 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59992, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;36m[1;44m00:02.448 00:02.022 Successfully matched event ControlMessageReceive:i91 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59995, idle_timeout=0, command=add, actions=(u'output(2)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;36m[1;44m00:02.451 00:02.023 Successfully matched event ControlMessageReceive:i92 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59996, idle_timeout=0, command=add, actions=(u'output(2)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:3][1;m
+[1;36m[1;44m00:02.454 00:02.023 Successfully matched event ControlMessageReceive:i93 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59997, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;36m[1;44m00:02.457 00:02.024 Successfully matched event ControlMessageReceive:i94 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:02.459 00:02.024 Successfully matched event ControlMessageReceive:i95 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59998, idle_timeout=0, command=add, actions=(u'output(2)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:3][1;m
+[1;36m[1;44m00:02.460 00:02.025 Successfully matched event ControlMessageReceive:i96 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:02.461 00:02.025 Successfully matched event ControlMessageReceive:i97 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:02.463 00:02.026 Successfully matched event ControlMessageReceive:i98 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59998, idle_timeout=0, command=add, actions=(u'output(2)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:3][1;m
+[1;36m[1;44m00:02.465 00:02.026 Successfully matched event ControlMessageReceive:i99 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59997, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;36m[1;44m00:02.467 00:02.027 Successfully matched event ControlMessageSend:i100 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.469 00:02.027 Successfully matched event ControlMessageSend:i101 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.470 00:02.027 Successfully matched event ControlMessageSend:i102 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.472 00:02.136 Successfully matched event ControlMessageReceive:i104 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;36m[1;36mRound 11[1;37m[1;m
+[1;36m[1;44m00:02.475 00:02.137 Successfully matched event ControlMessageReceive:i105 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:02.477 00:02.137 Successfully matched event ControlMessageReceive:i106 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:02.478 00:02.137 Successfully matched event ControlMessageSend:i107 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.480 00:02.138 Successfully matched event ControlMessageSend:i108 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:02.481 00:02.138 Successfully matched event ControlMessageSend:i109 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36mCutting link (1:1) -> (3:2)[1;m
+[1;36m[1;44m00:03.002 00:02.656 Successfully matched event LinkFailure:e114[1;m
+[1;36m[1;36mRound 15[1;37m[1;m
+[1;36m[1;44m00:03.002 00:02.766 Successfully matched event ControlMessageSend:i116 c 1 -> s c1 [ofp_port_status: reason=2, desc=(1, u'00:00:00:00:01:01')][1;m
+[1;36m[1;36mRound 16[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_mods 1:1:True:False[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: port_down 1:1:double_check=True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ---------------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |     switch edges               |  egress ports      |[1;m
+
+[1;41m[1;33m[c1] ---------------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |  1[2] --- 2[2]                 |  1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 2       |  1[2] --- 2[2], 2[1] --- 3[1]  |  2[3]---           |[1;m
+
+[1;41m[1;33m[c1] 3       |  2[1] --- 3[1]                 |  3[2]---, 3[3]---  |[1;m
+
+[1;41m[1;33m[c1] ---------------------------------------------------------------[1;m
+
+[1;36m[1;44m00:03.022 00:02.877 Successfully matched event ControlMessageReceive:i118 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 17[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.778374|[1;m
+
+[1;41m[1;33m[c1] 	generate classifier[1;m
+
+[1;41m[1;33m[c1] 	policy=flood on:[1;m
+
+[1;41m[1;33m[c1] ---------------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |     switch edges               |  egress ports      |[1;m
+
+[1;41m[1;33m[c1] ---------------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |  1[2] --- 2[2]                 |  1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 2       |  1[2] --- 2[2], 2[1] --- 3[1]  |  2[3]---           |[1;m
+
+[1;41m[1;33m[c1] 3       |  2[1] --- 3[1]                 |  3[2]---, 3[3]---  |[1;m
+
+[1;41m[1;33m[c1] ---------------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 	classifier=match: ('switch', 1) ('inport', 1)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 1) ('inport', 2)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 1) ('inport', 3)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 2)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 1)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 2) ('inport', 1)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 2) ('inport', 2)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 2) ('inport', 3)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 2)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 2)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 3) ('inport', 1)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 3) ('inport', 2)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 3) ('inport', 3)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 2)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 3)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  identity[1;m
+
+[1;41m[1;33m[c1]   -> [drop][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;36m[1;44m00:03.326 00:03.097 Successfully matched event ControlMessageReceive:i121 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59997, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:3][1;m
+[1;36m[1;36mRound 19[1;37m[1;m
+[1;36m[1;44m00:03.336 00:03.098 Successfully matched event ControlMessageReceive:i122 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=0, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.794974|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	0 {'switch': 1} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.796439|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	0 {'switch': 2} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.796921|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	0 {'switch': 3} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.797151|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	60000 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535, 'ethtype': 35020} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.797423|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	60000 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535, 'ethtype': 35020} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.797660|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	60000 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535, 'ethtype': 35020} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.797899|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59999 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 1} [{'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.798222|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59998 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 2} [{'outport': 1}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.809605|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59997 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 3} [{'outport': 1}, {'outport': 2}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.809855|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59996 {'switch': 1, 'vlan_pcp': 0, 'inport': 1, 'vlan_id': 65535} [{'outport': 65528}, {'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.810172|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59995 {'switch': 1, 'vlan_pcp': 0, 'inport': 2, 'vlan_id': 65535} [{'outport': 1}, {'outport': 65528}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.810375|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59994 {'switch': 1, 'vlan_pcp': 0, 'inport': 3, 'vlan_id': 65535} [{'outport': 1}, {'outport': 2}, {'outport': 65528}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.810645|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59993 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535} [{'outport': 1}, {'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.810859|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59999 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 1} [{'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.811060|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59998 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 2} [{'outport': 1}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+[1;36m[1;44m00:03.395 00:03.099 Successfully matched event ControlMessageReceive:i123 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59992, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;36m[1;44m00:03.408 00:03.100 Successfully matched event ControlMessageReceive:i124 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59998, idle_timeout=0, command=add, actions=(u'output(1)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+
+[1;36m[1;44m00:03.411 00:03.101 Successfully matched event ControlMessageReceive:i125 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m [1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.811276|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59997 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 3} [{'outport': 1}, {'outport': 2}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.811475|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59996 {'switch': 2, 'vlan_pcp': 0, 'inport': 1, 'vlan_id': 65535} [{'outport': 65528}, {'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.811679|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59995 {'switch': 2, 'vlan_pcp': 0, 'inport': 2, 'vlan_id': 65535} [{'outport': 1}, {'outport': 65528}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.811901|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59994 {'switch': 2, 'vlan_pcp': 0, 'inport': 3, 'vlan_id': 65535} [{'outport': 1}, {'outport': 2}, {'outport': 65528}][1;m
+
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.812106|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59993 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535} [{'outport': 1}, {'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.812372|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59999 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 1} [{'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.812584|[1;m
+[1;36m[1;44m00:03.423 00:03.103 Successfully matched event ControlMessageReceive:i126 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59996, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m
+[1;36m[1;44m00:03.432 00:03.104 Successfully matched event ControlMessageReceive:i127 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=60000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:03.434 00:03.105 Successfully matched event ControlMessageReceive:i128 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=60000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:35020,in_port:None][1;m
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59998 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 2} [{'outport': 1}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.812777|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59997 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 3} [{'outport': 1}, {'outport': 2}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.812967|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59996 {'switch': 3, 'vlan_pcp': 0, 'inport': 1, 'vlan_id': 65535} [{'outport': 65528}, {'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.813184|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59995 {'switch': 3, 'vlan_pcp': 0, 'inport': 2, 'vlan_id': 65535} [{'outport': 1}, {'outport': 65528}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.813382|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59994 {'switch': 3, 'vlan_pcp': 0, 'inport': 3, 'vlan_id': 65535} [{'outport': 1}, {'outport': 2}, {'outport': 65528}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.813598|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;36m[1;44m00:03.441 00:03.106 Successfully matched event ControlMessageReceive:i129 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:03.452 00:03.106 Successfully matched event ControlMessageReceive:i130 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59999, idle_timeout=0, command=add, actions=(u'output(2)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m[1;41m[1;33m[c1] 	59993 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535} [{'outport': 1}, {'outport': 2}, {'outport': 3}][1;m
+
+[1;36m[1;44m00:03.457 00:03.108 Successfully matched event ControlMessageReceive:i131 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.813795|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59992 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535} [][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.813969|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59992 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535} [][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-03 12:35:49.814137|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59992 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535} [][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+
+[1;36m[1;44m00:03.469 00:03.109 Successfully matched event ControlMessageReceive:i132 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59998, idle_timeout=0, command=add, actions=(u'output(1)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;36m[1;44m00:03.471 00:03.110 Successfully matched event ControlMessageReceive:i133 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59999, idle_timeout=0, command=add, actions=(u'output(2)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m
+[1;36m[1;44m00:03.473 00:03.111 Successfully matched event ControlMessageReceive:i134 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:03.476 00:03.112 Successfully matched event ControlMessageReceive:i135 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:03.479 00:03.113 Successfully matched event ControlMessageReceive:i136 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=0, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:03.481 00:03.113 Successfully matched event ControlMessageReceive:i137 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59995, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;36m[1;44m00:03.484 00:03.114 Successfully matched event ControlMessageReceive:i138 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59994, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:3][1;m
+[1;36m[1;44m00:03.487 00:03.115 Successfully matched event ControlMessageReceive:i139 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=60000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:03.489 00:03.115 Successfully matched event ControlMessageReceive:i140 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59994, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:3][1;m
+[1;36m[1;44m00:03.491 00:03.116 Successfully matched event ControlMessageReceive:i141 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:03.493 00:03.116 Successfully matched event ControlMessageReceive:i142 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59995, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;36m[1;44m00:03.496 00:03.116 Successfully matched event ControlMessageReceive:i143 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59993, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;36m[1;44m00:03.497 00:03.117 Successfully matched event ControlMessageReceive:i144 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=0, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:03.499 00:03.118 Successfully matched event ControlMessageReceive:i145 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59996, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m
+[1;36m[1;44m00:03.501 00:03.118 Successfully matched event ControlMessageReceive:i146 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59993, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;36m[1;44m00:03.502 00:03.119 Successfully matched event ControlMessageReceive:i147 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59997, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:3][1;m
+[1;36m[1;44m00:03.504 00:03.119 Successfully matched event ControlMessageSend:i148 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:03.505 00:03.120 Successfully matched event ControlMessageSend:i149 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:03.507 00:03.120 Successfully matched event ControlMessageSend:i150 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:03.509 00:03.228 Successfully matched event ControlMessageReceive:i152 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59994, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(65528)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:3][1;m
+[1;36m[1;36mRound 20[1;37m[1;m
+[1;36m[1;44m00:03.512 00:03.229 Successfully matched event ControlMessageReceive:i153 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59995, idle_timeout=0, command=add, actions=(u'output(1)', u'output(65528)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;36m[1;44m00:03.514 00:03.230 Successfully matched event ControlMessageReceive:i154 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59992, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;36m[1;44m00:03.516 00:03.230 Successfully matched event ControlMessageReceive:i155 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59996, idle_timeout=0, command=add, actions=(u'output(65528)', u'output(2)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m
+[1;36m[1;44m00:03.518 00:03.231 Successfully matched event ControlMessageReceive:i156 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59992, idle_timeout=0, command=add, actions=(), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;36m[1;44m00:03.520 00:03.231 Successfully matched event ControlMessageReceive:i157 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59998, idle_timeout=0, command=add, actions=(u'output(1)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:2][1;m
+[1;36m[1;44m00:03.523 00:03.232 Successfully matched event ControlMessageReceive:i158 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59997, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:3][1;m
+[1;36m[1;44m00:03.525 00:03.233 Successfully matched event ControlMessageReceive:i159 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:03.527 00:03.233 Successfully matched event ControlMessageReceive:i160 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59999, idle_timeout=0, command=add, actions=(u'output(2)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:1][1;m
+[1;36m[1;44m00:03.530 00:03.234 Successfully matched event ControlMessageReceive:i161 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:03.532 00:03.234 Successfully matched event ControlMessageReceive:i162 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:03.534 00:03.234 Successfully matched event ControlMessageReceive:i163 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=59993, idle_timeout=0, command=add, actions=(u'output(1)', u'output(2)', u'output(3)'), flags=0, match=dl_vlan:65535,dl_vlan_pcp:0,in_port:None][1;m
+[1;36m[1;44m00:03.536 00:03.235 Successfully matched event ControlMessageSend:i164 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:03.538 00:03.235 Successfully matched event ControlMessageSend:i165 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:03.539 00:03.236 Successfully matched event ControlMessageSend:i166 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;41m[1;37mViolations at end of trace: ["{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200001, 100002, 300002], 'port': 200001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100002, 300002, 200001], 'port': 100002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 100001, 200002, 300001], 'port': 100001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 200001, 100002, 300002], 'port': 200001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 100002, 300002, 200001], 'port': 100002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200002, 300001, 100001], 'port': 200002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100001, 200002, 300001], 'port': 100001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 300002, 200001, 100002], 'port': 300002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300001, 100001, 200002], 'port': 300001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 200002, 300001, 100001], 'port': 200002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300002, 200001, 100002], 'port': 300002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 300001, 100001, 200002], 'port': 300001}"][1;m
+[1;42m[1;37mViolation found {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100001, 200002, 300001], 'port': 100001}[1;m
+[1;36m[1;44mEvent Stats: Events matched: 147, timed out: 0
+Matches per event type:
+  ConnectToControllers 1
+  LinkFailure 1
+  DataplanePermit 9
+  ControlMessageSend 31
+  ControlMessageReceive 105
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+[1;36mKilling controller c1 (pid 10959)[1;m
+Terminating child controllers...close() called on stdout during concurrent operation
+close() called on stderr during concurrent operation
+ OK
