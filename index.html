@@ -28,7 +28,27 @@
 
     <div class="container">
       <section id="main_content">
-        <p>This page is a collection of case studies for bugs found with STS.</p>
+        <p>This repository is a collection of case studies (experiments) for bugs found with <a href="http://ucb-sts.github.io/sts/">STS</a>.</p>
+
+<p>See the <a href="http://ucb-sts.github.io/sts/walkthrough#phase_ii_troubleshooting">walkthrough</a> and <a href="http://ucb-sts.github.io/sts/software_architecture.html#experiment_results">documentation</a> for a description of the contents of these directories.</p>
+
+<h3>
+<a name="running-old-experiments" class="anchor" href="#running-old-experiments"><span class="octicon octicon-link"></span></a>Running old experiments</h3>
+
+<p>To properly rerun an old experiment you may need to rollback STS, POX, Hassel, and the control software to the software versions when the experiment was originally recorded.</p>
+
+<p>The original software versions are stored in each experiment's <code>metadata</code> file. We provide two scripts in STS to automatically read the information stored there, rollback the software, and rerun experiments:</p>
+
+<ul>
+<li><p><a href="https://github.com/ucb-sts/sts/blob/master/tools/run_old_experiment.rb">tools/run_old_experiment.rb</a>: reruns a single experiment. Takes the path to the experiment directory as a first argument.</p></li>
+<li><p><a href="https://github.com/ucb-sts/sts/blob/master/tools/run_cmd_per_experiment.rb">tools/run_cmd_per_experiment.rb</a>: runs a shell command within each experiment directory from the SIGCOMM'14 paper. Usage:</p></li>
+</ul><pre><code>Usage: run_cmd_per_experiment [options]
+    -c, --command-path PATH          Absolute path to a command to run within each directory
+    -e, --exclude-synthetic          Whether to exclude synthetic bug experiments
+    -r, --rollback-sts               Whether to rollback STS + dependencies to the versions specified in metadata.json
+</code></pre>
+
+<p>We often write a simple shell script to execute some analysis on the experiment, and pass the path to the shell script to <code>run_cmd_per_experiment</code> with <code>-c</code>.</p>
       </section>
     </div>
 
