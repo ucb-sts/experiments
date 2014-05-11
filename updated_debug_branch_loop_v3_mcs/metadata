@@ -18,8 +18,8 @@
       "commit": "9d484616af5beda6156458a54f5df8e9ef190f4b"
     },
     "sts": {
-      "branch": "master",
-      "commit": "9ffa445aa703b2d836a5657c6729d2be721c7c18"
+      "branch": "updated_debug_branch_loop",
+      "commit": "4665d541aebd49e90385680a3b2225aad824abc8"
     }
   },
   "sys": {
