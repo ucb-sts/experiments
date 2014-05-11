@@ -16,4 +16,4 @@ control_flow = InteractiveReplayer(simulation_config, "experiments/new_pyretic_l
 # wait_on_deterministic_values=False
 # delay_flow_mods=False
 # Invariant check: 'InvariantChecker.python_check_loops'
-# Bug signature: "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100002, 300002, 200001], 'port': 100002}"
+# Bug signature: "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100001, 200002, 300001], 'port': 100001}"
