@@ -20,7 +20,7 @@
     },
     "pox": {
       "branch": "load_balancer_bug",
-      "commit": "6213e2a99dcb2ee131f41b540c29c7e6d0e9fc3e"
+      "commit": "e446dda7237e31a725062c3f8220d816132dd850"
     },
     "sts": {
       "branch": "HEAD",
