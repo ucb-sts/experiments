@@ -8,10 +8,10 @@
   "cwd": "/home/jefflai2/sts",
   "host": {
     "cpu_info": "Intel(R) Xeon(R) CPU X5560 @ 2.80GHz",
-    "free": "total       used       free     shared    buffers     cached\nMem:      12321316    4297888    8023428          0     368436    2649544\n-/+ buffers/cache:    1279908   11041408\nSwap:     12571644      95764   12475880",
+    "free": "total       used       free     shared    buffers     cached\nMem:      12321316    3845924    8475392          0     366376    2201176\n-/+ buffers/cache:    1278372   11042944\nSwap:     12571644      95748   12475896",
     "name": "c3",
     "num_cores": "8",
-    "uptime": "12:06:53 up 193 days, 11:48,  4 users,  load average: 0.00, 0.01, 0.05"
+    "uptime": "13:35:05 up 196 days, 13:17,  4 users,  load average: 0.01, 0.02, 0.05"
   },
   "modules": {
     "hassel": {
@@ -19,18 +19,18 @@
       "commit": "d63193500fca48cba053205c413d72eebfd233e9"
     },
     "pox": {
-      "branch": "load_balancer_bug",
+      "branch": "HEAD",
       "commit": "e446dda7237e31a725062c3f8220d816132dd850"
     },
     "sts": {
-      "branch": "HEAD",
-      "commit": "93d46be84070234b20707f3bb8ad052b6874da9a"
+      "branch": "load_balancer_bug",
+      "commit": "85bcd3031239bb3d48a24a9c611017d34bb92f81"
     }
   },
   "sys": {
     "lsb_release": "Ubuntu 11.04",
     "uname": "Linux c3 2.6.38-8-server #42-Ubuntu SMP Mon Apr 11 03:49:04 UTC 2011 x86_64 x86_64 x86_64 GNU/Linux"
   },
-  "timestamp": "2014_05_11_12_06_53",
+  "timestamp": "2014_05_14_13_35_05",
   "user": "jefflai2"
 }
