@@ -1,7 +1,7 @@
 INFO:Controller: =====> Starting POX Controller <===== 
 [1;36mStarting POX controller c1[1;m
-INFO:Controller:Launching controller c1: ./pox.py --verbose --unthreaded-sh misc.ip_loadbalancer --ip=10.1.3.2 --servers=10.1.3.2,10.2.3.2 sts.util.socket_mux.pox_monkeypatcher openflow.discovery openflow.of_01 --address=127.0.0.1 --port=6633
-INFO:simulation:Launched controller c1: ./pox.py --verbose --unthreaded-sh misc.ip_loadbalancer --ip=10.1.3.2 --servers=10.1.3.2,10.2.3.2 sts.util.socket_mux.pox_monkeypatcher openflow.discovery openflow.of_01 --address=127.0.0.1 --port=6633 [PID 31385]
+INFO:Controller:Launching controller c1: ./pox.py --verbose --unthreaded-sh misc.ip_loadbalancer --ip=123.123.1.3 --servers=123.123.2.3,123.123.1.3 sts.util.socket_mux.pox_monkeypatcher openflow.discovery openflow.of_01 --address=127.0.0.1 --port=6633
+INFO:simulation:Launched controller c1: ./pox.py --verbose --unthreaded-sh misc.ip_loadbalancer --ip=123.123.1.3 --servers=123.123.2.3,123.123.1.3 sts.util.socket_mux.pox_monkeypatcher openflow.discovery openflow.of_01 --address=127.0.0.1 --port=6633 [PID 27213]
 INFO:simulation:Creating topology...
 connect_socket_with_backoff ('127.0.0.1', 6633)
 Error connecting.  -- [Errno 111] Connection refused. Backing off 1 seconds ...
@@ -17,21 +17,29 @@ Error connecting.  -- [Errno 111] Connection refused. Backing off 1 seconds ...
 
 [1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening on 127.0.0.1:6633[1;m
 
+connect_socket_with_backoff ('127.0.0.1', 6633)[1;33m[c1] Incoming true socket connected[1;m
+
+
 connect_socket_with_backoff ('127.0.0.1', 6633)
-[1;33m[c1] Incoming true socket connected[1;m
-connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 48237][1;m
 connect_socket_with_backoff ('127.0.0.1', 6633)
 
-[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 34379][1;m
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 48237][1;m
 INFO:control_flow:Waiting until first OpenFlow message received..
 
-[1;36mRound 1 completed.[1;m[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 34379][1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_hello'})
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 48237][1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_hello'})
 
-
-[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 34379][1;m
-
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_hello'})
+[1;36mRound 1 completed.[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'datapath_id': 1, 'class': 'ofp_features_reply'})
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'datapath_id': 3, 'class': 'ofp_features_reply'})
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'datapath_id': 2, 'class': 'ofp_features_reply'})
 [1;36mRound 2 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_barrier_reply'})
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_barrier_reply'})
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'class': 'ofp_barrier_reply'})
 [1;36mRound 3 completed.[1;m
 [1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-03 3] connected[1;m
 
@@ -55,622 +63,798 @@ INFO:control_flow:Waiting until first OpenFlow message received..
 
 [1;36mRound 4 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.3.3.2')]:received invalid arp packet on interface eth3: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 10.1.3.2>10.1.3.2
+INFO:host:[IPAddr('123.123.3.3')]:received invalid arp packet on interface eth3: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 123.123.1.3>123.123.2.3
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 5 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 6 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 2})
 [1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received valid arp packet on interface eth2: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 123.123.1.3>123.123.2.3
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>00:00:00:00:00:03:ARP]|REPLY hw:1 p:2048 12:34:56:78:02:03>00:00:00:00:00:03 123.123.2.3>123.123.1.3
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received invalid arp packet on interface eth1: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 123.123.1.3>123.123.2.3
 [1;36mRound 7 completed.[1;m
-[1;41m[1;33m[c1] INFO:iplb.00-00-00-00-00-03:Server 10.1.3.2 up[1;m
-
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 8 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:received valid arp packet on interface eth2: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 123.123.1.3>123.123.2.3
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>00:00:00:00:00:03:ARP]|REPLY hw:1 p:2048 12:34:56:78:02:03>00:00:00:00:00:03 123.123.2.3>123.123.1.3
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:received invalid arp packet on interface eth1: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 123.123.1.3>123.123.2.3
 [1;36mRound 9 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 3})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){0>1} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2e5[123.123.3.3>123.123.1.3]){0>1} seq:0 ack:0 f:0x2
 [1;36mRound 10 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 2[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 3[1;m
 
 [1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
 
 [1;36mForwarding dataplane event[1;m
-[1;36mRound 11 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
-
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 12 completed.[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mRound 11 completed.[1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:No servers![1;m
+
+[1;36mRound 12 completed.[1;m
 [1;36mRound 13 completed.[1;m
 [1;36mRound 14 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 15 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 3[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 2[1;m
 
 [1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
 
 [1;36mRound 16 completed.[1;m
 [1;36mRound 17 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 18 completed.[1;m
 [1;36mRound 19 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){2>3} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2e4[123.123.3.3>123.123.1.3]){2>3} seq:0 ack:0 f:0x2
 [1;36mRound 20 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2f30c90><tlv end> on interface eth3
+INFO:host:[IPAddr('123.123.3.3')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x227fd90><tlv end> on interface eth3
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 21 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:No servers![1;m
 
 [1;36mRound 22 completed.[1;m
-[1;36mForwarding dataplane event[1;m
 [1;36mRound 23 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 24 completed.[1;m
 [1;36mRound 25 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 26 completed.[1;m
 [1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 3[1;m
 
 [1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
 
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 27 completed.[1;m
 [1;36mRound 28 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received invalid arp packet on interface eth3: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 123.123.1.3>123.123.1.3
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 29 completed.[1;m
 [1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){4>5} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2e3[123.123.3.3>123.123.1.3]){4>5} seq:0 ack:0 f:0x2
 [1;36mRound 30 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 31 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] INFO:iplb.00-00-00-00-00-03:Server 123.123.1.3 up[1;m
+
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
 
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 2})
 [1;36mRound 32 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 4[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 3[1;m
 
 [1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
 
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:00:01', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 33 completed.[1;m
 [1;36mRound 34 completed.[1;m
 [1;36mRound 35 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 36 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2f356d0><tlv end> on interface eth2
+INFO:host:[IPAddr('123.123.2.3')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2285250><tlv end> on interface eth2
 [1;36mRound 37 completed.[1;m
 [1;36mRound 38 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 39 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){6>7} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2e2[123.123.3.3>123.123.1.3]){6>7} seq:0 ack:0 f:0x2
 [1;36mRound 40 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 41 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
 
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 42 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 2})
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:00:01', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 43 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 3[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 5[1;m
 
 [1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
 
 [1;36mRound 44 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 45 completed.[1;m
 [1;36mRound 46 completed.[1;m
 [1;36mRound 47 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 2})
 [1;36mRound 48 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 2[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 5[1;m
 
 [1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
 
 [1;36mRound 49 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){8>9} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2e1[123.123.3.3>123.123.1.3]){8>9} seq:0 ack:0 f:0x2
 [1;36mRound 50 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 51 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
 
 [1;36mRound 52 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received invalid arp packet on interface eth3: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 123.123.1.3>123.123.2.3
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:00:01', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 53 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.1.3.2')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2f308d0><tlv end> on interface eth1
-[1;42m[1;37mNo correctness violations![1;m
+INFO:host:[IPAddr('123.123.1.3')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x22826d0><tlv end> on interface eth1
 [1;36mRound 54 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 55 completed.[1;m
+[1;41m[1;33m[c1] INFO:iplb.00-00-00-00-00-03:Server 123.123.2.3 up[1;m
+
 [1;36mRound 56 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 57 completed.[1;m
 [1;36mRound 58 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 59 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 2[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 6[1;m
 
 [1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){10>11} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2e0[123.123.3.3>123.123.1.3]){10>11} seq:0 ack:0 f:0x2
 [1;36mRound 60 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 61 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
 
 [1;36mRound 62 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:00:01', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 63 completed.[1;m
-[1;36mRound 64 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;36mRound 65 completed.[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mRound 64 completed.[1;m
 [1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 8[1;m
 
-[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 65 completed.[1;m
 [1;36mRound 66 completed.[1;m
 [1;36mRound 67 completed.[1;m
 [1;36mRound 68 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 69 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2f35f90><tlv end> on interface eth3
+INFO:host:[IPAddr('123.123.3.3')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2287250><tlv end> on interface eth3
+[1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){12>13} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2df[123.123.3.3>123.123.1.3]){12>13} seq:0 ack:0 f:0x2
 [1;36mRound 70 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 71 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
 
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 72 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:02:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 73 completed.[1;m
 [1;36mRound 74 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 75 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;36mRound 76 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 3[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mRound 75 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 7[1;m
 
+[1;36mRound 76 completed.[1;m
 [1;36mRound 77 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received invalid arp packet on interface eth3: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 123.123.1.3>123.123.1.3
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 78 completed.[1;m
 [1;36mRound 79 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){14>15} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2de[123.123.3.3>123.123.1.3]){14>15} seq:0 ack:0 f:0x2
 [1;36mRound 80 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 2})
 [1;36mRound 81 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
 
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 9[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 10[1;m
 
 [1;36mRound 82 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:02:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 83 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 84 completed.[1;m
 [1;36mRound 85 completed.[1;m
-[1;36mRound 86 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2f32ed0><tlv end> on interface eth2
-[1;42m[1;37mNo correctness violations![1;m
+INFO:host:[IPAddr('123.123.2.3')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x227f9d0><tlv end> on interface eth2
+[1;36mRound 86 completed.[1;m
 [1;36mRound 87 completed.[1;m
 [1;36mRound 88 completed.[1;m
 [1;36mRound 89 completed.[1;m
 [1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){16>17} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2dd[123.123.3.3>123.123.1.3]){16>17} seq:0 ack:0 f:0x2
 [1;36mRound 90 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 91 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
 
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 2})
 [1;36mRound 92 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 4[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 10[1;m
 
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:02:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 93 completed.[1;m
 [1;36mRound 94 completed.[1;m
 [1;36mRound 95 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 96 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 2})
 [1;36mRound 97 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 2[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 7[1;m
 
 [1;36mRound 98 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 99 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){18>19} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2dc[123.123.3.3>123.123.1.3]){18>19} seq:0 ack:0 f:0x2
 [1;36mRound 100 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 101 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
 
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 102 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.1.3.2')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2f32050><tlv end> on interface eth1
+INFO:host:[IPAddr('123.123.3.3')]:received invalid arp packet on interface eth3: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 123.123.1.3>123.123.2.3
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:00:01', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2289390><tlv end> on interface eth1
 [1;36mRound 103 completed.[1;m
 [1;36mRound 104 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 105 completed.[1;m
 [1;36mRound 106 completed.[1;m
 [1;36mRound 107 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 108 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 2[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 8[1;m
 
 [1;36mRound 109 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){20>21} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2db[123.123.3.3>123.123.1.3]){20>21} seq:0 ack:0 f:0x2
 [1;36mRound 110 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 111 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
 
 [1;36mRound 112 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:02:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 113 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 114 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 13[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 15[1;m
 
 [1;36mRound 115 completed.[1;m
 [1;36mRound 116 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 117 completed.[1;m
 [1;36mRound 118 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2f303d0><tlv end> on interface eth3
+INFO:host:[IPAddr('123.123.3.3')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2283490><tlv end> on interface eth3
 [1;36mRound 119 completed.[1;m
 [1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){22>23} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2da[123.123.3.3>123.123.1.3]){22>23} seq:0 ack:0 f:0x2
 [1;36mRound 120 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 121 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
 
 [1;36mRound 122 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:02:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 123 completed.[1;m
 [1;36mRound 124 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 125 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 3[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 11[1;m
 
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 126 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received invalid arp packet on interface eth3: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 123.123.1.3>123.123.1.3
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 127 completed.[1;m
 [1;36mRound 128 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 129 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){24>25} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2d9[123.123.3.3>123.123.1.3]){24>25} seq:0 ack:0 f:0x2
 [1;36mRound 130 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 14[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 17[1;m
 
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 131 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
 
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 132 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:00:01', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 133 completed.[1;m
 [1;36mRound 134 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 135 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x306d310><tlv end> on interface eth2
+INFO:host:[IPAddr('123.123.2.3')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x228c250><tlv end> on interface eth2
+[1;36mRound 135 completed.[1;m
 [1;36mRound 136 completed.[1;m
 [1;36mRound 137 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 138 completed.[1;m
 [1;36mRound 139 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){26>27} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2d8[123.123.3.3>123.123.1.3]){26>27} seq:0 ack:0 f:0x2
 [1;36mRound 140 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 2})
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 141 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 13[1;m
 
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 3[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
 
 [1;36mRound 142 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:00:01', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 143 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 144 completed.[1;m
 [1;36mRound 145 completed.[1;m
-[1;36mRound 146 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 147 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 2[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;36mRound 146 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 9[1;m
 
+[1;36mRound 147 completed.[1;m
 [1;36mRound 148 completed.[1;m
 [1;36mRound 149 completed.[1;m
 [1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){28>29} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2d7[123.123.3.3>123.123.1.3]){28>29} seq:0 ack:0 f:0x2
 [1;36mRound 150 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 151 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
 
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.3.3.2')]:received invalid arp packet on interface eth3: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 10.1.3.2>10.2.3.2
+INFO:host:[IPAddr('123.123.3.3')]:received invalid arp packet on interface eth3: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 123.123.1.3>123.123.2.3
 [1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x228bf90><tlv end> on interface eth1
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.1.3.2')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2f31350><tlv end> on interface eth1
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 152 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:00:01', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 153 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 2})
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.2.3.2')]:received valid arp packet on interface eth2: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 10.1.3.2>10.2.3.2
-INFO:host:[IPAddr('10.2.3.2')]:sending packet on interface eth2: [12:34:56:78:02:03>00:00:00:00:00:03:ARP]|REPLY hw:1 p:2048 12:34:56:78:02:03>00:00:00:00:00:03 10.2.3.2>10.1.3.2
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.1.3.2')]:received invalid arp packet on interface eth1: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 10.1.3.2>10.2.3.2
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 154 completed.[1;m
-[1;36mForwarding dataplane event[1;m
 [1;36mRound 155 completed.[1;m
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.2.3.2')]:received valid arp packet on interface eth2: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 10.1.3.2>10.2.3.2
-INFO:host:[IPAddr('10.2.3.2')]:sending packet on interface eth2: [12:34:56:78:02:03>00:00:00:00:00:03:ARP]|REPLY hw:1 p:2048 12:34:56:78:02:03>00:00:00:00:00:03 10.2.3.2>10.1.3.2
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.1.3.2')]:received invalid arp packet on interface eth1: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 10.1.3.2>10.2.3.2
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 156 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 157 completed.[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mRound 158 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 4[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 10[1;m
 
-[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 158 completed.[1;m
 [1;36mRound 159 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){30>31} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2d6[123.123.3.3>123.123.1.3]){30>31} seq:0 ack:0 f:0x2
 [1;36mRound 160 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 161 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
 
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 162 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:00:01', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 163 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 18[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 22[1;m
 
 [1;36mRound 164 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 165 completed.[1;m
 [1;36mRound 166 completed.[1;m
 [1;36mRound 167 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 168 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x306f590><tlv end> on interface eth3
+INFO:host:[IPAddr('123.123.3.3')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2289b50><tlv end> on interface eth3
+[1;36mRound 168 completed.[1;m
 [1;36mRound 169 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){32>33} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2d5[123.123.3.3>123.123.1.3]){32>33} seq:0 ack:0 f:0x2
 [1;36mRound 170 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 171 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
 
 [1;36mRound 172 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;36mRound 173 completed.[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:02:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 174 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 5[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mRound 173 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 15[1;m
 
+[1;36mRound 174 completed.[1;m
 [1;36mRound 175 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received invalid arp packet on interface eth3: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 123.123.1.3>123.123.1.3
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 176 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 177 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 178 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 2})
 [1;36mRound 179 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 20[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 24[1;m
 
 [1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){34>35} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2d4[123.123.3.3>123.123.1.3]){34>35} seq:0 ack:0 f:0x2
 [1;36mRound 180 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 181 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
 
 [1;36mRound 182 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:00:01', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 183 completed.[1;m
-[1;36mRound 184 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x306f350><tlv end> on interface eth2
+INFO:host:[IPAddr('123.123.2.3')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2282c50><tlv end> on interface eth2
+[1;36mRound 184 completed.[1;m
 [1;36mRound 185 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 186 completed.[1;m
 [1;36mRound 187 completed.[1;m
 [1;36mRound 188 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 189 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){36>37} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2d3[123.123.3.3>123.123.1.3]){36>37} seq:0 ack:0 f:0x2
 [1;36mRound 190 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 5[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 17[1;m
 
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 191 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
 
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 192 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:02:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 193 completed.[1;m
 [1;36mRound 194 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 195 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;36mRound 196 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 4[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;36mRound 195 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 11[1;m
 
+[1;36mRound 196 completed.[1;m
 [1;36mRound 197 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 198 completed.[1;m
 [1;36mRound 199 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){38>39} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2d2[123.123.3.3>123.123.1.3]){38>39} seq:0 ack:0 f:0x2
 [1;36mRound 200 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received invalid arp packet on interface eth3: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 123.123.1.3>123.123.2.3
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.1.3.2')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2f35390><tlv end> on interface eth1
-[1;42m[1;37mNo correctness violations![1;m
+INFO:host:[IPAddr('123.123.1.3')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x228b4d0><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 201 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
 
 [1;36mRound 202 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:00:01', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 203 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 204 completed.[1;m
 [1;36mRound 205 completed.[1;m
-[1;36mRound 206 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 207 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 4[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mRound 206 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 12[1;m
 
+[1;36mRound 207 completed.[1;m
 [1;36mRound 208 completed.[1;m
 [1;36mRound 209 completed.[1;m
 [1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){40>41} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2d1[123.123.3.3>123.123.1.3]){40>41} seq:0 ack:0 f:0x2
 [1;36mRound 210 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 211 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
 
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 212 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 23[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 28[1;m
 
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:02:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 213 completed.[1;m
 [1;36mRound 214 completed.[1;m
 [1;36mRound 215 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 216 completed.[1;m
-[1;36mRound 217 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.3.3.2')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x306dad0><tlv end> on interface eth3
+INFO:host:[IPAddr('123.123.3.3')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x228ce50><tlv end> on interface eth3
+[1;36mRound 217 completed.[1;m
 [1;36mRound 218 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 219 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){42>43} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2d0[123.123.3.3>123.123.1.3]){42>43} seq:0 ack:0 f:0x2
 [1;36mRound 220 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 221 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
 
-[1;42m[1;37mNo correctness violations![1;m
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 222 completed.[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mForwarding dataplane event[1;m
-[1;36mRound 223 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 5[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 20[1;m
 
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:02:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mRound 223 completed.[1;m
 [1;36mRound 224 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received invalid arp packet on interface eth3: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 123.123.1.3>123.123.1.3
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mRound 225 completed.[1;m
 [1;36mRound 226 completed.[1;m
-[1;36mRound 227 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
-[1;36mRound 228 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;36mRound 229 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 25[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mRound 227 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;36mRound 228 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 31[1;m
 
+[1;36mRound 229 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){44>45} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2cf[123.123.3.3>123.123.1.3]){44>45} seq:0 ack:0 f:0x2
 [1;36mRound 230 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;42m[1;37mNo correctness violations![1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 231 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
 
 [1;36mRound 232 completed.[1;m
 [1;36mForwarding dataplane event[1;m
-[1;36mRound 233 completed.[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:00:01', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
 [1;36mForwarding dataplane event[1;m
-INFO:host:[IPAddr('10.2.3.2')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x3070790><tlv end> on interface eth2
-[1;42m[1;37mNo correctness violations![1;m
+INFO:host:[IPAddr('123.123.2.3')]:Recieved packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2291490><tlv end> on interface eth2
+[1;36mRound 233 completed.[1;m
 [1;36mRound 234 completed.[1;m
 [1;36mRound 235 completed.[1;m
 [1;36mRound 236 completed.[1;m
-[1;42m[1;37mNo correctness violations![1;m
 [1;36mRound 237 completed.[1;m
 [1;36mRound 238 completed.[1;m
-[1;36mRound 239 completed.[1;m
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;36mRound 239 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 21[1;m
+
 [1;42m[1;37mNo correctness violations![1;m
 INFO:dataplane_trace:Injecting trace input
-INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:20t:64]TCP cs:0[10.3.3.2>10.1.3.2]){46>47} seq:0 ack:0 f:0x2
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2ce[123.123.3.3>123.123.1.3]){46>47} seq:0 ack:0 f:0x2
 [1;36mRound 240 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 5[1;m
-
 [1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
 [1;36mRound 241 completed.[1;m
-[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 10.1.3.2[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
 
 [1;36mRound 242 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '12:34:56:78:02:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mRound 243 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;36mRound 244 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 13[1;m
+
+[1;36mRound 245 completed.[1;m
+[1;36mRound 246 completed.[1;m
+[1;36mRound 247 completed.[1;m
+[1;36mRound 248 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:received invalid arp packet on interface eth3: [00:00:00:00:00:03>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 00:00:00:00:00:03>ff:ff:ff:ff:ff:ff 123.123.1.3>123.123.2.3
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mRound 249 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:Recieved packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2291e10><tlv end> on interface eth1
+[1;42m[1;37mNo correctness violations![1;m
+INFO:dataplane_trace:Injecting trace input
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2cd[123.123.3.3>123.123.1.3]){48>49} seq:0 ack:0 f:0x2
+[1;36mRound 250 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 2})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'arp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mRound 251 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
+
+[1;36mRound 252 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:00:01', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mRound 253 completed.[1;m
+[1;36mRound 254 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=2, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;36mRound 255 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 14[1;m
+
+[1;36mRound 256 completed.[1;m
+[1;36mRound 257 completed.[1;m
+[1;36mRound 258 completed.[1;m
+[1;36mRound 259 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'class': 'lldp'}, 'class': 'ofp_packet_in', 'in_port': 1})
+[1;42m[1;37mNo correctness violations![1;m
+INFO:dataplane_trace:Injecting trace input
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>00:00:00:00:03:03:IP]|([v:4hl:5l:40t:64]TCP cs:c2cc[123.123.3.3>123.123.1.3]){50>51} seq:0 ack:0 f:0x2
+[1;36mRound 260 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 35[1;m
+
+[1;36mForwarding dataplane event[1;m
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'data': DPFingerprint{'dl_dst': '00:00:00:00:03:03', 'nw_src': '123.123.3.3', 'dl_src': '12:34:56:78:03:03', 'nw_dst': '123.123.1.3'}, 'class': 'ofp_packet_in', 'in_port': 3})
+[1;36mRound 261 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
+
+INFO:openflow_buffer:--- insert pending send: PendingSend(dpid=3, controller_id='c1', fingerprint=OFFingerprint{'code': 0, 'type': 3, 'class': 'ofp_error'})
+[1;36mRound 262 completed.[1;m
 [1;41m[1;33m[c1] ERROR:openflow.of_01:[00-00-00-00-00-03 3] OpenFlow Error:[1;m
 
 [1;41m[1;33m[c1] [00-00-00-00-00-03 3] Error: header:[1;m
@@ -687,11 +871,19 @@ INFO:host:[IPAddr('10.3.3.2')]:sending packet on interface eth3: [12:34:56:78:03
 
 [1;41m[1;33m[c1] [00-00-00-00-00-03 3] Error: code: OFPFMFC_ALL_TABLES_FULL (0)[1;m
 
+[1;36mRound 263 completed.[1;m
+[1;36mRound 264 completed.[1;m
+[1;36mRound 265 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:Recieved packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x2290350><tlv end> on interface eth3
+[1;36mRound 266 completed.[1;m
+[1;36mRound 267 completed.[1;m
+[1;36mRound 268 completed.[1;m
+[1;36mRound 269 completed.[1;m
 [1;41m[1;37mThe following correctness violations have occurred: ['ERROR_SENT'][1;m
 [1;41m[1;37mPersistent violations detected!: ['ERROR_SENT'][1;m
-INFO:control_flow:Terminating fuzzing after 243 rounds
-INFO:control_flow:Pending Messages:
-[1;36mKilling controller c1 (pid 31385)[1;m
-Terminating child controllers...close() called on stdout during concurrent operation
-close() called on stderr during concurrent operation
- OK
+INFO:control_flow:Terminating fuzzing after 270 rounds
+INFO:control_flow:Pending Receives:
+INFO:control_flow:Pending Sends:
+[1;36mKilling controller c1 (pid 27213)[1;m
+Terminating child controllers... OK

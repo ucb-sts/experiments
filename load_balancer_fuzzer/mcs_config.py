@@ -5,7 +5,7 @@ from sts.control_flow import EfficientMCSFinder
 from sts.invariant_checker import InvariantChecker
 from sts.simulation_state import SimulationConfig
 
-simulation_config = SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./pox.py --verbose --unthreaded-sh misc.ip_loadbalancer --ip=10.1.3.2 --servers=10.1.3.2,10.2.3.2 sts.util.socket_mux.pox_monkeypatcher   openflow.discovery openflow.of_01 --address=__address__ --port=__port__', label='c1', address='127.0.0.1', cwd='dart_pox')],
+simulation_config = SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./pox.py --verbose --unthreaded-sh misc.ip_loadbalancer --ip=123.123.1.3 --servers=123.123.2.3,123.123.1.3 sts.util.socket_mux.pox_monkeypatcher   openflow.discovery openflow.of_01 --address=__address__ --port=__port__', label='c1', address='127.0.0.1', cwd='dart_pox')],
                  topology_class=MeshTopology,
                  topology_params="num_switches=3",
                  patch_panel_class=BufferedPatchPanel,
@@ -14,8 +14,8 @@ simulation_config = SimulationConfig(controller_configs=[ControllerConfig(start_
 
 control_flow = EfficientMCSFinder(simulation_config, "experiments/load_balancer_fuzzer/events.trace",
                                   wait_on_deterministic_values=False,
+                                  default_dp_permit=False,
+                                  pass_through_whitelisted_messages=False,
                                   delay_flow_mods=False,
-                                  default_dp_permit=True,
-                                  pass_through_whitelisted_messages=True,
                                   invariant_check_name='check_for_ofp_error',
                                   bug_signature="")
