@@ -20,7 +20,7 @@ timestamp_results = True
 
 # Use Floodlight as our controller
 additional_ports = find_ports(of=range(6633,6833), rest=range(8080, 8280), jython=range(7655, 7855))
-controllers = [ ControllerConfig(command_line, cwd="floodlight", port=additional_ports['of'], additional_ports=additional_ports, label="c1", config_template="experiments/config/floodlightconfig.properties.template") ]
+controllers = [ ControllerConfig(command_line, cwd="../floodlight", port=additional_ports['of'], additional_ports=additional_ports, label="c1", config_template="experiments/config/floodlightconfig.properties.template") ]
 topology_class = MeshTopology
 topology_params = "num_switches=3"
 
