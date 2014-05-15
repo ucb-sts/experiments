@@ -1,0 +1,38 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/load_balancer_fuzzer_mcs/orig_config.py",
+    "-n",
+    "load_balancer_fuzzer_mcs_passthrough"
+  ],
+  "cwd": "/home/jefflai2/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5560 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:      12321316    6688756    5632560          0     356096    5032084\n-/+ buffers/cache:    1300576   11020740\nSwap:     12571644      95748   12475896",
+    "name": "c3",
+    "num_cores": "8",
+    "uptime": "16:33:31 up 196 days, 16:15,  4 users,  load average: 0.05, 0.03, 0.06"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "HEAD",
+      "commit": "e446dda7237e31a725062c3f8220d816132dd850"
+    },
+    "sts": {
+      "branch": "load_balancer_bug",
+      "commit": "85bcd3031239bb3d48a24a9c611017d34bb92f81"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 11.04",
+    "uname": "Linux c3 2.6.38-8-server #42-Ubuntu SMP Mon Apr 11 03:49:04 UTC 2011 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_05_14_16_33_31",
+  "user": "jefflai2"
+}
