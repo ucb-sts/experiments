@@ -1,0 +1,1313 @@
+No DataplaneDrops to replay. We suggest you set Replayer's default_dp_permit=True 
+[1;36mStarting POX controller c1[1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+Error connecting.  -- [Errno 111] Connection refused. Backing off 1 seconds ...
+[1;33m[c1] POX 0.3.0 (dart) / Copyright 2011-2013 James McCauley, et al.[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:POX 0.3.0 (dart) going up...[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Running on CPython (2.7.4/Apr 8 2013 22:49:24)[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Platform is Linux-2.6.38-8-server-x86_64-with-debian-squeeze-sid[1;m
+
+[1;41m[1;33m[c1] INFO:core:POX 0.3.0 (dart) is up.[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening on 127.0.0.1:6633[1;m
+
+[1;33m[c1] Incoming true socket connected[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 61420][1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 61420][1;m
+[1;36m[1;44m00:00.502 00:00.000 Successfully matched event ConnectToControllers:e1[1;m
+
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 61420][1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-03 3] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] INFO:iplb:IP Load Balancer Ready.[1;m
+
+[1;41m[1;33m[c1] INFO:iplb:Load Balancing on [00-00-00-00-00-03 3][1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-02 2] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-02[1;m
+
+[1;41m[1;33m[c1] WARNING:iplb:Ignoring switch [00-00-00-00-00-02 2][1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-01 1] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-01[1;m
+
+[1;41m[1;33m[c1] WARNING:iplb:Ignoring switch [00-00-00-00-00-01 1][1;m
+
+[1;35m[1;41m00:01.076 00:00.003 Event timed out ControlMessageReceive:i2 c c1 -> s 1 [ofp_hello: ][1;m
+[1;36m[1;36mRound 1[1;37m[1;m
+[1;35m[1;41m00:01.632 00:00.004 Event timed out ControlMessageReceive:i3 c c1 -> s 3 [ofp_hello: ][1;m
+[1;35m[1;41m00:02.188 00:00.005 Event timed out ControlMessageReceive:i4 c c1 -> s 2 [ofp_hello: ][1;m
+[1;35m[1;41m00:02.744 00:00.005 Event timed out ControlMessageSend:i5 c 1 -> s c1 [ofp_hello: ][1;m
+[1;35m[1;41m00:03.301 00:00.006 Event timed out ControlMessageSend:i6 c 3 -> s c1 [ofp_hello: ][1;m
+[1;35m[1;41m00:03.857 00:00.006 Event timed out ControlMessageSend:i7 c 2 -> s c1 [ofp_hello: ][1;m
+[1;35m[1;41m00:04.613 00:00.107 Event timed out ControlMessageReceive:i8 c c1 -> s 1 [ofp_features_request: ][1;m
+[1;36m[1;36mRound 2[1;37m[1;m
+[1;35m[1;41m00:05.170 00:00.108 Event timed out ControlMessageReceive:i9 c c1 -> s 3 [ofp_features_request: ][1;m
+[1;35m[1;41m00:05.725 00:00.108 Event timed out ControlMessageReceive:i10 c c1 -> s 2 [ofp_features_request: ][1;m
+[1;35m[1;41m00:06.282 00:00.109 Event timed out ControlMessageSend:i11 c 1 -> s c1 [ofp_features_reply: datapath_id=1][1;m
+[1;35m[1;41m00:06.838 00:00.109 Event timed out ControlMessageSend:i12 c 3 -> s c1 [ofp_features_reply: datapath_id=3][1;m
+[1;35m[1;41m00:07.395 00:00.110 Event timed out ControlMessageSend:i13 c 2 -> s c1 [ofp_features_reply: datapath_id=2][1;m
+[1;35m[1;41m00:08.017 00:00.211 Event timed out ControlMessageReceive:i14 c c1 -> s 1 [ofp_set_config: ][1;m
+[1;36m[1;36mRound 3[1;37m[1;m
+[1;35m[1;41m00:08.708 00:00.211 Event timed out ControlMessageReceive:i15 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:09.264 00:00.212 Event timed out ControlMessageReceive:i16 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:09.820 00:00.213 Event timed out ControlMessageReceive:i17 c c1 -> s 3 [ofp_set_config: ][1;m
+[1;35m[1;41m00:10.376 00:00.213 Event timed out ControlMessageReceive:i18 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:10.932 00:00.214 Event timed out ControlMessageReceive:i19 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:11.488 00:00.214 Event timed out ControlMessageReceive:i20 c c1 -> s 2 [ofp_set_config: ][1;m
+[1;35m[1;41m00:12.045 00:00.215 Event timed out ControlMessageReceive:i21 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:12.601 00:00.216 Event timed out ControlMessageReceive:i22 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;35m[1;41m00:13.219 00:00.216 Event timed out ControlMessageSend:i23 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m00:13.714 00:00.216 Event timed out ControlMessageSend:i24 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m00:14.270 00:00.217 Event timed out ControlMessageSend:i25 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;35m[1;41m00:14.982 00:00.318 Event timed out ControlMessageReceive:i26 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;36mRound 4[1;37m[1;m
+[1;35m[1;41m00:15.521 00:00.319 Event timed out ControlMessageReceive:i27 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=28672, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2054,in_port:None][1;m
+[1;35m[1;41m00:16.094 00:00.320 Event timed out ControlMessageReceive:i28 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:16.650 00:00.320 Event timed out ControlMessageReceive:i29 c c1 -> s 3 [ofp_packet_out: actions=(u'output(65531)',), data={u'class': u'arp'}, in_port=65535][1;m
+[1;35m[1;41m00:17.206 00:00.321 Event timed out ControlMessageReceive:i30 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=28672, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2054,in_port:None][1;m
+[1;35m[1;41m00:17.763 00:00.322 Event timed out ControlMessageReceive:i31 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=65000, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;35m[1;41m00:18.319 00:00.323 Event timed out ControlMessageReceive:i32 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=28672, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_type:2054,in_port:None][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:18.320 00:00.425 Successfully matched event DataplanePermit:i33[1;m
+[1;36m[1;36mRound 5[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:18.322 00:00.425 Successfully matched event DataplanePermit:i34[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:18.323 00:00.426 Successfully matched event DataplanePermit:i35[1;m
+[1;35m[1;41m00:18.875 00:00.428 Event timed out ControlMessageSend:i36 c 1 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m00:19.431 00:00.428 Event timed out ControlMessageSend:i37 c 2 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m00:20.188 00:00.529 Event timed out ControlMessageReceive:i38 c c1 -> s 1 [ofp_packet_out: actions=(u'output(65531)',), data=(), in_port=1][1;m
+[1;36m[1;36mRound 6[1;37m[1;m
+[1;35m[1;41m00:20.744 00:00.530 Event timed out ControlMessageReceive:i39 c c1 -> s 2 [ofp_packet_out: actions=(u'output(65531)',), data=(), in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:20.745 00:00.631 Successfully matched event DataplanePermit:i40[1;m
+[1;36m[1;36mRound 7[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:20.746 00:00.632 Successfully matched event DataplanePermit:i41[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:20.748 00:00.633 Successfully matched event DataplanePermit:i42[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:20.748 00:00.634 Successfully matched event DataplanePermit:i43[1;m
+[1;35m[1;41m00:21.300 00:00.634 Event timed out ControlMessageSend:i44 c 1 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=2][1;m
+[1;35m[1;41m00:21.856 00:00.635 Event timed out ControlMessageSend:i45 c 2 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=2][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:21.858 00:00.736 Successfully matched event DataplanePermit:i46[1;m
+[1;36m[1;36mRound 8[1;37m[1;m
+[1;35m[1;41m00:22.412 00:00.737 Event timed out ControlMessageReceive:i47 c c1 -> s 1 [ofp_packet_out: actions=(u'output(65531)',), data=(), in_port=2][1;m
+[1;35m[1;41m00:22.968 00:00.738 Event timed out ControlMessageReceive:i48 c c1 -> s 2 [ofp_packet_out: actions=(u'output(65531)',), data=(), in_port=2][1;m
+[1;35m[1;41m00:23.524 00:00.738 Event timed out ControlMessageSend:i49 c 2 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=3][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:23.526 00:00.839 Successfully matched event DataplanePermit:i50[1;m
+[1;36m[1;36mRound 9[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:23.527 00:00.840 Successfully matched event DataplanePermit:i51[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:23.528 00:00.841 Successfully matched event DataplanePermit:i52[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:23.529 00:00.842 Successfully matched event DataplanePermit:i53[1;m
+[1;35m[1;41m00:24.081 00:00.843 Event timed out ControlMessageReceive:i54 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m00:24.637 00:00.843 Event timed out ControlMessageSend:i55 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=2][1;m
+[1;35m[1;41m00:25.193 00:00.844 Event timed out ControlMessageSend:i56 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:25.195 00:00.945 Successfully matched event DataplanePermit:i57[1;m
+[1;36m[1;36mRound 10[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:25.196 00:00.946 Successfully matched event DataplanePermit:i58[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 3[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m00:25.749 00:00.947 Event timed out ControlMessageReceive:i59 c c1 -> s 3 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=2][1;m
+[1;35m[1;41m00:26.305 00:00.948 Event timed out ControlMessageReceive:i60 c c1 -> s 3 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m00:26.862 00:00.949 Event timed out ControlMessageSend:i61 c 2 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=3][1;m
+[1;35m[1;41m00:27.418 00:00.949 Event timed out ControlMessageSend:i62 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:27.419 00:00.950 Successfully matched event CheckInvariants:e63[1;m
+[1;36m[1;44m00:27.419 00:00.950 Successfully matched event TrafficInjection:e64[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:27.421 00:01.051 Successfully matched event DataplanePermit:i65[1;m
+[1;36m[1;36mRound 11[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:27.423 00:01.053 Successfully matched event DataplanePermit:i66[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:27.424 00:01.054 Successfully matched event DataplanePermit:i67[1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:No servers![1;m
+
+[1;35m[1;41m00:27.974 00:01.055 Event timed out ControlMessageReceive:i68 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;35m[1;41m00:28.530 00:01.055 Event timed out ControlMessageSend:i69 c 1 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m00:29.087 00:01.056 Event timed out ControlMessageSend:i70 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;35m[1;41m00:29.643 00:01.056 Event timed out ControlMessageSend:i71 c 2 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m00:30.399 00:01.157 Event timed out ControlMessageReceive:i72 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 12[1;37m[1;m
+[1;35m[1;41m00:31.111 00:01.359 Event timed out ControlMessageReceive:i73 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 14[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:31.112 00:01.460 Successfully matched event DataplanePermit:i74[1;m
+[1;36m[1;36mRound 15[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
+
+[1;35m[1;41m00:31.667 00:01.461 Event timed out ControlMessageSend:i75 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m00:32.424 00:01.562 Event timed out ControlMessageReceive:i76 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 16[1;37m[1;m
+[1;35m[1;41m00:33.336 00:01.965 Event timed out ControlMessageReceive:i77 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 20[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:33.337 00:01.965 Successfully matched event CheckInvariants:e78[1;m
+[1;36m[1;44m00:33.338 00:01.966 Successfully matched event TrafficInjection:e79[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:33.338 00:02.067 Successfully matched event DataplanePermit:i80[1;m
+[1;36m[1;36mRound 21[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:33.340 00:02.068 Successfully matched event DataplanePermit:i81[1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:No servers![1;m
+
+[1;35m[1;41m00:33.892 00:02.069 Event timed out ControlMessageSend:i82 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;35m[1;41m00:34.649 00:02.170 Event timed out ControlMessageReceive:i83 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=3][1;m
+[1;36m[1;36mRound 22[1;37m[1;m
+[1;35m[1;41m00:35.527 00:02.472 Event timed out ControlMessageReceive:i84 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 25[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:35.528 00:02.573 Successfully matched event DataplanePermit:i85[1;m
+[1;36m[1;36mRound 26[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 3[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m00:36.117 00:02.575 Event timed out ControlMessageSend:i86 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m00:36.873 00:02.676 Event timed out ControlMessageReceive:i87 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 27[1;37m[1;m
+[1;35m[1;41m00:37.630 00:02.776 Event timed out ControlMessageReceive:i88 c c1 -> s 3 [ofp_packet_out: actions=(u'output(65531)',), data={u'class': u'arp'}, in_port=65535][1;m
+[1;36m[1;36mRound 28[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:37.634 00:02.878 Successfully matched event DataplanePermit:i89[1;m
+[1;36m[1;36mRound 29[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:37.635 00:02.878 Successfully matched event DataplanePermit:i90[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:37.636 00:02.880 Successfully matched event DataplanePermit:i91[1;m
+[1;35m[1;41m00:38.228 00:02.881 Event timed out ControlMessageSend:i92 c 1 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m00:38.742 00:02.881 Event timed out ControlMessageSend:i93 c 2 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m00:39.454 00:02.982 Event timed out ControlMessageReceive:i94 c c1 -> s 1 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;36m[1;36mRound 30[1;37m[1;m
+[1;35m[1;41m00:40.009 00:02.983 Event timed out ControlMessageReceive:i95 c c1 -> s 2 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:40.010 00:02.984 Successfully matched event CheckInvariants:e96[1;m
+[1;36m[1;44m00:40.011 00:02.984 Successfully matched event TrafficInjection:e97[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:40.012 00:03.085 Successfully matched event DataplanePermit:i98[1;m
+[1;36m[1;36mRound 31[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:40.013 00:03.086 Successfully matched event DataplanePermit:i99[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:40.015 00:03.087 Successfully matched event DataplanePermit:i100[1;m
+[1;41m[1;33m[c1] INFO:iplb.00-00-00-00-00-03:Server 123.123.1.3 up[1;m
+
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
+
+[1;35m[1;41m00:40.528 00:03.089 Event timed out ControlMessageReceive:i101 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m00:41.122 00:03.089 Event timed out ControlMessageSend:i102 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=2][1;m
+[1;35m[1;41m00:41.678 00:03.090 Event timed out ControlMessageSend:i103 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m00:42.235 00:03.090 Event timed out ControlMessageSend:i104 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:42.236 00:03.191 Successfully matched event DataplanePermit:i105[1;m
+[1;36m[1;36mRound 32[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 3[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
+
+[1;35m[1;41m00:42.791 00:03.193 Event timed out ControlMessageReceive:i106 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:4,tp_dst:5,in_port:3][1;m
+[1;35m[1;41m00:43.347 00:03.194 Event timed out ControlMessageSend:i107 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:43.348 00:03.295 Successfully matched event DataplanePermit:i108[1;m
+[1;36m[1;36mRound 33[1;37m[1;m
+[1;35m[1;41m00:43.903 00:03.296 Event timed out ControlMessageReceive:i109 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
+
+[1;35m[1;41m00:44.459 00:03.297 Event timed out ControlMessageSend:i110 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:00:01', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;35m[1;41m00:45.416 00:03.599 Event timed out ControlMessageReceive:i111 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 36[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:45.417 00:03.700 Successfully matched event DataplanePermit:i112[1;m
+[1;36m[1;36mRound 37[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:45.720 00:04.002 Successfully matched event CheckInvariants:e113[1;m
+[1;36m[1;36mRound 40[1;37m[1;m
+[1;36m[1;44m00:45.720 00:04.002 Successfully matched event TrafficInjection:e114[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:45.722 00:04.104 Successfully matched event DataplanePermit:i115[1;m
+[1;36m[1;36mRound 41[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
+
+[1;35m[1;41m00:46.328 00:04.105 Event timed out ControlMessageSend:i116 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;35m[1;41m00:47.084 00:04.206 Event timed out ControlMessageReceive:i117 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 42[1;37m[1;m
+[1;35m[1;41m00:47.641 00:04.207 Event timed out ControlMessageReceive:i118 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:6,tp_dst:7,in_port:3][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:47.643 00:04.309 Successfully matched event DataplanePermit:i119[1;m
+[1;36m[1;36mRound 43[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:47.644 00:04.310 Successfully matched event DataplanePermit:i120[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 5[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
+
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m00:48.231 00:04.312 Event timed out ControlMessageSend:i121 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:00:01', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;35m[1;41m00:48.753 00:04.312 Event timed out ControlMessageSend:i122 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m00:49.464 00:04.413 Event timed out ControlMessageReceive:i123 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;36mRound 44[1;37m[1;m
+[1;35m[1;41m00:50.421 00:04.715 Event timed out ControlMessageReceive:i124 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 47[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:50.423 00:04.816 Successfully matched event DataplanePermit:i125[1;m
+[1;36m[1;36mRound 48[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 5[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;35m[1;41m00:50.977 00:04.818 Event timed out ControlMessageSend:i126 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;35m[1;41m00:51.689 00:04.919 Event timed out ControlMessageReceive:i127 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;36mRound 49[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:51.791 00:05.020 Successfully matched event CheckInvariants:e128[1;m
+[1;36m[1;36mRound 50[1;37m[1;m
+[1;36m[1;44m00:51.791 00:05.020 Successfully matched event TrafficInjection:e129[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:51.793 00:05.121 Successfully matched event DataplanePermit:i130[1;m
+[1;36m[1;36mRound 51[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
+
+[1;35m[1;41m00:52.446 00:05.123 Event timed out ControlMessageSend:i131 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m00:53.233 00:05.221 Event timed out ControlMessageReceive:i132 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:8,tp_dst:9,in_port:3][1;m
+[1;36m[1;36mRound 52[1;37m[1;m
+[1;35m[1;41m00:53.759 00:05.222 Event timed out ControlMessageReceive:i133 c c1 -> s 3 [ofp_packet_out: actions=(u'output(65531)',), data={u'class': u'arp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:53.759 00:05.323 Successfully matched event DataplanePermit:i134[1;m
+[1;36m[1;36mRound 53[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:53.761 00:05.324 Successfully matched event DataplanePermit:i135[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:53.762 00:05.325 Successfully matched event DataplanePermit:i136[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:53.763 00:05.326 Successfully matched event DataplanePermit:i137[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
+
+[1;35m[1;41m00:54.314 00:05.328 Event timed out ControlMessageReceive:i138 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m00:54.871 00:05.328 Event timed out ControlMessageSend:i139 c 1 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m00:55.426 00:05.329 Event timed out ControlMessageSend:i140 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:00:01', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;35m[1;41m00:55.982 00:05.329 Event timed out ControlMessageSend:i141 c 2 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:55.983 00:05.430 Successfully matched event DataplanePermit:i142[1;m
+[1;36m[1;36mRound 54[1;37m[1;m
+[1;35m[1;41m00:56.539 00:05.431 Event timed out ControlMessageReceive:i143 c c1 -> s 1 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m00:57.095 00:05.432 Event timed out ControlMessageReceive:i144 c c1 -> s 2 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:57.097 00:05.533 Successfully matched event DataplanePermit:i145[1;m
+[1;36m[1;36mRound 55[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:57.098 00:05.534 Successfully matched event DataplanePermit:i146[1;m
+[1;41m[1;33m[c1] INFO:iplb.00-00-00-00-00-03:Server 123.123.2.3 up[1;m
+
+[1;35m[1;41m00:57.651 00:05.535 Event timed out ControlMessageSend:i147 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=2][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m00:58.235 00:05.535 Event timed out ControlMessageSend:i148 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m00:59.119 00:05.837 Event timed out ControlMessageReceive:i149 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 58[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:59.121 00:05.939 Successfully matched event DataplanePermit:i150[1;m
+[1;36m[1;36mRound 59[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 6[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
+
+[1;35m[1;41m00:59.675 00:05.940 Event timed out ControlMessageSend:i151 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m01:00.432 00:06.041 Event timed out ControlMessageReceive:i152 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 60[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:00.432 00:06.041 Successfully matched event CheckInvariants:e153[1;m
+[1;36m[1;44m01:00.433 00:06.042 Successfully matched event TrafficInjection:e154[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:00.435 00:06.143 Successfully matched event DataplanePermit:i155[1;m
+[1;36m[1;36mRound 61[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
+
+[1;35m[1;41m01:00.988 00:06.145 Event timed out ControlMessageSend:i156 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;35m[1;41m01:01.699 00:06.246 Event timed out ControlMessageReceive:i157 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:10,tp_dst:11,in_port:3][1;m
+[1;36m[1;36mRound 62[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:01.701 00:06.341 Successfully matched event DataplanePermit:i158[1;m
+[1;36m[1;36mRound 63[1;37m[1;m
+[1;35m[1;41m01:02.256 00:06.342 Event timed out ControlMessageReceive:i159 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m01:02.812 00:06.343 Event timed out ControlMessageSend:i160 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:00:01', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:02.814 00:06.444 Successfully matched event DataplanePermit:i161[1;m
+[1;36m[1;36mRound 64[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 8[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
+
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m01:03.368 00:06.445 Event timed out ControlMessageSend:i162 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m01:04.125 00:06.546 Event timed out ControlMessageReceive:i163 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 65[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;35m[1;41m01:05.037 00:06.948 Event timed out ControlMessageReceive:i164 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 69[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:05.038 00:07.050 Successfully matched event DataplanePermit:i165[1;m
+[1;36m[1;36mRound 70[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:05.038 00:07.050 Successfully matched event CheckInvariants:e166[1;m
+[1;36m[1;44m01:05.039 00:07.051 Successfully matched event TrafficInjection:e167[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:05.041 00:07.152 Successfully matched event DataplanePermit:i168[1;m
+[1;36m[1;36mRound 71[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
+
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m01:05.537 00:07.154 Event timed out ControlMessageSend:i169 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;35m[1;41m01:06.149 00:07.255 Event timed out ControlMessageReceive:i170 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:12,tp_dst:13,in_port:3][1;m
+[1;36m[1;36mRound 72[1;37m[1;m
+[1;35m[1;41m01:06.906 00:07.357 Event timed out DataplanePermit:i171[1;m
+[1;36m[1;36mRound 73[1;37m[1;m
+[1;35m[1;41m01:07.462 00:07.358 Event timed out ControlMessageSend:i172 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m01:08.238 00:07.453 Event timed out ControlMessageReceive:i173 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 74[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:08.240 00:07.554 Successfully matched event DataplanePermit:i174[1;m
+[1;36m[1;36mRound 75[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 7[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m01:08.775 00:07.556 Event timed out ControlMessageSend:i175 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m01:09.486 00:07.657 Event timed out ControlMessageReceive:i176 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 76[1;37m[1;m
+[1;35m[1;41m01:10.243 00:07.758 Event timed out ControlMessageReceive:i177 c c1 -> s 3 [ofp_packet_out: actions=(u'output(65531)',), data={u'class': u'arp'}, in_port=65535][1;m
+[1;36m[1;36mRound 77[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:10.244 00:07.859 Successfully matched event DataplanePermit:i178[1;m
+[1;36m[1;36mRound 78[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:10.245 00:07.860 Successfully matched event DataplanePermit:i179[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:10.246 00:07.861 Successfully matched event DataplanePermit:i180[1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m01:10.799 00:07.862 Event timed out ControlMessageSend:i181 c 1 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m01:11.355 00:07.863 Event timed out ControlMessageSend:i182 c 2 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m01:12.112 00:07.964 Event timed out ControlMessageReceive:i183 c c1 -> s 1 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;36m[1;36mRound 79[1;37m[1;m
+[1;35m[1;41m01:12.668 00:07.965 Event timed out ControlMessageReceive:i184 c c1 -> s 2 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:12.670 00:08.066 Successfully matched event DataplanePermit:i185[1;m
+[1;36m[1;36mRound 80[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:12.671 00:08.067 Successfully matched event DataplanePermit:i186[1;m
+[1;35m[1;41m01:13.240 00:08.068 Event timed out ControlMessageReceive:i187 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m01:13.780 00:08.069 Event timed out ControlMessageSend:i188 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=2][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
+
+[1;35m[1;41m01:14.337 00:08.069 Event timed out ControlMessageSend:i189 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:14.337 00:08.070 Successfully matched event CheckInvariants:e190[1;m
+[1;36m[1;44m01:14.338 00:08.070 Successfully matched event TrafficInjection:e191[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:14.340 00:08.171 Successfully matched event DataplanePermit:i192[1;m
+[1;36m[1;36mRound 81[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:14.342 00:08.173 Successfully matched event DataplanePermit:i193[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 9[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
+
+[1;35m[1;41m01:14.893 00:08.174 Event timed out ControlMessageSend:i194 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;35m[1;41m01:15.449 00:08.175 Event timed out ControlMessageSend:i195 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m01:16.160 00:08.276 Event timed out ControlMessageReceive:i196 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;36mRound 82[1;37m[1;m
+[1;35m[1;41m01:16.716 00:08.277 Event timed out ControlMessageReceive:i197 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:14,tp_dst:15,in_port:3][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:16.718 00:08.379 Successfully matched event DataplanePermit:i198[1;m
+[1;36m[1;36mRound 83[1;37m[1;m
+[1;35m[1;41m01:17.272 00:08.380 Event timed out ControlMessageSend:i199 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;35m[1;41m01:18.029 00:08.582 Event timed out ControlMessageReceive:i200 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 85[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:18.030 00:08.683 Successfully matched event DataplanePermit:i201[1;m
+[1;36m[1;36mRound 86[1;37m[1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:18.433 00:09.086 Successfully matched event CheckInvariants:e202[1;m
+[1;36m[1;36mRound 90[1;37m[1;m
+[1;36m[1;44m01:18.434 00:09.086 Successfully matched event TrafficInjection:e203[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:18.437 00:09.187 Successfully matched event DataplanePermit:i204[1;m
+[1;36m[1;36mRound 91[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
+
+[1;35m[1;41m01:18.941 00:09.189 Event timed out ControlMessageReceive:i205 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m01:19.497 00:09.190 Event timed out ControlMessageSend:i206 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:19.499 00:09.291 Successfully matched event DataplanePermit:i207[1;m
+[1;36m[1;36mRound 92[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 9[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
+
+[1;35m[1;41m01:20.053 00:09.293 Event timed out ControlMessageReceive:i208 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:16,tp_dst:17,in_port:3][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m01:20.609 00:09.294 Event timed out ControlMessageSend:i209 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:20.611 00:09.395 Successfully matched event DataplanePermit:i210[1;m
+[1;36m[1;36mRound 93[1;37m[1;m
+[1;35m[1;41m01:21.165 00:09.396 Event timed out ControlMessageReceive:i211 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;35m[1;41m01:21.722 00:09.397 Event timed out ControlMessageSend:i212 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;35m[1;41m01:22.679 00:09.699 Event timed out ControlMessageReceive:i213 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 96[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:22.681 00:09.800 Successfully matched event DataplanePermit:i214[1;m
+[1;36m[1;36mRound 97[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 7[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m01:23.244 00:09.801 Event timed out ControlMessageSend:i215 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;35m[1;41m01:23.947 00:09.902 Event timed out ControlMessageReceive:i216 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;36mRound 98[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:24.149 00:10.104 Successfully matched event CheckInvariants:e217[1;m
+[1;36m[1;36mRound 100[1;37m[1;m
+[1;36m[1;44m01:24.150 00:10.104 Successfully matched event TrafficInjection:e218[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:24.152 00:10.206 Successfully matched event DataplanePermit:i219[1;m
+[1;36m[1;36mRound 101[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
+
+[1;35m[1;41m01:24.703 00:10.208 Event timed out ControlMessageSend:i220 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;35m[1;41m01:25.460 00:10.309 Event timed out ControlMessageReceive:i221 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 102[1;37m[1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m01:26.015 00:10.310 Event timed out ControlMessageReceive:i222 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:18,tp_dst:19,in_port:3][1;m
+[1;35m[1;41m01:26.572 00:10.312 Event timed out ControlMessageReceive:i223 c c1 -> s 3 [ofp_packet_out: actions=(u'output(65531)',), data={u'class': u'arp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:26.573 00:10.413 Successfully matched event DataplanePermit:i224[1;m
+[1;36m[1;36mRound 103[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:26.574 00:10.413 Successfully matched event DataplanePermit:i225[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:26.575 00:10.415 Successfully matched event DataplanePermit:i226[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:26.577 00:10.416 Successfully matched event DataplanePermit:i227[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:26.577 00:10.417 Successfully matched event DataplanePermit:i228[1;m
+[1;35m[1;41m01:27.128 00:10.417 Event timed out ControlMessageSend:i229 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:00:01', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;35m[1;41m01:27.684 00:10.418 Event timed out ControlMessageSend:i230 c 1 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m01:28.246 00:10.419 Event timed out ControlMessageSend:i231 c 2 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m01:28.952 00:10.520 Event timed out ControlMessageReceive:i232 c c1 -> s 1 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;36m[1;36mRound 104[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
+
+[1;35m[1;41m01:29.508 00:10.520 Event timed out ControlMessageReceive:i233 c c1 -> s 2 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:29.510 00:10.622 Successfully matched event DataplanePermit:i234[1;m
+[1;36m[1;36mRound 105[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:29.511 00:10.623 Successfully matched event DataplanePermit:i235[1;m
+[1;35m[1;41m01:30.064 00:10.624 Event timed out ControlMessageSend:i236 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=2][1;m
+[1;35m[1;41m01:30.620 00:10.624 Event timed out ControlMessageSend:i237 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m01:31.377 00:10.826 Event timed out ControlMessageReceive:i238 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 107[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:31.378 00:10.927 Successfully matched event DataplanePermit:i239[1;m
+[1;36m[1;36mRound 108[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 8[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m01:31.933 00:10.928 Event timed out ControlMessageSend:i240 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m01:32.690 00:11.029 Event timed out ControlMessageReceive:i241 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 109[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:32.791 00:11.130 Successfully matched event CheckInvariants:e242[1;m
+[1;36m[1;36mRound 110[1;37m[1;m
+[1;36m[1;44m01:32.792 00:11.131 Successfully matched event TrafficInjection:e243[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:32.795 00:11.232 Successfully matched event DataplanePermit:i244[1;m
+[1;36m[1;36mRound 111[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
+
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m01:33.401 00:11.235 Event timed out ControlMessageSend:i245 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;35m[1;41m01:34.158 00:11.336 Event timed out ControlMessageReceive:i246 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:20,tp_dst:21,in_port:3][1;m
+[1;36m[1;36mRound 112[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:34.160 00:11.438 Successfully matched event DataplanePermit:i247[1;m
+[1;36m[1;36mRound 113[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;35m[1;41m01:34.714 00:11.439 Event timed out ControlMessageReceive:i248 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m01:35.270 00:11.440 Event timed out ControlMessageSend:i249 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:35.271 00:11.541 Successfully matched event DataplanePermit:i250[1;m
+[1;36m[1;36mRound 114[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 14[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
+
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m01:35.825 00:11.542 Event timed out ControlMessageSend:i251 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m01:36.582 00:11.643 Event timed out ControlMessageReceive:i252 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 115[1;37m[1;m
+[1;35m[1;41m01:37.495 00:11.945 Event timed out ControlMessageReceive:i253 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 118[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:37.496 00:12.047 Successfully matched event DataplanePermit:i254[1;m
+[1;36m[1;36mRound 119[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:37.597 00:12.148 Successfully matched event CheckInvariants:e255[1;m
+[1;36m[1;36mRound 120[1;37m[1;m
+[1;36m[1;44m01:37.598 00:12.148 Successfully matched event TrafficInjection:e256[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:37.601 00:12.249 Successfully matched event DataplanePermit:i257[1;m
+[1;36m[1;36mRound 121[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
+
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m01:38.249 00:12.252 Event timed out ControlMessageSend:i258 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;35m[1;41m01:38.963 00:12.353 Event timed out ControlMessageReceive:i259 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:22,tp_dst:23,in_port:3][1;m
+[1;36m[1;36mRound 122[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:38.965 00:12.456 Successfully matched event DataplanePermit:i260[1;m
+[1;36m[1;36mRound 123[1;37m[1;m
+[1;35m[1;41m01:39.519 00:12.457 Event timed out ControlMessageSend:i261 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;35m[1;41m01:40.275 00:12.558 Event timed out ControlMessageReceive:i262 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 124[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:40.277 00:12.659 Successfully matched event DataplanePermit:i263[1;m
+[1;36m[1;36mRound 125[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 11[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m01:40.831 00:12.661 Event timed out ControlMessageSend:i264 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m01:41.588 00:12.761 Event timed out ControlMessageReceive:i265 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 126[1;37m[1;m
+[1;35m[1;41m01:42.144 00:12.762 Event timed out ControlMessageReceive:i266 c c1 -> s 3 [ofp_packet_out: actions=(u'output(65531)',), data={u'class': u'arp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:42.145 00:12.863 Successfully matched event DataplanePermit:i267[1;m
+[1;36m[1;36mRound 127[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:42.147 00:12.864 Successfully matched event DataplanePermit:i268[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:42.148 00:12.865 Successfully matched event DataplanePermit:i269[1;m
+[1;35m[1;41m01:42.700 00:12.866 Event timed out ControlMessageSend:i270 c 1 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m01:43.251 00:12.867 Event timed out ControlMessageSend:i271 c 2 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m01:43.968 00:12.968 Event timed out ControlMessageReceive:i272 c c1 -> s 1 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;36m[1;36mRound 128[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m01:44.524 00:12.968 Event timed out ControlMessageReceive:i273 c c1 -> s 2 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:44.526 00:13.069 Successfully matched event DataplanePermit:i274[1;m
+[1;36m[1;36mRound 129[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:44.527 00:13.071 Successfully matched event DataplanePermit:i275[1;m
+[1;35m[1;41m01:45.080 00:13.072 Event timed out ControlMessageReceive:i276 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m01:45.636 00:13.073 Event timed out ControlMessageSend:i277 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=2][1;m
+[1;35m[1;41m01:46.192 00:13.073 Event timed out ControlMessageSend:i278 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:46.194 00:13.174 Successfully matched event DataplanePermit:i279[1;m
+[1;36m[1;36mRound 130[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 16[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
+
+[1;35m[1;41m01:46.749 00:13.175 Event timed out ControlMessageSend:i280 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:46.749 00:13.176 Successfully matched event CheckInvariants:e281[1;m
+[1;36m[1;44m01:46.750 00:13.176 Successfully matched event TrafficInjection:e282[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:46.753 00:13.277 Successfully matched event DataplanePermit:i283[1;m
+[1;36m[1;36mRound 131[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
+
+[1;35m[1;41m01:47.305 00:13.280 Event timed out ControlMessageReceive:i284 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;35m[1;41m01:47.862 00:13.281 Event timed out ControlMessageSend:i285 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;35m[1;41m01:48.618 00:13.382 Event timed out ControlMessageReceive:i286 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:24,tp_dst:25,in_port:3][1;m
+[1;36m[1;36mRound 132[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:48.620 00:13.484 Successfully matched event DataplanePermit:i287[1;m
+[1;36m[1;36mRound 133[1;37m[1;m
+[1;35m[1;41m01:49.174 00:13.485 Event timed out ControlMessageSend:i288 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:00:01', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
+
+[1;35m[1;41m01:49.931 00:13.587 Event timed out ControlMessageReceive:i289 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 134[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:49.932 00:13.688 Successfully matched event DataplanePermit:i290[1;m
+[1;36m[1;36mRound 135[1;37m[1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m01:51.043 00:14.191 Event timed out ControlMessageReceive:i291 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 140[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:51.043 00:14.192 Successfully matched event CheckInvariants:e292[1;m
+[1;36m[1;44m01:51.044 00:14.192 Successfully matched event TrafficInjection:e293[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:51.046 00:14.293 Successfully matched event DataplanePermit:i294[1;m
+[1;36m[1;36mRound 141[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:51.049 00:14.295 Successfully matched event DataplanePermit:i295[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 13[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
+
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
+
+[1;35m[1;41m01:51.599 00:14.297 Event timed out ControlMessageSend:i296 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;35m[1;41m01:52.155 00:14.298 Event timed out ControlMessageSend:i297 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;35m[1;41m01:52.867 00:14.399 Event timed out ControlMessageReceive:i298 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;36mRound 142[1;37m[1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m01:53.423 00:14.400 Event timed out ControlMessageReceive:i299 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:26,tp_dst:27,in_port:3][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:53.425 00:14.502 Successfully matched event DataplanePermit:i300[1;m
+[1;36m[1;36mRound 143[1;37m[1;m
+[1;35m[1;41m01:53.979 00:14.503 Event timed out ControlMessageSend:i301 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:00:01', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m01:54.736 00:14.705 Event timed out ControlMessageReceive:i302 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 145[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:54.737 00:14.807 Successfully matched event DataplanePermit:i303[1;m
+[1;36m[1;36mRound 146[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 9[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;35m[1;41m01:55.292 00:14.808 Event timed out ControlMessageSend:i304 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m01:56.048 00:14.909 Event timed out ControlMessageReceive:i305 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;36mRound 147[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m01:56.351 00:15.211 Successfully matched event CheckInvariants:e306[1;m
+[1;36m[1;36mRound 150[1;37m[1;m
+[1;36m[1;44m01:56.352 00:15.211 Successfully matched event TrafficInjection:e307[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:56.355 00:15.312 Successfully matched event DataplanePermit:i308[1;m
+[1;36m[1;36mRound 151[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
+
+[1;35m[1;41m01:56.960 00:15.315 Event timed out ControlMessageReceive:i309 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m01:57.517 00:15.316 Event timed out ControlMessageReceive:i310 c c1 -> s 3 [ofp_packet_out: actions=(u'output(65531)',), data={u'class': u'arp'}, in_port=65535][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m01:58.057 00:15.317 Event timed out ControlMessageSend:i311 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:58.058 00:15.418 Successfully matched event DataplanePermit:i312[1;m
+[1;36m[1;36mRound 152[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:58.058 00:15.419 Successfully matched event DataplanePermit:i313[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:58.060 00:15.419 Successfully matched event DataplanePermit:i314[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:58.061 00:15.420 Successfully matched event DataplanePermit:i315[1;m
+[1;35m[1;41m01:58.629 00:15.422 Event timed out ControlMessageReceive:i316 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:28,tp_dst:29,in_port:3][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
+
+[1;35m[1;41m01:59.185 00:15.424 Event timed out ControlMessageSend:i317 c 1 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m01:59.742 00:15.424 Event timed out ControlMessageSend:i318 c 2 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m01:59.745 00:15.525 Successfully matched event DataplanePermit:i319[1;m
+[1;36m[1;36mRound 153[1;37m[1;m
+[1;35m[1;41m02:00.298 00:15.526 Event timed out ControlMessageReceive:i320 c c1 -> s 1 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m02:00.853 00:15.527 Event timed out ControlMessageReceive:i321 c c1 -> s 2 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m02:01.410 00:15.528 Event timed out ControlMessageSend:i322 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:00:01', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:01.412 00:15.629 Successfully matched event DataplanePermit:i323[1;m
+[1;36m[1;36mRound 154[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:01.413 00:15.630 Successfully matched event DataplanePermit:i324[1;m
+[1;35m[1;41m02:01.966 00:15.631 Event timed out ControlMessageSend:i325 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=2][1;m
+[1;35m[1;41m02:02.523 00:15.632 Event timed out ControlMessageSend:i326 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m02:03.259 00:15.833 Event timed out ControlMessageReceive:i327 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 156[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:03.260 00:15.935 Successfully matched event DataplanePermit:i328[1;m
+[1;36m[1;36mRound 157[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 10[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m02:03.835 00:15.936 Event timed out ControlMessageSend:i329 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
+
+[1;35m[1;41m02:04.546 00:16.037 Event timed out ControlMessageReceive:i330 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 158[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:04.749 00:16.238 Successfully matched event CheckInvariants:e331[1;m
+[1;36m[1;36mRound 160[1;37m[1;m
+[1;36m[1;44m02:04.753 00:16.238 Successfully matched event TrafficInjection:e332[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:04.756 00:16.340 Successfully matched event DataplanePermit:i333[1;m
+[1;36m[1;36mRound 161[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
+
+[1;35m[1;41m02:05.303 00:16.343 Event timed out ControlMessageSend:i334 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;35m[1;41m02:06.059 00:16.444 Event timed out ControlMessageReceive:i335 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:30,tp_dst:31,in_port:3][1;m
+[1;36m[1;36mRound 162[1;37m[1;m
+[1;35m[1;41m02:06.616 00:16.446 Event timed out ControlMessageReceive:i336 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:06.617 00:16.548 Successfully matched event DataplanePermit:i337[1;m
+[1;36m[1;36mRound 163[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:06.619 00:16.549 Successfully matched event DataplanePermit:i338[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 21[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
+
+[1;35m[1;41m02:07.173 00:16.550 Event timed out ControlMessageSend:i339 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:00:01', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;35m[1;41m02:07.728 00:16.551 Event timed out ControlMessageSend:i340 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m02:08.439 00:16.652 Event timed out ControlMessageReceive:i341 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 164[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;35m[1;41m02:09.397 00:16.954 Event timed out ControlMessageReceive:i342 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 167[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:09.398 00:17.055 Successfully matched event DataplanePermit:i343[1;m
+[1;36m[1;36mRound 168[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:09.600 00:17.257 Successfully matched event CheckInvariants:e344[1;m
+[1;36m[1;36mRound 170[1;37m[1;m
+[1;36m[1;44m02:09.601 00:17.257 Successfully matched event TrafficInjection:e345[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:09.604 00:17.358 Successfully matched event DataplanePermit:i346[1;m
+[1;36m[1;36mRound 171[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
+
+[1;35m[1;41m02:10.108 00:17.362 Event timed out ControlMessageSend:i347 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m02:10.864 00:17.461 Event timed out ControlMessageReceive:i348 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:32,tp_dst:33,in_port:3][1;m
+[1;36m[1;36mRound 172[1;37m[1;m
+[1;35m[1;41m02:11.421 00:17.463 Event timed out ControlMessageReceive:i349 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m02:12.177 00:17.564 Event timed out DataplanePermit:i350[1;m
+[1;36m[1;36mRound 173[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:12.179 00:17.565 Successfully matched event DataplanePermit:i351[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 15[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m02:12.733 00:17.567 Event timed out ControlMessageSend:i352 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m02:13.263 00:17.567 Event timed out ControlMessageSend:i353 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m02:14.001 00:17.668 Event timed out ControlMessageReceive:i354 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 174[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m02:14.758 00:17.769 Event timed out ControlMessageReceive:i355 c c1 -> s 3 [ofp_packet_out: actions=(u'output(65531)',), data={u'class': u'arp'}, in_port=65535][1;m
+[1;36m[1;36mRound 175[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:14.759 00:17.871 Successfully matched event DataplanePermit:i356[1;m
+[1;36m[1;36mRound 176[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:14.760 00:17.871 Successfully matched event DataplanePermit:i357[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:14.762 00:17.872 Successfully matched event DataplanePermit:i358[1;m
+[1;35m[1;41m02:15.314 00:17.873 Event timed out ControlMessageSend:i359 c 1 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m02:15.870 00:17.874 Event timed out ControlMessageSend:i360 c 2 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m02:16.627 00:17.975 Event timed out ControlMessageReceive:i361 c c1 -> s 1 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;36m[1;36mRound 177[1;37m[1;m
+[1;35m[1;41m02:17.183 00:17.976 Event timed out ControlMessageReceive:i362 c c1 -> s 2 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:17.185 00:18.077 Successfully matched event DataplanePermit:i363[1;m
+[1;36m[1;36mRound 178[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:17.186 00:18.078 Successfully matched event DataplanePermit:i364[1;m
+[1;35m[1;41m02:17.739 00:18.079 Event timed out ControlMessageReceive:i365 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m02:18.265 00:18.080 Event timed out ControlMessageSend:i366 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=2][1;m
+[1;35m[1;41m02:18.852 00:18.081 Event timed out ControlMessageSend:i367 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:18.853 00:18.182 Successfully matched event DataplanePermit:i368[1;m
+[1;36m[1;36mRound 179[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 22[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
+
+[1;35m[1;41m02:19.408 00:18.183 Event timed out ControlMessageSend:i369 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;35m[1;41m02:20.119 00:18.284 Event timed out ControlMessageReceive:i370 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;36mRound 180[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:20.119 00:18.284 Successfully matched event CheckInvariants:e371[1;m
+[1;36m[1;44m02:20.120 00:18.284 Successfully matched event TrafficInjection:e372[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:20.124 00:18.386 Successfully matched event DataplanePermit:i373[1;m
+[1;36m[1;36mRound 181[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
+
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m02:20.675 00:18.389 Event timed out ControlMessageSend:i374 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;35m[1;41m02:21.431 00:18.491 Event timed out ControlMessageReceive:i375 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:34,tp_dst:35,in_port:3][1;m
+[1;36m[1;36mRound 182[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:21.433 00:18.593 Successfully matched event DataplanePermit:i376[1;m
+[1;36m[1;36mRound 183[1;37m[1;m
+[1;35m[1;41m02:21.988 00:18.595 Event timed out ControlMessageReceive:i377 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m02:22.544 00:18.595 Event timed out ControlMessageSend:i378 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:00:01', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:22.545 00:18.696 Successfully matched event DataplanePermit:i379[1;m
+[1;36m[1;36mRound 184[1;37m[1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m02:23.656 00:19.200 Event timed out ControlMessageReceive:i380 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 189[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:23.658 00:19.301 Successfully matched event DataplanePermit:i381[1;m
+[1;36m[1;36mRound 190[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 17[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m02:24.213 00:19.302 Event timed out ControlMessageSend:i382 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:24.213 00:19.303 Successfully matched event CheckInvariants:e383[1;m
+[1;36m[1;44m02:24.214 00:19.303 Successfully matched event TrafficInjection:e384[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:24.218 00:19.404 Successfully matched event DataplanePermit:i385[1;m
+[1;36m[1;36mRound 191[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
+
+[1;35m[1;41m02:24.769 00:19.408 Event timed out ControlMessageReceive:i386 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;35m[1;41m02:25.325 00:19.408 Event timed out ControlMessageSend:i387 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m02:26.081 00:19.510 Event timed out ControlMessageReceive:i388 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:36,tp_dst:37,in_port:3][1;m
+[1;36m[1;36mRound 192[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:26.083 00:19.613 Successfully matched event DataplanePermit:i389[1;m
+[1;36m[1;36mRound 193[1;37m[1;m
+[1;35m[1;41m02:26.637 00:19.614 Event timed out ControlMessageSend:i390 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;35m[1;41m02:27.349 00:19.715 Event timed out ControlMessageReceive:i391 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 194[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:27.350 00:19.816 Successfully matched event DataplanePermit:i392[1;m
+[1;36m[1;36mRound 195[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 11[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;35m[1;41m02:27.905 00:19.817 Event timed out ControlMessageSend:i393 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m02:28.662 00:19.918 Event timed out ControlMessageReceive:i394 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;36mRound 196[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
+
+[1;35m[1;41m02:29.574 00:20.321 Event timed out ControlMessageReceive:i395 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 200[1;37m[1;m
+[1;35m[1;41m02:30.130 00:20.322 Event timed out ControlMessageReceive:i396 c c1 -> s 3 [ofp_packet_out: actions=(u'output(65531)',), data={u'class': u'arp'}, in_port=65535][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:30.130 00:20.322 Successfully matched event CheckInvariants:e397[1;m
+[1;36m[1;44m02:30.131 00:20.323 Successfully matched event TrafficInjection:e398[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:30.132 00:20.424 Successfully matched event DataplanePermit:i399[1;m
+[1;36m[1;36mRound 201[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:30.133 00:20.425 Successfully matched event DataplanePermit:i400[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:30.136 00:20.425 Successfully matched event DataplanePermit:i401[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:30.138 00:20.429 Successfully matched event DataplanePermit:i402[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:30.139 00:20.430 Successfully matched event DataplanePermit:i403[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
+
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m02:30.686 00:20.431 Event timed out ControlMessageSend:i404 c 1 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m02:31.242 00:20.432 Event timed out ControlMessageSend:i405 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;35m[1;41m02:31.799 00:20.432 Event timed out ControlMessageSend:i406 c 2 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m02:32.555 00:20.533 Event timed out ControlMessageReceive:i407 c c1 -> s 1 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;36m[1;36mRound 202[1;37m[1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m02:33.070 00:20.534 Event timed out ControlMessageReceive:i408 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:38,tp_dst:39,in_port:3][1;m
+[1;35m[1;41m02:33.668 00:20.536 Event timed out ControlMessageReceive:i409 c c1 -> s 2 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:33.670 00:20.638 Successfully matched event DataplanePermit:i410[1;m
+[1;36m[1;36mRound 203[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:33.671 00:20.639 Successfully matched event DataplanePermit:i411[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:33.673 00:20.640 Successfully matched event DataplanePermit:i412[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
+
+[1;35m[1;41m02:34.224 00:20.642 Event timed out ControlMessageSend:i413 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:00:01', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;35m[1;41m02:34.780 00:20.642 Event timed out ControlMessageSend:i414 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=2][1;m
+[1;35m[1;41m02:35.336 00:20.643 Event timed out ControlMessageSend:i415 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m02:36.092 00:20.844 Event timed out ControlMessageReceive:i416 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 205[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:36.094 00:20.945 Successfully matched event DataplanePermit:i417[1;m
+[1;36m[1;36mRound 206[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 12[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m02:36.648 00:20.946 Event timed out ControlMessageSend:i418 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;35m[1;41m02:37.360 00:21.047 Event timed out ControlMessageReceive:i419 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 207[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:37.663 00:21.350 Successfully matched event CheckInvariants:e420[1;m
+[1;36m[1;36mRound 210[1;37m[1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m02:38.272 00:21.451 Event timed out DataplanePermit:i422[1;m
+[1;36m[1;36mRound 211[1;37m[1;m
+[1;35m[1;41m02:38.874 00:21.455 Event timed out ControlMessageReceive:i423 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;35m[1;41m02:39.430 00:21.456 Event timed out ControlMessageSend:i424 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:39.432 00:21.557 Successfully matched event DataplanePermit:i425[1;m
+[1;36m[1;36mRound 212[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 26[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
+
+[1;35m[1;41m02:39.986 00:21.558 Event timed out ControlMessageReceive:i426 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:40,tp_dst:41,in_port:3][1;m
+[1;35m[1;41m02:40.542 00:21.561 Event timed out ControlMessageSend:i427 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:40.544 00:21.662 Successfully matched event DataplanePermit:i428[1;m
+[1;36m[1;36mRound 213[1;37m[1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m02:41.098 00:21.663 Event timed out ControlMessageReceive:i429 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;35m[1;41m02:41.654 00:21.664 Event timed out ControlMessageSend:i430 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;35m[1;41m02:42.567 00:21.966 Event timed out ControlMessageReceive:i431 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 216[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:42.568 00:22.067 Successfully matched event DataplanePermit:i432[1;m
+[1;36m[1;36mRound 217[1;37m[1;m
+[1;36m[1;44m02:42.871 00:22.369 Successfully matched event TrafficInjection:e434[1;m
+[1;36m[1;36mRound 220[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:42.879 00:22.465 Successfully matched event DataplanePermit:i435[1;m
+[1;36m[1;36mRound 221[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
+
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m02:43.474 00:22.469 Event timed out ControlMessageReceive:i436 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m02:44.034 00:22.470 Event timed out ControlMessageSend:i437 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:44.036 00:22.571 Successfully matched event DataplanePermit:i438[1;m
+[1;36m[1;36mRound 222[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 19[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m02:44.591 00:22.573 Event timed out ControlMessageReceive:i439 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:42,tp_dst:43,in_port:3][1;m
+[1;35m[1;41m02:45.147 00:22.575 Event timed out ControlMessageSend:i440 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:45.148 00:22.676 Successfully matched event DataplanePermit:i441[1;m
+[1;36m[1;36mRound 223[1;37m[1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m02:45.702 00:22.677 Event timed out ControlMessageReceive:i442 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;35m[1;41m02:46.259 00:22.678 Event timed out ControlMessageSend:i443 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;35m[1;41m02:47.016 00:22.779 Event timed out ControlMessageReceive:i444 c c1 -> s 3 [ofp_packet_out: actions=(u'output(65531)',), data={u'class': u'arp'}, in_port=65535][1;m
+[1;36m[1;36mRound 224[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:47.017 00:22.880 Successfully matched event DataplanePermit:i445[1;m
+[1;36m[1;36mRound 225[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:47.018 00:22.881 Successfully matched event DataplanePermit:i446[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:47.019 00:22.882 Successfully matched event DataplanePermit:i447[1;m
+[1;35m[1;41m02:47.572 00:22.883 Event timed out ControlMessageSend:i448 c 1 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m02:48.076 00:22.884 Event timed out ControlMessageSend:i449 c 2 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m02:48.684 00:22.985 Event timed out ControlMessageReceive:i450 c c1 -> s 1 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;36m[1;36mRound 226[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m02:49.241 00:22.985 Event timed out ControlMessageReceive:i451 c c1 -> s 2 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:49.243 00:23.086 Successfully matched event DataplanePermit:i452[1;m
+[1;36m[1;36mRound 227[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:49.244 00:23.088 Successfully matched event DataplanePermit:i453[1;m
+[1;35m[1;41m02:49.797 00:23.089 Event timed out ControlMessageReceive:i454 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m02:50.353 00:23.090 Event timed out ControlMessageSend:i455 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=2][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m02:50.909 00:23.090 Event timed out ControlMessageSend:i456 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:50.910 00:23.191 Successfully matched event DataplanePermit:i457[1;m
+[1;36m[1;36mRound 228[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 29[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
+
+[1;35m[1;41m02:51.465 00:23.192 Event timed out ControlMessageSend:i458 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;35m[1;41m02:52.222 00:23.293 Event timed out ControlMessageReceive:i459 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;36mRound 229[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:52.323 00:23.394 Successfully matched event CheckInvariants:e460[1;m
+[1;36m[1;36mRound 230[1;37m[1;m
+[1;36m[1;44m02:52.324 00:23.395 Successfully matched event TrafficInjection:e461[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:52.328 00:23.496 Successfully matched event DataplanePermit:i462[1;m
+[1;36m[1;36mRound 231[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
+
+[1;35m[1;41m02:52.933 00:23.500 Event timed out ControlMessageSend:i463 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;35m[1;41m02:53.690 00:23.601 Event timed out ControlMessageReceive:i464 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:44,tp_dst:45,in_port:3][1;m
+[1;36m[1;36mRound 232[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;35m[1;41m02:54.246 00:23.604 Event timed out ControlMessageReceive:i465 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:54.248 00:23.705 Successfully matched event DataplanePermit:i466[1;m
+[1;36m[1;36mRound 233[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:54.249 00:23.707 Successfully matched event DataplanePermit:i467[1;m
+[1;35m[1;41m02:54.802 00:23.707 Event timed out ControlMessageSend:i468 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:00:01', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m02:55.914 00:24.210 Event timed out ControlMessageReceive:i469 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 238[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:55.916 00:24.312 Successfully matched event DataplanePermit:i470[1;m
+[1;36m[1;36mRound 239[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 21[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
+
+[1;35m[1;41m02:56.470 00:24.313 Event timed out ControlMessageSend:i471 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;35m[1;41m02:57.227 00:24.414 Event timed out ControlMessageReceive:i472 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;36mRound 240[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:57.228 00:24.414 Successfully matched event CheckInvariants:e473[1;m
+[1;36m[1;44m02:57.228 00:24.415 Successfully matched event TrafficInjection:e474[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:57.233 00:24.516 Successfully matched event DataplanePermit:i475[1;m
+[1;36m[1;36mRound 241[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
+
+[1;35m[1;41m02:57.783 00:24.520 Event timed out ControlMessageSend:i476 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m02:58.480 00:24.622 Event timed out ControlMessageReceive:i477 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:46,tp_dst:47,in_port:3][1;m
+[1;36m[1;36mRound 242[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:58.482 00:24.725 Successfully matched event DataplanePermit:i478[1;m
+[1;36m[1;36mRound 243[1;37m[1;m
+[1;35m[1;41m02:59.051 00:24.726 Event timed out ControlMessageReceive:i479 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m02:59.607 00:24.727 Event timed out ControlMessageSend:i480 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:02:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m02:59.609 00:24.828 Successfully matched event DataplanePermit:i481[1;m
+[1;36m[1;36mRound 244[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 13[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;35m[1;41m03:00.163 00:24.829 Event timed out ControlMessageSend:i482 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m03:00.919 00:24.930 Event timed out ControlMessageReceive:i483 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;36mRound 245[1;37m[1;m
+[1;35m[1;41m03:01.832 00:25.226 Event timed out ControlMessageReceive:i484 c c1 -> s 3 [ofp_packet_out: actions=(u'output(65531)',), data={u'class': u'arp'}, in_port=65535][1;m
+[1;36m[1;36mRound 248[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:01.833 00:25.328 Successfully matched event DataplanePermit:i485[1;m
+[1;36m[1;36mRound 249[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:01.834 00:25.329 Successfully matched event DataplanePermit:i486[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:01.835 00:25.330 Successfully matched event DataplanePermit:i487[1;m
+[1;35m[1;41m03:02.388 00:25.331 Event timed out ControlMessageReceive:i488 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;35m[1;41m03:02.944 00:25.332 Event timed out ControlMessageSend:i489 c 1 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m03:03.482 00:25.332 Event timed out ControlMessageSend:i490 c 2 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:03.483 00:25.433 Successfully matched event DataplanePermit:i491[1;m
+[1;36m[1;36mRound 250[1;37m[1;m
+[1;35m[1;41m03:04.057 00:25.434 Event timed out ControlMessageReceive:i492 c c1 -> s 1 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
+
+[1;35m[1;41m03:04.613 00:25.434 Event timed out ControlMessageReceive:i493 c c1 -> s 2 [ofp_packet_out: actions=(u'output(65528)',), data={u'class': u'arp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:04.615 00:25.435 Successfully matched event CheckInvariants:e494[1;m
+[1;36m[1;44m03:04.616 00:25.435 Successfully matched event TrafficInjection:e495[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:04.619 00:25.537 Successfully matched event DataplanePermit:i496[1;m
+[1;36m[1;36mRound 251[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:04.624 00:25.538 Successfully matched event DataplanePermit:i497[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:04.625 00:25.542 Successfully matched event DataplanePermit:i498[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.2.3[1;m
+
+[1;35m[1;41m03:05.169 00:25.544 Event timed out ControlMessageSend:i499 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=2][1;m
+[1;35m[1;41m03:05.725 00:25.544 Event timed out ControlMessageSend:i500 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;35m[1;41m03:06.281 00:25.545 Event timed out ControlMessageSend:i501 c 3 -> s c1 [ofp_packet_in: data={u'class': u'arp'}, in_port=1][1;m
+[1;35m[1;41m03:07.038 00:25.646 Event timed out ControlMessageReceive:i502 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:48,tp_dst:49,in_port:3][1;m
+[1;36m[1;36mRound 252[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:07.040 00:25.749 Successfully matched event DataplanePermit:i503[1;m
+[1;36m[1;36mRound 253[1;37m[1;m
+[1;35m[1;41m03:07.594 00:25.750 Event timed out ControlMessageSend:i504 c 1 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:00:01', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=1][1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m03:08.284 00:25.852 Event timed out ControlMessageReceive:i505 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 254[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:08.285 00:25.953 Successfully matched event DataplanePermit:i506[1;m
+[1;36m[1;36mRound 255[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 14[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
+
+[1;35m[1;41m03:08.907 00:25.954 Event timed out ControlMessageSend:i507 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
+
+[1;35m[1;41m03:09.619 00:26.055 Event timed out ControlMessageReceive:i508 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;36mRound 256[1;37m[1;m
+[1;35m[1;41m03:10.576 00:26.357 Event timed out ControlMessageReceive:i509 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 259[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:10.577 00:26.458 Successfully matched event DataplanePermit:i510[1;m
+[1;36m[1;36mRound 260[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Dropping LLDP packet 33[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
+
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;35m[1;41m03:11.132 00:26.460 Event timed out ControlMessageSend:i511 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:11.132 00:26.460 Successfully matched event CheckInvariants:e512[1;m
+[1;36m[1;44m03:11.133 00:26.460 Successfully matched event TrafficInjection:e513[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:11.138 00:26.562 Successfully matched event DataplanePermit:i514[1;m
+[1;36m[1;36mRound 261[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:iplb.00-00-00-00-00-03:Directing traffic to 123.123.1.3[1;m
+
+[1;35m[1;41m03:11.688 00:26.566 Event timed out ControlMessageReceive:i515 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;35m[1;41m03:12.244 00:26.567 Event timed out ControlMessageSend:i516 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'00:00:00:00:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.1.3'}, in_port=3][1;m
+[1;35m[1;41m03:12.956 00:26.668 Event timed out ControlMessageReceive:i517 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=300, command=add, actions=(u"<class 'pox.openflow.libopenflow_01.ofp_action_dl_addr'>", u"<class 'pox.openflow.libopenflow_01.ofp_action_nw_addr'>", u'output(2)'), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:00:00:00:00:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:6,nw_src:123.123.3.3/32,nw_dst:123.123.1.3/32,tp_src:50,tp_dst:51,in_port:3][1;m
+[1;36m[1;36mRound 262[1;37m[1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.1.3 down[1;m
+
+[1;35m[1;41m03:13.486 00:26.669 Event timed out ControlMessageSend:i518 c 3 -> s c1 [ofp_error: code=0, type=3][1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;35m[1;41m03:14.470 00:26.971 Event timed out ControlMessageReceive:i519 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 265[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m03:14.470 00:27.072 Successfully matched event DataplanePermit:i520[1;m
+[1;36m[1;36mRound 266[1;37m[1;m
+[1;35m[1;41m03:15.381 00:27.470 Event timed out ControlMessageReceive:i521 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 270[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m03:15.382 00:27.470 Successfully matched event CheckInvariants:e522[1;m
+[1;41m[1;33m[c1] WARNING:iplb.00-00-00-00-00-03:Server 123.123.2.3 down[1;m
+
+[1;36m[1;44m03:16.383 00:27.471 Successfully matched event WaitTime:e524[1;m
+[1;36m[1;36mRound -1[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44mEvent Stats: Events matched: 212, timed out: 309
+Matches per event type:
+  ConnectToControllers 1
+  WaitTime 1
+  TrafficInjection 25
+  CheckInvariants 26
+  DataplanePermit 159
+Timeouts per event type:
+  DataplanePermit 3
+  ControlMessageSend 141
+  ControlMessageReceive 165
+[1;m
+[1;36mKilling controller c1 (pid 5065)[1;m
+Terminating child controllers... OK
