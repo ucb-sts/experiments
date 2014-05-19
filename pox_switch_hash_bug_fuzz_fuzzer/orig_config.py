@@ -4,6 +4,12 @@ from sts.control_flow import Interactive, Fuzzer
 from sts.input_traces.input_logger import InputLogger
 from sts.simulation_state import SimulationConfig
 
+def get_additional_metadata():
+  return {
+    'commit' : backtick("git rev-parse HEAD", cwd="pox_carp"),
+    'branch' : backtick("git rev-parse --abbrev-ref HEAD", cwd="pox_carp")
+  }
+
 # Use POX as our controller
 start_cmd = "./pox.py --verbose openflow.of_01 --address=__address__ --port=__port__ openflow.discovery forwarding.l2_multi"
 controllers = [ControllerConfig(start_cmd, cwd="pox_carp", address="127.0.0.1", port=8888)]
