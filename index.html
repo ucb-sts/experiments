@@ -40,7 +40,7 @@
 <p>The original software versions are stored in each experiment's <code>metadata</code> file. We provide two scripts in STS to automatically read the information stored there, rollback the software, and rerun experiments:</p>
 
 <ul>
-<li><p><a href="https://github.com/ucb-sts/sts/blob/master/tools/run_old_experiment.rb">tools/run_old_experiment.rb</a>: reruns a single experiment. Takes the path to the experiment directory as a first argument.</p></li>
+<li><p><a href="https://github.com/ucb-sts/sts/blob/master/tools/run_old_experiment.rb">tools/run_old_experiment.rb</a>: reruns a single experiment. See <code>-h</code> for usage.</p></li>
 <li><p><a href="https://github.com/ucb-sts/sts/blob/master/tools/run_cmd_per_experiment.rb">tools/run_cmd_per_experiment.rb</a>: runs a shell command within each experiment directory from the SIGCOMM'14 paper. Usage:</p></li>
 </ul><pre><code>Usage: run_cmd_per_experiment [options]
     -c, --command-path PATH          Absolute path to a command to run within each directory
