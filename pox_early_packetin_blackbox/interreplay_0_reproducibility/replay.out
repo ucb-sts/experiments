@@ -1,0 +1,106 @@
+No DataplaneDrops to replay. We suggest you set Replayer's default_dp_permit=True 
+[1;36mStarting POX controller c1[1;m
+[1;33m[c1] POX 0.2.0 (carp) / Copyright 2011-2013 James McCauley, et al.[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:POX 0.2.0 (carp) going up...[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Running on CPython (2.7.5/Sep 12 2013 21:33:34)[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Platform is Darwin-13.1.0-x86_64-i386-64bit[1;m
+
+[1;41m[1;33m[c1] INFO:core:POX 0.2.0 (carp) is up.[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening on 127.0.0.1:6633[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;36m[1;44m00:00.503 00:00.000 Successfully matched event ConnectToControllers:e1[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:01.533 00:01.029 Successfully matched event CheckInvariants:e4[1;m
+[1;36m[1;36mRound 1[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:01.642 00:01.135 Successfully matched event CheckInvariants:e13[1;m
+[1;36m[1;36mRound 2[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:01.752 00:01.244 Successfully matched event CheckInvariants:e23[1;m
+[1;36m[1;36mRound 3[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:01.863 00:01.354 Successfully matched event CheckInvariants:e35[1;m
+[1;36m[1;36mRound 4[1;37m[1;m
+[1;36mCutting link (4:3) -> (1:1)[1;m
+[1;36m[1;44m00:01.970 00:01.458 Successfully matched event LinkFailure:e38[1;m
+[1;36m[1;36mRound 5[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:01.971 00:01.459 Successfully matched event CheckInvariants:e39[1;m
+[1;36mRestoring link (4:3) -> (1:1)[1;m
+[1;36m[1;44m00:02.074 00:01.561 Successfully matched event LinkRecovery:e41[1;m
+[1;36m[1;36mRound 6[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:02.075 00:01.562 Successfully matched event CheckInvariants:e42[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:02.178 00:01.663 Successfully matched event CheckInvariants:e44[1;m
+[1;36m[1;36mRound 7[1;37m[1;m
+[1;36mCutting link (3:2) -> (2:2)[1;m
+[1;36m[1;44m00:02.280 00:01.764 Successfully matched event LinkFailure:e45[1;m
+[1;36m[1;36mRound 8[1;37m[1;m
+[1;36mCutting link (4:3) -> (1:1)[1;m
+[1;36m[1;44m00:02.280 00:01.765 Successfully matched event LinkFailure:e46[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:02.281 00:01.766 Successfully matched event CheckInvariants:e47[1;m
+[1;36mCutting link (1:3) -> (2:3)[1;m
+[1;36m[1;44m00:02.385 00:01.868 Successfully matched event LinkFailure:e50[1;m
+[1;36m[1;36mRound 9[1;37m[1;m
+[1;36mRestoring link (3:2) -> (2:2)[1;m
+[1;36m[1;44m00:02.386 00:01.869 Successfully matched event LinkRecovery:e51[1;m
+[1;36mRestoring link (4:3) -> (1:1)[1;m
+[1;36m[1;44m00:02.386 00:01.870 Successfully matched event LinkRecovery:e52[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:02.387 00:01.870 Successfully matched event CheckInvariants:e53[1;m
+[1;36mRestoring link (1:3) -> (2:3)[1;m
+[1;36m[1;44m00:02.492 00:01.973 Successfully matched event LinkRecovery:e57[1;m
+[1;36m[1;36mRound 10[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:02.492 00:01.974 Successfully matched event CheckInvariants:e58[1;m
+[1;36mCutting link (3:3) -> (1:2)[1;m
+[1;36m[1;44m00:02.597 00:02.077 Successfully matched event LinkFailure:e61[1;m
+[1;36m[1;36mRound 11[1;37m[1;m
+[1;36mCutting link (4:3) -> (1:1)[1;m
+[1;36m[1;44m00:02.597 00:02.078 Successfully matched event LinkFailure:e62[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:02.598 00:02.078 Successfully matched event CheckInvariants:e63[1;m
+[1;36mCutting link (1:2) -> (3:3)[1;m
+[1;36m[1;44m00:02.703 00:02.183 Successfully matched event LinkFailure:e68[1;m
+[1;36m[1;36mRound 12[1;37m[1;m
+[1;36mCutting link (4:1) -> (3:1)[1;m
+[1;36m[1;44m00:02.704 00:02.183 Successfully matched event LinkFailure:e69[1;m
+[1;36mRestoring link (3:3) -> (1:2)[1;m
+[1;36m[1;44m00:02.705 00:02.184 Successfully matched event LinkRecovery:e70[1;m
+[1;36mRestoring link (4:3) -> (1:1)[1;m
+[1;36m[1;44m00:02.705 00:02.185 Successfully matched event LinkRecovery:e71[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:02.706 00:02.185 Successfully matched event CheckInvariants:e72[1;m
+[1;36mRestoring link (1:2) -> (3:3)[1;m
+[1;36m[1;44m00:02.812 00:02.290 Successfully matched event LinkRecovery:e78[1;m
+[1;36m[1;36mRound 13[1;37m[1;m
+[1;36mRestoring link (4:1) -> (3:1)[1;m
+[1;36m[1;44m00:02.813 00:02.290 Successfully matched event LinkRecovery:e79[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:02.813 00:02.291 Successfully matched event CheckInvariants:e80[1;m
+[1;36m[1;44m00:03.815 00:02.292 Successfully matched event WaitTime:e84[1;m
+[1;36m[1;36mRound -1[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44mEvent Stats: Events matched: 31, timed out: 0
+Matches per event type:
+  ConnectToControllers 1
+  WaitTime 1
+  LinkRecovery 8
+  LinkFailure 8
+  CheckInvariants 13
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+[1;36mKilling controller c1 (pid 1299)[1;m
+Terminating child controllers... OK
