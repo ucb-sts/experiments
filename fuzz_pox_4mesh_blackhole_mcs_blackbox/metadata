@@ -1,0 +1,33 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-n",
+    "fuzz_pox_4mesh_blackhole_mcs_blackbox",
+    "-c",
+    "experiments/fuzz_pox_4mesh_blackhole_mcs/orig_config.py"
+  ],
+  "cwd": "/Users/cs/Research/UCB/code/sts",
+  "host": {
+    "cpu_info": "",
+    "free": "",
+    "name": "yossarian",
+    "num_cores": "0",
+    "uptime": "22:46  up 3 days,  9:31, 4 users, load averages: 1.04 1.03 1.05"
+  },
+  "modules": {
+    "pox": {
+      "branch": "HEAD",
+      "commit": "6a6a98d9211a273f98f793af15739d8190dd322a"
+    },
+    "sts": {
+      "branch": "blackbox_pox_blackhole_repro",
+      "commit": "115e54d1df3a42a532e55c2794d7bd15e2f0243e"
+    }
+  },
+  "sys": {
+    "lsb_release": "",
+    "uname": "Darwin yossarian 13.1.0 Darwin Kernel Version 13.1.0: Wed Apr  2 23:52:02 PDT 2014; root:xnu-2422.92.1~2/RELEASE_X86_64 x86_64"
+  },
+  "timestamp": "2014_05_21_22_46_30",
+  "user": "cs"
+}
