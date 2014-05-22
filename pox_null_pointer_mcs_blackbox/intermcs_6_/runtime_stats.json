@@ -1,0 +1,108 @@
+{
+  "_iteration": 6,
+  "_runtime_stats_path": "experiments/pox_null_pointer_mcs_blackbox/intermcs_6_/runtime_stats.json",
+  "ambiguous_counts": {},
+  "ambiguous_events": {},
+  "buffered_message_receipts": {
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": []
+  },
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./pox.py --verbose openflow.discovery forwarding.l2_multi_null_pointer sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=../sts_socket_pipe', label='c1', address='sts_socket_pipe', cwd='pox')],\n                 topology_class=FatTree,\n                 topology_params=\"\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=True,\n                 ignore_interposition=True,\n                 kill_controllers_on_exit=True)",
+  "early_internal_events": {
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": []
+  },
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 62,
+    "1": 38,
+    "2": 21,
+    "3": 12,
+    "4": 6,
+    "5": 4
+  },
+  "matched_events": {
+    "2": {
+      "CheckInvariants": 1,
+      "ConnectToControllers": 1,
+      "ControlChannelBlock": 2,
+      "ControlChannelUnblock": 2,
+      "HostMigration": 4,
+      "LinkFailure": 13,
+      "LinkRecovery": 13,
+      "TrafficInjection": 3
+    },
+    "3": {
+      "ConnectToControllers": 1,
+      "ControlChannelBlock": 2,
+      "ControlChannelUnblock": 2,
+      "HostMigration": 2,
+      "LinkFailure": 7,
+      "LinkRecovery": 7,
+      "TrafficInjection": 1
+    },
+    "4": {
+      "ConnectToControllers": 1,
+      "ControlChannelBlock": 2,
+      "ControlChannelUnblock": 2,
+      "LinkFailure": 4,
+      "LinkRecovery": 4
+    },
+    "5": {
+      "ConnectToControllers": 1,
+      "ControlChannelBlock": 2,
+      "ControlChannelUnblock": 2,
+      "LinkFailure": 1,
+      "LinkRecovery": 1
+    },
+    "6": {
+      "ConnectToControllers": 1,
+      "ControlChannelBlock": 2,
+      "ControlChannelUnblock": 2
+    },
+    "7": {
+      "ConnectToControllers": 1,
+      "ControlChannelBlock": 1,
+      "ControlChannelUnblock": 1
+    }
+  },
+  "new_internal_events": {
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": []
+  },
+  "original_duration_seconds": 0.40200185775756836,
+  "peeker": false,
+  "prune_duration_seconds": 0,
+  "prune_start_epoch": 1400738343.732949,
+  "replay_duration_seconds": 3.4631729125976562,
+  "replay_end_epoch": 1400738343.732745,
+  "replay_start_epoch": 1400738340.269572,
+  "subsequence_id": 0,
+  "timed_out_events": {
+    "2": {},
+    "3": {},
+    "4": {},
+    "5": {},
+    "6": {},
+    "7": {}
+  },
+  "total_events": 64,
+  "total_inputs": 62,
+  "total_inputs_replayed": 145,
+  "total_replays": 7,
+  "violation_found_in_run": {
+    "0": 6
+  }
+}

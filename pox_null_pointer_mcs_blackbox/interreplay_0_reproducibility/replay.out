@@ -1,0 +1,256 @@
+No DataplaneDrops to replay. We suggest you set Replayer's default_dp_permit=True 
+[1;36mStarting POX controller c1[1;m
+connect_socket_with_backoff sts_socket_pipe
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+[1;33m[c1] POX 0.0.0 / Copyright 2011 James McCauley[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:POX 0.0.0 going up...[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Running on CPython (2.7.5/Sep 12 2013 21:33:34)[1;m
+
+[1;41m[1;33m[c1] INFO:core:POX 0.0.0 is up.[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening for connections on ../sts_socket_pipe[1;m
+
+[1;33m[c1] Incoming true socket connected[1;m
+
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] Incoming MockSocket connection[1;m
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] MAX_CONNS -2[1;m
+
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+connect_socket_with_backoff sts_socket_pipe
+
+[1;33m[c1] MAX_CONNS -3[1;m
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] Incoming MockSocket connection[1;m
+
+
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] MAX_CONNS -4[1;m
+
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] Incoming MockSocket connection[1;m
+connect_socket_with_backoff sts_socket_pipe
+
+[1;33m[c1] MAX_CONNS -5[1;m
+connect_socket_with_backoff sts_socket_pipe
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+[1;33m[c1] MAX_CONNS -6[1;m
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] Incoming MockSocket connection[1;m
+
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] MAX_CONNS -7[1;m
+
+
+connect_socket_with_backoff sts_socket_pipe
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] Incoming MockSocket connection[1;m
+
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] MAX_CONNS -8[1;m
+
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] Incoming MockSocket connection[1;m
+
+
+[1;33m[c1] MAX_CONNS -9[1;m
+connect_socket_with_backoff sts_socket_pipe
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] MAX_CONNS -10[1;m
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] Incoming MockSocket connection[1;m
+
+
+[1;33m[c1] MAX_CONNS -11[1;m
+connect_socket_with_backoff sts_socket_pipe
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] MAX_CONNS -12[1;m
+
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] Incoming MockSocket connection[1;m
+[1;36m[1;44m00:00.510 00:00.000 Successfully matched event ConnectToControllers:e1[1;m
+
+[1;33m[c1] MAX_CONNS -13[1;m
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+[1;36m[1;44m00:00.516 00:00.013 Successfully matched event ControlChannelBlock:e2[1;m
+
+[1;36m[1;36mRound 1[1;37m[1;m
+[1;36m[1;44m00:00.516 00:00.013 Successfully matched event ControlChannelBlock:e3[1;m[1;33m[c1] MAX_CONNS -14[1;m
+
+
+[1;36mCutting link (20:4) -> (16:4)[1;m
+ [1;36m[1;44m00:00.517 00:00.022 Successfully matched event LinkFailure:e44[1;m[1;33m[c1] Incoming MockSocket connection[1;m
+
+
+[1;33m[c1] MAX_CONNS -15[1;m
+[1;36mCutting link (5:4) -> (14:1)[1;m
+
+[1;36m[1;44m00:00.518 00:00.023 Successfully matched event LinkFailure:e45[1;m
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+[1;36mCutting link (6:3) -> (13:2)[1;m
+[1;36m[1;44m00:00.518 00:00.023 Successfully matched event LinkFailure:e46[1;m[1;33m[c1] MAX_CONNS -16[1;m
+
+
+[1;36mCutting link (9:3) -> (17:1)[1;m[1;33m[c1] Incoming MockSocket connection[1;m
+
+
+[1;36m[1;44m00:00.519 00:00.023 Successfully matched event LinkFailure:e47[1;m
+[1;33m[c1] MAX_CONNS -17[1;m
+[1;36mCutting link (17:3) -> (13:3)[1;m
+
+[1;36m[1;44m00:00.519 00:00.024 Successfully matched event LinkFailure:e48[1;m[1;33m[c1] Incoming MockSocket connection[1;m
+
+[1;36mCutting link (14:3) -> (19:3)[1;m
+
+[1;33m[c1] MAX_CONNS -18[1;m
+[1;36m[1;44m00:00.520 00:00.024 Successfully matched event LinkFailure:e49[1;m
+
+[1;36mCutting link (18:4) -> (15:4)[1;m
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+[1;36m[1;44m00:00.520 00:00.024 Successfully matched event LinkFailure:e50[1;m[1;33m[c1] MAX_CONNS -19[1;m
+
+
+[1;36m[1;44m00:00.521 00:00.025 Successfully matched event HostMigration:e51[1;m[1;33m[c1] Incoming MockSocket connection[1;m
+
+
+[1;33m[c1] MAX_CONNS -20[1;m
+
+[1;36m[1;44m00:00.522 00:00.026 Successfully matched event TrafficInjection:e52[1;m
+[1;36mForwarding dataplane event[1;m
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+[1;33m[c1] MAX_CONNS -21[1;m
+[1;36m[1;44m00:00.523 00:00.026 Successfully matched event HostMigration:e53[1;m
+
+[1;36m[1;44m00:00.524 00:00.027 Successfully matched event TrafficInjection:e54[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:00.525 00:00.027 Successfully matched event HostMigration:e55[1;m
+[1;36m[1;44m00:00.525 00:00.028 Successfully matched event TrafficInjection:e56[1;m
+[1;36mForwarding dataplane event[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:00.526 00:00.028 Successfully matched event CheckInvariants:e57[1;m
+[1;33m[c1] YOU FOUND THE NULL POINTER. 10 POINTS TO HUFFLEPUFF[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 20/20] Connected to 00-00-00-00-00-14[1;m
+
+Socket error: Broken pipe
+[1;36m[1;44m00:00.632 00:00.132 Successfully matched event ControlChannelUnblock:e61[1;m
+[1;36m[1;36mRound 2[1;37m[1;m
+[1;36mCutting link (10:2) -> (2:4)[1;m
+[1;36m[1;44m00:00.652 00:00.150 Successfully matched event LinkFailure:e114[1;m
+[1;36mCutting link (13:1) -> (5:3)[1;m
+[1;36m[1;44m00:00.653 00:00.150 Successfully matched event LinkFailure:e115[1;m
+[1;36mCutting link (15:2) -> (8:3)[1;m
+[1;36m[1;44m00:00.653 00:00.151 Successfully matched event LinkFailure:e116[1;m
+[1;36mCutting link (16:1) -> (7:4)[1;m
+[1;36m[1;44m00:00.654 00:00.151 Successfully matched event LinkFailure:e117[1;m
+[1;36mCutting link (15:1) -> (7:3)[1;m
+[1;36m[1;44m00:00.655 00:00.151 Successfully matched event LinkFailure:e118[1;m
+[1;36mCutting link (18:3) -> (13:4)[1;m
+[1;36m[1;44m00:00.655 00:00.151 Successfully matched event LinkFailure:e119[1;m
+[1;36mRestoring link (17:3) -> (13:3)[1;m
+[1;36m[1;44m00:00.656 00:00.152 Successfully matched event LinkRecovery:e120[1;m
+[1;36mRestoring link (18:4) -> (15:4)[1;m
+[1;36m[1;44m00:00.656 00:00.152 Successfully matched event LinkRecovery:e121[1;m
+[1;36mRestoring link (20:4) -> (16:4)[1;m
+[1;36m[1;44m00:00.657 00:00.152 Successfully matched event LinkRecovery:e122[1;m
+[1;36mRestoring link (6:3) -> (13:2)[1;m
+[1;36m[1;44m00:00.657 00:00.152 Successfully matched event LinkRecovery:e123[1;m
+[1;36mRestoring link (5:4) -> (14:1)[1;m
+[1;36m[1;44m00:00.657 00:00.153 Successfully matched event LinkRecovery:e124[1;m
+[1;36m[1;44m00:00.658 00:00.153 Successfully matched event HostMigration:e125[1;m
+[1;36m[1;44m00:00.658 00:00.153 Successfully matched event TrafficInjection:e126[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:00.660 00:00.154 Successfully matched event HostMigration:e127[1;m
+[1;36m[1;44m00:00.660 00:00.154 Successfully matched event TrafficInjection:e128[1;m
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['c1'][1;m
+[1;41m[1;37mPersistent violations detected!: ['c1'][1;m
+[1;36m[1;44m00:00.661 00:00.155 Successfully matched event CheckInvariants:e129[1;m
+[1;36m[1;44m00:00.765 00:00.257 Successfully matched event ControlChannelBlock:e132[1;m
+[1;36m[1;36mRound 3[1;37m[1;m
+[1;36m[1;44m00:00.765 00:00.257 Successfully matched event ControlChannelBlock:e133[1;m
+[1;36m[1;44m00:00.766 00:00.258 Successfully matched event ControlChannelBlock:e134[1;m
+[1;36m[1;44m00:00.766 00:00.258 Successfully matched event ControlChannelBlock:e135[1;m
+[1;36m[1;44m00:00.767 00:00.258 Successfully matched event ControlChannelUnblock:e136[1;m
+[1;36mCutting link (5:3) -> (13:1)[1;m
+[1;36m[1;44m00:00.796 00:00.286 Successfully matched event LinkFailure:e228[1;m
+[1;36mCutting link (6:3) -> (13:2)[1;m
+[1;36m[1;44m00:00.797 00:00.286 Successfully matched event LinkFailure:e229[1;m
+[1;36mRestoring link (14:3) -> (19:3)[1;m
+[1;36m[1;44m00:00.798 00:00.286 Successfully matched event LinkRecovery:e230[1;m
+[1;36mRestoring link (16:1) -> (7:4)[1;m
+[1;36m[1;44m00:00.798 00:00.286 Successfully matched event LinkRecovery:e231[1;m
+[1;36mRestoring link (10:2) -> (2:4)[1;m
+[1;36m[1;44m00:00.799 00:00.287 Successfully matched event LinkRecovery:e232[1;m
+[1;36mRestoring link (15:1) -> (7:3)[1;m
+[1;36m[1;44m00:00.800 00:00.287 Successfully matched event LinkRecovery:e233[1;m
+[1;36mRestoring link (15:2) -> (8:3)[1;m
+[1;36m[1;44m00:00.800 00:00.287 Successfully matched event LinkRecovery:e234[1;m
+[1;36m[1;44m00:00.801 00:00.288 Successfully matched event HostMigration:e235[1;m
+[1;36m[1;44m00:00.801 00:00.288 Successfully matched event TrafficInjection:e236[1;m
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;37mViolation encountered again after 1 steps: c1[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['c1'][1;m
+[1;41m[1;37mPersistent violations detected!: ['c1'][1;m
+[1;36m[1;44m00:00.802 00:00.289 Successfully matched event CheckInvariants:e237[1;m
+[1;36m[1;44m00:00.905 00:00.390 Successfully matched event ControlChannelBlock:e239[1;m
+[1;36m[1;36mRound 4[1;37m[1;m
+[1;36m[1;44m00:00.906 00:00.390 Successfully matched event ControlChannelUnblock:e240[1;m
+[1;36mCutting link (10:3) -> (19:1)[1;m
+[1;36m[1;44m00:00.907 00:00.395 Successfully matched event LinkFailure:e251[1;m
+[1;36mCutting link (17:1) -> (9:3)[1;m
+[1;36m[1;44m00:00.909 00:00.395 Successfully matched event LinkFailure:e252[1;m
+[1;36mCutting link (9:4) -> (18:1)[1;m
+[1;36m[1;44m00:00.909 00:00.396 Successfully matched event LinkFailure:e253[1;m
+[1;36mCutting link (15:4) -> (18:4)[1;m
+[1;36m[1;44m00:00.910 00:00.396 Successfully matched event LinkFailure:e254[1;m
+[1;36mCutting link (12:1) -> (3:4)[1;m
+[1;36m[1;44m00:00.910 00:00.397 Successfully matched event LinkFailure:e255[1;m
+[1;36mCutting link (11:1) -> (3:3)[1;m
+[1;36m[1;44m00:00.911 00:00.397 Successfully matched event LinkFailure:e256[1;m
+[1;36mRestoring link (5:3) -> (13:1)[1;m
+[1;36m[1;44m00:00.911 00:00.398 Successfully matched event LinkRecovery:e257[1;m
+[1;36mRestoring link (18:3) -> (13:4)[1;m
+[1;36m[1;44m00:00.912 00:00.398 Successfully matched event LinkRecovery:e258[1;m
+[1;36mRestoring link (13:1) -> (5:3)[1;m
+[1;36m[1;44m00:00.912 00:00.399 Successfully matched event LinkRecovery:e259[1;m
+[1;36mRestoring link (9:3) -> (17:1)[1;m
+[1;36m[1;44m00:00.913 00:00.399 Successfully matched event LinkRecovery:e260[1;m
+[1;41m[1;37mViolation encountered again after 2 steps: c1[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['c1'][1;m
+[1;41m[1;37mPersistent violations detected!: ['c1'][1;m
+[1;36m[1;44m00:00.913 00:00.399 Successfully matched event CheckInvariants:e261[1;m
+[1;36m[1;44m00:01.914 00:00.402 Successfully matched event WaitTime:e273[1;m
+[1;36m[1;36mRound -1[1;37m[1;m
+[1;41m[1;37mViolations at end of trace: ['c1'][1;m
+[1;42m[1;37mViolation found c1[1;m
+[1;36m[1;44mEvent Stats: Events matched: 63, timed out: 0
+Matches per event type:
+  WaitTime 1
+  ConnectToControllers 1
+  ControlChannelUnblock 3
+  CheckInvariants 4
+  TrafficInjection 6
+  HostMigration 6
+  ControlChannelBlock 7
+  LinkRecovery 14
+  LinkFailure 21
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
