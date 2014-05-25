@@ -1,0 +1,276 @@
+INFO:Controller: =====> Starting POX Controller <===== 
+[1;36mStarting POX controller c1[1;m
+INFO:Controller:Launching controller c1: ./pox.py --verbose sts.syncproto.pox_syncer --blocking=False openflow.discovery forwarding.l2_multi sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=127.0.0.1 --port=6633
+connect_socket_with_backoff ('localhost', 18899)
+Error connecting.  -- [Errno 111] Connection refused. Backing off 1 seconds ...
+[1;33m[c1] POX 0.0.0 / Copyright 2011 James McCauley[1;m
+
+[1;41m[1;33m[c1] INFO:pox_syncer:starting sts sync for spec: ptcp:0.0.0.0:18899[1;m
+
+[1;41m[1;33m[c1] INFO:pox_syncer:waiting for sts_sync connection on 0.0.0.0:18899[1;m
+
+INFO:simulation:Launched controller c1: ./pox.py --verbose sts.syncproto.pox_syncer --blocking=False openflow.discovery forwarding.l2_multi sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=127.0.0.1 --port=6633 [PID 20154]
+INFO:simulation:Creating topology...
+[1;41m[1;33m[c1] INFO:pox_syncer:sts_sync connected[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+Error connecting.  -- [Errno 111] Connection refused. Backing off 1 seconds ...
+[1;41m[1;33m[c1] DEBUG:core:POX 0.0.0 going up...[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Running on CPython (2.7.3/Feb 27 2014 19:58:35)[1;m
+
+[1;41m[1;33m[c1] INFO:core:POX 0.0.0 is up.[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening for connections on ('127.0.0.1', 6633)[1;m
+
+[1;33m[c1] Incoming true socket connected[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+INFO:control_flow:Waiting until first OpenFlow message received..
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 58827][1;m
+
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 58827][1;m
+
+[1;36mRound 1 completed.[1;m
+[1;36mRound 2 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 3 completed.[1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 1/1] Connected to 00-00-00-00-00-01[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Connect [Con 1/1][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-01[1;m
+
+[1;36mRound 4 completed.[1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 2/2] Connected to 00-00-00-00-00-02[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Connect [Con 2/2][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-02[1;m
+
+[1;36mRound 5 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 6 completed.[1;m
+[1;36mRound 7 completed.[1;m
+[1;36mRound 8 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 9 completed.[1;m
+INFO:dataplane_trace:Injecting trace input
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:02:02>00:00:00:00:00:00 123.123.2.2>123.123.1.2
+[1;36mRound 10 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 11 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Learned 12:34:56:78:02:02 at 00-00-00-00-00-02.2[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Flood multicast from 12:34:56:78:02:02[1;m
+
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 12 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:sync_connection:Spent 386.56 milliseconds waiting on SyncMessage(type='REQUEST', messageClass='DeterministicValue', time=SyncTime(seconds=1401049250, microSeconds=991446), xid=60, name='gettimeofday', value=None, fingerPrint=None)[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 13 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:12:34:56:78:02:02 moved from 00-00-00-00-00-02.2 to 00-00-00-00-00-01.1?[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Learned 12:34:56:78:02:02 at 00-00-00-00-00-01.1[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Flood multicast from 12:34:56:78:02:02[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 14 completed.[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-02.1[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Unlearned 12:34:56:78:02:02[1;m
+
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:received valid arp packet on interface eth1: [12:34:56:78:02:02>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:02:02>00:00:00:00:00:00 123.123.2.2>123.123.1.2
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:ARP]|REPLY hw:1 p:2048 12:34:56:78:01:02>12:34:56:78:02:02 123.123.1.2>123.123.2.2
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 15 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 16 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Learned 12:34:56:78:01:02 at 00-00-00-00-00-01.2[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:12:34:56:78:02:02 unknown -- flooding[1;m
+
+[1;36mRound 17 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 18 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:sync_connection:Spent 216.35 milliseconds waiting on SyncMessage(type='REQUEST', messageClass='DeterministicValue', time=SyncTime(seconds=1401049252, microSeconds=628669), xid=85, name='gettimeofday', value=None, fingerPrint=None)[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:12:34:56:78:01:02 moved from 00-00-00-00-00-01.2 to 00-00-00-00-00-02.1?[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Learned 12:34:56:78:01:02 at 00-00-00-00-00-02.1[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:12:34:56:78:02:02 unknown -- flooding[1;m
+
+[1;36mRound 19 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:01:02>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:32><ttl:120><pox.lib.packet.lldp.system_description object at 0x1f20b50><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:received invalid arp packet on interface eth2: [12:34:56:78:01:02>12:34:56:78:02:02:ARP]|REPLY hw:1 p:2048 12:34:56:78:01:02>12:34:56:78:02:02 123.123.1.2>123.123.2.2
+INFO:dataplane_trace:Injecting trace input
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:ARP]|REPLY hw:1 p:2048 12:34:56:78:01:02>12:34:56:78:02:02 123.123.1.2>123.123.2.2
+[1;36mRound 20 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 21 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:sync_connection:Spent 485.51 milliseconds waiting on SyncMessage(type='REQUEST', messageClass='DeterministicValue', time=SyncTime(seconds=1401049253, microSeconds=435343), xid=96, name='gettimeofday', value=None, fingerPrint=None)[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:12:34:56:78:01:02 moved from 00-00-00-00-00-02.1 to 00-00-00-00-00-01.2?[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Learned 12:34:56:78:01:02 at 00-00-00-00-00-01.2[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:12:34:56:78:02:02 unknown -- flooding[1;m
+
+[1;36mRound 22 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 23 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:12:34:56:78:01:02 moved from 00-00-00-00-00-01.2 to 00-00-00-00-00-02.1?[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Learned 12:34:56:78:01:02 at 00-00-00-00-00-02.1[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:12:34:56:78:02:02 unknown -- flooding[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 24 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:sync_connection:Spent 195.29 milliseconds waiting on SyncMessage(type='REQUEST', messageClass='DeterministicValue', time=SyncTime(seconds=1401049254, microSeconds=411262), xid=117, name='gettimeofday', value=None, fingerPrint=None)[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-01.1[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Unlearned 12:34:56:78:01:02[1;m
+
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:received invalid arp packet on interface eth2: [12:34:56:78:01:02>12:34:56:78:02:02:ARP]|REPLY hw:1 p:2048 12:34:56:78:01:02>12:34:56:78:02:02 123.123.1.2>123.123.2.2
+[1;36mRound 25 completed.[1;m
+[1;36mRound 26 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 27 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:sync_connection:Spent 302.20 milliseconds waiting on SyncMessage(type='REQUEST', messageClass='DeterministicValue', time=SyncTime(seconds=1401049255, microSeconds=346949), xid=128, name='gettimeofday', value=None, fingerPrint=None)[1;m
+
+[1;36mRound 28 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:02:02>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:32><ttl:120><pox.lib.packet.lldp.system_description object at 0x1f208d0><tlv end> on interface eth2
+[1;36mRound 29 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
+INFO:dataplane_trace:Injecting trace input
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:28t:64]ICMP cs:5fbf[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:192f}ping
+[1;36mRound 30 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 31 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Learned 12:34:56:78:02:02 at 00-00-00-00-00-02.2[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:12:34:56:78:01:02 unknown -- flooding[1;m
+
+[1;36mRound 32 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 33 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:sync_connection:Spent 65.04 milliseconds waiting on SyncMessage(type='REQUEST', messageClass='DeterministicValue', time=SyncTime(seconds=1401049256, microSeconds=899836), xid=137, name='gettimeofday', value=None, fingerPrint=None)[1;m
+
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi:Packet from 12:34:56:78:02:02 arrived at 00-00-00-00-00-01.1 without flow[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:12:34:56:78:01:02 unknown -- flooding[1;m
+
+[1;36mRound 34 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:28t:64]ICMP cs:5fbf[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:192f}ping on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 35 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 36 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:sync_connection:Spent 1214.56 milliseconds waiting on SyncMessage(type='REQUEST', messageClass='DeterministicValue', time=SyncTime(seconds=1401049258, microSeconds=216265), xid=149, name='gettimeofday', value=None, fingerPrint=None)[1;m
+
+[1;36mRound 37 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:01:02>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:32><ttl:120><pox.lib.packet.lldp.system_description object at 0x1f25d50><tlv end> on interface eth1
+[1;36mRound 38 completed.[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 39 completed.[1;m
+INFO:dataplane_trace:Injecting trace input
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:28t:64]ICMP cs:5fbe[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:2129}pong
+[1;36mRound 40 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 41 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:sync_connection:Spent 58.53 milliseconds waiting on SyncMessage(type='REQUEST', messageClass='DeterministicValue', time=SyncTime(seconds=1401049260, microSeconds=682173), xid=158, name='gettimeofday', value=None, fingerPrint=None)[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Learned 12:34:56:78:01:02 at 00-00-00-00-00-01.2[1;m
+
+[1;41m[1;33m[c1] DEBUG:sync_connection:Spent 3.06 milliseconds waiting on SyncMessage(type='REQUEST', messageClass='DeterministicValue', time=SyncTime(seconds=1401049260, microSeconds=745779), xid=163, name='gettimeofday', value=None, fingerPrint=None)[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Installing path for 12:34:56:78:01:02 -> 12:34:56:78:02:02 0800 (2 hops)[1;m
+
+[1;41m[1;37mThe following correctness violations have occurred: ['((x^L) - ([]), 200002, [])'][1;m
+[1;36mRound 42 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 43 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:28t:64]ICMP cs:5fbe[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:2129}pong on interface eth2
+[1;36mRound 44 completed.[1;m
+[1;41m[1;37mViolation encountered again after 3 steps: ((x^L) - ([]), 200002, [])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['((x^L) - ([]), 200002, [])'][1;m
+[1;36mRound 45 completed.[1;m
+[1;36mRound 46 completed.[1;m
+[1;36mRound 47 completed.[1;m
+[1;41m[1;37mViolation encountered again after 6 steps: ((x^L) - ([]), 200002, [])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['((x^L) - ([]), 200002, [])'][1;m
+[1;36mRound 48 completed.[1;m
+[1;36mRound 49 completed.[1;m
+INFO:dataplane_trace:Injecting trace input
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:02:02>00:00:00:00:00:00 123.123.2.2>123.123.1.2
+[1;36mRound 50 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;37mViolation encountered again after 9 steps: ((x^L) - ([]), 200002, [])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['((x^L) - ([]), 200002, [])'][1;m
+[1;36mRound 51 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Flood multicast from 12:34:56:78:02:02[1;m
+
+[1;36mRound 52 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 53 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Flood multicast from 12:34:56:78:02:02[1;m
+
+[1;41m[1;37mViolation encountered again after 12 steps: ((x^L) - ([]), 200002, [])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['((x^L) - ([]), 200002, [])'][1;m
+[1;36mRound 54 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:received valid arp packet on interface eth1: [12:34:56:78:02:02>ff:ff:ff:ff:ff:ff:ARP]|REQUEST hw:1 p:2048 12:34:56:78:02:02>00:00:00:00:00:00 123.123.2.2>123.123.1.2
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:ARP]|REPLY hw:1 p:2048 12:34:56:78:01:02>12:34:56:78:02:02 123.123.1.2>123.123.2.2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:02:02>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:32><ttl:120><pox.lib.packet.lldp.system_description object at 0x1f28390><tlv end> on interface eth2
+[1;36mRound 55 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 56 completed.[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi:Installing path for 12:34:56:78:01:02 -> 12:34:56:78:02:02 0806 (2 hops)[1;m
+
+[1;41m[1;37mViolation encountered again after 15 steps: ((x^L) - ([]), 200002, [])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['((x^L) - ([]), 200002, [])'][1;m
+[1;36mRound 57 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 58 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:received invalid arp packet on interface eth2: [12:34:56:78:01:02>12:34:56:78:02:02:ARP]|REPLY hw:1 p:2048 12:34:56:78:01:02>12:34:56:78:02:02 123.123.1.2>123.123.2.2
+[1;36mRound 59 completed.[1;m
+[1;41m[1;37mViolation encountered again after 18 steps: ((x^L) - ([]), 200002, [])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['((x^L) - ([]), 200002, [])'][1;m
+INFO:dataplane_trace:Injecting trace input
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:ARP]|REPLY hw:1 p:2048 12:34:56:78:01:02>12:34:56:78:02:02 123.123.1.2>123.123.2.2
+[1;36mRound 60 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 61 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 62 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:received invalid arp packet on interface eth2: [12:34:56:78:01:02>12:34:56:78:02:02:ARP]|REPLY hw:1 p:2048 12:34:56:78:01:02>12:34:56:78:02:02 123.123.1.2>123.123.2.2
+[1;41m[1;37mViolation encountered again after 21 steps: ((x^L) - ([]), 200002, [])[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['((x^L) - ([]), 200002, [])'][1;m
+[1;41m[1;37mPersistent violations detected!: ['((x^L) - ([]), 200002, [])'][1;m
+INFO:control_flow:Terminating fuzzing after 63 rounds
+INFO:control_flow:Pending Receives:
+INFO:control_flow:Pending Sends:
+[1;36mKilling controller c1 (pid 20154)[1;m
+Terminating child controllers... OK
