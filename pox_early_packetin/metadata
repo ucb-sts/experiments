@@ -1,5 +1,8 @@
 {
-  "additional_metadata": null,
+  "additional_metadata": {
+    "branch": "carp_key_error_crash",
+    "commit": "045948ab19c415a4434fd602d1715501cb71c995"
+  },
   "argv": [
     "./simulator.py",
     "-c",

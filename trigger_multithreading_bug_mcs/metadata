@@ -1,5 +1,9 @@
 {
-  "additional_metadata": null,
+  "additional_metadata": {
+      "branch": "synthetic_multithreaded_bug",
+      "commit": "54f61e981323a9eb5e59d2cf794458d8d0e72fdb",
+      "origin": "git@github.com:ucb-sts/pox.git"
+  },
   "argv": [
     "./simulator.py",
     "-c",

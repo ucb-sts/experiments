@@ -1,0 +1,147 @@
+No DataplaneDrops to replay. We suggest you set Replayer's default_dp_permit=True 
+[1;36mStarting POX controller c1[1;m
+connect_socket_with_backoff sts_socket_pipe
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+[1;33m[c1] POX 0.0.0 / Copyright 2011 James McCauley[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:POX 0.0.0 going up...[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Running on CPython (2.7.5/Sep 12 2013 21:33:34)[1;m
+
+[1;41m[1;33m[c1] INFO:core:POX 0.0.0 is up.[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening for connections on ../sts_socket_pipe[1;m
+
+[1;33m[c1] Incoming true socket connected[1;m
+
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] Incoming MockSocket connection[1;m
+connect_socket_with_backoff sts_socket_pipe
+
+[1;33m[c1] MAX_CONNS -2[1;m
+connect_socket_with_backoff sts_socket_pipe
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] Incoming MockSocket connection[1;m
+
+
+[1;33m[c1] MAX_CONNS -3[1;m
+connect_socket_with_backoff sts_socket_pipe
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] Incoming MockSocket connection[1;m
+
+
+[1;33m[c1] MAX_CONNS -4[1;m
+
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] MAX_CONNS -5[1;m
+connect_socket_with_backoff sts_socket_pipe
+
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] MAX_CONNS -6[1;m
+
+
+connect_socket_with_backoff sts_socket_pipe
+[1;33m[c1] Incoming MockSocket connection[1;m
+connect_socket_with_backoff sts_socket_pipe
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] MAX_CONNS -7[1;m
+
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+connect_socket_with_backoff sts_socket_pipe
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] MAX_CONNS -8[1;m
+
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] MAX_CONNS -9[1;m
+
+
+connect_socket_with_backoff sts_socket_pipe[1;33m[c1] Incoming MockSocket connection[1;m
+
+
+[1;33m[c1] MAX_CONNS -10[1;m
+connect_socket_with_backoff sts_socket_pipe
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+connect_socket_with_backoff sts_socket_pipe
+
+[1;36m[1;44m00:00.510 00:00.000 Successfully matched event ConnectToControllers:e1[1;m[1;33m[c1] MAX_CONNS -11[1;m
+
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+[1;36m[1;44m00:00.516 00:00.013 Successfully matched event ControlChannelBlock:e2[1;m
+[1;36m[1;36mRound 1[1;37m[1;m
+[1;33m[c1] MAX_CONNS -12[1;m
+
+[1;36m[1;44m00:00.516 00:00.013 Successfully matched event ControlChannelBlock:e3[1;m
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+[1;36mCutting link (20:4) -> (16:4)[1;m[1;33m[c1] MAX_CONNS -13[1;m
+
+
+[1;36m[1;44m00:00.517 00:00.022 Successfully matched event LinkFailure:e44[1;m
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+[1;33m[c1] MAX_CONNS -14[1;m
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+[1;33m[c1] MAX_CONNS -15[1;m
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+[1;33m[c1] MAX_CONNS -16[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 20/20] Connected to 00-00-00-00-00-14[1;m
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+[1;33m[c1] MAX_CONNS -17[1;m
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+[1;33m[c1] MAX_CONNS -18[1;m
+Socket error: Broken pipe
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+[1;33m[c1] MAX_CONNS -19[1;m
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+[1;33m[c1] MAX_CONNS -20[1;m
+
+[1;33m[c1] Incoming MockSocket connection[1;m
+
+[1;33m[c1] MAX_CONNS -21[1;m
+
+[1;33m[c1] YOU FOUND THE NULL POINTER. 10 POINTS TO HUFFLEPUFF[1;m
+
+[1;36m[1;44m00:00.629 00:00.132 Successfully matched event ControlChannelUnblock:e61[1;m
+[1;36m[1;36mRound 2[1;37m[1;m
+[1;36mRestoring link (20:4) -> (16:4)[1;m
+[1;36m[1;44m00:00.651 00:00.152 Successfully matched event LinkRecovery:e122[1;m
+[1;36m[1;44m00:00.759 00:00.258 Successfully matched event ControlChannelUnblock:e136[1;m
+[1;36m[1;36mRound 3[1;37m[1;m
+[1;36m[1;36mRound 4[1;37m[1;m
+[1;41m[1;37mViolations at end of trace: ['c1'][1;m
+[1;42m[1;37mViolation found c1[1;m
+[1;36m[1;44mEvent Stats: Events matched: 7, timed out: 0
+Matches per event type:
+  ConnectToControllers 1
+  LinkRecovery 1
+  LinkFailure 1
+  ControlChannelBlock 2
+  ControlChannelUnblock 2
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m

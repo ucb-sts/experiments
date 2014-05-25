@@ -1,8 +1,8 @@
 {
   "additional_metadata": {
-    "branch": "load_balancer_bug",
-    "commit": "6a2db6c6adad389bc228881bbce59e034320710a",
-    "remote": "* remote origin\n  Fetch URL: https://github.com/noxrepo/pox.git\n  Push  URL: https://github.com/noxrepo/pox.git\n  HEAD branch: carp\n  Remote branches:\n    angler              tracked\n    betta               tracked\n    carp                tracked\n    dart                tracked\n    debugger            tracked\n    libfluid_experiment new (next fetch will store in remotes/origin)\n  Local branch configured for 'git pull':\n    dart merges with remote dart\n  Local ref configured for 'git push':\n    dart pushes to dart (local out of date)"
+    "branch": "load_balancer_no_timeouts",
+    "commit": "2f9b9eef7a61561e1f6f1dd692294b9021716f08",
+    "remote": "* remote origin\n  Fetch URL: git@github.com:ucb-sts/pox.git\n  Push  URL: git@github.com:ucb-sts/pox.git\n  HEAD branch: debugger\n  Remote branches:\n    angler                     tracked\n    betta                      tracked\n    carp                       tracked\n    debugger                   tracked\n    debugger_legacy            tracked\n    debugger_legacy_2012-06-27 tracked\n    fix_license                tracked\n    frenetic_test              tracked\n    load_balancer_bug          tracked\n    load_balancer_no_timeouts  tracked\n    master                     tracked\n    upgrade_switch             tracked\n    upgrade_switch_2           tracked\n  Local branch configured for 'git pull':\n    debugger merges with remote debugger\n  Local refs configured for 'git push':\n    debugger                  pushes to debugger                  (up to date)\n    load_balancer_no_timeouts pushes to load_balancer_no_timeouts (up to date)"
   },
   "argv": [
     "./simulator.py",
@@ -12,10 +12,10 @@
   "cwd": "/home/jefflai2/sts",
   "host": {
     "cpu_info": "Intel(R) Xeon(R) CPU X5560 @ 2.80GHz",
-    "free": "total       used       free     shared    buffers     cached\nMem:      12321316    4350248    7971068          0     368404    2702220\n-/+ buffers/cache:    1279624   11041692\nSwap:     12571644      95764   12475880",
+    "free": "total       used       free     shared    buffers     cached\nMem:      12321316    3902780    8418536          0     366376    2258656\n-/+ buffers/cache:    1277748   11043568\nSwap:     12571644      95748   12475896",
     "name": "c3",
     "num_cores": "8",
-    "uptime": "11:59:50 up 193 days, 11:41,  4 users,  load average: 0.00, 0.01, 0.05"
+    "uptime": "13:33:06 up 196 days, 13:15,  4 users,  load average: 0.04, 0.03, 0.05"
   },
   "modules": {
     "hassel": {
@@ -23,18 +23,18 @@
       "commit": "d63193500fca48cba053205c413d72eebfd233e9"
     },
     "pox": {
-      "branch": "load_balancer_bug",
+      "branch": "HEAD",
       "commit": "e446dda7237e31a725062c3f8220d816132dd850"
     },
     "sts": {
-      "branch": "HEAD",
-      "commit": "93d46be84070234b20707f3bb8ad052b6874da9a"
+      "branch": "load_balancer_bug",
+      "commit": "85bcd3031239bb3d48a24a9c611017d34bb92f81"
     }
   },
   "sys": {
     "lsb_release": "Ubuntu 11.04",
     "uname": "Linux c3 2.6.38-8-server #42-Ubuntu SMP Mon Apr 11 03:49:04 UTC 2011 x86_64 x86_64 x86_64 GNU/Linux"
   },
-  "timestamp": "2014_05_11_11_59_50",
+  "timestamp": "2014_05_14_13_33_06",
   "user": "jefflai2"
 }

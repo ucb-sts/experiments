@@ -1,5 +1,8 @@
 {
-  "additional_metadata": null,
+  "additional_metadata": {
+      "branch" : "carp",
+      "commit" : "bab636bc89584b3bb2baaa5bc766be82fb81d1b2"
+  },
   "argv": [
     "./simulator.py",
     "-c",
