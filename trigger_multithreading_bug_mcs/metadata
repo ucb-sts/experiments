@@ -1,5 +1,8 @@
 {
-  "additional_metadata": null,
+  "additional_metadata": {
+      "branch": "dart",
+      "commit": "283bf8967186b55bd9cc1eea9c81d744a18cd25e"
+  },
   "argv": [
     "./simulator.py",
     "-c",
