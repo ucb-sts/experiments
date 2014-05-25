@@ -1,0 +1,38 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/syn_mem_corruption_3switch_fuzzer_mcs/orig_config.py",
+    "-n",
+    "syn_mem_corruption_3switch_fuzzer_mcs_blackbox"
+  ],
+  "cwd": "/Users/cs/Research/UCB/code/sts",
+  "host": {
+    "cpu_info": "",
+    "free": "",
+    "name": "yossarian",
+    "num_cores": "0",
+    "uptime": "15:36  up 1 day,  1:25, 3 users, load averages: 1.16 1.21 1.21"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9"
+    },
+    "pox": {
+      "branch": "HEAD",
+      "commit": "937d3192217e4ad91aa7b3a2d494bd104f32b687"
+    },
+    "sts": {
+      "branch": "HEAD",
+      "commit": "d22241e799f0bd4598458e7c5a2f3de36f6b787b"
+    }
+  },
+  "sys": {
+    "lsb_release": "",
+    "uname": "Darwin yossarian 13.2.0 Darwin Kernel Version 13.2.0: Thu Apr 17 23:03:13 PDT 2014; root:xnu-2422.100.13~1/RELEASE_X86_64 x86_64"
+  },
+  "timestamp": "2014_05_25_15_36_35",
+  "user": "cs"
+}
