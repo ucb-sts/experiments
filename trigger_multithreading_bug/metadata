@@ -1,7 +1,8 @@
 {
   "additional_metadata": {
-      "branch": "dart",
-      "commit": "283bf8967186b55bd9cc1eea9c81d744a18cd25e"
+      "branch": "synthetic_multithreaded_bug",
+      "commit": "54f61e981323a9eb5e59d2cf794458d8d0e72fdb",
+      "origin": "git@github.com:ucb-sts/pox.git"
   },
   "argv": [
     "./simulator.py",
