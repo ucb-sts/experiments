@@ -1,0 +1,893 @@
+[1;33m[c1] INFO:core:POX 0.1.0 (betta) is up.[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;36m[1;44m00:00.503 00:00.000 Successfully matched event ConnectToControllers:e1[1;m
+[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-01 1] connected[1;m
+
+[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-02 2] connected[1;m
+
+[1;33m[c1] INFO:openflow.of_01:[00-00-00-00-00-03 3] connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_switch_joins[1;m
+
+[1;41m[1;33m[c1] INFO:pyretic.core.runtime.ConcreteNetwork: OpenFlow switch 1 connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ---------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |  egress ports  |[1;m
+
+[1;41m[1;33m[c1] ---------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |                |[1;m
+
+[1;41m[1;33m[c1] ---------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 1:1:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ---------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |  egress ports  |[1;m
+
+[1;41m[1;33m[c1] ---------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[1]---       |[1;m
+
+[1;41m[1;33m[c1] ---------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 1:2:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: -------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |  egress ports      |[1;m
+
+[1;41m[1;33m[c1] -------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] -------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 1:3:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_switch_joins[1;m
+
+[1;41m[1;33m[c1] INFO:pyretic.core.runtime.ConcreteNetwork: OpenFlow switch 2 connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 2       |                  |                             |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 2:1:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 2       |                  |  2[1]---                    |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 2:2:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 2       |                  |  2[1]---, 2[2]---           |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 2:3:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 2       |                  |  2[3]---, 2[1]---, 2[2]---  |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_switch_joins[1;m
+
+[1;41m[1;33m[c1] INFO:pyretic.core.runtime.ConcreteNetwork: OpenFlow switch 3 connected[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 2       |                  |  2[3]---, 2[1]---, 2[2]---  |[1;m
+
+[1;41m[1;33m[c1] 3       |                  |                             |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 3:1:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 2       |                  |  2[3]---, 2[1]---, 2[2]---  |[1;m
+
+[1;41m[1;33m[c1] 3       |                  |  3[1]---                    |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 3:2:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 2       |                  |  2[3]---, 2[1]---, 2[2]---  |[1;m
+
+[1;41m[1;33m[c1] 3       |                  |  3[2]---, 3[1]---           |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_port_joins 3:3:True:True[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 2       |                  |  2[3]---, 2[1]---, 2[2]---  |[1;m
+
+[1;41m[1;33m[c1] 3       |                  |  3[2]---, 3[1]---, 3[3]---  |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.364969|[1;m
+
+[1;41m[1;33m[c1] 	generate classifier[1;m
+
+[1;41m[1;33m[c1] 	policy=flood on:[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |                  |  1[2]---, 1[3]---, 1[1]---  |[1;m
+
+[1;41m[1;33m[c1] 2       |                  |  2[3]---, 2[1]---, 2[2]---  |[1;m
+
+[1;41m[1;33m[c1] 3       |                  |  3[2]---, 3[1]---, 3[3]---  |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 	classifier=match: ('switch', 1) ('inport', 1)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 1) ('inport', 2)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 1) ('inport', 3)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 2)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 1)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 2) ('inport', 1)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 2) ('inport', 2)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 2) ('inport', 3)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 2)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 2)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 3) ('inport', 1)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 3) ('inport', 2)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 3) ('inport', 3)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 2)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 3)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  identity[1;m
+
+[1;41m[1;33m[c1]   -> [drop][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.373132|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	0 {'switch': 1} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.374662|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	0 {'switch': 2} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.375016|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	0 {'switch': 3} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.375253|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	60000 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535, 'ethtype': 35020} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.375404|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	60000 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535, 'ethtype': 35020} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.375499|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	60000 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535, 'ethtype': 35020} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.375679|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59999 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 1} [{'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.375850|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59998 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 2} [{'outport': 1}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.375982|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59997 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 3} [{'outport': 1}, {'outport': 2}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.376104|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59996 {'switch': 1, 'vlan_pcp': 0, 'inport': 1, 'vlan_id': 65535} [{'outport': 65528}, {'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.376275|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59995 {'switch': 1, 'vlan_pcp': 0, 'inport': 2, 'vlan_id': 65535} [{'outport': 1}, {'outport': 65528}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.376411|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59994 {'switch': 1, 'vlan_pcp': 0, 'inport': 3, 'vlan_id': 65535} [{'outport': 1}, {'outport': 2}, {'outport': 65528}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.376527|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59993 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535} [{'outport': 1}, {'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.376692|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59999 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 1} [{'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.376825|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59998 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 2} [{'outport': 1}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.376955|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59997 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 3} [{'outport': 1}, {'outport': 2}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.377078|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59996 {'switch': 2, 'vlan_pcp': 0, 'inport': 1, 'vlan_id': 65535} [{'outport': 65528}, {'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.377210|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59995 {'switch': 2, 'vlan_pcp': 0, 'inport': 2, 'vlan_id': 65535} [{'outport': 1}, {'outport': 65528}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.377344|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59994 {'switch': 2, 'vlan_pcp': 0, 'inport': 3, 'vlan_id': 65535} [{'outport': 1}, {'outport': 2}, {'outport': 65528}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.377476|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59993 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535} [{'outport': 1}, {'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.377603|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59999 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 1} [{'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.377743|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59998 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 2} [{'outport': 1}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.377861|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59997 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 3} [{'outport': 1}, {'outport': 2}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.377995|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59996 {'switch': 3, 'vlan_pcp': 0, 'inport': 1, 'vlan_id': 65535} [{'outport': 65528}, {'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.378126|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59995 {'switch': 3, 'vlan_pcp': 0, 'inport': 2, 'vlan_id': 65535} [{'outport': 1}, {'outport': 65528}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.378244|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59994 {'switch': 3, 'vlan_pcp': 0, 'inport': 3, 'vlan_id': 65535} [{'outport': 1}, {'outport': 2}, {'outport': 65528}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.378382|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59993 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535} [{'outport': 1}, {'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.378519|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59992 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535} [][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.378640|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59992 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535} [][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:37.378720|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59992 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535} [][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;37mThe following correctness violations have occurred: ["{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200001, 100002, 300002], 'port': 200001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100002, 300002, 200001], 'port': 100002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 200001, 100002, 300002], 'port': 200001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 100001, 200002, 300001], 'port': 100001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300001, 100001, 200002], 'port': 300001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200002, 300001, 100001], 'port': 200002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100001, 200002, 300001], 'port': 100001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 300002, 200001, 100002], 'port': 300002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 100002, 300002, 200001], 'port': 100002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 200002, 300001, 100001], 'port': 200002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300002, 200001, 100002], 'port': 300002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 300001, 100001, 200002], 'port': 300001}"][1;m
+[1;41m[1;37mPersistent violations detected!: ["{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100001, 200002, 300001], 'port': 100001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100002, 300002, 200001], 'port': 100002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 100001, 200002, 300001], 'port': 100001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 200001, 100002, 300002], 'port': 200001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 100002, 300002, 200001], 'port': 100002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200002, 300001, 100001], 'port': 200002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200001, 100002, 300002], 'port': 200001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 300002, 200001, 100002], 'port': 300002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300001, 100001, 200002], 'port': 300001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 200002, 300001, 100001], 'port': 200002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300002, 200001, 100002], 'port': 300002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 300001, 100001, 200002], 'port': 300001}"][1;m
+[1;36m[1;44m00:02.786 00:02.249 Successfully matched event CheckInvariants:e111[1;m
+[1;36m[1;36mRound 12[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_link_updates[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |  switch edges    |   egress ports              |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |  1[2] --- 2[2]   |  1[3]---, 1[1]---           |[1;m
+
+[1;41m[1;33m[c1] 2       |  1[2] --- 2[2]   |  2[3]---, 2[1]---           |[1;m
+
+[1;41m[1;33m[c1] 3       |                  |  3[2]---, 3[1]---, 3[3]---  |[1;m
+
+[1;41m[1;33m[c1] ----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_link_updates[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: ---------------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |     switch edges               |  egress ports      |[1;m
+
+[1;41m[1;33m[c1] ---------------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |  1[2] --- 2[2], 1[1] --- 3[2]  |  1[3]---           |[1;m
+
+[1;41m[1;33m[c1] 2       |  1[2] --- 2[2]                 |  2[3]---, 2[1]---  |[1;m
+
+[1;41m[1;33m[c1] 3       |  1[1] --- 3[2]                 |  3[1]---, 3[3]---  |[1;m
+
+[1;41m[1;33m[c1] ---------------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_link_updates[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: nothing to do[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_link_updates[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: -----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |     switch edges               |  egress ports  |[1;m
+
+[1;41m[1;33m[c1] -----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |  1[2] --- 2[2], 1[1] --- 3[2]  |  1[3]---       |[1;m
+
+[1;41m[1;33m[c1] 2       |  1[2] --- 2[2], 2[1] --- 3[1]  |  2[3]---       |[1;m
+
+[1;41m[1;33m[c1] 3       |  1[1] --- 3[2], 2[1] --- 3[1]  |  3[3]---       |[1;m
+
+[1;41m[1;33m[c1] -----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_link_updates[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: nothing to do[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: handle_link_updates[1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.DEBUG_TOPO_DISCOVERY: nothing to do[1;m
+
+[1;41m[1;37mViolation encountered again after 1 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200001, 100002, 300002], 'port': 200001}[1;m
+[1;41m[1;37mViolation encountered again after 1 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100002, 300002, 200001], 'port': 100002}[1;m
+[1;41m[1;37mViolation encountered again after 1 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 200001, 100002, 300002], 'port': 200001}[1;m
+[1;41m[1;37mViolation encountered again after 1 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 100001, 200002, 300001], 'port': 100001}[1;m
+[1;41m[1;37mViolation encountered again after 1 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300001, 100001, 200002], 'port': 300001}[1;m
+[1;41m[1;37mViolation encountered again after 1 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200002, 300001, 100001], 'port': 200002}[1;m
+[1;41m[1;37mViolation encountered again after 1 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100001, 200002, 300001], 'port': 100001}[1;m
+[1;41m[1;37mViolation encountered again after 1 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 300002, 200001, 100002], 'port': 300002}[1;m
+[1;41m[1;37mViolation encountered again after 1 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 100002, 300002, 200001], 'port': 100002}[1;m
+[1;41m[1;37mViolation encountered again after 1 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 200002, 300001, 100001], 'port': 200002}[1;m
+[1;41m[1;37mViolation encountered again after 1 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300002, 200001, 100002], 'port': 300002}[1;m
+[1;41m[1;37mViolation encountered again after 1 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 300001, 100001, 200002], 'port': 300001}[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ["{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200001, 100002, 300002], 'port': 200001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100002, 300002, 200001], 'port': 100002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 200001, 100002, 300002], 'port': 200001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 100001, 200002, 300001], 'port': 100001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300001, 100001, 200002], 'port': 300001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200002, 300001, 100001], 'port': 200002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100001, 200002, 300001], 'port': 100001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 300002, 200001, 100002], 'port': 300002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 100002, 300002, 200001], 'port': 100002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 200002, 300001, 100001], 'port': 200002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300002, 200001, 100002], 'port': 300002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 300001, 100001, 200002], 'port': 300001}"][1;m
+[1;41m[1;37mPersistent violations detected!: ["{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100001, 200002, 300001], 'port': 100001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100002, 300002, 200001], 'port': 100002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 100001, 200002, 300001], 'port': 100001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 200001, 100002, 300002], 'port': 200001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 100002, 300002, 200001], 'port': 100002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200002, 300001, 100001], 'port': 200002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200001, 100002, 300002], 'port': 200001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 300002, 200001, 100002], 'port': 300002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300001, 100001, 200002], 'port': 300001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 200002, 300001, 100001], 'port': 200002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300002, 200001, 100002], 'port': 300002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 300001, 100001, 200002], 'port': 300001}"][1;m
+[1;36m[1;44m00:02.967 00:02.403 Successfully matched event CheckInvariants:e112[1;m
+[1;36m[1;36mRound 13[1;37m[1;m
+[1;41m[1;37mViolation encountered again after 2 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200001, 100002, 300002], 'port': 200001}[1;m
+[1;41m[1;37mViolation encountered again after 2 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100002, 300002, 200001], 'port': 100002}[1;m
+[1;41m[1;37mViolation encountered again after 2 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 200001, 100002, 300002], 'port': 200001}[1;m
+[1;41m[1;37mViolation encountered again after 2 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 100001, 200002, 300001], 'port': 100001}[1;m
+[1;41m[1;37mViolation encountered again after 2 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300001, 100001, 200002], 'port': 300001}[1;m
+[1;41m[1;37mViolation encountered again after 2 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200002, 300001, 100001], 'port': 200002}[1;m
+[1;41m[1;37mViolation encountered again after 2 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100001, 200002, 300001], 'port': 100001}[1;m[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.594665|[1;m
+
+[1;41m[1;37mViolation encountered again after 2 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 300002, 200001, 100002], 'port': 300002}[1;m
+[1;41m[1;37mViolation encountered again after 2 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 100002, 300002, 200001], 'port': 100002}[1;m
+[1;41m[1;37mViolation encountered again after 2 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 200002, 300001, 100001], 'port': 200002}[1;m
+[1;41m[1;37mViolation encountered again after 2 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300002, 200001, 100002], 'port': 300002}[1;m
+[1;41m[1;37mViolation encountered again after 2 steps: {'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 300001, 100001, 200002], 'port': 300001}[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ["{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200001, 100002, 300002], 'port': 200001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100002, 300002, 200001], 'port': 100002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 200001, 100002, 300002], 'port': 200001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 100001, 200002, 300001], 'port': 100001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300001, 100001, 200002], 'port': 300001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200002, 300001, 100001], 'port': 200002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100001, 200002, 300001], 'port': 100001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 300002, 200001, 100002], 'port': 300002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 100002, 300002, 200001], 'port': 100002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 200002, 300001, 100001], 'port': 200002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300002, 200001, 100002], 'port': 300002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 300001, 100001, 200002], 'port': 300001}"][1;m
+[1;41m[1;37mPersistent violations detected!: ["{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100001, 200002, 300001], 'port': 100001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100002, 300002, 200001], 'port': 100002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 100001, 200002, 300001], 'port': 100001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300003, 200001, 100002, 300002], 'port': 200001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 100002, 300002, 200001], 'port': 100002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200002, 300001, 100001], 'port': 200002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200001, 100002, 300002], 'port': 200001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 300002, 200001, 100002], 'port': 300002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300001, 100001, 200002], 'port': 300001}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [100003, 200002, 300001, 100001], 'port': 200002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [300002, 200001, 100002], 'port': 300002}", "{'hs_history': [(x^L) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([]), (dl_vlan:65535,dl_vlan_pcp:0) - ([])], 'hdr': (dl_vlan:65535,dl_vlan_pcp:0) - ([]), 'visits': [200003, 300001, 100001, 200002], 'port': 300001}"][1;m
+[1;36m[1;44m00:03.124 00:02.531 Successfully matched event CheckInvariants:e113[1;m
+[1;36m[1;36mRound 14[1;37m[1;m
+[1;36m[1;36mRound 20[1;37m[1;m
+
+[1;41m[1;33m[c1] 	generate classifier[1;m
+
+[1;41m[1;33m[c1] 	policy=flood on:[1;m
+
+[1;41m[1;33m[c1] -----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] switch  |     switch edges               |  egress ports  |[1;m
+
+[1;41m[1;33m[c1] -----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 1       |  1[2] --- 2[2], 1[1] --- 3[2]  |  1[3]---       |[1;m
+
+[1;41m[1;33m[c1] 2       |  1[2] --- 2[2]                 |  2[3]---       |[1;m
+
+[1;41m[1;33m[c1] 3       |  1[1] --- 3[2]                 |  3[3]---       |[1;m
+
+[1;41m[1;33m[c1] -----------------------------------------------------------[1;m
+
+[1;41m[1;33m[c1] 	classifier=match: ('switch', 1) ('inport', 1)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 1) ('inport', 2)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 1) ('inport', 3)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 2)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 1)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 1), modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 2) ('inport', 2)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 2) ('inport', 3)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 2)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 2)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 3) ('inport', 2)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 3) ('inport', 3)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 2)][1;m
+
+[1;41m[1;33m[c1]  match: ('switch', 3)[1;m
+
+[1;41m[1;33m[c1]   -> [modify: ('outport', 2), modify: ('outport', 3)][1;m
+
+[1;41m[1;33m[c1]  identity[1;m
+
+[1;41m[1;33m[c1]   -> [drop][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.605359|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	0 {'switch': 1} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.606643|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	0 {'switch': 2} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.606961|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	0 {'switch': 3} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.607105|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	60000 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535, 'ethtype': 35020} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.607247|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	60000 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535, 'ethtype': 35020} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.607386|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	60000 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535, 'ethtype': 35020} [{'outport': 65533}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.607507|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59999 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 1} [{'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.607693|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59998 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 2} [{'outport': 1}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.607836|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59997 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 3} [{'outport': 1}, {'outport': 2}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.607968|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59996 {'switch': 1, 'vlan_pcp': 0, 'inport': 1, 'vlan_id': 65535} [{'outport': 65528}, {'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.608144|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59995 {'switch': 1, 'vlan_pcp': 0, 'inport': 2, 'vlan_id': 65535} [{'outport': 1}, {'outport': 65528}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.608294|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59994 {'switch': 1, 'vlan_pcp': 0, 'inport': 3, 'vlan_id': 65535} [{'outport': 1}, {'outport': 2}, {'outport': 65528}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.608432|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59993 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535} [{'outport': 1}, {'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.608561|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59999 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 2} [{'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.609169|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59998 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 3} [{'outport': 2}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.609362|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59997 {'switch': 2, 'vlan_pcp': 0, 'inport': 2, 'vlan_id': 65535} [{'outport': 65528}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.609513|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59996 {'switch': 2, 'vlan_pcp': 0, 'inport': 3, 'vlan_id': 65535} [{'outport': 2}, {'outport': 65528}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.609649|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59995 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535} [{'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.609785|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59999 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 2} [{'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.609876|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59998 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535, 'inport': 3} [{'outport': 2}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.610185|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59997 {'switch': 3, 'vlan_pcp': 0, 'inport': 2, 'vlan_id': 65535} [{'outport': 65528}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.610332|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59996 {'switch': 3, 'vlan_pcp': 0, 'inport': 3, 'vlan_id': 65535} [{'outport': 2}, {'outport': 65528}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.610459|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59995 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535} [{'outport': 2}, {'outport': 3}][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.610570|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59992 {'switch': 1, 'vlan_pcp': 0, 'vlan_id': 65535} [][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.610647|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59994 {'switch': 2, 'vlan_pcp': 0, 'vlan_id': 65535} [][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;41m[1;33m[c1] DEBUG:pyretic.core.runtime.Runtime: |2014-05-25 19:00:39.610728|[1;m
+
+[1;41m[1;33m[c1] 	sending openflow rule:[1;m
+
+[1;41m[1;33m[c1] 	59994 {'switch': 3, 'vlan_pcp': 0, 'vlan_id': 65535} [][1;m
+
+[1;41m[1;33m[c1] [1;m
+
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44mEvent Stats: Events matched: 4, timed out: 0
+Matches per event type:
+  ConnectToControllers 1
+  CheckInvariants 3
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+[1;36mKilling controller c1 (pid 2512)[1;m
+Terminating child controllers...close() called on stdout during concurrent operation
+close() called on stderr during concurrent operation
+ OK
