@@ -1,0 +1,153 @@
+No DataplaneDrops to replay. We suggest you set Replayer's default_dp_permit=True 
+[1;36mStarting POX controller c1[1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+[1;33m[c1] POX 0.0.0 / Copyright 2011 James McCauley[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:POX 0.0.0 going up...[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Running on CPython (2.7.5/Mar 9 2014 22:15:05)[1;m
+
+[1;41m[1;33m[c1] INFO:core:POX 0.0.0 is up.[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening for connections on ('127.0.0.1', 6633)[1;m
+
+[1;33m[c1] Incoming true socket connected[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 49563][1;m
+
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 49563][1;m
+[1;36m[1;44m00:00.502 00:00.000 Successfully matched event ConnectToControllers:e1[1;m
+
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 49563][1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 3/3] Connected to 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Connect [Con 3/3][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 2/2] Connected to 00-00-00-00-00-02[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Connect [Con 2/2][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-02[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 1/1] Connected to 00-00-00-00-00-01[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Connect [Con 1/1][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-01[1;m
+
+[1;36m[1;44m00:07.604 00:07.099 Successfully matched event TrafficInjection:e87[1;m
+[1;36m[1;36mRound 71[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:07.610 00:07.100 Successfully matched event TrafficInjection:e88[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:07.611 00:07.100 Successfully matched event TrafficInjection:e89[1;m
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Learned 12:34:56:78:03:03 at 00-00-00-00-00-03.3[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:03:03 -> 12:34:56:78:03:03 0800 (1 hops)[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Learned 12:34:56:78:02:03 at 00-00-00-00-00-02.3[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:02:03 -> 12:34:56:78:02:03 0800 (1 hops)[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Learned 12:34:56:78:01:03 at 00-00-00-00-00-01.3[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:01:03 -> 12:34:56:78:01:03 0800 (1 hops)[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
+
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:07.720 00:07.205 Successfully matched event CheckInvariants:e96[1;m
+[1;36m[1;36mRound 72[1;37m[1;m
+[1;36m[1;44m00:07.835 00:07.319 Successfully matched event TrafficInjection:e100[1;m
+[1;36m[1;36mRound 73[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:07.838 00:07.320 Successfully matched event CheckInvariants:e101[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:01:03 -> 12:34:56:78:02:03 0800 (2 hops)[1;m
+
+[1;36m[1;44m00:07.944 00:07.426 Successfully matched event TrafficInjection:e104[1;m
+[1;36m[1;36mRound 74[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:07.946 00:07.426 Successfully matched event TrafficInjection:e105[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;36mRound 76[1;37m[1;m
+[1;33m[c1] SYNTHETIC BUG[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:03:03 -> 12:34:56:78:02:03 0800 (2 hops)[1;m
+
+[1;33m[c1] MATCH ofp_match[1;m
+
+[1;33m[c1]   wildcards: in_port (1 = 0x1)[1;m
+
+[1;33m[c1]   dl_src: 12:34:56:78:01:03[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:01:03 -> 12:34:56:78:03:03 0800 (3 hops)[1;m
+
+[1;33m[c1]   dl_dst: 12:34:56:78:03:03[1;m
+
+[1;33m[c1]   dl_vlan: 65535[1;m
+
+[1;33m[c1]   dl_vlan_pcp: 0[1;m
+
+[1;33m[c1]   dl_type: 0x800[1;m
+
+[1;33m[c1]   nw_tos: 0[1;m
+
+[1;33m[c1]   nw_proto: 1[1;m
+
+[1;33m[c1]   nw_src: 123.123.1.3[1;m
+
+[1;33m[c1]   nw_dst: 123.123.3.3[1;m
+
+[1;33m[c1]   tp_src: 0[1;m
+
+[1;33m[c1]   tp_dst: 0[1;m
+
+[1;33m[c1] [(00-00-00-00-00-01, 2), (00-00-00-00-00-02, 1), (00-00-00-00-00-03, 2)][1;m
+
+[1;41m[1;37mViolations at end of trace: ["{'hs_history': [(x^L) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([])], 'hdr': (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), 'visits': [100003, 200002, 300001, 100001], 'port': 200002}", "{'hs_history': [(x^L) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([])], 'hdr': (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), 'visits': [300001, 100001, 200002], 'port': 300001}", "{'hs_history': [(x^L) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([])], 'hdr': (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), 'visits': [200002, 300001, 100001], 'port': 200002}", "{'hs_history': [(x^L) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([])], 'hdr': (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), 'visits': [200003, 300001, 100001, 200002], 'port': 300001}", "{'hs_history': [(x^L) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([])], 'hdr': (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), 'visits': [100001, 200002, 300001], 'port': 100001}", "{'hs_history': [(x^L) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([])], 'hdr': (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), 'visits': [300003, 100001, 200002, 300001], 'port': 100001}"][1;m
+[1;42m[1;37mViolation found {'hs_history': [(x^L) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([])], 'hdr': (dl_src:12:34:56:78:01:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.1.3/32,nw_dst:123.123.3.3/32,tp_src:0,tp_dst:0) - ([]), 'visits': [100003, 200002, 300001, 100001], 'port': 200002}[1;m
+[1;36m[1;44mEvent Stats: Events matched: 9, timed out: 0
+Matches per event type:
+  ConnectToControllers 1
+  CheckInvariants 2
+  TrafficInjection 6
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+[1;36mKilling controller c1 (pid 714)[1;m
+Terminating child controllers... OK

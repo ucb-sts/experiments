@@ -1,0 +1,205 @@
+No DataplaneDrops to replay. We suggest you set Replayer's default_dp_permit=True 
+[1;36mStarting POX controller c1[1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+[1;33m[c1] POX 0.0.0 / Copyright 2011 James McCauley[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:POX 0.0.0 going up...[1;m
+
+[1;41m[1;33m[c1] DEBUG:core:Running on CPython (2.7.5/Mar 9 2014 22:15:05)[1;m
+
+[1;41m[1;33m[c1] INFO:core:POX 0.0.0 is up.[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening for connections on ('127.0.0.1', 6633)[1;m
+
+[1;33m[c1] Incoming true socket connected[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 49540][1;m
+
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 49540][1;m
+
+[1;36m[1;44m00:00.502 00:00.000 Successfully matched event ConnectToControllers:e1[1;m
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 49540][1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 3/3] Connected to 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Connect [Con 3/3][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 2/2] Connected to 00-00-00-00-00-02[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Connect [Con 2/2][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-02[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 1/1] Connected to 00-00-00-00-00-01[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Connect [Con 1/1][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-01[1;m
+
+[1;36m[1;44m00:07.931 00:07.426 Successfully matched event TrafficInjection:e104[1;m
+[1;36m[1;36mRound 74[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:07.939 00:07.426 Successfully matched event TrafficInjection:e105[1;m
+[1;36mForwarding dataplane event[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:07.942 00:07.427 Successfully matched event CheckInvariants:e106[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;33m[c1] SYNTHETIC BUG[1;m
+
+[1;33m[c1] MATCH ofp_match[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Learned 12:34:56:78:03:03 at 00-00-00-00-00-03.3[1;m
+
+[1;33m[c1]   wildcards: in_port (1 = 0x1)[1;m
+
+[1;33m[c1]   dl_src: 12:34:56:78:01:03[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:12:34:56:78:02:03 unknown -- flooding[1;m
+
+[1;33m[c1]   dl_dst: 12:34:56:78:03:03[1;m
+
+[1;33m[c1]   dl_vlan: 65535[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;33m[c1]   dl_vlan_pcp: 0[1;m
+
+[1;33m[c1]   dl_type: 0x800[1;m
+
+[1;33m[c1]   nw_tos: 0[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
+
+[1;33m[c1]   nw_proto: 1[1;m
+
+[1;33m[c1]   nw_src: 123.123.1.3[1;m
+
+[1;33m[c1]   nw_dst: 123.123.3.3[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Learned 12:34:56:78:01:03 at 00-00-00-00-00-01.3[1;m
+
+[1;33m[c1]   tp_src: 0[1;m
+
+[1;33m[c1]   tp_dst: 0[1;m
+
+[1;41m[1;33m[c1] ERROR:openflow.of_01:[Con 1/1]: Exception while handling OpenFlow message:[1;m
+
+[1;41m[1;33m[c1] [Con 1/1] ofp_packet_in[1;m
+
+[1;41m[1;33m[c1] [Con 1/1]   header:[1;m
+
+[1;41m[1;33m[c1] [Con 1/1]     version: 1[1;m
+
+[1;41m[1;33m[c1] [Con 1/1]     type:    10 (OFPT_PACKET_IN)[1;m
+
+[1;41m[1;33m[c1] [Con 1/1]     length:  104[1;m
+
+[1;41m[1;33m[c1] [Con 1/1]     xid:     1[1;m
+
+[1;41m[1;33m[c1] [Con 1/1]   buffer_id: 1[1;m
+
+[1;41m[1;33m[c1] [Con 1/1]   _total_len: 104[1;m
+
+[1;41m[1;33m[c1] [Con 1/1]   in_port: 3[1;m
+
+[1;41m[1;33m[c1] [Con 1/1]   reason: 0[1;m
+
+[1;41m[1;33m[c1] [Con 1/1]   data: '\x124Vx\x03\x03\x124Vx\x01\x03\x08\x00E\x00\x00H\xd2z\x00\x00@\x01\xad>{{\x01\x03{{\x03\x03\x00\x00\x0e7PingPingPingPingPingPingPingPingPingPingPingPing'[1;m
+
+[1;41m[1;33m[c1] Traceback (most recent call last):[1;m
+
+[1;41m[1;33m[c1]   File "/Users/cs/Research/UCB/code/sts/pox/pox/openflow/of_01.py", line 624, in read[1;m
+
+[1;41m[1;33m[c1]     h(self, msg)[1;m
+
+[1;41m[1;33m[c1]   File "/Users/cs/Research/UCB/code/sts/pox/pox/openflow/of_01.py", line 153, in handle_PACKET_IN[1;m
+
+[1;41m[1;33m[c1]     con.raiseEvent(PacketIn, con, msg)[1;m
+
+[1;41m[1;33m[c1]   File "/Users/cs/Research/UCB/code/sts/pox/pox/lib/revent/revent.py", line 280, in raiseEvent[1;m
+
+[1;41m[1;33m[c1]     rv = event._invoke(handler, *args, **kw)[1;m
+
+[1;41m[1;33m[c1]   File "/Users/cs/Research/UCB/code/sts/pox/pox/lib/revent/revent.py", line 158, in _invoke[1;m
+
+[1;41m[1;33m[c1]     return handler(self, *args, **kw)[1;m
+
+[1;41m[1;33m[c1]   File "/Users/cs/Research/UCB/code/sts/pox/pox/forwarding/l2_multi_broken_floyd.py", line 291, in _handle_PacketIn[1;m
+
+[1;41m[1;33m[c1]     self.install_path(dest[0], dest[1], match, event)[1;m
+
+[1;41m[1;33m[c1]   File "/Users/cs/Research/UCB/code/sts/pox/pox/forwarding/l2_multi_broken_floyd.py", line 178, in install_path[1;m
+
+[1;41m[1;33m[c1]     _get_path(switches[2], dst_sw, 1)[:-1] + \[1;m
+
+[1;41m[1;33m[c1] TypeError: 'NoneType' object has no attribute '__getitem__'[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
+
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:08.055 00:07.537 Successfully matched event CheckInvariants:e114[1;m
+[1;36m[1;36mRound 75[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_broken_floyd:Packet from 12:34:56:78:03:03 arrived at 00-00-00-00-00-02.1 without flow[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:12:34:56:78:02:03 unknown -- flooding[1;m
+
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_broken_floyd:Packet from 12:34:56:78:03:03 arrived at 00-00-00-00-00-01.1 without flow[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:12:34:56:78:02:03 unknown -- flooding[1;m
+
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:08.168 00:07.648 Successfully matched event CheckInvariants:e123[1;m
+[1;36m[1;36mRound 76[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_broken_floyd:Packet from 12:34:56:78:03:03 arrived at 00-00-00-00-00-02.2 without flow[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:12:34:56:78:02:03 unknown -- flooding[1;m
+
+[1;41m[1;33m[c1] WARNING:forwarding.l2_multi_broken_floyd:Packet from 12:34:56:78:03:03 arrived at 00-00-00-00-00-01.2 without flow[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:12:34:56:78:02:03 unknown -- flooding[1;m
+
+[1;36m[1;44m00:09.173 00:07.662 Successfully matched event WaitTime:e125[1;m
+[1;36m[1;36mRound -1[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44mEvent Stats: Events matched: 7, timed out: 0
+Matches per event type:
+  ConnectToControllers 1
+  WaitTime 1
+  TrafficInjection 2
+  CheckInvariants 3
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+[1;36mKilling controller c1 (pid 691)[1;m
+Terminating child controllers... OK

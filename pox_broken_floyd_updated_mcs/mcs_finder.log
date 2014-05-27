@@ -1,0 +1,58 @@
+Violation reproduced successfully! Proceeding with pruning
+Subsets:
+l/0: e87 e88 e89 e96 e100 e101
+r/0: e104 e105 e106 e114 e123 e125
+Current subset: l/0: e87 e88 e89 e96 e100 e101
+No violation in 0'th...
+Current subset: r/0: e104 e105 e106 e114 e123 e125
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.l/1: e87 e88 e89
+il/0.r/1: e96 e100 e101
+Current subset: il/0.l/1: e87 e88 e89
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.l/1.l/2: e87 e88
+il/0.l/1.r/2: e89
+Current subset: il/0.l/1.l/2: e87 e88
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.l/1.l/2.l/3: e87
+il/0.l/1.l/2.r/3: e88
+Current subset: il/0.l/1.l/2.l/3: e87
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [TrafficInjection:e87:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:03:[IPAddr('123.123.1.3')] Packet:[12:34:56:78:01:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:af46[123.123.1.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, 1)]
+Recursing on right half
+Subsets:
+ir/0.l/1: e104 e105 e106
+ir/0.r/1: e114 e123 e125
+Current subset: ir/0.l/1: e104 e105 e106
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.l/1.l/2: e104 e105
+ir/0.l/1.r/2: e106
+Current subset: ir/0.l/1.l/2: e104 e105
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.l/1.l/2.l/3: e104
+ir/0.l/1.l/2.r/3: e105
+Current subset: ir/0.l/1.l/2.l/3: e104
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [TrafficInjection:e104:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:03:[IPAddr('123.123.1.3')] Packet:[12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:ad3e[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)]
+Warning: MCS did not result in violation. Trying replay again without timed out events.
+Warning! Final MCS did not result in violation, even after ignoring timed out internal events. Your run ''
+                   '' is probably effected by non-determinism.
+Try setting MCSFinder's max_replays_per_subsequence parameter in your config file (e.g. max_replays_per_subsequence=10)
+If that still doesn't work, see tools/visualization/visualize1D.html for debugging
+=== Total replays: 11 ===
+Final MCS (2 elements):
+ - TrafficInjection:e87
+ - TrafficInjection:e104

@@ -1,0 +1,99 @@
+{
+  "_iteration": 6,
+  "_runtime_stats_path": "experiments/pox_broken_floyd_updated_mcs/intermcs_4_/runtime_stats.json",
+  "ambiguous_counts": {},
+  "ambiguous_events": {},
+  "buffered_message_receipts": {
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": []
+  },
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./pox.py --verbose openflow.discovery forwarding.l2_multi_broken_floyd  sts.util.socket_mux.pox_monkeypatcher openflow.of_01 --address=__address__  --port=__port__', label='c1', address='127.0.0.1', cwd='pox')],\n                 topology_class=MeshTopology,\n                 topology_params=\"num_switches=3\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=True,\n                 ignore_interposition=True,\n                 kill_controllers_on_exit=True)",
+  "early_internal_events": {
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": []
+  },
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 12,
+    "1": 12,
+    "2": 12,
+    "3": 9,
+    "4": 8,
+    "5": 7
+  },
+  "matched_events": {
+    "2": {
+      "CheckInvariants": 2,
+      "ConnectToControllers": 1,
+      "TrafficInjection": 4
+    },
+    "3": {
+      "CheckInvariants": 3,
+      "ConnectToControllers": 1,
+      "TrafficInjection": 2,
+      "WaitTime": 1
+    },
+    "4": {
+      "CheckInvariants": 3,
+      "ConnectToControllers": 1,
+      "TrafficInjection": 5,
+      "WaitTime": 1
+    },
+    "5": {
+      "CheckInvariants": 3,
+      "ConnectToControllers": 1,
+      "TrafficInjection": 4,
+      "WaitTime": 1
+    },
+    "6": {
+      "CheckInvariants": 3,
+      "ConnectToControllers": 1,
+      "TrafficInjection": 3,
+      "WaitTime": 1
+    },
+    "7": {
+      "CheckInvariants": 3,
+      "ConnectToControllers": 1,
+      "TrafficInjection": 6
+    }
+  },
+  "new_internal_events": {
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": []
+  },
+  "original_duration_seconds": 7.662648916244507,
+  "peeker": false,
+  "prune_duration_seconds": 0,
+  "prune_start_epoch": 1401160937.906354,
+  "replay_duration_seconds": 10.873309850692749,
+  "replay_end_epoch": 1401160937.90618,
+  "replay_start_epoch": 1401160927.03287,
+  "subsequence_id": 0,
+  "timed_out_events": {
+    "2": {},
+    "3": {},
+    "4": {},
+    "5": {},
+    "6": {},
+    "7": {}
+  },
+  "total_events": 14,
+  "total_inputs": 12,
+  "total_inputs_replayed": 57,
+  "total_replays": 7,
+  "violation_found_in_run": {
+    "0": 4
+  }
+}
