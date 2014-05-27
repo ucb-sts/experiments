@@ -1,0 +1,44 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/pox_broken_floyd/orig_config.py",
+    "-n",
+    "pox_broken_floyd_updated"
+  ],
+  "cwd": "/Users/cs/Research/UCB/code/sts",
+  "host": {
+    "cpu_info": "",
+    "free": "",
+    "name": "yossarian",
+    "num_cores": "0",
+    "uptime": "16:46  up 2 days,  2:36, 3 users, load averages: 0.90 1.17 1.18"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9",
+      "diff": "",
+      "status": "HEAD detached at d631935\nnothing to commit, working directory clean"
+    },
+    "pox": {
+      "branch": "debugger",
+      "commit": "d0216b722e1471a7f8eb15a3afd808b34de5f1f4",
+      "diff": "",
+      "status": "On branch debugger\nYour branch is up-to-date with 'origin/debugger'.\n\nnothing to commit, working directory clean"
+    },
+    "sts": {
+      "branch": "master",
+      "commit": "e19d3cd451f6fa52469533731d05976000795882",
+      "diff": "",
+      "status": "On branch master\nYour branch is up-to-date with 'origin/master'.\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\n\tdart_pox/\n\tpox_carp/\n\ttools/default_pylint.rc\n\nnothing added to commit but untracked files present (use \"git add\" to track)"
+    }
+  },
+  "sys": {
+    "lsb_release": "",
+    "uname": "Darwin yossarian 13.2.0 Darwin Kernel Version 13.2.0: Thu Apr 17 23:03:13 PDT 2014; root:xnu-2422.100.13~1/RELEASE_X86_64 x86_64"
+  },
+  "timestamp": "2014_05_26_16_46_57",
+  "user": "cs"
+}
