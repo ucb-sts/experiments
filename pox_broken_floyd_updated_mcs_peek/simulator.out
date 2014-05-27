@@ -1,0 +1,824 @@
+INFO:events:Transforming dag
+INFO:Controller: =====> Starting POX Controller <===== 
+[1;36mStarting POX controller c1[1;m
+INFO:Controller:Launching controller c1: ./pox.py --verbose openflow.discovery forwarding.l2_multi_broken_floyd sts.util.socket_mux.pox_monkeypatcher --snapshot_address=../snapshot_socket openflow.of_01 --address=127.0.0.1 --port=6633
+connect_socket_with_backoff ./snapshot_socket
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+[1;33m[c1] POX 0.0.0 / Copyright 2011 James McCauley[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Creating snapshot listen socket[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:accept()ing snapshot socket[1;m
+
+INFO:simulation:Launched controller c1: ./pox.py --verbose openflow.discovery forwarding.l2_multi_broken_floyd sts.util.socket_mux.pox_monkeypatcher --snapshot_address=../snapshot_socket openflow.of_01 --address=127.0.0.1 --port=6633 [PID 953]
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:snapshot socket accept()ed[1;m
+
+INFO:simulation:Creating topology...
+[1;41m[1;33m[c1] DEBUG:core:POX 0.0.0 going up...[1;m
+connect_socket_with_backoff ('127.0.0.1', 6633)
+
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+[1;41m[1;33m[c1] DEBUG:core:Running on CPython (2.7.5/Mar 9 2014 22:15:05)[1;m
+
+[1;41m[1;33m[c1] INFO:core:POX 0.0.0 is up.[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening for connections on ('127.0.0.1', 6633)[1;m
+
+[1;36m[1;44m00:00.000 00:00.000 Successfully matched event NOPInput:e126[1;m 
+[1;33m[c1] Incoming true socket connected[1;m
+[1;36m[1;44mEvent Stats: Events matched: 1, timed out: 0
+Matches per event type:
+  NOPInput 1
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+INFO:Controller:Initiating snapshot
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Received SNAPSHOT signal in 953. fork()ing[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Sending READY 956[1;m
+
+INFO:peeker:Injecting input ConnectToControllers:e1
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 49809][1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+INFO:peeker:peek()'ing for 7.149269 seconds
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 49809][1;m
+
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 49809][1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 1/1] Connected to 00-00-00-00-00-01[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Connect [Con 1/1][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-01[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 3/3] Connected to 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Connect [Con 3/3][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 2/2] Connected to 00-00-00-00-00-02[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Connect [Con 2/2][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-02[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:Received packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x108073f90><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
+
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:Received packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x10806ea90><tlv end> on interface eth3
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
+
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:Received packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x1080dfa10><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:Received packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x1080e2bd0><tlv end> on interface eth1
+[1;36mKilling controller c1 (pid 953)[1;m
+Terminating child controllers...close() called on stdout during concurrent operation
+ OK
+127.0.0.1 - - [26/May/2014 20:52:23] "POST / HTTP/1.1" 200 -
+INFO:peeker:Expected total: 73
+INFO:peeker:Inferred total: 73
+INFO:peeker:Matched events total: 66
+INFO:peeker:Unmatched events total: 7
+INFO:Controller:Initiating snapshot proceed
+connect_socket_with_backoff ('127.0.0.1', 6633)
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Read command PROCEED[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Received PROCEED command. Wiring new mux socket[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:accept()ing new mux socket[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Done rewiring[1;m
+
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 49809][1;m
+
+[1;36m[1;44m00:00.001 00:00.000 Successfully matched event ConnectToControllers:e1[1;m
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 49809][1;m
+[1;36m[1;44m00:00.006 00:00.002 Successfully matched event ControlMessageReceive:i2 c c1 -> s 1 [ofp_hello: ][1;m
+
+[1;36m[1;36mRound 1[1;37m[1;m
+[1;36m[1;44m00:00.006 00:00.002 Successfully matched event ControlMessageReceive:i3 c c1 -> s 3 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.006 00:00.002 Successfully matched event ControlMessageReceive:i4 c c1 -> s 2 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.007 00:00.002 Successfully matched event ControlMessageSend:i5 c 1 -> s c1 [ofp_hello: ][1;m
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 49809][1;m
+[1;36m[1;44m00:00.007 00:00.003 Successfully matched event ControlMessageSend:i6 c 3 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.007 00:00.003 Successfully matched event ControlMessageSend:i7 c 2 -> s c1 [ofp_hello: ][1;m
+
+[1;36m[1;44m00:00.009 00:00.104 Successfully matched event ControlMessageReceive:i8 c c1 -> s 1 [ofp_features_request: ][1;m
+[1;36m[1;36mRound 2[1;37m[1;m
+[1;36m[1;44m00:00.009 00:00.105 Successfully matched event ControlMessageReceive:i9 c c1 -> s 3 [ofp_features_request: ][1;m
+[1;36m[1;44m00:00.009 00:00.105 Successfully matched event ControlMessageReceive:i10 c c1 -> s 2 [ofp_features_request: ][1;m
+[1;36m[1;44m00:00.010 00:00.106 Successfully matched event ControlMessageSend:i11 c 1 -> s c1 [ofp_features_reply: datapath_id=1][1;m
+[1;36m[1;44m00:00.010 00:00.106 Successfully matched event ControlMessageSend:i12 c 3 -> s c1 [ofp_features_reply: datapath_id=3][1;m
+[1;36m[1;44m00:00.010 00:00.107 Successfully matched event ControlMessageSend:i13 c 2 -> s c1 [ofp_features_reply: datapath_id=2][1;m
+[1;36m[1;44m00:00.012 00:00.208 Successfully matched event ControlMessageReceive:i14 c c1 -> s 1 [ofp_set_config: ][1;m
+[1;36m[1;36mRound 3[1;37m[1;m
+[1;36m[1;44m00:00.013 00:00.209 Successfully matched event ControlMessageReceive:i15 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:00.014 00:00.209 Successfully matched event ControlMessageReceive:i16 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:00.014 00:00.210 Successfully matched event ControlMessageReceive:i17 c c1 -> s 3 [ofp_set_config: ][1;m
+[1;36m[1;44m00:00.015 00:00.210 Successfully matched event ControlMessageReceive:i18 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:00.015 00:00.210 Successfully matched event ControlMessageReceive:i19 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:00.015 00:00.211 Successfully matched event ControlMessageReceive:i20 c c1 -> s 2 [ofp_set_config: ][1;m
+[1;36m[1;44m00:00.015 00:00.211 Successfully matched event ControlMessageReceive:i21 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:00.016 00:00.211 Successfully matched event ControlMessageReceive:i22 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:00.016 00:00.212 Successfully matched event ControlMessageSend:i23 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:00.016 00:00.212 Successfully matched event ControlMessageSend:i24 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:00.016 00:00.212 Successfully matched event ControlMessageSend:i25 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 3/3] Connected to 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Connect [Con 3/3][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 2/2] Connected to 00-00-00-00-00-02[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Connect [Con 2/2][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-02[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 1/1] Connected to 00-00-00-00-00-01[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Connect [Con 1/1][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-01[1;m
+
+[1;36m[1;44m00:00.022 00:00.314 Successfully matched event ControlMessageReceive:i26 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;36mRound 4[1;37m[1;m
+[1;36m[1;44m00:00.022 00:00.315 Successfully matched event ControlMessageReceive:i27 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:00.023 00:00.316 Successfully matched event ControlMessageReceive:i28 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;36m[1;44m00:00.578 00:00.823 Successfully matched event ControlMessageReceive:i29 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 9[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:00.579 00:00.926 Successfully matched event ControlMessageSend:i31 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;36mRound 10[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
+
+[1;36m[1;44m00:00.581 00:01.027 Successfully matched event ControlMessageReceive:i32 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 11[1;37m[1;m
+[1;36m[1;44m00:00.582 00:01.028 Successfully matched event ControlMessageReceive:i33 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:00.583 00:01.028 Successfully matched event ControlMessageReceive:i34 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:00.583 00:01.029 Successfully matched event ControlMessageReceive:i35 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;44m00:01.134 00:01.329 Successfully matched event ControlMessageReceive:i36 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 14[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:01.135 00:01.432 Successfully matched event ControlMessageSend:i38 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;36mRound 15[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
+
+[1;36m[1;44m00:01.137 00:01.534 Successfully matched event ControlMessageReceive:i39 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 16[1;37m[1;m
+[1;36m[1;44m00:01.138 00:01.535 Successfully matched event ControlMessageReceive:i40 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;44m00:01.138 00:01.535 Successfully matched event ControlMessageReceive:i41 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:01.139 00:01.536 Successfully matched event ControlMessageReceive:i42 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:01.691 00:01.941 Successfully matched event ControlMessageReceive:i43 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 20[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.3.3')]:Received packet [00:00:00:00:03:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:33><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x108235310><tlv end> on interface eth3
+[1;36m[1;44m00:02.248 00:02.442 Successfully matched event ControlMessageReceive:i45 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 25[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:02.249 00:02.544 Successfully matched event ControlMessageSend:i47 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;36mRound 26[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;36m[1;44m00:02.251 00:02.646 Successfully matched event ControlMessageReceive:i48 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 27[1;37m[1;m
+[1;36m[1;44m00:02.252 00:02.647 Successfully matched event ControlMessageReceive:i49 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:02.252 00:02.648 Successfully matched event ControlMessageReceive:i50 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;44m00:02.252 00:02.648 Successfully matched event ControlMessageReceive:i51 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:02.804 00:03.053 Successfully matched event ControlMessageReceive:i52 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 31[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:02.805 00:03.156 Successfully matched event ControlMessageSend:i54 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36m[1;36mRound 32[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
+
+[1;36m[1;44m00:02.806 00:03.258 Successfully matched event ControlMessageReceive:i55 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 33[1;37m[1;m
+[1;36m[1;44m00:02.807 00:03.258 Successfully matched event ControlMessageReceive:i56 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;44m00:02.808 00:03.259 Successfully matched event ControlMessageReceive:i57 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:02.808 00:03.259 Successfully matched event ControlMessageReceive:i58 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:03.361 00:03.555 Successfully matched event ControlMessageReceive:i59 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 36[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:Received packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x108240c10><tlv end> on interface eth2
+[1;36m[1;44m00:03.917 00:04.164 Successfully matched event ControlMessageReceive:i61 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 42[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:03.917 00:04.266 Successfully matched event ControlMessageSend:i63 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36m[1;36mRound 43[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
+
+[1;36m[1;44m00:03.919 00:04.368 Successfully matched event ControlMessageReceive:i64 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 44[1;37m[1;m
+[1;36m[1;44m00:03.920 00:04.369 Successfully matched event ControlMessageReceive:i65 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:03.921 00:04.370 Successfully matched event ControlMessageReceive:i66 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;44m00:03.921 00:04.370 Successfully matched event ControlMessageReceive:i67 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:04.473 00:04.669 Successfully matched event ControlMessageReceive:i68 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 47[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:04.474 00:04.771 Successfully matched event ControlMessageSend:i70 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36m[1;36mRound 48[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link detected: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;36m[1;44m00:04.476 00:04.873 Successfully matched event ControlMessageReceive:i71 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 49[1;37m[1;m
+[1;36m[1;44m00:04.477 00:04.874 Successfully matched event ControlMessageReceive:i72 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:04.477 00:04.875 Successfully matched event ControlMessageReceive:i73 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:04.478 00:04.875 Successfully matched event ControlMessageReceive:i74 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;44m00:05.029 00:05.281 Successfully matched event ControlMessageReceive:i75 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 53[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:Received packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x1082471d0><tlv end> on interface eth1
+[1;36m[1;44m00:06.848 00:07.099 Successfully matched event NOPInput:e200[1;m
+[1;36m[1;36mRound 71[1;37m[1;m
+[1;36m[1;44mEvent Stats: Events matched: 68, timed out: 0
+Matches per event type:
+  ConnectToControllers 1
+  NOPInput 1
+  ControlMessageSend 15
+		  ofp_features_reply : 3
+		  ofp_packet_in : 6
+		  ofp_hello : 3
+		  ofp_barrier_reply : 3
+  ControlMessageReceive 51
+		  ofp_barrier_request : 3
+		  ofp_hello : 3
+		  ofp_set_config : 3
+		  ofp_packet_out : 15
+		  ofp_flow_mod : 24
+		  ofp_features_request : 3
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:af46[123.123.1.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m00:00.000 00:00.000 Successfully matched event TrafficInjection:e87[1;m
+[1;36m[1;36mRound 71[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:00.001 00:00.000 Successfully matched event NOPInput:e201[1;m
+[1;36m[1;44mEvent Stats: Events matched: 2, timed out: 0
+Matches per event type:
+  NOPInput 1
+  TrafficInjection 1
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:ad45[123.123.2.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m00:00.000 00:00.000 Successfully matched event TrafficInjection:e88[1;m
+[1;36m[1;36mRound 71[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:00.001 00:00.000 Successfully matched event NOPInput:e202[1;m
+[1;36m[1;44mEvent Stats: Events matched: 2, timed out: 0
+Matches per event type:
+  NOPInput 1
+  TrafficInjection 1
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+INFO:Controller:Initiating snapshot
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Received SNAPSHOT signal in 956. fork()ing[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Sending READY 961[1;m
+
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+INFO:peeker:Injecting input TrafficInjection:e89
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:ab44[123.123.3.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+INFO:peeker:peek()'ing for 0.155224 seconds
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Learned 12:34:56:78:03:03 at 00-00-00-00-00-03.3[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:03:03 -> 12:34:56:78:03:03 0800 (1 hops)[1;m
+
+WARNING:FuzzSoftwareSwitch(3):out_port 3 == in_port. Dropping
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:Received packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x10824a9d0><tlv end> on interface eth2
+[1;36mKilling controller c1 (pid 956)[1;m
+Terminating child controllers... OK
+127.0.0.1 - - [26/May/2014 20:52:32] "POST / HTTP/1.1" 200 -
+INFO:peeker:Expected total: 3
+INFO:peeker:Inferred total: 3
+INFO:peeker:Matched events total: 1
+INFO:peeker:Unmatched events total: 2
+INFO:Controller:Initiating snapshot proceed
+connect_socket_with_backoff ('127.0.0.1', 6633)
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Read command PROCEED[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Received PROCEED command. Wiring new mux socket[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:accept()ing new mux socket[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Done rewiring[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:ab44[123.123.3.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+
+[1;36m[1;44m00:00.000 00:00.000 Successfully matched event TrafficInjection:e89[1;m
+[1;36m[1;36mRound 71[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:00.001 00:00.104 Successfully matched event ControlMessageSend:i94 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.3.3'}, in_port=3][1;m
+[1;36m[1;36mRound 72[1;37m[1;m
+[1;36m[1;44m00:00.001 00:00.105 Successfully matched event NOPInput:e206[1;m
+[1;36m[1;44mEvent Stats: Events matched: 3, timed out: 0
+Matches per event type:
+  NOPInput 1
+  TrafficInjection 1
+  ControlMessageSend 1
+		  ofp_packet_in : 1
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+INFO:Controller:Initiating snapshot
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Received SNAPSHOT signal in 961. fork()ing[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Sending READY 963[1;m
+
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Learned 12:34:56:78:03:03 at 00-00-00-00-00-03.3[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:03:03 -> 12:34:56:78:03:03 0800 (1 hops)[1;m
+
+INFO:peeker:Injecting input CheckInvariants:e96
+[1;42m[1;37mNo correctness violations![1;m
+INFO:peeker:peek()'ing for 0.163822 seconds
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Installing path for 12:34:56:78:03:03 -> 12:34:56:78:03:03 0800 (1 hops)[1;m
+
+WARNING:FuzzSoftwareSwitch(3):out_port 3 == in_port. Dropping
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.3')]:Received packet [00:00:00:00:02:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:32><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x108073ad0><tlv end> on interface eth2
+[1;36mKilling controller c1 (pid 961)[1;m
+Terminating child controllers... OK
+127.0.0.1 - - [26/May/2014 20:52:34] "POST / HTTP/1.1" 200 -
+INFO:peeker:Expected total: 3
+INFO:peeker:Inferred total: 5
+INFO:peeker:Matched events total: 1
+INFO:peeker:Unmatched events total: 2
+INFO:Controller:Initiating snapshot proceed
+connect_socket_with_backoff ('127.0.0.1', 6633)
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Read command PROCEED[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Received PROCEED command. Wiring new mux socket[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:accept()ing new mux socket[1;m
+
+[1;42m[1;37mNo correctness violations![1;m 
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Done rewiring[1;m
+[1;36m[1;44m00:00.002 00:00.000 Successfully matched event CheckInvariants:e96[1;m
+
+[1;36m[1;36mRound 72[1;37m[1;m
+WARNING:FuzzSoftwareSwitch(3):out_port 3 == in_port. Dropping
+[1;36m[1;44m00:00.003 00:00.111 Successfully matched event ControlMessageReceive:i98 c c1 -> s 3 [ofp_flow_mod: hard_timeout=30, out_port=65535, priority=32768, idle_timeout=10, command=add, actions=(u'output(3)',), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.3.3/32,nw_dst:123.123.3.3/32,tp_src:8,tp_dst:0,in_port:None][1;m[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.2 -> 00-00-00-00-00-01.1[1;m
+
+
+[1;36m[1;36mRound 73[1;37m[1;m
+[1;36m[1;44m00:00.003 00:00.113 Successfully matched event NOPInput:e212[1;m[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-03.1 -> 00-00-00-00-00-02.1[1;m
+
+
+[1;36m[1;44mEvent Stats: Events matched: 3, timed out: 0
+Matches per event type:
+  NOPInput 1
+  CheckInvariants 1
+  ControlMessageReceive 1
+		  ofp_flow_mod : 1
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:ae40[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m00:00.000 00:00.000 Successfully matched event TrafficInjection:e100[1;m
+[1;36m[1;36mRound 73[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:00.001 00:00.000 Successfully matched event NOPInput:e213[1;m
+[1;36m[1;44mEvent Stats: Events matched: 2, timed out: 0
+Matches per event type:
+  NOPInput 1
+  TrafficInjection 1
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+INFO:Controller:Initiating snapshot
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Received SNAPSHOT signal in 963. fork()ing[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Sending READY 965[1;m
+
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+INFO:peeker:Injecting input CheckInvariants:e101
+[1;42m[1;37mNo correctness violations![1;m
+INFO:peeker:peek()'ing for 0.155967 seconds
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mKilling controller c1 (pid 963)[1;m
+Terminating child controllers... OK
+127.0.0.1 - - [26/May/2014 20:52:37] "POST / HTTP/1.1" 200 -
+INFO:peeker:Expected total: 1
+INFO:peeker:Inferred total: 12
+INFO:peeker:Matched events total: 0
+INFO:peeker:Unmatched events total: 1
+INFO:Controller:Initiating snapshot proceed
+connect_socket_with_backoff ('127.0.0.1', 6633)
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Read command PROCEED[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Received PROCEED command. Wiring new mux socket[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:accept()ing new mux socket[1;m
+
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:00.002 00:00.000 Successfully matched event CheckInvariants:e101[1;m
+[1;36m[1;36mRound 73[1;37m[1;m[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Done rewiring[1;m
+
+
+[1;36m[1;44m00:00.109 00:00.105 Successfully matched event NOPInput:e226[1;m
+[1;36m[1;36mRound 74[1;37m[1;m
+[1;36m[1;44mEvent Stats: Events matched: 2, timed out: 0
+Matches per event type:
+  NOPInput 1
+  CheckInvariants 1
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:ad3e[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m00:00.000 00:00.000 Successfully matched event TrafficInjection:e104[1;m
+[1;36m[1;36mRound 74[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:00.001 00:00.000 Successfully matched event NOPInput:e227[1;m
+[1;36m[1;44mEvent Stats: Events matched: 2, timed out: 0
+Matches per event type:
+  NOPInput 1
+  TrafficInjection 1
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:ac3d[123.123.3.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m00:00.000 00:00.000 Successfully matched event TrafficInjection:e105[1;m
+[1;36m[1;36mRound 74[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36m[1;44m00:00.000 00:00.000 Successfully matched event NOPInput:e228[1;m
+[1;36m[1;44mEvent Stats: Events matched: 2, timed out: 0
+Matches per event type:
+  NOPInput 1
+  TrafficInjection 1
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+INFO:Controller:Initiating snapshot
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Received SNAPSHOT signal in 965. fork()ing[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Sending READY 967[1;m
+
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+INFO:peeker:Injecting input CheckInvariants:e106
+[1;42m[1;37mNo correctness violations![1;m
+INFO:peeker:peek()'ing for 0.159761 seconds
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.3')]:Received packet [00:00:00:00:01:03>01:23:20:00:00:01:LLDP]|<chasis ID:64:70:69:64:3a:31><port ID:33><ttl:120><pox.lib.packet.lldp.system_description object at 0x108240990><tlv end> on interface eth1
+[1;36mKilling controller c1 (pid 965)[1;m
+Terminating child controllers... OK
+127.0.0.1 - - [26/May/2014 20:52:39] "POST / HTTP/1.1" 200 -
+INFO:peeker:Expected total: 5
+INFO:peeker:Inferred total: 1
+INFO:peeker:Matched events total: 0
+INFO:peeker:Unmatched events total: 5
+INFO:Controller:Initiating snapshot proceed
+connect_socket_with_backoff ('127.0.0.1', 6633)
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Read command PROCEED[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Received PROCEED command. Wiring new mux socket[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:accept()ing new mux socket[1;m
+
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:00.002 00:00.000 Successfully matched event CheckInvariants:e106[1;m
+[1;36m[1;36mRound 74[1;37m[1;m
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Done rewiring[1;m
+
+[1;36m[1;44m00:00.113 00:00.109 Successfully matched event NOPInput:e230[1;m
+[1;36m[1;36mRound 75[1;37m[1;m
+[1;36m[1;44mEvent Stats: Events matched: 2, timed out: 0
+Matches per event type:
+  NOPInput 1
+  CheckInvariants 1
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+INFO:Controller:Initiating snapshot
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Received SNAPSHOT signal in 967. fork()ing[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Sending READY 969[1;m
+
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
+
+INFO:peeker:Injecting input CheckInvariants:e114
+[1;42m[1;37mNo correctness violations![1;m
+INFO:peeker:peek()'ing for 0.161366 seconds
+[1;36mKilling controller c1 (pid 967)[1;m
+Terminating child controllers... OK
+127.0.0.1 - - [26/May/2014 20:52:42] "POST / HTTP/1.1" 200 -
+INFO:peeker:Expected total: 6
+INFO:peeker:Inferred total: 0
+INFO:peeker:Matched events total: 0
+INFO:peeker:Unmatched events total: 6
+INFO:Controller:Initiating snapshot proceed
+connect_socket_with_backoff ('127.0.0.1', 6633)
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Read command PROCEED[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Received PROCEED command. Wiring new mux socket[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:accept()ing new mux socket[1;m
+
+[1;42m[1;37mNo correctness violations![1;m
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Done rewiring[1;m
+[1;36m[1;44m00:00.002 00:00.000 Successfully matched event CheckInvariants:e114[1;m
+
+[1;36m[1;36mRound 75[1;37m[1;m
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.1 -> 00-00-00-00-00-03.1[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-02.2 -> 00-00-00-00-00-01.2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.2 -> 00-00-00-00-00-02.2[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.discovery:link timeout: 00-00-00-00-00-01.1 -> 00-00-00-00-00-03.2[1;m
+
+[1;36m[1;44m00:00.115 00:00.111 Successfully matched event NOPInput:e231[1;m
+[1;36m[1;36mRound 76[1;37m[1;m
+[1;36m[1;44mEvent Stats: Events matched: 2, timed out: 0
+Matches per event type:
+  NOPInput 1
+  CheckInvariants 1
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:00.001 00:00.000 Successfully matched event CheckInvariants:e123[1;m
+[1;36m[1;36mRound 76[1;37m[1;m
+[1;36m[1;44m00:00.017 00:00.014 Successfully matched event NOPInput:e232[1;m
+[1;36m[1;36mRound -1[1;37m[1;m
+[1;36m[1;44mEvent Stats: Events matched: 2, timed out: 0
+Matches per event type:
+  NOPInput 1
+  CheckInvariants 1
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+[1;36mKilling controller c1 (pid 969)[1;m
+Terminating child controllers... OK
+INFO:events:Proceeding with normal replay
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+No DataplaneDrops to replay. We suggest you set Replayer's default_dp_permit=True 
+INFO:Controller: =====> Starting POX Controller <===== 
+[1;36mStarting POX controller c1[1;m
+INFO:Controller:Launching controller c1: ./pox.py --verbose openflow.discovery forwarding.l2_multi_broken_floyd sts.util.socket_mux.pox_monkeypatcher --snapshot_address=../snapshot_socket openflow.of_01 --address=127.0.0.1 --port=6633
+connect_socket_with_backoff ./snapshot_socket
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+[1;33m[c1] POX 0.0.0 / Copyright 2011 James McCauley[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:Creating snapshot listen socket[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:accept()ing snapshot socket[1;m
+
+[1;41m[1;33m[c1] DEBUG:ext.sts.util.socket_mux.pox_monkeypatcher:snapshot socket accept()ed[1;m
+INFO:simulation:Launched controller c1: ./pox.py --verbose openflow.discovery forwarding.l2_multi_broken_floyd sts.util.socket_mux.pox_monkeypatcher --snapshot_address=../snapshot_socket openflow.of_01 --address=127.0.0.1 --port=6633 [PID 972]
+
+INFO:simulation:Creating topology...
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;41m[1;33m[c1] DEBUG:core:POX 0.0.0 going up...[1;m
+
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+[1;41m[1;33m[c1] DEBUG:core:Running on CPython (2.7.5/Mar 9 2014 22:15:05)[1;m
+
+[1;41m[1;33m[c1] INFO:core:POX 0.0.0 is up.[1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening for connections on ('127.0.0.1', 6633)[1;m
+
+[1;33m[c1] Incoming true socket connected[1;m
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+connect_socket_with_backoff ('127.0.0.1', 6633)[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 49872][1;m
+
+
+connect_socket_with_backoff ('127.0.0.1', 6633)
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 49872][1;m
+[1;36m[1;44m00:00.502 00:00.000 Successfully matched event ConnectToControllers:e1[1;m
+
+[1;33m[c1] Incoming MockSocket connection [u'127.0.0.1', 49872][1;m
+
+[1;36m[1;44m00:00.504 00:00.002 Successfully matched event ControlMessageReceive:i2 c c1 -> s 1 [ofp_hello: ][1;m
+[1;36m[1;36mRound 1[1;37m[1;m
+[1;36m[1;44m00:00.505 00:00.002 Successfully matched event ControlMessageReceive:i3 c c1 -> s 3 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.505 00:00.002 Successfully matched event ControlMessageReceive:i4 c c1 -> s 2 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.506 00:00.002 Successfully matched event ControlMessageSend:i5 c 1 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.506 00:00.003 Successfully matched event ControlMessageSend:i6 c 3 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.506 00:00.003 Successfully matched event ControlMessageSend:i7 c 2 -> s c1 [ofp_hello: ][1;m
+[1;36m[1;44m00:00.508 00:00.104 Successfully matched event ControlMessageReceive:i8 c c1 -> s 1 [ofp_features_request: ][1;m
+[1;36m[1;36mRound 2[1;37m[1;m
+[1;36m[1;44m00:00.509 00:00.105 Successfully matched event ControlMessageReceive:i9 c c1 -> s 3 [ofp_features_request: ][1;m
+[1;36m[1;44m00:00.509 00:00.105 Successfully matched event ControlMessageReceive:i10 c c1 -> s 2 [ofp_features_request: ][1;m
+[1;36m[1;44m00:00.509 00:00.106 Successfully matched event ControlMessageSend:i11 c 1 -> s c1 [ofp_features_reply: datapath_id=1][1;m
+[1;36m[1;44m00:00.510 00:00.106 Successfully matched event ControlMessageSend:i12 c 3 -> s c1 [ofp_features_reply: datapath_id=3][1;m
+[1;36m[1;44m00:00.510 00:00.107 Successfully matched event ControlMessageSend:i13 c 2 -> s c1 [ofp_features_reply: datapath_id=2][1;m
+[1;36m[1;44m00:00.513 00:00.208 Successfully matched event ControlMessageReceive:i14 c c1 -> s 1 [ofp_set_config: ][1;m
+[1;36m[1;36mRound 3[1;37m[1;m
+[1;36m[1;44m00:00.514 00:00.209 Successfully matched event ControlMessageReceive:i15 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:00.514 00:00.209 Successfully matched event ControlMessageReceive:i16 c c1 -> s 1 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:00.515 00:00.210 Successfully matched event ControlMessageReceive:i17 c c1 -> s 3 [ofp_set_config: ][1;m
+[1;36m[1;44m00:00.515 00:00.210 Successfully matched event ControlMessageReceive:i18 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:00.516 00:00.210 Successfully matched event ControlMessageReceive:i19 c c1 -> s 3 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:00.516 00:00.211 Successfully matched event ControlMessageReceive:i20 c c1 -> s 2 [ofp_set_config: ][1;m
+[1;36m[1;44m00:00.516 00:00.211 Successfully matched event ControlMessageReceive:i21 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:00.517 00:00.211 Successfully matched event ControlMessageReceive:i22 c c1 -> s 2 [ofp_barrier_request: ][1;m
+[1;36m[1;44m00:00.517 00:00.212 Successfully matched event ControlMessageSend:i23 c 1 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:00.518 00:00.212 Successfully matched event ControlMessageSend:i24 c 3 -> s c1 [ofp_barrier_reply: ][1;m
+[1;36m[1;44m00:00.518 00:00.212 Successfully matched event ControlMessageSend:i25 c 2 -> s c1 [ofp_barrier_reply: ][1;m
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 3/3] Connected to 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Connect [Con 3/3][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-03[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 2/2] Connected to 00-00-00-00-00-02[1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Connect [Con 2/2][1;m
+
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-02[1;m
+
+[1;41m[1;33m[c1] INFO:openflow.of_01:of_01 [Con 1/1] Connected to 00-00-00-00-00-01[1;m
+[1;36m[1;44m00:00.522 00:00.314 Successfully matched event ControlMessageReceive:i26 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+
+[1;41m[1;33m[c1] DEBUG:forwarding.l2_multi_broken_floyd:Connect [Con 1/1][1;m
+[1;36m[1;36mRound 4[1;37m[1;m
+[1;36m[1;44m00:00.523 00:00.315 Successfully matched event ControlMessageReceive:i27 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+
+[1;36m[1;44m00:00.523 00:00.316 Successfully matched event ControlMessageReceive:i28 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=add, actions=(u'output(65533)',), flags=0, match=dl_dst:01:23:20:00:00:01,dl_type:35020,in_port:None][1;m
+[1;41m[1;33m[c1] DEBUG:openflow.discovery:Installing flow for 00-00-00-00-00-01[1;m
+
+[1;36m[1;44m00:01.079 00:00.823 Successfully matched event ControlMessageReceive:i29 c c1 -> s 3 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 9[1;37m[1;m
+[1;35m[1;41m00:01.836 00:00.926 Event timed out ControlMessageSend:i31 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;36mRound 10[1;37m[1;m
+[1;35m[1;41m00:02.594 00:01.027 Event timed out ControlMessageReceive:i32 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 11[1;37m[1;m
+[1;35m[1;41m00:03.149 00:01.028 Event timed out ControlMessageReceive:i33 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:03.707 00:01.028 Event timed out ControlMessageReceive:i34 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:04.261 00:01.029 Event timed out ControlMessageReceive:i35 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;36m[1;44m00:04.262 00:01.329 Successfully matched event ControlMessageReceive:i36 c c1 -> s 3 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 14[1;37m[1;m
+[1;35m[1;41m00:04.973 00:01.432 Event timed out ControlMessageSend:i38 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;36mRound 15[1;37m[1;m
+[1;35m[1;41m00:05.731 00:01.534 Event timed out ControlMessageReceive:i39 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 16[1;37m[1;m
+[1;35m[1;41m00:06.287 00:01.535 Event timed out ControlMessageReceive:i40 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;35m[1;41m00:06.844 00:01.535 Event timed out ControlMessageReceive:i41 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:07.400 00:01.536 Event timed out ControlMessageReceive:i42 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:07.401 00:01.941 Successfully matched event ControlMessageReceive:i43 c c1 -> s 3 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 20[1;37m[1;m
+[1;36m[1;44m00:07.402 00:02.442 Successfully matched event ControlMessageReceive:i45 c c1 -> s 2 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 25[1;37m[1;m
+[1;35m[1;41m00:08.157 00:02.544 Event timed out ControlMessageSend:i47 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=1][1;m
+[1;36m[1;36mRound 26[1;37m[1;m
+[1;35m[1;41m00:08.868 00:02.646 Event timed out ControlMessageReceive:i48 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 27[1;37m[1;m
+[1;35m[1;41m00:09.425 00:02.647 Event timed out ControlMessageReceive:i49 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:09.981 00:02.648 Event timed out ControlMessageReceive:i50 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=1][1;m
+[1;35m[1;41m00:10.537 00:02.648 Event timed out ControlMessageReceive:i51 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:10.538 00:03.053 Successfully matched event ControlMessageReceive:i52 c c1 -> s 2 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 31[1;37m[1;m
+[1;35m[1;41m00:11.294 00:03.156 Event timed out ControlMessageSend:i54 c 1 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36m[1;36mRound 32[1;37m[1;m
+[1;35m[1;41m00:12.050 00:03.258 Event timed out ControlMessageReceive:i55 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 33[1;37m[1;m
+[1;35m[1;41m00:12.607 00:03.258 Event timed out ControlMessageReceive:i56 c c1 -> s 1 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;35m[1;41m00:13.163 00:03.259 Event timed out ControlMessageReceive:i57 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:13.720 00:03.259 Event timed out ControlMessageReceive:i58 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:13.721 00:03.555 Successfully matched event ControlMessageReceive:i59 c c1 -> s 2 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 36[1;37m[1;m
+[1;36m[1;44m00:13.722 00:04.164 Successfully matched event ControlMessageReceive:i61 c c1 -> s 1 [ofp_packet_out: actions=(u'output(1)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 42[1;37m[1;m
+[1;35m[1;41m00:14.430 00:04.266 Event timed out ControlMessageSend:i63 c 3 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36m[1;36mRound 43[1;37m[1;m
+[1;35m[1;41m00:15.186 00:04.368 Event timed out ControlMessageReceive:i64 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 44[1;37m[1;m
+[1;35m[1;41m00:15.743 00:04.369 Event timed out ControlMessageReceive:i65 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:16.300 00:04.370 Event timed out ControlMessageReceive:i66 c c1 -> s 3 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;35m[1;41m00:16.856 00:04.370 Event timed out ControlMessageReceive:i67 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;44m00:16.857 00:04.669 Successfully matched event ControlMessageReceive:i68 c c1 -> s 1 [ofp_packet_out: actions=(u'output(2)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 47[1;37m[1;m
+[1;35m[1;41m00:17.614 00:04.771 Event timed out ControlMessageSend:i70 c 2 -> s c1 [ofp_packet_in: data={u'class': u'lldp'}, in_port=2][1;m
+[1;36m[1;36mRound 48[1;37m[1;m
+[1;35m[1;41m00:18.325 00:04.873 Event timed out ControlMessageReceive:i71 c c1 -> s 1 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;36m[1;36mRound 49[1;37m[1;m
+[1;35m[1;41m00:18.882 00:04.874 Event timed out ControlMessageReceive:i72 c c1 -> s 3 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:19.439 00:04.875 Event timed out ControlMessageReceive:i73 c c1 -> s 2 [ofp_flow_mod: hard_timeout=0, out_port=65535, priority=32768, idle_timeout=0, command=delete, actions=(), flags=0, match=x^L,in_port:None][1;m
+[1;35m[1;41m00:19.996 00:04.875 Event timed out ControlMessageReceive:i74 c c1 -> s 2 [ofp_packet_out: actions=(), data=(), in_port=2][1;m
+[1;36m[1;44m00:19.996 00:05.281 Successfully matched event ControlMessageReceive:i75 c c1 -> s 1 [ofp_packet_out: actions=(u'output(3)',), data={u'class': u'lldp'}, in_port=65535][1;m
+[1;36m[1;36mRound 53[1;37m[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:01:03:IP]|([v:4hl:5l:72t:64]ICMP cs:af46[123.123.1.3>123.123.1.3]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m00:21.816 00:07.099 Successfully matched event TrafficInjection:e87[1;m
+[1;36m[1;36mRound 71[1;37m[1;m
+INFO:host:[IPAddr('123.123.2.3')]:sending packet on interface eth2: [12:34:56:78:02:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:ad45[123.123.2.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m00:21.817 00:07.100 Successfully matched event TrafficInjection:e88[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:ab44[123.123.3.3>123.123.3.3]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m00:21.818 00:07.100 Successfully matched event TrafficInjection:e89[1;m
+[1;35m[1;41m00:22.423 00:07.204 Event timed out ControlMessageSend:i94 c 3 -> s c1 [ofp_packet_in: data={u'dl_dst': u'12:34:56:78:03:03', u'nw_src': u'123.123.3.3', u'dl_src': u'12:34:56:78:03:03', u'nw_dst': u'123.123.3.3'}, in_port=3][1;m
+[1;36m[1;36mRound 72[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:22.425 00:07.205 Successfully matched event CheckInvariants:e96[1;m
+[1;35m[1;41m00:23.180 00:07.317 Event timed out ControlMessageReceive:i98 c c1 -> s 3 [ofp_flow_mod: hard_timeout=30, out_port=65535, priority=32768, idle_timeout=10, command=add, actions=(u'output(3)',), flags=0, match=dl_src:12:34:56:78:03:03,dl_dst:12:34:56:78:03:03,dl_vlan:65535,dl_vlan_pcp:0,dl_type:2048,nw_tos:0,nw_proto:1,nw_src:123.123.3.3/32,nw_dst:123.123.3.3/32,tp_src:8,tp_dst:0,in_port:None][1;m
+[1;36m[1;36mRound 73[1;37m[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:ae40[123.123.1.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m00:23.181 00:07.319 Successfully matched event TrafficInjection:e100[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:23.182 00:07.320 Successfully matched event CheckInvariants:e101[1;m
+INFO:host:[IPAddr('123.123.1.3')]:sending packet on interface eth1: [12:34:56:78:01:03>12:34:56:78:03:03:IP]|([v:4hl:5l:72t:64]ICMP cs:ad3e[123.123.1.3>123.123.3.3]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m00:23.290 00:07.426 Successfully matched event TrafficInjection:e104[1;m
+[1;36m[1;36mRound 74[1;37m[1;m
+INFO:host:[IPAddr('123.123.3.3')]:sending packet on interface eth3: [12:34:56:78:03:03>12:34:56:78:02:03:IP]|([v:4hl:5l:72t:64]ICMP cs:ac3d[123.123.3.3>123.123.2.3]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m00:23.292 00:07.426 Successfully matched event TrafficInjection:e105[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:23.293 00:07.427 Successfully matched event CheckInvariants:e106[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:23.405 00:07.537 Successfully matched event CheckInvariants:e114[1;m
+[1;36m[1;36mRound 75[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m00:23.518 00:07.648 Successfully matched event CheckInvariants:e123[1;m
+[1;36m[1;36mRound 76[1;37m[1;m
+INFO:events:WaitTime: pausing simulation for 1.000000 seconds
+[1;36m[1;44m00:24.535 00:07.662 Successfully matched event WaitTime:e125[1;m
+[1;36m[1;36mRound -1[1;37m[1;m
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44mEvent Stats: Events matched: 49, timed out: 32
+Matches per event type:
+  WaitTime 1
+  ConnectToControllers 1
+  CheckInvariants 5
+  TrafficInjection 6
+  ControlMessageSend 9
+		  ofp_features_reply : 3
+		  ofp_hello : 3
+		  ofp_barrier_reply : 3
+  ControlMessageReceive 27
+		  ofp_barrier_request : 3
+		  ofp_hello : 3
+		  ofp_set_config : 3
+		  ofp_packet_out : 9
+		  ofp_flow_mod : 6
+		  ofp_features_request : 3
+Timeouts per event type:
+  ControlMessageSend 7
+		  ofp_packet_in : 7
+  ControlMessageReceive 25
+		  ofp_flow_mod : 19
+		  ofp_packet_out : 6
+[1;m
+[1;36mKilling controller c1 (pid 972)[1;m
+Killing child controllers...close() called on stdout during concurrent operation
+ OK
+127.0.0.1 - - [26/May/2014 20:53:10] "POST / HTTP/1.1" 200 -
+[1;41m[1;37mUnable to reproduce correctness violation![1;m
