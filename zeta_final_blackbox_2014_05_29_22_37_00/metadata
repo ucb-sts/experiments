@@ -1,0 +1,33 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/zeta_final/orig_config.py",
+    "-n",
+    "zeta_final_blackbox"
+  ],
+  "cwd": "/home/rcs/Research/UCB/code/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5660 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:       6101428    1685284    4416144        872      58644    1168444\n-/+ buffers/cache:     458196    5643232\nSwap:      6283260          0    6283260",
+    "name": "c5",
+    "num_cores": "12",
+    "uptime": "22:37:00 up 26 min,  2 users,  load average: 0.02, 0.06, 0.12"
+  },
+  "modules": {
+    "pox": {
+      "branch": "HEAD",
+      "commit": "cced89df35a07205792deaafc6b0361e5baf7cf7"
+    },
+    "sts": {
+      "branch": "HEAD",
+      "commit": "3919638f2d084c55f7b0b457bb64bf176f023ab4"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 14.04 LTS",
+    "uname": "Linux c5 3.13.0-27-generic #50-Ubuntu SMP Thu May 15 18:06:16 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_05_29_22_37_00",
+  "user": "rcs"
+}
