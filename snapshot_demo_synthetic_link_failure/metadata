@@ -8,10 +8,6 @@
   "cwd": "/mnt/rcs/sts",
   "host": {
     "cpu_info": "Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz",
-    "free": "total       used       free     shared    buffers     cached
-Mem:     264106044    7764660  256341384          0      15940    4540644
--/+ buffers/cache:    3208076  260897968
-Swap:            0          0          0",
     "name": "c75",
     "num_cores": "32",
     "uptime": "15:47:06 up 23 days,  2:00,  2 users,  load average: 0.05, 0.04, 0.05"
