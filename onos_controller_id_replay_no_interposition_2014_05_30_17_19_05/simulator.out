@@ -1,0 +1,1121 @@
+WARNING:setup:No get_additional_metadata() defined for config file. See config/nox_routing.py for an example.
+INFO:Controller: =====> Starting ONOS Controller <===== 
+INFO:Controller:Launching controller c1: ./start-onos.sh start
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+INFO:Controller:
+INFO:simulation:Launched controller c1: ./start-onos.sh start [PID -1]
+INFO:Controller: =====> Starting ONOS Controller <===== 
+INFO:Controller:Launching controller c2: ./start-onos.sh start
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33mc2 Starting ONOS controller ...[1;m
+
+[1;33mc2 [1;m
+
+[1;33mc2 .[1;m
+
+[1;33mc2 /home/mininet/ONOS[1;m
+
+[1;33mc2 Waiting for ONOS to start...[1;m
+
+[1;33mc2 .[1;m
+
+INFO:Controller:
+INFO:simulation:Launched controller c2: ./start-onos.sh start [PID -1]
+INFO:simulation:Creating topology...
+connect_socket_with_backoff ('192.168.56.11', 6633)
+Error connecting.  -- [Errno 111] Connection refused. Backing off 1 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 2 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 4 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 8 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 16 seconds ...
+connect_socket_with_backoff ('192.168.56.12', 6633)
+Error connecting.  -- [Errno 111] Connection refused. Backing off 1 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 2 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 4 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 8 seconds ...
+[1;36m[1;44m00:46.546 00:00.000 Successfully matched event ConnectToControllers:e1[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x342e750><pox.lib.packet.lldp.unknown_tlv object at 0x342e150><pox.lib.packet.lldp.unknown_tlv object at 0x342e210><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x34592d0><pox.lib.packet.lldp.unknown_tlv object at 0x3459250><pox.lib.packet.lldp.unknown_tlv object at 0x3459310><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 6655)[1;m
+
+[1;36m[1;44m01:18.139 00:31.072 Successfully matched event ControllerFailure:e4[1;m
+[1;36m[1;36mRound 1[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x3542210><pox.lib.packet.lldp.unknown_tlv object at 0x3542290><pox.lib.packet.lldp.unknown_tlv object at 0x3542310><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x31e0410><pox.lib.packet.lldp.unknown_tlv object at 0x31e0450><pox.lib.packet.lldp.unknown_tlv object at 0x31e0490><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x3542f50><pox.lib.packet.lldp.unknown_tlv object at 0x3542fd0><pox.lib.packet.lldp.unknown_tlv object at 0x3542e90><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x31e0790><pox.lib.packet.lldp.unknown_tlv object at 0x31e04d0><pox.lib.packet.lldp.unknown_tlv object at 0x31e0510><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x2cb8fd0><pox.lib.packet.lldp.unknown_tlv object at 0x2cb8f50><pox.lib.packet.lldp.unknown_tlv object at 0x2cb8b50><tlv end> on interface eth2
+WARNING:io_master:Closing socket due to empty read
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+[1;36m[1;44m01:54.231 00:34.397 Successfully matched event ControllerRecovery:e9[1;m
+[1;36m[1;36mRound 2[1;37m[1;m
+WARNING:io_master:Closing socket due to empty read
+ERROR:io_master:Socket error: Bad file descriptor
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c60a[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m02:35.989 01:16.111 Successfully matched event TrafficInjection:e30[1;m
+[1;36m[1;36mRound 5[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x35421d0><pox.lib.packet.lldp.unknown_tlv object at 0x3542410><pox.lib.packet.lldp.unknown_tlv object at 0x3542490><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x2cb8fd0><pox.lib.packet.lldp.unknown_tlv object at 0x2cb8f50><pox.lib.packet.lldp.unknown_tlv object at 0x2cb8b50><tlv end> on interface eth2
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 9643)[1;m
+
+[1;36m[1;44m02:39.683 01:19.116 Successfully matched event ControllerFailure:e37[1;m
+[1;36m[1;36mRound 6[1;37m[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c608[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m02:42.998 01:22.426 Successfully matched event TrafficInjection:e43[1;m
+[1;36m[1;36mRound 7[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+[1;36m[1;44m03:15.842 01:22.427 Successfully matched event ControllerRecovery:e44[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c606[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m03:57.535 02:04.114 Successfully matched event TrafficInjection:e84[1;m
+[1;36m[1;36mRound 10[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c604[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m04:00.543 02:07.119 Successfully matched event TrafficInjection:e95[1;m
+[1;36m[1;36mRound 11[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5fd[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m04:06.562 02:13.129 Successfully matched event TrafficInjection:e116[1;m
+[1;36m[1;36mRound 13[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5f1[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m04:15.591 02:22.149 Successfully matched event TrafficInjection:e151[1;m
+[1;36m[1;36mRound 16[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5ea[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m04:33.635 02:40.174 Successfully matched event TrafficInjection:e195[1;m
+[1;36m[1;36mRound 22[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5e9[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m04:39.649 02:46.180 Successfully matched event TrafficInjection:e204[1;m
+[1;36m[1;36mRound 24[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 12449)[1;m
+
+[1;36m[1;44m04:49.063 02:55.191 Successfully matched event ControllerFailure:e223[1;m
+[1;36m[1;36mRound 27[1;37m[1;m
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+[1;36m[1;44m05:25.555 02:58.523 Successfully matched event ControllerRecovery:e230[1;m
+[1;36m[1;36mRound 28[1;37m[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5e8[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m06:04.242 03:37.204 Successfully matched event TrafficInjection:e253[1;m
+[1;36m[1;36mRound 30[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c2: ./start-onos.sh stop
+[1;33mc2 Killed existing process (pid: 1144)[1;m
+
+[1;36m[1;44m06:04.641 03:37.204 Successfully matched event ControllerFailure:e254[1;m
+INFO:Controller:Relaunching controller c2: ./start-onos.sh stop
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33mc2 Starting ONOS controller ...[1;m
+
+[1;33mc2 [1;m
+
+[1;33mc2 .[1;m
+
+[1;33mc2 /home/mininet/ONOS[1;m
+
+[1;33mc2 Waiting for ONOS to start...[1;m
+
+[1;33mc2 .[1;m
+
+[1;36m[1;44m06:40.287 03:40.514 Successfully matched event ControllerRecovery:e267[1;m
+[1;36m[1;36mRound 31[1;37m[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5e7[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m07:21.959 04:22.142 Successfully matched event TrafficInjection:e287[1;m
+[1;36m[1;36mRound 34[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5e6[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m07:27.979 04:28.154 Successfully matched event TrafficInjection:e314[1;m
+[1;36m[1;36mRound 36[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 16952)[1;m
+
+[1;36m[1;44m07:34.609 04:34.163 Successfully matched event ControllerFailure:e331[1;m
+[1;36m[1;36mRound 38[1;37m[1;m
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+[1;36m[1;44m08:10.761 04:37.476 Successfully matched event ControllerRecovery:e342[1;m
+[1;36m[1;36mRound 39[1;37m[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5e5[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m08:46.490 05:13.167 Successfully matched event TrafficInjection:e357[1;m
+[1;36m[1;36mRound 40[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c2: ./start-onos.sh stop
+[1;33mc2 Killed existing process (pid: 13396)[1;m
+
+[1;36m[1;44m08:46.877 05:13.168 Successfully matched event ControllerFailure:e358[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5e4[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m08:50.210 05:16.495 Successfully matched event TrafficInjection:e372[1;m
+[1;36m[1;36mRound 41[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 22414)[1;m
+
+[1;36m[1;44m08:50.908 05:16.496 Successfully matched event ControllerFailure:e373[1;m
+INFO:Controller:Relaunching controller c2: ./start-onos.sh stop
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33mc2 Starting ONOS controller ...[1;m
+
+[1;33mc2 [1;m
+
+[1;33mc2 .[1;m
+
+[1;33mc2 /home/mininet/ONOS[1;m
+
+[1;33mc2 Waiting for ONOS to start...[1;m
+
+[1;33mc2 .[1;m
+
+[1;36m[1;44m09:23.471 05:16.833 Successfully matched event ControllerRecovery:e374[1;m
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+[1;36m[1;44m10:32.517 05:52.524 Successfully matched event ControllerRecovery:e385[1;m
+[1;36m[1;36mRound 42[1;37m[1;m
+INFO:Controller:Killing controller c2: ./start-onos.sh stop
+[1;33mc2 Killed existing process (pid: 18805)[1;m
+
+[1;36m[1;44m11:20.846 06:40.207 Successfully matched event ControllerFailure:e417[1;m
+[1;36m[1;36mRound 47[1;37m[1;m
+INFO:Controller:Relaunching controller c2: ./start-onos.sh stop
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33mc2 Starting ONOS controller ...[1;m
+
+[1;33mc2 [1;m
+
+[1;33mc2 .[1;m
+
+[1;33mc2 /home/mininet/ONOS[1;m
+
+[1;33mc2 Waiting for ONOS to start...[1;m
+
+[1;33mc2 .[1;m
+
+[1;36m[1;44m11:56.441 06:43.516 Successfully matched event ControllerRecovery:e420[1;m
+[1;36m[1;36mRound 48[1;37m[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5e3[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m12:32.183 07:19.220 Successfully matched event TrafficInjection:e433[1;m
+[1;36m[1;36mRound 49[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5e2[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m12:35.194 07:22.226 Successfully matched event TrafficInjection:e447[1;m
+[1;36m[1;36mRound 50[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m12:36.977 07:22.227 Successfully matched event CheckInvariants:e448[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5e1[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m12:41.179 07:26.423 Successfully matched event TrafficInjection:e459[1;m
+[1;36m[1;36mRound 51[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5e0[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m12:50.200 07:35.434 Successfully matched event TrafficInjection:e482[1;m
+[1;36m[1;36mRound 54[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5df[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m13:11.225 07:56.456 Successfully matched event TrafficInjection:e521[1;m
+[1;36m[1;36mRound 61[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5de[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m13:11.227 07:56.457 Successfully matched event TrafficInjection:e522[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5dd[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m13:20.247 08:05.472 Successfully matched event TrafficInjection:e545[1;m
+[1;36m[1;36mRound 64[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5dc[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m13:23.252 08:08.473 Successfully matched event TrafficInjection:e547[1;m
+[1;36m[1;36mRound 65[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5db[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m13:35.277 08:20.487 Successfully matched event TrafficInjection:e573[1;m
+[1;36m[1;36mRound 69[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5da[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m13:38.283 08:23.489 Successfully matched event TrafficInjection:e575[1;m
+[1;36m[1;36mRound 70[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5d9[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m13:41.291 08:26.492 Successfully matched event TrafficInjection:e582[1;m
+[1;36m[1;36mRound 71[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c2: ./start-onos.sh stop
+[1;33mc2 Killed existing process (pid: 23878)[1;m
+
+[1;36m[1;44m13:44.715 08:29.497 Successfully matched event ControllerFailure:e592[1;m
+[1;36m[1;36mRound 72[1;37m[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5d8[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m13:48.075 08:32.852 Successfully matched event TrafficInjection:e599[1;m
+[1;36m[1;36mRound 73[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Relaunching controller c2: ./start-onos.sh stop
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33mc2 Starting ONOS controller ...[1;m
+
+[1;33mc2 [1;m
+
+[1;33mc2 .[1;m
+
+[1;33mc2 /home/mininet/ONOS[1;m
+
+[1;33mc2 Waiting for ONOS to start...[1;m
+
+[1;33mc2 .[1;m
+
+[1;36m[1;44m14:20.010 08:32.853 Successfully matched event ControllerRecovery:e600[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5d7[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m14:58.847 09:11.654 Successfully matched event TrafficInjection:e630[1;m
+[1;36m[1;36mRound 75[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5d6[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m15:13.877 09:26.676 Successfully matched event TrafficInjection:e668[1;m
+[1;36m[1;36mRound 80[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 27144)[1;m
+
+[1;36m[1;44m15:23.392 09:35.690 Successfully matched event ControllerFailure:e699[1;m
+[1;36m[1;36mRound 83[1;37m[1;m
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+[1;36m[1;44m15:59.352 09:39.016 Successfully matched event ControllerRecovery:e700[1;m
+[1;36m[1;36mRound 84[1;37m[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5d5[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m16:46.997 10:26.644 Successfully matched event TrafficInjection:e746[1;m
+[1;36m[1;36mRound 89[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5d4[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m16:50.004 10:29.649 Successfully matched event TrafficInjection:e754[1;m
+[1;36m[1;36mRound 90[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5d3[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m17:08.048 10:47.673 Successfully matched event TrafficInjection:e799[1;m
+[1;36m[1;36mRound 96[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5d2[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m17:11.057 10:50.678 Successfully matched event TrafficInjection:e805[1;m
+[1;36m[1;36mRound 97[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c2: ./start-onos.sh stop
+[1;33mc2 Killed existing process (pid: 28794)[1;m
+
+[1;36m[1;44m17:17.504 10:56.684 Successfully matched event ControllerFailure:e816[1;m
+[1;36m[1;36mRound 99[1;37m[1;m
+INFO:Controller:Relaunching controller c2: ./start-onos.sh stop
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33mc2 Starting ONOS controller ...[1;m
+
+[1;33mc2 [1;m
+
+[1;33mc2 .[1;m
+
+[1;33mc2 /home/mininet/ONOS[1;m
+
+[1;33mc2 Waiting for ONOS to start...[1;m
+
+[1;33mc2 .[1;m
+
+[1;36m[1;44m17:52.822 11:00.008 Successfully matched event ControllerRecovery:e818[1;m
+[1;36m[1;36mRound 100[1;37m[1;m
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m18:27.171 11:32.696 Successfully matched event CheckInvariants:e819[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5d1[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m18:31.404 11:36.923 Successfully matched event TrafficInjection:e828[1;m
+[1;36m[1;36mRound 101[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5d0[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m18:34.415 11:39.930 Successfully matched event TrafficInjection:e844[1;m
+[1;36m[1;36mRound 102[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5cf[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m18:49.454 11:54.953 Successfully matched event TrafficInjection:e895[1;m
+[1;36m[1;36mRound 107[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5ce[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m18:58.466 12:03.963 Successfully matched event TrafficInjection:e914[1;m
+[1;36m[1;36mRound 110[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5cd[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m19:07.490 12:12.977 Successfully matched event TrafficInjection:e936[1;m
+[1;36m[1;36mRound 113[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5cc[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m19:13.502 12:18.982 Successfully matched event TrafficInjection:e943[1;m
+[1;36m[1;36mRound 115[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5cb[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m19:19.518 12:24.990 Successfully matched event TrafficInjection:e957[1;m
+[1;36m[1;36mRound 117[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 5592)[1;m
+
+[1;36m[1;44m19:19.919 12:24.991 Successfully matched event ControllerFailure:e958[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5ca[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m19:23.295 12:28.362 Successfully matched event TrafficInjection:e967[1;m
+[1;36m[1;36mRound 118[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+[1;36m[1;44m19:56.467 12:28.362 Successfully matched event ControllerRecovery:e968[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 13565)[1;m
+
+[1;36m[1;44m20:33.369 13:04.653 Successfully matched event ControllerFailure:e979[1;m
+[1;36m[1;36mRound 119[1;37m[1;m
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+[1;36m[1;44m21:09.625 13:08.021 Successfully matched event ControllerRecovery:e996[1;m
+[1;36m[1;36mRound 120[1;37m[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5c9[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m21:57.757 13:56.102 Successfully matched event TrafficInjection:e1053[1;m
+[1;36m[1;36mRound 125[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5c8[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m22:00.767 13:59.108 Successfully matched event TrafficInjection:e1063[1;m
+[1;36m[1;36mRound 126[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5c7[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m22:03.777 14:02.113 Successfully matched event TrafficInjection:e1072[1;m
+[1;36m[1;36mRound 127[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5c6[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m22:12.793 14:11.128 Successfully matched event TrafficInjection:e1100[1;m
+[1;36m[1;36mRound 130[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5c5[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m22:18.807 14:17.135 Successfully matched event TrafficInjection:e1109[1;m
+[1;36m[1;36mRound 132[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5c4[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m22:21.816 14:20.139 Successfully matched event TrafficInjection:e1116[1;m
+[1;36m[1;36mRound 133[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5c3[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m22:30.840 14:29.153 Successfully matched event TrafficInjection:e1138[1;m
+[1;36m[1;36mRound 136[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5c2[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m22:36.852 14:35.158 Successfully matched event TrafficInjection:e1145[1;m
+[1;36m[1;36mRound 138[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5c1[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m22:39.861 14:38.162 Successfully matched event TrafficInjection:e1154[1;m
+[1;36m[1;36mRound 139[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5c0[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m22:45.872 14:44.171 Successfully matched event TrafficInjection:e1169[1;m
+[1;36m[1;36mRound 141[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5bf[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m22:45.875 14:44.171 Successfully matched event TrafficInjection:e1170[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5be[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m22:54.899 14:53.184 Successfully matched event TrafficInjection:e1188[1;m
+[1;36m[1;36mRound 144[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 16137)[1;m
+
+[1;36m[1;44m22:55.494 14:53.185 Successfully matched event ControllerFailure:e1189[1;m
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+[1;36m[1;44m23:32.433 14:56.525 Successfully matched event ControllerRecovery:e1195[1;m
+[1;36m[1;36mRound 145[1;37m[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5bd[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m24:11.566 15:35.650 Successfully matched event TrafficInjection:e1224[1;m
+[1;36m[1;36mRound 147[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5bc[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m24:20.587 15:44.665 Successfully matched event TrafficInjection:e1253[1;m
+[1;36m[1;36mRound 150[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m24:22.106 15:44.666 Successfully matched event CheckInvariants:e1254[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5bb[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m24:32.446 15:54.997 Successfully matched event TrafficInjection:e1281[1;m
+[1;36m[1;36mRound 153[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5ba[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m24:35.458 15:58.005 Successfully matched event TrafficInjection:e1295[1;m
+[1;36m[1;36mRound 154[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5b9[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m24:41.470 16:04.010 Successfully matched event TrafficInjection:e1300[1;m
+[1;36m[1;36mRound 156[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5b8[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m24:44.476 16:07.012 Successfully matched event TrafficInjection:e1303[1;m
+[1;36m[1;36mRound 157[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5b7[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m24:50.497 16:13.026 Successfully matched event TrafficInjection:e1325[1;m
+[1;36m[1;36mRound 159[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5b6[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m24:56.509 16:19.032 Successfully matched event TrafficInjection:e1332[1;m
+[1;36m[1;36mRound 161[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5b5[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m24:59.516 16:22.034 Successfully matched event TrafficInjection:e1335[1;m
+[1;36m[1;36mRound 162[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5b4[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m25:02.520 16:25.034 Successfully matched event TrafficInjection:e1346[1;m
+[1;36m[1;36mRound 163[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 20962)[1;m
+
+[1;36m[1;44m25:09.174 16:31.048 Successfully matched event ControllerFailure:e1364[1;m
+[1;36m[1;36mRound 165[1;37m[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5b3[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m25:12.518 16:34.386 Successfully matched event TrafficInjection:e1366[1;m
+[1;36m[1;36mRound 166[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+[1;36m[1;44m25:45.404 16:34.387 Successfully matched event ControllerRecovery:e1367[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5b2[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m26:21.325 17:10.270 Successfully matched event TrafficInjection:e1377[1;m
+[1;36m[1;36mRound 167[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5b1[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m26:24.335 17:13.277 Successfully matched event TrafficInjection:e1394[1;m
+[1;36m[1;36mRound 168[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5b0[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m26:27.348 17:16.286 Successfully matched event TrafficInjection:e1413[1;m
+[1;36m[1;36mRound 169[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5af[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m26:30.358 17:19.292 Successfully matched event TrafficInjection:e1425[1;m
+[1;36m[1;36mRound 170[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5ae[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m26:33.367 17:22.296 Successfully matched event TrafficInjection:e1431[1;m
+[1;36m[1;36mRound 171[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5ad[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m26:36.374 17:25.302 Successfully matched event TrafficInjection:e1441[1;m
+[1;36m[1;36mRound 172[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5ac[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m26:36.377 17:25.302 Successfully matched event TrafficInjection:e1442[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5ab[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m26:39.389 17:28.310 Successfully matched event TrafficInjection:e1459[1;m
+[1;36m[1;36mRound 173[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c2: ./start-onos.sh stop
+[1;33mc2 Killed existing process (pid: 3536)[1;m
+
+[1;36m[1;44m26:42.786 17:31.314 Successfully matched event ControllerFailure:e1469[1;m
+[1;36m[1;36mRound 174[1;37m[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5aa[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m26:46.122 17:34.649 Successfully matched event TrafficInjection:e1473[1;m
+[1;36m[1;36mRound 175[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Relaunching controller c2: ./start-onos.sh stop
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33mc2 Starting ONOS controller ...[1;m
+
+[1;33mc2 [1;m
+
+[1;33mc2 .[1;m
+
+[1;33mc2 /home/mininet/ONOS[1;m
+
+[1;33mc2 Waiting for ONOS to start...[1;m
+
+[1;33mc2 .[1;m
+
+[1;36m[1;44m27:18.836 17:34.649 Successfully matched event ControllerRecovery:e1474[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5a9[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m28:03.935 18:19.700 Successfully matched event TrafficInjection:e1490[1;m
+[1;36m[1;36mRound 179[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5a8[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m28:03.939 18:19.701 Successfully matched event TrafficInjection:e1491[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 25540)[1;m
+
+[1;36m[1;44m28:10.351 18:25.707 Successfully matched event ControllerFailure:e1500[1;m
+[1;36m[1;36mRound 181[1;37m[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5a7[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m28:13.663 18:29.013 Successfully matched event TrafficInjection:e1509[1;m
+[1;36m[1;36mRound 182[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+[1;36m[1;44m28:46.404 18:29.014 Successfully matched event ControllerRecovery:e1510[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5a6[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m29:34.410 19:17.016 Successfully matched event TrafficInjection:e1564[1;m
+[1;36m[1;36mRound 187[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5a5[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m29:43.428 19:26.030 Successfully matched event TrafficInjection:e1591[1;m
+[1;36m[1;36mRound 190[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5a4[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m29:52.447 19:35.038 Successfully matched event TrafficInjection:e1607[1;m
+[1;36m[1;36mRound 193[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 31579)[1;m
+
+[1;36m[1;44m29:56.079 19:38.041 Successfully matched event ControllerFailure:e1609[1;m
+[1;36m[1;36mRound 194[1;37m[1;m
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+[1;36m[1;44m30:32.726 19:41.380 Successfully matched event ControllerRecovery:e1615[1;m
+[1;36m[1;36mRound 195[1;37m[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5a3[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m31:11.612 20:20.225 Successfully matched event TrafficInjection:e1645[1;m
+[1;36m[1;36mRound 197[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5a2[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m31:20.651 20:29.253 Successfully matched event TrafficInjection:e1674[1;m
+[1;36m[1;36mRound 200[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m31:22.142 20:29.254 Successfully matched event CheckInvariants:e1675[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 2768)[1;m
+
+[1;36m[1;44m31:26.775 20:33.532 Successfully matched event ControllerFailure:e1679[1;m
+[1;36m[1;36mRound 201[1;37m[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5a1[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m31:30.102 20:36.854 Successfully matched event TrafficInjection:e1681[1;m
+[1;36m[1;36mRound 202[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+[1;36m[1;44m32:03.142 20:36.855 Successfully matched event ControllerRecovery:e1682[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c5a0[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m32:48.112 21:21.777 Successfully matched event TrafficInjection:e1732[1;m
+[1;36m[1;36mRound 206[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c59f[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m32:57.137 21:30.791 Successfully matched event TrafficInjection:e1756[1;m
+[1;36m[1;36mRound 209[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c59e[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m33:00.145 21:33.795 Successfully matched event TrafficInjection:e1763[1;m
+[1;36m[1;36mRound 210[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 6007)[1;m
+
+[1;36m[1;44m33:00.522 21:33.796 Successfully matched event ControllerFailure:e1764[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c59d[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m33:03.848 21:37.116 Successfully matched event TrafficInjection:e1767[1;m
+[1;36m[1;36mRound 211[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+[1;36m[1;44m33:37.024 21:37.117 Successfully matched event ControllerRecovery:e1768[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c59c[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m34:12.827 22:12.882 Successfully matched event TrafficInjection:e1780[1;m
+[1;36m[1;36mRound 212[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c59b[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m34:15.839 22:15.890 Successfully matched event TrafficInjection:e1796[1;m
+[1;36m[1;36mRound 213[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c59a[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m34:27.872 22:27.909 Successfully matched event TrafficInjection:e1834[1;m
+[1;36m[1;36mRound 217[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c599[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m34:30.883 22:30.916 Successfully matched event TrafficInjection:e1848[1;m
+[1;36m[1;36mRound 218[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c598[123.123.1.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m34:33.892 22:33.920 Successfully matched event TrafficInjection:e1858[1;m
+[1;36m[1;36mRound 219[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c597[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m34:48.909 22:48.932 Successfully matched event TrafficInjection:e1875[1;m
+[1;36m[1;36mRound 224[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c596[123.123.1.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m34:54.921 22:54.937 Successfully matched event TrafficInjection:e1880[1;m
+[1;36m[1;36mRound 226[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c595[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m34:54.923 22:54.937 Successfully matched event TrafficInjection:e1881[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c594[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m34:57.931 22:57.942 Successfully matched event TrafficInjection:e1889[1;m
+[1;36m[1;36mRound 227[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c593[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m35:00.940 23:00.947 Successfully matched event TrafficInjection:e1899[1;m
+[1;36m[1;36mRound 228[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 9245)[1;m
+
+[1;36m[1;44m35:01.362 23:00.948 Successfully matched event ControllerFailure:e1900[1;m
+INFO:Controller:Killing controller c2: ./start-onos.sh stop
+[1;33mc2 Killed existing process (pid: 22255)[1;m
+
+[1;36m[1;44m35:05.077 23:04.254 Successfully matched event ControllerFailure:e1905[1;m
+[1;36m[1;36mRound 229[1;37m[1;m
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+[1;36m[1;44m35:38.834 23:04.571 Successfully matched event ControllerRecovery:e1906[1;m
+INFO:Controller:Relaunching controller c2: ./start-onos.sh stop
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33mc2 Starting ONOS controller ...[1;m
+
+[1;33mc2 [1;m
+
+[1;33mc2 .[1;m
+
+[1;33mc2 /home/mininet/ONOS[1;m
+
+[1;33mc2 Waiting for ONOS to start...[1;m
+
+[1;33mc2 .[1;m
+
+[1;36m[1;44m36:47.038 23:40.272 Successfully matched event ControllerRecovery:e1911[1;m
+[1;36m[1;36mRound 230[1;37m[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c592[123.123.2.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m37:31.818 24:25.014 Successfully matched event TrafficInjection:e1937[1;m
+[1;36m[1;36mRound 234[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 13358)[1;m
+
+[1;36m[1;44m37:35.185 24:28.017 Successfully matched event ControllerFailure:e1943[1;m
+[1;36m[1;36mRound 235[1;37m[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c591[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m37:38.512 24:31.339 Successfully matched event TrafficInjection:e1947[1;m
+[1;36m[1;36mRound 236[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+[1;36m[1;44m38:12.094 24:31.339 Successfully matched event ControllerRecovery:e1948[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 18546)[1;m
+
+[1;36m[1;44m38:54.530 25:13.306 Successfully matched event ControllerFailure:e1985[1;m
+[1;36m[1;36mRound 239[1;37m[1;m
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+[1;36m[1;44m39:31.133 25:16.633 Successfully matched event ControllerRecovery:e1986[1;m
+[1;36m[1;36mRound 240[1;37m[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:c590[123.123.2.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m40:07.005 25:52.500 Successfully matched event TrafficInjection:e1995[1;m
+[1;36m[1;36mRound 241[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c2: ./start-onos.sh stop
+[1;33mc2 Killed existing process (pid: 8494)[1;m
+
+[1;36m[1;44m40:22.437 26:07.524 Successfully matched event ControllerFailure:e2044[1;m
+[1;36m[1;36mRound 246[1;37m[1;m
+INFO:Controller:Relaunching controller c2: ./start-onos.sh stop
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33mc2 Starting ONOS controller ...[1;m
+
+[1;33mc2 [1;m
+
+[1;33mc2 .[1;m
+
+[1;33mc2 /home/mininet/ONOS[1;m
+
+[1;33mc2 Waiting for ONOS to start...[1;m
+
+[1;33mc2 .[1;m
+
+[1;36m[1;44m40:58.204 26:10.856 Successfully matched event ControllerRecovery:e2057[1;m
+[1;36m[1;36mRound 247[1;37m[1;m
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m41:41.660 26:52.693 Successfully matched event CheckInvariants:e2098[1;m
+[1;36m[1;36mRound 250[1;37m[1;m
+INFO:events:WaitTime: pausing simulation for 1.000000 seconds
+[1;36m[1;44m41:42.662 26:53.910 Successfully matched event WaitTime:e2100[1;m
+[1;36m[1;36mRound -1[1;37m[1;m
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44mEvent Stats: Events matched: 154, timed out: 0
+Matches per event type:
+  WaitTime 1
+  ConnectToControllers 1
+  CheckInvariants 5
+  ControllerFailure 25
+  ControllerRecovery 25
+  TrafficInjection 97
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
