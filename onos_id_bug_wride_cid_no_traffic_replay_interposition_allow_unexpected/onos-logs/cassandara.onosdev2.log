@@ -1,0 +1,67 @@
+xss =  -ea -javaagent:/home/mininet/apache-cassandra-1.2.4/bin/../lib/jamm-0.2.5.jar -XX:+UseThreadPriorities -XX:ThreadPriorityPolicy=42 -Xms1024M -Xmx1024M -Xmn100M -XX:+HeapDumpOnOutOfMemoryError -Xss180k
+ INFO 16:43:01,028 Logging initialized
+ INFO 16:43:01,043 JVM vendor/version: OpenJDK 64-Bit Server VM/1.7.0_25
+ WARN 16:43:01,043 OpenJDK is not recommended. Please upgrade to the newest Oracle Java release
+ INFO 16:43:01,044 Heap size: 1063256064/1063256064
+ INFO 16:43:01,044 Classpath: /home/mininet/apache-cassandra-1.2.4/bin/../conf:/home/mininet/apache-cassandra-1.2.4/bin/../build/classes/main:/home/mininet/apache-cassandra-1.2.4/bin/../build/classes/thrift:/home/mininet/apache-cassandra-1.2.4/bin/../lib/antlr-3.2.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/apache-cassandra-1.2.4.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/apache-cassandra-clientutil-1.2.4.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/apache-cassandra-thrift-1.2.4.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/avro-1.4.0-fixes.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/avro-1.4.0-sources-fixes.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/commons-cli-1.1.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/commons-codec-1.2.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/commons-lang-2.6.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/compress-lzf-0.8.4.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/concurrentlinkedhashmap-lru-1.3.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/guava-13.0.1.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/high-scale-lib-1.1.2.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/jackson-core-asl-1.9.2.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/jackson-mapper-asl-1.9.2.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/jamm-0.2.5.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/jbcrypt-0.3m.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/jline-1.0.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/json-simple-1.1.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/libthrift-0.7.0.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/log4j-1.2.16.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/lz4-1.1.0.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/metrics-core-2.0.3.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/netty-3.5.9.Final.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/servlet-api-2.5-20081211.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/slf4j-api-1.7.2.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/slf4j-log4j12-1.7.2.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/snakeyaml-1.6.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/snappy-java-1.0.4.1.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/snaptree-0.1.jar:/home/mininet/apache-cassandra-1.2.4/bin/../lib/jamm-0.2.5.jar
+ INFO 16:43:01,046 JNA not found. Native methods will be disabled.
+ INFO 16:43:01,057 Loading settings from file:/home/mininet/apache-cassandra-1.2.4/conf/cassandra.yaml
+ INFO 16:43:01,492 Data files directories: [/var/lib/cassandra/data]
+ INFO 16:43:01,492 Commit log directory: /var/lib/cassandra/commitlog
+ INFO 16:43:01,493 DiskAccessMode 'auto' determined to be mmap, indexAccessMode is mmap
+ INFO 16:43:01,493 disk_failure_policy is stop
+ INFO 16:43:01,502 Global memtable threshold is enabled at 338MB
+ INFO 16:43:01,626 Not using multi-threaded compaction
+ INFO 16:43:02,148 Initializing key cache with capacity of 50 MBs.
+ INFO 16:43:02,161 Scheduling key cache save to each 14400 seconds (going to save all keys).
+ INFO 16:43:02,162 Initializing row cache with capacity of 0 MBs and provider org.apache.cassandra.cache.SerializingCacheProvider
+ INFO 16:43:02,171 Scheduling row cache save to each 0 seconds (going to save all keys).
+ INFO 16:43:02,566 Couldn't detect any schema definitions in local storage.
+ INFO 16:43:02,567 To create keyspaces and column families, see 'help create keyspace' in the CLI, or set up a schema using the thrift system_* calls.
+ INFO 16:43:02,672 No commitlog files found; skipping replay
+ INFO 16:43:03,157 Cassandra version: 1.2.4
+ INFO 16:43:03,161 Thrift API version: 19.35.0
+ INFO 16:43:03,162 CQL supported versions: 2.0.0,3.0.1 (default: 3.0.1)
+ INFO 16:43:03,212 Loading persisted ring state
+ INFO 16:43:03,216 Starting up server gossip
+ WARN 16:43:03,222 No host ID found, created 5f421478-629e-4abb-9182-e0f2d60b1a91 (Note: This should happen exactly once per node).
+ INFO 16:43:03,240 Enqueuing flush of Memtable-local@2049963161(361/361 serialized/live bytes, 15 ops)
+ INFO 16:43:03,251 Writing Memtable-local@2049963161(361/361 serialized/live bytes, 15 ops)
+ INFO 16:43:03,319 Completed flushing /var/lib/cassandra/data/system/local/system-local-ib-1-Data.db (354 bytes) for commitlog position ReplayPosition(segmentId=1402011782545, position=50656)
+ INFO 16:43:03,416 Starting Messaging Service on port 7000
+ INFO 16:43:03,519 Enqueuing flush of Memtable-local@1391676696(86/86 serialized/live bytes, 4 ops)
+ INFO 16:43:03,521 Writing Memtable-local@1391676696(86/86 serialized/live bytes, 4 ops)
+ INFO 16:43:03,529 Completed flushing /var/lib/cassandra/data/system/local/system-local-ib-2-Data.db (122 bytes) for commitlog position ReplayPosition(segmentId=1402011782545, position=50933)
+ INFO 16:43:03,531 JOINING: waiting for ring information
+ INFO 16:43:04,617 Node /192.168.56.11 is now part of the cluster
+ INFO 16:43:04,618 InetAddress /192.168.56.11 is now UP
+ INFO 16:43:04,634 Enqueuing flush of Memtable-peers@1209359081(236/236 serialized/live bytes, 14 ops)
+ INFO 16:43:04,634 Writing Memtable-peers@1209359081(236/236 serialized/live bytes, 14 ops)
+ INFO 16:43:04,647 Completed flushing /var/lib/cassandra/data/system/peers/system-peers-ib-1-Data.db (285 bytes) for commitlog position ReplayPosition(segmentId=1402011782545, position=51892)
+ INFO 16:43:04,660 Enqueuing flush of Memtable-schema_keyspaces@1859455622(389/389 serialized/live bytes, 11 ops)
+ INFO 16:43:04,660 Writing Memtable-schema_keyspaces@1859455622(389/389 serialized/live bytes, 11 ops)
+ INFO 16:43:04,668 Completed flushing /var/lib/cassandra/data/system/schema_keyspaces/system-schema_keyspaces-ib-1-Data.db (264 bytes) for commitlog position ReplayPosition(segmentId=1402011782545, position=53730)
+ INFO 16:43:04,671 Enqueuing flush of Memtable-schema_columnfamilies@1768381462(23066/23066 serialized/live bytes, 379 ops)
+ INFO 16:43:04,671 Writing Memtable-schema_columnfamilies@1768381462(23066/23066 serialized/live bytes, 379 ops)
+ INFO 16:43:04,689 Completed flushing /var/lib/cassandra/data/system/schema_columnfamilies/system-schema_columnfamilies-ib-1-Data.db (4852 bytes) for commitlog position ReplayPosition(segmentId=1402011782545, position=53730)
+ INFO 16:43:04,690 Enqueuing flush of Memtable-schema_columns@430855878(22154/22154 serialized/live bytes, 337 ops)
+ INFO 16:43:04,690 Writing Memtable-schema_columns@430855878(22154/22154 serialized/live bytes, 337 ops)
+ INFO 16:43:04,707 Completed flushing /var/lib/cassandra/data/system/schema_columns/system-schema_columns-ib-1-Data.db (3956 bytes) for commitlog position ReplayPosition(segmentId=1402011782545, position=53730)
+ INFO 16:43:05,532 JOINING: schema complete, ready to bootstrap
+ INFO 16:43:05,533 JOINING: getting bootstrap token
+ INFO 16:43:05,535 Enqueuing flush of Memtable-local@563877004(73/73 serialized/live bytes, 4 ops)
+ INFO 16:43:05,536 Writing Memtable-local@563877004(73/73 serialized/live bytes, 4 ops)
+ INFO 16:43:05,554 Completed flushing /var/lib/cassandra/data/system/local/system-local-ib-3-Data.db (136 bytes) for commitlog position ReplayPosition(segmentId=1402011782545, position=54028)
+ INFO 16:43:05,569 JOINING: sleeping 30000 ms for pending range setup
+ INFO 16:43:35,570 JOINING: Starting to bootstrap...
+ INFO 16:43:35,611 Finished streaming session 35e35180-ed0b-11e3-861b-c1b7d013ecd2 from /192.168.56.11
+ INFO 16:43:35,613 Bootstrap completed! for the tokens [0]
+ INFO 16:43:35,614 Enqueuing flush of Memtable-local@1603870009(43/43 serialized/live bytes, 2 ops)
+ INFO 16:43:35,615 Writing Memtable-local@1603870009(43/43 serialized/live bytes, 2 ops)
+ INFO 16:43:35,624 Completed flushing /var/lib/cassandra/data/system/local/system-local-ib-4-Data.db (75 bytes) for commitlog position ReplayPosition(segmentId=1402011782545, position=54161)
+ INFO 16:43:35,630 Enqueuing flush of Memtable-local@1749251535(32/32 serialized/live bytes, 2 ops)
+ INFO 16:43:35,631 Writing Memtable-local@1749251535(32/32 serialized/live bytes, 2 ops)
+ INFO 16:43:35,631 Compacting [SSTableReader(path='/var/lib/cassandra/data/system/local/system-local-ib-2-Data.db'), SSTableReader(path='/var/lib/cassandra/data/system/local/system-local-ib-4-Data.db'), SSTableReader(path='/var/lib/cassandra/data/system/local/system-local-ib-1-Data.db'), SSTableReader(path='/var/lib/cassandra/data/system/local/system-local-ib-3-Data.db')]
+ INFO 16:43:35,642 Completed flushing /var/lib/cassandra/data/system/local/system-local-ib-5-Data.db (90 bytes) for commitlog position ReplayPosition(segmentId=1402011782545, position=54317)
+ INFO 16:43:35,655 Node /192.168.56.12 state jump to normal
+ INFO 16:43:35,656 Startup completed! Now serving reads.

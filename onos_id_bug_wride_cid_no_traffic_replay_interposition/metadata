@@ -1,0 +1,44 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/onos_id_bug_wride_cid_no_traffic/replay_config.py",
+    "-n",
+    "onos_id_bug_wride_cid_no_traffic_replay_interposition"
+  ],
+  "cwd": "/Users/ahassany/repos/sts",
+  "host": {
+    "cpu_info": "",
+    "free": "",
+    "name": "dhcp-37-60.eecs.berkeley.edu",
+    "num_cores": "0",
+    "uptime": "16:22  up 7 days, 17:14, 9 users, load averages: 2.78 2.51 2.51"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9",
+      "diff": "",
+      "status": "HEAD detached at d631935\nnothing to commit, working directory clean"
+    },
+    "pox": {
+      "branch": "HEAD",
+      "commit": "32f3ac9cd34dca80fa55634255a11f3a41555cf7",
+      "diff": "diff --git a/pox/lib/packet/lldp.py b/pox/lib/packet/lldp.py\nindex eb628ea..d9f6b8a 100644\n--- a/pox/lib/packet/lldp.py\n+++ b/pox/lib/packet/lldp.py\n@@ -132,7 +132,9 @@ class lldp (packet_base):\n             self.tlvs.append(lldp.tlv_parsers[type](array[0: 2 + length]))\n             return 2 + length\n         else:\n-            self.msg( '(lldp tlv parse) warning unknown tlv type (%u)' % (type,) )\n+            pass\n+            # This message is really annoying when running sts\n+            # self.msg( '(lldp tlv parse) warning unknown tlv type (%u)' % (type,) )\n             # TODO: unknown_tlv is an undefined variable! Check me in?\n             self.tlvs.append(unknown_tlv(array[0: 2 + length]))\n             return 2 + length",
+      "status": "HEAD detached at 32f3ac9\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n\tmodified:   pox/lib/packet/lldp.py\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")"
+    },
+    "sts": {
+      "branch": "sigcomm_changes2",
+      "commit": "94aba54be4fb832da8815048fc5ac8d796bc31e1",
+      "diff": "diff --git a/config/fuzzer_params.py b/config/fuzzer_params.py\nindex a2aeb47..234b4b3 100644\n--- a/config/fuzzer_params.py\n+++ b/config/fuzzer_params.py\n@@ -1,5 +1,5 @@\n-switch_failure_rate = 0.005\n-switch_recovery_rate = 0.09\n+switch_failure_rate = 0.00\n+switch_recovery_rate = 1.0\n dataplane_drop_rate = 0.0\n controlplane_block_rate = 0.0\n controlplane_unblock_rate = 1.0\n@@ -7,11 +7,11 @@ ofp_message_receipt_rate = 1.0\n ofp_message_send_rate = 1.0\n ofp_cmd_passthrough_rate = 1.0\n ofp_flow_mod_failure_rate = 0.0\n-link_failure_rate = 0.005\n-link_recovery_rate = 0.09\n-controller_crash_rate = 0.0\n-controller_recovery_rate = 0.0\n-traffic_generation_rate = 0.08\n+link_failure_rate = 0.000\n+link_recovery_rate = 1.0\n+controller_crash_rate = 0.05\n+controller_recovery_rate = 0.30\n+traffic_generation_rate = 0.00\n host_migration_rate = 0.0\n intracontroller_block_rate = 0.0\n intracontroller_unblock_rate = 0.0\ndiff --git a/sts/control_flow/interactive.py b/sts/control_flow/interactive.py\nindex c4ae169..2dab86f 100644\n--- a/sts/control_flow/interactive.py\n+++ b/sts/control_flow/interactive.py\n@@ -203,7 +203,8 @@ class STSConsole(object):\n \n     def input(prompt):\n       if self.default_command:\n-        prompt = prompt + color.GRAY + \"[\"+ self.default_command + \"]\" + color.WHITE + \" >\"\n+        #prompt = prompt + color.GRAY + \"[\"+ self.default_command + \"]\" + color.WHITE + \" >\"\n+        prompt = prompt + \"[\"+ self.default_command + \"]\" + \" >\"\n       else:\n         prompt = prompt + \"> \"\n       with printlock:\n@@ -217,7 +218,7 @@ class STSConsole(object):\n         x = parts[0]+\"(\" + \", \".join(map(lambda s: quote_parameter(s), parts[1:])) + \")\"\n       return x\n \n-    sys.ps1 = color.GREEN + \"STS \" + color.WHITE\n+    sys.ps1 = \"STS \"\n     if hasattr(sys, \"_orig_stdout\"):\n       patched_stdout = sys.stdout\n       sys.stdout = sys._orig_stdout\ndiff --git a/sts/control_flow/replayer.py b/sts/control_flow/replayer.py\nindex bc636d8..5344ed5 100644\n--- a/sts/control_flow/replayer.py\n+++ b/sts/control_flow/replayer.py\n@@ -327,12 +327,15 @@ class Replayer(ControlFlow):\n           if self.bug_signature:\n             if self.bug_signature in violations:\n               self.simulation.violation_found = True\n+              self.simulation.set_exit_code(5)\n               msg.success(\"Violation found %s\" % self.bug_signature)\n             else:\n+              self.simulation.set_exit_code(6)\n               msg.fail(\"Violation does not match violation signature!\")\n           else:\n             self.simulation.violation_found = True\n         else:\n+          self.simulation.set_exit_code(5)\n           msg.success(\"No correctness violations!\")\n     finally:\n       if self.old_interrupt:",
+      "status": "On branch sigcomm_changes2\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n\tmodified:   config/fuzzer_params.py\n\tmodified:   sts/control_flow/interactive.py\n\tmodified:   sts/control_flow/replayer.py\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\n\taa\n\tbb\n\tconfig/remote_onos.py\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")"
+    }
+  },
+  "sys": {
+    "lsb_release": "",
+    "uname": "Darwin dhcp-37-60.eecs.berkeley.edu 13.2.0 Darwin Kernel Version 13.2.0: Thu Apr 17 23:03:13 PDT 2014; root:xnu-2422.100.13~1/RELEASE_X86_64 x86_64"
+  },
+  "timestamp": "2014_06_05_16_22_13",
+  "user": "ahassany"
+}
