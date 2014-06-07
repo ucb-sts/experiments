@@ -1,0 +1,44 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/onos_id_bug_fixed_ids_no_traffic/replay_config.py",
+    "-n",
+    "onos_id_bug_fixed_ids_no_traffic_blackbox"
+  ],
+  "cwd": "/Users/ahassany/repos/sts",
+  "host": {
+    "cpu_info": "",
+    "free": "",
+    "name": "dhcp-37-60.eecs.berkeley.edu",
+    "num_cores": "0",
+    "uptime": "15:47  up 9 days, 16:39, 5 users, load averages: 1.85 2.28 2.37"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9",
+      "diff": "",
+      "status": "HEAD detached at d631935\nnothing to commit, working directory clean"
+    },
+    "pox": {
+      "branch": "HEAD",
+      "commit": "32f3ac9cd34dca80fa55634255a11f3a41555cf7",
+      "diff": "diff --git a/pox/lib/packet/lldp.py b/pox/lib/packet/lldp.py\nindex eb628ea..d9f6b8a 100644\n--- a/pox/lib/packet/lldp.py\n+++ b/pox/lib/packet/lldp.py\n@@ -132,7 +132,9 @@ class lldp (packet_base):\n             self.tlvs.append(lldp.tlv_parsers[type](array[0: 2 + length]))\n             return 2 + length\n         else:\n-            self.msg( '(lldp tlv parse) warning unknown tlv type (%u)' % (type,) )\n+            pass\n+            # This message is really annoying when running sts\n+            # self.msg( '(lldp tlv parse) warning unknown tlv type (%u)' % (type,) )\n             # TODO: unknown_tlv is an undefined variable! Check me in?\n             self.tlvs.append(unknown_tlv(array[0: 2 + length]))\n             return 2 + length",
+      "status": "HEAD detached at 32f3ac9\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n\tmodified:   pox/lib/packet/lldp.py\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")"
+    },
+    "sts": {
+      "branch": "sigcomm_changes2",
+      "commit": "8a032b44f230edce444d8095d118de83de7efa67",
+      "diff": "diff --git a/config/fuzzer_params.py b/config/fuzzer_params.py\nindex a2aeb47..7b94619 100644\n--- a/config/fuzzer_params.py\n+++ b/config/fuzzer_params.py\n@@ -1,5 +1,5 @@\n-switch_failure_rate = 0.005\n-switch_recovery_rate = 0.09\n+switch_failure_rate = 0.00\n+switch_recovery_rate = 1.0\n dataplane_drop_rate = 0.0\n controlplane_block_rate = 0.0\n controlplane_unblock_rate = 1.0\n@@ -7,11 +7,11 @@ ofp_message_receipt_rate = 1.0\n ofp_message_send_rate = 1.0\n ofp_cmd_passthrough_rate = 1.0\n ofp_flow_mod_failure_rate = 0.0\n-link_failure_rate = 0.005\n-link_recovery_rate = 0.09\n-controller_crash_rate = 0.0\n-controller_recovery_rate = 0.0\n-traffic_generation_rate = 0.08\n+link_failure_rate = 0.000\n+link_recovery_rate = 1.0\n+controller_crash_rate = 0.10\n+controller_recovery_rate = 0.20\n+traffic_generation_rate = 0.00\n host_migration_rate = 0.0\n intracontroller_block_rate = 0.0\n intracontroller_unblock_rate = 0.0",
+      "status": "On branch sigcomm_changes2\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n\tmodified:   config/fuzzer_params.py\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\n\taa\n\tbb\n\tconfig/remote_onos.py\n\ttools/change_event_timing.py\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")"
+    }
+  },
+  "sys": {
+    "lsb_release": "",
+    "uname": "Darwin dhcp-37-60.eecs.berkeley.edu 13.2.0 Darwin Kernel Version 13.2.0: Thu Apr 17 23:03:13 PDT 2014; root:xnu-2422.100.13~1/RELEASE_X86_64 x86_64"
+  },
+  "timestamp": "2014_06_07_15_47_57",
+  "user": "ahassany"
+}
