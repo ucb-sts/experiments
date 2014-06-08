@@ -1,0 +1,45 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-t",
+    "-c",
+    "experiments/remote_onos/replay_config.py",
+    "-n",
+    "onos_controller_id_replay_no_interposition"
+  ],
+  "cwd": "/mnt/ahassany/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:     264051872  125672360  138379512          0     174380  115843900\n-/+ buffers/cache:    9654080  254397792\nSwap:            0          0          0",
+    "name": "c70",
+    "num_cores": "32",
+    "uptime": "13:25:35 up 44 days, 13:00,  3 users,  load average: 0.74, 0.93, 0.98"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9",
+      "diff": "",
+      "status": "# Not currently on any branch.\nnothing to commit (working directory clean)"
+    },
+    "pox": {
+      "branch": "debugger",
+      "commit": "32f3ac9cd34dca80fa55634255a11f3a41555cf7",
+      "diff": "diff --git a/pox/lib/packet/lldp.py b/pox/lib/packet/lldp.py\nindex eb628ea..3a5efe6 100644\n--- a/pox/lib/packet/lldp.py\n+++ b/pox/lib/packet/lldp.py\n@@ -132,7 +132,7 @@ class lldp (packet_base):\n             self.tlvs.append(lldp.tlv_parsers[type](array[0: 2 + length]))\n             return 2 + length\n         else:\n-            self.msg( '(lldp tlv parse) warning unknown tlv type (%u)' % (type,) )\n+            #self.msg( '(lldp tlv parse) warning unknown tlv type (%u)' % (type,) )\n             # TODO: unknown_tlv is an undefined variable! Check me in?\n             self.tlvs.append(unknown_tlv(array[0: 2 + length]))\n             return 2 + length\ndiff --git a/pox/openflow/nx_software_switch.py b/pox/openflow/nx_software_switch.py\nindex 4e59940..41748ea 100644\n--- a/pox/openflow/nx_software_switch.py\n+++ b/pox/openflow/nx_software_switch.py\n@@ -97,7 +97,7 @@ class NXSoftwareSwitch(SoftwareSwitch):\n           connections_used.append(others[self.next_other])\n           self.next_other += 1\n         else:\n-          self.log.info(\"Could not find any connection to send messages %s\", str(message))\n+          self.log.info(\"Could not find any connection to send messages %s, current connectsoin %s\", str(message), self.connections)\n     return connections_used\n \n   def set_connection(self, connection):\ndiff --git a/pox/openflow/software_switch.py b/pox/openflow/software_switch.py\nindex bf583bb..201ef20 100644\n--- a/pox/openflow/software_switch.py\n+++ b/pox/openflow/software_switch.py\n@@ -428,7 +428,7 @@ class SoftwareSwitch(EventMixin):\n       # out_port will not be OFPP_TABLE\n       self.process_packet(packet, in_port)\n     else:\n-      raise(\"Unsupported virtual output port: %x\" % out_port)\n+      raise(Exception(\"Unsupported virtual output port: %x\" % out_port))\n \n   def _buffer_packet(self, packet, in_port=None):\n     \"\"\" Find a free buffer slot to buffer the packet in. \"\"\"",
+      "status": "# On branch debugger\n# Your branch is behind 'origin/debugger' by 35 commits, and can be fast-forwarded.\n#\n# Changes not staged for commit:\n#   (use \"git add <file>...\" to update what will be committed)\n#   (use \"git checkout -- <file>...\" to discard changes in working directory)\n#\n#\tmodified:   pox/lib/packet/lldp.py\n#\tmodified:   pox/openflow/nx_software_switch.py\n#\tmodified:   pox/openflow/software_switch.py\n#\nno changes added to commit (use \"git add\" and/or \"git commit -a\")"
+    },
+    "sts": {
+      "branch": "sigcomm_changes2",
+      "commit": "94aba54be4fb832da8815048fc5ac8d796bc31e1",
+      "diff": "diff --git a/config/fuzzer_params.py b/config/fuzzer_params.py\nindex a2aeb47..21b840e 100644\n--- a/config/fuzzer_params.py\n+++ b/config/fuzzer_params.py\n@@ -1,5 +1,5 @@\n-switch_failure_rate = 0.005\n-switch_recovery_rate = 0.09\n+switch_failure_rate = 0.00\n+switch_recovery_rate = 1.0\n dataplane_drop_rate = 0.0\n controlplane_block_rate = 0.0\n controlplane_unblock_rate = 1.0\n@@ -7,11 +7,11 @@ ofp_message_receipt_rate = 1.0\n ofp_message_send_rate = 1.0\n ofp_cmd_passthrough_rate = 1.0\n ofp_flow_mod_failure_rate = 0.0\n-link_failure_rate = 0.005\n-link_recovery_rate = 0.09\n-controller_crash_rate = 0.0\n-controller_recovery_rate = 0.0\n-traffic_generation_rate = 0.08\n+link_failure_rate = 0.000\n+link_recovery_rate = 1.0\n+controller_crash_rate = 0.05\n+controller_recovery_rate = 1.00\n+traffic_generation_rate = 0.20\n host_migration_rate = 0.0\n intracontroller_block_rate = 0.0\n intracontroller_unblock_rate = 0.0\ndiff --git a/sts/control_flow/replayer.py b/sts/control_flow/replayer.py\nindex bc636d8..5344ed5 100644\n--- a/sts/control_flow/replayer.py\n+++ b/sts/control_flow/replayer.py\n@@ -327,12 +327,15 @@ class Replayer(ControlFlow):\n           if self.bug_signature:\n             if self.bug_signature in violations:\n               self.simulation.violation_found = True\n+              self.simulation.set_exit_code(5)\n               msg.success(\"Violation found %s\" % self.bug_signature)\n             else:\n+              self.simulation.set_exit_code(6)\n               msg.fail(\"Violation does not match violation signature!\")\n           else:\n             self.simulation.violation_found = True\n         else:\n+          self.simulation.set_exit_code(5)\n           msg.success(\"No correctness violations!\")\n     finally:\n       if self.old_interrupt:",
+      "status": "# On branch sigcomm_changes2\n# Changes not staged for commit:\n#   (use \"git add <file>...\" to update what will be committed)\n#   (use \"git checkout -- <file>...\" to discard changes in working directory)\n#\n#\tmodified:   config/fuzzer_params.py\n#\tmodified:   sts/control_flow/replayer.py\n#\n# Untracked files:\n#   (use \"git add <file>...\" to include in what will be committed)\n#\n#\taa\n#\tbb\n#\tconfig/remote_onos.py.back\nno changes added to commit (use \"git add\" and/or \"git commit -a\")"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 12.04.4 LTS",
+    "uname": "Linux c70 3.11.0-18-generic #32~precise1-Ubuntu SMP Thu Feb 20 17:52:10 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_05_30_13_25_35",
+  "user": "ahassany"
+}

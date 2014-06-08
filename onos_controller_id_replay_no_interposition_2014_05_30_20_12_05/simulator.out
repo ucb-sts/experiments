@@ -1,0 +1,93 @@
+WARNING:setup:No get_additional_metadata() defined for config file. See config/nox_routing.py for an example.
+INFO:Controller: =====> Starting ONOS Controller <===== 
+INFO:Controller:Launching controller c1: ./start-onos.sh start
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+INFO:Controller:
+INFO:simulation:Launched controller c1: ./start-onos.sh start [PID -1]
+INFO:Controller: =====> Starting ONOS Controller <===== 
+INFO:Controller:Launching controller c2: ./start-onos.sh start
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33mc2 Starting ONOS controller ...[1;m
+
+[1;33mc2 [1;m
+
+[1;33mc2 .[1;m
+
+[1;33mc2 /home/mininet/ONOS[1;m
+
+[1;33mc2 Waiting for ONOS to start...[1;m
+
+[1;33mc2 .[1;m
+
+INFO:Controller:
+INFO:simulation:Launched controller c2: ./start-onos.sh start [PID -1]
+INFO:simulation:Creating topology...
+connect_socket_with_backoff ('192.168.56.11', 6633)
+Error connecting.  -- [Errno 111] Connection refused. Backing off 1 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 2 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 4 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 8 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 16 seconds ...
+connect_socket_with_backoff ('192.168.56.12', 6633)
+Error connecting.  -- [Errno 111] Connection refused. Backing off 1 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 2 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 4 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 8 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 16 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 32 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 64 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 128 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 256 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 512 seconds ...
+Error connecting.  -- [Errno 111] Connection refused. Backing off 1024 seconds ...
+CRITICAL:Replayer:Exception raised while scheduling event ConnectToControllers:e1, replay experiments/onos_controller_id_replay_no_interposition_2014_05_30_20_12_05
+[1;36m[1;44mEvent Stats: Events matched: 0, timed out: 0
+Matches per event type:
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m
+Traceback (most recent call last):
+  File "./simulator.py", line 115, in <module>
+    simulation = simulator.simulate()
+  File "/mnt/ahassany/sts/sts/control_flow/replayer.py", line 253, in simulate
+    self.run_simulation_forward(post_bootstrap_hook)
+  File "/mnt/ahassany/sts/sts/control_flow/replayer.py", line 297, in run_simulation_forward
+    event_scheduler.schedule(event)
+  File "/mnt/ahassany/sts/sts/control_flow/event_scheduler.py", line 221, in schedule
+    self.inject_input(event)
+  File "/mnt/ahassany/sts/sts/control_flow/event_scheduler.py", line 242, in inject_input
+    self._poll_event(event, end)
+  File "/mnt/ahassany/sts/sts/control_flow/event_scheduler.py", line 272, in _poll_event
+    if event.proceed(self.simulation):
+  File "/mnt/ahassany/sts/sts/replay_event.py", line 215, in proceed
+    simulation.connect_to_controllers()
+  File "/mnt/ahassany/sts/sts/simulation_state.py", line 354, in connect_to_controllers
+    create_connection=self.create_connection)
+  File "/mnt/ahassany/sts/sts/topology.py", line 717, in connect_to_controllers
+    software_switch.connect(create_connection)
+  File "/mnt/ahassany/sts/sts/entities/sts_entities.py", line 228, in connect
+    max_backoff_seconds=max_backoff_seconds)
+  File "/mnt/ahassany/sts/sts/simulation_state.py", line 344, in create_connection
+    socket_ctor=socket_ctor)
+  File "/mnt/ahassany/sts/sts/../pox/pox/lib/util.py", line 456, in connect_socket_with_backoff
+    str(server_info))
+pox.lib.util.TimeoutError: Could not connect to controller ('192.168.56.12', 6633)

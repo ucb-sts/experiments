@@ -1,0 +1,748 @@
+DEBUG:rpc_forker:Invoking task play_forward on child http://localhost:5101/
+INFO:Controller:Launching controller c1: ./nox_core -v -i ptcp:6635 routing
+INFO:simulation:Launched controller cc1: ./nox_core -v -i ptcp:6635 routing [PID 23305]
+INFO:simulation:Creating topology...
+DEBUG:event_scheduler:Delaying input_event LinkFailure:e10 for 500 ms
+[1;41m[1;33m[c1] 00001|nox|INFO:Starting nox_core (/home/rcs/Research/UCB/code/sts/nox_classic/build/src/.libs/lt-nox_core)[1;m
+
+[1;41m[1;33m[c1] 00002|nox|INFO:nox bootstrap complete[1;m
+
+DEBUG:event_scheduler:Injecting LinkFailure:e10:('LinkFailure', 2, 1, 4, 2)
+[1;36mCutting link (2:1) -> (4:2)[1;m
+[1;32m[1;44m00:00.501 00:00.000 Successfully matched event LinkFailure:e10[1;m
+DEBUG:input_logger:logging event LinkFailure:e10:('LinkFailure', 2, 1, 4, 2)
+[1;36m[1;36mRound -1[1;37m[1;m
+DEBUG:event_scheduler:Injecting LinkFailure:e11:('LinkFailure', 1, 3, 2, 3)
+[1;36mCutting link (1:3) -> (2:3)[1;m
+[1;32m[1;44m00:00.502 00:00.000 Successfully matched event LinkFailure:e11[1;m
+DEBUG:input_logger:logging event LinkFailure:e11:('LinkFailure', 1, 3, 2, 3)
+DEBUG:event_scheduler:Injecting TrafficInjection:e12:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:04:[IPAddr('123.123.1.4')] Packet:[12:34:56:78:01:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b897[123.123.1.4>123.123.3.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.1.4')]:sending packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b897[123.123.1.4>123.123.3.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;32m[1;44m00:00.503 00:00.001 Successfully matched event TrafficInjection:e12[1;m
+DEBUG:input_logger:logging event TrafficInjection:e12:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:04:[IPAddr('123.123.1.4')] Packet:[12:34:56:78:01:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b897[123.123.1.4>123.123.3.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(1):Send PacketIn SoftSwitch(1) 
+INFO:FuzzSoftwareSwitch(1):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     1
+  buffer_id: 1
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x03\x04\x124Vx\x01\x04\x08\x00E\x00\x00H\xc7\x1f\x00\x00@\x01\xb8\x97{{\x01\x04{{\x03\x04\x08\x00\x067PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Delaying input_event LinkFailure:e29 for 106 ms
+DEBUG:event_scheduler:Injecting LinkFailure:e29:('LinkFailure', 3, 2, 2, 2)
+[1;36mCutting link (3:2) -> (2:2)[1;m
+[1;32m[1;44m00:00.611 00:00.108 Successfully matched event LinkFailure:e29[1;m
+DEBUG:input_logger:logging event LinkFailure:e29:('LinkFailure', 3, 2, 2, 2)
+DEBUG:event_scheduler:Injecting LinkFailure:e30:('LinkFailure', 2, 3, 1, 3)
+[1;36mCutting link (2:3) -> (1:3)[1;m
+[1;32m[1;44m00:00.612 00:00.109 Successfully matched event LinkFailure:e30[1;m
+DEBUG:input_logger:logging event LinkFailure:e30:('LinkFailure', 2, 3, 1, 3)
+DEBUG:event_scheduler:Injecting LinkRecovery:e31:('LinkRecovery', 2, 1, 4, 2)
+[1;36mRestoring link (2:1) -> (4:2)[1;m
+[1;32m[1;44m00:00.612 00:00.109 Successfully matched event LinkRecovery:e31[1;m
+DEBUG:input_logger:logging event LinkRecovery:e31:('LinkRecovery', 2, 1, 4, 2)
+DEBUG:event_scheduler:Injecting TrafficInjection:e32:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:04:[IPAddr('123.123.1.4')] Packet:[12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b995[123.123.1.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.1.4')]:sending packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b995[123.123.1.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;32m[1;44m00:00.613 00:00.110 Successfully matched event TrafficInjection:e32[1;m
+DEBUG:input_logger:logging event TrafficInjection:e32:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:04:[IPAddr('123.123.1.4')] Packet:[12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b995[123.123.1.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(1):Send PacketIn SoftSwitch(1) 
+INFO:FuzzSoftwareSwitch(1):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     2
+  buffer_id: 2
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x02\x04\x124Vx\x01\x04\x08\x00E\x00\x00H\xc7!\x00\x00@\x01\xb9\x95{{\x01\x04{{\x02\x04\x00\x00\x0e7PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Delaying input_event DataplaneDrop:e33 for 100 ms
+DEBUG:event_scheduler:Injecting DataplaneDrop:e33:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.1.4', u'dl_src': u'12:34:56:78:01:04', u'nw_dst': u'123.123.2.4'}, u"host:[IPAddr('123.123.1.4')]", u'12:34:56:78:01:04')
+[1;32m[1;44m00:00.715 00:00.211 Successfully matched event DataplaneDrop:e33[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e33:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.1.4', u'dl_src': u'12:34:56:78:01:04', u'nw_dst': u'123.123.2.4'}, u"host:[IPAddr('123.123.1.4')]", u'12:34:56:78:01:04')
+DEBUG:event_scheduler:Injecting LinkRecovery:e45:('LinkRecovery', 2, 3, 1, 3)
+[1;36mRestoring link (2:3) -> (1:3)[1;m
+[1;32m[1;44m00:00.716 00:00.215 Successfully matched event LinkRecovery:e45[1;m
+DEBUG:input_logger:logging event LinkRecovery:e45:('LinkRecovery', 2, 3, 1, 3)
+DEBUG:event_scheduler:Delaying input_event TrafficInjection:e53 for 106 ms
+DEBUG:event_scheduler:Injecting TrafficInjection:e53:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:04:[IPAddr('123.123.1.4')] Packet:[12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b994[123.123.1.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.1.4')]:sending packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b994[123.123.1.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;32m[1;44m00:00.822 00:00.321 Successfully matched event TrafficInjection:e53[1;m
+DEBUG:input_logger:logging event TrafficInjection:e53:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:04:[IPAddr('123.123.1.4')] Packet:[12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b994[123.123.1.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(1):Send PacketIn SoftSwitch(1) 
+INFO:FuzzSoftwareSwitch(1):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     3
+  buffer_id: 3
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x02\x04\x124Vx\x01\x04\x08\x00E\x00\x00H\xc7"\x00\x00@\x01\xb9\x94{{\x01\x04{{\x02\x04\x08\x00\x067PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Injecting TrafficInjection:e54:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:04:[IPAddr('123.123.2.4')] Packet:[12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b993[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.2.4')]:sending packet on interface eth2: [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b993[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;32m[1;44m00:00.824 00:00.321 Successfully matched event TrafficInjection:e54[1;m
+DEBUG:input_logger:logging event TrafficInjection:e54:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:04:[IPAddr('123.123.2.4')] Packet:[12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b993[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(2):Send PacketIn SoftSwitch(2) 
+INFO:FuzzSoftwareSwitch(2):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     1
+  buffer_id: 1
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x01\x04\x124Vx\x02\x04\x08\x00E\x00\x00H\xc7#\x00\x00@\x01\xb9\x93{{\x02\x04{{\x01\x04\x08\x00\x067PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Injecting TrafficInjection:e55:('TrafficInjection', Interface:HostInterface:eth3:12:34:56:78:03:04:[IPAddr('123.123.3.4')] Packet:[12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b792[123.123.3.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.3.4')]:sending packet on interface eth3: [12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b792[123.123.3.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;32m[1;44m00:00.826 00:00.322 Successfully matched event TrafficInjection:e55[1;m
+DEBUG:input_logger:logging event TrafficInjection:e55:('TrafficInjection', Interface:HostInterface:eth3:12:34:56:78:03:04:[IPAddr('123.123.3.4')] Packet:[12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b792[123.123.3.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(3):Send PacketIn SoftSwitch(3) 
+INFO:FuzzSoftwareSwitch(3):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     1
+  buffer_id: 1
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x02\x04\x124Vx\x03\x04\x08\x00E\x00\x00H\xc7$\x00\x00@\x01\xb7\x92{{\x03\x04{{\x02\x04\x08\x00\x067PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Injecting TrafficInjection:e56:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b691[123.123.4.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b691[123.123.4.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;32m[1;44m00:00.828 00:00.322 Successfully matched event TrafficInjection:e56[1;m
+DEBUG:input_logger:logging event TrafficInjection:e56:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b691[123.123.4.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(4):Send PacketIn SoftSwitch(4) 
+INFO:FuzzSoftwareSwitch(4):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     1
+  buffer_id: 1
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x02\x04\x124Vx\x04\x04\x08\x00E\x00\x00H\xc7%\x00\x00@\x01\xb6\x91{{\x04\x04{{\x02\x04\x00\x00\x0e7PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Delaying input_event LinkRecovery:e66 for 106 ms
+DEBUG:event_scheduler:Injecting LinkRecovery:e66:('LinkRecovery', 1, 3, 2, 3)
+[1;36mRestoring link (1:3) -> (2:3)[1;m
+[1;32m[1;44m00:00.936 00:00.430 Successfully matched event LinkRecovery:e66[1;m
+DEBUG:input_logger:logging event LinkRecovery:e66:('LinkRecovery', 1, 3, 2, 3)
+DEBUG:event_scheduler:Injecting TrafficInjection:e67:('TrafficInjection', Interface:HostInterface:eth3:12:34:56:78:03:04:[IPAddr('123.123.3.4')] Packet:[12:34:56:78:03:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b88c[123.123.3.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.3.4')]:sending packet on interface eth3: [12:34:56:78:03:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b88c[123.123.3.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;32m[1;44m00:00.937 00:00.430 Successfully matched event TrafficInjection:e67[1;m
+DEBUG:input_logger:logging event TrafficInjection:e67:('TrafficInjection', Interface:HostInterface:eth3:12:34:56:78:03:04:[IPAddr('123.123.3.4')] Packet:[12:34:56:78:03:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b88c[123.123.3.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(3):Send PacketIn SoftSwitch(3) 
+INFO:FuzzSoftwareSwitch(3):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     2
+  buffer_id: 2
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x01\x04\x124Vx\x03\x04\x08\x00E\x00\x00H\xc7*\x00\x00@\x01\xb8\x8c{{\x03\x04{{\x01\x04\x08\x00\x067PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Injecting TrafficInjection:e68:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b58b[123.123.4.4>123.123.3.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b58b[123.123.4.4>123.123.3.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;32m[1;44m00:00.939 00:00.431 Successfully matched event TrafficInjection:e68[1;m
+DEBUG:input_logger:logging event TrafficInjection:e68:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b58b[123.123.4.4>123.123.3.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(4):Send PacketIn SoftSwitch(4) 
+INFO:FuzzSoftwareSwitch(4):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     2
+  buffer_id: 2
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x03\x04\x124Vx\x04\x04\x08\x00E\x00\x00H\xc7+\x00\x00@\x01\xb5\x8b{{\x04\x04{{\x03\x04\x08\x00\x067PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Delaying input_event LinkFailure:e110 for 221 ms
+DEBUG:event_scheduler:Injecting LinkFailure:e110:('LinkFailure', 2, 1, 4, 2)
+[1;36mCutting link (2:1) -> (4:2)[1;m
+[1;32m[1;44m00:01.162 00:00.654 Successfully matched event LinkFailure:e110[1;m
+DEBUG:input_logger:logging event LinkFailure:e110:('LinkFailure', 2, 1, 4, 2)
+DEBUG:event_scheduler:Injecting TrafficInjection:e111:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b67d[123.123.4.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b67d[123.123.4.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;32m[1;44m00:01.163 00:00.654 Successfully matched event TrafficInjection:e111[1;m
+DEBUG:input_logger:logging event TrafficInjection:e111:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b67d[123.123.4.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(4):Send PacketIn SoftSwitch(4) 
+INFO:FuzzSoftwareSwitch(4):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     3
+  buffer_id: 3
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x02\x04\x124Vx\x04\x04\x08\x00E\x00\x00H\xc79\x00\x00@\x01\xb6}{{\x04\x04{{\x02\x04\x08\x00\x067PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Delaying input_event LinkFailure:e174 for 129 ms
+DEBUG:event_scheduler:Injecting LinkFailure:e174:('LinkFailure', 1, 1, 4, 3)
+[1;36mCutting link (1:1) -> (4:3)[1;m
+[1;32m[1;44m00:01.294 00:00.784 Successfully matched event LinkFailure:e174[1;m
+DEBUG:input_logger:logging event LinkFailure:e174:('LinkFailure', 1, 1, 4, 3)
+DEBUG:event_scheduler:Injecting TrafficInjection:e175:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:04:[IPAddr('123.123.1.4')] Packet:[12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b96e[123.123.1.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.1.4')]:sending packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b96e[123.123.1.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;32m[1;44m00:01.295 00:00.785 Successfully matched event TrafficInjection:e175[1;m
+DEBUG:input_logger:logging event TrafficInjection:e175:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:04:[IPAddr('123.123.1.4')] Packet:[12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b96e[123.123.1.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(1):Send PacketIn SoftSwitch(1) 
+INFO:FuzzSoftwareSwitch(1):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     4
+  buffer_id: 4
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x02\x04\x124Vx\x01\x04\x08\x00E\x00\x00H\xc7H\x00\x00@\x01\xb9n{{\x01\x04{{\x02\x04\x00\x00\x0e7PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Injecting TrafficInjection:e176:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b66d[123.123.4.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b66d[123.123.4.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;32m[1;44m00:01.297 00:00.785 Successfully matched event TrafficInjection:e176[1;m
+DEBUG:input_logger:logging event TrafficInjection:e176:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b66d[123.123.4.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(4):Send PacketIn SoftSwitch(4) 
+INFO:FuzzSoftwareSwitch(4):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     4
+  buffer_id: 4
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x02\x04\x124Vx\x04\x04\x08\x00E\x00\x00H\xc7I\x00\x00@\x01\xb6m{{\x04\x04{{\x02\x04\x08\x00\x067PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Delaying input_event DataplaneDrop:e188 for 108 ms
+DEBUG:event_scheduler:Injecting DataplaneDrop:e188:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.1.4', u'dl_src': u'12:34:56:78:01:04', u'nw_dst': u'123.123.2.4'}, u"host:[IPAddr('123.123.1.4')]", u'12:34:56:78:01:04')
+[1;32m[1;44m00:01.406 00:00.894 Successfully matched event DataplaneDrop:e188[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e188:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.1.4', u'dl_src': u'12:34:56:78:01:04', u'nw_dst': u'123.123.2.4'}, u"host:[IPAddr('123.123.1.4')]", u'12:34:56:78:01:04')
+DEBUG:event_scheduler:Delaying input_event TrafficInjection:e251 for 26 ms
+DEBUG:event_scheduler:Injecting TrafficInjection:e251:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b75f[123.123.4.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b75f[123.123.4.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;32m[1;44m00:01.433 00:00.920 Successfully matched event TrafficInjection:e251[1;m
+DEBUG:input_logger:logging event TrafficInjection:e251:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b75f[123.123.4.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(4):Send PacketIn SoftSwitch(4) 
+INFO:FuzzSoftwareSwitch(4):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     5
+  buffer_id: 5
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x01\x04\x124Vx\x04\x04\x08\x00E\x00\x00H\xc7W\x00\x00@\x01\xb7_{{\x04\x04{{\x01\x04\x08\x00\x067PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Delaying input_event DataplaneDrop:e252 for 100 ms
+DEBUG:event_scheduler:Injecting DataplaneDrop:e252:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.1.4', u'dl_src': u'12:34:56:78:01:04', u'nw_dst': u'123.123.2.4'}, 4, 2)
+[1;32m[1;44m00:01.534 00:01.021 Successfully matched event DataplaneDrop:e252[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e252:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.1.4', u'dl_src': u'12:34:56:78:01:04', u'nw_dst': u'123.123.2.4'}, 4, 2)
+DEBUG:event_scheduler:Injecting DataplaneDrop:e263:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.3.4', u'dl_src': u'12:34:56:78:03:04', u'nw_dst': u'123.123.1.4'}, 4, 2)
+[1;32m[1;44m00:01.535 00:01.030 Successfully matched event DataplaneDrop:e263[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e263:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.3.4', u'dl_src': u'12:34:56:78:03:04', u'nw_dst': u'123.123.1.4'}, 4, 2)
+DEBUG:event_scheduler:Injecting DataplaneDrop:e266:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.2.4', u'dl_src': u'12:34:56:78:02:04', u'nw_dst': u'123.123.1.4'}, 1, 1)
+[1;32m[1;44m00:01.536 00:01.031 Successfully matched event DataplaneDrop:e266[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e266:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.2.4', u'dl_src': u'12:34:56:78:02:04', u'nw_dst': u'123.123.1.4'}, 1, 1)
+DEBUG:event_scheduler:Injecting DataplaneDrop:e268:(u'DataplaneDrop', DPFingerprint{u'class': u'lldp'}, 2, 1)
+[1;32m[1;44m00:01.536 00:01.032 Successfully matched event DataplaneDrop:e268[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e268:(u'DataplaneDrop', DPFingerprint{u'class': u'lldp'}, 2, 1)
+DEBUG:event_scheduler:Delaying input_event LinkRecovery:e316 for 20 ms
+DEBUG:event_scheduler:Injecting LinkRecovery:e316:('LinkRecovery', 3, 2, 2, 2)
+[1;36mRestoring link (3:2) -> (2:2)[1;m
+[1;32m[1;44m00:01.557 00:01.052 Successfully matched event LinkRecovery:e316[1;m
+DEBUG:input_logger:logging event LinkRecovery:e316:('LinkRecovery', 3, 2, 2, 2)
+DEBUG:event_scheduler:Injecting LinkRecovery:e317:('LinkRecovery', 2, 1, 4, 2)
+[1;36mRestoring link (2:1) -> (4:2)[1;m
+[1;32m[1;44m00:01.557 00:01.052 Successfully matched event LinkRecovery:e317[1;m
+DEBUG:input_logger:logging event LinkRecovery:e317:('LinkRecovery', 2, 1, 4, 2)
+DEBUG:event_scheduler:Injecting TrafficInjection:e318:('TrafficInjection', Interface:HostInterface:eth3:12:34:56:78:03:04:[IPAddr('123.123.3.4')] Packet:[12:34:56:78:03:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b853[123.123.3.4>123.123.1.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.3.4')]:sending packet on interface eth3: [12:34:56:78:03:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b853[123.123.3.4>123.123.1.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;32m[1;44m00:01.558 00:01.053 Successfully matched event TrafficInjection:e318[1;m
+DEBUG:input_logger:logging event TrafficInjection:e318:('TrafficInjection', Interface:HostInterface:eth3:12:34:56:78:03:04:[IPAddr('123.123.3.4')] Packet:[12:34:56:78:03:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b853[123.123.3.4>123.123.1.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(3):Send PacketIn SoftSwitch(3) 
+INFO:FuzzSoftwareSwitch(3):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     3
+  buffer_id: 3
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x01\x04\x124Vx\x03\x04\x08\x00E\x00\x00H\xc7c\x00\x00@\x01\xb8S{{\x03\x04{{\x01\x04\x00\x00\x0e7PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Injecting TrafficInjection:e319:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b552[123.123.4.4>123.123.3.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b552[123.123.4.4>123.123.3.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;32m[1;44m00:01.560 00:01.053 Successfully matched event TrafficInjection:e319[1;m
+DEBUG:input_logger:logging event TrafficInjection:e319:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b552[123.123.4.4>123.123.3.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(4):Send PacketIn SoftSwitch(4) 
+INFO:FuzzSoftwareSwitch(4):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     6
+  buffer_id: 6
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x03\x04\x124Vx\x04\x04\x08\x00E\x00\x00H\xc7d\x00\x00@\x01\xb5R{{\x04\x04{{\x03\x04\x00\x00\x0e7PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Delaying input_event DataplaneDrop:e330 for 108 ms
+DEBUG:event_scheduler:Injecting DataplaneDrop:e330:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.4.4', u'dl_src': u'12:34:56:78:04:04', u'nw_dst': u'123.123.2.4'}, 1, 1)
+[1;32m[1;44m00:01.669 00:01.162 Successfully matched event DataplaneDrop:e330[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e330:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.4.4', u'dl_src': u'12:34:56:78:04:04', u'nw_dst': u'123.123.2.4'}, 1, 1)
+DEBUG:event_scheduler:Injecting DataplaneDrop:e331:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.2.4', u'dl_src': u'12:34:56:78:02:04', u'nw_dst': u'123.123.1.4'}, 1, 1)
+[1;32m[1;44m00:01.670 00:01.162 Successfully matched event DataplaneDrop:e331[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e331:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.2.4', u'dl_src': u'12:34:56:78:02:04', u'nw_dst': u'123.123.1.4'}, 1, 1)
+DEBUG:event_scheduler:Delaying input_event TrafficInjection:e373 for 17 ms
+DEBUG:event_scheduler:Injecting TrafficInjection:e373:('TrafficInjection', Interface:HostInterface:eth3:12:34:56:78:03:04:[IPAddr('123.123.3.4')] Packet:[12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b749[123.123.3.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.3.4')]:sending packet on interface eth3: [12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b749[123.123.3.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;32m[1;44m00:01.689 00:01.180 Successfully matched event TrafficInjection:e373[1;m
+DEBUG:input_logger:logging event TrafficInjection:e373:('TrafficInjection', Interface:HostInterface:eth3:12:34:56:78:03:04:[IPAddr('123.123.3.4')] Packet:[12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b749[123.123.3.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(3):Send PacketIn SoftSwitch(3) 
+INFO:FuzzSoftwareSwitch(3):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     4
+  buffer_id: 4
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x02\x04\x124Vx\x03\x04\x08\x00E\x00\x00H\xc7m\x00\x00@\x01\xb7I{{\x03\x04{{\x02\x04\x08\x00\x067PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Delaying input_event DataplaneDrop:e387 for 110 ms
+DEBUG:event_scheduler:Injecting DataplaneDrop:e387:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.3.4', u'dl_src': u'12:34:56:78:03:04', u'nw_dst': u'123.123.1.4'}, 1, 1)
+[1;32m[1;44m00:01.800 00:01.291 Successfully matched event DataplaneDrop:e387[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e387:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.3.4', u'dl_src': u'12:34:56:78:03:04', u'nw_dst': u'123.123.1.4'}, 1, 1)
+DEBUG:event_scheduler:Delaying input_event LinkFailure:e423 for 16 ms
+DEBUG:event_scheduler:Injecting LinkFailure:e423:('LinkFailure', 4, 2, 2, 1)
+[1;36mCutting link (4:2) -> (2:1)[1;m
+[1;32m[1;44m00:01.817 00:01.307 Successfully matched event LinkFailure:e423[1;m
+DEBUG:input_logger:logging event LinkFailure:e423:('LinkFailure', 4, 2, 2, 1)
+DEBUG:event_scheduler:Injecting LinkFailure:e424:('LinkFailure', 4, 1, 3, 1)
+[1;36mCutting link (4:1) -> (3:1)[1;m
+[1;32m[1;44m00:01.817 00:01.307 Successfully matched event LinkFailure:e424[1;m
+DEBUG:input_logger:logging event LinkFailure:e424:('LinkFailure', 4, 1, 3, 1)
+DEBUG:event_scheduler:Injecting TrafficInjection:e425:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b741[123.123.4.4>123.123.1.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b741[123.123.4.4>123.123.1.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;32m[1;44m00:01.818 00:01.308 Successfully matched event TrafficInjection:e425[1;m
+DEBUG:input_logger:logging event TrafficInjection:e425:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b741[123.123.4.4>123.123.1.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(4):Send PacketIn SoftSwitch(4) 
+INFO:FuzzSoftwareSwitch(4):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     7
+  buffer_id: 7
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x01\x04\x124Vx\x04\x04\x08\x00E\x00\x00H\xc7u\x00\x00@\x01\xb7A{{\x04\x04{{\x01\x04\x00\x00\x0e7PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Delaying input_event DataplaneDrop:e429 for 102 ms
+DEBUG:event_scheduler:Injecting DataplaneDrop:e429:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:03:04', u'nw_src': u'123.123.4.4', u'dl_src': u'12:34:56:78:04:04', u'nw_dst': u'123.123.3.4'}, 4, 1)
+[1;32m[1;44m00:01.922 00:01.411 Successfully matched event DataplaneDrop:e429[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e429:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:03:04', u'nw_src': u'123.123.4.4', u'dl_src': u'12:34:56:78:04:04', u'nw_dst': u'123.123.3.4'}, 4, 1)
+DEBUG:event_scheduler:Delaying input_event TrafficInjection:e475 for 22 ms
+DEBUG:event_scheduler:Injecting TrafficInjection:e475:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b63c[123.123.4.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b63c[123.123.4.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;32m[1;44m00:01.945 00:01.433 Successfully matched event TrafficInjection:e475[1;m
+DEBUG:input_logger:logging event TrafficInjection:e475:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b63c[123.123.4.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(4):Send PacketIn SoftSwitch(4) 
+INFO:FuzzSoftwareSwitch(4):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     8
+  buffer_id: 8
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x02\x04\x124Vx\x04\x04\x08\x00E\x00\x00H\xc7z\x00\x00@\x01\xb6<{{\x04\x04{{\x02\x04\x08\x00\x067PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Delaying input_event DataplaneDrop:e476 for 100 ms
+DEBUG:event_scheduler:Injecting DataplaneDrop:e476:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.4.4', u'dl_src': u'12:34:56:78:04:04', u'nw_dst': u'123.123.2.4'}, 4, 2)
+[1;32m[1;44m00:02.047 00:01.534 Successfully matched event DataplaneDrop:e476[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e476:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.4.4', u'dl_src': u'12:34:56:78:04:04', u'nw_dst': u'123.123.2.4'}, 4, 2)
+DEBUG:event_scheduler:Injecting DataplaneDrop:e477:(u'DataplaneDrop', DPFingerprint{u'class': u'lldp'}, 4, 1)
+[1;32m[1;44m00:02.047 00:01.534 Successfully matched event DataplaneDrop:e477[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e477:(u'DataplaneDrop', DPFingerprint{u'class': u'lldp'}, 4, 1)
+DEBUG:event_scheduler:Delaying input_event LinkFailure:e519 for 24 ms
+DEBUG:event_scheduler:Injecting LinkFailure:e519:('LinkFailure', 3, 1, 4, 1)
+[1;36mCutting link (3:1) -> (4:1)[1;m
+[1;32m[1;44m00:02.072 00:01.559 Successfully matched event LinkFailure:e519[1;m
+DEBUG:input_logger:logging event LinkFailure:e519:('LinkFailure', 3, 1, 4, 1)
+DEBUG:event_scheduler:Injecting LinkRecovery:e520:('LinkRecovery', 4, 1, 3, 1)
+[1;36mRestoring link (4:1) -> (3:1)[1;m
+[1;32m[1;44m00:02.073 00:01.559 Successfully matched event LinkRecovery:e520[1;m
+DEBUG:input_logger:logging event LinkRecovery:e520:('LinkRecovery', 4, 1, 3, 1)
+DEBUG:event_scheduler:Delaying input_event DataplaneDrop:e523 for 102 ms
+DEBUG:event_scheduler:Injecting DataplaneDrop:e523:(u'DataplaneDrop', DPFingerprint{u'class': u'lldp'}, 4, 2)
+[1;32m[1;44m00:02.176 00:01.662 Successfully matched event DataplaneDrop:e523[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e523:(u'DataplaneDrop', DPFingerprint{u'class': u'lldp'}, 4, 2)
+DEBUG:event_scheduler:Delaying input_event LinkRecovery:e562 for 19 ms
+DEBUG:event_scheduler:Injecting LinkRecovery:e562:('LinkRecovery', 4, 2, 2, 1)
+[1;36mRestoring link (4:2) -> (2:1)[1;m
+[1;32m[1;44m00:02.196 00:01.681 Successfully matched event LinkRecovery:e562[1;m
+DEBUG:input_logger:logging event LinkRecovery:e562:('LinkRecovery', 4, 2, 2, 1)
+DEBUG:event_scheduler:Injecting TrafficInjection:e563:('TrafficInjection', Interface:HostInterface:eth3:12:34:56:78:03:04:[IPAddr('123.123.3.4')] Packet:[12:34:56:78:03:04>12:34:56:78:04:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b531[123.123.3.4>123.123.4.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.3.4')]:sending packet on interface eth3: [12:34:56:78:03:04>12:34:56:78:04:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b531[123.123.3.4>123.123.4.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;32m[1;44m00:02.197 00:01.682 Successfully matched event TrafficInjection:e563[1;m
+DEBUG:input_logger:logging event TrafficInjection:e563:('TrafficInjection', Interface:HostInterface:eth3:12:34:56:78:03:04:[IPAddr('123.123.3.4')] Packet:[12:34:56:78:03:04>12:34:56:78:04:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b531[123.123.3.4>123.123.4.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(3):Send PacketIn SoftSwitch(3) 
+INFO:FuzzSoftwareSwitch(3):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     5
+  buffer_id: 5
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x04\x04\x124Vx\x03\x04\x08\x00E\x00\x00H\xc7\x85\x00\x00@\x01\xb51{{\x03\x04{{\x04\x04\x08\x00\x067PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Delaying input_event LinkRecovery:e596 for 121 ms
+DEBUG:event_scheduler:Injecting LinkRecovery:e596:('LinkRecovery', 1, 1, 4, 3)
+[1;36mRestoring link (1:1) -> (4:3)[1;m
+[1;32m[1;44m00:02.321 00:01.804 Successfully matched event LinkRecovery:e596[1;m
+DEBUG:input_logger:logging event LinkRecovery:e596:('LinkRecovery', 1, 1, 4, 3)
+DEBUG:event_scheduler:Injecting TrafficInjection:e597:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:04:[IPAddr('123.123.1.4')] Packet:[12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b92c[123.123.1.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.1.4')]:sending packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b92c[123.123.1.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;32m[1;44m00:02.322 00:01.805 Successfully matched event TrafficInjection:e597[1;m
+DEBUG:input_logger:logging event TrafficInjection:e597:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:04:[IPAddr('123.123.1.4')] Packet:[12:34:56:78:01:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b92c[123.123.1.4>123.123.2.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(1):Send PacketIn SoftSwitch(1) 
+INFO:FuzzSoftwareSwitch(1):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     5
+  buffer_id: 5
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x02\x04\x124Vx\x01\x04\x08\x00E\x00\x00H\xc7\x8a\x00\x00@\x01\xb9,{{\x01\x04{{\x02\x04\x08\x00\x067PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Injecting TrafficInjection:e598:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:04:[IPAddr('123.123.2.4')] Packet:[12:34:56:78:02:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b72b[123.123.2.4>123.123.3.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.2.4')]:sending packet on interface eth2: [12:34:56:78:02:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b72b[123.123.2.4>123.123.3.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;32m[1;44m00:02.323 00:01.805 Successfully matched event TrafficInjection:e598[1;m
+DEBUG:input_logger:logging event TrafficInjection:e598:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:04:[IPAddr('123.123.2.4')] Packet:[12:34:56:78:02:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b72b[123.123.2.4>123.123.3.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(2):Send PacketIn SoftSwitch(2) 
+INFO:FuzzSoftwareSwitch(2):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     2
+  buffer_id: 2
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x03\x04\x124Vx\x02\x04\x08\x00E\x00\x00H\xc7\x8b\x00\x00@\x01\xb7+{{\x02\x04{{\x03\x04\x00\x00\x0e7PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Injecting TrafficInjection:e599:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b72a[123.123.4.4>123.123.1.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.4.4')]:sending packet on interface eth4: [12:34:56:78:04:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b72a[123.123.4.4>123.123.1.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;32m[1;44m00:02.325 00:01.806 Successfully matched event TrafficInjection:e599[1;m
+DEBUG:input_logger:logging event TrafficInjection:e599:('TrafficInjection', Interface:HostInterface:eth4:12:34:56:78:04:04:[IPAddr('123.123.4.4')] Packet:[12:34:56:78:04:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b72a[123.123.4.4>123.123.1.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(4):Send PacketIn SoftSwitch(4) 
+INFO:FuzzSoftwareSwitch(4):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     9
+  buffer_id: 9
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x01\x04\x124Vx\x04\x04\x08\x00E\x00\x00H\xc7\x8c\x00\x00@\x01\xb7*{{\x04\x04{{\x01\x04\x00\x00\x0e7PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Delaying input_event DataplaneDrop:e603 for 102 ms
+DEBUG:event_scheduler:Injecting DataplaneDrop:e603:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.2.4', u'dl_src': u'12:34:56:78:02:04', u'nw_dst': u'123.123.1.4'}, 1, 4)
+[1;32m[1;44m00:02.430 00:01.909 Successfully matched event DataplaneDrop:e603[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e603:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.2.4', u'dl_src': u'12:34:56:78:02:04', u'nw_dst': u'123.123.1.4'}, 1, 4)
+DEBUG:event_scheduler:Injecting DataplaneDrop:e607:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:03:04', u'nw_src': u'123.123.2.4', u'dl_src': u'12:34:56:78:02:04', u'nw_dst': u'123.123.3.4'}, u"host:[IPAddr('123.123.2.4')]", u'12:34:56:78:02:04')
+[1;32m[1;44m00:02.430 00:01.912 Successfully matched event DataplaneDrop:e607[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e607:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:03:04', u'nw_src': u'123.123.2.4', u'dl_src': u'12:34:56:78:02:04', u'nw_dst': u'123.123.3.4'}, u"host:[IPAddr('123.123.2.4')]", u'12:34:56:78:02:04')
+DEBUG:event_scheduler:Injecting DataplaneDrop:e608:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.1.4', u'dl_src': u'12:34:56:78:01:04', u'nw_dst': u'123.123.2.4'}, 2, 3)
+[1;32m[1;44m00:02.431 00:01.913 Successfully matched event DataplaneDrop:e608[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e608:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.1.4', u'dl_src': u'12:34:56:78:01:04', u'nw_dst': u'123.123.2.4'}, 2, 3)
+DEBUG:event_scheduler:Delaying input_event LinkFailure:e633 for 12 ms
+DEBUG:event_scheduler:Injecting LinkFailure:e633:('LinkFailure', 1, 1, 4, 3)
+[1;36mCutting link (1:1) -> (4:3)[1;m
+[1;32m[1;44m00:02.444 00:01.926 Successfully matched event LinkFailure:e633[1;m
+DEBUG:input_logger:logging event LinkFailure:e633:('LinkFailure', 1, 1, 4, 3)
+DEBUG:event_scheduler:Injecting TrafficInjection:e634:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:04:[IPAddr('123.123.2.4')] Packet:[12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b924[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.2.4')]:sending packet on interface eth2: [12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b924[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;32m[1;44m00:02.445 00:01.926 Successfully matched event TrafficInjection:e634[1;m
+DEBUG:input_logger:logging event TrafficInjection:e634:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:04:[IPAddr('123.123.2.4')] Packet:[12:34:56:78:02:04>12:34:56:78:01:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b924[123.123.2.4>123.123.1.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(2):Send PacketIn SoftSwitch(2) 
+INFO:FuzzSoftwareSwitch(2):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     3
+  buffer_id: 3
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x01\x04\x124Vx\x02\x04\x08\x00E\x00\x00H\xc7\x92\x00\x00@\x01\xb9${{\x02\x04{{\x01\x04\x08\x00\x067PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Injecting TrafficInjection:e635:('TrafficInjection', Interface:HostInterface:eth3:12:34:56:78:03:04:[IPAddr('123.123.3.4')] Packet:[12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b723[123.123.3.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.3.4')]:sending packet on interface eth3: [12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b723[123.123.3.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;32m[1;44m00:02.447 00:01.927 Successfully matched event TrafficInjection:e635[1;m
+DEBUG:input_logger:logging event TrafficInjection:e635:('TrafficInjection', Interface:HostInterface:eth3:12:34:56:78:03:04:[IPAddr('123.123.3.4')] Packet:[12:34:56:78:03:04>12:34:56:78:02:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b723[123.123.3.4>123.123.2.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(3):Send PacketIn SoftSwitch(3) 
+INFO:FuzzSoftwareSwitch(3):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     6
+  buffer_id: 6
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x02\x04\x124Vx\x03\x04\x08\x00E\x00\x00H\xc7\x93\x00\x00@\x01\xb7#{{\x03\x04{{\x02\x04\x00\x00\x0e7PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Delaying input_event DataplaneDrop:e641 for 104 ms
+DEBUG:event_scheduler:Injecting DataplaneDrop:e641:(u'DataplaneDrop', DPFingerprint{u'class': u'lldp'}, 1, 2)
+[1;32m[1;44m00:02.553 00:02.032 Successfully matched event DataplaneDrop:e641[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e641:(u'DataplaneDrop', DPFingerprint{u'class': u'lldp'}, 1, 2)
+DEBUG:event_scheduler:Delaying input_event LinkFailure:e670 for 16 ms
+DEBUG:event_scheduler:Injecting LinkFailure:e670:('LinkFailure', 4, 3, 1, 1)
+[1;36mCutting link (4:3) -> (1:1)[1;m
+[1;32m[1;44m00:02.570 00:02.048 Successfully matched event LinkFailure:e670[1;m
+DEBUG:input_logger:logging event LinkFailure:e670:('LinkFailure', 4, 3, 1, 1)
+DEBUG:event_scheduler:Delaying input_event DataplaneDrop:e674 for 103 ms
+DEBUG:event_scheduler:Injecting DataplaneDrop:e674:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.2.4', u'dl_src': u'12:34:56:78:02:04', u'nw_dst': u'123.123.1.4'}, 2, 3)
+[1;32m[1;44m00:02.675 00:02.152 Successfully matched event DataplaneDrop:e674[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e674:(u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.2.4', u'dl_src': u'12:34:56:78:02:04', u'nw_dst': u'123.123.1.4'}, 2, 3)
+DEBUG:event_scheduler:Injecting DataplaneDrop:e677:(u'DataplaneDrop', DPFingerprint{u'class': u'lldp'}, 1, 3)
+[1;32m[1;44m00:02.675 00:02.155 Successfully matched event DataplaneDrop:e677[1;m
+DEBUG:input_logger:logging event DataplaneDrop:e677:(u'DataplaneDrop', DPFingerprint{u'class': u'lldp'}, 1, 3)
+DEBUG:event_scheduler:Injecting TrafficInjection:e695:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:04:[IPAddr('123.123.1.4')] Packet:[12:34:56:78:01:04>12:34:56:78:04:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b71d[123.123.1.4>123.123.4.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.1.4')]:sending packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:04:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b71d[123.123.1.4>123.123.4.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;32m[1;44m00:02.676 00:02.165 Successfully matched event TrafficInjection:e695[1;m
+DEBUG:input_logger:logging event TrafficInjection:e695:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:04:[IPAddr('123.123.1.4')] Packet:[12:34:56:78:01:04>12:34:56:78:04:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b71d[123.123.1.4>123.123.4.4]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(1):Send PacketIn SoftSwitch(1) 
+INFO:FuzzSoftwareSwitch(1):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     6
+  buffer_id: 6
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x04\x04\x124Vx\x01\x04\x08\x00E\x00\x00H\xc7\x99\x00\x00@\x01\xb7\x1d{{\x01\x04{{\x04\x04\x08\x00\x067PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Delaying input_event LinkRecovery:e713 for 114 ms
+DEBUG:event_scheduler:Injecting LinkRecovery:e713:('LinkRecovery', 3, 1, 4, 1)
+[1;36mRestoring link (3:1) -> (4:1)[1;m
+[1;32m[1;44m00:02.792 00:02.280 Successfully matched event LinkRecovery:e713[1;m
+DEBUG:input_logger:logging event LinkRecovery:e713:('LinkRecovery', 3, 1, 4, 1)
+DEBUG:event_scheduler:Injecting LinkRecovery:e714:('LinkRecovery', 1, 1, 4, 3)
+[1;36mRestoring link (1:1) -> (4:3)[1;m
+[1;32m[1;44m00:02.793 00:02.280 Successfully matched event LinkRecovery:e714[1;m
+DEBUG:input_logger:logging event LinkRecovery:e714:('LinkRecovery', 1, 1, 4, 3)
+DEBUG:event_scheduler:Injecting TrafficInjection:e715:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:04:[IPAddr('123.123.1.4')] Packet:[12:34:56:78:01:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b81a[123.123.1.4>123.123.3.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.1.4')]:sending packet on interface eth1: [12:34:56:78:01:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b81a[123.123.1.4>123.123.3.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;32m[1;44m00:02.794 00:02.280 Successfully matched event TrafficInjection:e715[1;m
+DEBUG:input_logger:logging event TrafficInjection:e715:('TrafficInjection', Interface:HostInterface:eth1:12:34:56:78:01:04:[IPAddr('123.123.1.4')] Packet:[12:34:56:78:01:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b81a[123.123.1.4>123.123.3.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(1):Send PacketIn SoftSwitch(1) 
+INFO:FuzzSoftwareSwitch(1):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     7
+  buffer_id: 7
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x03\x04\x124Vx\x01\x04\x08\x00E\x00\x00H\xc7\x9c\x00\x00@\x01\xb8\x1a{{\x01\x04{{\x03\x04\x00\x00\x0e7PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Injecting TrafficInjection:e716:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:04:[IPAddr('123.123.2.4')] Packet:[12:34:56:78:02:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b719[123.123.2.4>123.123.3.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+INFO:host:[IPAddr('123.123.2.4')]:sending packet on interface eth2: [12:34:56:78:02:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b719[123.123.2.4>123.123.3.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;32m[1;44m00:02.796 00:02.281 Successfully matched event TrafficInjection:e716[1;m
+DEBUG:input_logger:logging event TrafficInjection:e716:('TrafficInjection', Interface:HostInterface:eth2:12:34:56:78:02:04:[IPAddr('123.123.2.4')] Packet:[12:34:56:78:02:04>12:34:56:78:03:04:IP]|([v:4hl:5l:72t:64]ICMP cs:b719[123.123.2.4>123.123.3.4]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}, None)
+[1;36mForwarding dataplane event[1;m
+DEBUG:FuzzSoftwareSwitch(2):Send PacketIn SoftSwitch(2) 
+INFO:FuzzSoftwareSwitch(2):Could not find any connection to send messages ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  8
+    xid:     4
+  buffer_id: 4
+  _total_len: 0
+  in_port: 4
+  reason: 0
+  data: '\x124Vx\x03\x04\x124Vx\x02\x04\x08\x00E\x00\x00H\xc7\x9d\x00\x00@\x01\xb7\x19{{\x02\x04{{\x03\x04\x00\x00\x0e7PingPingPingPingPingPingPingPingPingPingPingPing'
+DEBUG:event_scheduler:Injecting CheckInvariants:e717:('CheckInvariants',)
+DEBUG:invariant_checker:Checking controller liveness...
+DEBUG:headerspace:=== Generating Transfer Function for switch 1 ===
+DEBUG:headerspace:=== Successfully Generated Transfer function ===
+DEBUG:topology_loader:transfer function: 
+DEBUG:headerspace:=== Generating Transfer Function for switch 2 ===
+DEBUG:headerspace:=== Successfully Generated Transfer function ===
+DEBUG:topology_loader:transfer function: 
+DEBUG:headerspace:=== Generating Transfer Function for switch 4 ===
+DEBUG:headerspace:=== Successfully Generated Transfer function ===
+DEBUG:topology_loader:transfer function: 
+DEBUG:headerspace:=== Generating Transfer Function for switch 3 ===
+DEBUG:headerspace:=== Successfully Generated Transfer function ===
+DEBUG:topology_loader:transfer function: 
+DEBUG:topology_loader:topology transfer function (links):
+in_ports: [200002] => out_ports: [300002]
+in_ports: [300002] => out_ports: [200002]
+in_ports: [300001] => out_ports: [400001]
+in_ports: [100002] => out_ports: [300003]
+in_ports: [200003] => out_ports: [100003]
+in_ports: [200001] => out_ports: [400002]
+in_ports: [400002] => out_ports: [200001]
+in_ports: [400001] => out_ports: [300001]
+in_ports: [300003] => out_ports: [100002]
+in_ports: [100003] => out_ports: [200003]
+in_ports: [100001] => out_ports: [400003]
+DEBUG:headerspace:=== Saving transfer function to file ./sts/hassel/hassel-c/tfs/sts/SoftSwitch(1).tf ===
+DEBUG:headerspace:=== Transfer function saved to file ./sts/hassel/hassel-c/tfs/sts/SoftSwitch(1).tf ===
+DEBUG:headerspace:=== Saving transfer function to file ./sts/hassel/hassel-c/tfs/sts/SoftSwitch(2).tf ===
+DEBUG:headerspace:=== Transfer function saved to file ./sts/hassel/hassel-c/tfs/sts/SoftSwitch(2).tf ===
+DEBUG:headerspace:=== Saving transfer function to file ./sts/hassel/hassel-c/tfs/sts/SoftSwitch(4).tf ===
+DEBUG:headerspace:=== Transfer function saved to file ./sts/hassel/hassel-c/tfs/sts/SoftSwitch(4).tf ===
+DEBUG:headerspace:=== Saving transfer function to file ./sts/hassel/hassel-c/tfs/sts/SoftSwitch(3).tf ===
+DEBUG:headerspace:=== Transfer function saved to file ./sts/hassel/hassel-c/tfs/sts/SoftSwitch(3).tf ===
+DEBUG:headerspace:=== Saving transfer function to file ./sts/hassel/hassel-c/tfs/sts/topology.tf ===
+DEBUG:headerspace:=== Transfer function saved to file ./sts/hassel/hassel-c/tfs/sts/topology.tf ===
+DEBUG:headerspace:edge_ports: [400004, 300004, 200004, 100004]
+DEBUG:headerspace:port 400004 is being checked
+DEBUG:headerspace:Count: 0
+DEBUG:headerspace:Time: 295 us
+DEBUG:headerspace:port 200004 is being checked
+DEBUG:headerspace:Count: 0
+DEBUG:headerspace:Time: 364 us
+DEBUG:invariant_checker:Checking controller liveness...
+DEBUG:headerspace:=== Generating Transfer Function for switch 1 ===
+DEBUG:headerspace:=== Successfully Generated Transfer function ===
+DEBUG:topology_loader:transfer function: 
+DEBUG:headerspace:=== Generating Transfer Function for switch 2 ===
+DEBUG:headerspace:=== Successfully Generated Transfer function ===
+DEBUG:topology_loader:transfer function: 
+DEBUG:headerspace:=== Generating Transfer Function for switch 4 ===
+DEBUG:headerspace:=== Successfully Generated Transfer function ===
+DEBUG:topology_loader:transfer function: 
+DEBUG:headerspace:=== Generating Transfer Function for switch 3 ===
+DEBUG:headerspace:=== Successfully Generated Transfer function ===
+DEBUG:topology_loader:transfer function: 
+DEBUG:topology_loader:topology transfer function (links):
+in_ports: [200002] => out_ports: [300002]
+in_ports: [300002] => out_ports: [200002]
+in_ports: [300001] => out_ports: [400001]
+in_ports: [100002] => out_ports: [300003]
+in_ports: [200003] => out_ports: [100003]
+in_ports: [200001] => out_ports: [400002]
+in_ports: [400002] => out_ports: [200001]
+in_ports: [400001] => out_ports: [300001]
+in_ports: [300003] => out_ports: [100002]
+in_ports: [100003] => out_ports: [200003]
+in_ports: [100001] => out_ports: [400003]
+DEBUG:headerspace:=== Saving transfer function to file ./sts/hassel/hassel-c/tfs/sts/SoftSwitch(1).tf ===
+DEBUG:headerspace:=== Transfer function saved to file ./sts/hassel/hassel-c/tfs/sts/SoftSwitch(1).tf ===
+DEBUG:headerspace:=== Saving transfer function to file ./sts/hassel/hassel-c/tfs/sts/SoftSwitch(2).tf ===
+DEBUG:headerspace:=== Transfer function saved to file ./sts/hassel/hassel-c/tfs/sts/SoftSwitch(2).tf ===
+DEBUG:headerspace:=== Saving transfer function to file ./sts/hassel/hassel-c/tfs/sts/SoftSwitch(4).tf ===
+DEBUG:headerspace:=== Transfer function saved to file ./sts/hassel/hassel-c/tfs/sts/SoftSwitch(4).tf ===
+DEBUG:headerspace:=== Saving transfer function to file ./sts/hassel/hassel-c/tfs/sts/SoftSwitch(3).tf ===
+DEBUG:headerspace:=== Transfer function saved to file ./sts/hassel/hassel-c/tfs/sts/SoftSwitch(3).tf ===
+DEBUG:headerspace:=== Saving transfer function to file ./sts/hassel/hassel-c/tfs/sts/topology.tf ===
+DEBUG:headerspace:=== Transfer function saved to file ./sts/hassel/hassel-c/tfs/sts/topology.tf ===
+DEBUG:headerspace:edge_ports: [400004, 300004, 200004, 100004]
+DEBUG:headerspace:port 400004 is being checked
+DEBUG:headerspace:Count: 0
+DEBUG:headerspace:Time: 285 us
+DEBUG:headerspace:port 300004 is being checked
+DEBUG:headerspace:Count: 0
+DEBUG:headerspace:Time: 293 us
+DEBUG:headerspace:port 200004 is being checked
+DEBUG:headerspace:Count: 0
+DEBUG:headerspace:Time: 329 us
+DEBUG:headerspace:port 100004 is being checked
+DEBUG:headerspace:Count: 0
+DEBUG:headerspace:Time: 245 us
+[1;41m[1;37m11/12 pairs are not connected, but have not exceeded the violation threshhold[1;m
+Connectivity established - bailing out
+[1;36m[1;44mEvent Stats: Events matched: 66, timed out: 0
+Matches per event type:
+  LinkRecovery 10
+  LinkFailure 11
+  DataplaneDrop 19
+  TrafficInjection 26
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (19), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):
+  (u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.1.4', u'dl_src': u'12:34:56:78:01:04', u'nw_dst': u'123.123.2.4'}, u"host:[IPAddr('123.123.1.4')]", u'12:34:56:78:01:04')
+  (u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.1.4', u'dl_src': u'12:34:56:78:01:04', u'nw_dst': u'123.123.2.4'}, u"host:[IPAddr('123.123.1.4')]", u'12:34:56:78:01:04')
+  (u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.1.4', u'dl_src': u'12:34:56:78:01:04', u'nw_dst': u'123.123.2.4'}, 4, 2)
+  (u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.3.4', u'dl_src': u'12:34:56:78:03:04', u'nw_dst': u'123.123.1.4'}, 4, 2)
+  (u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.2.4', u'dl_src': u'12:34:56:78:02:04', u'nw_dst': u'123.123.1.4'}, 1, 1)
+  (u'DataplaneDrop', DPFingerprint{u'class': u'lldp'}, 2, 1)
+  (u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.4.4', u'dl_src': u'12:34:56:78:04:04', u'nw_dst': u'123.123.2.4'}, 1, 1)
+  (u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.2.4', u'dl_src': u'12:34:56:78:02:04', u'nw_dst': u'123.123.1.4'}, 1, 1)
+  (u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.3.4', u'dl_src': u'12:34:56:78:03:04', u'nw_dst': u'123.123.1.4'}, 1, 1)
+  (u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:03:04', u'nw_src': u'123.123.4.4', u'dl_src': u'12:34:56:78:04:04', u'nw_dst': u'123.123.3.4'}, 4, 1)
+  (u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.4.4', u'dl_src': u'12:34:56:78:04:04', u'nw_dst': u'123.123.2.4'}, 4, 2)
+  (u'DataplaneDrop', DPFingerprint{u'class': u'lldp'}, 4, 1)
+  (u'DataplaneDrop', DPFingerprint{u'class': u'lldp'}, 4, 2)
+  (u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.2.4', u'dl_src': u'12:34:56:78:02:04', u'nw_dst': u'123.123.1.4'}, 1, 4)
+  (u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:03:04', u'nw_src': u'123.123.2.4', u'dl_src': u'12:34:56:78:02:04', u'nw_dst': u'123.123.3.4'}, u"host:[IPAddr('123.123.2.4')]", u'12:34:56:78:02:04')
+  (u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:02:04', u'nw_src': u'123.123.1.4', u'dl_src': u'12:34:56:78:01:04', u'nw_dst': u'123.123.2.4'}, 2, 3)
+  (u'DataplaneDrop', DPFingerprint{u'class': u'lldp'}, 1, 2)
+  (u'DataplaneDrop', DPFingerprint{u'dl_dst': u'12:34:56:78:01:04', u'nw_src': u'123.123.2.4', u'dl_src': u'12:34:56:78:02:04', u'nw_dst': u'123.123.1.4'}, 2, 3)
+  (u'DataplaneDrop', DPFingerprint{u'class': u'lldp'}, 1, 3)[1;m
+DEBUG:input_logger:logging event WaitTime:e720:('WaitTime',)
+127.0.0.1 - - [01/Jun/2014 16:30:25] "POST / HTTP/1.1" 200 -
+[1;36mKilling controller c1[1;m
+Terminating child controllers... OK
+[1;37mNo correctness violations![1;m
+[1;41m[1;37mUnable to reproduce correctness violation![1;m

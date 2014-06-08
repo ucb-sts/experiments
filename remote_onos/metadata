@@ -1,0 +1,45 @@
+{
+  "additional_metadata": {
+    "branch": "sigcomm_changes",
+    "commit": "64ddd0e397d99080933eb9037d588677cf77f6df"
+  },
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "config/remote_onos.py"
+  ],
+  "cwd": "/mnt/ahassany/sts",
+  "host": {
+    "cpu_info": "",
+    "free": "",
+    "name": "dhcp-37-60.eecs.berkeley.edu",
+    "num_cores": "0",
+    "uptime": "15:55  up 16:48, 5 users, load averages: 2.83 3.04 2.96"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9",
+      "diff": "",
+      "status": "HEAD detached at d631935\nnothing to commit, working directory clean"
+    },
+    "pox": {
+      "branch": "HEAD",
+      "commit": "32f3ac9cd34dca80fa55634255a11f3a41555cf7",
+      "diff": "",
+      "status": "HEAD detached at 32f3ac9\nnothing to commit, working directory clean"
+    },
+    "sts": {
+      "branch": "sigcomm_changes2",
+      "commit": "94aba54be4fb832da8815048fc5ac8d796bc31e1",
+      "diff": "diff --git a/config/fuzzer_params.py b/config/fuzzer_params.py\nindex a2aeb47..21b840e 100644\n--- a/config/fuzzer_params.py\n+++ b/config/fuzzer_params.py\n@@ -1,5 +1,5 @@\n-switch_failure_rate = 0.005\n-switch_recovery_rate = 0.09\n+switch_failure_rate = 0.00\n+switch_recovery_rate = 1.0\n dataplane_drop_rate = 0.0\n controlplane_block_rate = 0.0\n controlplane_unblock_rate = 1.0\n@@ -7,11 +7,11 @@ ofp_message_receipt_rate = 1.0\n ofp_message_send_rate = 1.0\n ofp_cmd_passthrough_rate = 1.0\n ofp_flow_mod_failure_rate = 0.0\n-link_failure_rate = 0.005\n-link_recovery_rate = 0.09\n-controller_crash_rate = 0.0\n-controller_recovery_rate = 0.0\n-traffic_generation_rate = 0.08\n+link_failure_rate = 0.000\n+link_recovery_rate = 1.0\n+controller_crash_rate = 0.05\n+controller_recovery_rate = 1.00\n+traffic_generation_rate = 0.20\n host_migration_rate = 0.0\n intracontroller_block_rate = 0.0\n intracontroller_unblock_rate = 0.0\ndiff --git a/sts/control_flow/fuzzer.py b/sts/control_flow/fuzzer.py\nindex 96d3bad..85bb5cb 100644\n--- a/sts/control_flow/fuzzer.py\n+++ b/sts/control_flow/fuzzer.py\n@@ -156,6 +156,9 @@ class Fuzzer(ControlFlow):\n \n     try:\n       self.params = __import__(fuzzer_params_path, globals(), locals(), [\"*\"])\n+      print \"FUZZER PARMS\", self.params\n+      log.info(\"FUZZER PARAMS: %s\" % self.params)\n+      log.info(\"FUZZER PARAMS controller crash rate: %s\" % self.params.controller_crash_rate)\n       # TODO(cs): temporary hack until we get determinism figured out\n       self.params.link_discovery_rate = 0.1\n     except:\ndiff --git a/sts/entities/controllers.py b/sts/entities/controllers.py\nindex b39e49a..72ace25 100644\n--- a/sts/entities/controllers.py\n+++ b/sts/entities/controllers.py\n@@ -689,7 +689,7 @@ class VMController(Controller):\n                                     key_filename=key_filename,\n                                     cwd=getattr(self.config, \"cwd\", None),\n                                     redirect_output=True,\n-                                    block=True)\n+                                    block=True, label=self.label)\n     assert hasattr(self.cmd_executor, \"execute_command\")\n     self.commands = {}\n     self.populate_commands()\n@@ -744,7 +744,9 @@ class VMController(Controller):\n       return\n     restart_cmd = self.commands[\"restart\"]\n     self.log.info(\"Relaunching controller %s: %s\" % (self.label, restart_cmd))\n-    self.cmd_executor.execute_command(restart_cmd)\n+    #self.cmd_executor.execute_command(restart_cmd)\n+    self.cmd_executor.execute_command(self.commands['start'])\n+    self.cmd_executor.execute_command(\"sleep 30\")\n     self.state = ControllerState.ALIVE\n \n   # SSH into the VM to check on controller process\n@@ -772,6 +774,7 @@ class VMController(Controller):\n       self.state = ControllerState.ALIVE\n     if (self.state == ControllerState.ALIVE and\n             actual_state == ControllerState.DEAD):\n+      self.state = ControllerState.DEAD\n       return (False, \"Alive, but no controller process found!\")\n     return (True, \"OK\")",
+      "status": "On branch sigcomm_changes2\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n\tmodified:   config/fuzzer_params.py\n\tmodified:   sts/control_flow/fuzzer.py\n\tmodified:   sts/entities/controllers.py\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\n\tconfig/remote_onos.py\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")"
+    }
+  },
+  "sys": {
+    "lsb_release": "",
+    "uname": "Darwin dhcp-37-60.eecs.berkeley.edu 13.2.0 Darwin Kernel Version 13.2.0: Thu Apr 17 23:03:13 PDT 2014; root:xnu-2422.100.13~1/RELEASE_X86_64 x86_64"
+  },
+  "timestamp": "2014_05_29_15_55_49",
+  "user": "ahassany"
+}

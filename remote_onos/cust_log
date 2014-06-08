@@ -1,0 +1,66 @@
+
+onosdev1: Getting BBDP from a different controller myId 79573466712316282: remoteId 334697149906552841 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: bug not triggered oldCid: 0 CID: 79573466712316282 RemoteCID: 334697149906552841
+onosdev2: I'm claiming link myId 334697149906552841: remoteId 79573466712316282 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev1: Getting BBDP from a different controller myId 79573466712316282: remoteId 334697149906552841 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: bug not triggered oldCid: 0 CID: 79573466712316282 RemoteCID: 334697149906552841
+onosdev2: I'm claiming link myId 334697149906552841: remoteId 79573466712316282 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev1: Getting BBDP from a different controller myId 79573466712316282: remoteId 334697149906552841 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: bug not triggered oldCid: 0 CID: 79573466712316282 RemoteCID: 334697149906552841
+onosdev2: I'm claiming link myId 334697149906552841: remoteId 79573466712316282 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev1: I'm claiming link myId 610812056677219050: remoteId 44893567619564898 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 44893567619564898: remoteId 610812056677219050 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 334697149906552841 CID: 44893567619564898 RemoteCID: 610812056677219050
+onosdev1: I'm claiming link myId 610812056677219050: remoteId 44893567619564898 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 44893567619564898: remoteId 610812056677219050 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 334697149906552841 CID: 44893567619564898 RemoteCID: 610812056677219050
+onosdev1: I'm claiming link myId 610812056677219050: remoteId 44893567619564898 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 44893567619564898: remoteId 610812056677219050 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 334697149906552841 CID: 44893567619564898 RemoteCID: 610812056677219050
+onosdev1: I'm claiming link myId 610812056677219050: remoteId 44893567619564898 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: Getting BBDP from a different controller myId 610812056677219050: remoteId 1045132373032222128 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: bug not triggered oldCid: 610812056677219050 CID: 610812056677219050 RemoteCID: 1045132373032222128
+onosdev2: I'm claiming link myId 1045132373032222128: remoteId 610812056677219050 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev1: Getting BBDP from a different controller myId 809573425085106398: remoteId 1045132373032222128 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: bug not triggered oldCid: 610812056677219050 CID: 809573425085106398 RemoteCID: 1045132373032222128
+onosdev2: I'm claiming link myId 1045132373032222128: remoteId 809573425085106398 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev1: Getting BBDP from a different controller myId 809573425085106398: remoteId 1045132373032222128 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: bug not triggered oldCid: 610812056677219050 CID: 809573425085106398 RemoteCID: 1045132373032222128
+onosdev2: I'm claiming link myId 1045132373032222128: remoteId 809573425085106398 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev1: Getting BBDP from a different controller myId 809573425085106398: remoteId 899613066743946226 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: bug not triggered oldCid: 610812056677219050 CID: 809573425085106398 RemoteCID: 899613066743946226
+onosdev2: I'm claiming link myId 899613066743946226: remoteId 809573425085106398 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev1: Getting BBDP from a different controller myId 809573425085106398: remoteId 899613066743946226 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: bug not triggered oldCid: 610812056677219050 CID: 809573425085106398 RemoteCID: 899613066743946226
+onosdev2: I'm claiming link myId 899613066743946226: remoteId 809573425085106398 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 899613066743946226: remoteId 1140794683701443810 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 899613066743946226 CID: 899613066743946226 RemoteCID: 1140794683701443810
+onosdev1: I'm claiming link myId 1140794683701443810: remoteId 899613066743946226 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 899613066743946226: remoteId 1140794683701443810 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 899613066743946226 CID: 899613066743946226 RemoteCID: 1140794683701443810
+onosdev1: I'm claiming link myId 1140794683701443810: remoteId 899613066743946226 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 899613066743946226: remoteId 1140794683701443810 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 899613066743946226 CID: 899613066743946226 RemoteCID: 1140794683701443810
+onosdev1: I'm claiming link myId 1140794683701443810: remoteId 899613066743946226 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 899613066743946226: remoteId 1140794683701443810 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 899613066743946226 CID: 899613066743946226 RemoteCID: 1140794683701443810
+onosdev2: Getting BBDP from a different controller myId 899613066743946226: remoteId 939382591820378017 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 899613066743946226 CID: 899613066743946226 RemoteCID: 939382591820378017
+onosdev1: I'm claiming link myId 939382591820378017: remoteId 899613066743946226 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 899613066743946226: remoteId 939382591820378017 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 899613066743946226 CID: 899613066743946226 RemoteCID: 939382591820378017
+onosdev1: I'm claiming link myId 939382591820378017: remoteId 899613066743946226 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: I'm claiming link myId 939382591820378017: remoteId 899613066743946226 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 899613066743946226: remoteId 939382591820378017 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 899613066743946226 CID: 899613066743946226 RemoteCID: 939382591820378017
+onosdev1: Getting BBDP from a different controller myId 94116095442631731: remoteId 899613066743946226 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: KILL bug triggered TRIGGERED oldCid: 939382591820378017 CID: 94116095442631731 RemoteCID: 899613066743946226
+onosdev2: I'm claiming link myId 856582156523623638: remoteId 230043243002080308 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev1: Getting BBDP from a different controller myId 230043243002080308: remoteId 856582156523623638 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: KILL bug triggered TRIGGERED oldCid: 939382591820378017 CID: 230043243002080308 RemoteCID: 856582156523623638
+onosdev1: Getting BBDP from a different controller myId 71508652551463102: remoteId 856582156523623638 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: KILL bug triggered TRIGGERED oldCid: 939382591820378017 CID: 71508652551463102 RemoteCID: 856582156523623638
+onosdev1: Getting BBDP from a different controller myId 348870769998048554: remoteId 856582156523623638 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: KILL bug triggered TRIGGERED oldCid: 939382591820378017 CID: 348870769998048554 RemoteCID: 856582156523623638
+onosdev1: Getting BBDP from a different controller myId 78338657448070371: remoteId 752579670074299209 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: KILL bug triggered TRIGGERED oldCid: 939382591820378017 CID: 78338657448070371 RemoteCID: 752579670074299209

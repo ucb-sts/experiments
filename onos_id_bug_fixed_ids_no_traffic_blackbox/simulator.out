@@ -1,0 +1,300 @@
+WARNING:setup:No get_additional_metadata() defined for config file. See config/nox_routing.py for an example.
+INFO:Controller: =====> Starting ONOS Controller <===== 
+INFO:Controller:Launching controller c1: ./start-onos.sh start
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+INFO:Controller:
+INFO:simulation:Launched controller c1: ./start-onos.sh start [PID -1]
+INFO:Controller: =====> Starting ONOS Controller <===== 
+INFO:Controller:Launching controller c2: ./start-onos.sh start
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33mc2 Starting ONOS controller ...[1;m
+
+[1;33mc2 [1;m
+
+[1;33mc2 .[1;m
+
+[1;33mc2 /home/mininet/ONOS[1;m
+
+[1;33mc2 Waiting for ONOS to start...[1;m
+
+[1;33mc2 .[1;m
+
+INFO:Controller:
+INFO:simulation:Launched controller c2: ./start-onos.sh start [PID -1]
+INFO:simulation:Creating topology...
+INFO:event_scheduler:Delaying input_event ConnectToControllers:e1 for 500 ms
+INFO:event_scheduler:SLEEP END: Delaying input_event ConnectToControllers:e1 for 500 ms
+connect_socket_with_backoff ('192.168.56.11', 6633)
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+Error connecting.  -- [Errno 61] Connection refused. Backing off 2 seconds ...
+Error connecting.  -- [Errno 61] Connection refused. Backing off 4 seconds ...
+Error connecting.  -- [Errno 61] Connection refused. Backing off 8 seconds ...
+Error connecting.  -- [Errno 61] Connection refused. Backing off 16 seconds ...
+Error connecting.  -- [Errno 61] Connection refused. Backing off 32 seconds ...
+connect_socket_with_backoff ('192.168.56.12', 6633)
+[1;36m[1;44m01:03.511 00:00.000 Successfully matched event ConnectToControllers:e1[1;m
+INFO:event_scheduler:Delaying input_event TrafficInjection:e58 for 93120 ms
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103f92110><pox.lib.packet.lldp.unknown_tlv object at 0x103f92150><pox.lib.packet.lldp.unknown_tlv object at 0x103f92190><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103f92a50><pox.lib.packet.lldp.unknown_tlv object at 0x103f92a90><pox.lib.packet.lldp.unknown_tlv object at 0x103f92ad0><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103f92fd0><pox.lib.packet.lldp.unknown_tlv object at 0x103f92d10><pox.lib.packet.lldp.unknown_tlv object at 0x103f92f50><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103f97150><pox.lib.packet.lldp.unknown_tlv object at 0x103f97190><pox.lib.packet.lldp.unknown_tlv object at 0x103f971d0><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103f97e10><pox.lib.packet.lldp.unknown_tlv object at 0x103f97e50><pox.lib.packet.lldp.unknown_tlv object at 0x103f97e90><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103f99b10><pox.lib.packet.lldp.unknown_tlv object at 0x103f99b50><pox.lib.packet.lldp.unknown_tlv object at 0x103f99b90><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103f9c810><pox.lib.packet.lldp.unknown_tlv object at 0x103f9c850><pox.lib.packet.lldp.unknown_tlv object at 0x103f9c890><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103f99350><pox.lib.packet.lldp.unknown_tlv object at 0x103f993d0><pox.lib.packet.lldp.unknown_tlv object at 0x103f99450><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103f92350><pox.lib.packet.lldp.unknown_tlv object at 0x103f92650><pox.lib.packet.lldp.unknown_tlv object at 0x103f92c10><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103f9c790><pox.lib.packet.lldp.unknown_tlv object at 0x103f9c590><pox.lib.packet.lldp.unknown_tlv object at 0x103f9c3d0><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103f9fa10><pox.lib.packet.lldp.unknown_tlv object at 0x103f9fa50><pox.lib.packet.lldp.unknown_tlv object at 0x103f9fa90><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103fa2710><pox.lib.packet.lldp.unknown_tlv object at 0x103fa2750><pox.lib.packet.lldp.unknown_tlv object at 0x103fa2790><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103f9c750><pox.lib.packet.lldp.unknown_tlv object at 0x103f9c790><pox.lib.packet.lldp.unknown_tlv object at 0x103f9c590><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103f97f90><pox.lib.packet.lldp.unknown_tlv object at 0x103f978d0><pox.lib.packet.lldp.unknown_tlv object at 0x103f99a90><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103fa2dd0><pox.lib.packet.lldp.unknown_tlv object at 0x103fa2e10><pox.lib.packet.lldp.unknown_tlv object at 0x103fa2e50><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:event_scheduler:SLEEP END: Delaying input_event TrafficInjection:e58 for 93120 ms
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:ef9e[123.123.1.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}{id:20585 seq:28263}
+[1;36m[1;44m02:36.633 01:33.120 Successfully matched event TrafficInjection:e58[1;m
+[1;36m[1;36mRound 11[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:ed9d[123.123.2.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263}
+[1;36m[1;44m02:36.634 01:33.120 Successfully matched event TrafficInjection:e59[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:event_scheduler:Delaying input_event CheckInvariants:e78 for 12011 ms
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x1040a6110><pox.lib.packet.lldp.unknown_tlv object at 0x1040a6150><pox.lib.packet.lldp.unknown_tlv object at 0x1040a6190><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mForwarding dataplane event[1;m
+INFO:event_scheduler:SLEEP END: Delaying input_event CheckInvariants:e78 for 12011 ms
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+[1;42m[1;37mNo correctness violations![1;m
+[1;36m[1;44m02:49.833 01:45.132 Successfully matched event CheckInvariants:e78[1;m
+[1;36m[1;36mRound 15[1;37m[1;m
+INFO:event_scheduler:Delaying input_event ControllerFailure:e89 for 7185 ms
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103fa2f10><pox.lib.packet.lldp.unknown_tlv object at 0x103fa2f50><pox.lib.packet.lldp.unknown_tlv object at 0x103fa2950><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:event_scheduler:SLEEP END: Delaying input_event ControllerFailure:e89 for 7185 ms
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 27147)[1;m
+
+[1;36m[1;44m02:57.330 01:52.317 Successfully matched event ControllerFailure:e89[1;m
+[1;36m[1;36mRound 17[1;37m[1;m
+INFO:event_scheduler:Delaying input_event ControllerRecovery:e96 for 3345 ms
+WARNING:io_master:Closing socket due to empty read
+INFO:event_scheduler:SLEEP END: Delaying input_event ControllerRecovery:e96 for 3345 ms
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+connect_socket_with_backoff ('192.168.56.11', 6633)
+[1;36m[1;44m03:33.337 01:55.662 Successfully matched event ControllerRecovery:e96[1;m
+[1;36m[1;36mRound 18[1;37m[1;m
+INFO:event_scheduler:Delaying input_event CheckInvariants:e119 for 38699 ms
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103f9c650><pox.lib.packet.lldp.unknown_tlv object at 0x103f9cd50><pox.lib.packet.lldp.unknown_tlv object at 0x103f9c710><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x1040a6a50><pox.lib.packet.lldp.unknown_tlv object at 0x1040a6a90><pox.lib.packet.lldp.unknown_tlv object at 0x1040a6ad0><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103f9fbd0><pox.lib.packet.lldp.unknown_tlv object at 0x103f9f850><pox.lib.packet.lldp.unknown_tlv object at 0x103f9f310><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x103f7ae90><pox.lib.packet.lldp.unknown_tlv object at 0x103f7ac90><pox.lib.packet.lldp.unknown_tlv object at 0x103f7ae50><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+WARNING:io_master:Closing socket due to empty read
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x1040abdd0><pox.lib.packet.lldp.unknown_tlv object at 0x1040abe10><pox.lib.packet.lldp.unknown_tlv object at 0x1040abe50><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x1040aead0><pox.lib.packet.lldp.unknown_tlv object at 0x1040aeb10><pox.lib.packet.lldp.unknown_tlv object at 0x1040aeb50><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:event_scheduler:SLEEP END: Delaying input_event CheckInvariants:e119 for 38699 ms
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:invariant_checker:Problems found while checking controller liveness: ['c1'].
+[1;41m[1;37mThe following correctness violations have occurred: ['c1'][1;m
+[1;41m[1;37mPersistent violations detected!: ['c1'][1;m
+[1;36m[1;44m04:13.252 02:34.361 Successfully matched event CheckInvariants:e119[1;m
+[1;36m[1;36mRound 20[1;37m[1;m
+INFO:event_scheduler:Delaying input_event CheckInvariants:e153 for 16190 ms
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x1040b17d0><pox.lib.packet.lldp.unknown_tlv object at 0x1040b1810><pox.lib.packet.lldp.unknown_tlv object at 0x1040b1850><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:event_scheduler:SLEEP END: Delaying input_event CheckInvariants:e153 for 16190 ms
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:invariant_checker:Problems found while checking controller liveness: ['c1'].
+[1;41m[1;37mViolation encountered again after 5 steps: c1[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['c1'][1;m
+[1;41m[1;37mPersistent violations detected!: ['c1'][1;m
+[1;36m[1;44m04:30.583 02:50.551 Successfully matched event CheckInvariants:e153[1;m
+[1;36m[1;36mRound 25[1;37m[1;m
+INFO:event_scheduler:Delaying input_event CheckInvariants:e177 for 16179 ms
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x1040ab850><pox.lib.packet.lldp.unknown_tlv object at 0x1040ab890><pox.lib.packet.lldp.unknown_tlv object at 0x1040ab510><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:event_scheduler:SLEEP END: Delaying input_event CheckInvariants:e177 for 16179 ms
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:invariant_checker:Problems found while checking controller liveness: ['c1'].
+[1;41m[1;37mViolation encountered again after 10 steps: c1[1;m
+[1;41m[1;37mThe following correctness violations have occurred: ['c1'][1;m
+[1;41m[1;37mPersistent violations detected!: ['c1'][1;m
+[1;36m[1;44m04:47.899 03:06.730 Successfully matched event CheckInvariants:e177[1;m
+[1;36m[1;36mRound 30[1;37m[1;m
+INFO:events:WaitTime: pausing simulation for 1.000000 seconds
+[1;36m[1;44m04:48.901 03:07.862 Successfully matched event WaitTime:e179[1;m
+[1;36m[1;36mRound -1[1;37m[1;m
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:invariant_checker:Problems found while checking controller liveness: ['c1'].
+[1;41m[1;37mViolations at end of trace: ['c1'][1;m
+[1;42m[1;37mViolation found c1[1;m
+[1;36m[1;44mEvent Stats: Events matched: 10, timed out: 0
+Matches per event type:
+  WaitTime 1
+  ControllerFailure 1
+  ConnectToControllers 1
+  ControllerRecovery 1
+  TrafficInjection 2
+  CheckInvariants 4
+Timeouts per event type:
+[1;m
+[1;36m[1;44mDataplaneDrop Stats: Expected drops (0), Actual drops (0)
+Missed Drops (expected if TrafficInjections pruned):[1;m

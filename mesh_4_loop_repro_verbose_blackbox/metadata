@@ -1,0 +1,34 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-v",
+    "-c",
+    "experiments/nox_mesh_4_loop_repro_verbose/orig_config.py",
+    "-n",
+    "mesh_4_loop_repro_verbose_blackbox"
+  ],
+  "cwd": "/home/rcs/Research/UCB/code/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5660 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:       6101428    2462060    3639368        500     344196    1467380\n-/+ buffers/cache:     650484    5450944\nSwap:      6283260        904    6282356",
+    "name": "c5",
+    "num_cores": "12",
+    "uptime": "16:30:22 up 2 days, 18:20,  2 users,  load average: 0.04, 0.03, 0.05"
+  },
+  "modules": {
+    "pox": {
+      "branch": "HEAD",
+      "commit": "7387528635c6ce8e1d8a1f5205c6f96c61b05c7b"
+    },
+    "sts": {
+      "branch": "nox_loop_ignore_interposition_patch",
+      "commit": "8275c7ca19644a2072ebd2fb1d1f7d5095ff7bb6"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 14.04 LTS",
+    "uname": "Linux c5 3.13.0-27-generic #50-Ubuntu SMP Thu May 15 18:06:16 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_06_01_16_30_22",
+  "user": "rcs"
+}

@@ -1,0 +1,512 @@
+INFO:Controller: =====> Starting ONOS Controller <===== 
+INFO:Controller:Launching controller c1: ./start-onos.sh start
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+INFO:Controller:
+INFO:simulation:Launched controller c1: ./start-onos.sh start [PID -1]
+INFO:Controller: =====> Starting ONOS Controller <===== 
+INFO:Controller:Launching controller c2: ./start-onos.sh start
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33mc2 Starting ONOS controller ...[1;m
+
+[1;33mc2 [1;m
+
+[1;33mc2 .[1;m
+
+[1;33mc2 /home/mininet/ONOS[1;m
+
+[1;33mc2 Waiting for ONOS to start...[1;m
+
+[1;33mc2 .[1;m
+
+INFO:Controller:
+INFO:simulation:Launched controller c2: ./start-onos.sh start [PID -1]
+INFO:simulation:Creating topology...
+connect_socket_with_backoff ('192.168.56.11', 6633)
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+Error connecting.  -- [Errno 61] Connection refused. Backing off 2 seconds ...
+Error connecting.  -- [Errno 61] Connection refused. Backing off 4 seconds ...
+Error connecting.  -- [Errno 61] Connection refused. Backing off 8 seconds ...
+Error connecting.  -- [Errno 61] Connection refused. Backing off 16 seconds ...
+Error connecting.  -- [Errno 61] Connection refused. Backing off 32 seconds ...
+connect_socket_with_backoff ('192.168.56.12', 6633)
+INFO:control_flow:Waiting until first OpenFlow message received..
+[1;36mRound 1 completed.[1;m
+[1;36mRound 2 completed.[1;m
+[1;36mRound 3 completed.[1;m
+[1;36mRound 4 completed.[1;m
+[1;36mRound 5 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10ce44790><pox.lib.packet.lldp.unknown_tlv object at 0x10ce44810><pox.lib.packet.lldp.unknown_tlv object at 0x10ce447d0><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 6 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10ce4c8d0><pox.lib.packet.lldp.unknown_tlv object at 0x10ce4c950><pox.lib.packet.lldp.unknown_tlv object at 0x10ce4c910><tlv end> on interface eth2
+[1;36mRound 7 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10ce4ccd0><pox.lib.packet.lldp.unknown_tlv object at 0x10ce4cc10><pox.lib.packet.lldp.unknown_tlv object at 0x10ce4cd50><tlv end> on interface eth2
+[1;36mRound 8 completed.[1;m
+[1;36mRound 9 completed.[1;m
+[1;36mRound 10 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd52710><pox.lib.packet.lldp.unknown_tlv object at 0x10cd52790><pox.lib.packet.lldp.unknown_tlv object at 0x10cd52750><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mRound 11 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10ce44e50><pox.lib.packet.lldp.unknown_tlv object at 0x10ce44b90><pox.lib.packet.lldp.unknown_tlv object at 0x10ce448d0><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 12 completed.[1;m
+[1;36mRound 13 completed.[1;m
+[1;36mRound 14 completed.[1;m
+[1;36mRound 15 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd52650><pox.lib.packet.lldp.unknown_tlv object at 0x10cd52110><pox.lib.packet.lldp.unknown_tlv object at 0x10cd525d0><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mRound 16 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd52f90><pox.lib.packet.lldp.unknown_tlv object at 0x10cd51090><pox.lib.packet.lldp.unknown_tlv object at 0x10cd51050><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 17 completed.[1;m
+[1;36mRound 18 completed.[1;m
+[1;36mRound 19 completed.[1;m
+[1;36mRound 20 completed.[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:98de[123.123.1.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:96dd[123.123.2.2>123.123.2.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd51950><pox.lib.packet.lldp.unknown_tlv object at 0x10cd519d0><pox.lib.packet.lldp.unknown_tlv object at 0x10cd51990><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 21 completed.[1;m
+[1;36mRound 22 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd51dd0><pox.lib.packet.lldp.unknown_tlv object at 0x10cd51810><pox.lib.packet.lldp.unknown_tlv object at 0x10cd51790><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 23 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [12:34:56:78:01:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:98de[123.123.1.2>123.123.1.2]){t:ECHO_REPLY c:0 chk:e37}{id:20585 seq:28263} on interface eth2
+[1;36mRound 24 completed.[1;m
+[1;36mRound 25 completed.[1;m
+[1;36mRound 26 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10ce44090><pox.lib.packet.lldp.unknown_tlv object at 0x10ce44850><pox.lib.packet.lldp.unknown_tlv object at 0x10ce44390><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mRound 27 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10ce4c910><pox.lib.packet.lldp.unknown_tlv object at 0x10ce4c510><pox.lib.packet.lldp.unknown_tlv object at 0x10ce4cfd0><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 28 completed.[1;m
+[1;36mRound 29 completed.[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 15804)[1;m
+
+[1;36mRound 30 completed.[1;m
+WARNING:io_master:Closing socket due to empty read
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+connect_socket_with_backoff ('192.168.56.11', 6633)
+[1;36mRound 31 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd56bd0><pox.lib.packet.lldp.unknown_tlv object at 0x10cd56c90><pox.lib.packet.lldp.unknown_tlv object at 0x10cd56c10><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mRound 32 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd5a0d0><pox.lib.packet.lldp.unknown_tlv object at 0x10cd5a310><pox.lib.packet.lldp.unknown_tlv object at 0x10cd5a350><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 33 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd56510><pox.lib.packet.lldp.unknown_tlv object at 0x10cd564d0><pox.lib.packet.lldp.unknown_tlv object at 0x10cd56550><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:Controller:Killing controller c2: ./start-onos.sh stop
+[1;33mc2 Killed existing process (pid: 8279)[1;m
+
+[1;36mRound 34 completed.[1;m
+WARNING:io_master:Closing socket due to empty read
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd56c50><pox.lib.packet.lldp.unknown_tlv object at 0x10cd56a50><pox.lib.packet.lldp.unknown_tlv object at 0x10cd56050><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 35 completed.[1;m
+[1;36mRound 36 completed.[1;m
+[1;36mRound 37 completed.[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 16102)[1;m
+
+[1;36mRound 38 completed.[1;m
+WARNING:io_master:Closing socket due to empty read
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10ce44ad0><pox.lib.packet.lldp.unknown_tlv object at 0x10ce44d50><pox.lib.packet.lldp.unknown_tlv object at 0x10ce44750><tlv end> on interface eth1
+INFO:Controller:Relaunching controller c2: ./start-onos.sh stop
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33mc2 Starting ONOS controller ...[1;m
+
+[1;33mc2 [1;m
+
+[1;33mc2 .[1;m
+
+[1;33mc2 /home/mininet/ONOS[1;m
+
+[1;33mc2 Waiting for ONOS to start...[1;m
+
+[1;33mc2 .[1;m
+
+connect_socket_with_backoff ('192.168.56.12', 6633)
+[1;36mRound 39 completed.[1;m
+INFO:Controller:Killing controller c2: ./start-onos.sh stop
+[1;33mc2 Killed existing process (pid: 8627)[1;m
+
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+connect_socket_with_backoff ('192.168.56.11', 6633)
+[1;36mRound 40 completed.[1;m
+WARNING:io_master:Closing socket due to empty read
+ERROR:io_master:Socket error: Bad file descriptor
+[1;36mRound 41 completed.[1;m
+[1;36mRound 42 completed.[1;m
+[1;36mRound 43 completed.[1;m
+INFO:Controller:Relaunching controller c2: ./start-onos.sh stop
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33mc2 Starting ONOS controller ...[1;m
+
+[1;33mc2 [1;m
+
+[1;33mc2 .[1;m
+
+[1;33mc2 /home/mininet/ONOS[1;m
+
+[1;33mc2 Waiting for ONOS to start...[1;m
+
+[1;33mc2 .[1;m
+
+connect_socket_with_backoff ('192.168.56.12', 6633)
+[1;36mRound 44 completed.[1;m
+[1;36mRound 45 completed.[1;m
+[1;36mRound 46 completed.[1;m
+[1;36mRound 47 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd5d0d0><pox.lib.packet.lldp.unknown_tlv object at 0x10cd5d1d0><pox.lib.packet.lldp.unknown_tlv object at 0x10cd5d410><tlv end> on interface eth1
+[1;36mRound 48 completed.[1;m
+[1;36mRound 49 completed.[1;m
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 50 completed.[1;m
+[1;36mRound 51 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd51450><pox.lib.packet.lldp.unknown_tlv object at 0x10cd51c50><pox.lib.packet.lldp.unknown_tlv object at 0x10cd51510><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10ce4c250><pox.lib.packet.lldp.unknown_tlv object at 0x10ce4cd90><pox.lib.packet.lldp.unknown_tlv object at 0x10ce4c210><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 52 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd51a90><pox.lib.packet.lldp.unknown_tlv object at 0x10cd51790><pox.lib.packet.lldp.unknown_tlv object at 0x10cd51090><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 53 completed.[1;m
+[1;36mRound 54 completed.[1;m
+[1;36mRound 55 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd5dd90><pox.lib.packet.lldp.unknown_tlv object at 0x10cd5de90><pox.lib.packet.lldp.unknown_tlv object at 0x10cd5de50><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mRound 56 completed.[1;m
+[1;36mRound 57 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd62290><pox.lib.packet.lldp.unknown_tlv object at 0x10cd62090><pox.lib.packet.lldp.unknown_tlv object at 0x10cd62050><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 58 completed.[1;m
+[1;36mRound 59 completed.[1;m
+[1;36mRound 60 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd62b50><pox.lib.packet.lldp.unknown_tlv object at 0x10cd62bd0><pox.lib.packet.lldp.unknown_tlv object at 0x10cd62b90><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+INFO:Controller:Killing controller c2: ./start-onos.sh stop
+[1;33mc2 Killed existing process (pid: 8797)[1;m
+
+[1;36mRound 61 completed.[1;m
+WARNING:io_master:Closing socket due to empty read
+[1;36mRound 62 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd67590><pox.lib.packet.lldp.unknown_tlv object at 0x10cd67610><pox.lib.packet.lldp.unknown_tlv object at 0x10cd675d0><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 63 completed.[1;m
+[1;36mRound 64 completed.[1;m
+[1;36mRound 65 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd5d710><pox.lib.packet.lldp.unknown_tlv object at 0x10cd5d0d0><pox.lib.packet.lldp.unknown_tlv object at 0x10cd5d290><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mRound 66 completed.[1;m
+INFO:Controller:Relaunching controller c2: ./start-onos.sh stop
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33mc2 Starting ONOS controller ...[1;m
+
+[1;33mc2 [1;m
+
+[1;33mc2 .[1;m
+
+[1;33mc2 /home/mininet/ONOS[1;m
+
+[1;33mc2 Waiting for ONOS to start...[1;m
+
+[1;33mc2 .[1;m
+
+connect_socket_with_backoff ('192.168.56.12', 6633)
+[1;36mRound 67 completed.[1;m
+[1;36mRound 68 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10ce4cdd0><pox.lib.packet.lldp.unknown_tlv object at 0x10ce4c990><pox.lib.packet.lldp.unknown_tlv object at 0x10ce4c8d0><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mRound 69 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd51090><pox.lib.packet.lldp.unknown_tlv object at 0x10cd51790><pox.lib.packet.lldp.unknown_tlv object at 0x10cd51a90><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mRound 70 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd67e50><pox.lib.packet.lldp.unknown_tlv object at 0x10cd67d90><pox.lib.packet.lldp.unknown_tlv object at 0x10cd67d50><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mRound 71 completed.[1;m
+[1;36mRound 72 completed.[1;m
+[1;36mRound 73 completed.[1;m
+[1;36mRound 74 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10ce44e90><pox.lib.packet.lldp.unknown_tlv object at 0x10cd67750><pox.lib.packet.lldp.unknown_tlv object at 0x10cd67110><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd67290><pox.lib.packet.lldp.unknown_tlv object at 0x10cd67210><pox.lib.packet.lldp.unknown_tlv object at 0x10cd67390><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 75 completed.[1;m
+WARNING:io_master:Closing socket due to empty read
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd67fd0><pox.lib.packet.lldp.unknown_tlv object at 0x10cd67a90><pox.lib.packet.lldp.unknown_tlv object at 0x10cd67f90><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 76 completed.[1;m
+[1;36mRound 77 completed.[1;m
+[1;36mRound 78 completed.[1;m
+[1;36mRound 79 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd62110><pox.lib.packet.lldp.unknown_tlv object at 0x10cd62710><pox.lib.packet.lldp.unknown_tlv object at 0x10cd62d10><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mRound 80 completed.[1;m
+[1;36mRound 81 completed.[1;m
+[1;36mRound 82 completed.[1;m
+[1;36mRound 83 completed.[1;m
+[1;36mRound 84 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd68510><pox.lib.packet.lldp.unknown_tlv object at 0x10cd683d0><pox.lib.packet.lldp.unknown_tlv object at 0x10cd68550><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mRound 85 completed.[1;m
+[1;36mRound 86 completed.[1;m
+[1;36mRound 87 completed.[1;m
+[1;36mRound 88 completed.[1;m
+[1;36mRound 89 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10cd69550><pox.lib.packet.lldp.unknown_tlv object at 0x10cd695d0><pox.lib.packet.lldp.unknown_tlv object at 0x10cd69590><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 16277)[1;m
+
+[1;36mRound 90 completed.[1;m
+WARNING:io_master:Closing socket due to empty read
+[1;36mRound 91 completed.[1;m
+[1;36mRound 92 completed.[1;m
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+connect_socket_with_backoff ('192.168.56.11', 6633)
+[1;36mRound 93 completed.[1;m
+[1;36mRound 94 completed.[1;m
+[1;36mRound 95 completed.[1;m
+[1;36mRound 96 completed.[1;m
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 16593)[1;m
+
+[1;36mRound 97 completed.[1;m
+WARNING:io_master:Closing socket due to empty read
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+connect_socket_with_backoff ('192.168.56.11', 6633)
+[1;36mRound 98 completed.[1;m
+[1;36mRound 99 completed.[1;m
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:invariant_checker:Problems found while checking controller liveness.
+[1;41m[1;37mThe following correctness violations have occurred: ['c2'][1;m
+[1;41m[1;37mPersistent violations detected!: ['c2'][1;m
+INFO:control_flow:Terminating fuzzing after 100 rounds
+INFO:control_flow:Pending Receives:
+INFO:control_flow:Pending Sends:

@@ -18,7 +18,8 @@
   "modules": {
     "pox": {
       "branch": "debugger",
-      "commit": "884ce98464919ea7aea7155c75b50a096c24d38e"
+      "original_uncommited_commit": "884ce98464919ea7aea7155c75b50a096c24d38e",
+      "commit": "7387528635c6ce8e1d8a1f5205c6f96c61b05c7b"
     },
     "sts": {
       "branch": "master",

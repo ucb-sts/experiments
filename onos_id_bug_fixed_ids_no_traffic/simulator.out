@@ -1,0 +1,236 @@
+INFO:Controller: =====> Starting ONOS Controller <===== 
+INFO:Controller:Launching controller c1: ./start-onos.sh start
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+INFO:Controller:
+INFO:simulation:Launched controller c1: ./start-onos.sh start [PID -1]
+INFO:Controller: =====> Starting ONOS Controller <===== 
+INFO:Controller:Launching controller c2: ./start-onos.sh start
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.log[1;m
+
+[1;33mc2 rotate log: ./onos-logs/onos.onosdev2.pcap[1;m
+
+[1;33mc2 Starting ONOS controller ...[1;m
+
+[1;33mc2 [1;m
+
+[1;33mc2 .[1;m
+
+[1;33mc2 /home/mininet/ONOS[1;m
+
+[1;33mc2 Waiting for ONOS to start...[1;m
+
+[1;33mc2 .[1;m
+
+INFO:Controller:
+INFO:simulation:Launched controller c2: ./start-onos.sh start [PID -1]
+INFO:simulation:Creating topology...
+connect_socket_with_backoff ('192.168.56.11', 6633)
+Error connecting.  -- [Errno 61] Connection refused. Backing off 1 seconds ...
+Error connecting.  -- [Errno 61] Connection refused. Backing off 2 seconds ...
+Error connecting.  -- [Errno 61] Connection refused. Backing off 4 seconds ...
+Error connecting.  -- [Errno 61] Connection refused. Backing off 8 seconds ...
+Error connecting.  -- [Errno 61] Connection refused. Backing off 16 seconds ...
+Error connecting.  -- [Errno 61] Connection refused. Backing off 32 seconds ...
+connect_socket_with_backoff ('192.168.56.12', 6633)
+INFO:control_flow:Waiting until first OpenFlow message received..
+[1;36mRound 1 completed.[1;m
+[1;36mRound 2 completed.[1;m
+[1;36mRound 3 completed.[1;m
+[1;36mRound 4 completed.[1;m
+[1;36mRound 5 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10e14c890><pox.lib.packet.lldp.unknown_tlv object at 0x10e14c950><pox.lib.packet.lldp.unknown_tlv object at 0x10e14c910><tlv end> on interface eth2
+[1;36mRound 6 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10e154ad0><pox.lib.packet.lldp.unknown_tlv object at 0x10e154b50><pox.lib.packet.lldp.unknown_tlv object at 0x10e154b10><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10e154d90><pox.lib.packet.lldp.unknown_tlv object at 0x10e154990><pox.lib.packet.lldp.unknown_tlv object at 0x10e1540d0><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 7 completed.[1;m
+[1;36mRound 8 completed.[1;m
+[1;36mRound 9 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10e05a890><pox.lib.packet.lldp.unknown_tlv object at 0x10e05a910><pox.lib.packet.lldp.unknown_tlv object at 0x10e05a8d0><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+[1;36mRound 10 completed.[1;m
+INFO:host:[IPAddr('123.123.1.2')]:sending packet on interface eth1: [12:34:56:78:01:02>12:34:56:78:01:02:IP]|([v:4hl:5l:72t:64]ICMP cs:ef9e[123.123.1.2>123.123.1.2]){t:ECHO_REQUEST c:0 chk:637}PingPingPingPingPingPingPingPingPingPingPingPing
+INFO:host:[IPAddr('123.123.2.2')]:sending packet on interface eth2: [12:34:56:78:02:02>12:34:56:78:02:02:IP]|([v:4hl:5l:72t:64]ICMP cs:ed9d[123.123.2.2>123.123.2.2]){t:ECHO_REPLY c:0 chk:e37}PingPingPingPingPingPingPingPingPingPingPingPing
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mRound 11 completed.[1;m
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:control_flow:Skipping c2
+[1;36mRound 12 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10e14c590><pox.lib.packet.lldp.unknown_tlv object at 0x10e14c210><pox.lib.packet.lldp.unknown_tlv object at 0x10e14c5d0><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:control_flow:Skipping c2
+[1;36mRound 13 completed.[1;m
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:control_flow:Skipping c2
+[1;36mRound 14 completed.[1;m
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:control_flow:Skipping c2
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 15 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10e05aa90><pox.lib.packet.lldp.unknown_tlv object at 0x10e05ab10><pox.lib.packet.lldp.unknown_tlv object at 0x10e05aad0><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:control_flow:Skipping c2
+[1;36mRound 16 completed.[1;m
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:Controller:Killing controller c1: ./start-onos.sh stop
+[1;33mc1 Killed existing process (pid: 17690)[1;m
+
+[1;36mRound 17 completed.[1;m
+WARNING:io_master:Closing socket due to empty read
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10e1484d0><pox.lib.packet.lldp.unknown_tlv object at 0x10e148550><pox.lib.packet.lldp.unknown_tlv object at 0x10e148510><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:control_flow:Skipping c2
+INFO:Controller:Relaunching controller c1: ./start-onos.sh stop
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.log[1;m
+
+[1;33mc1 rotate log: ./onos-logs/onos.onosdev1.pcap[1;m
+
+[1;33mc1 Starting ONOS controller ...[1;m
+
+[1;33mc1 [1;m
+
+[1;33mc1 .[1;m
+
+[1;33mc1 /home/mininet/ONOS[1;m
+
+[1;33mc1 Waiting for ONOS to start...[1;m
+
+[1;33mc1 .[1;m
+
+connect_socket_with_backoff ('192.168.56.11', 6633)
+[1;36mRound 18 completed.[1;m
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:control_flow:Skipping c2
+[1;36mRound 19 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10e148810><pox.lib.packet.lldp.unknown_tlv object at 0x10e148a90><pox.lib.packet.lldp.unknown_tlv object at 0x10e148d50><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:control_flow:Skipping c2
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 20 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10e148510><pox.lib.packet.lldp.unknown_tlv object at 0x10e148c10><pox.lib.packet.lldp.unknown_tlv object at 0x10e148e50><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:control_flow:Skipping c2
+[1;36mRound 21 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10e05a2d0><pox.lib.packet.lldp.unknown_tlv object at 0x10e05ab10><pox.lib.packet.lldp.unknown_tlv object at 0x10e05aad0><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:control_flow:Skipping c2
+[1;36mRound 22 completed.[1;m
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:control_flow:Skipping c2
+[1;36mRound 23 completed.[1;m
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:control_flow:Skipping c2
+[1;36mRound 24 completed.[1;m
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:control_flow:Skipping c2
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+[1;42m[1;37mNo correctness violations![1;m
+[1;36mRound 25 completed.[1;m
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth2
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10e060650><pox.lib.packet.lldp.unknown_tlv object at 0x10e0606d0><pox.lib.packet.lldp.unknown_tlv object at 0x10e060690><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.2.2')]:Received packet [00:00:00:00:00:02>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:02><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10e154390><pox.lib.packet.lldp.unknown_tlv object at 0x10e060350><pox.lib.packet.lldp.unknown_tlv object at 0x10e060890><tlv end> on interface eth2
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:control_flow:Skipping c2
+[1;36mRound 26 completed.[1;m
+WARNING:io_master:Closing socket due to empty read
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>01:80:c2:00:00:0e:LLDP]|<chasis ID:00:00:00:00:00:01><port ID:00:02><ttl:120><pox.lib.packet.lldp.organizationally_specific object at 0x10e060a10><pox.lib.packet.lldp.unknown_tlv object at 0x10e060cd0><pox.lib.packet.lldp.unknown_tlv object at 0x10e060c50><tlv end> on interface eth1
+[1;36mForwarding dataplane event[1;m
+[1;36mForwarding dataplane event[1;m
+INFO:host:[IPAddr('123.123.1.2')]:Received packet [00:00:00:00:00:01>ff:ff:ff:ff:ff:ff:8942]|<55 bytes> on interface eth1
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:control_flow:Skipping c2
+[1;36mRound 27 completed.[1;m
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:control_flow:Skipping c2
+[1;36mRound 28 completed.[1;m
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:control_flow:Skipping c2
+[1;36mRound 29 completed.[1;m
+INFO:control_flow:Considering controller 'c1' for crash
+INFO:control_flow:Skipping c2
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:Controller:Checking status of controller c1: ./start-onos.sh status
+INFO:Controller:Checking status of controller c2: ./start-onos.sh status
+INFO:invariant_checker:Problems found while checking controller liveness: ['c1'].
+[1;41m[1;37mThe following correctness violations have occurred: ['c1'][1;m
+[1;41m[1;37mPersistent violations detected!: ['c1'][1;m
+INFO:control_flow:Terminating fuzzing after 30 rounds
+INFO:control_flow:Pending Receives:
+INFO:control_flow:Pending Sends:
