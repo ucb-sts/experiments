@@ -1,0 +1,271 @@
+Sleeping 0 seconds after run
+Violation reproduced successfully! Proceeding with pruning
+Subsets:
+l/0: e24 e34 e42 e43 e55 e56 e72 e73 e74 e82 e88 e89 e101
+r/0: e103 e104 e115 e116 e128 e129 e139 e150 e181 e182 e191 e202 e204
+Current subset: l/0: e24 e34 e42 e43 e55 e56 e72 e73 e74 e82 e88 e89 e101
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: r/0: e103 e104 e115 e116 e128 e129 e139 e150 e181 e182 e191 e202 e204
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.l/1: e24 e34 e42 e43 e55 e56 e72
+il/0.r/1: e73 e74 e82 e88 e89 e101
+Current subset: il/0.l/1: e24 e34 e42 e43 e55 e56 e72
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: il/0.r/1: e73 e74 e82 e88 e89 e101
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.il/1.l/2: e24 e34 e42 e43
+il/0.il/1.r/2: e55 e56 e72
+Current subset: il/0.il/1.l/2: e24 e34 e42 e43
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: il/0.il/1.r/2: e55 e56 e72
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.il/1.il/2.l/3: e24 e34
+il/0.il/1.il/2.r/3: e42 e43
+Current subset: il/0.il/1.il/2.l/3: e24 e34
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: il/0.il/1.il/2.r/3: e42 e43
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.il/1.il/2.il/3.l/4: e24
+il/0.il/1.il/2.il/3.r/4: e34
+Current subset: il/0.il/1.il/2.il/3.l/4: e24
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [TrafficInjection:e24]
+Recursing on right half
+Subsets:
+il/0.il/1.il/2.ir/3.l/4: e42
+il/0.il/1.il/2.ir/3.r/4: e43
+Current subset: il/0.il/1.il/2.ir/3.l/4: e42
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: il/0.il/1.il/2.ir/3.r/4: e43
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [TrafficInjection:e43]
+Recursing on right half
+Subsets:
+il/0.il/1.ir/2.l/3: e55 e56
+il/0.il/1.ir/2.r/3: e72
+Current subset: il/0.il/1.ir/2.l/3: e55 e56
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.il/1.ir/2.l/3.l/4: e55
+il/0.il/1.ir/2.l/3.r/4: e56
+Current subset: il/0.il/1.ir/2.l/3.l/4: e55
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: il/0.il/1.ir/2.l/3.r/4: e56
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [TrafficInjection:e56]
+Recursing on right half
+Subsets:
+il/0.ir/1.l/2: e73 e74 e82
+il/0.ir/1.r/2: e88 e89 e101
+Current subset: il/0.ir/1.l/2: e73 e74 e82
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: il/0.ir/1.r/2: e88 e89 e101
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+il/0.ir/1.il/2.l/3: e73 e74
+il/0.ir/1.il/2.r/3: e82
+Current subset: il/0.ir/1.il/2.l/3: e73 e74
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.ir/1.il/2.l/3.l/4: e73
+il/0.ir/1.il/2.l/3.r/4: e74
+Current subset: il/0.ir/1.il/2.l/3.l/4: e73
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: il/0.ir/1.il/2.l/3.r/4: e74
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [TrafficInjection:e74]
+Recursing on right half
+Subsets:
+il/0.ir/1.ir/2.l/3: e88 e89
+il/0.ir/1.ir/2.r/3: e101
+Current subset: il/0.ir/1.ir/2.l/3: e88 e89
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+il/0.ir/1.ir/2.l/3.l/4: e88
+il/0.ir/1.ir/2.l/3.r/4: e89
+Current subset: il/0.ir/1.ir/2.l/3.l/4: e88
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: il/0.ir/1.ir/2.l/3.r/4: e89
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [TrafficInjection:e89]
+Recursing on right half
+Subsets:
+ir/0.l/1: e103 e104 e115 e116 e128 e129 e139
+ir/0.r/1: e150 e181 e182 e191 e202 e204
+Current subset: ir/0.l/1: e103 e104 e115 e116 e128 e129 e139
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.r/1: e150 e181 e182 e191 e202 e204
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+ir/0.il/1.l/2: e103 e104 e115 e116
+ir/0.il/1.r/2: e128 e129 e139
+Current subset: ir/0.il/1.l/2: e103 e104 e115 e116
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.il/1.r/2: e128 e129 e139
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+ir/0.il/1.il/2.l/3: e103 e104
+ir/0.il/1.il/2.r/3: e115 e116
+Current subset: ir/0.il/1.il/2.l/3: e103 e104
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.il/1.il/2.r/3: e115 e116
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+ir/0.il/1.il/2.il/3.l/4: e103
+ir/0.il/1.il/2.il/3.r/4: e104
+Current subset: ir/0.il/1.il/2.il/3.l/4: e103
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.il/1.il/2.il/3.r/4: e104
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [TrafficInjection:e104]
+Recursing on right half
+Subsets:
+ir/0.il/1.il/2.ir/3.l/4: e115
+ir/0.il/1.il/2.ir/3.r/4: e116
+Current subset: ir/0.il/1.il/2.ir/3.l/4: e115
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.il/1.il/2.ir/3.r/4: e116
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [TrafficInjection:e116]
+Recursing on right half
+Subsets:
+ir/0.il/1.ir/2.l/3: e128 e129
+ir/0.il/1.ir/2.r/3: e139
+Current subset: ir/0.il/1.ir/2.l/3: e128 e129
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.il/1.ir/2.l/3.l/4: e128
+ir/0.il/1.ir/2.l/3.r/4: e129
+Current subset: ir/0.il/1.ir/2.l/3.l/4: e128
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.il/1.ir/2.l/3.r/4: e129
+Sleeping 0 seconds after run
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [TrafficInjection:e129]
+Recursing on right half
+Subsets:
+ir/0.ir/1.l/2: e150 e181 e182
+ir/0.ir/1.r/2: e191 e202 e204
+Current subset: ir/0.ir/1.l/2: e150 e181 e182
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.ir/1.r/2: e191 e202 e204
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+ir/0.ir/1.il/2.l/3: e150 e181
+ir/0.ir/1.il/2.r/3: e182
+Current subset: ir/0.ir/1.il/2.l/3: e150 e181
+Sleeping 0 seconds after run
+No violation in 0'th...
+Current subset: ir/0.ir/1.il/2.r/3: e182
+Sleeping 0 seconds after run
+No violation in 1'th...
+Interference
+Recursing on left half
+Subsets:
+ir/0.ir/1.il/2.il/3.l/4: e150
+ir/0.ir/1.il/2.il/3.r/4: e181
+Current subset: ir/0.ir/1.il/2.il/3.l/4: e150
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [TrafficInjection:e150]
+Recursing on right half
+Base case [TrafficInjection:e182]
+Recursing on right half
+Subsets:
+ir/0.ir/1.ir/2.l/3: e191 e202
+ir/0.ir/1.ir/2.r/3: e204
+Current subset: ir/0.ir/1.ir/2.l/3: e191 e202
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+ir/0.ir/1.ir/2.l/3.l/4: e191
+ir/0.ir/1.ir/2.l/3.r/4: e202
+Current subset: ir/0.ir/1.ir/2.l/3.l/4: e191
+Sleeping 0 seconds after run
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Base case [TrafficInjection:e191]
+Final MCS (11 elements):
+ - TrafficInjection:e24
+ - TrafficInjection:e43
+ - TrafficInjection:e56
+ - TrafficInjection:e74
+ - TrafficInjection:e89
+ - TrafficInjection:e104
+ - TrafficInjection:e116
+ - TrafficInjection:e129
+ - TrafficInjection:e150
+ - TrafficInjection:e182
+ - TrafficInjection:e191

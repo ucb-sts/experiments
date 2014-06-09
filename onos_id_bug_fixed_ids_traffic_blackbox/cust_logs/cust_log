@@ -1,0 +1,83 @@
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 0 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: I'm claiming link myId 5: remoteId 4 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev1: Getting BBDP from a different controller myId 4: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: KILL bug triggered TRIGGERED oldCid: 10 CID: 4 RemoteCID: 5
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 5 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev2: Getting BBDP from a different controller myId 5: remoteId 10 swID: 2 remoteSwID:1 myPort: 1 rPort: 1 
+onosdev2: bug not triggered oldCid: 5 CID: 5 RemoteCID: 10
+onosdev1: I'm claiming link myId 10: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: Getting BBDP from a different controller myId 4: remoteId 5 swID: 1 remoteSwID:2 myPort: 1 rPort: 1 
+onosdev1: KILL bug triggered TRIGGERED oldCid: 10 CID: 4 RemoteCID: 5
