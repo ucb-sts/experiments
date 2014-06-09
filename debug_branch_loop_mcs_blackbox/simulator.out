@@ -1,0 +1,94 @@
+[1;36mStarting controller ('127.0.0.1', 6634)[1;m
+[1;33m[c1] POX 0.0.0 / Copyright 2011 James McCauley[1;m
+[1;41m[1;33m[c1] INFO:pox_syncer:starting sts sync for spec: ptcp:0.0.0.0:19999[1;m
+[1;41m[1;33m[c1] INFO:pox_syncer:waiting for sts_sync connection on 0.0.0.0:19999[1;m
+[1;41m[1;33m[c1] INFO:pox_syncer:sts_sync connected[1;m
+[1;41m[1;33m[c1] DEBUG:core:POX 0.0.0 going up...[1;m
+[1;41m[1;33m[c1] DEBUG:core:Running on CPython (2.7.6/Mar 22 2014 22:59:56)[1;m
+[1;41m[1;33m[c1] INFO:core:POX 0.0.0 is up.[1;m
+[1;41m[1;33m[c1] DEBUG:openflow.of_01:Listening for connections on ('127.0.0.1', 6634)[1;m
+[1;32m[1;44m00:00.501 00:00.000 Sucessfully matched event TrafficInjection:e24[1;m
+[1;36m[1;36mRound 1[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;31m[1;44m00:01.006 00:00.504 Event timed out DataplaneDrop:e34[1;m
+[1;36m[1;36mRound 2[1;37m[1;m
+[1;41m[1;37mNot all 2 pairs are connected! (2 missing)[1;m
+[1;37mNo correctness violations![1;m
+[1;32m[1;44m00:01.525 00:01.010 Sucessfully matched event CheckInvariants:e42[1;m
+[1;36m[1;36mRound 3[1;37m[1;m
+[1;32m[1;44m00:01.541 00:01.025 Sucessfully matched event TrafficInjection:e43[1;m
+[1;36m[1;36mRound 4[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;31m[1;44m00:02.551 00:02.034 Event timed out DataplaneDrop:e55[1;m
+[1;36m[1;36mRound 5[1;37m[1;m
+[1;32m[1;44m00:02.551 00:02.035 Sucessfully matched event TrafficInjection:e56[1;m
+[1;36m[1;36mRound 6[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;31m[1;44m00:03.261 00:02.743 Event timed out DataplaneDrop:e72[1;m
+[1;36m[1;36mRound 7[1;37m[1;m
+[1;41m[1;37mNot all 2 pairs are connected! (2 missing)[1;m
+[1;37mNo correctness violations![1;m
+[1;32m[1;44m00:03.575 00:03.045 Sucessfully matched event CheckInvariants:e73[1;m
+[1;36m[1;36mRound 8[1;37m[1;m
+[1;32m[1;44m00:03.592 00:03.062 Sucessfully matched event TrafficInjection:e74[1;m
+[1;36m[1;36mRound 9[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;31m[1;44m00:03.892 00:03.361 Event timed out DataplaneDrop:e82[1;m
+[1;36m[1;36mRound 10[1;37m[1;m
+[1;31m[1;44m00:04.094 00:03.563 Event timed out DataplaneDrop:e88[1;m
+[1;36m[1;36mRound 11[1;37m[1;m
+[1;32m[1;44m00:04.599 00:04.066 Sucessfully matched event TrafficInjection:e89[1;m
+[1;36m[1;36mRound 12[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;31m[1;44m00:05.105 00:04.571 Event timed out DataplaneDrop:e101[1;m
+[1;36m[1;36mRound 13[1;37m[1;m
+[1;41m[1;37mNot all 2 pairs are connected! (2 missing)[1;m
+[1;37mNo correctness violations![1;m
+[1;32m[1;44m00:05.620 00:05.075 Sucessfully matched event CheckInvariants:e103[1;m
+[1;36m[1;36mRound 14[1;37m[1;m
+[1;32m[1;44m00:05.640 00:05.094 Sucessfully matched event TrafficInjection:e104[1;m
+[1;36m[1;36mRound 15[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;31m[1;44m00:06.348 00:05.801 Event timed out DataplaneDrop:e115[1;m
+[1;36m[1;36mRound 16[1;37m[1;m
+[1;32m[1;44m00:06.651 00:06.103 Sucessfully matched event TrafficInjection:e116[1;m
+[1;36m[1;36mRound 17[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;37mNot all 2 pairs are connected! (2 missing)[1;m
+[1;37mNo correctness violations![1;m
+[1;32m[1;44m00:07.675 00:07.114 Sucessfully matched event CheckInvariants:e128[1;m
+[1;36m[1;36mRound 18[1;37m[1;m
+[1;32m[1;44m00:07.696 00:07.134 Sucessfully matched event TrafficInjection:e129[1;m
+[1;36m[1;36mRound 19[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;31m[1;44m00:08.002 00:07.439 Event timed out DataplaneDrop:e139[1;m
+[1;36m[1;36mRound 20[1;37m[1;m
+[1;32m[1;44m00:08.713 00:08.149 Sucessfully matched event TrafficInjection:e150[1;m
+[1;36m[1;36mRound 21[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;41m[1;37mNot all 2 pairs are connected! (2 missing)[1;m
+[1;37mNo correctness violations![1;m
+[1;32m[1;44m00:09.731 00:09.154 Sucessfully matched event CheckInvariants:e181[1;m
+[1;36m[1;36mRound 22[1;37m[1;m
+[1;32m[1;44m00:09.753 00:09.175 Sucessfully matched event TrafficInjection:e182[1;m
+[1;36m[1;36mRound 23[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;32m[1;44m00:10.764 00:10.185 Sucessfully matched event TrafficInjection:e191[1;m
+[1;36m[1;36mRound 24[1;37m[1;m
+[1;36mForwarding dataplane event[1;m
+[1;31m[1;44m00:11.476 00:10.896 Event timed out DataplaneDrop:e202[1;m
+[1;36m[1;36mRound 25[1;37m[1;m
+[1;41m[1;37mNot all 2 pairs are connected! (2 missing)[1;m
+[1;37mNo correctness violations![1;m
+[1;32m[1;44m00:11.790 00:11.198 Sucessfully matched event CheckInvariants:e204[1;m
+[1;36m[1;36mRound 26[1;37m[1;m
+[1;36m[1;44mEvent Stats: Events matched: 17, timed out: 9
+Matches per event type:
+  CheckInvariants 6
+  TrafficInjection 11
+Timeouts per event type:
+  DataplaneDrop 9
+[1;m
+[1;45mSleeping 0 seconds after run[1;m
+[1;36mKilling controller ('127.0.0.1', 6634)[1;m
+[1;41m[1;37mUnable to reproduce correctness violation![1;m
