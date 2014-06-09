@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/debug_branch_loop_mcs/orig_config.py"
+  ],
+  "cwd": "/tmp/sts_blackbox",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU X5660 @ 2.80GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:       6101428    5919664     181764        312     107796    4804128\n-/+ buffers/cache:    1007740    5093688\nSwap:      6283260       6660    6276600",
+    "name": "c5",
+    "num_cores": "12",
+    "uptime": "18:32:15 up 9 days, 20:22,  2 users,  load average: 0.00, 0.01, 0.05"
+  },
+  "modules": {
+    "pox": {
+      "branch": "HEAD",
+      "commit": "680ad6c13dfcb22de3af15e301b10d6feb9b819b"
+    },
+    "sts": {
+      "branch": "pox_inflight_blackhole",
+      "commit": "fe400f80700863279131fca80afb670ad3a14743"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 14.04 LTS",
+    "uname": "Linux c5 3.13.0-27-generic #50-Ubuntu SMP Thu May 15 18:06:16 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_06_08_18_32_15",
+  "user": "rcs"
+}
