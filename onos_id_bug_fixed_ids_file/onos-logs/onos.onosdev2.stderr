@@ -1,0 +1,28 @@
+com.thinkaurelius.titan.core.TitanException: Could not commit transaction due to exception during persistence
+	at com.thinkaurelius.titan.graphdb.transaction.StandardTitanTx.commit(StandardTitanTx.java:1029)
+	at com.thinkaurelius.titan.graphdb.blueprints.TitanBlueprintsGraph.commit(TitanBlueprintsGraph.java:57)
+	at net.onrc.onos.graph.GraphDBConnection.commit(GraphDBConnection.java:158)
+	at net.onrc.onos.graph.GraphDBOperation.commit(GraphDBOperation.java:427)
+	at net.onrc.onos.ofcontroller.core.internal.LinkStorageImpl.addLink(LinkStorageImpl.java:144)
+	at net.onrc.onos.ofcontroller.core.internal.LinkStorageImpl.addLink(LinkStorageImpl.java:108)
+	at net.onrc.onos.ofcontroller.floodlightlistener.NetworkGraphPublisher.linkDiscoveryUpdate(NetworkGraphPublisher.java:221)
+	at net.onrc.onos.ofcontroller.linkdiscovery.internal.LinkDiscoveryManager$LinkUpdate.dispatch(LinkDiscoveryManager.java:235)
+	at net.floodlightcontroller.core.internal.Controller.run(Controller.java:1733)
+	at net.onrc.onos.ofcontroller.core.Main.main(Main.java:48)
+Caused by: com.thinkaurelius.titan.core.TitanException: Permanent exception during backend operation
+	at com.thinkaurelius.titan.diskstorage.util.BackendOperation.execute(BackendOperation.java:65)
+	at com.thinkaurelius.titan.graphdb.database.StandardTitanGraph.commit(StandardTitanGraph.java:320)
+	at com.thinkaurelius.titan.graphdb.transaction.StandardTitanTx.commit(StandardTitanTx.java:1018)
+	... 9 more
+Caused by: com.thinkaurelius.titan.diskstorage.locking.PermanentLockingException: Expected value mismatch for KeyColumn [k=0x1-0-108-0-105-0-110-0-107-0-0, c=0x138]: expected=[] vs actual=[1-182-3-147] (store=vertexindex)
+	at com.thinkaurelius.titan.diskstorage.locking.consistentkey.ExpectedValueCheckingTransaction.checkSingleExpectedValueUnsafe(ExpectedValueCheckingTransaction.java:146)
+	at com.thinkaurelius.titan.diskstorage.locking.consistentkey.ExpectedValueCheckingTransaction.checkSingleExpectedValue(ExpectedValueCheckingTransaction.java:107)
+	at com.thinkaurelius.titan.diskstorage.locking.consistentkey.ExpectedValueCheckingTransaction.checkExpectedValues(ExpectedValueCheckingTransaction.java:95)
+	at com.thinkaurelius.titan.diskstorage.locking.consistentkey.ExpectedValueCheckingStore.mutate(ExpectedValueCheckingStore.java:99)
+	at com.thinkaurelius.titan.diskstorage.BackendTransaction.mutateEdges(BackendTransaction.java:116)
+	at com.thinkaurelius.titan.graphdb.database.StandardTitanGraph.persist(StandardTitanGraph.java:352)
+	at com.thinkaurelius.titan.graphdb.database.StandardTitanGraph.access$000(StandardTitanGraph.java:49)
+	at com.thinkaurelius.titan.graphdb.database.StandardTitanGraph$2.call(StandardTitanGraph.java:301)
+	at com.thinkaurelius.titan.graphdb.database.StandardTitanGraph$2.call(StandardTitanGraph.java:241)
+	at com.thinkaurelius.titan.diskstorage.util.BackendOperation.execute(BackendOperation.java:62)
+	... 11 more
