@@ -1,0 +1,44 @@
+{
+  "additional_metadata": null,
+  "argv": [
+    "./simulator.py",
+    "-c",
+    "experiments/onos_id_bug_fixed_ids_file/mcs_config.py",
+    "-n",
+    "onos_id_bug_fixed_ids_file_mcs4"
+  ],
+  "cwd": "/mnt/ahassany/sts",
+  "host": {
+    "cpu_info": "Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz",
+    "free": "total       used       free     shared    buffers     cached\nMem:     264051872  126978300  137073572          0     188720  118253088\n-/+ buffers/cache:    8536492  255515380\nSwap:            0          0          0",
+    "name": "c70",
+    "num_cores": "32",
+    "uptime": "15:41:28 up 56 days, 15:16,  3 users,  load average: 0.55, 0.64, 0.75"
+  },
+  "modules": {
+    "hassel": {
+      "branch": "HEAD",
+      "commit": "d63193500fca48cba053205c413d72eebfd233e9",
+      "diff": "",
+      "status": "# Not currently on any branch.\nnothing to commit (working directory clean)"
+    },
+    "pox": {
+      "branch": "debugger",
+      "commit": "d0216b722e1471a7f8eb15a3afd808b34de5f1f4",
+      "diff": "diff --git a/pox/lib/packet/lldp.py b/pox/lib/packet/lldp.py\nindex eb628ea..3a5efe6 100644\n--- a/pox/lib/packet/lldp.py\n+++ b/pox/lib/packet/lldp.py\n@@ -132,7 +132,7 @@ class lldp (packet_base):\n             self.tlvs.append(lldp.tlv_parsers[type](array[0: 2 + length]))\n             return 2 + length\n         else:\n-            self.msg( '(lldp tlv parse) warning unknown tlv type (%u)' % (type,) )\n+            #self.msg( '(lldp tlv parse) warning unknown tlv type (%u)' % (type,) )\n             # TODO: unknown_tlv is an undefined variable! Check me in?\n             self.tlvs.append(unknown_tlv(array[0: 2 + length]))\n             return 2 + length",
+      "status": "# On branch debugger\n# Changes not staged for commit:\n#   (use \"git add <file>...\" to update what will be committed)\n#   (use \"git checkout -- <file>...\" to discard changes in working directory)\n#\n#\tmodified:   pox/lib/packet/lldp.py\n#\nno changes added to commit (use \"git add\" and/or \"git commit -a\")"
+    },
+    "sts": {
+      "branch": "sigcomm_changes2",
+      "commit": "2124cb47efb7f872f477b54d89b18804b0546952",
+      "diff": "diff --git a/config/fuzzer_params.py b/config/fuzzer_params.py\nindex a2aeb47..60c29b1 100644\n--- a/config/fuzzer_params.py\n+++ b/config/fuzzer_params.py\n@@ -1,5 +1,5 @@\n-switch_failure_rate = 0.005\n-switch_recovery_rate = 0.09\n+switch_failure_rate = 0.00\n+switch_recovery_rate = 1.0\n dataplane_drop_rate = 0.0\n controlplane_block_rate = 0.0\n controlplane_unblock_rate = 1.0\n@@ -7,11 +7,11 @@ ofp_message_receipt_rate = 1.0\n ofp_message_send_rate = 1.0\n ofp_cmd_passthrough_rate = 1.0\n ofp_flow_mod_failure_rate = 0.0\n-link_failure_rate = 0.005\n-link_recovery_rate = 0.09\n-controller_crash_rate = 0.0\n-controller_recovery_rate = 0.0\n-traffic_generation_rate = 0.08\n+link_failure_rate = 0.000\n+link_recovery_rate = 1.0\n+controller_crash_rate = 0.05\n+controller_recovery_rate = 0.15\n+traffic_generation_rate = 0.05\n host_migration_rate = 0.0\n intracontroller_block_rate = 0.0\n intracontroller_unblock_rate = 0.0\ndiff --git a/sts/control_flow/replayer.py b/sts/control_flow/replayer.py\nindex 644d80a..d7567f3 100644\n--- a/sts/control_flow/replayer.py\n+++ b/sts/control_flow/replayer.py\n@@ -30,6 +30,7 @@ from sts.control_flow.base import ControlFlow, ReplaySyncCallback\n from sts.util.convenience import find, find_index, base64_encode\n from sts.topology import BufferedPatchPanel\n from sts.entities import FuzzSoftwareSwitch\n+from sts.entities.base import LocalEntity\n from config.invariant_checks import name_to_invariant_check\n \n import signal\n@@ -39,8 +40,27 @@ import sys\n import os\n from collections import defaultdict\n \n+\n log = logging.getLogger(\"Replayer\")\n \n+\n+def setup():\n+  vagrant_dir = \"/mnt/ahassany/vagrant_onosdev\"\n+  cmd_exec = LocalEntity(redirect_output=True, cwd=vagrant_dir)\n+  cmd_exec.execute_command(\"onos stop\")\n+  cmd_exec.execute_command(\"zk stop\")\n+  cmd_exec.execute_command(\"cassandra  stop\")\n+  #cmd_exec.execute_command(\"echo 'sleeping for 10sec'; sleep 10\")\n+  cmd_exec.execute_command(\"./scripts/conf_setup.sh 2;\")\n+  cmd_exec.execute_command(\"zk start\")\n+  cmd_exec.execute_command(\"cassandra  start\")\n+  cmd_exec.execute_command(\"echo 'sleeping for 10sec'; sleep 10\")\n+  cmd_exec.execute_command(\"cassandra cleandb;\")\n+  cmd_exec.execute_command(\"echo 'sleeping for 10sec'; sleep 10\")\n+  #cmd_exec.execute_command(\"onos start\")\n+  #cmd_exec.execute_command(\"echo 'sleeping for 40sec'; sleep 40\")\n+\n+\n class Replayer(ControlFlow):\n   '''\n   Replay events from a trace\n@@ -84,7 +104,7 @@ class Replayer(ControlFlow):\n        execution\n     '''\n     ControlFlow.__init__(self, simulation_cfg)\n-    # Label uniquely identifying this replay, set in init_results()\n+    setup()\n     if os.path.isfile(simulation_cfg.bug_file):\n       os.remove(simulation_cfg.bug_file)\n     \"\"\"\n@@ -106,6 +126,7 @@ class Replayer(ControlFlow):\n         f.write(\"10\\n4\\n\" + content)\n     with open(\"/mnt/ahassany/vagrant_onosdev/ONOS/cid_onosdev1\", 'w') as f:\n       f.write(\"10\" + \"\\n\")\n+    # Label uniquely identifying this replay, set in init_results()\n     self.replay_id = \"N/A\"\n     self.logical_time = 0\n     if wait_on_deterministic_values:\ndiff --git a/sts/replay_event.py b/sts/replay_event.py\nindex cee00e7..29f8792 100644\n--- a/sts/replay_event.py\n+++ b/sts/replay_event.py\n@@ -459,9 +459,15 @@ class ControllerRecovery(InputEvent):\n     controller = simulation.controller_manager.get_controller(self.controller_id)\n     simulation.controller_manager.reboot_controller(controller)\n     for sw in simulation.topology.switches:\n+      # Make sure connection are closed before reconnecting again\n+      for connection in sw.connections:\n+        log.info(\"Diconnecting a switch before reconnecting it again: \" + str(connection))\n+        connection.close()\n       if controller.config in sw.controller_info:\n         sw.connect(simulation.create_connection,\n                    controller_infos=[controller.config])\n+        time.sleep(10)\n+        log.info(\"Switch connected again\")\n \n     return True",
+      "status": "# On branch sigcomm_changes2\n# Changes not staged for commit:\n#   (use \"git add <file>...\" to update what will be committed)\n#   (use \"git checkout -- <file>...\" to discard changes in working directory)\n#\n#\tmodified:   config/fuzzer_params.py\n#\tmodified:   sts/control_flow/replayer.py\n#\tmodified:   sts/replay_event.py\n#\n# Untracked files:\n#   (use \"git add <file>...\" to include in what will be committed)\n#\n#\taa\n#\tbb\n#\tconfig/remote_onos.py\n#\tconfig/remote_onos.py.back\n#\tremote_onos.tar\n#\tsts/#replay_event.py#\nno changes added to commit (use \"git add\" and/or \"git commit -a\")"
+    }
+  },
+  "sys": {
+    "lsb_release": "Ubuntu 12.04.4 LTS",
+    "uname": "Linux c70 3.11.0-18-generic #32~precise1-Ubuntu SMP Thu Feb 20 17:52:10 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "timestamp": "2014_06_11_15_41_28",
+  "user": "ahassany"
+}

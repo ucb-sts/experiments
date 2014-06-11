@@ -1,0 +1,36 @@
+Violation reproduced successfully! Proceeding with pruning
+Subsets:
+l/0: e15 e16 e32 e65 e70 e89 e98 e113 e116 e137
+r/0: e158 e161 e182 e185 a(e194,[u'e220']) e211 e229 e279 e307 e309
+Current subset: l/0: e15 e16 e32 e65 e70 e89 e98 e113 e116 e137
+No violation in 0'th...
+Current subset: r/0: e158 e161 e182 e185 a(e194,[u'e220']) e211 e229 e279 e307 e309
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+r/0.l/1: e158 e161 e182 e185 a(e194,[u'e220'])
+r/0.r/1: e211 e229 e279 e307 e309
+Current subset: r/0.l/1: e158 e161 e182 e185 a(e194,[u'e220'])
+Violation! Considering 0'th
+Violation found in 0th half. Recursing
+Subsets:
+r/0.l/1.l/2: e158 e161 e182
+r/0.l/1.r/2: e185 a(e194,[u'e220'])
+Current subset: r/0.l/1.l/2: e158 e161 e182
+No violation in 0'th...
+Current subset: r/0.l/1.r/2: e185 a(e194,[u'e220'])
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Subsets:
+r/0.l/1.r/2.l/3: e185
+r/0.l/1.r/2.r/3: a(e194,[u'e220'])
+Current subset: r/0.l/1.r/2.l/3: e185
+No violation in 0'th...
+Current subset: r/0.l/1.r/2.r/3: a(e194,[u'e220'])
+Violation! Considering 1'th
+Violation found in 1th half. Recursing
+Base case [ControllerFailure:e194:('ControllerFailure', u'c1'), ControllerRecovery:e220:('ControllerRecovery', u'c1')]
+=== Total replays: 9 ===
+Final MCS (2 elements):
+ - ControllerFailure:e194
+ - ControllerRecovery:e220

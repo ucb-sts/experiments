@@ -1,0 +1,368 @@
+{
+  "_iteration": 7,
+  "_runtime_stats_path": "experiments/onos_id_bug_fixed_ids_file_mcs4/intermcs_4_/runtime_stats.json",
+  "ambiguous_counts": {},
+  "ambiguous_events": {},
+  "buffered_message_receipts": {
+    "2": [
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "3": [
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "4": [
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "5": [
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "6": [
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "7": [
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=2, controller_id='c2', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ],
+    "8": [
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(2)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})",
+      "PendingReceive(dpid=1, controller_id='c1', fingerprint=OFFingerprint{'actions': ('output(1)',), 'data': DPFingerprint{'dl_type': 35138}, 'class': 'ofp_packet_out', 'in_port': 65535})"
+    ]
+  },
+  "config": "SimulationConfig(controller_configs=[ControllerConfig(start_cmd='./start-onos.sh start', label='c1', address='192.168.56.11', cwd='/home/mininet/ONOS', controller_type='onos', kill_cmd='./start-onos.sh stop', restart_cmd='./start-onos.sh stop'), ControllerConfig(start_cmd='./start-onos.sh start', label='c2', address='192.168.56.12', cwd='/home/mininet/ONOS', controller_type='onos', kill_cmd='./start-onos.sh stop', restart_cmd='./start-onos.sh stop')],\n                 topology_class=MeshTopology,\n                 topology_params=\"num_switches=2\",\n                 patch_panel_class=BufferedPatchPanel,\n                 multiplex_sockets=False,\n                 ignore_interposition=False,\n                 kill_controllers_on_exit=False)",
+  "early_internal_events": {
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": [],
+    "8": []
+  },
+  "initial_verification_runs_needed": 0,
+  "iteration_size": {
+    "0": 21,
+    "1": 21,
+    "2": 11,
+    "3": 6,
+    "4": 6,
+    "5": 3,
+    "6": 3
+  },
+  "matched_events": {
+    "2": {
+      "CheckInvariants": 5,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": {
+        "ofp_echo_request": 3,
+        "ofp_features_request": 2,
+        "ofp_get_config_request": 2,
+        "ofp_hello": 2,
+        "ofp_packet_out": 90,
+        "ofp_set_config": 2,
+        "ofp_stats_request": 2,
+        "ofp_vendor": 4,
+        "total": 107
+      },
+      "ControlMessageSend": {
+        "ofp_echo_reply": 3,
+        "ofp_features_reply": 2,
+        "ofp_get_config_reply": 2,
+        "ofp_hello": 2,
+        "ofp_packet_in": 50,
+        "ofp_stats_reply": 2,
+        "ofp_vendor": 4,
+        "total": 65
+      },
+      "DataplanePermit": 97,
+      "TrafficInjection": 5
+    },
+    "3": {
+      "CheckInvariants": 6,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": {
+        "ofp_echo_request": 3,
+        "ofp_features_request": 3,
+        "ofp_get_config_request": 3,
+        "ofp_hello": 3,
+        "ofp_packet_out": 90,
+        "ofp_set_config": 3,
+        "ofp_stats_request": 4,
+        "ofp_vendor": 6,
+        "total": 115
+      },
+      "ControlMessageSend": {
+        "ofp_echo_reply": 3,
+        "ofp_features_reply": 3,
+        "ofp_get_config_reply": 3,
+        "ofp_hello": 3,
+        "ofp_packet_in": 46,
+        "ofp_stats_reply": 4,
+        "ofp_vendor": 6,
+        "total": 68
+      },
+      "ControllerFailure": 1,
+      "ControllerRecovery": 1,
+      "DataplanePermit": 97,
+      "TrafficInjection": 2,
+      "WaitTime": 1
+    },
+    "4": {
+      "CheckInvariants": 2,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": {
+        "ofp_echo_request": 3,
+        "ofp_features_request": 3,
+        "ofp_get_config_request": 3,
+        "ofp_hello": 3,
+        "ofp_packet_out": 90,
+        "ofp_set_config": 3,
+        "ofp_stats_request": 4,
+        "ofp_vendor": 6,
+        "total": 115
+      },
+      "ControlMessageSend": {
+        "ofp_echo_reply": 3,
+        "ofp_features_reply": 3,
+        "ofp_get_config_reply": 3,
+        "ofp_hello": 3,
+        "ofp_packet_in": 46,
+        "ofp_stats_reply": 4,
+        "ofp_vendor": 6,
+        "total": 68
+      },
+      "ControllerFailure": 1,
+      "ControllerRecovery": 1,
+      "DataplanePermit": 97,
+      "TrafficInjection": 2
+    },
+    "5": {
+      "CheckInvariants": 1,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": {
+        "ofp_echo_request": 3,
+        "ofp_features_request": 2,
+        "ofp_get_config_request": 2,
+        "ofp_hello": 2,
+        "ofp_packet_out": 90,
+        "ofp_set_config": 2,
+        "ofp_stats_request": 2,
+        "ofp_vendor": 4,
+        "total": 107
+      },
+      "ControlMessageSend": {
+        "ofp_echo_reply": 3,
+        "ofp_features_reply": 2,
+        "ofp_get_config_reply": 2,
+        "ofp_hello": 2,
+        "ofp_packet_in": 47,
+        "ofp_stats_reply": 2,
+        "ofp_vendor": 4,
+        "total": 62
+      },
+      "DataplanePermit": 97,
+      "TrafficInjection": 2
+    },
+    "6": {
+      "CheckInvariants": 1,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": {
+        "ofp_echo_request": 3,
+        "ofp_features_request": 3,
+        "ofp_get_config_request": 3,
+        "ofp_hello": 3,
+        "ofp_packet_out": 90,
+        "ofp_set_config": 3,
+        "ofp_stats_request": 4,
+        "ofp_vendor": 6,
+        "total": 115
+      },
+      "ControlMessageSend": {
+        "ofp_echo_reply": 3,
+        "ofp_features_reply": 3,
+        "ofp_get_config_reply": 3,
+        "ofp_hello": 3,
+        "ofp_packet_in": 44,
+        "ofp_stats_reply": 4,
+        "ofp_vendor": 6,
+        "total": 66
+      },
+      "ControllerFailure": 1,
+      "ControllerRecovery": 1,
+      "DataplanePermit": 97
+    },
+    "7": {
+      "CheckInvariants": 1,
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": {
+        "ofp_echo_request": 3,
+        "ofp_features_request": 2,
+        "ofp_get_config_request": 2,
+        "ofp_hello": 2,
+        "ofp_packet_out": 90,
+        "ofp_set_config": 2,
+        "ofp_stats_request": 2,
+        "ofp_vendor": 4,
+        "total": 107
+      },
+      "ControlMessageSend": {
+        "ofp_echo_reply": 3,
+        "ofp_features_reply": 2,
+        "ofp_get_config_reply": 2,
+        "ofp_hello": 2,
+        "ofp_packet_in": 45,
+        "ofp_stats_reply": 2,
+        "ofp_vendor": 4,
+        "total": 60
+      },
+      "DataplanePermit": 97
+    },
+    "8": {
+      "ConnectToControllers": 1,
+      "ControlMessageReceive": {
+        "ofp_echo_request": 3,
+        "ofp_features_request": 3,
+        "ofp_get_config_request": 3,
+        "ofp_hello": 3,
+        "ofp_packet_out": 90,
+        "ofp_set_config": 3,
+        "ofp_stats_request": 4,
+        "ofp_vendor": 6,
+        "total": 115
+      },
+      "ControlMessageSend": {
+        "ofp_echo_reply": 3,
+        "ofp_features_reply": 3,
+        "ofp_get_config_reply": 3,
+        "ofp_hello": 3,
+        "ofp_packet_in": 44,
+        "ofp_stats_reply": 4,
+        "ofp_vendor": 6,
+        "total": 66
+      },
+      "ControllerFailure": 1,
+      "ControllerRecovery": 1,
+      "DataplanePermit": 97
+    }
+  },
+  "new_internal_events": {
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": [],
+    "8": []
+  },
+  "original_duration_seconds": 255.41896319389343,
+  "peeker": false,
+  "prune_duration_seconds": 0,
+  "prune_start_epoch": 1402526860.079377,
+  "replay_duration_seconds": 371.190495967865,
+  "replay_end_epoch": 1402526860.079232,
+  "replay_start_epoch": 1402526488.888736,
+  "subsequence_id": 0,
+  "timed_out_events": {
+    "2": {
+      "ControlMessageReceive": {
+        "ofp_features_request": 1,
+        "ofp_get_config_request": 1,
+        "ofp_hello": 1,
+        "ofp_set_config": 1,
+        "ofp_stats_request": 2,
+        "ofp_vendor": 2,
+        "total": 8
+      },
+      "ControlMessageSend": {
+        "ofp_features_reply": 1,
+        "ofp_get_config_reply": 1,
+        "ofp_hello": 1,
+        "ofp_packet_in": 2,
+        "ofp_stats_reply": 2,
+        "ofp_vendor": 2,
+        "total": 9
+      }
+    },
+    "3": {
+      "ControlMessageSend": {
+        "ofp_packet_in": 6,
+        "total": 6
+      }
+    },
+    "4": {
+      "ControlMessageSend": {
+        "ofp_packet_in": 6,
+        "total": 6
+      }
+    },
+    "5": {
+      "ControlMessageReceive": {
+        "ofp_features_request": 1,
+        "ofp_get_config_request": 1,
+        "ofp_hello": 1,
+        "ofp_set_config": 1,
+        "ofp_stats_request": 2,
+        "ofp_vendor": 2,
+        "total": 8
+      },
+      "ControlMessageSend": {
+        "ofp_features_reply": 1,
+        "ofp_get_config_reply": 1,
+        "ofp_hello": 1,
+        "ofp_packet_in": 5,
+        "ofp_stats_reply": 2,
+        "ofp_vendor": 2,
+        "total": 12
+      }
+    },
+    "6": {
+      "ControlMessageSend": {
+        "ofp_packet_in": 8,
+        "total": 8
+      }
+    },
+    "7": {
+      "ControlMessageReceive": {
+        "ofp_features_request": 1,
+        "ofp_get_config_request": 1,
+        "ofp_hello": 1,
+        "ofp_set_config": 1,
+        "ofp_stats_request": 2,
+        "ofp_vendor": 2,
+        "total": 8
+      },
+      "ControlMessageSend": {
+        "ofp_features_reply": 1,
+        "ofp_get_config_reply": 1,
+        "ofp_hello": 1,
+        "ofp_packet_in": 7,
+        "ofp_stats_reply": 2,
+        "ofp_vendor": 2,
+        "total": 14
+      }
+    },
+    "8": {
+      "ControlMessageSend": {
+        "ofp_packet_in": 8,
+        "total": 8
+      }
+    }
+  },
+  "total_events": 309,
+  "total_inputs": 21,
+  "total_inputs_replayed": 57,
+  "total_replays": 8,
+  "violation_found_in_run": {
+    "0": 4
+  }
+}

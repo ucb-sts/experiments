@@ -1,0 +1,756 @@
+2014-06-11 15:55:30,147 INFO [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:170] Loading modules from file ./conf/onos.properties
+2014-06-11 15:55:30,151 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:206] Starting module loader
+2014-06-11 15:55:30,179 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.floodlightcontroller.core.FloodlightProvider
+2014-06-11 15:55:30,240 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.onrc.onos.ofcontroller.floodlightlistener.NetworkGraphPublisher
+2014-06-11 15:55:30,287 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.onrc.onos.ofcontroller.linkdiscovery.internal.LinkDiscoveryManager
+2014-06-11 15:55:30,296 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.floodlightcontroller.topology.TopologyManager
+2014-06-11 15:55:30,375 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.floodlightcontroller.forwarding.Forwarding
+2014-06-11 15:55:30,382 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.floodlightcontroller.restserver.RestApiServer
+2014-06-11 15:55:30,388 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.floodlightcontroller.threadpool.ThreadPool
+2014-06-11 15:55:30,404 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.floodlightcontroller.ui.web.StaticWebRoutable
+2014-06-11 15:55:30,490 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.floodlightcontroller.devicemanager.internal.DefaultEntityClassifier
+2014-06-11 15:55:30,493 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:88] Could not find module: net.floodlightcontroller.core.module.IFloodlightModule: Provider net.floodlightcontroller.devicemanager.test.MockDeviceManager not found
+2014-06-11 15:55:30,494 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:88] Could not find module: net.floodlightcontroller.core.module.IFloodlightModule: Provider net.floodlightcontroller.core.test.MockFloodlightProvider not found
+2014-06-11 15:55:30,496 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:88] Could not find module: net.floodlightcontroller.core.module.IFloodlightModule: Provider net.floodlightcontroller.core.test.MockThreadPoolService not found
+2014-06-11 15:55:33,427 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.onrc.onos.datagrid.HazelcastDatagrid
+2014-06-11 15:55:34,672 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.onrc.onos.ofcontroller.flowmanager.FlowManager
+2014-06-11 15:55:35,640 DEBUG [main] n.o.o.g.GraphDBConnection [GraphDBConnection.java:59] GraphDBConnection::Setting Config File 
+2014-06-11 15:55:35,641 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.onrc.onos.ofcontroller.flowprogrammer.FlowProgrammer
+2014-06-11 15:55:35,650 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.onrc.onos.ofcontroller.topology.TopologyManager
+2014-06-11 15:55:35,696 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.onrc.onos.ofcontroller.bgproute.BgpRoute
+2014-06-11 15:55:35,735 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.onrc.onos.registry.controller.ZookeeperRegistry
+2014-06-11 15:55:35,740 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.onrc.onos.registry.controller.StandaloneRegistry
+2014-06-11 15:55:35,766 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.onrc.onos.ofcontroller.forwarding.Forwarding
+2014-06-11 15:55:35,806 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.onrc.onos.ofcontroller.proxyarp.ProxyArpManager
+2014-06-11 15:55:35,809 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.onrc.onos.ofcontroller.core.config.DefaultConfiguration
+2014-06-11 15:55:35,822 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:95] Found module net.onrc.onos.ofcontroller.devicemanager.OnosDeviceManager
+2014-06-11 15:55:35,822 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:416] Setting net.floodlightcontroller.threadpool.ThreadPool@8fd586d  as provider for net.floodlightcontroller.threadpool.IThreadPoolService
+2014-06-11 15:55:35,825 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:416] Setting net.floodlightcontroller.restserver.RestApiServer@5d427546  as provider for net.floodlightcontroller.restserver.IRestApiService
+2014-06-11 15:55:35,864 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:416] Setting net.floodlightcontroller.core.internal.Controller@3f0ca60c  as provider for net.floodlightcontroller.core.IFloodlightProviderService
+2014-06-11 15:55:35,866 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:416] Setting net.onrc.onos.datagrid.HazelcastDatagrid@60fa1f2f  as provider for net.onrc.onos.datagrid.IDatagridService
+2014-06-11 15:55:35,868 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:416] Setting net.onrc.onos.ofcontroller.flowprogrammer.FlowSynchronizer@57697e2a  as provider for net.onrc.onos.ofcontroller.flowprogrammer.IFlowSyncService
+2014-06-11 15:55:35,868 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:416] Setting net.onrc.onos.ofcontroller.flowprogrammer.FlowPusher@4eda243b  as provider for net.onrc.onos.ofcontroller.flowprogrammer.IFlowPusherService
+2014-06-11 15:55:35,868 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:416] Setting net.onrc.onos.registry.controller.ZookeeperRegistry@778adf2f  as provider for net.onrc.onos.registry.controller.IControllerRegistryService
+2014-06-11 15:55:35,868 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:416] Setting net.onrc.onos.ofcontroller.linkdiscovery.internal.LinkDiscoveryManager@2a241163  as provider for net.onrc.onos.ofcontroller.linkdiscovery.ILinkDiscoveryService
+2014-06-11 15:55:35,874 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:416] Setting net.onrc.onos.ofcontroller.floodlightlistener.NetworkGraphPublisher@7f275e1e  as provider for net.onrc.onos.ofcontroller.floodlightlistener.INetworkGraphService
+2014-06-11 15:55:35,875 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:416] Setting net.onrc.onos.ofcontroller.flowmanager.FlowManager@5fcc0af6  as provider for net.onrc.onos.ofcontroller.flowmanager.IFlowService
+2014-06-11 15:55:35,875 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:416] Setting net.onrc.onos.ofcontroller.topology.TopologyManager@1cf15580  as provider for net.onrc.onos.ofcontroller.topology.ITopologyNetService
+2014-06-11 15:55:35,878 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:439] Initializing net.floodlightcontroller.threadpool.ThreadPool
+2014-06-11 15:55:35,878 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:439] Initializing net.floodlightcontroller.restserver.RestApiServer
+2014-06-11 15:55:35,886 DEBUG [main] n.f.r.RestApiServer [RestApiServer.java:187] REST port set to 8080
+2014-06-11 15:55:35,886 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:439] Initializing net.floodlightcontroller.core.FloodlightProvider
+2014-06-11 15:55:35,956 DEBUG [main] n.f.c.i.Controller [Controller.java:1761] OpenFlow port set to 6633
+2014-06-11 15:55:35,956 DEBUG [main] n.f.c.i.Controller [Controller.java:1766] Number of worker threads set to 16
+2014-06-11 15:55:35,956 DEBUG [main] n.f.c.i.Controller [Controller.java:1781] ControllerId set to onosdev1
+2014-06-11 15:55:36,421 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:439] Initializing net.floodlightcontroller.ui.web.StaticWebRoutable
+2014-06-11 15:55:36,421 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:439] Initializing net.onrc.onos.datagrid.HazelcastDatagrid
+2014-06-11 15:55:36,444 INFO [main] c.h.c.FileSystemXmlConfig [Slf4jFactory.java:47] Configuring Hazelcast from '/vagrant/ONOS/conf/hazelcast.xml'.
+2014-06-11 15:55:36,543 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:439] Initializing net.onrc.onos.ofcontroller.flowprogrammer.FlowProgrammer
+2014-06-11 15:55:36,742 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:439] Initializing net.onrc.onos.registry.controller.ZookeeperRegistry
+2014-06-11 15:55:36,742 INFO [main] n.o.o.r.c.ZookeeperRegistry [ZookeeperRegistry.java:474] Initialising the Zookeeper Registry - Zookeeper connection required
+2014-06-11 15:55:36,743 INFO [main] n.o.o.r.c.ZookeeperRegistry [ZookeeperRegistry.java:482] Setting Zookeeper connection string to localhost:2181
+2014-06-11 15:55:37,188 INFO [main] c.n.c.f.i.CuratorFrameworkImpl [CuratorFrameworkImpl.java:220] Starting
+2014-06-11 15:55:37,200 DEBUG [main] c.n.c.CuratorZookeeperClient [CuratorZookeeperClient.java:173] Starting
+2014-06-11 15:55:37,201 DEBUG [main] c.n.c.ConnectionState [ConnectionState.java:98] Starting
+2014-06-11 15:55:37,202 DEBUG [main] c.n.c.ConnectionState [ConnectionState.java:199] reset
+2014-06-11 15:55:37,387 INFO [main-EventThread] c.n.c.f.s.ConnectionStateManager [ConnectionStateManager.java:151] State change: CONNECTED
+2014-06-11 15:55:37,389 WARN [ConnectionStateManager-0] c.n.c.f.s.ConnectionStateManager [ConnectionStateManager.java:169] There are no ConnectionStateListeners registered.
+2014-06-11 15:55:38,721 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:439] Initializing net.onrc.onos.ofcontroller.linkdiscovery.internal.LinkDiscoveryManager
+2014-06-11 15:55:38,741 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:439] Initializing net.onrc.onos.ofcontroller.floodlightlistener.NetworkGraphPublisher
+2014-06-11 15:55:38,744 DEBUG [main] n.o.o.g.GraphDBConnection [GraphDBConnection.java:59] GraphDBConnection::Setting Config File /tmp/cassandra.titan
+2014-06-11 15:55:39,624 INFO [main] c.t.t.d.Backend [Backend.java:148] Initiated backend operations thread pool of size 2
+2014-06-11 15:55:52,024 INFO [main] c.t.t.d.u.BackendOperation [BackendOperation.java:40] Temporary storage exception during backend operation. Attempting backoff retry
+com.thinkaurelius.titan.diskstorage.TemporaryStorageException: Temporary failure in storage backend
+	at com.thinkaurelius.titan.diskstorage.cassandra.thrift.CassandraThriftKeyColumnValueStore.convertException(CassandraThriftKeyColumnValueStore.java:313) ~[titan-cassandra-0.4.2.jar:na]
+	at com.thinkaurelius.titan.diskstorage.cassandra.thrift.CassandraThriftKeyColumnValueStore.getNamesSlice(CassandraThriftKeyColumnValueStore.java:196) ~[titan-cassandra-0.4.2.jar:na]
+	at com.thinkaurelius.titan.diskstorage.cassandra.thrift.CassandraThriftKeyColumnValueStore.getSlice(CassandraThriftKeyColumnValueStore.java:120) ~[titan-cassandra-0.4.2.jar:na]
+	at com.thinkaurelius.titan.graphdb.configuration.KCVSConfiguration$1.call(KCVSConfiguration.java:70) ~[titan-core-0.4.2.jar:na]
+	at com.thinkaurelius.titan.graphdb.configuration.KCVSConfiguration$1.call(KCVSConfiguration.java:64) ~[titan-core-0.4.2.jar:na]
+	at com.thinkaurelius.titan.diskstorage.util.BackendOperation.execute(BackendOperation.java:30) ~[titan-core-0.4.2.jar:na]
+	at com.thinkaurelius.titan.graphdb.configuration.KCVSConfiguration.getConfigurationProperty(KCVSConfiguration.java:64) [titan-core-0.4.2.jar:na]
+	at com.thinkaurelius.titan.diskstorage.Backend.initialize(Backend.java:277) [titan-core-0.4.2.jar:na]
+	at com.thinkaurelius.titan.graphdb.configuration.GraphDatabaseConfiguration.getBackend(GraphDatabaseConfiguration.java:1164) [titan-core-0.4.2.jar:na]
+	at com.thinkaurelius.titan.graphdb.database.StandardTitanGraph.<init>(StandardTitanGraph.java:75) [titan-core-0.4.2.jar:na]
+	at com.thinkaurelius.titan.core.TitanFactory.open(TitanFactory.java:40) [titan-core-0.4.2.jar:na]
+	at com.thinkaurelius.titan.core.TitanFactory.open(TitanFactory.java:29) [titan-core-0.4.2.jar:na]
+	at net.onrc.onos.graph.GraphDBConnection.getInstance(GraphDBConnection.java:66) [classes/:na]
+	at net.onrc.onos.graph.GraphDBOperation.<init>(GraphDBOperation.java:40) [classes/:na]
+	at net.onrc.onos.ofcontroller.floodlightlistener.NetworkGraphPublisher.init(NetworkGraphPublisher.java:451) [classes/:na]
+	at net.floodlightcontroller.core.module.FloodlightModuleLoader.initModules(FloodlightModuleLoader.java:442) [classes/:na]
+	at net.floodlightcontroller.core.module.FloodlightModuleLoader.loadModulesFromList(FloodlightModuleLoader.java:360) [classes/:na]
+	at net.floodlightcontroller.core.module.FloodlightModuleLoader.loadModulesFromList(FloodlightModuleLoader.java:375) [classes/:na]
+	at net.floodlightcontroller.core.module.FloodlightModuleLoader.loadModulesFromConfig(FloodlightModuleLoader.java:193) [classes/:na]
+	at net.onrc.onos.ofcontroller.core.Main.main(Main.java:40) [classes/:na]
+Caused by: org.apache.cassandra.thrift.TimedOutException: null
+	at org.apache.cassandra.thrift.Cassandra$multiget_slice_result.read(Cassandra.java:10392) ~[cassandra-thrift-1.2.2.jar:1.2.2]
+	at org.apache.thrift.TServiceClient.receiveBase(TServiceClient.java:78) ~[libthrift-0.7.0.jar:0.7.0]
+	at org.apache.cassandra.thrift.Cassandra$Client.recv_multiget_slice(Cassandra.java:664) ~[cassandra-thrift-1.2.2.jar:1.2.2]
+	at org.apache.cassandra.thrift.Cassandra$Client.multiget_slice(Cassandra.java:648) ~[cassandra-thrift-1.2.2.jar:1.2.2]
+	at com.thinkaurelius.titan.diskstorage.cassandra.thrift.CassandraThriftKeyColumnValueStore.getNamesSlice(CassandraThriftKeyColumnValueStore.java:176) ~[titan-cassandra-0.4.2.jar:na]
+	... 18 common frames omitted
+2014-06-11 15:55:55,400 DEBUG [main] n.o.o.o.f.NetworkGraphPublisher [NetworkGraphPublisher.java:470] Initializing NetworkGraphPublisher module with /tmp/cassandra.titan
+2014-06-11 15:55:55,402 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:439] Initializing net.onrc.onos.ofcontroller.flowmanager.FlowManager
+2014-06-11 15:55:55,403 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:439] Initializing net.onrc.onos.ofcontroller.topology.TopologyManager
+2014-06-11 15:55:55,404 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:453] Starting net.floodlightcontroller.threadpool.ThreadPool
+2014-06-11 15:55:55,407 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:453] Starting net.floodlightcontroller.restserver.RestApiServer
+2014-06-11 15:55:55,408 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:453] Starting net.floodlightcontroller.core.FloodlightProvider
+2014-06-11 15:55:55,588 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:453] Starting net.floodlightcontroller.ui.web.StaticWebRoutable
+2014-06-11 15:55:55,594 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:453] Starting net.onrc.onos.datagrid.HazelcastDatagrid
+2014-06-11 15:55:56,559 INFO [main] c.h.i.DefaultAddressPicker [Slf4jFactory.java:47] Prefer IPv4 stack is true.
+2014-06-11 15:55:56,608 DEBUG [main] c.h.i.DefaultAddressPicker [Slf4jFactory.java:41] inet reuseAddress:true
+2014-06-11 15:55:56,610 DEBUG [main] c.h.i.DefaultAddressPicker [Slf4jFactory.java:41] Trying to bind inet socket address:0.0.0.0/0.0.0.0:5701
+2014-06-11 15:55:56,611 DEBUG [main] c.h.i.DefaultAddressPicker [Slf4jFactory.java:41] Bind successful to inet socket address:0.0.0.0/0.0.0.0:5701
+2014-06-11 15:55:56,616 INFO [main] c.h.i.DefaultAddressPicker [Slf4jFactory.java:47] Picked Address[192.168.56.11]:5701, using socket ServerSocket[addr=/0.0.0.0,localport=5701], bind any local is true
+2014-06-11 15:55:56,617 DEBUG [main] c.h.i.DefaultAddressPicker [Slf4jFactory.java:41] Using public address the same as the bind address. Address[192.168.56.11]:5701
+2014-06-11 15:55:57,115 DEBUG [main] c.h.c.ClusterService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Updating members -> [Member [192.168.56.11]:5701 this]
+2014-06-11 15:55:57,213 INFO [main] c.h.system [Slf4jFactory.java:83] [192.168.56.11]:5701 [dev] Hazelcast Community Edition 3.0.2 (20130906) starting at Address[192.168.56.11]:5701
+2014-06-11 15:55:57,219 INFO [main] c.h.system [Slf4jFactory.java:83] [192.168.56.11]:5701 [dev] Copyright (C) 2008-2013 Hazelcast.com
+2014-06-11 15:55:57,256 INFO [main] c.h.i.Node [Slf4jFactory.java:83] [192.168.56.11]:5701 [dev] Creating MulticastJoiner
+2014-06-11 15:55:57,294 INFO [main] c.h.c.LifecycleService [Slf4jFactory.java:83] [192.168.56.11]:5701 [dev] Address[192.168.56.11]:5701 is STARTING
+2014-06-11 15:55:57,295 DEBUG [main] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] We are asked to start and completelyShutdown is false
+2014-06-11 15:55:57,296 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Registering core services...
+2014-06-11 15:55:57,304 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Registering service: 'hz:core:clusterService'
+2014-06-11 15:55:57,315 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Registering service: 'hz:core:partitionService'
+2014-06-11 15:55:57,316 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Registering service: 'hz:core:proxyService'
+2014-06-11 15:55:57,324 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Registering service: 'hz:core:txManagerService'
+2014-06-11 15:55:57,327 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Registering service: 'hz:core:clientEngine'
+2014-06-11 15:55:57,328 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Registering default services...
+2014-06-11 15:55:57,484 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Registering service: 'hz:impl:mapService'
+2014-06-11 15:55:57,567 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Registering service: 'hz:impl:lockService'
+2014-06-11 15:55:57,623 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Registering service: 'hz:impl:queueService'
+2014-06-11 15:55:57,656 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Registering service: 'hz:impl:topicService'
+2014-06-11 15:55:57,669 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Registering service: 'hz:impl:collectionService'
+2014-06-11 15:55:57,676 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Registering service: 'hz:impl:executorService'
+2014-06-11 15:55:57,688 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Registering service: 'hz:impl:atomicLongService'
+2014-06-11 15:55:57,698 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Registering service: 'hz:impl:countDownLatchService'
+2014-06-11 15:55:57,708 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Registering service: 'hz:impl:semaphoreService'
+2014-06-11 15:55:57,712 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Registering service: 'hz:impl:idGeneratorService'
+2014-06-11 15:55:57,716 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Initializing service -> PartitionManager[0] {
+
+migrationQ: 0
+}
+2014-06-11 15:55:57,724 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Initializing service -> ClusterService{address=Address[192.168.56.11]:5701}
+2014-06-11 15:55:57,740 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Initializing service -> com.hazelcast.concurrent.atomiclong.AtomicLongService@5e9b626a
+2014-06-11 15:55:57,743 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Initializing service -> com.hazelcast.concurrent.countdownlatch.CountDownLatchService@2b5a4dac
+2014-06-11 15:55:57,744 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Initializing service -> com.hazelcast.transaction.impl.TransactionManagerServiceImpl@35a16d70
+2014-06-11 15:55:57,747 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Initializing service -> com.hazelcast.concurrent.semaphore.SemaphoreService@7917ef91
+2014-06-11 15:55:57,748 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Initializing service -> com.hazelcast.collection.CollectionService@127156b3
+2014-06-11 15:55:57,756 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Initializing service -> com.hazelcast.map.MapService@58e28d65
+2014-06-11 15:55:57,759 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Initializing service -> com.hazelcast.client.ClientEngineImpl@7dd69ce9
+2014-06-11 15:55:57,759 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Initializing service -> com.hazelcast.topic.TopicService@14d7c58a
+2014-06-11 15:55:57,760 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Initializing service -> com.hazelcast.concurrent.idgen.IdGeneratorService@61e9f1b6
+2014-06-11 15:55:57,761 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Initializing service -> com.hazelcast.queue.QueueService@45fc15f2
+2014-06-11 15:55:57,767 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Initializing service -> com.hazelcast.executor.DistributedExecutorService@2904e6c3
+2014-06-11 15:55:57,767 DEBUG [main] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Initializing service -> com.hazelcast.concurrent.lock.LockServiceImpl@ca213f
+2014-06-11 15:55:57,775 DEBUG [main] c.h.n.TcpIpConnectionManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Starting ConnectionManager and IO selectors.
+2014-06-11 15:55:57,796 DEBUG [main] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Adding ShutdownHook
+2014-06-11 15:55:57,799 DEBUG [main] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] finished starting threads, calling join
+2014-06-11 15:55:57,799 DEBUG [hz._hzInstance_1_dev.IO.thread-Acceptor] c.h.n.SocketAcceptor [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Starting SocketAcceptor on sun.nio.ch.ServerSocketChannelImpl[/0.0.0.0:5701]
+2014-06-11 15:55:57,808 DEBUG [hz._hzInstance_1_dev.MulticastThread] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] ** setting master address to Address[192.168.56.12]:5701
+2014-06-11 15:55:57,901 DEBUG [main] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] ** setting master address to Address[192.168.56.12]:5701
+2014-06-11 15:55:57,904 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Joining to master node: Address[192.168.56.12]:5701
+2014-06-11 15:55:57,911 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Master connection null
+2014-06-11 15:55:57,912 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Connecting to master node: Address[192.168.56.12]:5701
+2014-06-11 15:55:57,911 DEBUG [hz._hzInstance_1_dev.cached.thread-1] c.h.n.SocketConnector [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Starting to connect to Address[192.168.56.12]:5701
+2014-06-11 15:55:57,914 INFO [hz._hzInstance_1_dev.cached.thread-1] c.h.n.SocketConnector [Slf4jFactory.java:83] [192.168.56.11]:5701 [dev] Connecting to /192.168.56.12:5701, timeout: 0, bind-any: true
+2014-06-11 15:55:57,916 DEBUG [hz._hzInstance_1_dev.cached.thread-1] c.h.n.SocketConnector [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Successfully connected to: Address[192.168.56.12]:5701 using socket Socket[addr=/192.168.56.12,port=5701,localport=43696]
+2014-06-11 15:55:57,931 INFO [hz._hzInstance_1_dev.cached.thread-1] c.h.n.TcpIpConnectionManager [Slf4jFactory.java:83] [192.168.56.11]:5701 [dev] 43696 accepted socket connection from /192.168.56.12:5701
+2014-06-11 15:55:57,964 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.n.TcpIpConnectionManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Binding Connection [/192.168.56.12:5701 -> Address[192.168.56.12]:5701] live=true, client=false, type=MEMBER to Address[192.168.56.12]:5701, replyBack is false
+2014-06-11 15:55:57,965 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.n.ConnectionMonitor [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Resetting connection monitor for endpoint Address[192.168.56.12]:5701
+2014-06-11 15:55:58,413 DEBUG [main] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] ** setting master address to Address[192.168.56.12]:5701
+2014-06-11 15:55:58,414 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Joining to master node: Address[192.168.56.12]:5701
+2014-06-11 15:55:58,414 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Master connection Connection [/192.168.56.12:5701 -> Address[192.168.56.12]:5701] live=true, client=false, type=MEMBER
+2014-06-11 15:55:58,424 DEBUG [hz._hzInstance_1_dev.cached.thread-3] c.h.c.ClusterService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Handling master response: ClusterService{address=Address[192.168.56.11]:5701}
+2014-06-11 15:55:58,425 DEBUG [hz._hzInstance_1_dev.cached.thread-3] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] ** setting master address to Address[192.168.56.12]:5701
+2014-06-11 15:55:58,917 DEBUG [main] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] ** setting master address to Address[192.168.56.12]:5701
+2014-06-11 15:55:58,917 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Joining to master node: Address[192.168.56.12]:5701
+2014-06-11 15:55:58,918 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Master connection Connection [/192.168.56.12:5701 -> Address[192.168.56.12]:5701] live=true, client=false, type=MEMBER
+2014-06-11 15:55:59,420 DEBUG [main] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] ** setting master address to Address[192.168.56.12]:5701
+2014-06-11 15:55:59,421 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Joining to master node: Address[192.168.56.12]:5701
+2014-06-11 15:55:59,422 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Master connection Connection [/192.168.56.12:5701 -> Address[192.168.56.12]:5701] live=true, client=false, type=MEMBER
+2014-06-11 15:55:59,928 DEBUG [main] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] ** setting master address to Address[192.168.56.12]:5701
+2014-06-11 15:55:59,929 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Joining to master node: Address[192.168.56.12]:5701
+2014-06-11 15:55:59,930 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Master connection Connection [/192.168.56.12:5701 -> Address[192.168.56.12]:5701] live=true, client=false, type=MEMBER
+2014-06-11 15:56:00,431 DEBUG [main] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] ** setting master address to Address[192.168.56.12]:5701
+2014-06-11 15:56:00,439 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Joining to master node: Address[192.168.56.12]:5701
+2014-06-11 15:56:00,440 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Master connection Connection [/192.168.56.12:5701 -> Address[192.168.56.12]:5701] live=true, client=false, type=MEMBER
+2014-06-11 15:56:00,941 DEBUG [main] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] ** setting master address to Address[192.168.56.12]:5701
+2014-06-11 15:56:00,942 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Joining to master node: Address[192.168.56.12]:5701
+2014-06-11 15:56:00,943 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Master connection Connection [/192.168.56.12:5701 -> Address[192.168.56.12]:5701] live=true, client=false, type=MEMBER
+2014-06-11 15:56:01,451 DEBUG [main] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] ** setting master address to Address[192.168.56.12]:5701
+2014-06-11 15:56:01,452 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Joining to master node: Address[192.168.56.12]:5701
+2014-06-11 15:56:01,453 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Master connection Connection [/192.168.56.12:5701 -> Address[192.168.56.12]:5701] live=true, client=false, type=MEMBER
+2014-06-11 15:56:01,959 DEBUG [main] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] ** setting master address to Address[192.168.56.12]:5701
+2014-06-11 15:56:01,960 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Joining to master node: Address[192.168.56.12]:5701
+2014-06-11 15:56:01,960 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Master connection Connection [/192.168.56.12:5701 -> Address[192.168.56.12]:5701] live=true, client=false, type=MEMBER
+2014-06-11 15:56:02,462 DEBUG [main] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] ** setting master address to Address[192.168.56.12]:5701
+2014-06-11 15:56:02,463 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Joining to master node: Address[192.168.56.12]:5701
+2014-06-11 15:56:02,464 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Master connection Connection [/192.168.56.12:5701 -> Address[192.168.56.12]:5701] live=true, client=false, type=MEMBER
+2014-06-11 15:56:02,966 DEBUG [main] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] ** setting master address to Address[192.168.56.12]:5701
+2014-06-11 15:56:02,967 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Joining to master node: Address[192.168.56.12]:5701
+2014-06-11 15:56:02,968 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Master connection Connection [/192.168.56.12:5701 -> Address[192.168.56.12]:5701] live=true, client=false, type=MEMBER
+2014-06-11 15:56:03,470 DEBUG [main] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] ** setting master address to Address[192.168.56.12]:5701
+2014-06-11 15:56:03,471 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Joining to master node: Address[192.168.56.12]:5701
+2014-06-11 15:56:03,472 DEBUG [main] c.h.c.MulticastJoiner [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Master connection Connection [/192.168.56.12:5701 -> Address[192.168.56.12]:5701] live=true, client=false, type=MEMBER
+2014-06-11 15:56:03,491 DEBUG [hz._hzInstance_1_dev.cached.thread-3] c.h.c.ClusterService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Updating members -> [Member [192.168.56.12]:5701, Member [192.168.56.11]:5701 this]
+2014-06-11 15:56:03,495 INFO [hz._hzInstance_1_dev.cached.thread-3] c.h.c.ClusterService [Slf4jFactory.java:83] [192.168.56.11]:5701 [dev] 
+
+Members [2] {
+	Member [192.168.56.12]:5701
+	Member [192.168.56.11]:5701 this
+}
+
+2014-06-11 15:56:03,596 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 128, replica: 1
+2014-06-11 15:56:03,605 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 129, replica: 1
+2014-06-11 15:56:03,605 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 130, replica: 1
+2014-06-11 15:56:03,607 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 131, replica: 1
+2014-06-11 15:56:03,608 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 132, replica: 1
+2014-06-11 15:56:03,608 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 133, replica: 1
+2014-06-11 15:56:03,609 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 134, replica: 1
+2014-06-11 15:56:03,609 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 135, replica: 1
+2014-06-11 15:56:03,610 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 142, replica: 1
+2014-06-11 15:56:03,610 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 144, replica: 1
+2014-06-11 15:56:03,611 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 145, replica: 1
+2014-06-11 15:56:03,611 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 146, replica: 1
+2014-06-11 15:56:03,612 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 147, replica: 1
+2014-06-11 15:56:03,612 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 148, replica: 1
+2014-06-11 15:56:03,613 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 149, replica: 1
+2014-06-11 15:56:03,614 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 150, replica: 1
+2014-06-11 15:56:03,614 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 151, replica: 1
+2014-06-11 15:56:03,618 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 152, replica: 1
+2014-06-11 15:56:03,619 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 153, replica: 1
+2014-06-11 15:56:03,619 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 154, replica: 1
+2014-06-11 15:56:03,620 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 155, replica: 1
+2014-06-11 15:56:03,620 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 156, replica: 1
+2014-06-11 15:56:03,621 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 157, replica: 1
+2014-06-11 15:56:03,622 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 158, replica: 1
+2014-06-11 15:56:03,622 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 159, replica: 1
+2014-06-11 15:56:03,623 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 160, replica: 1
+2014-06-11 15:56:03,624 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 161, replica: 1
+2014-06-11 15:56:03,624 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 162, replica: 1
+2014-06-11 15:56:03,625 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 163, replica: 1
+2014-06-11 15:56:03,628 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 164, replica: 1
+2014-06-11 15:56:03,630 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 165, replica: 1
+2014-06-11 15:56:03,625 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 129, replica: 1
+2014-06-11 15:56:03,632 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 166, replica: 1
+2014-06-11 15:56:03,636 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 167, replica: 1
+2014-06-11 15:56:03,637 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 168, replica: 1
+2014-06-11 15:56:03,638 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 169, replica: 1
+2014-06-11 15:56:03,638 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 170, replica: 1
+2014-06-11 15:56:03,639 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 171, replica: 1
+2014-06-11 15:56:03,640 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 172, replica: 1
+2014-06-11 15:56:03,642 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 173, replica: 1
+2014-06-11 15:56:03,644 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 174, replica: 1
+2014-06-11 15:56:03,645 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 175, replica: 1
+2014-06-11 15:56:03,646 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 176, replica: 1
+2014-06-11 15:56:03,647 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 177, replica: 1
+2014-06-11 15:56:03,648 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 178, replica: 1
+2014-06-11 15:56:03,648 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 179, replica: 1
+2014-06-11 15:56:03,648 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 180, replica: 1
+2014-06-11 15:56:03,649 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 181, replica: 1
+2014-06-11 15:56:03,650 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 182, replica: 1
+2014-06-11 15:56:03,650 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 183, replica: 1
+2014-06-11 15:56:03,651 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 184, replica: 1
+2014-06-11 15:56:03,649 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 131, replica: 1
+2014-06-11 15:56:03,652 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 133, replica: 1
+2014-06-11 15:56:03,653 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 135, replica: 1
+2014-06-11 15:56:03,654 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 145, replica: 1
+2014-06-11 15:56:03,653 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 185, replica: 1
+2014-06-11 15:56:03,655 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 186, replica: 1
+2014-06-11 15:56:03,655 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 187, replica: 1
+2014-06-11 15:56:03,659 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 188, replica: 1
+2014-06-11 15:56:03,660 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 189, replica: 1
+2014-06-11 15:56:03,660 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 190, replica: 1
+2014-06-11 15:56:03,662 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 191, replica: 1
+2014-06-11 15:56:03,663 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 192, replica: 1
+2014-06-11 15:56:03,664 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 193, replica: 1
+2014-06-11 15:56:03,655 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 147, replica: 1
+2014-06-11 15:56:03,666 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 149, replica: 1
+2014-06-11 15:56:03,667 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 151, replica: 1
+2014-06-11 15:56:03,666 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 194, replica: 1
+2014-06-11 15:56:03,669 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 195, replica: 1
+2014-06-11 15:56:03,671 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 196, replica: 1
+2014-06-11 15:56:03,671 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 197, replica: 1
+2014-06-11 15:56:03,672 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 198, replica: 1
+2014-06-11 15:56:03,673 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 199, replica: 1
+2014-06-11 15:56:03,671 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 153, replica: 1
+2014-06-11 15:56:03,675 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 155, replica: 1
+2014-06-11 15:56:03,677 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 200, replica: 1
+2014-06-11 15:56:03,679 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 201, replica: 1
+2014-06-11 15:56:03,679 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 202, replica: 1
+2014-06-11 15:56:03,680 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 157, replica: 1
+2014-06-11 15:56:03,680 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 203, replica: 1
+2014-06-11 15:56:03,681 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 204, replica: 1
+2014-06-11 15:56:03,682 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 159, replica: 1
+2014-06-11 15:56:03,682 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 161, replica: 1
+2014-06-11 15:56:03,684 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 163, replica: 1
+2014-06-11 15:56:03,685 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 165, replica: 1
+2014-06-11 15:56:03,683 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 205, replica: 1
+2014-06-11 15:56:03,686 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 206, replica: 1
+2014-06-11 15:56:03,686 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 207, replica: 1
+2014-06-11 15:56:03,687 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 208, replica: 1
+2014-06-11 15:56:03,689 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 209, replica: 1
+2014-06-11 15:56:03,690 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 210, replica: 1
+2014-06-11 15:56:03,691 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 211, replica: 1
+2014-06-11 15:56:03,691 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 212, replica: 1
+2014-06-11 15:56:03,692 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 213, replica: 1
+2014-06-11 15:56:03,690 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 167, replica: 1
+2014-06-11 15:56:03,693 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 169, replica: 1
+2014-06-11 15:56:03,693 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 171, replica: 1
+2014-06-11 15:56:03,693 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 214, replica: 1
+2014-06-11 15:56:03,694 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 215, replica: 1
+2014-06-11 15:56:03,695 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 216, replica: 1
+2014-06-11 15:56:03,696 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 217, replica: 1
+2014-06-11 15:56:03,697 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 173, replica: 1
+2014-06-11 15:56:03,698 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 175, replica: 1
+2014-06-11 15:56:03,698 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 218, replica: 1
+2014-06-11 15:56:03,699 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 219, replica: 1
+2014-06-11 15:56:03,699 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 220, replica: 1
+2014-06-11 15:56:03,699 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 177, replica: 1
+2014-06-11 15:56:03,700 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 179, replica: 1
+2014-06-11 15:56:03,701 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 181, replica: 1
+2014-06-11 15:56:03,701 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 183, replica: 1
+2014-06-11 15:56:03,700 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 221, replica: 1
+2014-06-11 15:56:03,702 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 222, replica: 1
+2014-06-11 15:56:03,702 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 223, replica: 1
+2014-06-11 15:56:03,703 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 224, replica: 1
+2014-06-11 15:56:03,703 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 225, replica: 1
+2014-06-11 15:56:03,704 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 185, replica: 1
+2014-06-11 15:56:03,709 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 187, replica: 1
+2014-06-11 15:56:03,708 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 226, replica: 1
+2014-06-11 15:56:03,711 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 227, replica: 1
+2014-06-11 15:56:03,711 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 228, replica: 1
+2014-06-11 15:56:03,712 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 189, replica: 1
+2014-06-11 15:56:03,712 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 191, replica: 1
+2014-06-11 15:56:03,712 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 229, replica: 1
+2014-06-11 15:56:03,716 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 230, replica: 1
+2014-06-11 15:56:03,717 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 231, replica: 1
+2014-06-11 15:56:03,718 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 232, replica: 1
+2014-06-11 15:56:03,717 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 193, replica: 1
+2014-06-11 15:56:03,719 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 233, replica: 1
+2014-06-11 15:56:03,721 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 195, replica: 1
+2014-06-11 15:56:03,727 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 234, replica: 1
+2014-06-11 15:56:03,727 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 235, replica: 1
+2014-06-11 15:56:03,728 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 236, replica: 1
+2014-06-11 15:56:03,727 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 197, replica: 1
+2014-06-11 15:56:03,729 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 199, replica: 1
+2014-06-11 15:56:03,730 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 201, replica: 1
+2014-06-11 15:56:03,731 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 203, replica: 1
+2014-06-11 15:56:03,729 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 237, replica: 1
+2014-06-11 15:56:03,736 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 238, replica: 1
+2014-06-11 15:56:03,738 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 239, replica: 1
+2014-06-11 15:56:03,739 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 240, replica: 1
+2014-06-11 15:56:03,739 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 241, replica: 1
+2014-06-11 15:56:03,740 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 242, replica: 1
+2014-06-11 15:56:03,740 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 243, replica: 1
+2014-06-11 15:56:03,740 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 244, replica: 1
+2014-06-11 15:56:03,741 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 245, replica: 1
+2014-06-11 15:56:03,737 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 205, replica: 1
+2014-06-11 15:56:03,743 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 246, replica: 1
+2014-06-11 15:56:03,743 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 207, replica: 1
+2014-06-11 15:56:03,744 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 247, replica: 1
+2014-06-11 15:56:03,744 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 248, replica: 1
+2014-06-11 15:56:03,744 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 209, replica: 1
+2014-06-11 15:56:03,745 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 211, replica: 1
+2014-06-11 15:56:03,745 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 249, replica: 1
+2014-06-11 15:56:03,747 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 250, replica: 1
+2014-06-11 15:56:03,748 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 251, replica: 1
+2014-06-11 15:56:03,748 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 252, replica: 1
+2014-06-11 15:56:03,747 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 213, replica: 1
+2014-06-11 15:56:03,750 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 215, replica: 1
+2014-06-11 15:56:03,752 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 217, replica: 1
+2014-06-11 15:56:03,751 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 253, replica: 1
+2014-06-11 15:56:03,756 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 254, replica: 1
+2014-06-11 15:56:03,757 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 255, replica: 1
+2014-06-11 15:56:03,757 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 256, replica: 1
+2014-06-11 15:56:03,758 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 257, replica: 1
+2014-06-11 15:56:03,758 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 258, replica: 1
+2014-06-11 15:56:03,756 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 219, replica: 1
+2014-06-11 15:56:03,759 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 259, replica: 1
+2014-06-11 15:56:03,760 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 260, replica: 1
+2014-06-11 15:56:03,761 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 221, replica: 1
+2014-06-11 15:56:03,763 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 223, replica: 1
+2014-06-11 15:56:03,768 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 225, replica: 1
+2014-06-11 15:56:03,768 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 227, replica: 1
+2014-06-11 15:56:03,761 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 261, replica: 1
+2014-06-11 15:56:03,771 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 262, replica: 1
+2014-06-11 15:56:03,771 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 263, replica: 1
+2014-06-11 15:56:03,772 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 264, replica: 1
+2014-06-11 15:56:03,773 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 265, replica: 1
+2014-06-11 15:56:03,773 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 266, replica: 1
+2014-06-11 15:56:03,770 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 229, replica: 1
+2014-06-11 15:56:03,774 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 231, replica: 1
+2014-06-11 15:56:03,775 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 233, replica: 1
+2014-06-11 15:56:03,776 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 235, replica: 1
+2014-06-11 15:56:03,777 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 237, replica: 1
+2014-06-11 15:56:03,775 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 267, replica: 1
+2014-06-11 15:56:03,779 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 268, replica: 1
+2014-06-11 15:56:03,779 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 269, replica: 1
+2014-06-11 15:56:03,779 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync replica request to -> Address[192.168.56.12]:5701; for partition: 270, replica: 1
+2014-06-11 15:56:03,782 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 128, replica: 1
+2014-06-11 15:56:03,782 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 130, replica: 1
+2014-06-11 15:56:03,784 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 132, replica: 1
+2014-06-11 15:56:03,784 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 134, replica: 1
+2014-06-11 15:56:03,789 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 142, replica: 1
+2014-06-11 15:56:03,790 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 144, replica: 1
+2014-06-11 15:56:03,794 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 146, replica: 1
+2014-06-11 15:56:03,783 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 239, replica: 1
+2014-06-11 15:56:03,797 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 241, replica: 1
+2014-06-11 15:56:03,797 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 243, replica: 1
+2014-06-11 15:56:03,798 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 245, replica: 1
+2014-06-11 15:56:03,799 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 247, replica: 1
+2014-06-11 15:56:03,799 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 249, replica: 1
+2014-06-11 15:56:03,796 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 148, replica: 1
+2014-06-11 15:56:03,800 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 150, replica: 1
+2014-06-11 15:56:03,802 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 152, replica: 1
+2014-06-11 15:56:03,802 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 154, replica: 1
+2014-06-11 15:56:03,802 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 156, replica: 1
+2014-06-11 15:56:03,806 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 158, replica: 1
+2014-06-11 15:56:03,807 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 160, replica: 1
+2014-06-11 15:56:03,801 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 251, replica: 1
+2014-06-11 15:56:03,812 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 253, replica: 1
+2014-06-11 15:56:03,813 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 255, replica: 1
+2014-06-11 15:56:03,813 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 257, replica: 1
+2014-06-11 15:56:03,814 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 259, replica: 1
+2014-06-11 15:56:03,812 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 162, replica: 1
+2014-06-11 15:56:03,815 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 164, replica: 1
+2014-06-11 15:56:03,815 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 261, replica: 1
+2014-06-11 15:56:03,816 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 166, replica: 1
+2014-06-11 15:56:03,817 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 168, replica: 1
+2014-06-11 15:56:03,821 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 170, replica: 1
+2014-06-11 15:56:03,822 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 172, replica: 1
+2014-06-11 15:56:03,816 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 263, replica: 1
+2014-06-11 15:56:03,824 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 265, replica: 1
+2014-06-11 15:56:03,825 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 267, replica: 1
+2014-06-11 15:56:03,825 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 269, replica: 1
+2014-06-11 15:56:03,823 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 174, replica: 1
+2014-06-11 15:56:03,826 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 176, replica: 1
+2014-06-11 15:56:03,827 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 178, replica: 1
+2014-06-11 15:56:03,827 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 180, replica: 1
+2014-06-11 15:56:03,837 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 182, replica: 1
+2014-06-11 15:56:03,839 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 184, replica: 1
+2014-06-11 15:56:03,840 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 186, replica: 1
+2014-06-11 15:56:03,843 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 188, replica: 1
+2014-06-11 15:56:03,844 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 190, replica: 1
+2014-06-11 15:56:03,846 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 192, replica: 1
+2014-06-11 15:56:03,847 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 194, replica: 1
+2014-06-11 15:56:03,838 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 1, replica: 1
+2014-06-11 15:56:03,849 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 196, replica: 1
+2014-06-11 15:56:03,849 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 198, replica: 1
+2014-06-11 15:56:03,850 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 200, replica: 1
+2014-06-11 15:56:03,852 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 202, replica: 1
+2014-06-11 15:56:03,852 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 204, replica: 1
+2014-06-11 15:56:03,854 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 206, replica: 1
+2014-06-11 15:56:03,856 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 208, replica: 1
+2014-06-11 15:56:03,857 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 210, replica: 1
+2014-06-11 15:56:03,859 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 212, replica: 1
+2014-06-11 15:56:03,864 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 214, replica: 1
+2014-06-11 15:56:03,867 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 216, replica: 1
+2014-06-11 15:56:03,868 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 218, replica: 1
+2014-06-11 15:56:03,869 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 220, replica: 1
+2014-06-11 15:56:03,871 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 222, replica: 1
+2014-06-11 15:56:03,872 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 224, replica: 1
+2014-06-11 15:56:03,875 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 226, replica: 1
+2014-06-11 15:56:03,876 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 228, replica: 1
+2014-06-11 15:56:03,879 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 230, replica: 1
+2014-06-11 15:56:03,880 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 232, replica: 1
+2014-06-11 15:56:03,883 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 234, replica: 1
+2014-06-11 15:56:03,883 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 236, replica: 1
+2014-06-11 15:56:03,884 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 238, replica: 1
+2014-06-11 15:56:03,886 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 240, replica: 1
+2014-06-11 15:56:03,888 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 242, replica: 1
+2014-06-11 15:56:03,890 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 244, replica: 1
+2014-06-11 15:56:03,891 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 246, replica: 1
+2014-06-11 15:56:03,891 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 248, replica: 1
+2014-06-11 15:56:03,893 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 0, replica: 1
+2014-06-11 15:56:03,895 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 250, replica: 1
+2014-06-11 15:56:03,899 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 252, replica: 1
+2014-06-11 15:56:03,901 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 254, replica: 1
+2014-06-11 15:56:03,902 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 256, replica: 1
+2014-06-11 15:56:03,903 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 258, replica: 1
+2014-06-11 15:56:03,904 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 260, replica: 1
+2014-06-11 15:56:03,904 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 262, replica: 1
+2014-06-11 15:56:03,907 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 264, replica: 1
+2014-06-11 15:56:03,908 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 266, replica: 1
+2014-06-11 15:56:03,909 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 268, replica: 1
+2014-06-11 15:56:03,910 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncResponse [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Applying replica sync for partition: 270, replica: 1
+2014-06-11 15:56:03,922 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 2, replica: 1
+2014-06-11 15:56:03,931 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 3, replica: 1
+2014-06-11 15:56:03,939 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 4, replica: 1
+2014-06-11 15:56:03,947 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 5, replica: 1
+2014-06-11 15:56:03,959 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 6, replica: 1
+2014-06-11 15:56:03,970 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 7, replica: 1
+2014-06-11 15:56:03,981 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 8, replica: 1
+2014-06-11 15:56:03,988 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 9, replica: 1
+2014-06-11 15:56:03,996 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 10, replica: 1
+2014-06-11 15:56:04,002 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 11, replica: 1
+2014-06-11 15:56:04,008 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 12, replica: 1
+2014-06-11 15:56:04,016 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 13, replica: 1
+2014-06-11 15:56:04,027 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 14, replica: 1
+2014-06-11 15:56:04,040 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 15, replica: 1
+2014-06-11 15:56:04,048 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 16, replica: 1
+2014-06-11 15:56:04,067 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 17, replica: 1
+2014-06-11 15:56:04,074 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 18, replica: 1
+2014-06-11 15:56:04,080 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 19, replica: 1
+2014-06-11 15:56:04,086 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 20, replica: 1
+2014-06-11 15:56:04,093 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 21, replica: 1
+2014-06-11 15:56:04,102 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 22, replica: 1
+2014-06-11 15:56:04,127 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 23, replica: 1
+2014-06-11 15:56:04,135 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 24, replica: 1
+2014-06-11 15:56:04,143 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 25, replica: 1
+2014-06-11 15:56:04,148 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 26, replica: 1
+2014-06-11 15:56:04,159 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 27, replica: 1
+2014-06-11 15:56:04,173 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 28, replica: 1
+2014-06-11 15:56:04,183 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 29, replica: 1
+2014-06-11 15:56:04,191 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 30, replica: 1
+2014-06-11 15:56:04,198 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 31, replica: 1
+2014-06-11 15:56:04,207 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 32, replica: 1
+2014-06-11 15:56:04,212 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 33, replica: 1
+2014-06-11 15:56:04,222 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 34, replica: 1
+2014-06-11 15:56:04,230 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 35, replica: 1
+2014-06-11 15:56:04,239 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 36, replica: 1
+2014-06-11 15:56:04,247 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 37, replica: 1
+2014-06-11 15:56:04,252 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 38, replica: 1
+2014-06-11 15:56:04,260 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 39, replica: 1
+2014-06-11 15:56:04,266 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 40, replica: 1
+2014-06-11 15:56:04,274 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 41, replica: 1
+2014-06-11 15:56:04,283 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 42, replica: 1
+2014-06-11 15:56:04,292 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 43, replica: 1
+2014-06-11 15:56:04,303 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 44, replica: 1
+2014-06-11 15:56:04,308 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 45, replica: 1
+2014-06-11 15:56:04,318 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 46, replica: 1
+2014-06-11 15:56:04,326 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 47, replica: 1
+2014-06-11 15:56:04,335 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 48, replica: 1
+2014-06-11 15:56:04,342 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 49, replica: 1
+2014-06-11 15:56:04,351 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 50, replica: 1
+2014-06-11 15:56:04,356 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 51, replica: 1
+2014-06-11 15:56:04,367 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 52, replica: 1
+2014-06-11 15:56:04,375 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 53, replica: 1
+2014-06-11 15:56:04,387 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 54, replica: 1
+2014-06-11 15:56:04,392 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 55, replica: 1
+2014-06-11 15:56:04,403 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 56, replica: 1
+2014-06-11 15:56:04,407 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 57, replica: 1
+2014-06-11 15:56:04,412 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 58, replica: 1
+2014-06-11 15:56:04,422 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 59, replica: 1
+2014-06-11 15:56:04,428 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 60, replica: 1
+2014-06-11 15:56:04,439 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 61, replica: 1
+2014-06-11 15:56:04,449 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 62, replica: 1
+2014-06-11 15:56:04,453 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 63, replica: 1
+2014-06-11 15:56:04,462 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 64, replica: 1
+2014-06-11 15:56:04,471 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 65, replica: 1
+2014-06-11 15:56:04,482 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 66, replica: 1
+2014-06-11 15:56:04,490 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 67, replica: 1
+2014-06-11 15:56:04,502 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 68, replica: 1
+2014-06-11 15:56:04,512 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 69, replica: 1
+2014-06-11 15:56:04,515 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 70, replica: 1
+2014-06-11 15:56:04,526 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 71, replica: 1
+2014-06-11 15:56:04,534 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 72, replica: 1
+2014-06-11 15:56:04,541 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 73, replica: 1
+2014-06-11 15:56:04,551 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 74, replica: 1
+2014-06-11 15:56:04,558 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 75, replica: 1
+2014-06-11 15:56:04,567 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 76, replica: 1
+2014-06-11 15:56:04,575 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 77, replica: 1
+2014-06-11 15:56:04,583 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 78, replica: 1
+2014-06-11 15:56:04,592 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 79, replica: 1
+2014-06-11 15:56:04,599 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 80, replica: 1
+2014-06-11 15:56:04,605 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 81, replica: 1
+2014-06-11 15:56:04,621 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 82, replica: 1
+2014-06-11 15:56:04,643 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 83, replica: 1
+2014-06-11 15:56:04,647 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 84, replica: 1
+2014-06-11 15:56:04,672 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 85, replica: 1
+2014-06-11 15:56:04,684 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 86, replica: 1
+2014-06-11 15:56:04,697 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 87, replica: 1
+2014-06-11 15:56:04,714 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 88, replica: 1
+2014-06-11 15:56:04,728 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 89, replica: 1
+2014-06-11 15:56:04,748 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 90, replica: 1
+2014-06-11 15:56:04,772 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 91, replica: 1
+2014-06-11 15:56:04,792 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 92, replica: 1
+2014-06-11 15:56:04,807 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 93, replica: 1
+2014-06-11 15:56:04,828 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 94, replica: 1
+2014-06-11 15:56:04,844 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 95, replica: 1
+2014-06-11 15:56:04,852 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 96, replica: 1
+2014-06-11 15:56:04,863 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 97, replica: 1
+2014-06-11 15:56:04,870 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 98, replica: 1
+2014-06-11 15:56:04,892 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 99, replica: 1
+2014-06-11 15:56:04,900 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 100, replica: 1
+2014-06-11 15:56:04,911 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 101, replica: 1
+2014-06-11 15:56:04,923 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 102, replica: 1
+2014-06-11 15:56:04,931 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 103, replica: 1
+2014-06-11 15:56:04,937 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 104, replica: 1
+2014-06-11 15:56:04,948 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 105, replica: 1
+2014-06-11 15:56:04,959 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 106, replica: 1
+2014-06-11 15:56:04,982 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 107, replica: 1
+2014-06-11 15:56:04,987 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 108, replica: 1
+2014-06-11 15:56:04,996 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 109, replica: 1
+2014-06-11 15:56:05,006 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 110, replica: 1
+2014-06-11 15:56:05,015 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 111, replica: 1
+2014-06-11 15:56:05,032 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 112, replica: 1
+2014-06-11 15:56:05,042 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 113, replica: 1
+2014-06-11 15:56:05,054 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 114, replica: 1
+2014-06-11 15:56:05,060 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 115, replica: 1
+2014-06-11 15:56:05,067 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 116, replica: 1
+2014-06-11 15:56:05,074 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 117, replica: 1
+2014-06-11 15:56:05,079 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 118, replica: 1
+2014-06-11 15:56:05,089 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 119, replica: 1
+2014-06-11 15:56:05,093 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 120, replica: 1
+2014-06-11 15:56:05,097 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 121, replica: 1
+2014-06-11 15:56:05,107 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 122, replica: 1
+2014-06-11 15:56:05,116 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 123, replica: 1
+2014-06-11 15:56:05,123 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 124, replica: 1
+2014-06-11 15:56:05,136 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 125, replica: 1
+2014-06-11 15:56:05,147 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 126, replica: 1
+2014-06-11 15:56:05,154 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 127, replica: 1
+2014-06-11 15:56:05,163 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 136, replica: 1
+2014-06-11 15:56:05,170 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 137, replica: 1
+2014-06-11 15:56:05,171 DEBUG [main] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Starting health monitor
+2014-06-11 15:56:05,175 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 138, replica: 1
+2014-06-11 15:56:05,178 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 139, replica: 1
+2014-06-11 15:56:05,181 DEBUG [hz._hzInstance_1_dev.operation.thread-0] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 140, replica: 1
+2014-06-11 15:56:05,185 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 141, replica: 1
+2014-06-11 15:56:05,188 DEBUG [hz._hzInstance_1_dev.operation.thread-1] c.h.p.ReplicaSyncRequest [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending sync response to -> Address[192.168.56.12]:5701; for partition: 143, replica: 1
+2014-06-11 15:56:05,207 INFO [main] c.h.c.LifecycleService [Slf4jFactory.java:83] [192.168.56.11]:5701 [dev] Address[192.168.56.11]:5701 is STARTED
+2014-06-11 15:56:05,228 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:453] Starting net.onrc.onos.ofcontroller.flowprogrammer.FlowProgrammer
+2014-06-11 15:56:05,244 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:453] Starting net.onrc.onos.registry.controller.ZookeeperRegistry
+2014-06-11 15:56:05,316 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:453] Starting net.onrc.onos.ofcontroller.linkdiscovery.internal.LinkDiscoveryManager
+2014-06-11 15:56:05,350 INFO [main] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:731] IIIII read controller id: 10
+2014-06-11 15:56:05,364 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:453] Starting net.onrc.onos.ofcontroller.floodlightlistener.NetworkGraphPublisher
+2014-06-11 15:56:05,364 DEBUG [main] n.o.o.o.f.NetworkGraphPublisher [NetworkGraphPublisher.java:483] Adding EventListener
+2014-06-11 15:56:05,368 DEBUG [main] n.o.o.g.GraphDBConnection [GraphDBConnection.java:139] Registered listener class net.onrc.onos.graph.LocalTopologyEventListener
+2014-06-11 15:56:05,380 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:453] Starting net.onrc.onos.ofcontroller.flowmanager.FlowManager
+2014-06-11 15:56:06,411 DEBUG [main] n.f.c.m.FloodlightModuleLoader [FloodlightModuleLoader.java:453] Starting net.onrc.onos.ofcontroller.topology.TopologyManager
+2014-06-11 15:56:06,437 DEBUG [main] n.f.r.RestApiServer [RestApiServer.java:137] REST API routables: CoreWebRoutable (/wm/floodlight/core), OnosInternalWebRoutable (/wm/onos/internal), StaticWebRoutable (/wm/floodlight/ui/), DatagridWebRoutable (/wm/onos/datagrid), FlowProgrammerWebRoutable (/wm/onos/flowprogrammer), RegistryWebRoutable (/wm/onos/registry), LinkDiscoveryWebRoutable (/wm/onos/linkdiscovery), FlowWebRoutable (/wm/onos/flows), OnosTopologyWebRoutable (/wm/onos/topology), 
+2014-06-11 15:56:07,485 DEBUG [main] n.f.c.i.Controller [Controller.java:1490] OFListeners for PACKET_IN: linkdiscovery,
+2014-06-11 15:56:07,485 DEBUG [main] n.f.c.i.Controller [Controller.java:1490] OFListeners for FLOW_REMOVED: FlowProgrammer,
+2014-06-11 15:56:07,485 DEBUG [main] n.f.c.i.Controller [Controller.java:1490] OFListeners for BARRIER_REPLY: flowpusher,
+2014-06-11 15:56:07,485 DEBUG [main] n.f.c.i.Controller [Controller.java:1490] OFListeners for PORT_STATUS: linkdiscovery,
+2014-06-11 15:56:07,555 INFO [main] n.f.c.i.Controller [Controller.java:1724] Listening for switch connections on 0.0.0.0/0.0.0.0:6633
+2014-06-11 15:56:20,342 DEBUG [pool-2-thread-5] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:350] Sending LLDP out on all ports.
+2014-06-11 15:56:27,737 DEBUG [hz._hzInstance_1_dev.cached.thread-3] c.h.c.ClusterService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending MasterConfirmation to Member [192.168.56.12]:5701
+2014-06-11 15:56:35,350 DEBUG [pool-2-thread-3] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:350] Sending LLDP out on all ports.
+2014-06-11 15:56:37,281 INFO [New I/O server worker #1-1] n.f.c.i.Controller [Controller.java:364] New switch connection from /192.168.56.1:36564
+2014-06-11 15:56:37,443 DEBUG [New I/O server worker #1-1] n.f.c.i.Controller [Controller.java:568] Sending FEATURES_REQUEST to OFSwitchImpl [/192.168.56.1:36564 DPID[?]]
+2014-06-11 15:56:38,182 DEBUG [New I/O server worker #1-1] n.f.c.i.Controller [Controller.java:578] Sending CONFIG_REQUEST to OFSwitchImpl [/192.168.56.1:36564 DPID[00:00:00:00:00:00:00:01]]
+2014-06-11 15:56:39,780 DEBUG [New I/O server worker #1-1] n.f.c.i.Controller [Controller.java:605] Handshake with OFSwitchImpl [/192.168.56.1:36564 DPID[00:00:00:00:00:00:00:01]] complete
+2014-06-11 15:56:39,781 DEBUG [New I/O server worker #1-1] n.f.c.i.Controller [Controller.java:619] Setting new switch 00:00:00:00:00:00:00:01 to SLAVE
+2014-06-11 15:56:39,787 DEBUG [Thread-2] n.f.c.i.RoleChanger [RoleChanger.java:278] Sending NxRoleRequest to OFSwitchImpl [/192.168.56.1:36564 DPID[00:00:00:00:00:00:00:01]]
+2014-06-11 15:56:39,794 INFO [New I/O server worker #1-1] n.o.o.r.c.ZookeeperRegistry [ZookeeperRegistry.java:200] Requesting control for 00:00:00:00:00:00:00:01
+2014-06-11 15:56:39,845 DEBUG [pool-8-thread-1] n.o.o.r.c.ZookeeperRegistry [ZookeeperRegistry.java:102] Switch leadership changed for 00:00:00:00:00:00:00:01, now true
+2014-06-11 15:56:39,845 INFO [pool-8-thread-1] n.f.c.i.Controller [Controller.java:301] Role change callback for switch 00:00:00:00:00:00:00:01, hasControl true
+2014-06-11 15:56:39,846 DEBUG [pool-8-thread-1] n.f.c.i.Controller [Controller.java:334] Sending role request MASTER msg to OFSwitchImpl [/192.168.56.1:36564 DPID[00:00:00:00:00:00:00:01]]
+2014-06-11 15:56:39,847 DEBUG [Thread-2] n.f.c.i.RoleChanger [RoleChanger.java:278] Sending NxRoleRequest to OFSwitchImpl [/192.168.56.1:36564 DPID[00:00:00:00:00:00:00:01]]
+2014-06-11 15:56:41,424 DEBUG [New I/O server worker #1-1] n.f.c.i.Controller [Controller.java:717] Handling role reply for role SLAVE from OFSwitchImpl [/192.168.56.1:36564 DPID[00:00:00:00:00:00:00:01]]. Controller's role is MASTER 
+2014-06-11 15:56:41,426 DEBUG [New I/O server worker #1-1] n.f.c.i.OFSwitchImpl [OFSwitchImpl.java:741] Received role reply message from OFSwitchImpl [/192.168.56.1:36564 DPID[00:00:00:00:00:00:00:01]], setting role to SLAVE
+2014-06-11 15:56:43,003 DEBUG [New I/O server worker #1-1] n.f.c.i.Controller [Controller.java:717] Handling role reply for role MASTER from OFSwitchImpl [/192.168.56.1:36564 DPID[00:00:00:00:00:00:00:01]]. Controller's role is MASTER 
+2014-06-11 15:56:43,004 DEBUG [New I/O server worker #1-1] n.f.c.i.OFSwitchImpl [OFSwitchImpl.java:741] Received role reply message from OFSwitchImpl [/192.168.56.1:36564 DPID[00:00:00:00:00:00:00:01]], setting role to MASTER
+2014-06-11 15:56:43,015 DEBUG [main] n.o.o.o.f.FlowProgrammer [FlowProgrammer.java:155] Switch added: 1
+2014-06-11 15:56:43,018 DEBUG [New I/O server worker #1-1] n.f.c.i.Controller [Controller.java:767] Added master switch 00:00:00:00:00:00:00:01 to active switch list
+2014-06-11 15:56:43,101 INFO [main] n.o.o.o.c.i.SwitchStorageImpl [SwitchStorageImpl.java:143] SwitchStorage:addSwitch(): dpid 00:00:00:00:00:00:00:01 
+2014-06-11 15:56:44,184 INFO [main] n.o.o.o.c.i.SwitchStorageImpl [SwitchStorageImpl.java:443] SwitchStorage:addSwitchImpl dpid:00:00:00:00:00:00:00:01 added
+2014-06-11 15:56:44,195 INFO [main] n.o.o.o.c.i.SwitchStorageImpl [SwitchStorageImpl.java:494] SwitchStorage:addPort dpid:00:00:00:00:00:00:00:01 port:2
+2014-06-11 15:56:44,239 INFO [main] n.o.o.o.c.i.SwitchStorageImpl [SwitchStorageImpl.java:575] SwitchStorage:setPortStateImpl port:00:00:00:00:00:00:00:012 state:0 desc:eth2 done
+2014-06-11 15:56:44,250 INFO [main] n.o.o.o.c.i.SwitchStorageImpl [SwitchStorageImpl.java:545] SwitchStorage:addPort dpid:00:00:00:00:00:00:00:01 port:2 done
+2014-06-11 15:56:44,253 INFO [main] n.o.o.o.c.i.SwitchStorageImpl [SwitchStorageImpl.java:494] SwitchStorage:addPort dpid:00:00:00:00:00:00:00:01 port:1
+2014-06-11 15:56:44,256 INFO [main] n.o.o.o.c.i.SwitchStorageImpl [SwitchStorageImpl.java:575] SwitchStorage:setPortStateImpl port:00:00:00:00:00:00:00:011 state:0 desc:eth1 done
+2014-06-11 15:56:44,257 INFO [main] n.o.o.o.c.i.SwitchStorageImpl [SwitchStorageImpl.java:545] SwitchStorage:addPort dpid:00:00:00:00:00:00:00:01 port:1 done
+2014-06-11 15:56:44,425 DEBUG [FlowEventHandler 49] n.o.o.o.f.FlowEventHandler [FlowEventHandler.java:447] Topology Event: ENTRY_ADD Port=1/2
+2014-06-11 15:56:44,440 DEBUG [FlowEventHandler 49] n.o.o.o.f.FlowEventHandler [FlowEventHandler.java:447] Topology Event: ENTRY_ADD Switch=1
+2014-06-11 15:56:44,690 DEBUG [FlowEventHandler 49] n.o.o.o.f.FlowEventHandler [FlowEventHandler.java:447] Topology Event: ENTRY_ADD Port=1/1
+2014-06-11 15:56:48,231 DEBUG [FlowEventHandler 49] n.o.o.o.f.FlowEventHandler [FlowEventHandler.java:447] Topology Event: ENTRY_ADD Port=2/2
+2014-06-11 15:56:48,232 DEBUG [FlowEventHandler 49] n.o.o.o.f.FlowEventHandler [FlowEventHandler.java:447] Topology Event: ENTRY_ADD Switch=2
+2014-06-11 15:56:48,728 DEBUG [FlowEventHandler 49] n.o.o.o.f.FlowEventHandler [FlowEventHandler.java:447] Topology Event: ENTRY_ADD Port=2/1
+2014-06-11 15:56:48,770 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:519] addRemoteSwitch(): added fake remote sw OFSwitchImpl [? DPID[00:00:00:00:00:00:00:02]]
+2014-06-11 15:56:48,771 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:530] addRemoteSwitch(): added fake remote port org.openflow.protocol.OFPhysicalPort@b48bfd73 to sw 2
+2014-06-11 15:56:48,772 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:1027] XXXXXX READ CID 10 current 10 
+2014-06-11 15:56:50,357 DEBUG [pool-2-thread-3] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:350] Sending LLDP out on all ports.
+2014-06-11 15:56:54,873 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:1027] XXXXXX READ CID 10 current 10 
+2014-06-11 15:56:57,737 DEBUG [hz._hzInstance_1_dev.cached.thread-2] c.h.c.ClusterService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending MasterConfirmation to Member [192.168.56.12]:5701
+2014-06-11 15:57:00,915 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:1027] XXXXXX READ CID 10 current 10 
+2014-06-11 15:57:00,917 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:951] XXXXXX writing cid 10 to file: /home/mininet/ONOS/cid_onosdev1
+2014-06-11 15:57:00,925 DEBUG [main] n.o.o.o.f.NetworkGraphPublisher [NetworkGraphPublisher.java:219] LinkDiscoveryUpdate(): Adding link Link [src=00:00:00:00:00:00:00:02 outPort=1, dst=00:00:00:00:00:00:00:01, inPort=1]
+2014-06-11 15:57:00,958 DEBUG [FlowEventHandler 49] n.o.o.o.f.FlowEventHandler [FlowEventHandler.java:447] Topology Event: ENTRY_ADD Link=2/1/1/1
+2014-06-11 15:57:00,958 DEBUG [main] n.o.o.o.f.NetworkGraphPublisher [NetworkGraphPublisher.java:219] LinkDiscoveryUpdate(): Adding link Link [src=00:00:00:00:00:00:00:01 outPort=1, dst=00:00:00:00:00:00:00:02, inPort=1]
+2014-06-11 15:57:00,987 DEBUG [FlowEventHandler 49] n.o.o.o.f.FlowEventHandler [FlowEventHandler.java:447] Topology Event: ENTRY_ADD Link=1/1/2/1
+2014-06-11 15:57:05,363 DEBUG [pool-2-thread-11] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:350] Sending LLDP out on all ports.
+2014-06-11 15:57:05,373 DEBUG [SwitchCleanup@pool-2-thread-15] n.o.o.o.f.NetworkGraphPublisher [NetworkGraphPublisher.java:89] Running cleanup thread
+2014-06-11 15:57:05,408 DEBUG [SwitchCleanup@pool-2-thread-15] n.o.o.o.f.NetworkGraphPublisher [NetworkGraphPublisher.java:156] Checking for inactive switches
+2014-06-11 15:57:09,880 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:1027] XXXXXX READ CID 10 current 10 
+2014-06-11 15:57:20,241 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:1027] XXXXXX READ CID 10 current 10 
+2014-06-11 15:57:20,243 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:951] XXXXXX writing cid 10 to file: /home/mininet/ONOS/cid_onosdev1
+2014-06-11 15:57:20,368 DEBUG [pool-2-thread-10] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:350] Sending LLDP out on all ports.
+2014-06-11 15:57:24,887 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:1027] XXXXXX READ CID 10 current 10 
+2014-06-11 15:57:27,737 DEBUG [hz._hzInstance_1_dev.cached.thread-3] c.h.c.ClusterService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending MasterConfirmation to Member [192.168.56.12]:5701
+2014-06-11 15:57:35,375 DEBUG [pool-2-thread-6] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:350] Sending LLDP out on all ports.
+2014-06-11 15:57:35,845 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:1027] XXXXXX READ CID 10 current 10 
+2014-06-11 15:57:35,846 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:951] XXXXXX writing cid 10 to file: /home/mininet/ONOS/cid_onosdev1
+2014-06-11 15:57:39,896 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:1027] XXXXXX READ CID 10 current 10 
+2014-06-11 15:57:50,382 DEBUG [pool-2-thread-9] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:350] Sending LLDP out on all ports.
+2014-06-11 15:57:54,897 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:1027] XXXXXX READ CID 10 current 10 
+2014-06-11 15:57:56,565 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:1027] XXXXXX READ CID 10 current 10 
+2014-06-11 15:57:56,573 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:951] XXXXXX writing cid 10 to file: /home/mininet/ONOS/cid_onosdev1
+2014-06-11 15:57:57,737 DEBUG [hz._hzInstance_1_dev.cached.thread-3] c.h.c.ClusterService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending MasterConfirmation to Member [192.168.56.12]:5701
+2014-06-11 15:58:05,389 DEBUG [pool-2-thread-4] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:350] Sending LLDP out on all ports.
+2014-06-11 15:58:05,449 DEBUG [SwitchCleanup@pool-2-thread-12] n.o.o.o.f.NetworkGraphPublisher [NetworkGraphPublisher.java:89] Running cleanup thread
+2014-06-11 15:58:05,464 DEBUG [SwitchCleanup@pool-2-thread-12] n.o.o.o.f.NetworkGraphPublisher [NetworkGraphPublisher.java:156] Checking for inactive switches
+2014-06-11 15:58:09,901 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:1027] XXXXXX READ CID 10 current 10 
+2014-06-11 15:58:12,101 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:1027] XXXXXX READ CID 10 current 10 
+2014-06-11 15:58:12,103 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:951] XXXXXX writing cid 10 to file: /home/mininet/ONOS/cid_onosdev1
+2014-06-11 15:58:20,398 DEBUG [pool-2-thread-4] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:350] Sending LLDP out on all ports.
+2014-06-11 15:58:24,909 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:1027] XXXXXX READ CID 10 current 10 
+2014-06-11 15:58:27,738 DEBUG [hz._hzInstance_1_dev.cached.thread-3] c.h.c.ClusterService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Sending MasterConfirmation to Member [192.168.56.12]:5701
+2014-06-11 15:58:32,113 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:1027] XXXXXX READ CID 10 current 10 
+2014-06-11 15:58:32,116 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:951] XXXXXX writing cid 10 to file: /home/mininet/ONOS/cid_onosdev1
+2014-06-11 15:58:35,403 DEBUG [pool-2-thread-6] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:350] Sending LLDP out on all ports.
+2014-06-11 15:58:39,913 DEBUG [New I/O server worker #1-1] n.o.o.o.l.i.LinkDiscoveryManager [LinkDiscoveryManager.java:1027] XXXXXX READ CID 10 current 10 
+2014-06-11 15:58:46,878 DEBUG [hz.ShutdownThread] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] ** we are being asked to shutdown when active = true
+2014-06-11 15:58:46,879 DEBUG [hz.ShutdownThread] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down client command service
+2014-06-11 15:58:46,879 DEBUG [hz.ShutdownThread] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down node engine
+2014-06-11 15:58:46,880 DEBUG [hz.ShutdownThread] c.h.s.NodeEngine [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down services...
+2014-06-11 15:58:46,880 DEBUG [hz.ShutdownThread] c.h.s.WaitNotifyService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Stopping tasks...
+2014-06-11 15:58:46,886 DEBUG [hz.ShutdownThread] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Stopping services...
+2014-06-11 15:58:46,886 DEBUG [hz.ShutdownThread] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down service -> com.hazelcast.concurrent.lock.LockServiceImpl@ca213f
+2014-06-11 15:58:46,896 DEBUG [hz.ShutdownThread] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down service -> com.hazelcast.executor.DistributedExecutorService@2904e6c3
+2014-06-11 15:58:46,896 DEBUG [hz.ShutdownThread] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down service -> com.hazelcast.queue.QueueService@45fc15f2
+2014-06-11 15:58:46,896 DEBUG [hz.ShutdownThread] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down service -> com.hazelcast.concurrent.idgen.IdGeneratorService@61e9f1b6
+2014-06-11 15:58:46,897 DEBUG [hz.ShutdownThread] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down service -> com.hazelcast.topic.TopicService@14d7c58a
+2014-06-11 15:58:46,897 DEBUG [hz.ShutdownThread] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down service -> com.hazelcast.map.MapService@58e28d65
+2014-06-11 15:58:46,901 DEBUG [hz.ShutdownThread] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down service -> com.hazelcast.collection.CollectionService@127156b3
+2014-06-11 15:58:46,911 DEBUG [hz.ShutdownThread] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down service -> com.hazelcast.concurrent.semaphore.SemaphoreService@7917ef91
+2014-06-11 15:58:46,911 DEBUG [hz.ShutdownThread] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down service -> com.hazelcast.transaction.impl.TransactionManagerServiceImpl@35a16d70
+2014-06-11 15:58:46,911 DEBUG [hz.ShutdownThread] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down service -> com.hazelcast.concurrent.countdownlatch.CountDownLatchService@2b5a4dac
+2014-06-11 15:58:46,913 DEBUG [hz.ShutdownThread] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down service -> com.hazelcast.concurrent.atomiclong.AtomicLongService@5e9b626a
+2014-06-11 15:58:46,915 DEBUG [hz.ShutdownThread] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down service -> PartitionManager[677] {
+
+migrationQ: 0
+}
+2014-06-11 15:58:46,915 DEBUG [hz.ShutdownThread] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down the partition service
+2014-06-11 15:58:46,916 DEBUG [hz._hzInstance_1_dev.migration] c.h.p.PartitionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] MigrationThread is interrupted: null
+2014-06-11 15:58:46,919 DEBUG [hz.ShutdownThread] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down service -> ClusterService{address=Address[192.168.56.11]:5701}
+2014-06-11 15:58:46,920 DEBUG [hz.ShutdownThread] c.h.s.i.ServiceManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down service -> com.hazelcast.client.ClientEngineImpl@7dd69ce9
+2014-06-11 15:58:46,920 DEBUG [hz.ShutdownThread] c.h.s.ExecutionService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Stopping executors...
+2014-06-11 15:58:46,922 DEBUG [hz.ShutdownThread] c.h.s.EventService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Stopping event executor...
+2014-06-11 15:58:46,923 DEBUG [hz.ShutdownThread] c.h.s.OperationService [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Stopping operation threads...
+2014-06-11 15:58:46,925 DEBUG [hz.ShutdownThread] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down multicast service
+2014-06-11 15:58:46,925 DEBUG [hz.ShutdownThread] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down connection manager
+2014-06-11 15:58:46,925 DEBUG [hz.ShutdownThread] c.h.n.TcpIpConnectionManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Stopping ConnectionManager
+2014-06-11 15:58:46,925 DEBUG [hz.ShutdownThread] c.h.n.TcpIpConnectionManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down SocketAcceptor thread.
+2014-06-11 15:58:46,927 DEBUG [hz._hzInstance_1_dev.IO.thread-Acceptor] c.h.n.SocketAcceptor [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Closing selector hz._hzInstance_1_dev.IO.thread-Acceptor
+2014-06-11 15:58:46,928 DEBUG [hz.ShutdownThread] c.h.n.TcpIpConnectionManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Destroying Connection [/192.168.56.12:5701 -> Address[192.168.56.12]:5701] live=true, client=false, type=MEMBER
+2014-06-11 15:58:46,928 INFO [hz.ShutdownThread] c.h.n.TcpIpConnection [Slf4jFactory.java:83] [192.168.56.11]:5701 [dev] Connection [Address[192.168.56.12]:5701] lost. Reason: Socket explicitly closed
+2014-06-11 15:58:46,928 DEBUG [hz.ShutdownThread] c.h.n.TcpIpConnectionManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Destroying Connection [/192.168.56.12:5701 -> Address[192.168.56.12]:5701] live=false, client=false, type=MEMBER
+2014-06-11 15:58:46,928 DEBUG [hz.ShutdownThread] c.h.n.TcpIpConnectionManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down IO selectors... Total: 3
+2014-06-11 15:58:46,929 DEBUG [hz._hzInstance_1_dev.IO.thread-in-0] c.h.n.InSelectorImpl [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] hz._hzInstance_1_dev.IO.thread-in-0 is interrupted!
+2014-06-11 15:58:46,930 DEBUG [hz._hzInstance_1_dev.IO.thread-in-0] c.h.n.InSelectorImpl [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Closing selector hz._hzInstance_1_dev.IO.thread-in-0
+2014-06-11 15:58:46,930 DEBUG [hz._hzInstance_1_dev.IO.thread-out-0] c.h.n.OutSelectorImpl [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] hz._hzInstance_1_dev.IO.thread-out-0 is interrupted!
+2014-06-11 15:58:46,930 DEBUG [hz._hzInstance_1_dev.IO.thread-out-0] c.h.n.OutSelectorImpl [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Closing selector hz._hzInstance_1_dev.IO.thread-out-0
+2014-06-11 15:58:46,931 DEBUG [hz._hzInstance_1_dev.IO.thread-in-1] c.h.n.InSelectorImpl [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] hz._hzInstance_1_dev.IO.thread-in-1 is interrupted!
+2014-06-11 15:58:46,931 DEBUG [hz._hzInstance_1_dev.IO.thread-in-1] c.h.n.InSelectorImpl [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Closing selector hz._hzInstance_1_dev.IO.thread-in-1
+2014-06-11 15:58:46,931 DEBUG [hz._hzInstance_1_dev.IO.thread-out-1] c.h.n.OutSelectorImpl [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] hz._hzInstance_1_dev.IO.thread-out-1 is interrupted!
+2014-06-11 15:58:46,931 DEBUG [hz._hzInstance_1_dev.IO.thread-out-1] c.h.n.OutSelectorImpl [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Closing selector hz._hzInstance_1_dev.IO.thread-out-1
+2014-06-11 15:58:46,932 DEBUG [hz._hzInstance_1_dev.IO.thread-in-2] c.h.n.InSelectorImpl [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] hz._hzInstance_1_dev.IO.thread-in-2 is interrupted!
+2014-06-11 15:58:46,932 DEBUG [hz._hzInstance_1_dev.IO.thread-in-2] c.h.n.InSelectorImpl [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Closing selector hz._hzInstance_1_dev.IO.thread-in-2
+2014-06-11 15:58:46,932 DEBUG [hz._hzInstance_1_dev.IO.thread-out-2] c.h.n.OutSelectorImpl [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] hz._hzInstance_1_dev.IO.thread-out-2 is interrupted!
+2014-06-11 15:58:46,932 DEBUG [hz._hzInstance_1_dev.IO.thread-out-2] c.h.n.OutSelectorImpl [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Closing selector hz._hzInstance_1_dev.IO.thread-out-2
+2014-06-11 15:58:46,932 DEBUG [hz.ShutdownThread] c.h.n.TcpIpConnectionManager [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Closing server socket channel: sun.nio.ch.ServerSocketChannelImpl[/0.0.0.0:5701]
+2014-06-11 15:58:46,933 INFO [hz.ShutdownThread] c.h.initializer [Slf4jFactory.java:83] [192.168.56.11]:5701 [dev] Destroying node initializer.
+2014-06-11 15:58:46,933 DEBUG [hz.ShutdownThread] c.h.i.Node [Slf4jFactory.java:81] [192.168.56.11]:5701 [dev] Shutting down thread hz._hzInstance_1_dev.HealthMonitor
+2014-06-11 15:58:46,933 INFO [hz.ShutdownThread] c.h.i.Node [Slf4jFactory.java:83] [192.168.56.11]:5701 [dev] Hazelcast Shutdown is completed in 55 ms.
